@@ -1,0 +1,103 @@
+/* Links in the filter controls **************************/
+.Filter-appliedfilters a,
+.Filter-unappliedfilters a,
+.Filter-unappliedfilters .Filter-filtergroup span.Filter-title {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.3em 0.4em;
+}
+
+
+/* All filters *******************************************/
+
+.Filter-filter,
+.Filter-unappliedfilters .Filter-filtergroup span.Filter-title {
+	background-color: #eee;
+	display: inline-block;
+	text-align: center;
+	cursor: default;
+}
+	.Filter-filter a:hover,
+	.Filter-filter a:focus,
+	.Filter-appliedfilters a.Filter-clearall:hover,
+	.Filter-appliedfilters a.Filter-clearall:focus {
+		background-color: #74b86c;
+		color: #fff;
+		
+		text-decoration: none;
+		display: inline-block;
+		padding: 0.3em 0.4em;
+	}
+
+
+/* Applied filters ***************************************/
+
+.Filter-appliedfilters {
+	margin-top: 0.4em;
+}
+
+.Filter-appliedfilters .Filter-filter {
+	padding-right: 0.4em;
+}
+.Filter-appliedfilters .Filter-filter a {
+	background-color: #ddd;
+}
+.Filter-appliedfilters .Filter-filter a:hover,
+.Filter-appliedfilters .Filter-filter a:focus,
+.Filter-appliedfilters a.Filter-clearall:hover,
+.Filter-appliedfilters a.Filter-clearall:focus {
+	background-color: #faa;
+	border-color: transparent; /* for the clear all link */
+}
+
+.Filter-appliedfilters a.Filter-clearall {
+	border: 1px solid #4a475d;
+	color: #4a475d;
+	font-size: 75%;
+	margin-left: 1em;
+}
+
+
+/* Unapplied filters *************************************/
+
+.Filter-unappliedfilters .Filter-filtergroup {
+	position: relative;
+	z-index: 100000;
+	overflow: hidden;
+	display: inline-block;
+	height: 1.8em;
+	margin: 0 0.1em;
+	
+	vertical-align: top;
+}
+.Filter-unappliedfilters .Filter-filtergroup:hover,
+.Filter-unappliedfilters .Filter-filtergroup:focus {
+	overflow: visible;
+}
+.Filter-unappliedfilters .Filter-filtergroup .Filter-filter,
+.Filter-unappliedfilters .Filter-filtergroup span.Filter-title {
+	display: block;
+	position: relative;
+}
+.Filter-unappliedfilters .Filter-filtergroup:hover .Filter-filter,
+.Filter-unappliedfilters .Filter-filtergroup:focus .Filter-filter,
+.Filter-unappliedfilters .Filter-filtergroup:hover span.Filter-title,
+.Filter-unappliedfilters .Filter-filtergroup:focus span.Filter-title {
+	box-shadow: 2px 2px 0 #4a475d;
+}
+.Filter-unappliedfilters .Filter-filtergroup .Filter-filter a {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	min-width: 13ex;
+}
+
+.Filter-unappliedfilters .Filter-filtergroup span.Filter-title {
+	background-image: url('../img/dropdown.svg');
+	background-position: right center;
+	background-position: calc(100% - 0.1em) center;
+	background-size: 1em 1em;
+	background-repeat: no-repeat;
+	background-color: #e0e0e0;
+	padding-right: 1em;
+}

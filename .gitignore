@@ -1,0 +1,9 @@
+# Directories with files made by the platform
+contributors
+userpics
+users
+updatelog
+
+# KDE files and automatic backups
+.directory
+*~

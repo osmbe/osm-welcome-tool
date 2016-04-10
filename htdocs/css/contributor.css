@@ -1,0 +1,167 @@
+article.contributorfile {
+	background-color: #fff;
+	
+	margin: 2em auto;
+}
+@media (min-width:800px) {
+	article.contributorfile {
+		width: 75%;
+		
+		max-width: 1500px;
+	}
+}
+
+article header {
+	padding: 1em 0;
+	
+	margin-bottom: -1.5em;
+}
+
+article header h3 {
+	font-size: 150%;
+	font-weight: normal;
+	vertical-align: middle;
+	
+	margin: 0;
+}
+article header h3 a {
+	text-decoration: none;
+}
+article header h3 img {
+	display: inline-block;
+	vertical-align: middle;
+	
+	width: 2em;
+	height: 2em;
+	
+	margin: 0 0.3em 0 0.1em;
+	
+	border-radius: 3em;
+	-moz-border-radius: 3em;
+	-webkit-border-radius: 3em;
+}
+@media (min-width:800px) {
+	article header h3 {
+		font-size: 200%;
+	}
+	
+	article header h3 img {
+		width: 3em;
+		height: 3em;
+		
+		margin: 0 1em 0 -1.5em;
+	}
+}
+
+article h4 {
+	margin-bottom: 0.3em;
+}
+
+article .cs a {
+	display: block;
+}
+
+.editable {
+	position: relative;
+	padding-right: 21px;
+}
+.editable .edit {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0.3em;
+	width: 21px;
+	
+	opacity: 0.3;
+	background-image: url('../img/edit.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: transparent;
+}
+.editable:hover .edit {
+	opacity: 0.7;
+}
+.editable .edit:hover {
+	opacity: 1;
+}
+
+.editing ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.userdescription {
+	padding: 0 4em;
+	max-height: 4.5em;
+	overflow: hidden;
+}
+
+
+section.meta.links {
+	margin-top: 2.5em;
+}
+
+
+.welcomed, .responded {
+	padding: 0.5em 0 0.5em 1.6em;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+/* Positive */
+.welcomed.positive, .responded.positive {
+	background-image: url('../img/mark-check.svg');
+}
+/* Negative */
+.welcomed.negative, .responded.negative {
+	background-image: url('../img/mark-cross.svg');
+}
+
+
+ul.note, ul.didwhat {
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 1em;
+}
+
+ul.note li, ul.didwhat li {
+	padding: 0.2em;
+	margin: 0.5em 0;
+	background-color: #f7f7f7;
+}
+
+.note .author,
+.didwhat .author {
+	margin-bottom: 0.2em;
+}
+
+.note .author, .note .author a,
+.didwhat .author, .didwhat .author a {
+	color: #999;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+.note .author img,
+.didwhat .author img {
+	width: 22px;
+	height: 22px;
+	opacity: 0.4;
+}
+
+.note .author:hover, .note .author:hover a,
+.didwhat .author:hover, .didwhat .author:hover a {
+	display: block;
+	color: #000;
+}
+
+.note .author:hover img,
+.didwhat .author:hover img {
+	opacity: 1;
+}
+
+.notes textarea {
+	width: 100%;
+}
+

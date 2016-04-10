@@ -1,0 +1,64 @@
+section.filtercontrols {
+	
+}
+
+
+table td {
+	vertical-align: middle;
+}
+table h3 {
+	margin-bottom: 0;
+	font-weight: 200;
+}
+
+tr.e:hover td, tr.e td.dn a:focus,
+tr.o:hover td, tr.o td.dn a:focus {
+	background-color: #74b86c;
+	color: #fff;
+}
+
+
+table td {
+	padding: 0;
+}
+table td a {
+	text-decoration: none;
+	
+	min-height: 1em;
+	
+	display: block;
+	padding: 0.8em 0.5em;
+	vertical-align: middle;
+}
+table td a:hover, table td a:focus {
+	color: inherit;
+}
+
+td.up {
+	width: 32px;
+}
+td.up a {
+	padding: 0.4em 0.3em;
+}
+td.up a img {
+	width: 32px;
+	height: 32px;
+}
+.cs {
+	text-align: right;
+	width: 2.5em;
+}
+.ln {
+	text-align: center;
+}
+
+.nt, .dw {
+	width: 27%;
+}
+
+
+ul.note, ul.didwhat {
+	list-style-type: square;
+	margin: 0;
+	padding-left: 1em;
+}

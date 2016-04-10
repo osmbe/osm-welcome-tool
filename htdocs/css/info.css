@@ -1,0 +1,64 @@
+article nav {
+	text-align: center;
+	font-size: 200%;
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+
+section {
+	background-color: #faf9ff;
+}
+
+.term-osm, .term-id {
+	background-color: #fdc;
+	
+	margin: 0.1em 0;
+	padding: 0.1em 0.3em;
+	
+	border-radius: 0.3em;
+	
+	display: inline-block;
+	
+	font-style: italic;
+}
+.term-id {
+	background-color: #dfc;
+	padding: 0.1em 0.3em;
+	border-radius: 0.3em;
+	
+	font-weight: bold;
+	font-style: normal;
+}
+
+.invisible {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+.li {
+	margin: 0.5em 0 0.5em 2em;
+	position: relative;
+}
+.li:before {
+	content: ' ';
+	position: absolute;
+	left: -1em;
+	top: 0.45em;
+	
+	height: 0.38em;
+	width: 0.38em;
+	
+	background-color: #000;
+	
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+
+
+.name-not-filled-in {
+	font-weight: bold;
+	font-style: italic;
+}
