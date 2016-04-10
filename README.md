@@ -18,7 +18,7 @@ This is a platform to coordinate welcoming new mappers in Belgium. The source co
 
 # Loading new contributors
 
-Add a periodic job (e.g. with cron) that executes the files `get_new.php` and `update_existing.php` as the **user of the web server**. If you do it as root, the content on the web platform will be read-only.
+Add a periodic job (e.g. with cron) that executes the files `get_new.php` and `update_existing.php` with PHP as the **user of the web server**. If you do it as root, the content on the web platform will be read-only.
 
 An example crontab:
 
