@@ -1,6 +1,6 @@
 <?php
 define('APP_HTTP_PATH', '/');
-define('INCLUDES_PATH', '/var/www/osmwelcome/includes');
+define('INCLUDES_PATH', dirname(__FILE__).'/includes');
 
 // Stay logged in for a month
 session_set_cookie_params(60*60*24*31, APP_HTTP_PATH, null, false, true);
