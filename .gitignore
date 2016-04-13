@@ -1,8 +1,9 @@
-# Directories with files made by the platform
+# exclude everything except silhoutte pic
 contributors
-userpics
+userpics/*
 users
 updatelog
+!userpics/silhouette*
 
 # KDE files and automatic backups
 .directory

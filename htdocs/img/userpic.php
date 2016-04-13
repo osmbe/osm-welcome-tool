@@ -84,6 +84,7 @@ require_once(INCLUDES_PATH . '/files/read_contributor_info.php');
 require_once(INCLUDES_PATH . '/files/read_user_info.php');
 
 $info = read_contributor_info($id);
+
 if (!$info) {
 	$info = read_user_info($id);
 	if (!$info) {
@@ -92,13 +93,13 @@ if (!$info) {
 	}
 }
 
+
 if (!@$info->img) {
 	error_img('No image associated with account');
 }
 if (!preg_match(';^(http://www.gravatar.com/avatar/|http://api.openstreetmap.org/attachments/users/images/);', $info->img) === 1) {
 	error_img('');
 }
-
 
 
 $orig = $info->img;
