@@ -1,5 +1,7 @@
 <?php
 
+// This is a small install script to make it easier for the user to set things up
+
 $verbose=5;
 
 // logging like this makes it readable
