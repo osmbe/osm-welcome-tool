@@ -1,7 +1,7 @@
 <?php
 
 function chronological_contributor_list () {
-	return file(INCLUDES_PATH . '/../contributors/@chronological.txt');
+	return file(BASE_PATH . '/contributors/@chronological.txt');
 }
 
 ?>
