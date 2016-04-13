@@ -1,6 +1,6 @@
 <?php
 
-define('INCLUDES_PATH', dirname(__FILE__) . '/includes');
+require_once('htdocs/defines.php');
 
 include_once('cli_log.php');
 include_once(INCLUDES_PATH.'/api/detect_userid.php');
