@@ -29,3 +29,9 @@ An example crontab:
     0 5 * * * sudo -u www-data php /var/www/osmwelcome/update_existing.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_update.log" 2>&1
     # Get new contributors at 6:00
     0 6 * * * sudo -u www-data php /var/www/osmwelcome/get_new.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_new.log" 2>&1
+
+# Testing/dev also done on nginx / phpfpm
+Basically , I(Glenn) run/tested this on a laravel 5.2 homestead vagrant box, who has recent versions.  Since I prefer nginx, a config is included
+
+* tested on PHP 7.0.3-13+deb.sury.org~trusty+1
+* running nginx version 1.9.11

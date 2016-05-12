@@ -37,10 +37,10 @@ function edit_contributor_file ($data) {
 	
 	if (isset($data['newnote'])) {
 		$note = array(
-			userid => $_SESSION['userid'],
-			display_name => $_SESSION['displayname'],
-			content => $data['newnote'],
-			timestamp => time()
+			'userid' => $_SESSION['userid'],
+			'display_name' => $_SESSION['displayname'],
+			'content' => $data['newnote'],
+			'timestamp' => time()
 		);
 		
 		if (!isset($info['note'])) {
@@ -54,10 +54,10 @@ function edit_contributor_file ($data) {
 	
 	if (isset($data['newdidwhat'])) {
 		$didwhat = array(
-			userid => $_SESSION['userid'],
-			display_name => $_SESSION['displayname'],
-			content => $data['newdidwhat'],
-			timestamp => time()
+			'userid' => $_SESSION['userid'],
+			'display_name' => $_SESSION['displayname'],
+			'content' => $data['newdidwhat'],
+			'timestamp' => time()
 		);
 		
 		if (!isset($info['did_what'])) {

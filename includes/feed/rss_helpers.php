@@ -5,7 +5,6 @@ function extract_display_name_from_rss_entry ($entry, $ac) {
 	if (!preg_match(';openstreetmap.org/user/(.*);', $user_url, $matches)) {
 		$ac->log_something('Could not recognize display name in url "'.$user_url.'"');
 		$success = false;
-		continue;
 	}
 	return $matches[1];
 }
