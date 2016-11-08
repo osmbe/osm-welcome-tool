@@ -14,8 +14,11 @@ if (isset($_GET['returnto']) && is_sane_returnto($_GET['returnto'])) {
 
 // Base url of this server
 $domain = $_SERVER['HTTP_HOST'];
-$base = "";
-$base_url = "http://$domain$base";
+$protocol = (
+	(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ||
+	$_SERVER['SERVER_PORT'] == 443
+) ? "https" : "http";
+$base_url = "$protocol://$domain$base";
 
 
 /*** Request token ******************************************/
