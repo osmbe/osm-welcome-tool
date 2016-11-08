@@ -118,7 +118,7 @@ function print_list_of_contributors () {
 		// User picture
 		echo '<td class="up">';
 		if (isset($info->img) && $info->img) {
-			user_link($userid, '<img src="avatars/' . $userid . '-32.jpg" alt="" />');
+			user_link($userid, '<img src="img/userpic.php?size=32&amp;user='.$userid.'" alt="" />');
 		} else {
 			user_link($userid, '<img src="avatars/silhouette-32.jpg" alt="" />');
 		}
