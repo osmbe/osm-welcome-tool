@@ -89,7 +89,7 @@ function page_end () {
 	</div>
 	
 	<footer>
-		<p>An <a href="http://osm.be/">OpenStreetMap Belgium</a> project. Powered by <a href="http://resultmaps.neis-one.org/newestosm?c=Belgium">neis-one.org</a></p>
+		<p>An <a href="http://osm.be/">OpenStreetMap Belgium</a> project. <a href="https://framagit.org/Midgard/osm-welcome-belgium/">Source code</a> available. Powered by <a href="http://resultmaps.neis-one.org/newestosm?c=Belgium">neis-one.org</a></p>
 	</footer>
 	
 	';
