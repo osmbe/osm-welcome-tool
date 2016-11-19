@@ -4,6 +4,8 @@
 
 This is a platform to coordinate welcoming new mappers in Belgium. The source code is hackish, ugly and doesn't seem to follow *any* design principle, but it works. Mostly.
 
+You can see live instances for [Belgium](https://welcome.osm.be/) and [Spain](http://laceci.xyz/).
+
 # Prerequisites
 
 * Have a web server with PHP installed and at least 50 MB of free space.
