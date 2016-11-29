@@ -21,6 +21,7 @@ $welcome[$language]['info_wiki'] = 'You can find a lot of information about how 
 $welcome[$language]['info_iD'] = 'If you want to map something with iD and can’t find it, the quickest solution may be'; // Followed by info_solution
 $welcome[$language]['info_Potlatch'] = 'If you want to map something with Potlatch and can’t find it, the quickest solution may be'; // Followed by info_solution
 $welcome[$language]['info_JOSM'] = 'If you want to map something with JOSM, the presets may be of help. It’s a good idea to check out the wiki page of the tag so you can see how it is meant to be used. There are hyperlinks in the preset windows. The quickest way to find something else in the wiki may be'; // Followed by info_solution
+$welcome[$language]['info_MAPSME'] = 'If you want to know how to tag something, the quickest solution may be'; // Followed by info_solution
 $welcome[$language]['info_other'] = 'If you want to know how to tag something, the quickest solution may be'; // Followed by info_solution
 
 $welcome[$language]['info_solution'] = 'to search for “site:wiki.openstreetmap.org [search term]” with your favourite search engine. You can also browse through the questions on '.markdown_link('the Help site', 'https://help.openstreetmap.org').' or ask one yourself, or post on '.markdown_link('the forum', 'https://forum.openstreetmap.org/viewforum.php?id=29').'.';

@@ -22,6 +22,7 @@ $welcome[$language]['info_wiki'] = 'Je kan heel veel informatie vinden over hoe 
 $welcome[$language]['info_iD'] = 'Als je iets wilt mappen en je vindt het niet terug binnen iD, dan is de snelste oplossing'; // Followed by info_solution
 $welcome[$language]['info_Potlatch'] = 'Als je iets wilt mappen en je vindt het niet terug binnen Potlatch, dan is de snelste oplossing'; // Followed by info_solution
 $welcome[$language]['info_JOSM'] = 'Als je dingen wilt mappen met JOSM, kunnen de presets je helpen. Het is een goed idee eens in de wiki te kijken om te zien hoe een tag precies gebruikt wordt. Er staan hyperlinks bij de presets. De snelste manier om iets anders in de wiki te vinden is door'; // Followed by info_solution
+$welcome[$language]['info_MAPSME'] = 'Als je wil weten hoe je iets moet taggen, is de snelste oplossing'; // Followed by info_solution
 $welcome[$language]['info_other'] = 'Als je wil weten hoe je iets moet taggen, is de snelste oplossing'; // Followed by info_solution
 
 
