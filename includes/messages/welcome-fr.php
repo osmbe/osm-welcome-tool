@@ -1,4 +1,4 @@
-	<?php
+<?php
 
 $language = 'fr';
 $welcome[$language] = array();
