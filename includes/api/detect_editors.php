@@ -47,7 +47,7 @@ function detect_primary_editor ($display_name) {
 				if (preg_match('/iD/i', $editor) === 1) $editor = 'iD';
 				elseif (preg_match('/Potlatch/i', $editor) === 1) $editor = 'Potlatch';
 				elseif (preg_match('/JOSM/i', $editor) === 1) $editor = 'JOSM';
-				elseif (preg_match('/MAPS.ME/i', $editor) === 1) $editor = 'MAPS.ME';
+				elseif (preg_match('/MAPS\.ME/i', $editor) === 1) $editor = 'MAPS.ME';
 				else $editor = 'other';
 				
 				$editors[$editor] += ($weight--);
