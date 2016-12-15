@@ -1,0 +1,11 @@
+# m h  dom mon dow   command
+
+# Make a data export every day at 0:00
+0 0 * * * cd /var/www/osmwelcome/ && sudo -u www-data zip -r "/var/www/osmwelcome/htdocs/exports/`date +\%Y-\%m-\%d`.zip" contributors && sudo -u www-data rm -rf "/var/www/osmwelcome/htdocs/exports/`date --date '7 days ago' +\%Y-\%m-\%d`.zip"
+
+# Take a backup of the contributors at 4:50
+50 4 * * * sudo -u www-data tar -zcf "/var/backups/osmwelcome/`date +\%Y-\%m-\%d`.tgz" /var/www/osmwelcome/contributors/ && sudo -u www-data rm -rf "/var/backups/osmwelcome/`date --date '15 days ago' +\%Y-\%m-\%d`.tgz"
+# Update existing contributors at 5:00
+0 5 * * * sudo -u www-data php /var/www/osmwelcome/update_existing.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_update.log" 2>&1
+# Get new contributors at 6:00
+0 6 * * * sudo -u www-data php /var/www/osmwelcome/get_new.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_new.log" 2>&1

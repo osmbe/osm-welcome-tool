@@ -18,19 +18,15 @@ You can see live instances for [Belgium](https://welcome.osm.be/) and [Spain](ht
 * Configure the web server to use the folder `htdocs` as document root.
 * Reload the web server configuration. The platform should now be up and running, albeit empty.
 
-# Loading new contributors
+# Setting up automatic jobs
 
-Add a periodic job (e.g. with cron) that executes the files `get_new.php` and `update_existing.php` with PHP as the **user of the web server**. If you do it as root, the content on the web platform will be read-only.
+To automatically load new contributors (which you'll probably want to do) and/or add data export functionality, you can set up periodic jobs, e.g. with cron jobs.
 
-An example crontab:
+To get new contributors and to update the data about the known ones is done by executing `get_new.php` and `update_existing.php` respectively. They are to be run with PHP as the **user of the web server**. If you do it as root, the content on the web platform will be read-only.
 
-    # m h  dom mon dow   command
-    # Take a backup of the contributors at 4:50
-    50 4 * * * sudo -u www-data tar -zcf "/var/backups/osmwelcome/`date +\%Y-\%m-\%d`.tgz" /var/www/osmwelcome/contributors/ && sudo -u www-data rm -rf "/var/backups/osmwelcome/`date --date '15 days ago' +\%Y-\%m-\%d`.tgz"
-    # Update existing contributors at 5:00
-    0 5 * * * sudo -u www-data php /var/www/osmwelcome/update_existing.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_update.log" 2>&1
-    # Get new contributors at 6:00
-    0 6 * * * sudo -u www-data php /var/www/osmwelcome/get_new.php >"/var/www/osmwelcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_new.log" 2>&1
+Adding data export facilities to the server can also be achieved with periodic jobs. Just ZIP the folder `contributors` and put it on a place within the `htdocs`.
+
+The file crontab.sample contains an example cron setup to do automatic updates and exports.
 
 # Testing/dev also done on nginx / phpfpm
 Basically , I(Glenn) run/tested this on a laravel 5.2 homestead vagrant box, who has recent versions.  Since I prefer nginx, a config is included
