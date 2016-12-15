@@ -11,9 +11,9 @@ function get_new_contributors () {
 	
 	$ac = start_action('Fetching RSS feed');
 
-		//$feedString = request_feed();
+		$feedString = request_feed();
 		// For testing:
-		$feedString = file_get_contents(INCLUDES_PATH.'/new2.xml');
+		//$feedString = file_get_contents(INCLUDES_PATH.'/example.xml');
 
 	end_action($ac);
 	$ac = start_action('Parsing RSS feed');
