@@ -24,7 +24,7 @@ To automatically load new contributors (which you'll probably want to do) and/or
 
 To get new contributors and to update the data about the known ones is done by executing `get_new.php` and `update_existing.php` respectively. They are to be run with PHP as the **user of the web server**. If you do it as root, the content on the web platform will be read-only.
 
-Adding data export facilities to the server can also be achieved with periodic jobs. Just ZIP the folder `contributors` and put it on a place within the `htdocs`.
+Adding data export facilities to the server can also be achieved with periodic jobs. Just ZIP the folder `contributors` and put it on a place within the `htdocs`. Update the server configuration to enable directory indices for the folder they get put in, if you desire so. (Example config for that is commented out in the example files.)
 
 The file crontab.sample contains an example cron setup to do automatic updates and exports.
 
