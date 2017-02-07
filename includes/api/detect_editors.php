@@ -27,7 +27,7 @@ function detect_editors ($display_name) {
 
 function detect_primary_editor ($display_name) {
 
-	$editors = array('iD'=>0,'Potlatch'=>0,'other'=>0,'JOSM'=>0);
+	$editors = array('iD'=>0,'Potlatch'=>0,'other'=>0,'JOSM'=>0, 'MAPS.ME'=>0);
 
 	$changesets = fetch_changesets_by_display_name($display_name);
 	
@@ -47,6 +47,7 @@ function detect_primary_editor ($display_name) {
 				if (preg_match('/iD/i', $editor) === 1) $editor = 'iD';
 				elseif (preg_match('/Potlatch/i', $editor) === 1) $editor = 'Potlatch';
 				elseif (preg_match('/JOSM/i', $editor) === 1) $editor = 'JOSM';
+				elseif (preg_match('/MAPS\.ME/i', $editor) === 1) $editor = 'MAPS.ME';
 				else $editor = 'other';
 				
 				$editors[$editor] += ($weight--);

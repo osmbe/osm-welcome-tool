@@ -94,6 +94,7 @@ function generate_message ($type, $userid, $language=null) {
 					case 'iD' :      echo $messages['info_iD'];      break;
 					case 'Potlatch' : echo $messages['info_Potlatch']; break;
 					case 'JOSM' :    echo $messages['info_JOSM'];    break;
+					case 'MAPS.ME' :    echo $messages['info_MAPSME'];    break;
 					default:         echo $messages['info_other'];   break;
 				}
 				echo ' '.$messages['info_solution'].PHP_EOL;
