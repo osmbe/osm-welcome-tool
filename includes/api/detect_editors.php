@@ -44,10 +44,10 @@ function detect_primary_editor ($display_name) {
 			if ($tag['k'] == 'created_by') { // Don't do strict comparison, in SimpleXMLObject the attributes are not really strings
 				$editor = $tag['v'];
 				
-				if (preg_match('/iD/i', $editor) === 1) $editor = 'iD';
-				elseif (preg_match('/Potlatch/i', $editor) === 1) $editor = 'Potlatch';
-				elseif (preg_match('/JOSM/i', $editor) === 1) $editor = 'JOSM';
-				elseif (preg_match('/MAPS\.ME/i', $editor) === 1) $editor = 'MAPS.ME';
+				if (strpos('MAPS.ME', $editor) !== false) $editor = 'MAPS.ME';
+				elseif (strpos('JOSM', $editor) !== false) $editor = 'JOSM';
+				elseif (strpos('Potlatch', $editor) !== false) $editor = 'Potlatch';
+				elseif (strpos('iD', $editor) !== false) $editor = 'iD';
 				else $editor = 'other';
 				
 				$editors[$editor] += ($weight--);
