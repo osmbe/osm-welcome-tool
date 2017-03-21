@@ -19,11 +19,11 @@ $welcome[$language]['helpintro'] = 'Nous vous aiderons volontiers de diverses ma
 $welcome[$language]['info_wiki'] = 'Vous pouvez trouver beaucoup d’informations via '.markdown_link('le wiki', 'https://wiki.openstreetmap.org/wiki/FR:Page_principale').'.';
 
 // Customized info for the mapper's editor
-$welcome[$language]['info_iD'] = 'Si vous ne trouvez pas comment faire dans iD, la manière la plus rapide de trouver plus facile est de'; // Followed by info_solution
-$welcome[$language]['info_Potlatch'] = 'Si vous ne trouvez pas comment faire dans Potlatch, la manière la plus rapide de trouver plus facile est de'; // Followed by info_solution
-$welcome[$language]['info_JOSM'] = 'Si vous ne trouvez pas comment faire dans JOSM, les presets peuvent aider. C\'est toujours une bonne idee d\'étudier le wiki pour comprendre la signifcation des tags. La manière la plus rapide de trouver plus facile est de '; // Followed by info_solution
-$welcome[$language]['info_MAPSME'] = 'Avec Maps.me, vos options pour modifier la carte sont assez limité. Dirigez-vous vers '.markdown_link('openstreetmap.org', 'https://www.openstreetmap.org').' pout avoir des pouvoirs ilimités!'; // Followed by info_solution
-$welcome[$language]['info_other'] = 'Si vous ne trouvez pas comment faire, la manière la plus rapide de trouver plus facile est de'; // Followed by info_solution
+$welcome[$language]['info_iD'] = 'Si vous ne trouvez pas comment faire dans iD, la  solution la plus rapide est de'; // Followed by info_solution
+$welcome[$language]['info_Potlatch'] = 'Si vous ne trouvez pas comment faire dans Potlatch, la solution la plus rapide est de'; // Followed by info_solution
+$welcome[$language]['info_JOSM'] = 'Si vous ne trouvez pas comment faire dans JOSM, les presets peuvent aider. C\'est toujours une bonne idee de vérifier le wiki pour comprendre la signifcation des tags. La manière la plus rapide de trouver quelque chose dans le wiki est de '; // Followed by info_solution
+$welcome[$language]['info_MAPSME'] = 'Avec Maps.me, vos options pour modifier la carte sont assez limitées. Dirigez-vous vers '.markdown_link('openstreetmap.org', 'https://www.openstreetmap.org').' pout avoir des pouvoirs d\'édition ilimités. Si vous désirez savoir comment tagger quelque chose, la solution la plus rapide est de '; // Followed by info_solution
+$welcome[$language]['info_other'] = 'Si vous voulez savoir comment tagger quelque chose, la solution la plus rapide est de'; // Followed by info_solution
 
 $welcome[$language]['info_solution'] = 'faire une recherche en ligne avec “site:wiki.openstreetmap.org [terme recherché]”. Vous pouvez également aller sur '.markdown_link('le site d’aide', 'https://help.openstreetmap.org').' ou poser une question sur '.markdown_link('le forum', 'https://forum.openstreetmap.org/viewforum.php?id=29').'.';
 
