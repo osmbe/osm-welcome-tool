@@ -45,7 +45,7 @@ function print_list_of_contributors () {
 
 	$users = chronological_contributor_list();
 
-	$current_page = (int)($_GET["page"]) - 1;
+	$current_page = isset($_GET["page"]) ? (int)($_GET["page"]) - 1 : 0;
 	if ($current_page < 0) $current_page = 0;
 
 	$num_users = count($users);
