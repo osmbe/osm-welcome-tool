@@ -2,7 +2,7 @@
 
 *Welcoming new OpenStreetMappers in Belgium*
 
-This is a platform to coordinate welcoming new mappers in Belgium. The source code is hackish, ugly and doesn't seem to follow *any* design principle, but it works. Mostly.
+This is a platform to coordinate welcoming new mappers in Belgium. The source code is hackish, extremely ugly and doesn't seem to follow *any* design principle, but it works. Mostly.
 
 You can see a live instance for [Belgium](https://welcome.osm.be/).
 
