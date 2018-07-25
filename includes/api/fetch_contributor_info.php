@@ -7,7 +7,7 @@ function fetch_contributor_info ($userid) {
 		die('Invalid user id "'.htmlentities($userid, null, 'UTF-8').'"');
 	}
 	return simplexml_load_string(
-		call_api('user/' . $gooduserid, null, 'GET')
+		call_api('user/' . $gooduserid, null, 'GET', NO_AUTH)
 	);
 }
 

@@ -6,9 +6,10 @@ This is a platform to coordinate welcoming new mappers in Belgium. The source co
 
 You can see a live instance for [Belgium](https://welcome.osm.be/).
 
-# Prerequisites
+# Requirements
 
-* Have a web server with PHP installed and at least 50 MB of free space.
+* PHP 7.0.30 or later
+* PHP-OAuth 2.0.2 or later
 
 # Installing
 
@@ -29,7 +30,7 @@ Adding data export facilities to the server can also be achieved with periodic j
 The file crontab.sample contains an example cron setup to do automatic updates and exports.
 
 # Testing/dev also done on nginx / phpfpm
-Basically , I(Glenn) run/tested this on a laravel 5.2 homestead vagrant box, who has recent versions.  Since I prefer nginx, a config is included
+Glenn ran this on a Laravel 5.2 Homestead Vagrant box, with recent software versions. Since he prefers Nginx, a config is included.
 
 * tested on PHP 7.0.3-13+deb.sury.org~trusty+1
-* running nginx version 1.9.11
+* running Nginx version 1.9.11

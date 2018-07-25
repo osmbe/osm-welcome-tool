@@ -7,7 +7,7 @@ session_start();
 if (!isset($authorization_required) || $authorization_required !== false) {
 	$logged_in = isset($_SESSION['userid']) && isset($_SESSION['displayname']);
 	
-	if (!$logged_in && !$accessible_without_login) {
+	if (!$logged_in && (!isset($accessible_without_login) || !$accessible_without_login )) {
 		header('Location: login.php?returnto='.rawurlencode($_SERVER['REQUEST_URI']));
 		die('You are not logged in. Please <a href="dologin.php?returnto='.rawurlencode($_SERVER['REQUEST_URI']).'">log in with your OSM account</a>.');
 	}

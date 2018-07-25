@@ -19,7 +19,7 @@ class FetchChangesets {
 		}
 		
 		$changesets = simplexml_load_string(
-			call_api('changesets', array('user'=>$userid), 'GET')
+			call_api('changesets', array('user'=>$userid), 'GET', NO_AUTH)
 		);
 		self::$changesets[$userid] = $changesets;
 		
@@ -34,7 +34,7 @@ class FetchChangesets {
 		}
 		
 		$changesets = simplexml_load_string(
-			call_api('changesets', array('display_name'=>$display_name), 'GET')
+			call_api('changesets', array('display_name'=>$display_name), 'GET', NO_AUTH)
 		);
 		
 		if (!isset($changesets->changeset[0])) {

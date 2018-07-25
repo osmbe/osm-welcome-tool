@@ -21,6 +21,7 @@ function update_contributor_info ($userid, $firstedit=null, $detect=0, $import=n
 	$userid = $gooduserid;
 
 	$apiresponse = fetch_contributor_info($userid);
+	print $apiresponse;
 	if (!$apiresponse) {
 		return STATUS_INVALID_API_RESPONSE;
 	}
