@@ -15,7 +15,7 @@ function user_link ($userid, $content, $focusable=false) {
 	echo '</a>';
 }
 
-function print_list_of_contributors () {
+function print_list_of_contributors ($min=0) {
 	echo '
 				<table class="fullwidth">
 <tr class="heading">
@@ -29,38 +29,43 @@ function print_list_of_contributors () {
 	<th class="dw">did what</th>
 </tr>
 ';
-	
-	$users = chronological_contributor_list();
-	
+
 	$filter = get_filter_object();
-	
-	$max = 0;
-	if ($filter->isEnabled(FILTER_SHOW_20)) $max = 20;
-	elseif ($filter->isEnabled(FILTER_SHOW_100)) $max = 100;
-	
+
+	$maxlen = null;
+	if ($filter->isEnabled(FILTER_SHOW_20)) $maxlen = 20;
+	elseif ($filter->isEnabled(FILTER_SHOW_100)) $maxlen = 100;
+
+	$users = chronological_contributor_list();
+
+	if (!is_null($maxlen)) {
+		$min = $_GET["page"] * $maxlen;
+		$users = array_slice($users, $min, $maxlen);
+	}
+
 	$firsteditday = '';
 	$rownumber = 0;
 	foreach ($users as $userid) {
 
 		if (!$userid) continue;
-		
+
 		$userid = intval($userid);
 		if (!$userid) {
 			die('Invalid user id in list');
 		}
-		
+
 		$info = read_contributor_info($userid);
-		
+
 		/*** Filters **************************************************************/
-		
+
 		$welcomed = isset($info->welcomed_by) && !is_null($info->welcomed_by);
 		if ($filter->isEnabled(FILTER_WELCOMED) && !$welcomed) continue;
 		if ($filter->isEnabled(FILTER_NOT_WELCOMED) && $welcomed) continue;
-		
+
 		$responded = isset($info->responded) && !is_null($info->responded);
 		if ($filter->isEnabled(FILTER_RESPONDED) && !$responded) continue;
 		if ($filter->isEnabled(FILTER_NOT_RESPONDED) && $responded) continue;
-		
+
 		$lang = ' ';
 		if (!isset($info->language) || is_null($info->language)) {
 			$lang = '?';
@@ -89,23 +94,23 @@ function print_list_of_contributors () {
 					break;
 			}
 		}
-		
+
 		/**************************************************************************/
-		
+
 		if (isset($info->first_edit)) {
 			$thisuser_firsteditday = date('j F Y (l)', $info->first_edit);
-			
+
 			if ($thisuser_firsteditday !== $firsteditday) {
 				echo '<tr class="firsteditheader"><td colspan="8"><h3>';
 				echo $thisuser_firsteditday;
 				echo '</h3></td></tr>
 ';
-				
+
 				$firsteditday = $thisuser_firsteditday;
 			}
-			
+
 		}
-		
+
 		echo '<tr class="';
 		// Bitwise AND for super-fast modulus 2
 		if (((++$rownumber)&1) === 0) {
@@ -203,8 +208,6 @@ function print_list_of_contributors () {
 		user_link($userid, $didwhat);
 		echo '</td></tr>
 ';
-
-		if ($max !== 0 && $rownumber > $max) break;
 	}
 	unset($ulr);
 	
