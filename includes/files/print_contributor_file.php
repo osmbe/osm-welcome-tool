@@ -60,7 +60,7 @@ function language_selector ($current=null) {
 		if ($other) echo ' checked="checked"';
 	echo '></input><label for="lang-ot">other: ';
 	echo '<input type="text" name="otherlang" onfocus="document.getElementById(\'lang-ot\').checked=true;" tabindex="-1" value="';
-	echo htmlentities(@$info->language, null, 'UTF-8');
+	if ($other) echo htmlentities($current, null, 'UTF-8');
 	echo '"></input></li></label>';
 	
 	echo '<li><input type="radio" name="lang" id="lang-unknown" value="unknown" ';
