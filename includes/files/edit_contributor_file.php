@@ -18,10 +18,14 @@ function edit_contributor_file ($data) {
 	}
 
 	if (isset($data['lang'])) {
-		if ($data['lang'] != "other") {
+		if ($data['lang'] == 'other') {
+			if (isset($data['otherlang']) && $data['otherlang']) {
+				$info['language'] = $data['otherlang'];
+			}
+		} elseif ($data['lang'] == 'unknown') {
+			$info['language'] = null;
+		} else {
 			$info['language'] = $data['lang'];
-		} elseif (isset($data['otherlang']) && $data['otherlang']) {
-			$info['language'] = $data['otherlang'];
 		}
 	}
 	
