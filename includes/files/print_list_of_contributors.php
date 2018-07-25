@@ -15,7 +15,46 @@ function user_link ($userid, $content, $focusable=false) {
 	echo '</a>';
 }
 
-function print_list_of_contributors ($min=0) {
+function pagination_links($current_page, $maxlen, $filter, $class="") {
+	$current_page ++;
+
+	$url = $filter->getUrl() . '&page=';
+	echo "
+				<nav class='pagination_links $class'>
+";
+	if (!is_null($maxlen)) {
+		if ($current_page > 1) {
+			echo "					<a href='${url}".($current_page-1)."'>◀</a>".PHP_EOL;
+		} else {
+			echo "					<a class='disabled'>◀</a>".PHP_EOL;
+		}
+		echo "					Page $current_page".PHP_EOL;
+		echo "					<a href='${url}".($current_page+1)."'>▶</a>".PHP_EOL;
+	}
+	echo '
+				</nav>
+';
+}
+
+function print_list_of_contributors () {
+	$filter = get_filter_object();
+
+	$maxlen = null;
+	if ($filter->isEnabled(FILTER_SHOW_20)) $maxlen = 20;
+	elseif ($filter->isEnabled(FILTER_SHOW_100)) $maxlen = 100;
+
+	$users = chronological_contributor_list();
+
+	$current_page = (int)($_GET["page"]) - 1;
+	if ($current_page < 0) $current_page = 0;
+
+	$num_users = count($users);
+
+	if (!is_null($maxlen)) {
+		$skip = $current_page * $maxlen;
+	}
+
+	pagination_links($current_page, $maxlen, $filter, 'top');
 	echo '
 				<table class="fullwidth">
 <tr class="heading">
@@ -29,19 +68,6 @@ function print_list_of_contributors ($min=0) {
 	<th class="dw">did what</th>
 </tr>
 ';
-
-	$filter = get_filter_object();
-
-	$maxlen = null;
-	if ($filter->isEnabled(FILTER_SHOW_20)) $maxlen = 20;
-	elseif ($filter->isEnabled(FILTER_SHOW_100)) $maxlen = 100;
-
-	$users = chronological_contributor_list();
-
-	if (!is_null($maxlen)) {
-		$min = $_GET["page"] * $maxlen;
-		$users = array_slice($users, $min, $maxlen);
-	}
 
 	$firsteditday = '';
 	$rownumber = 0;
@@ -73,26 +99,30 @@ function print_list_of_contributors ($min=0) {
 		} else {
 			switch ($info->language) {
 				case 'Dutch' :
-					$lang = 'NL';
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_DUTCH)) continue 2;
+					$lang = 'NL';
 					break;
 				case 'French' :
-					$lang = 'FR';
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_FRENCH)) continue 2;
+					$lang = 'FR';
 					break;
 				case 'English' :
-					$lang = 'EN';
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_ENGLISH)) continue 2;
+					$lang = 'EN';
 					break;
 				case 'German' :
-					$lang = 'DE';
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_GERMAN)) continue 2;
+					$lang = 'DE';
 					break;
 				default :
-					$lang = 'o';
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_OTHER)) continue 2;
+					$lang = 'o';
 					break;
 			}
+		}
+
+		if ($skip-- > 0) {
+			continue;
 		}
 
 		/**************************************************************************/
@@ -208,13 +238,15 @@ function print_list_of_contributors ($min=0) {
 		user_link($userid, $didwhat);
 		echo '</td></tr>
 ';
+
+		if ($maxlen !== 0 && $rownumber > $maxlen) break;
 	}
 	unset($ulr);
 	
 	echo '
 				</table>
-
 ';
+	pagination_links($current_page, $maxlen, $filter, 'bottom');
 }
 
 ?>

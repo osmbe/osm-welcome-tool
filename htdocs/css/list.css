@@ -62,3 +62,25 @@ ul.note, ul.didwhat {
 	margin: 0;
 	padding-left: 1em;
 }
+
+nav.pagination_links {
+	text-align: center;
+}
+
+nav.top.pagination_links {
+	margin: -1em 0em 1em;
+}
+
+nav.bottom.pagination_links {
+	margin: 1em 0em 0em;
+}
+
+nav.pagination_links a {
+	margin: 0 1em;
+	padding: 0.4em 0.6em;
+}
+
+nav.pagination_links a.disabled, nav.pagination_links a.disabled:hover {
+	background-color: #9994b8;
+	color: #d5d1d1;
+}

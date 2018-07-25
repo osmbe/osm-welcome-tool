@@ -94,20 +94,24 @@ class Filter {
 		}
 	}
 	
-	protected function makeAppliedLink ($filter, $name) {
-		$this->appliedFilterControl .= '<span class="Filter-filter"><a href="?filter='.static::filterUrlEncode($filter).'">x</a> '
+	protected function makeAppliedLink ($filter_number, $name) {
+		$this->appliedFilterControl .= '<span class="Filter-filter"><a href="'.static::getUrlForNumber($filter_number).'">x</a> '
 			. $name
 			. '</span> ';
 	}
 	
-	protected function makeUnappliedLink ($filter, $name) {
-		$this->unappliedFilterControl .= '<span class="Filter-filter"><a href="?filter='.static::filterUrlEncode($filter).'">'
+	protected function makeUnappliedLink ($filter_number, $name) {
+		$this->unappliedFilterControl .= '<span class="Filter-filter"><a href="'.static::getUrlForNumber($filter_number).'">'
 			. $name
 			. '</a></span> ';
 	}
 	
-	protected function filterUrlEncode ($filter) {
-		return base_convert($filter, 10, 36);
+	protected function getUrlForNumber ($filter_number) {
+		return '?filter='.base_convert($filter_number, 10, 36);
+	}
+	
+	public function getUrl () {
+		return static::getUrlForNumber($this->applied);
 	}
 
 }
