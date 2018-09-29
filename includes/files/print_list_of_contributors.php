@@ -74,7 +74,7 @@ function print_list_of_contributors () {
 <tr class="heading">
 	<th></th>
 	<th class="dn">user</th>
-	<th class="cs">#<span class="info" title="CS = changeset">CSs</span></th>
+	<th class="cs"><span class="info" title="number of changesets">#CSs</span></th>
 	<th class="ac">signed up</th>
 	<th class="we">welcomed?</th>
 	<th class="ln">lang</th>
