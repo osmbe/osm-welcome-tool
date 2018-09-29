@@ -253,7 +253,7 @@ function print_list_of_contributors () {
 		echo '</td></tr>
 ';
 
-		if ($maxlen !== 0 && $rownumber > $maxlen) break;
+		if (!is_null($maxlen) && $rownumber > $maxlen) break;
 	}
 	unset($ulr);
 	
