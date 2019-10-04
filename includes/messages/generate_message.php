@@ -59,16 +59,16 @@ function generate_message ($type, $userid, $language=null) {
 			}
 			
 			if (isset($info->language)) {
-				if ($info->language === 'Dutch') {
+				if ($info->language === 'Dutch' && file_exists(INCLUDES_PATH . '/messages/welcome-nl.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-nl.php');
 					
-				} elseif ($info->language === 'French') {
+				} elseif ($info->language === 'French' && file_exists(INCLUDES_PATH . '/messages/welcome-fr.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-fr.php');
 					
-				} elseif ($info->language === 'English') {
+				} elseif ($info->language === 'English' && file_exists(INCLUDES_PATH . '/messages/welcome-en.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-en.php');
 					
-				} elseif ($info->language === 'German') {
+				} elseif ($info->language === 'German' && file_exists(INCLUDES_PATH . '/messages/welcome-de.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-de.php');
 					
 				} else {
