@@ -35,7 +35,7 @@ The file crontab.sample contains an example cron setup to do automatic updates a
 
 ## Testing/dev also done on nginx / phpfpm
 
-Glenn (@gplv2) ran this on a Laravel 5.2 Homestead Vagrant box, with recent software versions. Since he prefers Nginx, a config is included.
+[Glenn](https://github.com/gplv2) ran this on a Laravel 5.2 Homestead Vagrant box, with recent software versions. Since he prefers Nginx, a config is included.
 
 * tested on PHP 7.0.3-13+deb.sury.org~trusty+1
 * running Nginx version 1.9.11
