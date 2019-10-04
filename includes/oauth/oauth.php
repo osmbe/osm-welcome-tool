@@ -14,22 +14,15 @@
  * program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-function request_feed () {
-	$rssUrl = 'http://resultmaps.neis-one.org/newestosmcountryfeed?c=Belgium';
-	$userAgent = 'osmwelcome.unitedbashers.com, contact at ruben@janmaes.com';
+$conskey = '';
+$conssec = '';
 
+if (!$conskey || !$conssec) die("Fill in OSM OAuth consumer credentials in includes/oauth/oauth.php");
 
-	// Create a stream
-	$opts = array(
-		'http' => array(
-			'method' => 'GET',
-			'user_agent' => $userAgent
-		)
-	);
-	$context = stream_context_create($opts);
+$oauth = new OAuth($conskey, $conssec, OAUTH_SIG_METHOD_HMACSHA1, OAUTH_AUTH_TYPE_URI);
 
-	// Open the file using the HTTP headers set above
-	return file_get_contents($rssUrl, false, $context);
-}
+$conskey = null;
+$conssec = null;
 
 ?>
+

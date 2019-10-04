@@ -1,10 +1,24 @@
 <?php
+/* This file is part of osm-welcome: a platform to coordinate welcoming of OpenStreetMap mappers
+ * Copyright © 2018  Midgard and osm-welcome contributors
+ *
+ * This program is free software: you can redistribute it and/or modify it under the terms of the
+ * GNU Affero General Public License as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with this
+ * program. If not, see <https://www.gnu.org/licenses/>.
+ */
 
 $authorization_required = false;
 
 require_once('paths.php');
 session_regenerate_id(true);
-require_once(INCLUDES_PATH . '/oauth/OAuth.php');
+require_once(INCLUDES_PATH . '/oauth/oauth.php');
 require_once(INCLUDES_PATH . '/is_sane_returnto.php');
 
 
@@ -24,26 +38,22 @@ $request_secret = $_SESSION['request_secret'];
 unset($_SESSION['request_secret']);
 
 
-$request_token = new OAuthConsumer($request_key, $request_secret);
+try {
+	$oauth->setToken($request_key, $request_secret);
 
+	/*** Exchange request token for access token ****************/
 
-/*** Exchange request token for access token ****************/
+	$endpoint = 'https://www.openstreetmap.org/oauth/access_token';
+	$access_token_info = $oauth->getAccessToken($endpoint);
 
-$endpoint = 'https://www.openstreetmap.org/oauth/access_token';
-$params = array();
+	$access_key = $access_token_info["oauth_token"];
+	$access_secret = $access_token_info["oauth_token_secret"];
 
-$acc_req = OAuthRequest::from_consumer_and_token($consumer, $request_token, "GET", $endpoint, $params);
-$acc_req->sign_request($sig_method, $consumer, $request_token);
+	$oauth->setToken($access_key, $access_secret);
 
-$contents = @file_get_contents($acc_req);
-if (!$contents) {
-	die('Could not validate access token. <a href="index.php">Click here to return to the main page.</a>');
+} catch(OAuthException $e) {
+	die('Could not complete login procedure. <a href="index.php">Click here to return to the main page.</a>');
 }
-parse_str($contents, $access_token);
-
-$access_key = $access_token["oauth_token"];
-$access_secret = $access_token["oauth_token_secret"];
-$access_token_pair = new OAuthConsumer($access_key, $access_secret);
 
 
 /*** Get user details and save authentication ***************/
@@ -52,7 +62,7 @@ require_once(INCLUDES_PATH . '/api/api.php');
 require_once(INCLUDES_PATH . '/oauth/put_session.php');
 
 
-$response = call_api('user/details', null, 'GET', $access_token_pair);
+$response = call_api('user/details', null, 'GET', [$access_key, $access_secret]);
 
 if (!$response) {
 	die('An error occurred while querying the API. <a href="index.php">Click here to return to the main page.</a><br/><br/>Error: No valid response');

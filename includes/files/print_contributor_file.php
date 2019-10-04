@@ -1,4 +1,18 @@
 <?php
+/* This file is part of osm-welcome: a platform to coordinate welcoming of OpenStreetMap mappers
+ * Copyright © 2018  Midgard and osm-welcome contributors
+ *
+ * This program is free software: you can redistribute it and/or modify it under the terms of the
+ * GNU Affero General Public License as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with this
+ * program. If not, see <https://www.gnu.org/licenses/>.
+ */
 
 include_once(INCLUDES_PATH . '/files/read_contributor_info.php');
 include_once(INCLUDES_PATH . '/files/read_user_info.php');
@@ -60,7 +74,7 @@ function language_selector ($current=null) {
 		if ($other) echo ' checked="checked"';
 	echo '></input><label for="lang-ot">other: ';
 	echo '<input type="text" name="otherlang" onfocus="document.getElementById(\'lang-ot\').checked=true;" tabindex="-1" value="';
-	echo htmlentities(@$info->language, null, 'UTF-8');
+	if ($other) echo htmlentities($current, null, 'UTF-8');
 	echo '"></input></li></label>';
 	
 	echo '<li><input type="radio" name="lang" id="lang-unknown" value="unknown" ';
