@@ -1,260 +1,328 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">	
-	<author><name>Pascal Neis (Copyright 2012 - neis-one.org)</name></author>
-	<title type="text">The Newest Active OpenStreetMap Contributors (last 7 Days) - Feed for Belgium</title> 
-	<link rel="alternate" type="text/html" href="http://resultmaps.neis-one.org/newestosm.php" /> 
+	<author><name>Pascal Neis (Copyright - neis-one.org)</name></author>
+	<title type="text">Latest OpenStreetMap Contributors (last 7 Days) - Feed for Belgium</title> 
+	<link rel="alternate" type="text/html" href="http://resultmaps.neis-one.org/newestosm" /> 
 	<subtitle type="text">powered by www.neis-one.org</subtitle>
-	<updated>2015-07-18T06:30:00+02:00</updated>
+	<updated>2016-12-15T22:38:38+01:00</updated>
 		<entry>
-			<id>http://www.openstreetmap.org/user/eddyvp</id>
-			<title>New Contributor: eddyvp</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/eddyvp" />
-			<updated>2015-07-17T15:10:20+02:00</updated>
+			<id>http://www.openstreetmap.org/user/kihube</id>
+			<title>New Contributor: kihube</title>
+			<link href="https://www.openstreetmap.org/user/kihube" />
+			<updated>2016-12-15T13:53:08+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/eddyvp"&gt;eddyvp&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-17 14:59:44 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3655676975"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.1775704&amp;mlon=5.5777705&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?eddyvp"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/kihube"&gt;kihube&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-15 13:53:08 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-15 13:47:15 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4973572 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Raeren (0.60 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44424219"&gt;44424219&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME android 6.4.4-Google &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?kihube"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/kapla2000</id>
-			<title>New Contributor: kapla2000</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/kapla2000" />
-			<updated>2015-07-17T13:34:22+02:00</updated>
+			<id>http://www.openstreetmap.org/user/mvandenb58</id>
+			<title>New Contributor: mvandenb58</title>
+			<link href="https://www.openstreetmap.org/user/mvandenb58" />
+			<updated>2016-12-14T19:15:02+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/kapla2000"&gt;kapla2000&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-17 13:31:04 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3655573316"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.6373636&amp;mlon=4.6218645&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?kapla2000"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/mvandenb58"&gt;mvandenb58&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-14 19:15:02 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-14 19:04:42 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4969918 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Steenhuffel (0.39 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44404966"&gt;44404966&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?mvandenb58"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/Msanch</id>
-			<title>New Contributor: Msanch</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/Msanch" />
-			<updated>2015-07-17T10:02:09+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Peter Vervoort</id>
+			<title>New Contributor: Peter Vervoort</title>
+			<link href="https://www.openstreetmap.org/user/Peter Vervoort" />
+			<updated>2016-12-14T14:43:38+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/Msanch"&gt;Msanch&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-17 09:46:02 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3655317566"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.6217865&amp;mlon=5.5614161&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Msanch"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Peter Vervoort"&gt;Peter Vervoort&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-14 14:43:38 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-14 14:34:04 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4968925 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Turnhout (0.63 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44399354"&gt;44399354&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Peter Vervoort"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/delon491</id>
-			<title>New Contributor: delon491</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/delon491" />
-			<updated>2015-07-17T20:16:40+02:00</updated>
+			<id>http://www.openstreetmap.org/user/jonathanvigne</id>
+			<title>New Contributor: jonathanvigne</title>
+			<link href="https://www.openstreetmap.org/user/jonathanvigne" />
+			<updated>2016-12-14T11:00:27+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/delon491"&gt;delon491&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-06-26 18:58:05 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3655942349"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.5455346&amp;mlon=5.8310425&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?delon491"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/jonathanvigne"&gt;jonathanvigne&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-14 11:00:27 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-13 15:10:01 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4964430 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Ixelles - Elsene (0.97 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44394715"&gt;44394715&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD-indoor (iD 1.9.6) &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?jonathanvigne"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/steffenellen</id>
-			<title>New Contributor: steffenellen</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/steffenellen" />
-			<updated>2015-07-15T12:56:53+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Kris Bels</id>
+			<title>New Contributor: Kris Bels</title>
+			<link href="https://www.openstreetmap.org/user/Kris Bels" />
+			<updated>2016-12-14T09:41:20+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/steffenellen"&gt;steffenellen&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-15 12:48:33 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3652769101"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.0960278&amp;mlon=4.9567905&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?steffenellen"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Kris Bels"&gt;Kris Bels&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-14 09:41:20 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-14 09:39:27 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4967808 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Liège (0.53 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44393256"&gt;44393256&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME android 6.3.7-Google &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Kris Bels"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/KarenNeyensSN</id>
-			<title>New Contributor: KarenNeyensSN</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/KarenNeyensSN" />
-			<updated>2015-07-15T14:22:00+02:00</updated>
+			<id>http://www.openstreetmap.org/user/juan mut</id>
+			<title>New Contributor: juan mut</title>
+			<link href="https://www.openstreetmap.org/user/juan mut" />
+			<updated>2016-12-13T18:44:52+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/KarenNeyensSN"&gt;KarenNeyensSN&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-15 11:38:57 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3652884361"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.1810575&amp;mlon=4.1330237&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?KarenNeyensSN"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/juan mut"&gt;juan mut&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-13 18:44:52 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-13 18:24:52 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4965168 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Visé (0.48 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44379286"&gt;44379286&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME android 6.5.4-Google &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?juan mut"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/wjans</id>
-			<title>New Contributor: wjans</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/wjans" />
-			<updated>2015-07-15T18:15:24+02:00</updated>
+			<id>http://www.openstreetmap.org/user/rhuovp</id>
+			<title>New Contributor: rhuovp</title>
+			<link href="https://www.openstreetmap.org/user/rhuovp" />
+			<updated>2016-12-13T14:46:47+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/wjans"&gt;wjans&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2008-12-10 13:39:16 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3653146029"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.7061338&amp;mlon=4.083295&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?wjans"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/rhuovp"&gt;rhuovp&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-13 14:46:47 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-13 13:56:47 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4964113 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Overpelt (2.10 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44373550"&gt;44373550&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?rhuovp"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/Maxrymenants</id>
-			<title>New Contributor: Maxrymenants</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/Maxrymenants" />
-			<updated>2015-07-14T17:06:32+02:00</updated>
+			<id>http://www.openstreetmap.org/user/lindaalbert</id>
+			<title>New Contributor: lindaalbert</title>
+			<link href="https://www.openstreetmap.org/user/lindaalbert" />
+			<updated>2016-12-13T09:35:35+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/Maxrymenants"&gt;Maxrymenants&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-14 16:55:28 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3651008186"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.0560595&amp;mlon=4.6305888&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Maxrymenants"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/lindaalbert"&gt;lindaalbert&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-13 09:35:35 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-05 10:32:25 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4926674 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Kalfort (1.17 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44367196"&gt;44367196&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?lindaalbert"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/Peter Van Speybroeck</id>
-			<title>New Contributor: Peter Van Speybroeck</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/Peter Van Speybroeck" />
-			<updated>2015-07-14T11:00:55+02:00</updated>
+			<id>http://www.openstreetmap.org/user/olivier scaillet</id>
+			<title>New Contributor: olivier scaillet</title>
+			<link href="https://www.openstreetmap.org/user/olivier scaillet" />
+			<updated>2016-12-12T14:03:10+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/Peter Van Speybroeck"&gt;Peter Van Speybroeck&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-14 10:54:28 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3650414157"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.9604566&amp;mlon=3.5159727&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Peter Van Speybroeck"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/olivier scaillet"&gt;olivier scaillet&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-12 14:03:10 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-12 14:02:32 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4959421 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Jodoigne-Souveraine (0.96 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44346758"&gt;44346758&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME android 6.5.4-Google &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?olivier scaillet"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/nescioso</id>
-			<title>New Contributor: nescioso</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/nescioso" />
-			<updated>2015-07-14T02:51:40+02:00</updated>
+			<id>http://www.openstreetmap.org/user/jcoosemans</id>
+			<title>New Contributor: jcoosemans</title>
+			<link href="https://www.openstreetmap.org/user/jcoosemans" />
+			<updated>2016-12-12T12:25:47+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/nescioso"&gt;nescioso&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-01-31 13:28:56 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3649859733"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.0742653&amp;mlon=4.7402541&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?nescioso"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/jcoosemans"&gt;jcoosemans&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-12 12:25:47 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-12 12:16:04 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4958970 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Nossegem (1.79 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44344398"&gt;44344398&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?jcoosemans"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/LeopardaRen</id>
-			<title>New Contributor: LeopardaRen</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/LeopardaRen" />
-			<updated>2015-07-13T10:37:59+02:00</updated>
+			<id>http://www.openstreetmap.org/user/gael le gleuher</id>
+			<title>New Contributor: gael le gleuher</title>
+			<link href="https://www.openstreetmap.org/user/gael le gleuher" />
+			<updated>2016-12-12T09:29:20+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/LeopardaRen"&gt;LeopardaRen&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-13 10:28:07 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3648717152"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.0263351&amp;mlon=3.735842&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?LeopardaRen"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/gael le gleuher"&gt;gael le gleuher&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-12 09:29:20 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-12 09:25:20 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4958268 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Woluwe-Saint-Lambert - Sint-Lambrechts-Woluwe (0.75 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44340802"&gt;44340802&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?gael le gleuher"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/jamiloco</id>
-			<title>New Contributor: jamiloco</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/jamiloco" />
-			<updated>2015-07-13T09:42:34+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Gerberan</id>
+			<title>New Contributor: Gerberan</title>
+			<link href="https://www.openstreetmap.org/user/Gerberan" />
+			<updated>2016-12-11T18:53:32+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/jamiloco"&gt;jamiloco&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-13 09:32:18 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3648605935"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.4831821&amp;mlon=3.8400885&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?jamiloco"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Gerberan"&gt;Gerberan&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-11 18:53:32 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-10-24 15:11:54 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4774481 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; La Bifurcation (0.85 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44329694"&gt;44329694&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; OsmAnd+ 2.5.4 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Gerberan"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/delsaux</id>
-			<title>New Contributor: delsaux</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/delsaux" />
-			<updated>2015-07-13T15:57:46+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Migge13</id>
+			<title>New Contributor: Migge13</title>
+			<link href="https://www.openstreetmap.org/user/Migge13" />
+			<updated>2016-12-11T14:17:43+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/delsaux"&gt;delsaux&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-05-25 06:55:07 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3649208452"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.4983595&amp;mlon=5.8972203&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?delsaux"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Migge13"&gt;Migge13&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-11 14:17:43 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-11 13:59:22 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4954673 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Westrode (1.01 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44323836"&gt;44323836&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Migge13"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/chandranagor</id>
-			<title>New Contributor: chandranagor</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/chandranagor" />
-			<updated>2015-07-13T14:39:15+02:00</updated>
+			<id>http://www.openstreetmap.org/user/msimion</id>
+			<title>New Contributor: msimion</title>
+			<link href="https://www.openstreetmap.org/user/msimion" />
+			<updated>2016-12-10T19:53:37+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/chandranagor"&gt;chandranagor&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2014-05-14 16:01:38 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3649132399"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.5257578&amp;mlon=5.2558031&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?chandranagor"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/msimion"&gt;msimion&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-10 19:53:37 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2015-02-23 11:03:46 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 2695809 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Etterbeek (0.88 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44310599"&gt;44310599&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?msimion"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/Carl_De_Wandelaar</id>
-			<title>New Contributor: Carl_De_Wandelaar</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/Carl_De_Wandelaar" />
-			<updated>2015-07-13T15:11:49+02:00</updated>
+			<id>http://www.openstreetmap.org/user/kensei-ronin</id>
+			<title>New Contributor: kensei-ronin</title>
+			<link href="https://www.openstreetmap.org/user/kensei-ronin" />
+			<updated>2016-12-10T16:06:00+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/Carl_De_Wandelaar"&gt;Carl_De_Wandelaar&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2014-03-01 09:03:21 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3649164795"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.9954303&amp;mlon=3.3164513&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Carl_De_Wandelaar"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/kensei-ronin"&gt;kensei-ronin&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-10 16:06:00 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-10 16:00:22 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4950827 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Bruxelles - Brussel (0.34 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44306341"&gt;44306341&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?kensei-ronin"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/schrijversmike</id>
-			<title>New Contributor: schrijversmike</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/schrijversmike" />
-			<updated>2015-07-12T08:33:50+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Luo Ryan</id>
+			<title>New Contributor: Luo Ryan</title>
+			<link href="https://www.openstreetmap.org/user/Luo Ryan" />
+			<updated>2016-12-10T07:38:55+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/schrijversmike"&gt;schrijversmike&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-12 08:07:40 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3647072043"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=51.1981566&amp;mlon=4.8470221&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?schrijversmike"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Luo Ryan"&gt;Luo Ryan&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-10 07:38:55 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-10 07:38:06 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4949092 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Liège (0.42 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44297783"&gt;44297783&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME ios 6.5.3 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Luo Ryan"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/geertivp</id>
-			<title>New Contributor: geertivp</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/geertivp" />
-			<updated>2015-07-12T19:05:56+02:00</updated>
+			<id>http://www.openstreetmap.org/user/Daniel Hancq</id>
+			<title>New Contributor: Daniel Hancq</title>
+			<link href="https://www.openstreetmap.org/user/Daniel Hancq" />
+			<updated>2016-12-09T23:49:03+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/geertivp"&gt;geertivp&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2013-05-12 12:55:37 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3647815889"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.3185394&amp;mlon=5.5374372&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?geertivp"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/Daniel Hancq"&gt;Daniel Hancq&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-09 23:49:03 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-09 23:46:12 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4947864 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Mont-Saint-Guibert (1.31 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44294581"&gt;44294581&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; MAPS.ME android 6.5.2-Google &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?Daniel Hancq"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 		<entry>
-			<id>http://www.openstreetmap.org/user/LorenzoMe</id>
-			<title>New Contributor: LorenzoMe</title>
-			<link target="_blank" href="http://www.openstreetmap.org/user/LorenzoMe" />
-			<updated>2015-07-11T10:21:18+02:00</updated>
+			<id>http://www.openstreetmap.org/user/RoadSkippers</id>
+			<title>New Contributor: RoadSkippers</title>
+			<link href="https://www.openstreetmap.org/user/RoadSkippers" />
+			<updated>2016-12-09T20:21:32+01:00</updated>
 			<content type="html">
-				&lt;b&gt;Username:&lt;/b&gt;  &lt;a target="_blank" href="http://www.openstreetmap.org/user/LorenzoMe"&gt;LorenzoMe&lt;/a&gt; &lt;/br&gt; 
-				&lt;b&gt;Mapper since:&lt;/b&gt; 2015-07-11 09:51:41 &lt;/br&gt; 
-				&lt;b&gt;First active in:&lt;/b&gt; Belgium &lt;/br&gt;
-				Browse one of the &lt;a target="_blank" href="http://www.openstreetmap.org/browse/node/3645845426"&gt;first edits&lt;/a&gt; &lt;/br&gt;
-				Show one of the first edits &lt;a target="_blank" href="http://www.openstreetmap.org/?mlat=50.6888534&amp;mlon=4.3819885&amp;zoom=18&amp;layers=M"&gt;on a Map&lt;/a&gt; &lt;/br&gt;
-				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?LorenzoMe"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/RoadSkippers"&gt;RoadSkippers&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-09 20:21:32 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-11-30 14:41:01 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4903672 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Hoeilaart (1.96 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44291287"&gt;44291287&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?RoadSkippers"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				</content>
+		</entry>
+		<entry>
+			<id>http://www.openstreetmap.org/user/vorselaar</id>
+			<title>New Contributor: vorselaar</title>
+			<link href="https://www.openstreetmap.org/user/vorselaar" />
+			<updated>2016-12-09T13:09:33+01:00</updated>
+			<content type="html">
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/vorselaar"&gt;vorselaar&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-09 13:09:33 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-09 13:05:35 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4945662 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Vorselaar (0.50 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44281926"&gt;44281926&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?vorselaar"&gt;contribute&lt;/a&gt; to OpenStreetMap?
+				</content>
+		</entry>
+		<entry>
+			<id>http://www.openstreetmap.org/user/FlavienG</id>
+			<title>New Contributor: FlavienG</title>
+			<link href="https://www.openstreetmap.org/user/FlavienG" />
+			<updated>2016-12-09T10:10:13+01:00</updated>
+			<content type="html">
+				&lt;b&gt;Contributor:&lt;/b&gt;  &lt;a target="_blank" href="https://www.openstreetmap.org/user/FlavienG"&gt;FlavienG&lt;/a&gt; &lt;/br&gt; 
+				&lt;b&gt;Mapper since:&lt;/b&gt; 2016-12-09 10:10:13 &lt;/br&gt;
+				&lt;b&gt;Registration:&lt;/b&gt; 2016-12-09 09:45:59 &lt;/br&gt;
+				&lt;b&gt;UID:&lt;/b&gt; 4944954 &lt;/br&gt;
+				&lt;b&gt;First active near:&lt;/b&gt; Bruxelles - Brussel (0.86 km) (Belgium) &lt;/br&gt;
+				&lt;b&gt;First Changeset:&lt;/b&gt; &lt;a target="_blank" href="https://openstreetmap.org/changeset/44278345"&gt;44278345&lt;/a&gt;&lt;/br&gt;
+				&lt;b&gt;Editor used:&lt;/b&gt; iD 2.0.1 &lt;/br&gt;
+				How did she/he &lt;a target="_blank" href="http://hdyc.neis-one.org/?FlavienG"&gt;contribute&lt;/a&gt; to OpenStreetMap?
 				</content>
 		</entry>
 </feed> 
