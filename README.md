@@ -19,7 +19,7 @@ You can see a live instance for [Belgium](https://welcome.osm.be/).
     dirs="users userpics contributors updatelog"; mkdir $dirs; chown $USER:www-data $dirs; chmod 0770 $dirs
     ```
 * Check the PHP constant `INCLUDES_PATH` in the file `/htdocs/defines.php` to point to the folder `includes`.
-* Update the OAuth `key` and `secret` in the file `includes/oauth/oauth.php`.
+* Update the OAuth `key` and `secret` in the file `includes/oauth/oauth.php` (see [wiki](https://wiki.openstreetmap.org/wiki/OAuth#Registering_your_application_as_OAuth_consumer)).
 * Configure the web server to use the folder `htdocs` as document root.
 * Reload the web server configuration. The platform should now be up and running, albeit empty.
 
