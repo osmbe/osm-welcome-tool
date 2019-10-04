@@ -14,7 +14,10 @@ You can see a live instance for [Belgium](https://welcome.osm.be/).
 # Installing
 
 * Put the contents of the repo on a webhost. I'm assuming you know how. If you don't, consider giving up now.
-* Create the directories `users`, `userpics`, `contributors` and `updatelog` and make them writable for the web server process. On a typical Apache on Linux setup, this can e.g. be done by setting the group to `www-data` and setting the group write execution bit: (`# dirs="users userpics contributors updatelog"; mkdir $dirs; chown www-data $dirs; chmod 770 $dirs`)
+* Create the directories `users`, `userpics`, `contributors` and `updatelog` and make them writable for the web server process. On a typical Apache on Linux setup, this can e.g. be done by setting the group to `www-data` and setting the group write execution bit:
+    ```
+    dirs="users userpics contributors updatelog"; mkdir $dirs; chown $USER:www-data $dirs; chmod 0770 $dirs
+    ```
 * Modify the PHP constant `INCLUDES_PATH` in the file /htdocs/paths.php to point to the folder `includes`.
 * Configure the web server to use the folder `htdocs` as document root.
 * Reload the web server configuration. The platform should now be up and running, albeit empty.
