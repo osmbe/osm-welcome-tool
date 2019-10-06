@@ -70,16 +70,17 @@ function generate_message ($type, $userid, $language=null) {
 					
 				} elseif ($info->language === 'German' && file_exists(INCLUDES_PATH . '/messages/welcome-de.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-de.php');
-					
 				} else {
 					include(INCLUDES_PATH . '/messages/welcome-en.php');
 					include(INCLUDES_PATH . '/messages/welcome-nl.php');
 					include(INCLUDES_PATH . '/messages/welcome-fr.php');
+					include(INCLUDES_PATH . '/messages/welcome-de.php');
 				}
 			} else {
 				include(INCLUDES_PATH . '/messages/welcome-en.php');
 				include(INCLUDES_PATH . '/messages/welcome-nl.php');
 				include(INCLUDES_PATH . '/messages/welcome-fr.php');
+				include(INCLUDES_PATH . '/messages/welcome-de.php');
 			}
 			
 			$multiple_langs = false;
