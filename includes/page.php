@@ -103,7 +103,7 @@ function page_end () {
 	</div>
 	
 	<footer>
-		<p>An <a href="http://osm.be/">OpenStreetMap Belgium</a> project. <a href="https://framagit.org/Midgard/osm-welcome-belgium/">Source code</a> available under AGPLv3+. Powered by <a href="http://resultmaps.neis-one.org/newestosm?c=Belgium">neis-one.org</a></p>
+		<p>An <a href="https://openstreetmap.be/">OpenStreetMap Belgium</a> project. <a href="https://github.com/osmbe/osm-welcome-belgium/">Source code</a> available under AGPLv3+. Powered by <a href="https://resultmaps.neis-one.org/newestosm?c=Belgium">neis-one.org</a></p>
 	</footer>
 	
 	';
@@ -125,7 +125,7 @@ function error_page ($status, $message) {
 	page_start($status);
 	echo '<article><section><p>That\'s an HTTP error.</p><p>Reason: ';
 	echo $message;
-	echo '</p><p><a href="https://www.openstreetmap.org/message/new/M!dgard">Contact M!dgard</a> about this.</p></section></article>';
+	echo '</p></section></article>';
 	page_end();
 	
 	die();
