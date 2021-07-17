@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\MapperRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -37,11 +39,6 @@ class Mapper
     private $changesets_count;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $first_changeset;
-
-    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $locale;
@@ -50,6 +47,27 @@ class Mapper
      * @ORM\Column(type="string", length=255)
      */
     private $status;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Changeset::class, mappedBy="mapper", orphanRemoval=true)
+     */
+    private $changesets;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Changeset::class, cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $first_changeset;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Welcome::class, inversedBy="mapper", cascade={"persist", "remove"})
+     */
+    private $welcome;
+
+    public function __construct()
+    {
+        $this->changesets = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -111,18 +129,6 @@ class Mapper
         return $this;
     }
 
-    public function getFirstChangeset(): ?int
-    {
-        return $this->first_changeset;
-    }
-
-    public function setFirstChangeset(int $first_changeset): self
-    {
-        $this->first_changeset = $first_changeset;
-
-        return $this;
-    }
-
     public function getLocale(): ?string
     {
         return $this->locale;
@@ -143,6 +149,60 @@ class Mapper
     public function setStatus(string $status): self
     {
         $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Changeset[]
+     */
+    public function getChangesets(): Collection
+    {
+        return $this->changesets;
+    }
+
+    public function addChangeset(Changeset $changeset): self
+    {
+        if (!$this->changesets->contains($changeset)) {
+            $this->changesets[] = $changeset;
+            $changeset->setMapper($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChangeset(Changeset $changeset): self
+    {
+        if ($this->changesets->removeElement($changeset)) {
+            // set the owning side to null (unless already changed)
+            if ($changeset->getMapper() === $this) {
+                $changeset->setMapper(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getFirstChangeset(): ?Changeset
+    {
+        return $this->first_changeset;
+    }
+
+    public function setFirstChangeset(Changeset $first_changeset): self
+    {
+        $this->first_changeset = $first_changeset;
+
+        return $this;
+    }
+
+    public function getWelcome(): ?Welcome
+    {
+        return $this->welcome;
+    }
+
+    public function setWelcome(?Welcome $welcome): self
+    {
+        $this->welcome = $welcome;
 
         return $this;
     }

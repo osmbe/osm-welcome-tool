@@ -18,64 +18,18 @@ class Welcome
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $uid;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $by_uid;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $by_display_name;
-
-    /**
      * @ORM\Column(type="datetime")
      */
     private $datetime;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Mapper::class, mappedBy="welcome", cascade={"persist", "remove"})
+     */
+    private $mapper;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getUId(): ?int
-    {
-        return $this->uid;
-    }
-
-    public function setUId(int $uid): self
-    {
-        $this->uid = $uid;
-
-        return $this;
-    }
-
-    public function getByUId(): ?int
-    {
-        return $this->by_uid;
-    }
-
-    public function setByUId(int $by_uid): self
-    {
-        $this->by_uid = $by_uid;
-
-        return $this;
-    }
-
-    public function getByDisplayName(): ?string
-    {
-        return $this->by_display_name;
-    }
-
-    public function setByDisplayName(string $by_display_name): self
-    {
-        $this->by_display_name = $by_display_name;
-
-        return $this;
     }
 
     public function getDatetime(): ?\DateTimeInterface
@@ -86,6 +40,28 @@ class Welcome
     public function setDatetime(\DateTimeInterface $datetime): self
     {
         $this->datetime = $datetime;
+
+        return $this;
+    }
+
+    public function getMapper(): ?Mapper
+    {
+        return $this->mapper;
+    }
+
+    public function setMapper(?Mapper $mapper): self
+    {
+        // unset the owning side of the relation if necessary
+        if ($mapper === null && $this->mapper !== null) {
+            $this->mapper->setWelcome(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($mapper !== null && $mapper->getWelcome() !== $this) {
+            $mapper->setWelcome($this);
+        }
+
+        $this->mapper = $mapper;
 
         return $this;
     }

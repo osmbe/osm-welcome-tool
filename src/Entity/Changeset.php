@@ -17,11 +17,6 @@ class Changeset
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $uid;
-
-    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $editor;
@@ -56,6 +51,12 @@ class Changeset
      */
     private $checked;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Mapper::class, inversedBy="changesets")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $mapper;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -64,18 +65,6 @@ class Changeset
     public function setId(int $id): self
     {
         $this->id = $id;
-
-        return $this;
-    }
-
-    public function getUId(): ?string
-    {
-        return $this->uid;
-    }
-
-    public function setUId(string $uid): self
-    {
-        $this->uid = $uid;
 
         return $this;
     }
@@ -160,6 +149,18 @@ class Changeset
     public function setChecked(bool $checked): self
     {
         $this->checked = $checked;
+
+        return $this;
+    }
+
+    public function getMapper(): ?Mapper
+    {
+        return $this->mapper;
+    }
+
+    public function setMapper(?Mapper $mapper): self
+    {
+        $this->mapper = $mapper;
 
         return $this;
     }
