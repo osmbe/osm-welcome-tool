@@ -27,7 +27,7 @@ class RegionsProvider
 
     public function getGeometry(string $key): string|null
     {
-        $path = sprintf('assets/%s.geojson', $key);
+        $path = sprintf('assets/regions/%s.geojson', $key);
         if (!file_exists($path) || !is_readable($path)) {
             return null;
         }
