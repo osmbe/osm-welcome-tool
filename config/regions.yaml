@@ -2,7 +2,7 @@ regions:
   belgium:
     name: Belgium
     locales: fr|nl|de
-    osmcha.id: d36d8b8d-d78e-452c-a36c-3a13a903360e
+    osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
   italy:
     name: Italy
     locales: it
