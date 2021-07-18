@@ -7,7 +7,6 @@ use App\Service\RegionsProvider;
 use ErrorException;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Command\LockableTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,8 +22,6 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 )]
 class AOICommand extends Command
 {
-    use LockableTrait;
-
     public function __construct(
         private ValidatorInterface $validator,
         private RegionsProvider $provider,
@@ -87,14 +84,10 @@ class AOICommand extends Command
 
             $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s".', $name, $data['id']));
 
-            $this->release();
-
             return Command::SUCCESS;
         } catch (ClientException $e) {
             $io->error($e->getMessage());
             $io->block($e->getResponse()->getContent(false));
-
-            $this->release();
 
             return Command::FAILURE;
         }
