@@ -57,7 +57,7 @@ class AOICommand extends Command
         if (is_null($region)) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
 
-            return Command::SUCCESS;
+            return Command::FAILURE;
         }
 
         $name = sprintf('Welcome Tool for %s', $region['name']);
