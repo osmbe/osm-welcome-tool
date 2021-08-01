@@ -5,6 +5,7 @@ namespace App\Command;
 use App\Service\RegionsProvider;
 use DateInterval;
 use DateTime;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -28,6 +29,7 @@ class UpdateCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
+        $lastUpdate = [];
         $regions = $this->provider->getRegions();
 
         foreach ($regions as $key => $region) {
@@ -46,7 +48,14 @@ class UpdateCommand extends Command
                 'region' => $key,
                 '-d' => $date,
             ]), $output);
+
+            $lastUpdate[$key] = $date;
         }
+
+        $cache = new FilesystemAdapter('welcome');
+        $lastUpdateCache = $cache->getItem('last_update');
+        $lastUpdateCache->set($lastUpdate);
+        $cache->save($lastUpdateCache);
 
         return Command::SUCCESS;
     }
