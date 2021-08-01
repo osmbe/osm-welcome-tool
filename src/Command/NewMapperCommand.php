@@ -10,6 +10,7 @@ use App\Service\OpenStreetMapAPI;
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
 use DateTime;
+use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Exception;
 use SimpleXMLElement;
@@ -110,14 +111,16 @@ class NewMapperCommand extends Command
             $mapperEntity = new Mapper();
             $mapperEntity->setId($user['user']['id']);
             $mapperEntity->setAccountCreated(new DateTime($user['user']['account_created']));
-            $mapperEntity->setChangesetsCount($user['user']['changesets']['count']);
-            $mapperEntity->setDisplayName($user['user']['display_name']);
-            $mapperEntity->setLocale($changeset['properties']['metadata']['locale'] ?? null);
             $mapperEntity->setRegion($region);
             $mapperEntity->setStatus('new');
-
-            $this->entityManager->persist($mapperEntity);
         }
+
+        $mapperEntity->setChangesetsCount($user['user']['changesets']['count']);
+        $mapperEntity->setDisplayName($user['user']['display_name']);
+        $mapperEntity->setImage($user['user']['img']['href'] ?? null);
+        // $mapperEntity->setLocale($changeset['properties']['metadata']['locale'] ?? null);
+
+        $this->entityManager->persist($mapperEntity);
 
         $changesetAttr = $changeset->attributes();
 
@@ -133,8 +136,10 @@ class NewMapperCommand extends Command
             $changesetEntity = new Changeset();
             $changesetEntity->setId((int) $changesetAttr->id);
             $changesetEntity->setMapper($mapperEntity);
-            $changesetEntity->setComment(self::extractTag($changeset->tag, 'comment'));
-            $changesetEntity->setEditor(self::extractTag($changeset->tag, 'created_by'));
+            $changesetEntity->setCreatedAt(new DateTimeImmutable((string) $changesetAttr->created_at));
+            $changesetEntity->setComment(self::extractTag($changeset->tag, 'comment') ?? '');
+            $changesetEntity->setEditor(self::extractTag($changeset->tag, 'created_by') ?? '');
+            $changesetEntity->setLocale(self::extractTag($changeset->tag, 'locale'));
             $changesetEntity->setChangesCount(intval($changesetAttr->changes_count));
             $changesetEntity->setExtent($extent);
             $changesetEntity->setTags([]);
@@ -166,18 +171,25 @@ class NewMapperCommand extends Command
 
             $xml = new SimpleXMLElement($response->getContent());
 
+            /** @var SimpleXMLElement[] */
             $changesets = [];
             foreach ($xml->changeset as $changeset) {
                 $changesets[] = $changeset;
             }
 
+            /** @var int[] */
             $createdAt = [];
             foreach ($changesets as $changeset) {
-                $attr = $changeset->attributes;
+                $attr = $changeset->attributes();
                 $createdAt[] = strtotime($attr['created_at']);
             }
 
             array_multisort($createdAt, SORT_ASC, SORT_NUMERIC, $changesets);
+
+            // if ($uid === 12491507) {
+            //     var_dump($changesets[0]);
+            //     var_dump(current($changesets));
+            // }
 
             return $changesets[0];
         } catch (Exception $e) {
