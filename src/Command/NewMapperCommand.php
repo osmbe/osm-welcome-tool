@@ -12,15 +12,19 @@ use App\Service\RegionsProvider;
 use DateTime;
 use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
+use ErrorException;
 use Exception;
 use SimpleXMLElement;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpClient\Exception\ClientException;
+use Symfony\Component\Validator\Constraints\Date;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 #[AsCommand(
     name: 'osmcha:new-mapper',
@@ -29,6 +33,7 @@ use Symfony\Component\HttpClient\Exception\ClientException;
 class NewMapperCommand extends Command
 {
     public function __construct(
+        private ValidatorInterface $validator,
         private EntityManagerInterface $entityManager,
         private RegionsProvider $provider,
         private OSMChaAPI $osmcha,
@@ -41,7 +46,16 @@ class NewMapperCommand extends Command
     {
         $this
             ->addArgument('region', InputArgument::REQUIRED, 'Region')
+            ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)')
         ;
+    }
+
+    protected function initialize(InputInterface $input, OutputInterface $output) {
+        $validate = $this->validator->validate($input->getOption('date'), new Date());
+
+        if ($validate->count() > 0) {
+            throw new ErrorException($validate->get(0)->getMessage());
+        }
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -49,6 +63,7 @@ class NewMapperCommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $key = $input->getArgument('region');
+        $date = $input->getOption('date');
         $region = $this->provider->getRegion($key);
 
         if (is_null($region)) {
@@ -87,7 +102,16 @@ class NewMapperCommand extends Command
                     $_users = array_filter($users['users'], function ($u) use ($uid) { return intval($u['user']['id']) === intval($uid); });
                     $user = current($_users);
 
-                    $this->createMapper($key, $user, $changeset, $io);
+                    $mapper = $this->createMapper($key, $user);
+                    $changeset = $this->createChangeset($mapper, $changeset);
+
+                    if (is_null($date) || (!is_null($date) && $date === $changeset->getCreatedAt()->format('Y-m-d'))) {
+                        $io->success(sprintf('%s %s', $mapper->getDisplayName(), $changeset->getCreatedAt()->format('c')));
+
+                        $this->entityManager->persist($mapper);
+                        $this->entityManager->persist($changeset);
+                        $this->entityManager->flush();
+                    }
                 }
             }
 
@@ -100,11 +124,10 @@ class NewMapperCommand extends Command
         }
     }
 
-    private function createMapper(string $region, array $user, SimpleXMLElement $changeset, SymfonyStyle $io): void {
+    private function createMapper(string $region, array $user): Mapper
+    {
         /** @var MapperRepository */
         $mapperRepository = $this->entityManager->getRepository(Mapper::class);
-        /** @var ChangesetRepository */
-        $changesetRepository = $this->entityManager->getRepository(Changeset::class);
 
         $mapperEntity = $mapperRepository->find($user['user']['id']);
         if ($mapperEntity === null) {
@@ -118,9 +141,14 @@ class NewMapperCommand extends Command
         $mapperEntity->setChangesetsCount($user['user']['changesets']['count']);
         $mapperEntity->setDisplayName($user['user']['display_name']);
         $mapperEntity->setImage($user['user']['img']['href'] ?? null);
-        // $mapperEntity->setLocale($changeset['properties']['metadata']['locale'] ?? null);
 
-        $this->entityManager->persist($mapperEntity);
+        return $mapperEntity;
+    }
+
+    private function createChangeset(Mapper $mapper, SimpleXMLElement $changeset): Changeset
+    {
+        /** @var ChangesetRepository */
+        $changesetRepository = $this->entityManager->getRepository(Changeset::class);
 
         $changesetAttr = $changeset->attributes();
 
@@ -135,7 +163,7 @@ class NewMapperCommand extends Command
 
             $changesetEntity = new Changeset();
             $changesetEntity->setId((int) $changesetAttr->id);
-            $changesetEntity->setMapper($mapperEntity);
+            $changesetEntity->setMapper($mapper);
             $changesetEntity->setCreatedAt(new DateTimeImmutable((string) $changesetAttr->created_at));
             $changesetEntity->setComment(self::extractTag($changeset->tag, 'comment') ?? '');
             $changesetEntity->setEditor(self::extractTag($changeset->tag, 'created_by') ?? '');
@@ -143,11 +171,9 @@ class NewMapperCommand extends Command
             $changesetEntity->setChangesCount(intval($changesetAttr->changes_count));
             $changesetEntity->setExtent($extent);
             $changesetEntity->setTags([]);
-
-            $this->entityManager->persist($changesetEntity);
         }
 
-        $this->entityManager->flush();
+        return $changesetEntity;
     }
 
     private function getFirstChangeset(int $uid, SymfonyStyle $io): SimpleXMLElement | null
