@@ -39,11 +39,6 @@ class Mapper
     private $changesets_count;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $locale;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $status;
@@ -57,6 +52,11 @@ class Mapper
      * @ORM\OneToOne(targetEntity=Welcome::class, inversedBy="mapper", cascade={"persist", "remove"})
      */
     private $welcome;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $image;
 
     public function __construct()
     {
@@ -123,18 +123,6 @@ class Mapper
         return $this;
     }
 
-    public function getLocale(): ?string
-    {
-        return $this->locale;
-    }
-
-    public function setLocale(?string $locale): self
-    {
-        $this->locale = $locale;
-
-        return $this;
-    }
-
     public function getStatus(): ?string
     {
         return $this->status;
@@ -173,6 +161,18 @@ class Mapper
                 $changeset->setMapper(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }
