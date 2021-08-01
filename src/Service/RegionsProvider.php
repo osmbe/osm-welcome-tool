@@ -8,9 +8,9 @@ class RegionsProvider
 {
     private array $regions = [];
 
-    public function __construct()
+    public function __construct(private string $projectDirectory)
     {
-        $yaml = Yaml::parseFile('config/regions.yaml');
+        $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
 
         $this->regions = $yaml['regions'] ?? [];
     }
@@ -27,7 +27,7 @@ class RegionsProvider
 
     public function getGeometry(string $key): string|null
     {
-        $path = sprintf('assets/regions/%s.geojson', $key);
+        $path = sprintf('%s/assets/regions/%s.geojson', $this->projectDirectory, $key);
         if (!file_exists($path) || !is_readable($path)) {
             return null;
         }

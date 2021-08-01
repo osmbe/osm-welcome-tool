@@ -37,3 +37,6 @@ services:
         arguments:
             $url: '%osm.api.url%'
             $userAgent: '%app.userAgent%'
+    App\Service\RegionsProvider:
+        arguments:
+            $projectDirectory: "%kernel.project_dir%"
