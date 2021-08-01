@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListController!{% endblock %}
+
+{% block body %}
+
+<div class="container mx-auto">
+
+    <h1 class="text-5xl">{{ region.name | trans }}</h1>
+
+    <table class="table-auto">
+        <thead>
+            <tr>
+                <th class="border"></th>
+                <th class="border">{{ 'Username' | trans }}</th>
+                <th class="border">{{ 'Account created' | trans }}</th>
+                <th class="border">{{ 'Changesets' | trans }}</th>
+                <th class="border">{{ 'First changeset' | trans }}</th>
+                <th class="border">{{ 'Editor' | trans }}</th>
+                <th class="border">{{ 'Locale' | trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mapper in mappers %}
+            <tr>
+                <td class="border">
+                    {% if mapper.image is not null %}
+                    <img class="h-14" src="{{ mapper.image }}" alt="{{ mapper.displayName }}">
+                    {% else %}
+                    <img class="h-14" src="{{ asset('build/images/avatar_large.png') }}" alt="Default profile image">
+                    {% endif %}
+                </td>
+                <td class="border">
+                    <a href="https://openstreetmap.org/user/{{ mapper.displayName }}" target="_blank">
+                        {{ mapper.displayName }}
+                    </a>
+                </td>
+                <td class="border">{{ mapper.accountCreated | format_date('long') }}</td>
+                <td class="border text-right">
+                    <a href="https://openstreetmap.org/user/{{ mapper.displayName }}/history" target="_blank">
+                        {{ mapper.changesetsCount }}
+                    </a>
+                </td>
+                <td class="border">
+                    <a href="https://openstreetmap.org/changeset/{{ mapper.changesets[0].id }}" target="_blank">
+                        {{ mapper.changesets.first.createdAt | format_date('long') }}
+                    </a>
+                </td>
+                <td class="border">{{ mapper.changesets.first.editor }}</td>
+                <td class="border text-center">{{ mapper.changesets.first.locale }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+
+{% endblock %}
