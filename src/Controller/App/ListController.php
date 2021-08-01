@@ -3,19 +3,22 @@
 namespace App\Controller\App;
 
 use App\Entity\Mapper;
+use App\Service\RegionsProvider;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Yaml\Yaml;
 
 class ListController extends AbstractController
 {
+    public function __construct(
+        private RegionsProvider $provider,
+    ) {}
+
     #[Route('/list/{regionKey}', name: 'app_list')]
     public function index(string $regionKey): Response
     {
-        $yaml = Yaml::parseFile('../config/regions.yaml');
-        $region = $yaml['regions'][$regionKey] ?? null;
+        $region = $this->provider->getRegion($regionKey);
 
         if (is_null($region)) {
             throw new Exception(sprintf('Region "%s" is not configured.', $regionKey));
