@@ -1,23 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ListController!{% endblock %}
+{% block title %}{{ region.name }} - OpenStreetMap Welcome Tool{% endblock %}
 
 {% block body %}
 
 <div class="container mx-auto">
 
-    <h1 class="text-5xl">{{ region.name | trans }}</h1>
+    <h1 class="text-5xl py-6">{{ region.name | trans }}</h1>
 
     <table class="table-auto">
         <thead>
             <tr>
-                <th class="border"></th>
-                <th class="border">{{ 'Username' | trans }}</th>
-                <th class="border">{{ 'Account created' | trans }}</th>
-                <th class="border">{{ 'Changesets' | trans }}</th>
-                <th class="border">{{ 'First changeset' | trans }}</th>
-                <th class="border">{{ 'Editor' | trans }}</th>
-                <th class="border">{{ 'Locale' | trans }}</th>
+                <th class="border p-4"></th>
+                <th class="border p-4">{{ 'Username' | trans }}</th>
+                <th class="border p-4">{{ 'Account created' | trans }}</th>
+                <th class="border p-4">{{ 'Changesets' | trans }}</th>
+                <th class="border p-4">{{ 'First changeset' | trans }}</th>
+                <th class="border p-4">{{ 'Editor' | trans }}</th>
+                <th class="border p-4">{{ 'Locale' | trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -25,29 +25,29 @@
             <tr>
                 <td class="border">
                     {% if mapper.image is not null %}
-                    <img class="h-14" src="{{ mapper.image }}" alt="{{ mapper.displayName }}">
+                    <img class="h-14 w-14" src="{{ mapper.image }}" alt="{{ mapper.displayName }}">
                     {% else %}
-                    <img class="h-14" src="{{ asset('build/images/avatar_large.png') }}" alt="Default profile image">
+                    <img class="h-14 w-14" src="{{ asset('build/images/avatar_large.png') }}" alt="Default profile image">
                     {% endif %}
                 </td>
-                <td class="border">
+                <td class="border p-4">
                     <a href="https://openstreetmap.org/user/{{ mapper.displayName }}" target="_blank">
                         {{ mapper.displayName }}
                     </a>
                 </td>
-                <td class="border">{{ mapper.accountCreated | format_date('long') }}</td>
-                <td class="border text-right">
+                <td class="border p-4">{{ mapper.accountCreated | format_date('long') }}</td>
+                <td class="border p-4 text-right">
                     <a href="https://openstreetmap.org/user/{{ mapper.displayName }}/history" target="_blank">
                         {{ mapper.changesetsCount }}
                     </a>
                 </td>
-                <td class="border">
+                <td class="border p-4">
                     <a href="https://openstreetmap.org/changeset/{{ mapper.changesets[0].id }}" target="_blank">
                         {{ mapper.changesets.first.createdAt | format_date('long') }}
                     </a>
                 </td>
-                <td class="border">{{ mapper.changesets.first.editor }}</td>
-                <td class="border text-center">{{ mapper.changesets.first.locale }}</td>
+                <td class="border p-4">{{ mapper.changesets.first.editor }}</td>
+                <td class="border p-4 text-center">{{ mapper.changesets.first.locale }}</td>
             </tr>
             {% endfor %}
         </tbody>
