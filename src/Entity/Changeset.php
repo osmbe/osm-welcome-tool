@@ -32,30 +32,20 @@ class Changeset
     private $tags = [];
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $create_count;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $modify_count;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $delete_count;
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $checked;
-
-    /**
      * @ORM\ManyToOne(targetEntity=Mapper::class, inversedBy="changesets")
      * @ORM\JoinColumn(nullable=false)
      */
     private $mapper;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $changes_count;
+
+    /**
+     * @ORM\Column(type="array")
+     */
+    private $extent = [];
 
     public function getId(): ?int
     {
@@ -105,54 +95,6 @@ class Changeset
         return $this;
     }
 
-    public function getCreateCount(): ?int
-    {
-        return $this->create_count;
-    }
-
-    public function setCreateCount(int $create_count): self
-    {
-        $this->create_count = $create_count;
-
-        return $this;
-    }
-
-    public function getModifyCount(): ?int
-    {
-        return $this->modify_count;
-    }
-
-    public function setModifyCount(int $modify_count): self
-    {
-        $this->modify_count = $modify_count;
-
-        return $this;
-    }
-
-    public function getDeleteCount(): ?int
-    {
-        return $this->delete_count;
-    }
-
-    public function setDeleteCount(int $delete_count): self
-    {
-        $this->delete_count = $delete_count;
-
-        return $this;
-    }
-
-    public function getChecked(): ?bool
-    {
-        return $this->checked;
-    }
-
-    public function setChecked(bool $checked): self
-    {
-        $this->checked = $checked;
-
-        return $this;
-    }
-
     public function getMapper(): ?Mapper
     {
         return $this->mapper;
@@ -161,6 +103,30 @@ class Changeset
     public function setMapper(?Mapper $mapper): self
     {
         $this->mapper = $mapper;
+
+        return $this;
+    }
+
+    public function getChangesCount(): ?int
+    {
+        return $this->changes_count;
+    }
+
+    public function setChangesCount(int $changes_count): self
+    {
+        $this->changes_count = $changes_count;
+
+        return $this;
+    }
+
+    public function getExtent(): ?array
+    {
+        return $this->extent;
+    }
+
+    public function setExtent(array $extent): self
+    {
+        $this->extent = $extent;
 
         return $this;
     }

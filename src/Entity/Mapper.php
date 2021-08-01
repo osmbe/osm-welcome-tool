@@ -54,12 +54,6 @@ class Mapper
     private $changesets;
 
     /**
-     * @ORM\OneToOne(targetEntity=Changeset::class, cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $first_changeset;
-
-    /**
      * @ORM\OneToOne(targetEntity=Welcome::class, inversedBy="mapper", cascade={"persist", "remove"})
      */
     private $welcome;
@@ -179,30 +173,6 @@ class Mapper
                 $changeset->setMapper(null);
             }
         }
-
-        return $this;
-    }
-
-    public function getFirstChangeset(): ?Changeset
-    {
-        return $this->first_changeset;
-    }
-
-    public function setFirstChangeset(Changeset $first_changeset): self
-    {
-        $this->first_changeset = $first_changeset;
-
-        return $this;
-    }
-
-    public function getWelcome(): ?Welcome
-    {
-        return $this->welcome;
-    }
-
-    public function setWelcome(?Welcome $welcome): self
-    {
-        $this->welcome = $welcome;
 
         return $this;
     }
