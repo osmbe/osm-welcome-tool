@@ -105,7 +105,7 @@ class NewMapperCommand extends Command
                     $mapper = $this->createMapper($key, $user);
                     $changeset = $this->createChangeset($mapper, $changeset);
 
-                    if (is_null($date) || (!is_null($date) && $date === $changeset->getCreatedAt()->format('Y-m-d'))) {
+                    if (is_null($date) || (!is_null($date) && $date <= $changeset->getCreatedAt()->format('Y-m-d'))) {
                         $io->success(sprintf('%s %s', $mapper->getDisplayName(), $changeset->getCreatedAt()->format('c')));
 
                         $this->entityManager->persist($mapper);
