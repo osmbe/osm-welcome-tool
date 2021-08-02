@@ -11,6 +11,11 @@ framework:
                 headers:
                     Accept: 'application/json'
                     Authorization: '%osmcha.api.key%'
+            osm.client:
+                base_uri: '%osm.api.url%'
+                headers:
+                    Accept: 'application/json'
+                    'User-Agent': '%app.userAgent%'
 
     # Enables session support. Note that the session will ONLY be started if you read or write from it.
     # Remove or comment this section to explicitly disable session support.

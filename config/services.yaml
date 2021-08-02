@@ -29,10 +29,6 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-    App\Service\OpenStreetMapAPI:
-        arguments:
-            $url: '%osm.api.url%'
-            $userAgent: '%app.userAgent%'
     App\Service\RegionsProvider:
         arguments:
             $projectDirectory: "%kernel.project_dir%"

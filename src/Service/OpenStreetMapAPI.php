@@ -8,23 +8,14 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 class OpenStreetMapAPI
 {
     public function __construct(
-        private HttpClientInterface $client,
-        private string $url,
-        private string $userAgent
+        private HttpClientInterface $osmClient
     ) {}
 
     public function getUsers(array $ids): ResponseInterface
     {
-        $response = $this->client->request(
+        $response = $this->osmClient->request(
             'GET',
-            sprintf('users.json?%s', http_build_query(['users' => implode(',', $ids)])),
-            [
-                'base_uri' => $this->url,
-                'headers' => [
-                    'Accept' => 'application/json',
-                    'User-Agent' => $this->userAgent
-                ],
-            ]
+            sprintf('users.json?%s', http_build_query(['users' => implode(',', $ids)]))
         );
 
         return $response;
@@ -32,16 +23,9 @@ class OpenStreetMapAPI
 
     public function getChangesetsByUser(int $id): ResponseInterface
     {
-        $response = $this->client->request(
+        $response = $this->osmClient->request(
             'GET',
             sprintf('changesets.xml?%s', http_build_query(['user' => $id])),
-            [
-                'base_uri' => $this->url,
-                'headers' => [
-                    // 'Accept' => 'application/json',
-                    'User-Agent' => $this->userAgent
-                ],
-            ]
         );
 
         return $response;
