@@ -5,6 +5,9 @@ framework:
     http_method_override: false
 
     http_client:
+        default_options:
+            retry_failed:
+                enabled: true
         scoped_clients:
             osmcha.client:
                 base_uri: '%osmcha.api.url%'
