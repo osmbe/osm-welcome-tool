@@ -45,6 +45,11 @@
                     <a href="https://openstreetmap.org/changeset/{{ mapper.changesets[0].id }}" target="_blank">
                         {{ mapper.changesets.first.createdAt | format_date('long') }}
                     </a>
+                    <div>
+                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://osmcha.org/changesets/{{ mapper.changesets[0].id }}">osmcha</a>
+                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://overpass-api.de/achavi/?changeset={{ mapper.changesets[0].id }}&relations=true">achavi</a>
+                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://osmhv.openstreetmap.de/changeset.jsp?id={{ mapper.changesets[0].id }}">osmhv</a>
+                    </div>
                 </td>
                 <td class="border p-4">{{ mapper.changesets.first.editor }}</td>
                 <td class="border p-4 text-center">{{ mapper.changesets.first.locale }}</td>
