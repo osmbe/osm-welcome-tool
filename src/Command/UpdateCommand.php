@@ -49,14 +49,28 @@ class UpdateCommand extends Command
 
             $lastUpdate = $this->cache->getItem($cacheKey);
             if ($input->getOption('force') === true || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
-                $date = (new DateTime())->sub(new DateInterval('P1D'))->format('Y-m-d');
+                // If cache is not set, get new mappers from the last 5 days
+                if (!$lastUpdate->isHit()) {
+                    $date = (new DateTime())->sub(new DateInterval('P5D'))->format('Y-m-d');
+                    $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
+                }
+                // If last update was today and process is forced, get new mappers from yesterday
+                else if ($input->getOption('force') === true && $lastUpdate->get() === date('Y-m-d')) {
+                    $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
+                    $io->note(sprintf('Get new mappers from %s (forced).', $date));
+                }
+                // Get new mappers from the last update date
+                else {
+                    $date = (new DateTime($lastUpdate->get()))->format('Y-m-d');
+                    $io->note(sprintf('Get new mappers from %s.', $date));
+                }
 
                 $this->process($key, $date, $output);
 
                 $lastUpdate->set(date('Y-m-d'));
                 $this->cache->save($lastUpdate);
             } else {
-                $io->info('Skip, already processed.');
+                $io->note('Skip, already processed.');
             }
         }
 
