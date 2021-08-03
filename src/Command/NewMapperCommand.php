@@ -75,16 +75,23 @@ class NewMapperCommand extends Command
         try {
             /** @var int[] */
             $usersId = [];
+            /** @var int[] */
+            $changesetsId = [];
 
             $changesetsResponse = $this->osmcha->getAreaOfInterestChangesets($region['osmcha.id']);
 
             $io->text(sprintf('%s %s', $changesetsResponse->getInfo('http_method'), $changesetsResponse->getInfo('url')));
 
             $changesetsData = $changesetsResponse->toArray();
+            // var_dump($changesetsData);
 
             foreach ($changesetsData['features'] as $feature) {
+                $id = $feature['id'];
                 $uid = $feature['properties']['uid'];
 
+                if (!in_array($id, $changesetsId, true)) {
+                    $changesetsId[] = $id;
+                }
                 if (!in_array($uid, $usersId, true)) {
                     $usersId[] = $uid;
                 }
@@ -105,7 +112,7 @@ class NewMapperCommand extends Command
                     $mapper = $this->createMapper($key, $user);
                     $changeset = $this->createChangeset($mapper, $changeset);
 
-                    if (is_null($date) || (!is_null($date) && $date <= $changeset->getCreatedAt()->format('Y-m-d'))) {
+                    if (in_array($changeset->getId(), $changesetsId, true) && (is_null($date) || (!is_null($date) && $date <= $changeset->getCreatedAt()->format('Y-m-d')))) {
                         $io->success(sprintf('%s %s', $mapper->getDisplayName(), $changeset->getCreatedAt()->format('c')));
 
                         $this->entityManager->persist($mapper);
