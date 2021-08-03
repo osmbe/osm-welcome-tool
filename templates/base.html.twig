@@ -8,7 +8,11 @@
         {% endblock %}
     </head>
     <body>
+        {{ include('app/header.html.twig') }}
+
+        <div class="py-5">
         {% block body %}{% endblock %}
+        </div>
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
