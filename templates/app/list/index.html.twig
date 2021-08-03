@@ -6,59 +6,10 @@
 
 <div class="container mx-auto">
 
-    <h1 class="text-5xl py-6">{{ region.name | trans }}</h1>
+    {{ include('app/list/header.html.twig') }}
 
-    <table class="table-auto">
-        <thead>
-            <tr>
-                <th class="border p-4"></th>
-                <th class="border p-4">{{ 'Username' | trans }}</th>
-                <th class="border p-4">{{ 'Account created' | trans }}</th>
-                <th class="border p-4">{{ 'Changesets' | trans }}</th>
-                <th class="border p-4">{{ 'First changeset' | trans }}</th>
-                <th class="border p-4">{{ 'Editor' | trans }}</th>
-                <th class="border p-4">{{ 'Locale' | trans }}</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for mapper in mappers %}
-            <tr>
-                <td class="border">
-                    {% if mapper.image is not null %}
-                    <img class="h-14 w-14" src="{{ mapper.image }}" alt="{{ mapper.displayName }}">
-                    {% else %}
-                    <img class="h-14 w-14" src="{{ asset('build/images/avatar_large.png') }}" alt="Default profile image">
-                    {% endif %}
-                </td>
-                <td class="border p-4">
-                    <a href="https://openstreetmap.org/user/{{ mapper.displayName }}" target="_blank">
-                        {{ mapper.displayName }}
-                    </a>
-                </td>
-                <td class="border p-4">{{ mapper.accountCreated | format_date('long') }}</td>
-                <td class="border p-4 text-right">
-                    <a href="https://openstreetmap.org/user/{{ mapper.displayName }}/history" target="_blank">
-                        {{ mapper.changesetsCount }}
-                    </a>
-                </td>
-                <td class="border p-4">
-                    <a href="https://openstreetmap.org/changeset/{{ mapper.changesets[0].id }}" target="_blank">
-                        {{ mapper.changesets.first.createdAt | format_date('long') }}
-                    </a>
-                    <div>
-                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://osmcha.org/changesets/{{ mapper.changesets[0].id }}">osmcha</a>
-                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://overpass-api.de/achavi/?changeset={{ mapper.changesets[0].id }}&relations=true">achavi</a>
-                        <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank" href="https://osmhv.openstreetmap.de/changeset.jsp?id={{ mapper.changesets[0].id }}">osmhv</a>
-                    </div>
-                </td>
-                <td class="border p-4">{{ mapper.changesets.first.editor }}</td>
-                <td class="border p-4 text-center">{{ mapper.changesets.first.locale }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {{ include('app/list/table.html.twig') }}
 
 </div>
-
 
 {% endblock %}

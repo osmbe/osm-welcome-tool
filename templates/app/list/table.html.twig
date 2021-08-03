@@ -1,0 +1,78 @@
+<div class="flex flex-col">
+    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'Username' | trans }}
+                            </th>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'Account created' | trans }}
+                            </th>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'First changeset' | trans }}
+                            </th>
+                            <th scope="col"
+                                class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'Changesets' | trans }}
+                            </th>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'Editor' | trans }}
+                            </th>
+                            <th scope="col"
+                                class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {{ 'Locale' | trans }}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for mapper in mappers %}
+
+                        <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }}">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                {{ include('app/list/avatar.html.twig', { mapper: mapper }, with_context = false) }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ mapper.accountCreated | format_date('long') }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <a class="text-indigo-600 hover:text-indigo-900" target="_blank"
+                                    href="https://openstreetmap.org/changeset/{{ mapper.changesets[0].id }}">
+                                    {{ mapper.changesets.first.createdAt | format_date('long') }}
+                                </a>
+                                <!--
+                                <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank"
+                                    href="https://osmcha.org/changesets/{{ mapper.changesets[0].id }}">osmcha</a>
+                                <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank"
+                                    href="https://overpass-api.de/achavi/?changeset={{ mapper.changesets[0].id }}&relations=true">achavi</a>
+                                <a class="text-xs rounded-full px-2 py-1 bg-blue-400" target="_blank"
+                                    href="https://osmhv.openstreetmap.de/changeset.jsp?id={{ mapper.changesets[0].id }}">osmhv</a>
+                                -->
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm text-gray-500">
+                                <a class="text-indigo-600 hover:text-indigo-900" target="_blank"
+                                    href="https://openstreetmap.org/user/{{ mapper.displayName }}/history">
+                                    {{ mapper.changesetsCount }}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ mapper.changesets.first.editor }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                                {{ mapper.changesets.first.locale }}
+                            </td>
+                        </tr>
+
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
