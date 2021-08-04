@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% set route_name = app.request.attributes.get('_route') %}
+
 {% block body %}
 
 <div class="relative min-h-screen bg-gray-100">
@@ -7,6 +9,8 @@
     {{ include('app/nav.html.twig') }}
 
     <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+
+        {{ route_name != 'app_home' ? include('app/breadcrumb.html.twig') }}
 
         {% block content %}{% endblock %}
 
