@@ -65,7 +65,7 @@
                                 {{ mapper.changesets.first.editor }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                                {{ mapper.changesets.first.locale }}
+                                {{ mapper.changesets.first.locale | replace({'-': '_'}) | locale_name }}
                             </td>
                         </tr>
 
