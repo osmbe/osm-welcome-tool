@@ -1,19 +1,15 @@
-{% extends 'base.html.twig' %}
+{% extends 'app/layout.html.twig' %}
 
 {% block title %}{{ region.name }} - {{ app.title }}{% endblock %}
 
-{% block body %}
+{% block content %}
 
-<div class="container mx-auto">
+{{ include('app/list/header.html.twig') }}
 
-    {{ include('app/list/header.html.twig') }}
-
-    <main class="pt-5">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            {{ include('app/list/table.html.twig') }}
-        </div>
-    </main>
-
-</div>
+<main class="pt-5">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        {{ include('app/list/table.html.twig') }}
+    </div>
+</main>
 
 {% endblock %}
