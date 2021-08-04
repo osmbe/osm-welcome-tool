@@ -1,0 +1,18 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block title %}{{ welcome.title }}{% endblock %}
+
+{% block content %}
+
+<ul>
+  {% for key, region in regions %}
+  <li>
+    <a href="{{ path('app_list', {regionKey: key}) }}">
+      {{ region.flag }}
+      {{ region.name | trans }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
