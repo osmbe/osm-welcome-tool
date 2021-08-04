@@ -24,10 +24,10 @@
                         {{ 'Home' | trans }}
                     </a>
                     {% if region is defined %}
-                    <a href="{{ path('app_list', {'regionKey': 'test'}) }}"
+                    <a href="{{ path('app_list', {'regionKey': region.key}) }}"
                         class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium {{ html_classes({'border-indigo-500 text-gray-900': route_name == 'app_list', 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700': route_name != 'app_list'}) }}"
                         {{ route_name == 'app_list' ? 'aria-current="page"' }}>
-                        {{ 'Mappers' | trans }}
+                        {{ 'Listing' | trans }}
                     </a>
                     {% endif %}
                 </div>
