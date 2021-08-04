@@ -22,7 +22,7 @@
                                 {{ 'Changesets' | trans }}
                             </th>
                             <th scope="col"
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 {{ 'Editor' | trans }}
                             </th>
                             <th scope="col"
@@ -61,8 +61,8 @@
                                     {{ mapper.changesetsCount }}
                                 </a>
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ mapper.changesets.first.editor }}
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                                {{ mapper.changesets.first.editor | editor }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                                 {{ mapper.changesets.first.locale | replace({'-': '_'}) | locale_name }}
