@@ -1,0 +1,24 @@
+<section class="bg-white px-4 py-5 shadow sm:rounded-lg sm:px-6">
+    <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-nowrap">
+        <div class="ml-4 mt-2">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                {{ 'Changesets' | trans }}
+                <span
+                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                    {{ changesets | length }}
+                </span>
+            </h3>
+        </div>
+        <div class="ml-4 mt-2 flex-shrink-0">
+            <a class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                target="_blank" href="https://openstreetmap.org/user/{{ mapper.displayName }}/history">
+                {{ 'History' | trans }}
+            </a>
+        </div>
+    </div>
+    <ul class="mt-6 divide-y divide-gray-200">
+        {% for changeset in changesets %}
+        {{ include('app/mapper/changeset.html.twig', { changeset }, with_context = false) }}
+        {% endfor %}
+    </ul>
+</section>

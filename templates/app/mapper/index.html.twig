@@ -1,0 +1,20 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block title %}{{ mapper.displayName }} - {{ welcome.title }}{% endblock %}
+
+{% block content %}
+
+{{ include('app/mapper/header.html.twig', { mapper }, with_context = false) }}
+
+<div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+    <div class="space-y-6 lg:col-start-1 lg:col-span-2">
+        {{ include('app/mapper/form.html.twig') }}
+        {{ include('app/mapper/notes.html.twig') }}
+    </div>
+    <div class="space-y-6 lg:col-start-3 lg:col-span-1">
+        {{ include('app/mapper/changesets.html.twig', { mapper, changesets }, with_context = false) }}
+        {{ include('app/mapper/timeline.html.twig') }}
+    </div>
+</div>
+
+{% endblock %}
