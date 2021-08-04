@@ -1,13 +1,16 @@
 regions:
   belgium:
     name: Belgium
+    flag: 🇧🇪
     locales: fr|nl|de
     osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
   italy:
     name: Italy
+    flag: 🇮🇹
     locales: it
     osmcha.id: ac2598cc-9b66-432e-b195-9b93e21c5d26
   washington:
     name: Washington State
+    flag: 🇺🇸
     locales: en
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
