@@ -15,7 +15,7 @@ class ListController extends AbstractController
         private RegionsProvider $provider,
     ) {}
 
-    #[Route('/list/{regionKey}', name: 'app_list')]
+    #[Route('/{regionKey}/list', name: 'app_list')]
     public function index(string $regionKey): Response
     {
         $region = $this->provider->getRegion($regionKey);
