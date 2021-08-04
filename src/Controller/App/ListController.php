@@ -20,10 +20,6 @@ class ListController extends AbstractController
     {
         $region = $this->provider->getRegion($regionKey);
 
-        if (is_null($region)) {
-            throw new Exception(sprintf('Region "%s" is not configured.', $regionKey));
-        }
-
         /** @var Mapper[] */
         $mappers = $this->getDoctrine()
             ->getRepository(Mapper::class)
