@@ -1,39 +1,35 @@
+{% set route_name = app.request.attributes.get('_route') %}
+
 <nav class="bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
-                    {% if region %}
+                    {% if region is defined %}
                     <div class="text-2xl font-bold text-gray-900">
                         {{ region.flag }}
                         {{ region.name | trans }}
+                    </div>
+                    {% else %}
+                    <div class="text-2xl font-bold text-gray-900">
+                        {{ welcome.title }}
                     </div>
                     {% endif %}
                 </div>
                 <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                     <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                    <a href="#"
-                        class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                        aria-current="page">
+                    <a href="{{ path('app_home') }}"
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium {{ html_classes({'border-indigo-500 text-gray-900': route_name == 'app_home', 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700': route_name != 'app_home'}) }}"
+                        {{ route_name == 'app_home' ? 'aria-current="page"' }}>
+                        {{ 'Home' | trans }}
+                    </a>
+                    {% if region is defined %}
+                    <a href="{{ path('app_list', {'regionKey': 'test'}) }}"
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium {{ html_classes({'border-indigo-500 text-gray-900': route_name == 'app_list', 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700': route_name != 'app_list'}) }}"
+                        {{ route_name == 'app_list' ? 'aria-current="page"' }}>
                         {{ 'Mappers' | trans }}
                     </a>
-
-                    <!--
-                    <a href="#"
-                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Team
-                    </a>
-
-                    <a href="#"
-                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Projects
-                    </a>
-
-                    <a href="#"
-                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Calendar
-                    </a>
-                    -->
+                    {% endif %}
                 </div>
             </div>
             <div class="hidden sm:ml-6 sm:flex sm:items-center">
