@@ -2,15 +2,11 @@
 
 namespace App\Command;
 
-use App\Entity\Changeset;
-use App\Entity\Mapper;
-use App\Repository\ChangesetRepository;
-use App\Repository\MapperRepository;
+use App\Service\ChangesetProvider;
+use App\Service\MapperProvider;
 use App\Service\OpenStreetMapAPI;
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
-use DateTime;
-use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use ErrorException;
 use Exception;
@@ -35,7 +31,9 @@ class NewMapperCommand extends Command
     public function __construct(
         private ValidatorInterface $validator,
         private EntityManagerInterface $entityManager,
-        private RegionsProvider $provider,
+        private RegionsProvider $regionsProvider,
+        private ChangesetProvider $changesetProvider,
+        private MapperProvider $mapperProvider,
         private OSMChaAPI $osmcha,
         private OpenStreetMapAPI $osm
     ) {
@@ -64,7 +62,7 @@ class NewMapperCommand extends Command
 
         $key = $input->getArgument('region');
         $date = $input->getOption('date');
-        $region = $this->provider->getRegion($key);
+        $region = $this->regionsProvider->getRegion($key);
 
         if (is_null($region)) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
@@ -109,8 +107,11 @@ class NewMapperCommand extends Command
                     $_users = array_filter($users['users'], function ($u) use ($uid) { return intval($u['user']['id']) === intval($uid); });
                     $user = current($_users);
 
-                    $mapper = $this->createMapper($key, $user);
-                    $changeset = $this->createChangeset($mapper, $changeset);
+                    $mapper = $this->mapperProvider->fromOSM($user);
+                    $mapper->setRegion($key);
+
+                    $changeset = $this->changesetProvider->fromOSM($changeset);
+                    $changeset->setMapper($mapper);
 
                     if (in_array($changeset->getId(), $changesetsId, true) && (is_null($date) || (!is_null($date) && $date <= $changeset->getCreatedAt()->format('Y-m-d')))) {
                         $io->success(sprintf('%s %s', $mapper->getDisplayName(), $changeset->getCreatedAt()->format('c')));
@@ -129,58 +130,6 @@ class NewMapperCommand extends Command
 
             return Command::FAILURE;
         }
-    }
-
-    private function createMapper(string $region, array $user): Mapper
-    {
-        /** @var MapperRepository */
-        $mapperRepository = $this->entityManager->getRepository(Mapper::class);
-
-        $mapperEntity = $mapperRepository->find($user['user']['id']);
-        if ($mapperEntity === null) {
-            $mapperEntity = new Mapper();
-            $mapperEntity->setId($user['user']['id']);
-            $mapperEntity->setAccountCreated(new DateTime($user['user']['account_created']));
-            $mapperEntity->setRegion($region);
-            $mapperEntity->setStatus('new');
-        }
-
-        $mapperEntity->setChangesetsCount($user['user']['changesets']['count']);
-        $mapperEntity->setDisplayName($user['user']['display_name']);
-        $mapperEntity->setImage($user['user']['img']['href'] ?? null);
-
-        return $mapperEntity;
-    }
-
-    private function createChangeset(Mapper $mapper, SimpleXMLElement $changeset): Changeset
-    {
-        /** @var ChangesetRepository */
-        $changesetRepository = $this->entityManager->getRepository(Changeset::class);
-
-        $changesetAttr = $changeset->attributes();
-
-        $changesetEntity = $changesetRepository->find((int) $changesetAttr->id);
-        if ($changesetEntity === null) {
-            $extent = [
-                floatval(self::extractTag($changeset->tag, 'min_lon')),
-                floatval(self::extractTag($changeset->tag, 'min_lat')),
-                floatval(self::extractTag($changeset->tag, 'max_lon')),
-                floatval(self::extractTag($changeset->tag, 'max_lat')),
-            ];
-
-            $changesetEntity = new Changeset();
-            $changesetEntity->setId((int) $changesetAttr->id);
-            $changesetEntity->setMapper($mapper);
-            $changesetEntity->setCreatedAt(new DateTimeImmutable((string) $changesetAttr->created_at));
-            $changesetEntity->setComment(self::extractTag($changeset->tag, 'comment') ?? '');
-            $changesetEntity->setEditor(self::extractTag($changeset->tag, 'created_by') ?? '');
-            $changesetEntity->setLocale(self::extractTag($changeset->tag, 'locale'));
-            $changesetEntity->setChangesCount(intval($changesetAttr->changes_count));
-            $changesetEntity->setExtent($extent);
-            $changesetEntity->setTags([]);
-        }
-
-        return $changesetEntity;
     }
 
     private function getFirstChangeset(int $uid, SymfonyStyle $io): SimpleXMLElement | null
@@ -230,26 +179,5 @@ class NewMapperCommand extends Command
 
             return null;
         }
-    }
-
-    private static function extractTag(SimpleXMLElement $XMLTags, string $key): string | null {
-        /** @var SimpleXMLElement[] */
-        $tags = [];
-        foreach ($XMLTags as $XMLTag) {
-            $tags[] = $XMLTag;
-        }
-        $filter = array_filter($tags, function (SimpleXMLElement $tag) use ($key) {
-            $attr = $tag->attributes();
-            return (string) $attr->k === $key;
-        });
-
-        if (count($filter) === 0) {
-            return null;
-        }
-
-        $tag = current($filter);
-        $attr = $tag->attributes();
-
-        return (string) $attr->v;
     }
 }
