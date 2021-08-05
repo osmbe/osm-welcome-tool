@@ -1,13 +1,14 @@
 <li>
     <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
         <div class="truncate">
-            <p class="text-sm font-medium text-indigo-600 truncate">
+            <div class="text-sm font-medium text-indigo-600 truncate">
                 Changeset #{{ changeset.id }}
-            </p>
-            <p class="text-sm font-medium text-gray-500">
-                <time datetime="{{ changeset.createdAt | date('c') }}">{{ changeset.createdAt | format_date('long')
-                    }}</time>
-            </p>
+            </div>
+            <div class="text-sm font-medium text-gray-500">
+                <time datetime="{{ changeset.createdAt | date('c') }}">
+                    {{ changeset.createdAt | format_date('long') }}
+                </time>
+            </div>
         </div>
         <div class="mt-4 flex-shrink-0 sm:mt-0 sm:ml-5">
             <span class="relative z-0 inline-flex shadow-sm rounded-md">
@@ -68,5 +69,8 @@
                 </span>
             </span>
         </div>
+    </div>
+    <div class="mt-1 text-sm text-gray-700">
+        <p>{{ changeset.comment }}</p>
     </div>
 </li>
