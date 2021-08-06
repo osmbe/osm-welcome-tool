@@ -1,5 +1,5 @@
-<li>
-    <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+<li class="py-2">
+    <div class="min-w-0 flex-1 sm:flex sm:items-start sm:justify-between">
         <div class="truncate">
             <div class="text-sm font-medium text-indigo-600 truncate">
                 Changeset #{{ changeset.id }}
@@ -10,15 +10,15 @@
                 </time>
             </div>
         </div>
-        <div class="mt-4 flex-shrink-0 sm:mt-0 sm:ml-5">
+        <div class="sm:ml-5">
             <span class="relative z-0 inline-flex shadow-sm rounded-md">
-                <a class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                <a class="relative flex items-center px-2 py-1 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                     target="_blank" href="https://www.openstreetmap.org/changeset/{{ changeset.id }}">
                     {{ 'View' | trans }}
                 </a>
                 <span class="-ml-px relative block">
                     <button type="button"
-                        class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                        class="relative flex items-center px-1 py-1 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                         id="option-menu-button" aria-expanded="true" aria-haspopup="true">
                         <span class="sr-only">{{ 'Open other tools' | trans }}</span>
                         <!-- Heroicon name: solid/chevron-down -->

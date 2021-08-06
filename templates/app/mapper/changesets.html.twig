@@ -16,9 +16,11 @@
             </a>
         </div>
     </div>
-    <ul class="mt-6 divide-y divide-gray-200">
-        {% for changeset in changesets %}
-        {{ include('app/mapper/changeset.html.twig', { changeset }, with_context = false) }}
-        {% endfor %}
-    </ul>
+    <div class="mt-6 overflow-auto max-h-64">
+        <ul class="divide-y divide-gray-200">
+            {% for changeset in changesets %}
+            {{ include('app/mapper/changeset.html.twig', { changeset }, with_context = false) }}
+            {% endfor %}
+        </ul>
+    </div>
 </section>

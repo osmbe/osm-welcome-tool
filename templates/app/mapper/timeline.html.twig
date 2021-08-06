@@ -56,12 +56,15 @@
                             <div>
                                 <p class="text-sm text-gray-500">
                                     Changeset
-                                    <a href="#" class="font-medium text-gray-900">#{{ changeset.id }}</a>
+                                    <a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/changeset/{{ changeset.id }}">
+                                        #{{ changeset.id }}
+                                    </a>
                                 </p>
                             </div>
                             <div class="text-right text-sm whitespace-nowrap text-gray-500">
-                                <time datetime="{{ changeset.createdAt | date('c') }}">{{ changeset.createdAt |
-                                    format_date('medium') }}</time>
+                                <time datetime="{{ changeset.createdAt | date('c') }}">
+                                    {{ changeset.createdAt | format_date('medium') }}
+                                </time>
                             </div>
                         </div>
                     </div>
