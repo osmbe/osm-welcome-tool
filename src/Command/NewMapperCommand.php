@@ -2,6 +2,8 @@
 
 namespace App\Command;
 
+use App\Entity\Changeset;
+use App\Entity\Mapper;
 use App\Service\ChangesetProvider;
 use App\Service\MapperProvider;
 use App\Service\OpenStreetMapAPI;
@@ -44,11 +46,11 @@ class NewMapperCommand extends Command
     {
         $this
             ->addArgument('region', InputArgument::REQUIRED, 'Region')
-            ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)')
-        ;
+            ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)');
     }
 
-    protected function initialize(InputInterface $input, OutputInterface $output) {
+    protected function initialize(InputInterface $input, OutputInterface $output)
+    {
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
         if ($validate->count() > 0) {
@@ -80,46 +82,64 @@ class NewMapperCommand extends Command
 
             $io->text(sprintf('%s %s', $changesetsResponse->getInfo('http_method'), $changesetsResponse->getInfo('url')));
 
-            $changesetsData = $changesetsResponse->toArray();
-            // var_dump($changesetsData);
+            $changesetsCollection = $changesetsResponse->toArray();
 
-            foreach ($changesetsData['features'] as $feature) {
-                $id = $feature['id'];
-                $uid = $feature['properties']['uid'];
-
-                if (!in_array($id, $changesetsId, true)) {
-                    $changesetsId[] = $id;
-                }
-                if (!in_array($uid, $usersId, true)) {
-                    $usersId[] = $uid;
-                }
-            }
+            $usersId = array_map(function (array $feature): int {
+                return intval($feature['properties']['uid']);
+            }, $changesetsCollection['features']);
+            $changesetsId = array_map(function (array $feature): int {
+                return intval($feature['id']);
+            }, $changesetsCollection['features']);
 
             $getUsersResponse = $this->osm->getUsers($usersId);
 
             $io->text(sprintf('%s %s', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url')));
 
-            $users = $getUsersResponse->toArray();
+            $usersArray = $getUsersResponse->toArray();
 
-            foreach($usersId as $uid) {
-                $changeset = $this->getFirstChangeset($uid, $io);
-                if (!is_null($changeset)) {
-                    $_users = array_filter($users['users'], function ($u) use ($uid) { return intval($u['user']['id']) === intval($uid); });
-                    $user = current($_users);
+            /** @var Mapper[] */
+            $mappers = array_map(function (array $array) use ($key): Mapper {
+                $mapper = $this->mapperProvider->fromOSM($array);
+                $mapper->setRegion($key);
+                return $mapper;
+            }, $usersArray['users']);
 
-                    $mapper = $this->mapperProvider->fromOSM($user);
-                    $mapper->setRegion($key);
+            /** @var Changeset[] */
+            $changesets = array_map(function (array $feature) use ($mappers): Changeset {
+                $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature) {
+                    return $mapper->getId() === intval($feature['properties']['uid']);
+                }));
 
-                    $changeset = $this->changesetProvider->fromOSM($changeset);
-                    $changeset->setMapper($mapper);
+                $changeset = $this->changesetProvider->fromOSMCha($feature);
+                $changeset->setMapper($mapper);
 
-                    if (in_array($changeset->getId(), $changesetsId, true) && (is_null($date) || (!is_null($date) && $date <= $changeset->getCreatedAt()->format('Y-m-d')))) {
-                        $io->success(sprintf('%s %s', $mapper->getDisplayName(), $changeset->getCreatedAt()->format('c')));
+                return $changeset;
+            }, $changesetsCollection['features']);
 
-                        $this->entityManager->persist($mapper);
+            foreach ($mappers as $mapper) {
+                $firstChangeset = $this->getFirstChangeset($mapper, $io);
+
+                /** @todo Add first changeset check date ?? */
+                if (in_array($firstChangeset->getId(), $changesetsId, true) === true) {
+                    $this->entityManager->persist($mapper);
+
+                    $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper) {
+                        return $changeset->getMapper() === $mapper;
+                    });
+                    foreach ($mapperChangesets as $changeset) {
                         $this->entityManager->persist($changeset);
-                        $this->entityManager->flush();
                     }
+
+                    $this->entityManager->flush();
+
+                    $io->success(
+                        sprintf(
+                            '[%s] %s : %s changesets',
+                            $firstChangeset->getCreatedAt()->format('r'),
+                            $mapper->getDisplayName(),
+                            count($mapperChangesets)
+                        )
+                    );
                 }
             }
 
@@ -132,52 +152,26 @@ class NewMapperCommand extends Command
         }
     }
 
-    private function getFirstChangeset(int $uid, SymfonyStyle $io): SimpleXMLElement | null
+    private function getFirstChangeset(Mapper $mapper, SymfonyStyle $io): Changeset
     {
-        try {
-            // $response = $this->osmcha->getChangesets([
-            //     'uids' => $uid,
-            //     'order_by' => 'date',
-            //     'page_size' => 1,
-            // ]);
+        $response = $this->osm->getChangesetsByUser($mapper->getId());
 
-            // $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
-            // $data = $response->toArray();
+        $xml = new SimpleXMLElement($response->getContent());
 
-            // return $data['features'][0];
-
-            $response = $this->osm->getChangesetsByUser($uid);
-
-            $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
-
-            $xml = new SimpleXMLElement($response->getContent());
-
-            /** @var SimpleXMLElement[] */
-            $changesets = [];
-            foreach ($xml->changeset as $changeset) {
-                $changesets[] = $changeset;
-            }
-
-            /** @var int[] */
-            $createdAt = [];
-            foreach ($changesets as $changeset) {
-                $attr = $changeset->attributes();
-                $createdAt[] = strtotime($attr['created_at']);
-            }
-
-            array_multisort($createdAt, SORT_ASC, SORT_NUMERIC, $changesets);
-
-            // if ($uid === 12491507) {
-            //     var_dump($changesets[0]);
-            //     var_dump(current($changesets));
-            // }
-
-            return $changesets[0];
-        } catch (Exception $e) {
-            $io->warning($e->getMessage());
-
-            return null;
+        /** @var SimpleXMLElement[] */
+        $changesetsElement = [];
+        foreach ($xml->changeset as $changeset) {
+            $changesetsElement[] = $changeset;
         }
+        /** @var Changeset[] */
+        $changesets = array_map(function (SimpleXMLElement $element) { return $this->changesetProvider->fromOSM($element); }, $changesetsElement);
+
+        $createdAt = array_map(function (Changeset $changeset) { return $changeset->getCreatedAt()->getTimestamp(); }, $changesets);
+
+        array_multisort($createdAt, SORT_ASC, SORT_NUMERIC, $changesets);
+
+        return $changesets[0];
     }
 }
