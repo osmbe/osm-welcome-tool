@@ -14,9 +14,26 @@ class ChangesetProvider
     ) {
     }
 
-    public function fromOSMCha(array $array): Changeset
+    public function fromOSMCha(array $feature): Changeset
     {
-        return new Changeset();
+        $changeset = $this->repository->find($feature['id']);
+        if ($changeset === null) {
+            /** @todo Check https://github.com/brick/geo/blob/master/src/Polygon.php#L199-L208 */
+            $extent = [];
+
+            $changeset = new Changeset();
+            $changeset->setId($feature['id']);
+            $changeset->setCreatedAt(new DateTimeImmutable($feature['properties']['date']));
+            $changeset->setComment($feature['properties']['comment']);
+            $changeset->setEditor($feature['properties']['editor']);
+            $changeset->setLocale($feature['properties']['metadata']['locale'] ?? null);
+            $changeset->setChangesCount($feature['properties']['create'] + $feature['properties']['modify'] + $feature['properties']['create']);
+            $changeset->setExtent($extent);
+            $changeset->setTags($feature['properties']['tags']);
+            // $changeset->setMapper($mapper);
+        }
+
+        return $changeset;
     }
 
     public function fromOSM(SimpleXMLElement $element): Changeset
