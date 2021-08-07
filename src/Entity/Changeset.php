@@ -27,9 +27,9 @@ class Changeset
     private $comment;
 
     /**
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="array", nullable=true)
      */
-    private $tags = [];
+    private $reasons = [];
 
     /**
      * @ORM\ManyToOne(targetEntity=Mapper::class, inversedBy="changesets")
@@ -56,6 +56,36 @@ class Changeset
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $locale;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $create_count;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $modify_count;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $delete_count;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $harmful;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $suspect;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $checked;
 
     public function getId(): ?int
     {
@@ -93,14 +123,14 @@ class Changeset
         return $this;
     }
 
-    public function getTags(): ?array
+    public function getReasons(): ?array
     {
-        return $this->tags;
+        return $this->reasons;
     }
 
-    public function setTags(array $tags): self
+    public function setReasons(?array $reasons): self
     {
-        $this->tags = $tags;
+        $this->reasons = $reasons;
 
         return $this;
     }
@@ -161,6 +191,77 @@ class Changeset
     public function setLocale(?string $locale): self
     {
         $this->locale = $locale;
+
+        return $this;
+    }
+
+    public function getCreateCount(): ?int
+    {
+        return $this->create_count;
+    }
+
+    public function setCreateCount(?int $create_count): self
+    {
+        $this->create_count = $create_count;
+
+        return $this;
+    }
+    public function getModifyCount(): ?int
+    {
+        return $this->modify_count;
+    }
+
+    public function setModifyCount(?int $modify_count): self
+    {
+        $this->modify_count = $modify_count;
+
+        return $this;
+    }
+
+    public function getDeleteCount(): ?int
+    {
+        return $this->delete_count;
+    }
+
+    public function setDeleteCount(?int $delete_count): self
+    {
+        $this->delete_count = $delete_count;
+
+        return $this;
+    }
+
+    public function getHarmful(): ?bool
+    {
+        return $this->harmful;
+    }
+
+    public function setHarmful(?bool $harmful): self
+    {
+        $this->harmful = $harmful;
+
+        return $this;
+    }
+
+    public function getSuspect(): ?bool
+    {
+        return $this->suspect;
+    }
+
+    public function setSuspect(?bool $suspect): self
+    {
+        $this->suspect = $suspect;
+
+        return $this;
+    }
+
+    public function getChecked(): ?bool
+    {
+        return $this->checked;
+    }
+
+    public function setChecked(?bool $checked): self
+    {
+        $this->checked = $checked;
 
         return $this;
     }
