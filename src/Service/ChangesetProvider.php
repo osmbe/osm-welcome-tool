@@ -28,10 +28,17 @@ class ChangesetProvider
             $changeset->setEditor($feature['properties']['editor']);
             $changeset->setLocale($feature['properties']['metadata']['locale'] ?? null);
             $changeset->setChangesCount($feature['properties']['create'] + $feature['properties']['modify'] + $feature['properties']['create']);
+            $changeset->setCreateCount($feature['properties']['create']);
+            $changeset->setModifyCount($feature['properties']['modify']);
+            $changeset->setDeleteCount($feature['properties']['create']);
             $changeset->setExtent($extent);
-            $changeset->setTags($feature['properties']['tags']);
             // $changeset->setMapper($mapper);
         }
+
+        $changeset->setReasons(array_map(function ($reason): string { return $reason['name']; }, $feature['properties']['reasons']));
+        $changeset->setSuspect($feature['properties']['is_suspect']);
+        $changeset->setHarmful($feature['properties']['harmful']);
+        $changeset->setChecked($feature['properties']['checked']);
 
         return $changeset;
     }
@@ -57,7 +64,6 @@ class ChangesetProvider
             $changeset->setLocale(self::extractTag($element->tag, 'locale'));
             $changeset->setChangesCount(intval($attributes->changes_count));
             $changeset->setExtent($extent);
-            $changeset->setTags([]);
             // $changeset->setMapper($mapper);
         }
 
