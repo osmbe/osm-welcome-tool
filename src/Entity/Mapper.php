@@ -49,18 +49,19 @@ class Mapper
     private $changesets;
 
     /**
-     * @ORM\OneToOne(targetEntity=Welcome::class, inversedBy="mapper", cascade={"persist", "remove"})
-     */
-    private $welcome;
-
-    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $image;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Note::class, mappedBy="mapper", orphanRemoval=true)
+     */
+    private $notes;
+
     public function __construct()
     {
         $this->changesets = new ArrayCollection();
+        $this->notes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -173,6 +174,36 @@ class Mapper
     public function setImage(?string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Note[]
+     */
+    public function getNotes(): Collection
+    {
+        return $this->notes;
+    }
+
+    public function addNote(Note $note): self
+    {
+        if (!$this->notes->contains($note)) {
+            $this->notes[] = $note;
+            $note->setMapper($this);
+        }
+
+        return $this;
+    }
+
+    public function removeNote(Note $note): self
+    {
+        if ($this->notes->removeElement($note)) {
+            // set the owning side to null (unless already changed)
+            if ($note->getMapper() === $this) {
+                $note->setMapper(null);
+            }
+        }
 
         return $this;
     }
