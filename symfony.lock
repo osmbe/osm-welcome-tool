@@ -2,6 +2,9 @@
     "composer/package-versions-deprecated": {
         "version": "1.11.99.2"
     },
+    "dflydev/dot-access-data": {
+        "version": "v3.0.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -91,11 +94,23 @@
     "laminas/laminas-code": {
         "version": "4.4.2"
     },
+    "league/commonmark": {
+        "version": "2.0.1"
+    },
+    "league/config": {
+        "version": "v1.1.0"
+    },
     "monolog/monolog": {
         "version": "2.3.1"
     },
     "myclabs/deep-copy": {
         "version": "1.10.2"
+    },
+    "nette/schema": {
+        "version": "v1.2.1"
+    },
+    "nette/utils": {
+        "version": "v3.2.2"
     },
     "nikic/php-parser": {
         "version": "v4.11.0"
@@ -631,6 +646,9 @@
     },
     "twig/intl-extra": {
         "version": "v3.3.0"
+    },
+    "twig/markdown-extra": {
+        "version": "v3.3.1"
     },
     "twig/twig": {
         "version": "v3.3.2"
