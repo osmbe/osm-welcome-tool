@@ -134,7 +134,7 @@ class NewMapperCommand extends Command
 
                     $io->success(
                         sprintf(
-                            '[%s] %s : %s changesets',
+                            '[%s] %s : %s changeset(s)',
                             $firstChangeset->getCreatedAt()->format('r'),
                             $mapper->getDisplayName(),
                             count($mapperChangesets)
