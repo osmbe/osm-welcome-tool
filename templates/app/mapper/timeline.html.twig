@@ -36,7 +36,7 @@
             </li>
 
 
-            {% for changeset in changesets %}
+            {% for changeset in changesets | sort((a, b) => a.createdAt <=> b.createdAt) | reverse %}
             <li>
                 <div class="relative pb-8">
                     <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>

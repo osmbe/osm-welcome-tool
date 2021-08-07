@@ -18,7 +18,7 @@
     </div>
     <div class="mt-6 overflow-auto max-h-64">
         <ul class="divide-y divide-gray-200">
-            {% for changeset in changesets %}
+            {% for changeset in changesets | sort((a, b) => a.createdAt <=> b.createdAt) %}
             {{ include('app/mapper/changeset.html.twig', { changeset }, with_context = false) }}
             {% endfor %}
         </ul>
