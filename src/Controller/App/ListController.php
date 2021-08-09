@@ -31,7 +31,7 @@ class ListController extends AbstractController
             ->getRepository(Mapper::class)
             ->findBy(['region' => $regionKey]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper) { return $mapper->getChangesets()->first()->getCreatedAt(); }, $mappers);
+        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper) { return $mapper->getFirstChangeset()->getCreatedAt(); }, $mappers);
         array_multisort($firstChangetsetCreatedAt, SORT_DESC, $mappers);
 
         $month = (new DateTime())->setDate($year, $month, 1);
@@ -40,7 +40,7 @@ class ListController extends AbstractController
             $mappers,
             function (Mapper $mapper) use ($month) {
                 /** @var DateTimeImmutable */
-                $createdAt = $mapper->getChangesets()->first()->getCreatedAt();
+                $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
                 return $createdAt->format('Ym') === $month->format('Ym');
             }
         );

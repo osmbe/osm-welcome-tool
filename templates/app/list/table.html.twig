@@ -31,8 +31,6 @@
         <tbody>
             {% for mapper in mappers %}
 
-            {% set firstChangest = mapper.changesets | sort((a, b) => a.createdAt <=> b.createdAt) | first %}
-
             <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }}">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {{ include('app/list/avatar.html.twig', { region, mapper }, with_context = false) }}
@@ -42,8 +40,8 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                     <a class="text-indigo-600 hover:text-indigo-900" target="_blank"
-                        href="https://openstreetmap.org/changeset/{{ firstChangest.id }}">
-                        {{ firstChangest.createdAt | format_date('long') }}
+                        href="https://openstreetmap.org/changeset/{{ mapper.firstChangeset.id }}">
+                        {{ mapper.firstChangeset.createdAt | format_date('long') }}
                     </a>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm text-gray-500">
@@ -53,10 +51,10 @@
                     </a>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                    {{ mapper.changesets.first.editor | editor }}
+                    {{ mapper.firstChangeset.editor | editor }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                    {{ mapper.changesets.first.locale | replace({'-': '_'}) | locale_name }}
+                    {{ mapper.firstChangeset.locale | replace({'-': '_'}) | locale_name }}
                 </td>
             </tr>
 
