@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\MapperRepository;
+use DateTimeImmutable;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -206,5 +207,20 @@ class Mapper
         }
 
         return $this;
+    }
+
+    public function getFirstChangeset(): Changeset
+    {
+        /** @var Changeset[] */
+        $changesets = $this->getChangesets()->toArray();
+
+        /** @var DateTimeImmutable[] */
+        $createdAt = array_map(function (Changeset $changeset): ?DateTimeImmutable {
+            return $changeset->getCreatedAt();
+        }, $changesets);
+
+        array_multisort($createdAt, SORT_ASC, $changesets);
+
+        return $changesets[0];
     }
 }
