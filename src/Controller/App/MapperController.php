@@ -5,6 +5,7 @@ namespace App\Controller\App;
 use App\Entity\Mapper;
 use App\Entity\Note;
 use App\Service\RegionsProvider;
+use App\Service\TemplatesProvider;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -17,6 +18,7 @@ class MapperController extends AbstractController
 {
     public function __construct(
         private RegionsProvider $provider,
+        private TemplatesProvider $templatesProvider,
     ) {}
 
     #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper')]
@@ -51,11 +53,14 @@ class MapperController extends AbstractController
             return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
         }
 
+        $templates = $this->templatesProvider->getTemplates();
+
         return $this->render('app/mapper/index.html.twig', [
             'region' => $region,
             'mapper' => $mapper,
             'changesets' => $mapper->getChangesets(),
             'formNote' => $formNote->createView(),
+            'templates' => $templates,
         ]);
     }
 }

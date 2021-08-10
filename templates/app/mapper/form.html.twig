@@ -5,8 +5,26 @@
                 {{ 'Send a welcome message' | trans }}
             </h2>
         </div>
+
         <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+            {% set template = include(template_from_string(templates[0].template)) %}
+            <div class="max-h-72 p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor">{{ template }}</div>
+            <div class="flex justify-between pt-4">
+                <button
+                    class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+                    type="button" id="template-copy">
+                    <!-- Heroicon name: outline/clipboard -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    {{ 'Copy text to clipboard' | trans }}
+                </button>
+                <button
+                    class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    type="button" id="template-send">{{ 'Send message' | trans }}</button>
+            </div>
         </div>
     </div>
 </section>
