@@ -7,6 +7,7 @@ use League\CommonMark\Extension\FrontMatter\FrontMatterParser;
 
 class Template
 {
+    private string $name;
     private string $title;
     private string $locale;
     private string $template;
@@ -20,8 +21,22 @@ class Template
 
         $front = $result->getFrontMatter();
 
+        $this->name = $front['name'];
         $this->title = $front['title'];
+
         $this->template = $result->getContent();
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 
     public function setTitle(string $title): self
