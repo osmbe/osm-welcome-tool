@@ -8,14 +8,14 @@ use League\CommonMark\Extension\FrontMatter\FrontMatterParser;
 class Template
 {
     private string $name;
-    private string $title;
-    private string $locale;
     private string $template;
+    private string $title;
 
-    public function __construct(string $locale, string $markdown)
-    {
-        $this->locale = $locale;
-
+    public function __construct(
+        private string $path,
+        private string $locale,
+        string $markdown
+    ) {
         $frontMatterParser = new FrontMatterParser(new SymfonyYamlFrontMatterParser());
         $result = $frontMatterParser->parse($markdown);
 
@@ -73,5 +73,21 @@ class Template
     public function getTemplate(): string
     {
         return $this->template;
+    }
+
+    public function setPath(string $path): self
+    {
+        $this->path = $path;
+
+        return $this;
+    }
+
+    public function getPath(): string
+    {
+        return $this->path;
+    }
+    public function getFilename(): string
+    {
+        return basename($this->path);
     }
 }
