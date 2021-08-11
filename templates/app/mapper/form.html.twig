@@ -1,12 +1,17 @@
 <section aria-labelledby="applicant-information-title">
     <div class="bg-white shadow sm:rounded-lg">
-        <div class="px-4 py-5 sm:px-6">
+        <div class="border-b border-gray-200 px-4 py-5 sm:px-6">
             <h2 id="applicant-information-title" class="text-lg leading-6 font-medium text-gray-900">
                 {{ 'Send a welcome message' | trans }}
             </h2>
         </div>
 
-        <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
+        <form class="px-4 py-5 sm:px-6" id="template-form" autocomplete="off" data-mapper="{{ mapper.displayName }}">
+            <div class="my-2 sm:mt-0 sm:col-span-2">
+                <input type="text" name="title" id="template-title" value="{{ templates[0].title }}"
+                    class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md text-gray-500">
+            </div>
+
             {% set template = include(template_from_string(templates[0].template)) %}
             <div class="max-h-72 p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor">{{ template }}</div>
             <div class="flex justify-between pt-4">
@@ -23,8 +28,8 @@
                 </button>
                 <button
                     class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    type="button" id="template-send">{{ 'Send message' | trans }}</button>
+                    type="submit" id="template-send">{{ 'Send message' | trans }}</button>
             </div>
-        </div>
+        </form>
     </div>
 </section>
