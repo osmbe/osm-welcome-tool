@@ -10,15 +10,24 @@ class TemplatesProvider
 
     public function __construct(private string $projectDirectory)
     {
-        $markdown = file_get_contents(sprintf('%s/templates/messages/belgium/en/default.md', $this->projectDirectory));
+        $glob = glob(sprintf('%s/templates/messages/*/*/*.md', $this->projectDirectory));
 
-        $template = new Template('en', $markdown);
+        foreach ($glob as $path) {
+            if (is_readable($path) === true) {
+                $region = basename(dirname(dirname($path)));
+                $locale = basename(dirname($path));
 
-        $this->templates[] = $template;
+                $markdown = file_get_contents($path);
+
+                $template = new Template($path, $locale, $markdown);
+
+                $this->templates[$region][] = $template;
+            }
+        }
     }
 
-    public function getTemplates(): array
+    public function getTemplates(string $region): array
     {
-        return $this->templates;
+        return $this->templates[$region] ?? [];
     }
 }
