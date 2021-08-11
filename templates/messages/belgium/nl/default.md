@@ -1,5 +1,6 @@
 ---
-title: Default template
+name: Default template
+title: Welkom bij OpenStreetMap
 ---
 
 Dag {{ mapper.displayName }}

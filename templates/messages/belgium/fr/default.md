@@ -1,5 +1,6 @@
 ---
-title: Default template
+name: Default template
+title: Bienvenue sur OpenStreetMap
 ---
 
 Salut {{ mapper.displayName }}
