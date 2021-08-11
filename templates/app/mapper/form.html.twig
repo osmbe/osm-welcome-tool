@@ -6,30 +6,55 @@
             </h2>
         </div>
 
-        <form class="px-4 py-5 sm:px-6" id="template-form" autocomplete="off" data-mapper="{{ mapper.displayName }}">
-            <div class="my-2 sm:mt-0 sm:col-span-2">
-                <input type="text" name="title" id="template-title" value="{{ templates[0].title }}"
-                    class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md text-gray-500">
-            </div>
+        <div class="flex gap-4 p-4">
+            <nav aria-label="Sidebar">
+                <div>
+                    <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                        id="projects-headline">
+                        {{ 'Templates' | trans }}
+                    </h3>
+                    <div class="mt-1 space-y-1" aria-labelledby="projects-headline">
+                        {% for template in templates %}
+                        <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+                        {% set active = template == selectedTemplate %}
+                        <a class="group flex items-center px-3 py-2 text-sm font-medium rounded-md {{ active ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50' }}"
+                            href="{{ path('app_mapper', { regionKey: region.key, id: mapper.id }) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
+                            <span class="truncate">
+                                {{ template.name }} ({{ template.locale | language_name }})
+                            </span>
+                        </a>
 
-            {% set template = include(template_from_string(templates[0].template)) %}
-            <div class="max-h-72 p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor">{{ template }}</div>
-            <div class="flex justify-between pt-4">
-                <button
-                    class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
-                    type="button" id="template-copy">
-                    <!-- Heroicon name: outline/clipboard -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
-                    {{ 'Copy text to clipboard' | trans }}
-                </button>
-                <button
-                    class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    type="submit" id="template-send">{{ 'Send message' | trans }}</button>
-            </div>
-        </form>
+                        {% endfor %}
+                    </div>
+                </div>
+            </nav>
+
+            <form class="w-full" id="template-form" autocomplete="off" data-mapper="{{ mapper.displayName }}">
+                <div class="my-2 sm:mt-0 sm:col-span-2">
+                    <input type="text" name="title" id="template-title" value="{{ selectedTemplate is not null ? selectedTemplate.title }}"
+                        class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md text-gray-500">
+                </div>
+
+                <div class="min-h-72 h-72 w-full p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor language-markdown">
+                    {{- selectedTemplate is not null ? include(template_from_string(selectedTemplate.template)) -}}
+                </div>
+                <div class="flex justify-between pt-4">
+                    <button
+                        class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+                        type="button" id="template-copy">
+                        <!-- Heroicon name: outline/clipboard -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                        {{ 'Copy text to clipboard' | trans }}
+                    </button>
+                    <button
+                        class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        type="submit" id="template-send">{{ 'Send message' | trans }}</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>

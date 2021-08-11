@@ -4,6 +4,7 @@ namespace App\Controller\App;
 
 use App\Entity\Mapper;
 use App\Entity\Note;
+use App\Entity\Template;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use DateTime;
@@ -53,7 +54,35 @@ class MapperController extends AbstractController
             return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
         }
 
-        $templates = $this->templatesProvider->getTemplates();
+        $templates = $this->templatesProvider->getTemplates($regionKey);
+
+        // Get current template based on query
+        $templateLocale = $request->query->getAlpha('locale');
+        $templateFilename = $request->query->get('template');
+        if (!is_null($templateFilename) && $templateLocale !== '') {
+            $filter = array_filter($templates, function (Template $template) use ($templateLocale, $templateFilename) {
+                return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2) && $template->getFilename() === $templateFilename;
+            });
+            if (count($filter) > 0) {
+                $template = current($filter);
+            }
+        }
+        // Get current template based on mapper locale
+        if (!isset($template)) {
+            $locale = $mapper->getFirstChangeset()->getLocale();
+            if (!is_null($locale)) {
+                $filter = array_filter($templates, function (Template $template) use ($locale) {
+                    return substr($template->getLocale(), 0, 2) === substr($locale, 0, 2);
+                });
+                if (count($filter) > 0) {
+                    $template = current($filter);
+                }
+            }
+        }
+        // Talke first template
+        if (!isset($template) && count($templates) > 0) {
+            $template = current($templates);
+        }
 
         return $this->render('app/mapper/index.html.twig', [
             'region' => $region,
@@ -61,6 +90,7 @@ class MapperController extends AbstractController
             'changesets' => $mapper->getChangesets(),
             'formNote' => $formNote->createView(),
             'templates' => $templates,
+            'selectedTemplate' => $template ?? null,
         ]);
     }
 }
