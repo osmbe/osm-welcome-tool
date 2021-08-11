@@ -20,10 +20,13 @@ const element = document.querySelector('.editor');
 if (element !== null) {
   const jar = CodeJar(element as HTMLElement, highlight);
 
-  document.getElementById('template-copy')?.addEventListener('click', async () => {
+  document.getElementById('template-copy')?.addEventListener('click', async (event: MouseEvent) => {
+    const button = (event.target as HTMLButtonElement);
+
     await navigator.clipboard.writeText(jar.toString());
 
-    alert('Copy to clipboard!');
+    button.classList.add('text-green-500');
+    setTimeout(() => { button.classList.remove('text-green-500'); }, 1500);
   });
 
   document.getElementById('template-form')?.addEventListener('submit', (event: Event) => {
