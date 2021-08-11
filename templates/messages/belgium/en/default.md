@@ -1,5 +1,5 @@
 ---
-name: Default template
+name: Default
 title: Welcome to OpenStreetMap
 ---
 

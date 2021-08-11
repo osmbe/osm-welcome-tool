@@ -1,5 +1,5 @@
 ---
-name: Default template
+name: Default
 title: Welkom bij OpenStreetMap
 ---
 
@@ -19,11 +19,3 @@ We helpen je graag al verder op weg:
 * Er is ook een [wekelijkse, wereldwijde nieuwsbrief van de OSM-wereld](http://www.weeklyosm.eu/) waarop je je kan inschrijven. (Er is ook een RSS-feed voor de liefhebbers.)
 
 Happy Mapping!
-
-*We sent this message in Dutch, because we thought that to be your language. If that's wrong, we're sorry! You can reply to this message if you'd like to let us know.*
-
-*We hebben dit bericht in het Nederlands verzonden, omdat we denken dat dat je taal is. Als dat niet klopt, sorry! Je kan antwoorden op dit bericht om het ons te laten weten.*
-
-*Nous avons envoyé ce message en néerlandais, parce que nous pensons que c'est votre langue. Si c'est faux, excusez-nous! Vous pouvez répondre à ce message pour nous en informer, si vous voulez.*
-
-*Wir haben diese Nachricht auf Niederländisch geschickt, weil wir denken, dass dies Ihre Sprache ist. Wenn das falsch ist, tut es und leid! Sie können auf diese Nachricht antworten, wenn Sie es uns mitteilen möchten.*
