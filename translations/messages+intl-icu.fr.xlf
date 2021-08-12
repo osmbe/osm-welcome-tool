@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target>Belgique</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target>Italie</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target>État de Washington</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target>Examen demandé</target>
+      </trans-unit>
+      <trans-unit id="nvrTGpK" resname="No note.">
+        <source>No note.</source>
+        <target>Aucune note.</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target>Ajouter une note</target>
+      </trans-unit>
+      <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
+        <source>Markdown is allowed.</source>
+        <target>Le format Markdown est autorisé.</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target>Ouvrir</target>
+      </trans-unit>
+      <trans-unit id="nGrjZeg" resname="Open other tools">
+        <source>Open other tools</source>
+        <target>Ouvrir avec d'autres outils</target>
+      </trans-unit>
+      <trans-unit id="PzH3t8N" resname="Harmful">
+        <source>Harmful</source>
+        <target>Nuisible</target>
+      </trans-unit>
+      <trans-unit id="Dv2SozW" resname="Checked">
+        <source>Checked</source>
+        <target>Vérifié</target>
+      </trans-unit>
+      <trans-unit id="nc.5jid" resname="Timeline">
+        <source>Timeline</source>
+        <target>Historique</target>
+      </trans-unit>
+      <trans-unit id="9jh5.Wk" resname="Account created">
+        <source>Account created</source>
+        <target>Compte créé</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="6wYsMHV" resname="Send a welcome message">
+        <source>Send a welcome message</source>
+        <target>Envoyer un message de bienvenue</target>
+      </trans-unit>
+      <trans-unit id="VrVkt1x" resname="Templates">
+        <source>Templates</source>
+        <target>Modèles</target>
+      </trans-unit>
+      <trans-unit id="RXDbS53" resname="Copy text to clipboard">
+        <source>Copy text to clipboard</source>
+        <target>Copier le texte dans le presse-papier</target>
+      </trans-unit>
+      <trans-unit id="oJyOJvo" resname="Changesets">
+        <source>Changesets</source>
+        <target>Changesets</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target>Historique</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="byAvVKe" resname="List">
+        <source>List</source>
+        <target>Liste</target>
+      </trans-unit>
+      <trans-unit id="_nTKo1O" resname="Mapper">
+        <source>Mapper</source>
+        <target>Cartographe</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>Nom d'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="7z7rhD." resname="First changeset">
+        <source>First changeset</source>
+        <target>Premier changeset</target>
+      </trans-unit>
+      <trans-unit id="k2oWHDk" resname="Editor">
+        <source>Editor</source>
+        <target>Éditeur</target>
+      </trans-unit>
+      <trans-unit id="yj3GEvR" resname="Locale">
+        <source>Locale</source>
+        <target>Langue</target>
+      </trans-unit>
+      <trans-unit id="1HiPJW9" resname="View profile">
+        <source>View profile</source>
+        <target>Voir le profil</target>
+      </trans-unit>
+      <trans-unit id="7fvt8pP" resname="Mappers">
+        <source>Mappers</source>
+        <target>Cartographes</target>
+      </trans-unit>
+      <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
+        <source>List of mappers that have their first edit in the region</source>
+        <target>Liste des cartographes qui ont fait leur première mise à jour dans la région</target>
+      </trans-unit>
+      <trans-unit id="aidpUCp" resname="Previous month">
+        <source>Previous month</source>
+        <target>Mois précédent</target>
+      </trans-unit>
+      <trans-unit id="dOUyEf7" resname="Next month">
+        <source>Next month</source>
+        <target>Mois suivant</target>
+      </trans-unit>
+      <trans-unit id="k6JrHq." resname="Send message">
+        <source>Send message</source>
+        <target>Envoyer le message</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target>Note</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target>Ajouter</target>
+      </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target>Cartographe depuis le {date}</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target>Accueilli par {userlink}</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target>Changeset</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
