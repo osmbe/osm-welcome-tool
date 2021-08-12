@@ -29,6 +29,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\EventSubscriber\LocaleSubscriber:
+        arguments:
+            $defaultLocale: "%kernel.default_locale%"
     App\Service\RegionsProvider:
         arguments:
             $projectDirectory: "%kernel.project_dir%"
