@@ -16,7 +16,7 @@
             <h1 class="text-2xl font-bold text-gray-900">{{ mapper.displayName }}</h1>
             <p class="text-sm font-medium text-gray-500">
                 {% set date = mapper.accountCreated | format_date('long') %}
-                {{ 'Mapper since %date%' | trans({'%date%': date}) }}
+                {{ 'Mapper since {date}' | trans({'{date}': date}) }}
             </p>
         </div>
     </div>

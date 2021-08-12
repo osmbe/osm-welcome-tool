@@ -53,9 +53,9 @@
                 <div class="min-w-0 flex-1">
                     {{ form_start(formNote) }}
 
-                    {{ form_row(formNote.text, {label_attr: {class: 'sr-only'}, attr: {placeholder: ('Add a note' |
-                    trans), rows: 3, class: 'shadow-sm block w-full p-2 focus:ring-blue-500 focus:border-blue-500
-                    sm:text-sm border border-gray-300 rounded-md'}}) }}
+                    {{ form_row(formNote.text, {label: 'Note', label_attr: {class: 'sr-only'}, attr: {placeholder: 'Add a note', rows: 3,
+                    class: 'shadow-sm block w-full p-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm border border-gray-300
+                    rounded-md'}}) }}
 
                     {{ form_errors(formNote) }}
 
@@ -74,7 +74,7 @@
                                 {{ 'Markdown is allowed.' | trans }}
                             </span>
                         </a>
-                        {{ form_widget(formNote.submit, {attr: {class: 'inline-flex items-center justify-center px-4
+                        {{ form_widget(formNote.submit, {label: 'Add', attr: {class: 'inline-flex items-center justify-center px-4
                         py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600
                         hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'}}) }}
                     </div>
