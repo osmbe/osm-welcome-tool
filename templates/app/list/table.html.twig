@@ -7,11 +7,11 @@
                     {{ 'Username' | trans }}
                 </th>
                 <th scope="col"
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                     {{ 'Account created' | trans }}
                 </th>
                 <th scope="col"
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                     {{ 'First changeset' | trans }}
                 </th>
                 <th scope="col"
@@ -35,10 +35,10 @@
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {{ include('app/list/avatar.html.twig', { region, mapper }, with_context = false) }}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                     {{ mapper.accountCreated | format_date('long') }}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                     <a class="text-indigo-600 hover:text-indigo-900" target="_blank"
                         href="https://openstreetmap.org/changeset/{{ mapper.firstChangeset.id }}">
                         {{ mapper.firstChangeset.createdAt | format_date('long') }}
