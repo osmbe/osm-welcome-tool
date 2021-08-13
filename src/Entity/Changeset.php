@@ -104,7 +104,7 @@ class Changeset
         return $this->editor;
     }
 
-    public function setEditor(string $editor): self
+    public function setEditor(?string $editor): self
     {
         $this->editor = $editor;
 
