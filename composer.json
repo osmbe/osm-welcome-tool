@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
+        "ext-memcached": "*",
         "ext-pdo": "*",
         "ext-sodium": "*",
         "composer/package-versions-deprecated": "1.11.99.2",
