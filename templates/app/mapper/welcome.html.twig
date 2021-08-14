@@ -1,0 +1,40 @@
+<section aria-labelledby="applicant-information-title">
+    <div class="bg-white shadow sm:rounded-lg flex justify-center items-center gap-4 p-4">
+        <div class="flex items-center">
+            {% set isWelcomed = mapper.welcome.date is defined and mapper.welcome.date is not null %}
+
+            {{ include('app/mapper/welcome/button.html.twig', {status: isWelcomed, color: 'green-500', flag: 'welcome'}, with_context = false) }}
+
+            <span class="flex-grow flex flex-col ml-3">
+                <span class="text-sm font-medium text-gray-900">
+                    {{ '{mapper} has been welcomed' | trans({'{mapper}': mapper.displayName}) }}
+                </span>
+                <span class="text-sm text-gray-500">
+                    {% if isWelcomed %}
+                    {{ mapper.welcome.date | format_date('medium') }}
+                    {% else %}
+                    <span class="italic">{{ 'Not welcomed yet' | trans }}</span>
+                    {% endif %}
+                </span>
+            </span>
+        </div>
+        <div class="flex items-center">
+            {% set hasReplied = (mapper.welcome.reply is defined and mapper.welcome.reply is not null) %}
+
+            {{ include('app/mapper/welcome/button.html.twig', {status: hasReplied, color: 'yellow-400', flag: 'reply'}, with_context = false) }}
+
+            <span class="flex-grow flex flex-col ml-3">
+                <span class="text-sm font-medium text-gray-900" id="availability-label">
+                    {{ '{mapper} has replied' | trans({'{mapper}': mapper.displayName}) }}
+                </span>
+                <span class="text-sm text-gray-500" id="availability-description">
+                    {% if hasReplied %}
+                    {{ mapper.welcome.reply | format_date('medium') }}
+                    {% else %}
+                    <span class="italic">{{ 'Not replied yet' | trans }}</span>
+                    {% endif %}
+                </span>
+            </span>
+        </div>
+    </div>
+</section>

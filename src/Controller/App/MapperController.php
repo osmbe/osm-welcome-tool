@@ -5,6 +5,7 @@ namespace App\Controller\App;
 use App\Entity\Mapper;
 use App\Entity\Note;
 use App\Entity\Template;
+use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use DateTime;
@@ -25,6 +26,8 @@ class MapperController extends AbstractController
     #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper')]
     public function index(Request $request, string $regionKey, int $id): Response
     {
+        $entityManager = $this->getDoctrine()->getManager();
+
         $region = $this->provider->getRegion($regionKey);
 
         /** @var Mapper */
@@ -32,28 +35,54 @@ class MapperController extends AbstractController
             ->getRepository(Mapper::class)
             ->find($id);
 
-        $note = new Note();
-        $note->setMapper($mapper);
-        /** @todo Set author to logged in user */
-        $note->setAuthor($mapper);
+        // Welcome
+        if ($request->query->has('welcome') && $request->query->getBoolean('welcome') === true) {
+            $welcome = $mapper->getWelcome();
+            if (is_null($welcome)) {
+                $welcome = new Welcome();
+                $welcome->setMapper($mapper);
+            }
+            $welcome->setDate(new DateTime());
 
-        $formNote = $this->createFormBuilder($note)
-            ->add('text', TextareaType::class, ['label' => 'Note'])
-            ->add('submit', SubmitType::class, ['label' => 'Add'])
-            ->getForm();
-
-        $formNote->handleRequest($request);
-
-        if ($formNote->isSubmitted() === true && $formNote->isValid() === true) {
-            $note->setDate(new DateTime());
-
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($note);
+            $entityManager->persist($welcome);
             $entityManager->flush();
 
             return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
+        } elseif ($request->query->has('welcome') && $request->query->getBoolean('welcome') === false) {
+            $welcome = $mapper->getWelcome();
+            if (!is_null($welcome)) {
+                $entityManager->remove($welcome);
+                $entityManager->flush();
+
+                return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
+            }
+        }
+        if ($request->query->has('reply') && $request->query->getBoolean('reply') === true) {
+            $welcome = $mapper->getWelcome();
+            if (is_null($welcome)) {
+                $welcome = new Welcome();
+                $welcome->setMapper($mapper);
+                $welcome->setDate(new DateTime());
+            }
+            $welcome->setReply(new DateTime());
+
+            $entityManager->persist($welcome);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
+        } elseif ($request->query->has('reply') && $request->query->getBoolean('reply') === false) {
+            $welcome = $mapper->getWelcome();
+            if (!is_null($welcome)) {
+                $welcome->setReply(null);
+
+                $entityManager->persist($welcome);
+                $entityManager->flush();
+
+                return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
+            }
         }
 
+        // Templates
         $templates = $this->templatesProvider->getTemplates($regionKey);
 
         // Get current template based on query
@@ -79,9 +108,31 @@ class MapperController extends AbstractController
                 }
             }
         }
-        // Talke first template
+        // Take first template
         if (!isset($template) && count($templates) > 0) {
             $template = current($templates);
+        }
+
+        // Notes
+        $note = new Note();
+        $note->setMapper($mapper);
+        /** @todo Set author to logged in user */
+        $note->setAuthor($mapper);
+
+        $formNote = $this->createFormBuilder($note)
+            ->add('text', TextareaType::class, ['label' => 'Note'])
+            ->add('submit', SubmitType::class, ['label' => 'Add'])
+            ->getForm();
+
+        $formNote->handleRequest($request);
+
+        if ($formNote->isSubmitted() === true && $formNote->isValid() === true) {
+            $note->setDate(new DateTime());
+
+            $entityManager->persist($note);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $id]);
         }
 
         return $this->render('app/mapper/index.html.twig', [
