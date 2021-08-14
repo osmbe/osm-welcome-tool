@@ -21,6 +21,10 @@
         <source>Review requested</source>
         <target>Review requested</target>
       </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target>Invalid tag modification</target>
+      </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
         <target>No note.</target>
@@ -148,6 +152,30 @@
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
         <target>Welcomed by {userlink}</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target>{mapper} has been welcomed</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target>{mapper} has replied</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target>Changeset</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target>Not welcomed yet</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target>Not replied yet</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target>{userlink} has replied</target>
       </trans-unit>
     </body>
   </file>

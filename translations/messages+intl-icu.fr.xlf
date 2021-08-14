@@ -21,6 +21,10 @@
         <source>Review requested</source>
         <target>Examen demandé</target>
       </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target>Modification invalide de tag</target>
+      </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
         <target>Aucune note.</target>
@@ -152,6 +156,26 @@
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
         <target>Changeset</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target>{mapper} a été accueilli</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target>{mapper} a répondu</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target>Pas encore accueilli</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target>Pas encore répondu</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target>{userlink} a répondu</target>
       </trans-unit>
     </body>
   </file>
