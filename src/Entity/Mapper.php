@@ -59,6 +59,11 @@ class Mapper
      */
     private $notes;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Welcome::class, mappedBy="mapper", cascade={"persist"})
+     */
+    private $welcome;
+
     public function __construct()
     {
         $this->changesets = new ArrayCollection();
@@ -222,5 +227,22 @@ class Mapper
         array_multisort($createdAt, SORT_ASC, $changesets);
 
         return $changesets[0];
+    }
+
+    public function getWelcome(): ?Welcome
+    {
+        return $this->welcome;
+    }
+
+    public function setWelcome(Welcome $welcome): self
+    {
+        // set the owning side of the relation if necessary
+        if ($welcome->getMapper() !== $this) {
+            $welcome->setMapper($this);
+        }
+
+        $this->welcome = $welcome;
+
+        return $this;
     }
 }
