@@ -46,9 +46,11 @@
         <div class="bg-gray-50 px-4 py-6 sm:px-6">
             <div class="flex space-x-3">
                 <div class="flex-shrink-0">
-                    <img class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=256&amp;h=256&amp;q=80"
-                        alt="">
+                    {% if app.user.image is not null %}
+                    <img class="h-8 w-8 rounded-full border" alt="{{ app.user.displayName }}" src="{{ app.user.image }}">
+                    {% else %}
+                    <img class="h-8 w-8 rounded-full border" alt="{{ app.user.displayName }}" src="{{ asset('build/images/avatar_large.png') }}">
+                    {% endif %}
                 </div>
                 <div class="min-w-0 flex-1">
                     {{ form_start(formNote) }}
