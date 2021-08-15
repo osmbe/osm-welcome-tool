@@ -9,7 +9,7 @@ use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use DateTime;
-use Doctrine\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -20,12 +20,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MapperController extends AbstractController
 {
-    private ObjectManager $entityManager;
     private Mapper $mapper;
     /** @var Template[] */
     private array $templates;
 
     public function __construct(
+        private EntityManagerInterface $entityManager,
         private RegionsProvider $provider,
         private TemplatesProvider $templatesProvider,
     ) {
@@ -34,7 +34,6 @@ class MapperController extends AbstractController
     #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper')]
     public function index(Request $request, string $regionKey, Mapper $mapper): Response
     {
-        $this->entityManager = $this->getDoctrine()->getManager();
         $this->mapper = $mapper;
 
         $region = $this->provider->getRegion($regionKey);
