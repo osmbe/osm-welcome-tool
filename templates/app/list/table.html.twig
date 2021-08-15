@@ -15,6 +15,10 @@
                     {{ 'First changeset' | trans }}
                 </th>
                 <th scope="col"
+                    class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    {{ 'Welcomed' | trans }}
+                </th>
+                <th scope="col"
                     class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                     {{ 'Changesets' | trans }}
                 </th>
@@ -43,6 +47,13 @@
                         href="https://openstreetmap.org/changeset/{{ mapper.firstChangeset.id }}">
                         {{ mapper.firstChangeset.createdAt | format_date('long') }}
                     </a>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                    {% if mapper.welcome.date is defined %}
+                    <time datetime="{{ mapper.welcome.date | date('c') }}">
+                        {{ mapper.welcome.date | format_date('long') }}
+                    </time>
+                    {% endif %}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm text-gray-500">
                     <a class="text-indigo-600 hover:text-indigo-900" target="_blank"
