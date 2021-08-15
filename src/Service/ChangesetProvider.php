@@ -70,7 +70,7 @@ class ChangesetProvider
         return $changeset;
     }
 
-    private static function extractTag(SimpleXMLElement $element, string $key): string | null
+    private static function extractTag(SimpleXMLElement $element, string $key): ?string
     {
         /** @var SimpleXMLElement[] */
         $tags = [];
