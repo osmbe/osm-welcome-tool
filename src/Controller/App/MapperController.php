@@ -103,7 +103,7 @@ class MapperController extends AbstractController
         $this->entityManager->flush();
     }
 
-    private function getDefaultTemplate(Request $request): Template | null
+    private function getDefaultTemplate(Request $request): ?Template
     {
         // Get current template based on query
         $templateLocale = $request->query->getAlpha('locale');
