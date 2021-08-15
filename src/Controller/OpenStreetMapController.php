@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class OpenStreetMapController extends AbstractController
 {
-    #[Route('/connect/openstreetmap', name: 'connect_openstreetmap_start', schemes:['https', 'http'])]
+    #[Route('/connect/openstreetmap', name: 'connect_openstreetmap_start')]
     public function connectAction(ClientRegistry $clientRegistry)
     {
         return $clientRegistry
