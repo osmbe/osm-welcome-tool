@@ -177,6 +177,18 @@
         <source>{userlink} has replied</source>
         <target>{userlink} has replied</target>
       </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target>Login with OSM</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target>Open user menu</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target>Welcomed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
