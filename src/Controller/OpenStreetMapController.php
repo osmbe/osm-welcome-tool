@@ -3,15 +3,15 @@
 namespace App\Controller;
 
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
-use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+// use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+// use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class OpenStreetMapController extends AbstractController
 {
-    #[Route('/connect/openstreetmap', name: 'connect_openstreetmap_start')]
+    #[Route('/connect/openstreetmap', name: 'connect_openstreetmap_start', schemes:['https', 'http'])]
     public function connectAction(ClientRegistry $clientRegistry)
     {
         return $clientRegistry
