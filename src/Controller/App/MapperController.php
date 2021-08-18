@@ -143,8 +143,7 @@ class MapperController extends AbstractController
     {
         $note = new Note();
         $note->setMapper($this->mapper);
-        /** @todo Set author to logged in user */
-        $note->setAuthor($this->mapper);
+        $note->setAuthor($this->getUser());
 
         $form = $this->createFormBuilder($note)
             ->add('text', TextareaType::class, ['label' => 'Note'])

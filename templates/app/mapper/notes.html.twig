@@ -10,9 +10,9 @@
                     <li>
                         <div class="flex space-x-3">
                             <div class="flex-shrink-0">
-                                {% if mapper.image is not null %}
-                                <img class="h-10 w-10 rounded-full border" src="{{ mapper.image }}"
-                                    alt="{{ mapper.displayName }} profile picture">
+                                {% if note.author.image is not null %}
+                                <img class="h-10 w-10 rounded-full border" src="{{ note.author.image }}"
+                                    alt="{{ note.author.displayName }} profile picture">
                                 {% else %}
                                 <img class="h-10 w-10 rounded-full border"
                                     src="{{ asset('build/images/avatar_large.png') }}"
