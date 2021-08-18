@@ -2,15 +2,19 @@
 
 namespace App\Service;
 
+use DateTime;
 use Exception;
+use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Yaml\Yaml;
 
 class RegionsProvider
 {
     private array $regions = [];
 
-    public function __construct(private string $projectDirectory)
-    {
+    public function __construct(
+        private AdapterInterface $cache,
+        private string $projectDirectory
+    ) {
         $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
 
         $this->regions = $yaml['regions'] ?? [];
@@ -41,5 +45,16 @@ class RegionsProvider
         }
 
         return file_get_contents($path);
+    }
+
+    public function getLastUpdate(string $key): ?DateTime
+    {
+        $cacheKey = sprintf('last_update.%s', $key);
+
+        if ($this->cache->hasItem($cacheKey) !== true) {
+            return null;
+        }
+
+        return new DateTime($this->cache->getItem($cacheKey)->get());
     }
 }
