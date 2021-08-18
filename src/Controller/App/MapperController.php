@@ -10,6 +10,7 @@ use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use DateTime;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -32,6 +33,7 @@ class MapperController extends AbstractController
     }
 
     #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper')]
+    #[IsGranted('ROLE_USER')]
     public function index(Request $request, string $regionKey, Mapper $mapper): Response
     {
         $this->mapper = $mapper;
