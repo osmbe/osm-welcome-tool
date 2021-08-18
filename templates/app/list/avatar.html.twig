@@ -1,21 +1,21 @@
-<a class="flex-shrink-0 group block" href="{{ path('app_mapper', {regionKey: region.key, id: mapper.id}) }}">
-    <div class="flex items-center">
-        <div>
-            {% if mapper.image is not null %}
-            <img class="inline-block h-9 w-9 rounded-full border" src="{{ mapper.image }}"
-                alt="{{ mapper.displayName }} profile picture">
-            {% else %}
-            <img class="inline-block h-9 w-9 rounded-full border" src="{{ asset('build/images/avatar_large.png') }}"
-                alt="Default profile picture">
-            {% endif %}
-        </div>
-        <div class="ml-3">
-            <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                {{ mapper.displayName }}
-            </p>
-            <p class="text-xs font-medium text-gray-500 group-hover:text-gray-700">
-                {{ 'View profile' | trans }}
-            </p>
-        </div>
+<div class="flex items-center">
+    <div>
+        {% if mapper.image is not null %}
+        <img class="inline-block h-9 w-9 rounded-full border" src="{{ mapper.image }}"
+            alt="{{ mapper.displayName }} profile picture">
+        {% else %}
+        <img class="inline-block h-9 w-9 rounded-full border" src="{{ asset('build/images/avatar_large.png') }}"
+            alt="Default profile picture">
+        {% endif %}
     </div>
-</a>
+    <div class="ml-3">
+        <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+            {{ mapper.displayName }}
+        </p>
+        {% if app.user is not null %}
+        <p class="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+            {{ 'View profile' | trans }}
+        </p>
+        {% endif %}
+    </div>
+</div>

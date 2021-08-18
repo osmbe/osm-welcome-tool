@@ -37,7 +37,13 @@
 
             <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }}">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    {{ include('app/list/avatar.html.twig', { region, mapper }, with_context = false) }}
+                    {% if app.user is not null %}
+                    <a class="flex-shrink-0 group block" href="{{ path('app_mapper', {regionKey: region.key, id: mapper.id}) }}">
+                        {{ include('app/list/avatar.html.twig', { mapper }, with_context = false) }}
+                    </a>
+                    {% else %}
+                    {{ include('app/list/avatar.html.twig', { mapper }, with_context = false) }}
+                    {% endif %}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                     <time datetime="{{ mapper.accountCreated | date('c') }}">
