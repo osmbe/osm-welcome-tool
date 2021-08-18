@@ -56,7 +56,7 @@
                         <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
                             <div>
                                 <p class="text-sm text-gray-500">
-                                    {% set userlink = '<a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/user/Jakka">Jakka</a>' %}
+                                    {% set userlink = '<a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/user/' ~ mapper.welcome.user.displayName ~ '">' ~ mapper.welcome.user.displayName ~ '</a>' %}
                                     {{ 'Welcomed by {userlink}' | trans({'{userlink}': userlink}) | raw }}
                                 </p>
                             </div>

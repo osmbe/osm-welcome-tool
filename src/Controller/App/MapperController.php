@@ -82,6 +82,8 @@ class MapperController extends AbstractController
 
         if ($state === true) {
             $welcome->setDate(new DateTime());
+            $welcome->setUser($this->getUser());
+
             $this->entityManager->persist($welcome);
         } else {
             $this->entityManager->remove($welcome);
