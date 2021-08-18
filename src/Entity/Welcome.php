@@ -34,7 +34,8 @@ class Welcome
     private $reply;
 
     /**
-     * @ORM\OneToOne(targetEntity=User::class, cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity=User::class)
+     * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 
