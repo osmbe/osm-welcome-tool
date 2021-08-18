@@ -5,6 +5,26 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target>__Belgium</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target>__Italy</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target>__Washington State</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target>__Review requested</target>
+      </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target>__Invalid tag modification</target>
+      </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
         <target>__Last update</target>
