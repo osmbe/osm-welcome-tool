@@ -40,4 +40,10 @@ class OpenStreetMapController extends AbstractController
         //     var_dump($e->getMessage()); exit();
         // }
     }
+
+    #[Route('/logout', name: 'logout')]
+    public function logout()
+    {
+        // controller can be blank: it will never be executed!
+    }
 }
