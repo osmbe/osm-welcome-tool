@@ -189,6 +189,14 @@
         <source>Welcomed</source>
         <target>Welcomed</target>
       </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target>Last update</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Logout</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
