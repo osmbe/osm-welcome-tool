@@ -38,7 +38,6 @@ class UpdateCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-
         $lastUpdate = [];
         $regions = $this->provider->getRegions();
 
@@ -67,7 +66,7 @@ class UpdateCommand extends Command
 
                 $this->process($key, $date, $output);
 
-                $lastUpdate->set(date('Y-m-d'));
+                $lastUpdate->set(date('c'));
                 $this->cache->save($lastUpdate);
             } else {
                 $io->note('Skip, already processed.');
