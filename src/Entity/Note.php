@@ -34,7 +34,7 @@ class Note
     private $text;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Mapper::class)
+     * @ORM\ManyToOne(targetEntity=User::class)
      * @ORM\JoinColumn(nullable=false)
      */
     private $author;
@@ -80,12 +80,12 @@ class Note
         return $this;
     }
 
-    public function getAuthor(): ?Mapper
+    public function getAuthor(): ?User
     {
         return $this->author;
     }
 
-    public function setAuthor(?Mapper $author): self
+    public function setAuthor(?User $author): self
     {
         $this->author = $author;
 
