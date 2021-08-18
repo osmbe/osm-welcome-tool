@@ -3,6 +3,8 @@ framework:
     secret: '%env(APP_SECRET)%'
     #csrf_protection: true
     http_method_override: false
+    # see https://symfony.com/doc/current/deployment/proxies.html
+    trusted_proxies: '%env(TRUSTED_PROXIES)%'
 
     http_client:
         default_options:
