@@ -18,6 +18,11 @@ class HomeController extends AbstractController
     {
         $regions = $this->provider->getRegions();
 
+        $keys = array_keys($regions);
+        foreach ($keys as $key) {
+            $regions[$key]['lastUpdate'] = $this->provider->getLastUpdate($key);
+        }
+
         return $this->render('app/home/index.html.twig', [
             'regions' => $regions,
         ]);

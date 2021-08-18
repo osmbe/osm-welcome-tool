@@ -4,15 +4,44 @@
 
 {% block content %}
 
-<ul>
-  {% for key, region in regions %}
-  <li>
-    <a href="{{ path('app_list', {regionKey: key}) }}">
-      {{ region.flag }}
-      {{ region.name | trans }}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="md:gap-8 md:flex md:items-start md:justify-between">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {% for key, region in regions %}
+        <div
+            class="relative rounded-lg border border-gray-300 bg-white p-4 shadow-sm flex items-start space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+            <div class="flex-shrink-0">
+                {{ region.flag }}
+            </div>
+            <div class="flex-1 min-w-0">
+                <a href="{{ path('app_list', {regionKey: key}) }}" class="focus:outline-none">
+                    <span class="absolute inset-0" aria-hidden="true"></span>
+                    <p class="font-medium text-gray-900">
+                        {{ region.name | trans }}
+                    </p>
+                    <p class="text-xs text-gray-500 truncate">
+                        {{ 'Last update' | trans }}:
+                        <time datetime="{{ region.lastUpdate | date('c') }}">{{ region.lastUpdate | format_datetime('medium') }}</time>
+                    </p>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="flex-1 min-w-0">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu efficitur tellus, vel auctor enim.
+            Suspendisse
+            suscipit sem in tincidunt elementum. Curabitur nibh nunc, semper ac diam a, gravida feugiat felis. Duis
+            iaculis nec
+            est eu convallis. Maecenas viverra tincidunt tortor a faucibus. Mauris egestas vulputate mauris ac luctus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam id
+            sollicitudin
+            velit. Donec elementum turpis quis nunc tincidunt iaculis. Donec sed dui lectus. Nulla vel porttitor sapien.
+            Vestibulum mattis massa et molestie placerat.
+        </p>
+    </div>
+</div>
 
 {% endblock %}
