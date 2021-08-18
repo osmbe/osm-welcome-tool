@@ -1,0 +1,17 @@
+<footer class="border-t border-gray-200 py-4 text-sm text-gray-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between">
+            <div class="divide-solid">
+                {% for locale in (welcome.locales | split('|')) %}
+                {% if loop.index0 > 0 %} &bull; {% endif %}
+                <a href="?l={{ locale }}">{{ locale | locale_name(locale) | capitalize }}</a>
+                {% endfor %}
+            </div>
+
+            <div class="flex items-center">
+                <img class="h-4 mr-1" src="{{ asset('build/images/GitHub-Mark-32px.png') }}" alt="GitHub logo">
+                <a target="_blank" href="https://github.com/osmbe/osm-welcome-belgium">GitHub</a>
+            </div>
+        </div>
+    </div>
+</footer>
