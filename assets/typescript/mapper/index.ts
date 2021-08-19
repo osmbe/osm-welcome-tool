@@ -1,7 +1,18 @@
 import { CodeJar } from 'codejar';
 import hljs from 'highlight.js';
 
+import createDropdown from './dropdown';
+
 import 'highlight.js/styles/a11y-light.css';
+
+/** Changeset dropdown */
+document.querySelectorAll('.changeset-dropdown').forEach(element => {
+  const { changesetId, label } = ((element as HTMLElement).dataset);
+
+  if (typeof changesetId !== 'undefined' && typeof label !== 'undefined') {
+    createDropdown(element, { id: parseInt(changesetId), label })
+  }
+});
 
 /** Notes */
 document.querySelectorAll('pre > code').forEach((element) => {
