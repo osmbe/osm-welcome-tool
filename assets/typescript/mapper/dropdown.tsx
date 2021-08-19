@@ -1,7 +1,8 @@
-import { Menu, Transition } from '@headlessui/react';
+import { Menu } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import React, { Fragment } from 'react';
-import { render } from 'react-dom';
+import { createPopper, Options } from '@popperjs/core'
+import React, {  RefCallback, useRef, useCallback, useMemo } from 'react';
+import ReactDOM, { render } from 'react-dom';
 
 function getItems(id: number) {
   return [
@@ -24,11 +25,59 @@ function getItems(id: number) {
   ];
 }
 
+/** @see https://github.com/tailwindlabs/headlessui/blob/main/packages/@headlessui-react/playground-utils/hooks/use-popper.ts */
+function usePopper(options?: Partial<Options>): [RefCallback<Element | null>, RefCallback<HTMLElement | null>] {
+  let reference = useRef<Element>(null);
+  let popper = useRef<HTMLElement>(null);
+
+  let cleanupCallback = useRef(() => {});
+
+  let instantiatePopper = useCallback(() => {
+    if (!reference.current) return;
+    if (!popper.current) return;
+
+    if (cleanupCallback.current) cleanupCallback.current();
+
+    cleanupCallback.current = createPopper(reference.current, popper.current, options).destroy;
+  }, [reference, popper, cleanupCallback, options]);
+
+  return useMemo(
+    () => [
+      referenceDomNode => {
+        (reference as React.MutableRefObject<Element|null>).current = referenceDomNode;
+        instantiatePopper();
+      },
+      popperDomNode => {
+        (popper  as React.MutableRefObject<Element|null>).current = popperDomNode;
+        instantiatePopper();
+      },
+    ],
+    [reference, popper, instantiatePopper]
+  );
+}
+
+function Portal(props: { children: React.ReactNode }) {
+  const { children } = props;
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
+  return ReactDOM.createPortal(children, document.body);
+}
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
 function Dropdown(prop: { id: number; label: string }) {
+  const [trigger, container] = usePopper({
+    placement: 'bottom-end',
+    strategy: 'fixed',
+    modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+  });
+
   return (
     <span className='relative z-0 inline-flex shadow-sm rounded-md'>
       <a
@@ -39,40 +88,38 @@ function Dropdown(prop: { id: number; label: string }) {
         {prop.label}
       </a>
       <Menu as='span' className='-ml-px relative block'>
-        <Menu.Button className='relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'>
+        <Menu.Button
+          ref={trigger}
+          className='relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'
+        >
           <span className='sr-only'>Open options</span>
           <ChevronDownIcon className='h-5 w-5' aria-hidden='true' />
         </Menu.Button>
-        <Transition
-          as={Fragment}
-          enter='transition ease-out duration-100'
-          enterFrom='transform opacity-0 scale-95'
-          enterTo='transform opacity-100 scale-100'
-          leave='transition ease-in duration-75'
-          leaveFrom='transform opacity-100 scale-100'
-          leaveTo='transform opacity-0 scale-95'
-        >
-          <Menu.Items className='origin-top-right absolute right-0 mt-2 -mr-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
-            <div className='py-1'>
-              {getItems(prop.id).map((item) => (
-                <Menu.Item key={item.name}>
-                  {({ active }) => (
-                    <a
-                      target='_blank'
-                      href={item.href}
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
-                      )}
-                    >
-                      {item.name}
-                    </a>
-                  )}
-                </Menu.Item>
-              ))}
-            </div>
-          </Menu.Items>
-        </Transition>
+        <Portal>
+            <Menu.Items
+              ref={container}
+              className='origin-top-right absolute right-0 mt-2 -mr-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
+            >
+              <div className='py-1'>
+                {getItems(prop.id).map((item) => (
+                  <Menu.Item key={item.name}>
+                    {({ active }) => (
+                      <a
+                        target='_blank'
+                        href={item.href}
+                        className={classNames(
+                          active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        {item.name}
+                      </a>
+                    )}
+                  </Menu.Item>
+                ))}
+              </div>
+            </Menu.Items>
+        </Portal>
       </Menu>
     </span>
   );
