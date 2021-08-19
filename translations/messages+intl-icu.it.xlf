@@ -55,11 +55,11 @@
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target>{mapper} è stato accolto (TBI)</target>
+        <target>{mapper} ha ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
         <source>Not welcomed yet</source>
-        <target>Non ancora accolto (TBI)</target>
+        <target>Non ha ancora rivevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
@@ -79,7 +79,7 @@
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
-        <target>Accolto da {userlink} (TBI)</target>
+        <target>Ha ricevuto il benvenuto da {userlink}</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
@@ -155,7 +155,7 @@
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
-        <target>Accolto (TBI)</target>
+        <target>Ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
