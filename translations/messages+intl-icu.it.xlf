@@ -25,10 +25,6 @@
         <source>Invalid tag modification</source>
         <target>Modifica dei tag non valida</target>
       </trans-unit>
-      <trans-unit id="s25GbG6" resname="Last update">
-        <source>Last update</source>
-        <target>Ultimo aggiornamento</target>
-      </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
         <target>Nessuna nota</target>
@@ -53,37 +49,9 @@
         <source>Checked</source>
         <target>Controllato</target>
       </trans-unit>
-      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
-        <source>{mapper} has been welcomed</source>
-        <target>{mapper} ha ricevuto il benvenuto</target>
-      </trans-unit>
-      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
-        <source>Not welcomed yet</source>
-        <target>Non ha ancora rivevuto il benvenuto</target>
-      </trans-unit>
-      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
-        <source>{mapper} has replied</source>
-        <target>{mapper} ha risposto</target>
-      </trans-unit>
-      <trans-unit id="7QGDsnR" resname="Not replied yet">
-        <source>Not replied yet</source>
-        <target>Non ha ancora risposto</target>
-      </trans-unit>
       <trans-unit id="nc.5jid" resname="Timeline">
         <source>Timeline</source>
         <target>Sequenza temporale</target>
-      </trans-unit>
-      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
-        <source>{userlink} has replied</source>
-        <target>{userlink} ha risposto</target>
-      </trans-unit>
-      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
-        <source>Welcomed by {userlink}</source>
-        <target>Ha ricevuto il benvenuto da {userlink}</target>
-      </trans-unit>
-      <trans-unit id="zbCuPR7" resname="Changeset">
-        <source>Changeset</source>
-        <target>Changeset</target>
       </trans-unit>
       <trans-unit id="9jh5.Wk" resname="Account created">
         <source>Account created</source>
@@ -133,18 +101,6 @@
         <source>Mapper</source>
         <target>Contributore</target>
       </trans-unit>
-      <trans-unit id="vQEb23j" resname="Login with OSM">
-        <source>Login with OSM</source>
-        <target>Entra con OSM</target>
-      </trans-unit>
-      <trans-unit id="GZQaZt8" resname="Open user menu">
-        <source>Open user menu</source>
-        <target>Apri il menù utente</target>
-      </trans-unit>
-      <trans-unit id="0FJ_Sz1" resname="Logout">
-        <source>Logout</source>
-        <target>Logout</target>
-      </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
         <target>Username</target>
@@ -152,10 +108,6 @@
       <trans-unit id="7z7rhD." resname="First changeset">
         <source>First changeset</source>
         <target>Primo changeset</target>
-      </trans-unit>
-      <trans-unit id="SpAiaNX" resname="Welcomed">
-        <source>Welcomed</source>
-        <target>Ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
@@ -184,6 +136,66 @@
       <trans-unit id="dOUyEf7" resname="Next month">
         <source>Next month</source>
         <target>Mese successivo</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target>__Note</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target>__Add</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target>__Add a note</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target>Ha ricevuto il benvenuto da {userlink}</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target>{mapper} ha ricevuto il benvenuto</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target>{mapper} ha risposto</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target>Changeset</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target>Non ha ancora rivevuto il benvenuto</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target>Non ha ancora risposto</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target>{userlink} ha risposto</target>
+      </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target>Entra con OSM</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target>Apri il menù utente</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target>Ricevuto il benvenuto</target>
+      </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target>Ultimo aggiornamento</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Logout</target>
       </trans-unit>
     </body>
   </file>

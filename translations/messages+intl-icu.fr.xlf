@@ -29,10 +29,6 @@
         <source>No note.</source>
         <target>Aucune note.</target>
       </trans-unit>
-      <trans-unit id="MiwOE_9" resname="Add a note">
-        <source>Add a note</source>
-        <target>Ajouter une note</target>
-      </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
         <target>Le format Markdown est autorisé.</target>
@@ -61,6 +57,10 @@
         <source>Account created</source>
         <target>Compte créé</target>
       </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target>Cartographe depuis le {date}</target>
+      </trans-unit>
       <trans-unit id="1pajW90" resname="Profile">
         <source>Profile</source>
         <target>Profil</target>
@@ -76,6 +76,10 @@
       <trans-unit id="RXDbS53" resname="Copy text to clipboard">
         <source>Copy text to clipboard</source>
         <target>Copier le texte dans le presse-papier</target>
+      </trans-unit>
+      <trans-unit id="k6JrHq." resname="Send message">
+        <source>Send message</source>
+        <target>Envoyer le message</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -133,10 +137,6 @@
         <source>Next month</source>
         <target>Mois suivant</target>
       </trans-unit>
-      <trans-unit id="k6JrHq." resname="Send message">
-        <source>Send message</source>
-        <target>Envoyer le message</target>
-      </trans-unit>
       <trans-unit id="2NosSd8" resname="Note">
         <source>Note</source>
         <target>Note</target>
@@ -145,17 +145,13 @@
         <source>Add</source>
         <target>Ajouter</target>
       </trans-unit>
-      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
-        <source>Mapper since {date}</source>
-        <target>Cartographe depuis le {date}</target>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target>Ajouter une note</target>
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
         <target>Accueilli par {userlink}</target>
-      </trans-unit>
-      <trans-unit id="zbCuPR7" resname="Changeset">
-        <source>Changeset</source>
-        <target>Changeset</target>
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
@@ -164,6 +160,10 @@
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
         <target>{mapper} a répondu</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target>Changeset</target>
       </trans-unit>
       <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
         <source>Not welcomed yet</source>
