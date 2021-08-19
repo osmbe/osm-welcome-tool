@@ -7,183 +7,183 @@
     <body>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
-        <target>__Belgium</target>
+        <target>Belgio</target>
       </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
-        <target>__Italy</target>
+        <target>Italia</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
-        <target>__Washington State</target>
+        <target>Stato di Washington</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
-        <target>__Review requested</target>
+        <target>Revisione richiesta</target>
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
-        <target>__Invalid tag modification</target>
+        <target>Modifica dei tag non valida</target>
       </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
-        <target>__Last update</target>
+        <target>Ultimo aggiornamento</target>
       </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
-        <target>__No note.</target>
+        <target>Nessuna nota</target>
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
-        <target>__Markdown is allowed.</target>
+        <target>Il markdown è abilitato</target>
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
-        <target>__View</target>
+        <target>Vedi</target>
       </trans-unit>
       <trans-unit id="nGrjZeg" resname="Open other tools">
         <source>Open other tools</source>
-        <target>__Open other tools</target>
+        <target>Apri altri strumenti</target>
       </trans-unit>
       <trans-unit id="PzH3t8N" resname="Harmful">
         <source>Harmful</source>
-        <target>__Harmful</target>
+        <target>Dannoso</target>
       </trans-unit>
       <trans-unit id="Dv2SozW" resname="Checked">
         <source>Checked</source>
-        <target>__Checked</target>
+        <target>Controllato</target>
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target>__{mapper} has been welcomed</target>
+        <target>{mapper} ha ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
         <source>Not welcomed yet</source>
-        <target>__Not welcomed yet</target>
+        <target>Non ha ancora rivevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
-        <target>__{mapper} has replied</target>
+        <target>{mapper} ha risposto</target>
       </trans-unit>
       <trans-unit id="7QGDsnR" resname="Not replied yet">
         <source>Not replied yet</source>
-        <target>__Not replied yet</target>
+        <target>Non ha ancora risposto</target>
       </trans-unit>
       <trans-unit id="nc.5jid" resname="Timeline">
         <source>Timeline</source>
-        <target>__Timeline</target>
+        <target>Sequenza temporale</target>
       </trans-unit>
       <trans-unit id="5JIt4ui" resname="{userlink} has replied">
         <source>{userlink} has replied</source>
-        <target>__{userlink} has replied</target>
+        <target>{userlink} ha risposto</target>
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
-        <target>__Welcomed by {userlink}</target>
+        <target>Ha ricevuto il benvenuto da {userlink}</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
-        <target>__Changeset</target>
+        <target>Changeset</target>
       </trans-unit>
       <trans-unit id="9jh5.Wk" resname="Account created">
         <source>Account created</source>
-        <target>__Account created</target>
+        <target>Account creato</target>
       </trans-unit>
       <trans-unit id="9kKaXhE" resname="Mapper since {date}">
         <source>Mapper since {date}</source>
-        <target>__Mapper since {date}</target>
+        <target>Contributore dal {date}</target>
       </trans-unit>
       <trans-unit id="1pajW90" resname="Profile">
         <source>Profile</source>
-        <target>__Profile</target>
+        <target>Profilo</target>
       </trans-unit>
       <trans-unit id="6wYsMHV" resname="Send a welcome message">
         <source>Send a welcome message</source>
-        <target>__Send a welcome message</target>
+        <target>Invia un messaggio di benvenuto</target>
       </trans-unit>
       <trans-unit id="VrVkt1x" resname="Templates">
         <source>Templates</source>
-        <target>__Templates</target>
+        <target>Template</target>
       </trans-unit>
       <trans-unit id="RXDbS53" resname="Copy text to clipboard">
         <source>Copy text to clipboard</source>
-        <target>__Copy text to clipboard</target>
+        <target>Copia il testo negli appunti</target>
       </trans-unit>
       <trans-unit id="k6JrHq." resname="Send message">
         <source>Send message</source>
-        <target>__Send message</target>
+        <target>Invia messaggio</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
-        <target>__Changesets</target>
+        <target>Changesets</target>
       </trans-unit>
       <trans-unit id="DnaWAJM" resname="History">
         <source>History</source>
-        <target>__History</target>
+        <target>Storia</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
         <source>Home</source>
-        <target>__Home</target>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="byAvVKe" resname="List">
         <source>List</source>
-        <target>__List</target>
+        <target>Lista</target>
       </trans-unit>
       <trans-unit id="_nTKo1O" resname="Mapper">
         <source>Mapper</source>
-        <target>__Mapper</target>
+        <target>Contributore</target>
       </trans-unit>
       <trans-unit id="vQEb23j" resname="Login with OSM">
         <source>Login with OSM</source>
-        <target>__Login with OSM</target>
+        <target>Entra con OSM</target>
       </trans-unit>
       <trans-unit id="GZQaZt8" resname="Open user menu">
         <source>Open user menu</source>
-        <target>__Open user menu</target>
+        <target>Apri il menù utente</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
         <source>Logout</source>
-        <target>__Logout</target>
+        <target>Logout</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
-        <target>__Username</target>
+        <target>Username</target>
       </trans-unit>
       <trans-unit id="7z7rhD." resname="First changeset">
         <source>First changeset</source>
-        <target>__First changeset</target>
+        <target>Primo changeset</target>
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
-        <target>__Welcomed</target>
+        <target>Ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target>__Editor</target>
+        <target>Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
-        <target>__Locale</target>
+        <target>Lingua</target>
       </trans-unit>
       <trans-unit id="1HiPJW9" resname="View profile">
         <source>View profile</source>
-        <target>__View profile</target>
+        <target>Vedi profilo</target>
       </trans-unit>
       <trans-unit id="7fvt8pP" resname="Mappers">
         <source>Mappers</source>
-        <target>__Mappers</target>
+        <target>Contributori</target>
       </trans-unit>
       <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
         <source>List of mappers that have their first edit in the region</source>
-        <target>__List of mappers that have their first edit in the region</target>
+        <target>Lista dei contributori che hanno effettuato la prima modifica nell'area</target>
       </trans-unit>
       <trans-unit id="aidpUCp" resname="Previous month">
         <source>Previous month</source>
-        <target>__Previous month</target>
+        <target>Mese precedente</target>
       </trans-unit>
       <trans-unit id="dOUyEf7" resname="Next month">
         <source>Next month</source>
-        <target>__Next month</target>
+        <target>Mese successivo</target>
       </trans-unit>
     </body>
   </file>
