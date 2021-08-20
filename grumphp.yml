@@ -9,7 +9,8 @@ grumphp:
             whitelist_patterns:
                 - /^assets\/typescript\/(.*)/
         phpcs: ~
-        phpcsfixer: ~
+        phpcsfixer:
+            config: ".php-cs-fixer.dist.php"
         phpstan: ~
         phpunit: ~
         phpversion:
