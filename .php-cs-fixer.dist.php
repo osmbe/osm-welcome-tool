@@ -8,6 +8,5 @@ $finder = (new PhpCsFixer\Finder())
 return (new PhpCsFixer\Config())
     ->setRules([
         '@Symfony' => true,
-        'concat_space' => ['spacing' => 'one'],
     ])
     ->setFinder($finder);
