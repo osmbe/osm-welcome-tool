@@ -11,7 +11,6 @@ use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
 use Doctrine\ORM\EntityManagerInterface;
 use ErrorException;
-use Exception;
 use SimpleXMLElement;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -101,6 +100,7 @@ class NewMapperCommand extends Command
             $mappers = array_map(function (array $array) use ($key): Mapper {
                 $mapper = $this->mapperProvider->fromOSM($array);
                 $mapper->setRegion($key);
+
                 return $mapper;
             }, $usersArray['users']);
 

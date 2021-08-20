@@ -63,11 +63,11 @@ class MapperController extends AbstractController
         }
 
         return $this->render('app/mapper/index.html.twig', [
-            'region' => $region,
-            'mapper' => $this->mapper,
-            'changesets' => $this->mapper->getChangesets(),
-            'formNote' => $formNote->createView(),
-            'templates' => $this->templates,
+            'region'           => $region,
+            'mapper'           => $this->mapper,
+            'changesets'       => $this->mapper->getChangesets(),
+            'formNote'         => $formNote->createView(),
+            'templates'        => $this->templates,
             'selectedTemplate' => $template,
         ]);
     }

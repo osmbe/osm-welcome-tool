@@ -13,15 +13,17 @@ class OSMChaAPI
     public function __construct(
         private HttpClientInterface $osmchaClient,
         private ValidatorInterface $validator
-    ) {}
+    ) {
+    }
 
-    public function createAreaOfInterest(string $name, array $filters): ResponseInterface {
+    public function createAreaOfInterest(string $name, array $filters): ResponseInterface
+    {
         $response = $this->osmchaClient->request(
             'POST',
             'aoi/',
             [
                 'json' => [
-                    'name' => $name,
+                    'name'    => $name,
                     'filters' => $filters,
                 ],
             ]
@@ -30,7 +32,8 @@ class OSMChaAPI
         return $response;
     }
 
-    public function updateAreaOfInterest(string $id, string $name, array $filters): ResponseInterface {
+    public function updateAreaOfInterest(string $id, string $name, array $filters): ResponseInterface
+    {
         $validate = $this->validator->validate($id, new Uuid());
 
         if ($validate->count() > 0) {
@@ -42,7 +45,7 @@ class OSMChaAPI
             sprintf('aoi/%s/', $id),
             [
                 'json' => [
-                    'name' => $name,
+                    'name'    => $name,
                     'filters' => $filters,
                 ],
             ]
@@ -51,7 +54,8 @@ class OSMChaAPI
         return $response;
     }
 
-    public function getAreaOfInterestChangesets(string $id): ResponseInterface {
+    public function getAreaOfInterestChangesets(string $id): ResponseInterface
+    {
         $validate = $this->validator->validate($id, new Uuid());
 
         if ($validate->count() > 0) {

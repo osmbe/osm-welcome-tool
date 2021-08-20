@@ -79,6 +79,7 @@ class ChangesetProvider
         }
         $filter = array_filter($tags, function (SimpleXMLElement $element) use ($key) {
             $attr = $element->attributes();
+
             return (string) $attr->k === $key;
         });
 

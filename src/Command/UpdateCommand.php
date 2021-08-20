@@ -30,8 +30,7 @@ class UpdateCommand extends Command
     protected function configure(): void
     {
         $this
-            ->addOption('force', 'f', InputOption::VALUE_NONE, 'Force process (even if it has already been processed today)')
-        ;
+            ->addOption('force', 'f', InputOption::VALUE_NONE, 'Force process (even if it has already been processed today)');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -54,7 +53,7 @@ class UpdateCommand extends Command
                     $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
                 }
                 // If last update was today and process is forced, get new mappers from yesterday
-                else if ($input->getOption('force') === true && $lastUpdate->get() === date('Y-m-d')) {
+                elseif ($input->getOption('force') === true && $lastUpdate->get() === date('Y-m-d')) {
                     $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
                     $io->note(sprintf('Get new mappers from %s (forced).', $date));
                 }
@@ -81,13 +80,13 @@ class UpdateCommand extends Command
         $aoiCommand = $this->getApplication()->find('osmcha:aoi');
         $aoiCommand->run(new ArrayInput([
             'region' => $region,
-            '-d' => $date,
+            '-d'     => $date,
         ]), $output);
 
         $newMapperCommand = $this->getApplication()->find('osmcha:new-mapper');
         $newMapperCommand->run(new ArrayInput([
             'region' => $region,
-            '-d' => $date,
+            '-d'     => $date,
         ]), $output);
     }
 }

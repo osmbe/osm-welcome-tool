@@ -86,6 +86,7 @@ class Template
     {
         return $this->path;
     }
+
     public function getFilename(): string
     {
         return basename($this->path);

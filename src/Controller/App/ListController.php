@@ -14,7 +14,8 @@ class ListController extends AbstractController
 {
     public function __construct(
         private RegionsProvider $provider,
-    ) {}
+    ) {
+    }
 
     #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list')]
     public function index(string $regionKey, ?int $year = null, ?int $month = null): Response
@@ -41,6 +42,7 @@ class ListController extends AbstractController
             function (Mapper $mapper) use ($month) {
                 /** @var DateTimeImmutable */
                 $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
+
                 return $createdAt->format('Ym') === $month->format('Ym');
             }
         );
@@ -48,7 +50,7 @@ class ListController extends AbstractController
         return $this->render('app/list/index.html.twig', [
             'region'  => $region,
             'mappers' => $mappers,
-            'month'   => $month
+            'month'   => $month,
         ]);
     }
 }

@@ -35,11 +35,11 @@ class AOICommand extends Command
         $this
             ->addArgument('region', InputArgument::REQUIRED, 'Region')
             ->addOption('create', 'c', InputOption::VALUE_NONE, 'Create Area of Interest')
-            ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)')
-        ;
+            ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)');
     }
 
-    protected function initialize(InputInterface $input, OutputInterface $output) {
+    protected function initialize(InputInterface $input, OutputInterface $output)
+    {
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
         if ($validate->count() > 0) {

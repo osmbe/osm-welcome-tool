@@ -9,7 +9,8 @@ class OpenStreetMapAPI
 {
     public function __construct(
         private HttpClientInterface $osmClient
-    ) {}
+    ) {
+    }
 
     public function getUsers(array $ids): ResponseInterface
     {

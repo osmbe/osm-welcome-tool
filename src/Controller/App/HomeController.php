@@ -11,7 +11,8 @@ class HomeController extends AbstractController
 {
     public function __construct(
         private RegionsProvider $provider,
-    ) {}
+    ) {
+    }
 
     #[Route('/', name: 'app_home')]
     public function index(): Response
