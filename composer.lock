@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6aef224af10ce86fd07b6a2babe9ca0",
+    "content-hash": "4a6249215ce2ab115c79aa14cf5fcaa2",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -9272,6 +9272,55 @@
             "time": "2021-08-04T19:28:19+00:00"
         },
         {
+            "name": "friendsoftwig/twigcs",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/friendsoftwig/twigcs.git",
+                "reference": "d85fa2a567eb2671186558f92c53e86cdd502c3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/friendsoftwig/twigcs/zipball/d85fa2a567eb2671186558f92c53e86cdd502c3b",
+                "reference": "d85fa2a567eb2671186558f92c53e86cdd502c3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "symfony/console": "^3.4 || ^4.3 || ^5.0",
+                "symfony/filesystem": "^3.4 || ^4.3 || ^5.0",
+                "symfony/finder": "^3.4 || ^4.3 || ^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "bin": [
+                "bin/twigcs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfTwig\\Twigcs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Maindron",
+                    "email": "tmaindron@gmail.com"
+                }
+            ],
+            "description": "Checkstyle automation for Twig",
+            "support": {
+                "issues": "https://github.com/friendsoftwig/twigcs/issues",
+                "source": "https://github.com/friendsoftwig/twigcs/tree/v5.0.0"
+            },
+            "time": "2021-02-04T13:46:25+00:00"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.10.2",
             "source": {
@@ -9549,6 +9598,66 @@
             "time": "2020-10-14T08:32:19+00:00"
         },
         {
+            "name": "phpro/grumphp-shim",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpro/grumphp-shim.git",
+                "reference": "a645bb0cfa15f7b4aa0132d7b0c3cce1fa38a593"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpro/grumphp-shim/zipball/a645bb0cfa15f7b4aa0132d7b0c3cce1fa38a593",
+                "reference": "a645bb0cfa15f7b4aa0132d7b0c3cce1fa38a593",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0 || ~2.0",
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "replace": {
+                "phpro/grumphp": "self.version"
+            },
+            "require-dev": {
+                "humbug/box": "^3.12.2",
+                "jetbrains/phpstorm-stubs": "dev-master@dev"
+            },
+            "bin": [
+                "grumphp",
+                "grumphp.phar"
+            ],
+            "type": "composer-plugin",
+            "extra": {
+                "class": "GrumPHP\\Composer\\GrumPHPPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "GrumPHP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Toon Verwerft",
+                    "email": "toon.verwerft@phpro.be"
+                },
+                {
+                    "name": "Community",
+                    "homepage": "https://github.com/phpro/grumphp/graphs/contributors"
+                }
+            ],
+            "description": "GrumPHP Phar distribution",
+            "support": {
+                "issues": "https://github.com/phpro/grumphp-shim/issues",
+                "source": "https://github.com/phpro/grumphp-shim/tree/v1.4.0"
+            },
+            "time": "2021-07-14T11:12:56+00:00"
+        },
+        {
             "name": "phpspec/prophecy",
             "version": "1.13.0",
             "source": {
@@ -9614,6 +9723,234 @@
                 "source": "https://github.com/phpspec/prophecy/tree/1.13.0"
             },
             "time": "2021-03-17T13:42:18+00:00"
+        },
+        {
+            "name": "phpstan/extension-installer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/extension-installer.git",
+                "reference": "66c7adc9dfa38b6b5838a9fb728b68a7d8348051"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/extension-installer/zipball/66c7adc9dfa38b6b5838a9fb728b68a7d8348051",
+                "reference": "66c7adc9dfa38b6b5838a9fb728b68a7d8348051",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "php": "^7.1 || ^8.0",
+                "phpstan/phpstan": ">=0.11.6"
+            },
+            "require-dev": {
+                "composer/composer": "^1.8",
+                "phing/phing": "^2.16.3",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "phpstan/phpstan-strict-rules": "^0.11 || ^0.12"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PHPStan\\ExtensionInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\ExtensionInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Composer plugin for automatic installation of PHPStan extensions",
+            "support": {
+                "issues": "https://github.com/phpstan/extension-installer/issues",
+                "source": "https://github.com/phpstan/extension-installer/tree/1.1.0"
+            },
+            "time": "2020-12-13T13:06:13+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.94",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
+                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.94"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-30T09:05:27+00:00"
+        },
+        {
+            "name": "phpstan/phpstan-strict-rules",
+            "version": "0.12.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan-strict-rules.git",
+                "reference": "ce82a050f9da4a32e438272907e38cdd04806223"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/ce82a050f9da4a32e438272907e38cdd04806223",
+                "reference": "ce82a050f9da4a32e438272907e38cdd04806223",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "phpstan/phpstan": "^0.12.66"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Extra strict and opinionated rules for PHPStan",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/0.12.10"
+            },
+            "time": "2021-07-04T14:57:39+00:00"
+        },
+        {
+            "name": "phpstan/phpstan-symfony",
+            "version": "0.12.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan-symfony.git",
+                "reference": "2c240808116be56c7129d9d48b8dd40d1344e0eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/2c240808116be56c7129d9d48b8dd40d1344e0eb",
+                "reference": "2c240808116be56c7129d9d48b8dd40d1344e0eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "php": "^7.1 || ^8.0",
+                "phpstan/phpstan": "^0.12.86"
+            },
+            "conflict": {
+                "symfony/framework-bundle": "<3.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "phpstan/phpstan-strict-rules": "^0.12.5",
+                "phpunit/phpunit": "^9.5",
+                "symfony/config": "^4.2 || ^5.0",
+                "symfony/console": "^4.0 || ^5.0",
+                "symfony/framework-bundle": "^4.4 || ^5.0",
+                "symfony/http-foundation": "^4.0 || ^5.0",
+                "symfony/messenger": "^4.2 || ^5.0",
+                "symfony/serializer": "^4.0 || ^5.0"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon",
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukáš Unger",
+                    "email": "looky.msc@gmail.com",
+                    "homepage": "https://lookyman.net"
+                }
+            ],
+            "description": "Symfony Framework extensions and rules for PHPStan",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-symfony/issues",
+                "source": "https://github.com/phpstan/phpstan-symfony/tree/0.12.42"
+            },
+            "time": "2021-08-18T06:56:59+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -10999,6 +11336,62 @@
                 }
             ],
             "time": "2020-09-28T06:39:44+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2021-04-09T00:54:41+00:00"
         },
         {
             "name": "symfony/browser-kit",

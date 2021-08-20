@@ -109,6 +109,9 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
+    "friendsoftwig/twigcs": {
+        "version": "v5.0.0"
+    },
     "guzzlehttp/guzzle": {
         "version": "7.3.0"
     },
@@ -181,8 +184,23 @@
     "phpdocumentor/type-resolver": {
         "version": "1.4.0"
     },
+    "phpro/grumphp-shim": {
+        "version": "v1.4.0"
+    },
     "phpspec/prophecy": {
         "version": "1.13.0"
+    },
+    "phpstan/extension-installer": {
+        "version": "1.1.0"
+    },
+    "phpstan/phpstan": {
+        "version": "0.12.94"
+    },
+    "phpstan/phpstan-strict-rules": {
+        "version": "0.12.10"
+    },
+    "phpstan/phpstan-symfony": {
+        "version": "0.12.42"
     },
     "phpunit/php-code-coverage": {
         "version": "9.2.6"
@@ -298,6 +316,18 @@
         },
         "files": [
             "config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.6",
+            "ref": "1019e5c08d4821cb9b77f4891f8e9c31ff20ac6f"
+        },
+        "files": [
+            "phpcs.xml.dist"
         ]
     },
     "symfony/apache-pack": {
