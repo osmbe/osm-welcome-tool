@@ -17,11 +17,11 @@
                 <a href="{{ path('app_list', {regionKey: key}) }}" class="focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true"></span>
                     <p class="font-medium text-gray-900">
-                        {{ region.name | trans }}
+                        {{ region.name|trans }}
                     </p>
                     <p class="text-xs text-gray-500 truncate">
-                        {{ 'Last update' | trans }}:
-                        <time datetime="{{ region.lastUpdate | date('c') }}">{{ region.lastUpdate | format_datetime('medium') }}</time>
+                        {{ 'Last update'|trans }}:
+                        <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|format_datetime('medium') }}</time>
                     </p>
                 </a>
             </div>

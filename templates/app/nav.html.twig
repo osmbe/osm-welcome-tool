@@ -6,7 +6,7 @@
                     {% if region is defined %}
                     <div class="text-2xl font-bold text-gray-900">
                         {{ region.flag }}
-                        {{ region.name | trans }}
+                        {{ region.name|trans }}
                     </div>
                     {% else %}
                     <div class="text-2xl font-bold text-gray-900">
@@ -19,7 +19,7 @@
                 {% if app.user is null %}
                 <a href="{{ path('connect_openstreetmap_start') }}"
                     class="ml-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    {{ 'Login with OSM' | trans }}
+                    {{ 'Login with OSM'|trans }}
                 </a>
                 {% else %}
                 <div class=" flex items-center">
@@ -29,7 +29,7 @@
                             <button type="button"
                                 class="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                <span class="sr-only">{{ 'Open user menu' | trans }}</span>
+                                <span class="sr-only">{{ 'Open user menu'|trans }}</span>
                                 {% if app.user.image is not null %}
                                 <img class="h-8 w-8 rounded-full border" alt="{{ app.user.displayName }} profile picture"
                                     src="{{ app.user.image }}">
@@ -43,7 +43,7 @@
                     </div>
                     <a href="{{ path('logout') }}"
                         class="ml-6 inline-flex items-center px-4 py-2 border border-indigo-600 text-sm font-medium rounded-md shadow-sm text-indigo-600 bg-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        {{ 'Logout' | trans }}
+                        {{ 'Logout'|trans }}
                     </a>
                 </div>
                 {% endif %}

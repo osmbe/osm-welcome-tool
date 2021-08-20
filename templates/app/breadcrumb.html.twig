@@ -10,7 +10,7 @@
                         <path
                             d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                     </svg>
-                    <span class="sr-only">{{ 'Home' | trans }}</span>
+                    <span class="sr-only">{{ 'Home'|trans }}</span>
                 </a>
             </div>
         </li>
@@ -25,7 +25,7 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ region.name | trans }}</a>
+                <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ region.name|trans }}</a>
             </div>
         </li>
 
@@ -38,7 +38,7 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <a href="{{ path('app_list', { regionKey: region.key }) }}" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ 'List' | trans }}</a>
+                <a href="{{ path('app_list', {regionKey: region.key}) }}" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ 'List'|trans }}</a>
             </div>
         </li>
 
@@ -53,7 +53,7 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <a href="{{ path('app_mapper', { regionKey: region.key, id: mapper.id }) }}" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ 'Mapper' | trans }}</a>
+                <a href="{{ path('app_mapper', {regionKey: region.key, id: mapper.id}) }}" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">{{ 'Mapper'|trans }}</a>
             </div>
         </li>
 

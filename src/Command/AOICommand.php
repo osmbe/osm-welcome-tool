@@ -63,7 +63,7 @@ class AOICommand extends Command
         $name = sprintf('Welcome Tool for %s', $region['name']);
         $filters = [
             'geometry' => $this->provider->getGeometry($key),
-            'all_reasons' => '40', // "New mapper" (https://github.com/willemarcel/osmcha/blob/90444bca48db64cc04721b2231b1ae5f631737b3/osmcha/changeset.py#L64-L65)
+            'all_reasons' => '40',
         ];
 
         $date = $input->getOption('date');

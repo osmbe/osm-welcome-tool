@@ -29,8 +29,12 @@ class UpdateCommand extends Command
 
     protected function configure(): void
     {
-        $this
-            ->addOption('force', 'f', InputOption::VALUE_NONE, 'Force process (even if it has already been processed today)');
+        $this->addOption(
+            'force',
+            'f',
+            InputOption::VALUE_NONE,
+            'Force process (even if it has already been processed today)'
+        );
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -47,18 +51,16 @@ class UpdateCommand extends Command
 
             $lastUpdate = $this->cache->getItem($cacheKey);
             if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
-                // If cache is not set, get new mappers from the last 5 days
                 if (!$lastUpdate->isHit()) {
+                    // If cache is not set, get new mappers from the last 5 days
                     $date = (new DateTime())->sub(new DateInterval('P5D'))->format('Y-m-d');
                     $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
-                }
-                // If last update was today and process is forced, get new mappers from yesterday
-                elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
+                } elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
+                    // If last update was today and process is forced, get new mappers from yesterday
                     $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
                     $io->note(sprintf('Get new mappers from %s (forced).', $date));
-                }
-                // Get new mappers from the last update date
-                else {
+                } else {
+                    // Get new mappers from the last update date
                     $date = (new DateTime($lastUpdate->get()))->format('Y-m-d');
                     $io->note(sprintf('Get new mappers from %s.', $date));
                 }

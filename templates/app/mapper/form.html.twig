@@ -2,7 +2,7 @@
     <div class="bg-white shadow sm:rounded-lg">
         <div class="border-b border-gray-200 px-4 py-5 sm:px-6">
             <h2 id="applicant-information-title" class="text-lg leading-6 font-medium text-gray-900">
-                {{ 'Send a welcome message' | trans }}
+                {{ 'Send a welcome message'|trans }}
             </h2>
         </div>
 
@@ -11,16 +11,16 @@
                 <div>
                     <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider"
                         id="projects-headline">
-                        {{ 'Templates' | trans }}
+                        {{ 'Templates'|trans }}
                     </h3>
                     <div class="mt-1 space-y-1" aria-labelledby="projects-headline">
                         {% for template in templates %}
                         <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
                         {% set active = template == selectedTemplate %}
                         <a class="group flex items-center px-3 py-2 text-sm font-medium rounded-md {{ active ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50' }}"
-                            href="{{ path('app_mapper', { regionKey: region.key, id: mapper.id }) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
+                            href="{{ path('app_mapper', {regionKey: region.key, id: mapper.id}) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
                             <span class="truncate">
-                                {{ template.name }} ({{ template.locale | language_name }})
+                                {{ template.name }} ({{ template.locale|language_name }})
                             </span>
                         </a>
 
@@ -48,11 +48,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
-                        {{ 'Copy text to clipboard' | trans }}
+                        {{ 'Copy text to clipboard'|trans }}
                     </button>
                     <button
                         class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        type="submit" id="template-send">{{ 'Send message' | trans }}</button>
+                        type="submit" id="template-send">{{ 'Send message'|trans }}</button>
                 </div>
             </form>
         </div>

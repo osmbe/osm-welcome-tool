@@ -5,12 +5,12 @@
                 Changeset #{{ changeset.id }}
             </div>
             <div class="text-sm font-medium text-gray-500">
-                <time datetime="{{ changeset.createdAt | date('c') }}">
-                    {{ changeset.createdAt | format_date('long') }}
+                <time datetime="{{ changeset.createdAt|date('c') }}">
+                    {{ changeset.createdAt|format_date('long') }}
                 </time>
             </div>
         </div>
-        <div class="sm:ml-5 changeset-dropdown" data-changeset-id="{{ changeset.id }}" data-label="{{ 'View' | trans }}"></div>
+        <div class="sm:ml-5 changeset-dropdown" data-changeset-id="{{ changeset.id }}" data-label="{{ 'View'|trans }}"></div>
     </div>
     <div class="mt-1 text-sm text-gray-700">
         <p>{{ changeset.comment }}</p>
@@ -19,23 +19,23 @@
         {# All changesets from a new mapper are flagged as suspect
         {% if changeset.suspect == true %}
         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">
-            {{ 'Suspect' | trans }}
+            {{ 'Suspect'|trans }}
         </span>
         {% endif %}
         #}
         {% if changeset.harmful == true %}
         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
-            {{ 'Harmful' | trans }}
+            {{ 'Harmful'|trans }}
         </span>
         {% endif %}
         {% if changeset.checked == true %}
         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
-            {{ 'Checked' | trans }}
+            {{ 'Checked'|trans }}
         </span>
         {% endif %}
-        {% for reason in changeset.reasons | filter(r => r != 'New mapper') %}
+        {% for reason in changeset.reasons|filter(r => r != 'New mapper') %}
         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
-            {{ reason | trans }}
+            {{ reason|trans }}
         </span>
         {% endfor %}
     </div>

@@ -38,7 +38,7 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
         $accessToken = $this->fetchAccessToken($client);
 
         return new SelfValidatingPassport(
-            new UserBadge($accessToken, function () use ($accessToken, $client) {
+            new UserBadge($accessToken, function () use ($accessToken, $client): User {
                 /** @var OpenStreetMapResourceOwner */
                 $openstreetmapUser = $client->fetchUserFromToken($accessToken);
 

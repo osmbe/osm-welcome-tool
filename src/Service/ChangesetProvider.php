@@ -20,6 +20,9 @@ class ChangesetProvider
         if (null === $changeset) {
             /** @todo Check https://github.com/brick/geo/blob/master/src/Polygon.php#L199-L208 */
             $extent = [];
+            $total = $feature['properties']['create']
+                + $feature['properties']['modify']
+                + $feature['properties']['create'];
 
             $changeset = new Changeset();
             $changeset->setId($feature['id']);
@@ -27,7 +30,7 @@ class ChangesetProvider
             $changeset->setComment($feature['properties']['comment']);
             $changeset->setEditor($feature['properties']['editor']);
             $changeset->setLocale($feature['properties']['metadata']['locale'] ?? null);
-            $changeset->setChangesCount($feature['properties']['create'] + $feature['properties']['modify'] + $feature['properties']['create']);
+            $changeset->setChangesCount($total);
             $changeset->setCreateCount($feature['properties']['create']);
             $changeset->setModifyCount($feature['properties']['modify']);
             $changeset->setDeleteCount($feature['properties']['create']);
@@ -35,7 +38,9 @@ class ChangesetProvider
             // $changeset->setMapper($mapper);
         }
 
-        $changeset->setReasons(array_map(function ($reason): string { return $reason['name']; }, $feature['properties']['reasons']));
+        $changeset->setReasons(array_map(function ($reason): string {
+            return $reason['name'];
+        }, $feature['properties']['reasons']));
         $changeset->setSuspect($feature['properties']['is_suspect']);
         $changeset->setHarmful($feature['properties']['harmful']);
         $changeset->setChecked($feature['properties']['checked']);
@@ -77,7 +82,7 @@ class ChangesetProvider
         foreach ($element as $tag) {
             $tags[] = $tag;
         }
-        $filter = array_filter($tags, function (SimpleXMLElement $element) use ($key) {
+        $filter = array_filter($tags, function (SimpleXMLElement $element) use ($key): bool {
             $attr = $element->attributes();
 
             return (string) $attr->k === $key;

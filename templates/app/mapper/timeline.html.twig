@@ -1,5 +1,5 @@
 <section class="bg-white px-4 py-5 shadow sm:rounded-lg sm:px-6">
-    <h2 id="timeline-title" class="text-lg font-medium text-gray-900">{{ 'Timeline' | trans }}</h2>
+    <h2 id="timeline-title" class="text-lg font-medium text-gray-900">{{ 'Timeline'|trans }}</h2>
 
     <!-- Activity Feed -->
     <div class="mt-6 flow-root">
@@ -24,12 +24,12 @@
                             <div>
                                 <p class="text-sm text-gray-500">
                                     {% set userlink = '<a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/user/' ~ mapper.displayName ~ '">' ~ mapper.displayName ~ '</a>' %}
-                                    {{ '{userlink} has replied' | trans({'{userlink}': userlink}) | raw }}
+                                    {{ '{userlink} has replied'|trans({'{userlink}': userlink})|raw }}
                                 </p>
                             </div>
                             <div class="text-right text-sm whitespace-nowrap text-gray-500">
-                                <time datetime="{{ mapper.welcome.reply | date('c') }}">
-                                    {{ mapper.welcome.reply | format_date('medium') }}
+                                <time datetime="{{ mapper.welcome.reply|date('c') }}">
+                                    {{ mapper.welcome.reply|format_date('medium') }}
                                 </time>
                             </div>
                         </div>
@@ -57,12 +57,12 @@
                             <div>
                                 <p class="text-sm text-gray-500">
                                     {% set userlink = '<a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/user/' ~ mapper.welcome.user.displayName ~ '">' ~ mapper.welcome.user.displayName ~ '</a>' %}
-                                    {{ 'Welcomed by {userlink}' | trans({'{userlink}': userlink}) | raw }}
+                                    {{ 'Welcomed by {userlink}'|trans({'{userlink}': userlink})|raw }}
                                 </p>
                             </div>
                             <div class="text-right text-sm whitespace-nowrap text-gray-500">
-                                <time datetime="{{ mapper.welcome.date | date('c') }}">
-                                    {{ mapper.welcome.date | format_date('medium') }}
+                                <time datetime="{{ mapper.welcome.date|date('c') }}">
+                                    {{ mapper.welcome.date|format_date('medium') }}
                                 </time>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
             </li>
             {% endif %}
 
-            {% for changeset in changesets | sort((a, b) => a.createdAt <=> b.createdAt) | reverse %}
+            {% for changeset in changesets|sort((a, b) => a.createdAt <=> b.createdAt)|reverse %}
             <li>
                 <div class="relative pb-8">
                     <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
@@ -89,15 +89,15 @@
                         <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
                             <div>
                                 <p class="text-sm text-gray-500">
-                                    {{ 'Changeset' | trans }}
+                                    {{ 'Changeset'|trans }}
                                     <a class="font-medium text-gray-900" target="_blank" href="https://www.openstreetmap.org/changeset/{{ changeset.id }}">
                                         #{{ changeset.id }}
                                     </a>
                                 </p>
                             </div>
                             <div class="text-right text-sm whitespace-nowrap text-gray-500">
-                                <time datetime="{{ changeset.createdAt | date('c') }}">
-                                    {{ changeset.createdAt | format_date('medium') }}
+                                <time datetime="{{ changeset.createdAt|date('c') }}">
+                                    {{ changeset.createdAt|format_date('medium') }}
                                 </time>
                             </div>
                         </div>
@@ -122,11 +122,12 @@
                         </div>
                         <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
                             <div>
-                                <p class="text-sm text-gray-500">{{ 'Account created' | trans }}</p>
+                                <p class="text-sm text-gray-500">{{ 'Account created'|trans }}</p>
                             </div>
                             <div class="text-right text-sm whitespace-nowrap text-gray-500">
-                                <time datetime="{{ mapper.accountCreated | date('c') }}">{{ mapper.accountCreated |
-                                    format_date('medium') }}</time>
+                                <time datetime="{{ mapper.accountCreated|date('c') }}">
+                                    {{ mapper.accountCreated|format_date('medium') }}
+                                </time>
                             </div>
                         </div>
                     </div>

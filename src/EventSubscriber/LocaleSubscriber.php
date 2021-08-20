@@ -20,29 +20,25 @@ class LocaleSubscriber implements EventSubscriberInterface
         //     return;
         // }
 
-        // try to see if the locale has been set as a _locale routing parameter
         if (true === $request->attributes->has('_locale')) {
+            // try to see if the locale has been set as a _locale routing parameter
             $locale = $request->attributes->get('_locale');
             $request->getSession()->set('_locale', $locale);
-        }
-        // check if locale is set using `l` query parameter
-        elseif (true === $request->query->has('l')) {
+        } elseif (true === $request->query->has('l')) {
+            // check if locale is set using `l` query parameter
             $locale = $request->query->get('l');
             $request->getSession()->set('_locale', $locale);
             $request->setLocale($locale);
-        }
-        // if no explicit locale has been set on this request, use one from the session
-        elseif (true === $request->getSession()->has('_locale')) {
+        } elseif (true === $request->getSession()->has('_locale')) {
+            // if no explicit locale has been set on this request, use one from the session
             $locale = $request->getSession()->get('_locale');
             $request->setLocale($locale);
-        }
-        // if we still don't have a locale defined, use the browser languages
-        elseif (\count($request->getLanguages()) > 0) {
+        } elseif (\count($request->getLanguages()) > 0) {
+            // if we still don't have a locale defined, use the browser languages
             $languages = $request->getLanguages();
             $request->setLocale($languages[0]);
-        }
-        // or use the default locale
-        else {
+        } else {
+            // or use the default locale
             $request->setLocale($this->defaultLocale);
         }
     }

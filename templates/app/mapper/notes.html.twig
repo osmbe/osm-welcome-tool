@@ -6,7 +6,7 @@
             </div>
             <div class="px-4 py-6 sm:px-6">
                 <ul class="space-y-8">
-                    {% for note in mapper.notes | sort((a, b) => a.date <=> b.date) %}
+                    {% for note in mapper.notes|sort((a, b) => a.date <=> b.date) %}
                     <li>
                         <div class="flex space-x-3">
                             <div class="flex-shrink-0">
@@ -27,18 +27,18 @@
                                     </a>
                                 </div>
                                 <div class="mt-1 text-sm text-gray-700">
-                                    <p>{{ note.text | markdown_to_html }}</p>
+                                    <p>{{ note.text|markdown_to_html }}</p>
                                 </div>
                                 <div class="mt-2 text-sm space-x-2">
                                     <span class="text-gray-500 font-medium">
-                                        {{ note.date | format_datetime('medium') }}
+                                        {{ note.date|format_datetime('medium') }}
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </li>
                     {% else %}
-                    <p class="italic text-gray-500">{{ 'No note.' | trans }}</p>
+                    <p class="italic text-gray-500">{{ 'No note.'|trans }}</p>
                     {% endfor %}
                 </ul>
             </div>
@@ -73,7 +73,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                             <span>
-                                {{ 'Markdown is allowed.' | trans }}
+                                {{ 'Markdown is allowed.'|trans }}
                             </span>
                         </a>
                         {{ form_widget(formNote.submit, {label: 'Add', attr: {class: 'inline-flex items-center justify-center px-4

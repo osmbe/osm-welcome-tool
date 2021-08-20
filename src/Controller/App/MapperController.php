@@ -112,9 +112,13 @@ class MapperController extends AbstractController
         $templateLocale = $request->query->getAlpha('locale');
         $templateFilename = $request->query->get('template');
         if (null !== $templateFilename && '' !== $templateLocale) {
-            $filter = array_filter($this->templates, function (Template $template) use ($templateLocale, $templateFilename) {
-                return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2) && $template->getFilename() === $templateFilename;
-            });
+            $filter = array_filter(
+                $this->templates,
+                function (Template $template) use ($templateLocale, $templateFilename): bool {
+                    return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
+                        && $template->getFilename() === $templateFilename;
+                }
+            );
             if (\count($filter) > 0) {
                 return current($filter);
             }
@@ -123,7 +127,7 @@ class MapperController extends AbstractController
         // Get current template based on mapper locale
         $locale = $this->mapper->getFirstChangeset()->getLocale();
         if (null !== $locale) {
-            $filter = array_filter($this->templates, function (Template $template) use ($locale) {
+            $filter = array_filter($this->templates, function (Template $template) use ($locale): bool {
                 return substr($template->getLocale(), 0, 2) === substr($locale, 0, 2);
             });
             if (\count($filter) > 0) {

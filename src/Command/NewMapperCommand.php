@@ -79,7 +79,9 @@ class NewMapperCommand extends Command
 
             $changesetsResponse = $this->osmcha->getAreaOfInterestChangesets($region['osmcha.id']);
 
-            $io->text(sprintf('%s %s', $changesetsResponse->getInfo('http_method'), $changesetsResponse->getInfo('url')));
+            $io->text(
+                sprintf('%s %s', $changesetsResponse->getInfo('http_method'), $changesetsResponse->getInfo('url'))
+            );
 
             $changesetsCollection = $changesetsResponse->toArray();
 
@@ -106,7 +108,7 @@ class NewMapperCommand extends Command
 
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
-                $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature) {
+                $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature): bool {
                     return $mapper->getId() === (int) ($feature['properties']['uid']);
                 }));
 
@@ -123,7 +125,7 @@ class NewMapperCommand extends Command
                 if (true === \in_array($firstChangeset->getId(), $changesetsId, true)) {
                     $this->entityManager->persist($mapper);
 
-                    $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper) {
+                    $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper): bool {
                         return $changeset->getMapper() === $mapper;
                     });
                     foreach ($mapperChangesets as $changeset) {
@@ -166,9 +168,13 @@ class NewMapperCommand extends Command
             $changesetsElement[] = $changeset;
         }
         /** @var Changeset[] */
-        $changesets = array_map(function (SimpleXMLElement $element) { return $this->changesetProvider->fromOSM($element); }, $changesetsElement);
+        $changesets = array_map(function (SimpleXMLElement $element): Changeset {
+            return $this->changesetProvider->fromOSM($element);
+        }, $changesetsElement);
 
-        $createdAt = array_map(function (Changeset $changeset) { return $changeset->getCreatedAt()->getTimestamp(); }, $changesets);
+        $createdAt = array_map(function (Changeset $changeset): int {
+            return $changeset->getCreatedAt()->getTimestamp();
+        }, $changesets);
 
         array_multisort($createdAt, \SORT_ASC, \SORT_NUMERIC, $changesets);
 
