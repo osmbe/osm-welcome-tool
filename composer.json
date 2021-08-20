@@ -1,8 +1,8 @@
 {
+    "name": "osmbe/osm-welcome-tool",
     "type": "project",
+    "description": "Website to help welcoming new OpenStreetMap contributors",
     "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "require": {
         "php": ">=8.0",
         "ext-ctype": "*",
@@ -56,7 +56,16 @@
         "twig/markdown-extra": "^3.3",
         "twig/twig": "^3.3"
     },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
     "require-dev": {
+        "ergebnis/composer-normalize": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.0",
         "friendsoftwig/twigcs": "^5.0",
         "phpro/grumphp-shim": "^1.4",
@@ -82,6 +91,12 @@
         },
         "sort-packages": true
     },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.3.*"
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src/"
@@ -92,30 +107,18 @@
             "App\\Tests\\": "tests/"
         }
     },
-    "replace": {
-        "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
-    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
-        },
         "post-install-cmd": [
             "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
-    "extra": {
-        "symfony": {
-            "allow-contrib": false,
-            "require": "5.3.*"
+        ],
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }

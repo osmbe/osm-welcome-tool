@@ -94,6 +94,15 @@
     "egulias/email-validator": {
         "version": "3.1.1"
     },
+    "ergebnis/composer-normalize": {
+        "version": "2.15.0"
+    },
+    "ergebnis/json-normalizer": {
+        "version": "1.0.3"
+    },
+    "ergebnis/json-printer": {
+        "version": "3.1.1"
+    },
     "friendsofphp/php-cs-fixer": {
         "version": "3.0",
         "recipe": {
@@ -124,6 +133,9 @@
     "jbelien/oauth2-openstreetmap": {
         "version": "0.1.0"
     },
+    "justinrainbow/json-schema": {
+        "version": "5.2.11"
+    },
     "knpuniversity/oauth2-client-bundle": {
         "version": "1.20",
         "recipe": {
@@ -147,6 +159,9 @@
     },
     "league/oauth2-client": {
         "version": "2.6.0"
+    },
+    "localheinz/diff": {
+        "version": "1.1.1"
     },
     "monolog/monolog": {
         "version": "2.3.1"
