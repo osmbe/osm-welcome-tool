@@ -10,7 +10,7 @@ document.querySelectorAll('.changeset-dropdown').forEach(element => {
   const { changesetId, label } = ((element as HTMLElement).dataset);
 
   if (typeof changesetId !== 'undefined' && typeof label !== 'undefined') {
-    createDropdown(element, { id: parseInt(changesetId), label })
+    createDropdown(element, { id: parseInt(changesetId), label });
   }
 });
 
@@ -23,9 +23,10 @@ document.querySelectorAll('pre > code').forEach((element) => {
 const highlight = (editor: HTMLElement): void => {
   // highlight.js does not trims old tags,
   // let's do it by this hack.
-  editor.textContent = editor.textContent
-  hljs.highlightElement(editor)
-}
+  // eslint-disable-next-line no-self-assign
+  editor.textContent = editor.textContent;
+  hljs.highlightElement(editor);
+};
 
 const element = document.querySelector('.editor');
 if (element !== null) {
@@ -56,4 +57,4 @@ if (element !== null) {
 
     window.open(url.toString());
   });
-};
+}

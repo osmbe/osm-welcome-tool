@@ -1,6 +1,6 @@
 import { Menu } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import { createPopper, Options } from '@popperjs/core'
+import { createPopper, Options } from '@popperjs/core';
 import React, {  RefCallback, useRef, useCallback, useMemo } from 'react';
 import ReactDOM, { render } from 'react-dom';
 
@@ -27,12 +27,13 @@ function getItems(id: number) {
 
 /** @see https://github.com/tailwindlabs/headlessui/blob/main/packages/@headlessui-react/playground-utils/hooks/use-popper.ts */
 function usePopper(options?: Partial<Options>): [RefCallback<Element | null>, RefCallback<HTMLElement | null>] {
-  let reference = useRef<Element>(null);
-  let popper = useRef<HTMLElement>(null);
+  const reference = useRef<Element>(null);
+  const popper = useRef<HTMLElement>(null);
 
-  let cleanupCallback = useRef(() => {});
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  const cleanupCallback = useRef(() => {});
 
-  let instantiatePopper = useCallback(() => {
+  const instantiatePopper = useCallback(() => {
     if (!reference.current) return;
     if (!popper.current) return;
 
@@ -79,46 +80,46 @@ function Dropdown(prop: { id: number; label: string }) {
   });
 
   return (
-    <span className='relative z-0 inline-flex shadow-sm rounded-md'>
+    <span className="relative z-0 inline-flex shadow-sm rounded-md">
       <a
-        target='_blank'
+        target="_blank" rel="noreferrer"
         href={`https://www.openstreetmap.org/changeset/${prop.id}`}
-        className='relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'
+        className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
       >
         {prop.label}
       </a>
-      <Menu as='span' className='-ml-px relative block'>
+      <Menu as="span" className="-ml-px relative block">
         <Menu.Button
           ref={trigger}
-          className='relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'
+          className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
         >
-          <span className='sr-only'>Open options</span>
-          <ChevronDownIcon className='h-5 w-5' aria-hidden='true' />
+          <span className="sr-only">Open options</span>
+          <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
         </Menu.Button>
         <Portal>
-            <Menu.Items
-              ref={container}
-              className='origin-top-right absolute right-0 mt-2 -mr-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
-            >
-              <div className='py-1'>
-                {getItems(prop.id).map((item) => (
-                  <Menu.Item key={item.name}>
-                    {({ active }) => (
-                      <a
-                        target='_blank'
-                        href={item.href}
-                        className={classNames(
-                          active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
-                        )}
-                      >
-                        {item.name}
-                      </a>
-                    )}
-                  </Menu.Item>
-                ))}
-              </div>
-            </Menu.Items>
+          <Menu.Items
+            ref={container}
+            className="origin-top-right absolute right-0 mt-2 -mr-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          >
+            <div className="py-1">
+              {getItems(prop.id).map((item) => (
+                <Menu.Item key={item.name}>
+                  {({ active }) => (
+                    <a
+                      target="_blank"
+                      href={item.href}
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )} rel="noreferrer"
+                    >
+                      {item.name}
+                    </a>
+                  )}
+                </Menu.Item>
+              ))}
+            </div>
+          </Menu.Items>
         </Portal>
       </Menu>
     </span>
