@@ -1,0 +1,19 @@
+grumphp:
+    environment:
+        paths:
+            - node_modules/.bin
+    tasks:
+        composer: ~
+        composer_normalize: ~
+        eslint:
+            whitelist_patterns:
+                - /^assets\/typescript\/(.*)/
+        phpcs: ~
+        phpcsfixer: ~
+        phpstan: ~
+        phpunit: ~
+        phpversion:
+            project: "8.0"
+        twigcs:
+            ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
+        yamllint: ~
