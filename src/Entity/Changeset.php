@@ -206,6 +206,7 @@ class Changeset
 
         return $this;
     }
+
     public function getModifyCount(): ?int
     {
         return $this->modify_count;
