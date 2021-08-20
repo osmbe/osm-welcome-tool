@@ -16,4 +16,5 @@ grumphp:
             project: "8.0"
         twigcs:
             ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
+            exclude: ["vendor/"]
         yamllint: ~
