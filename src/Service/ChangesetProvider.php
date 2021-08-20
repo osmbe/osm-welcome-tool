@@ -17,7 +17,7 @@ class ChangesetProvider
     public function fromOSMCha(array $feature): Changeset
     {
         $changeset = $this->repository->find($feature['id']);
-        if ($changeset === null) {
+        if (null === $changeset) {
             /** @todo Check https://github.com/brick/geo/blob/master/src/Polygon.php#L199-L208 */
             $extent = [];
 
@@ -48,7 +48,7 @@ class ChangesetProvider
         $attributes = $element->attributes();
 
         $changeset = $this->repository->find((int) $attributes->id);
-        if ($changeset === null) {
+        if (null === $changeset) {
             $extent = [
                 floatval(self::extractTag($element->tag, 'min_lon')),
                 floatval(self::extractTag($element->tag, 'min_lat')),
@@ -83,7 +83,7 @@ class ChangesetProvider
             return (string) $attr->k === $key;
         });
 
-        if (count($filter) === 0) {
+        if (0 === count($filter)) {
             return null;
         }
 

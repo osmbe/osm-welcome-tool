@@ -51,7 +51,7 @@ class RegionsProvider
     {
         $cacheKey = sprintf('last_update.%s', $key);
 
-        if ($this->cache->hasItem($cacheKey) !== true) {
+        if (true !== $this->cache->hasItem($cacheKey)) {
             return null;
         }
 

@@ -58,16 +58,16 @@ class MapperController extends AbstractController
 
         // Notes
         $formNote = $this->note($request);
-        if ($formNote->isSubmitted() === true && $formNote->isValid() === true) {
+        if (true === $formNote->isSubmitted() && true === $formNote->isValid()) {
             return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
         return $this->render('app/mapper/index.html.twig', [
-            'region'           => $region,
-            'mapper'           => $this->mapper,
-            'changesets'       => $this->mapper->getChangesets(),
-            'formNote'         => $formNote->createView(),
-            'templates'        => $this->templates,
+            'region' => $region,
+            'mapper' => $this->mapper,
+            'changesets' => $this->mapper->getChangesets(),
+            'formNote' => $formNote->createView(),
+            'templates' => $this->templates,
             'selectedTemplate' => $template,
         ]);
     }
@@ -80,7 +80,7 @@ class MapperController extends AbstractController
             $welcome->setMapper($this->mapper);
         }
 
-        if ($state === true) {
+        if (true === $state) {
             $welcome->setDate(new DateTime());
             $welcome->setUser($this->getUser());
 
@@ -111,7 +111,7 @@ class MapperController extends AbstractController
         // Get current template based on query
         $templateLocale = $request->query->getAlpha('locale');
         $templateFilename = $request->query->get('template');
-        if (!is_null($templateFilename) && $templateLocale !== '') {
+        if (!is_null($templateFilename) && '' !== $templateLocale) {
             $filter = array_filter($this->templates, function (Template $template) use ($templateLocale, $templateFilename) {
                 return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2) && $template->getFilename() === $templateFilename;
             });
@@ -152,7 +152,7 @@ class MapperController extends AbstractController
 
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() === true && $form->isValid() === true) {
+        if (true === $form->isSubmitted() && true === $form->isValid()) {
             $note->setDate(new DateTime());
 
             $this->entityManager->persist($note);

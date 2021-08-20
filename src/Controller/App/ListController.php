@@ -48,9 +48,9 @@ class ListController extends AbstractController
         );
 
         return $this->render('app/list/index.html.twig', [
-            'region'  => $region,
+            'region' => $region,
             'mappers' => $mappers,
-            'month'   => $month,
+            'month' => $month,
         ]);
     }
 }

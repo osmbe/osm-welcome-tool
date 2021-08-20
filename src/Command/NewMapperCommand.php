@@ -119,8 +119,8 @@ class NewMapperCommand extends Command
             foreach ($mappers as $mapper) {
                 $firstChangeset = $this->getFirstChangeset($mapper, $io);
 
-                /** @todo Add first changeset check date ?? */
-                if (in_array($firstChangeset->getId(), $changesetsId, true) === true) {
+                /* @todo Add first changeset check date ?? */
+                if (true === in_array($firstChangeset->getId(), $changesetsId, true)) {
                     $this->entityManager->persist($mapper);
 
                     $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper) {

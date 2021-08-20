@@ -23,7 +23,7 @@ class OSMChaAPI
             'aoi/',
             [
                 'json' => [
-                    'name'    => $name,
+                    'name' => $name,
                     'filters' => $filters,
                 ],
             ]
@@ -45,7 +45,7 @@ class OSMChaAPI
             sprintf('aoi/%s/', $id),
             [
                 'json' => [
-                    'name'    => $name,
+                    'name' => $name,
                     'filters' => $filters,
                 ],
             ]

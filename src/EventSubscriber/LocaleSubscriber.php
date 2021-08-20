@@ -21,18 +21,18 @@ class LocaleSubscriber implements EventSubscriberInterface
         // }
 
         // try to see if the locale has been set as a _locale routing parameter
-        if ($request->attributes->has('_locale') === true) {
+        if (true === $request->attributes->has('_locale')) {
             $locale = $request->attributes->get('_locale');
             $request->getSession()->set('_locale', $locale);
         }
         // check if locale is set using `l` query parameter
-        elseif ($request->query->has('l') === true) {
+        elseif (true === $request->query->has('l')) {
             $locale = $request->query->get('l');
             $request->getSession()->set('_locale', $locale);
             $request->setLocale($locale);
         }
         // if no explicit locale has been set on this request, use one from the session
-        elseif ($request->getSession()->has('_locale') === true) {
+        elseif (true === $request->getSession()->has('_locale')) {
             $locale = $request->getSession()->get('_locale');
             $request->setLocale($locale);
         }

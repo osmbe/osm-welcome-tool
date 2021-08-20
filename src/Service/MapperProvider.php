@@ -16,7 +16,7 @@ class MapperProvider
     public function fromOSM(array $array): Mapper
     {
         $mapper = $this->repository->find($array['user']['id']);
-        if ($mapper === null) {
+        if (null === $mapper) {
             $mapper = new Mapper();
             $mapper->setId($array['user']['id']);
             $mapper->setAccountCreated(new DateTime($array['user']['account_created']));

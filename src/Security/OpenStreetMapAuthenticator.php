@@ -29,7 +29,7 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
     public function supports(Request $request): ?bool
     {
         // continue ONLY if the current ROUTE matches the check ROUTE
-        return $request->attributes->get('_route') === 'connect_openstreetmap_check';
+        return 'connect_openstreetmap_check' === $request->attributes->get('_route');
     }
 
     public function authenticate(Request $request): PassportInterface

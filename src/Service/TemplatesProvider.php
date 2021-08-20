@@ -13,7 +13,7 @@ class TemplatesProvider
         $glob = glob(sprintf('%s/templates/messages/*/*/*.md', $this->projectDirectory));
 
         foreach ($glob as $path) {
-            if (is_readable($path) === true) {
+            if (true === is_readable($path)) {
                 $region = basename(dirname(dirname($path)));
                 $locale = basename(dirname($path));
 

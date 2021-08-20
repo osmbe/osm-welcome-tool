@@ -46,14 +46,14 @@ class UpdateCommand extends Command
             $io->title(sprintf('%s (%s)', $region['name'], date('Y-m-d')));
 
             $lastUpdate = $this->cache->getItem($cacheKey);
-            if ($input->getOption('force') === true || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
+            if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
                 // If cache is not set, get new mappers from the last 5 days
                 if (!$lastUpdate->isHit()) {
                     $date = (new DateTime())->sub(new DateInterval('P5D'))->format('Y-m-d');
                     $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
                 }
                 // If last update was today and process is forced, get new mappers from yesterday
-                elseif ($input->getOption('force') === true && $lastUpdate->get() === date('Y-m-d')) {
+                elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
                     $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
                     $io->note(sprintf('Get new mappers from %s (forced).', $date));
                 }
@@ -80,13 +80,13 @@ class UpdateCommand extends Command
         $aoiCommand = $this->getApplication()->find('osmcha:aoi');
         $aoiCommand->run(new ArrayInput([
             'region' => $region,
-            '-d'     => $date,
+            '-d' => $date,
         ]), $output);
 
         $newMapperCommand = $this->getApplication()->find('osmcha:new-mapper');
         $newMapperCommand->run(new ArrayInput([
             'region' => $region,
-            '-d'     => $date,
+            '-d' => $date,
         ]), $output);
     }
 }
