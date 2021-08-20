@@ -224,7 +224,7 @@ class Mapper
             return $changeset->getCreatedAt();
         }, $changesets);
 
-        array_multisort($createdAt, SORT_ASC, $changesets);
+        array_multisort($createdAt, \SORT_ASC, $changesets);
 
         return $changesets[0];
     }

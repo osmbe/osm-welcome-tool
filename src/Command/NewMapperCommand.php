@@ -65,7 +65,7 @@ class NewMapperCommand extends Command
         $date = $input->getOption('date');
         $region = $this->regionsProvider->getRegion($key);
 
-        if (is_null($region)) {
+        if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
 
             return Command::FAILURE;
@@ -84,10 +84,10 @@ class NewMapperCommand extends Command
             $changesetsCollection = $changesetsResponse->toArray();
 
             $usersId = array_map(function (array $feature): int {
-                return intval($feature['properties']['uid']);
+                return (int) ($feature['properties']['uid']);
             }, $changesetsCollection['features']);
             $changesetsId = array_map(function (array $feature): int {
-                return intval($feature['id']);
+                return (int) ($feature['id']);
             }, $changesetsCollection['features']);
 
             $getUsersResponse = $this->osm->getUsers($usersId);
@@ -107,7 +107,7 @@ class NewMapperCommand extends Command
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
                 $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature) {
-                    return $mapper->getId() === intval($feature['properties']['uid']);
+                    return $mapper->getId() === (int) ($feature['properties']['uid']);
                 }));
 
                 $changeset = $this->changesetProvider->fromOSMCha($feature);
@@ -120,7 +120,7 @@ class NewMapperCommand extends Command
                 $firstChangeset = $this->getFirstChangeset($mapper, $io);
 
                 /* @todo Add first changeset check date ?? */
-                if (true === in_array($firstChangeset->getId(), $changesetsId, true)) {
+                if (true === \in_array($firstChangeset->getId(), $changesetsId, true)) {
                     $this->entityManager->persist($mapper);
 
                     $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper) {
@@ -137,7 +137,7 @@ class NewMapperCommand extends Command
                             '[%s] %s : %s changeset(s)',
                             $firstChangeset->getCreatedAt()->format('r'),
                             $mapper->getDisplayName(),
-                            count($mapperChangesets)
+                            \count($mapperChangesets)
                         )
                     );
                 }
@@ -170,7 +170,7 @@ class NewMapperCommand extends Command
 
         $createdAt = array_map(function (Changeset $changeset) { return $changeset->getCreatedAt()->getTimestamp(); }, $changesets);
 
-        array_multisort($createdAt, SORT_ASC, SORT_NUMERIC, $changesets);
+        array_multisort($createdAt, \SORT_ASC, \SORT_NUMERIC, $changesets);
 
         return $changesets[0];
     }

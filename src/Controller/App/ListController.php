@@ -22,9 +22,9 @@ class ListController extends AbstractController
     {
         $region = $this->provider->getRegion($regionKey);
 
-        if (is_null($year) && is_null($month)) {
-            $year = intval(date('Y'));
-            $month = intval(date('m'));
+        if (null === $year && null === $month) {
+            $year = (int) (date('Y'));
+            $month = (int) (date('m'));
         }
 
         /** @var Mapper[] */
@@ -33,7 +33,7 @@ class ListController extends AbstractController
             ->findBy(['region' => $regionKey]);
 
         $firstChangetsetCreatedAt = array_map(function (Mapper $mapper) { return $mapper->getFirstChangeset()->getCreatedAt(); }, $mappers);
-        array_multisort($firstChangetsetCreatedAt, SORT_DESC, $mappers);
+        array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
         $month = (new DateTime())->setDate($year, $month, 1);
 

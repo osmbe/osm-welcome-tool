@@ -54,7 +54,7 @@ class AOICommand extends Command
         $key = $input->getArgument('region');
         $region = $this->provider->getRegion($key);
 
-        if (is_null($region)) {
+        if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
 
             return Command::FAILURE;
@@ -67,7 +67,7 @@ class AOICommand extends Command
         ];
 
         $date = $input->getOption('date');
-        if (!is_null($date)) {
+        if (null !== $date) {
             $filters['date__gte'] = $date;
         }
 

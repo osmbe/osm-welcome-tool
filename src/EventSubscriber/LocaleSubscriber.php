@@ -37,7 +37,7 @@ class LocaleSubscriber implements EventSubscriberInterface
             $request->setLocale($locale);
         }
         // if we still don't have a locale defined, use the browser languages
-        elseif (count($request->getLanguages()) > 0) {
+        elseif (\count($request->getLanguages()) > 0) {
             $languages = $request->getLanguages();
             $request->setLocale($languages[0]);
         }

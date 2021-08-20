@@ -75,7 +75,7 @@ class MapperController extends AbstractController
     private function updateWelcomeDate(bool $state): void
     {
         $welcome = $this->mapper->getWelcome();
-        if (is_null($welcome)) {
+        if (null === $welcome) {
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
         }
@@ -95,7 +95,7 @@ class MapperController extends AbstractController
     private function updateWelcomeReply(bool $state): void
     {
         $welcome = $this->mapper->getWelcome();
-        if (is_null($welcome)) {
+        if (null === $welcome) {
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
             $welcome->setDate(new DateTime());
@@ -111,28 +111,28 @@ class MapperController extends AbstractController
         // Get current template based on query
         $templateLocale = $request->query->getAlpha('locale');
         $templateFilename = $request->query->get('template');
-        if (!is_null($templateFilename) && '' !== $templateLocale) {
+        if (null !== $templateFilename && '' !== $templateLocale) {
             $filter = array_filter($this->templates, function (Template $template) use ($templateLocale, $templateFilename) {
                 return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2) && $template->getFilename() === $templateFilename;
             });
-            if (count($filter) > 0) {
+            if (\count($filter) > 0) {
                 return current($filter);
             }
         }
 
         // Get current template based on mapper locale
         $locale = $this->mapper->getFirstChangeset()->getLocale();
-        if (!is_null($locale)) {
+        if (null !== $locale) {
             $filter = array_filter($this->templates, function (Template $template) use ($locale) {
                 return substr($template->getLocale(), 0, 2) === substr($locale, 0, 2);
             });
-            if (count($filter) > 0) {
+            if (\count($filter) > 0) {
                 return current($filter);
             }
         }
 
         // Take first template
-        if (count($this->templates) > 0) {
+        if (\count($this->templates) > 0) {
             return current($this->templates);
         }
 
