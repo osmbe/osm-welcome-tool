@@ -8,7 +8,6 @@ grumphp:
         eslint:
             whitelist_patterns:
                 - /^assets\/typescript\/(.*)/
-        phpcs: ~
         phpcsfixer:
             config: ".php-cs-fixer.dist.php"
         phpstan: ~
