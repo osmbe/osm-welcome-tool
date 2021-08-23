@@ -147,7 +147,7 @@
       </trans-unit>
       <trans-unit id="MiwOE_9" resname="Add a note">
         <source>Add a note</source>
-        <target>Aggiungi una niota</target>
+        <target>Aggiungi una nota</target>
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
