@@ -1,6 +1,6 @@
 ---
 name: Default
-title: Welcome to OpenStreetMap
+title: Benvenuto in OpenStreetMap
 ---
 
 Ciao {{ mapper.displayName }},
