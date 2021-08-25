@@ -139,7 +139,7 @@
       </trans-unit>
       <trans-unit id="2NosSd8" resname="Note">
         <source>Note</source>
-        <target>Note</target>
+        <target>Nota</target>
       </trans-unit>
       <trans-unit id="n9coxmy" resname="Add">
         <source>Add</source>
@@ -199,7 +199,7 @@
       </trans-unit>
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
-        <target>__Notes</target>
+        <target>Note</target>
       </trans-unit>
     </body>
   </file>
