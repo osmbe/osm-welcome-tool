@@ -3,7 +3,8 @@ grumphp:
     paths:
       - node_modules/.bin
   tasks:
-    composer: ~
+    composer:
+      strict: true
     composer_normalize: ~
     eslint:
       whitelist_patterns:
