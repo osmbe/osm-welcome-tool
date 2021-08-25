@@ -197,6 +197,10 @@
         <source>Logout</source>
         <target>Se déconnecter</target>
       </trans-unit>
+      <trans-unit id="inUlsUk" resname="Notes">
+        <source>Notes</source>
+        <target>Notes</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
