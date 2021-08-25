@@ -2,6 +2,9 @@ grumphp:
   environment:
     paths:
       - node_modules/.bin
+  ascii:
+    failed: ~
+    succeeded: ~
   tasks:
     composer:
       strict: true
