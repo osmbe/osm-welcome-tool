@@ -1,20 +1,31 @@
 grumphp:
-    environment:
-        paths:
-            - node_modules/.bin
-    tasks:
-        composer: ~
-        composer_normalize: ~
-        eslint:
-            whitelist_patterns:
-                - /^assets\/typescript\/(.*)/
-        phpcsfixer:
-            config: ".php-cs-fixer.dist.php"
-        phpstan: ~
-        phpunit: ~
-        phpversion:
-            project: "8.0"
-        twigcs:
-            ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
-            exclude: ["vendor/"]
-        yamllint: ~
+  environment:
+    paths:
+      - node_modules/.bin
+  tasks:
+    composer: ~
+    composer_normalize: ~
+    eslint:
+      whitelist_patterns:
+        - /^assets\/typescript\/(.*)/
+    phpcsfixer:
+      config: ".php-cs-fixer.dist.php"
+    phpstan: ~
+    phpunit: ~
+    phpversion:
+      project: "8.0"
+    twigcs:
+      ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
+      exclude: ["vendor/"]
+    yamllint: ~
+  testsuites:
+    composer:
+      tasks:
+        - composer
+        - composer_normalize
+    check:
+      tasks:
+        - phpcsfixer
+        - phpstan
+        - twigcs
+        - yamllint
