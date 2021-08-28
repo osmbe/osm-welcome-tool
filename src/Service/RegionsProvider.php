@@ -49,7 +49,7 @@ class RegionsProvider
             throw new Exception(sprintf('Can\'t read geometry for region "%s".', $key));
         }
         $data = json_decode($content, true);
-        if (is_null($data)) {
+        if (null === $data) {
             throw new Exception(sprintf('Geometry for region "%s" doesn\'t seem to be valid.', $key));
         }
 

@@ -47,7 +47,7 @@ class RegionController extends AbstractController
 
             ++$count[$date]['total'];
 
-            if (!is_null($mapper->getWelcome())) {
+            if (null !== $mapper->getWelcome()) {
                 ++$count[$date]['welcome'];
             }
         }
