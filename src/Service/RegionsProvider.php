@@ -37,14 +37,23 @@ class RegionsProvider
         return $region;
     }
 
-    public function getGeometry(string $key): string
+    public function getGeometry(string $key): array
     {
         $path = sprintf('%s/assets/regions/%s.geojson', $this->projectDirectory, $key);
         if (!file_exists($path) || !is_readable($path)) {
             throw new Exception(sprintf('Geometry is not defined for region "%s".', $key));
         }
 
-        return file_get_contents($path);
+        $content = file_get_contents($path);
+        if (false === $content) {
+            throw new Exception(sprintf('Can\'t read geometry for region "%s".', $key));
+        }
+        $data = json_decode($content, true);
+        if (is_null($data)) {
+            throw new Exception(sprintf('Geometry for region "%s" doesn\'t seem to be valid.', $key));
+        }
+
+        return $data;
     }
 
     public function getLastUpdate(string $key): ?DateTime
