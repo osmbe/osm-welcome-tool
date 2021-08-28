@@ -4,6 +4,11 @@
 
 {% block content %}
 
+<div class="flex h-48 mb-5">
+    {{ include('app/list/map.html.twig') }}
+    {{ include('app/list/chart.html.twig') }}
+</div>
+
 {{ include('app/list/header.html.twig') }}
 
 <main class="pt-5">
