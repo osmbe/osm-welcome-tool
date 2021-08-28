@@ -201,6 +201,10 @@
         <source>Notes</source>
         <target>Note</target>
       </trans-unit>
+      <trans-unit id="R2Pcsb2" resname="Not welcomed">
+        <source>Not welcomed</source>
+        <target>__Not welcomed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
