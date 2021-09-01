@@ -2,7 +2,7 @@
     "name": "osmbe/osm-welcome-tool",
     "type": "project",
     "description": "Website to help welcoming new OpenStreetMap contributors",
-    "license": "proprietary",
+    "license": "ISC",
     "require": {
         "php": ">=8.0",
         "ext-ctype": "*",
