@@ -16,9 +16,12 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Http\Authenticator\Passport\Badge\UserBadge;
 use Symfony\Component\Security\Http\Authenticator\Passport\PassportInterface;
 use Symfony\Component\Security\Http\Authenticator\Passport\SelfValidatingPassport;
+use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
 class OpenStreetMapAuthenticator extends OAuth2Authenticator
 {
+    use TargetPathTrait;
+
     public function __construct(
         private ClientRegistry $clientRegistry,
         private EntityManagerInterface $entityManager,
@@ -61,12 +64,10 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
     {
-        $targetUrl = $this->router->generate('app_home');
+        // $targetUrl = $this->router->generate('app_home');
+        $targetUrl = $this->getTargetPath($request->getSession(), 'main');
 
         return new RedirectResponse($targetUrl);
-
-        // or, on success, let the request continue to be handled by the controller
-        //return null;
     }
 
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception): ?Response
