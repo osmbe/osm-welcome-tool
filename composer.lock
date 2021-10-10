@@ -9497,16 +9497,16 @@
         },
         {
             "name": "friendsoftwig/twigcs",
-            "version": "v5.0.0",
+            "version": "v5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/friendsoftwig/twigcs.git",
-                "reference": "d85fa2a567eb2671186558f92c53e86cdd502c3b"
+                "reference": "c82b078e9c199bc57375e557fb888b04f53420b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/friendsoftwig/twigcs/zipball/d85fa2a567eb2671186558f92c53e86cdd502c3b",
-                "reference": "d85fa2a567eb2671186558f92c53e86cdd502c3b",
+                "url": "https://api.github.com/repos/friendsoftwig/twigcs/zipball/c82b078e9c199bc57375e557fb888b04f53420b2",
+                "reference": "c82b078e9c199bc57375e557fb888b04f53420b2",
                 "shasum": ""
             },
             "require": {
@@ -9540,9 +9540,9 @@
             "description": "Checkstyle automation for Twig",
             "support": {
                 "issues": "https://github.com/friendsoftwig/twigcs/issues",
-                "source": "https://github.com/friendsoftwig/twigcs/tree/v5.0.0"
+                "source": "https://github.com/friendsoftwig/twigcs/tree/v5.1.0"
             },
-            "time": "2021-02-04T13:46:25+00:00"
+            "time": "2021-09-21T21:04:19+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
