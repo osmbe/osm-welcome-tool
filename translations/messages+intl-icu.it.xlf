@@ -9,6 +9,10 @@
         <source>Belgium</source>
         <target>Belgio</target>
       </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target>Luxemburg</target>
+      </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
         <target>Italia</target>
