@@ -21,7 +21,7 @@ if (mapElement !== null) {
   );
   map.addLayer(baselayer);
 
-  fetch(`/api/region/${region}.geojson`)
+  fetch(`/api/region/${region}.geojson`, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
     .then(response => response.json())
     .then(geojson => {
       const layer = new GeoJSON(geojson);
@@ -67,7 +67,7 @@ if (chartElement !== null) {
   const chart = new ApexCharts(chartElement, options);
   chart.render();
 
-  fetch(`/api/region/${region}/count.json`)
+  fetch(`/api/region/${region}/count.json`, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
     .then(response => response.json())
     .then(json => {
       const series: ApexAxisChartSeries = [
