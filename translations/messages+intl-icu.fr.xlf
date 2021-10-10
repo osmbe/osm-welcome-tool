@@ -205,6 +205,18 @@
         <source>Not welcomed</source>
         <target>Pas accueilli</target>
       </trans-unit>
+      <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
+        <source>This is the OpenStreetMap Welcome Tool.&#13;It helps you discover new mappers in your region and welcome them.</source>
+        <target>Voici l'OpenStreetMap Welcome Tool.&#13;Il vous aide à détecter les nouveaux contributeurs dans votre région et à les accueillir.</target>
+      </trans-unit>
+      <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
+        <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
+        <target>Si vous souhaitez ajouter votre région ou votre langue au Welcome Tool, jetez un coup d'oeil à notre {contributing_link_start}guide{link_end}.</target>
+      </trans-unit>
+      <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
+        <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
+        <target>Développé par {osmbe_link_start}OpenStreetMap Belgique{link_end} et soutenu par le {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

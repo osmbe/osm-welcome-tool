@@ -31,15 +31,13 @@
 
     <div class="flex-1 min-w-0">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu efficitur tellus, vel auctor enim.
-            Suspendisse
-            suscipit sem in tincidunt elementum. Curabitur nibh nunc, semper ac diam a, gravida feugiat felis. Duis
-            iaculis nec
-            est eu convallis. Maecenas viverra tincidunt tortor a faucibus. Mauris egestas vulputate mauris ac luctus.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam id
-            sollicitudin
-            velit. Donec elementum turpis quis nunc tincidunt iaculis. Donec sed dui lectus. Nulla vel porttitor sapien.
-            Vestibulum mattis massa et molestie placerat.
+            {{ 'This is the OpenStreetMap Welcome Tool.\r\nIt helps you discover new mappers in your region and welcome them.'|trans|nl2br }}
+        </p>
+        <p>
+            {{ 'If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.'|trans({'{contributing_link_start}': '<a class="text-indigo-600 hover:text-indigo-900" target="_blank" href="https://github.com/osmbe/osm-welcome-tool/blob/2.x/CONTRIBUTING.md">', '{link_end}': '</a>'})|raw }}
+        </p>
+        <p class="mt-3 text-sm">
+            {{ 'Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.'|trans({'{osmbe_link_start}': '<a class="text-indigo-600 hover:text-indigo-900" target="_blank" href="https://openstreetmap.be/">', '{lccwg_link_start}': '<a class="text-indigo-600 hover:text-indigo-900" target="_blank" href="https://wiki.osmfoundation.org/wiki/Local_Chapters_and_Communities_Working_Group">', '{link_end}': '</a>'})|raw }}
         </p>
     </div>
 </div>
