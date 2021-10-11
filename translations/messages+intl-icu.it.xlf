@@ -207,19 +207,19 @@
       </trans-unit>
       <trans-unit id="R2Pcsb2" resname="Not welcomed">
         <source>Not welcomed</source>
-        <target>__Not welcomed</target>
+        <target>Non ha ricevuto il benvenuto</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;It helps you discover new mappers in your region and welcome them.</source>
-        <target>__This is the OpenStreetMap Welcome Tool.&#13;It helps you discover new mappers in your region and welcome them.</target>
+        <target>Questo è l'OpenStreetMap Welcome Tool.&#13;Ti aiuta a scoprire i nuovi contributori nella tua regione e dargli il benvenuto.</target>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>__If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
+        <target>Se vuoi aggiungere la tua regione o la tua lingua al Welcome Tool, controlla la nostra {contributing_link_start}guida per i contributi{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target>__Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+        <target>Sviluppato da {osmbe_link_start}OpenStreetMap Belgio{link_end} e supportato dal {lccwg_link_start}Gruppo di lavoro Capitoli Locali e Comunità{link_end}.</target>
       </trans-unit>
     </body>
   </file>
