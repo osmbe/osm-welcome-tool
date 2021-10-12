@@ -17,6 +17,10 @@
         <source>Italy</source>
         <target>Italy</target>
       </trans-unit>
+      <trans-unit id="Z5_V2E6" resname="New York State">
+        <source>New York State</source>
+        <target>New York State</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>Washington State</target>
