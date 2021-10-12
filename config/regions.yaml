@@ -14,6 +14,10 @@ regions:
     flag: 🇱🇺
     locales: fr|en|de
     osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+  newyork:
+    name: New York State
+    flag: 🇺🇸
+    locales: en
   washington:
     name: Washington State
     flag: 🇺🇸
