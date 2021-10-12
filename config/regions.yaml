@@ -18,6 +18,7 @@ regions:
     name: New York State
     flag: 🇺🇸
     locales: en
+    osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
   washington:
     name: Washington State
     flag: 🇺🇸
