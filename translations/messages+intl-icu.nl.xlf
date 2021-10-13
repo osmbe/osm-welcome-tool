@@ -216,15 +216,15 @@
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;
 It helps you discover new mappers in your region and welcome them.</source>
-        <target>__This is the OpenStreetMap Welcome Tool.&#13;It helps you discover new mappers in your region and welcome them.</target>
+        <target>Dit is de OpenStreetMap Welcome Tool.&#13;De tool helpt je nieuwe mappers in je regio te vinden en te verwelkomen.</target>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>__If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
+        <target>Wil je graag jouw regio of taal toevoegen aan de Welocme Tool, lees dan de {contributing_link_start}contributing guide{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target>__Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+        <target>Ontwikkeld door {osmbe_link_start}OpenStreetMap Belgium{link_end} met steun van {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
       </trans-unit>
     </body>
   </file>
