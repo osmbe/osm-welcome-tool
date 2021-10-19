@@ -24,3 +24,7 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
+  massachusetts:
+    name: Commonwealth of Massachusetts
+    flag: 🇺🇸
+    locales: en
