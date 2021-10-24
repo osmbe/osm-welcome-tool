@@ -27,7 +27,7 @@ class ChangesetProvider
             $changeset = new Changeset();
             $changeset->setId($feature['id']);
             $changeset->setCreatedAt(new DateTimeImmutable($feature['properties']['date']));
-            $changeset->setComment($feature['properties']['comment']);
+            $changeset->setComment($feature['properties']['comment'] ?? '');
             $changeset->setEditor($feature['properties']['editor']);
             $changeset->setLocale($feature['properties']['metadata']['locale'] ?? null);
             $changeset->setChangesCount($total);
