@@ -17,6 +17,10 @@
         <source>Italy</source>
         <target>Italië</target>
       </trans-unit>
+      <trans-unit id="iT1ThWO" resname="Uganda">
+        <source>Uganda</source>
+        <target>Oeganda</target>
+      </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
         <target>Commonwealth of Massachusetts</target>
