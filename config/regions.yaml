@@ -4,6 +4,11 @@ regions:
     flag: 🇧🇪
     locales: fr|nl|de
     osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
+  ghana:
+    name: Ghana
+    flag: 🇬🇭
+    locales: en
+    osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
   italy:
     name: Italy
     flag: 🇮🇹
