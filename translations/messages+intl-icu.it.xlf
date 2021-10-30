@@ -13,13 +13,13 @@
         <source>Ghana</source>
         <target>Ghana</target>
       </trans-unit>
-      <trans-unit id="7XbxkWI" resname="Luxembourg">
-        <source>Luxembourg</source>
-        <target>Luxemburg</target>
-      </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
         <target>Italia</target>
+      </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target>Luxemburg</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
