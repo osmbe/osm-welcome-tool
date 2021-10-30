@@ -9,6 +9,10 @@
         <source>Belgium</source>
         <target>België</target>
       </trans-unit>
+      <trans-unit id="WDIBwe_" resname="Ghana">
+        <source>Ghana</source>
+        <target>Ghana</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Luxemburg</target>
