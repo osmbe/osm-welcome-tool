@@ -8,7 +8,7 @@ regions:
     name: Ghana
     flag: 🇬🇭
     locales: en
-    osmcha.id:
+    osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
   italy:
     name: Italy
     flag: 🇮🇹
@@ -19,6 +19,11 @@ regions:
     flag: 🇱🇺
     locales: fr|en|de
     osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+  uganda:
+    name: Uganda
+    flag: 🇺🇬
+    locales: en
+    osmcha.id: c17132f4-95eb-4b92-b93a-48c1a75cf3c3
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
@@ -29,11 +34,6 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
-  uganda:
-    name: Uganda
-    flag: 🇺🇬
-    locales: en
-    osmcha.id: c17132f4-95eb-4b92-b93a-48c1a75cf3c3
   washington:
     name: Washington State
     flag: 🇺🇸
