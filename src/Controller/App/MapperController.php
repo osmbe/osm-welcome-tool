@@ -9,6 +9,7 @@ use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use DateTime;
+use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -62,9 +63,26 @@ class MapperController extends AbstractController
             return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
+        // Prev/Next mapper
+        /** @var Mapper[] */
+        $mappers = $this->getDoctrine()
+            ->getRepository(Mapper::class)
+            ->findBy(['region' => $regionKey]);
+
+        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?DateTimeImmutable {
+            return $mapper->getFirstChangeset()->getCreatedAt();
+        }, $mappers);
+        array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
+
+        $current = array_search($mapper, $mappers, true);
+        $prev = $current > 0 ? $mappers[$current - 1] : null;
+        $next = $current < (\count($mappers) - 1) ? $mappers[$current + 1] : null;
+
         return $this->render('app/mapper/index.html.twig', [
             'region' => $region,
             'mapper' => $this->mapper,
+            'prev_mapper' => $prev,
+            'next_mapper' => $next,
             'changesets' => $this->mapper->getChangesets(),
             'formNote' => $formNote->createView(),
             'templates' => $this->templates,

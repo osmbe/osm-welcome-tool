@@ -238,6 +238,14 @@ It helps you discover new mappers in your region and welcome them.</source>
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
         <target>Développé par {osmbe_link_start}OpenStreetMap Belgique{link_end} et soutenu par le {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
       </trans-unit>
+      <trans-unit id="YIax95J" resname="Previous mapper">
+        <source>Previous mapper</source>
+        <target>Cartographe précédent</target>
+      </trans-unit>
+      <trans-unit id="K5yIR1M" resname="Next mapper">
+        <source>Next mapper</source>
+        <target>Cartographe suivant</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
