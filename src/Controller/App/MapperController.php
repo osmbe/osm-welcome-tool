@@ -76,7 +76,7 @@ class MapperController extends AbstractController
 
         $current = array_search($mapper, $mappers, true);
         $prev = $current > 0 ? $mappers[$current - 1] : null;
-        $next = $current < (count($mappers) - 1) ? $mappers[$current + 1] : null;
+        $next = $current < (\count($mappers) - 1) ? $mappers[$current + 1] : null;
 
         return $this->render('app/mapper/index.html.twig', [
             'region' => $region,
