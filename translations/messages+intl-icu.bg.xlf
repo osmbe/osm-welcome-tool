@@ -1,254 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="nl" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="bg" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
-        <target>België</target>
+        <target>Белгия</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
-        <target>Bulgarije</target>
+        <target>България</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
-        <target>Ghana</target>
+        <target>Гана</target>
       </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
-        <target>Italië</target>
+        <target>Италия</target>
       </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
-        <target>Luxemburg</target>
+        <target>Люксембург</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
-        <target>Oeganda</target>
+        <target>Уганда</target>
       </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
-        <target>Commonwealth of Massachusetts</target>
+        <target>Щат Масачузетс</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
-        <target>New York State</target>
+        <target>Щат Ню Йорк</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
-        <target>Washington State</target>
+        <target>Щат Вашингтон</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
-        <target>Vraag om controle</target>
+        <target>Поискан преглед</target>
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
-        <target>Foute wijziging van tags</target>
+        <target>Невалидна модихикация</target>
       </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
-        <target>Geen notitie.</target>
+        <target>Няма бележка.</target>
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
-        <target>Je mag Markdown gebruiken.</target>
+        <target>Разрешено е използването на Markdown.</target>
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
-        <target>Bekijk</target>
+        <target>Виж</target>
       </trans-unit>
       <trans-unit id="nGrjZeg" resname="Open other tools">
         <source>Open other tools</source>
-        <target>Open andere tools</target>
+        <target>Отваряне на други инструменти</target>
       </trans-unit>
       <trans-unit id="PzH3t8N" resname="Harmful">
         <source>Harmful</source>
-        <target>Schadelijk</target>
+        <target>Вредно</target>
       </trans-unit>
       <trans-unit id="Dv2SozW" resname="Checked">
         <source>Checked</source>
-        <target>Nagekeken</target>
+        <target>Проверено</target>
       </trans-unit>
       <trans-unit id="nc.5jid" resname="Timeline">
         <source>Timeline</source>
-        <target>Tijdslijn</target>
+        <target>Времева линия</target>
       </trans-unit>
       <trans-unit id="9jh5.Wk" resname="Account created">
         <source>Account created</source>
-        <target>Account aangemaakt</target>
+        <target>Акаунта е създаден</target>
       </trans-unit>
       <trans-unit id="9kKaXhE" resname="Mapper since {date}">
         <source>Mapper since {date}</source>
-        <target>Mapper sinds {date}</target>
+        <target>Картограф от {date}</target>
       </trans-unit>
       <trans-unit id="1pajW90" resname="Profile">
         <source>Profile</source>
-        <target>Profiel</target>
+        <target>Профил</target>
       </trans-unit>
       <trans-unit id="6wYsMHV" resname="Send a welcome message">
         <source>Send a welcome message</source>
-        <target>Stuur een welkomstbericht</target>
+        <target>Изпращане на съобщение за добре дошли</target>
       </trans-unit>
       <trans-unit id="VrVkt1x" resname="Templates">
         <source>Templates</source>
-        <target>Templates</target>
+        <target>Шаблони</target>
       </trans-unit>
       <trans-unit id="RXDbS53" resname="Copy text to clipboard">
         <source>Copy text to clipboard</source>
-        <target>Kopieer tekst naar klembord</target>
+        <target>Копиране на текста в клипборда</target>
       </trans-unit>
       <trans-unit id="k6JrHq." resname="Send message">
         <source>Send message</source>
-        <target>Stuur bericht</target>
+        <target>Изпрати съобщение</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
-        <target>Changesets</target>
+        <target>Списък с промени</target>
       </trans-unit>
       <trans-unit id="DnaWAJM" resname="History">
         <source>History</source>
-        <target>Geschiedenis</target>
+        <target>История</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
         <source>Home</source>
-        <target>Home</target>
+        <target>Начало</target>
       </trans-unit>
       <trans-unit id="byAvVKe" resname="List">
         <source>List</source>
-        <target>Lijst</target>
+        <target>Списък</target>
       </trans-unit>
       <trans-unit id="_nTKo1O" resname="Mapper">
         <source>Mapper</source>
-        <target>Mapper</target>
+        <target>Картограф</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
-        <target>Username</target>
+        <target>Потребителско име</target>
       </trans-unit>
       <trans-unit id="7z7rhD." resname="First changeset">
         <source>First changeset</source>
-        <target>Eerste changeset</target>
+        <target>Първи списък с промени</target>
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target>Editor</target>
+        <target>Редактор</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
-        <target>Taal</target>
+        <target></target>
       </trans-unit>
       <trans-unit id="1HiPJW9" resname="View profile">
         <source>View profile</source>
-        <target>Bekijk profiel</target>
+        <target>Виж профила</target>
       </trans-unit>
       <trans-unit id="7fvt8pP" resname="Mappers">
         <source>Mappers</source>
-        <target>Mappers</target>
+        <target>Картографи</target>
       </trans-unit>
       <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
         <source>List of mappers that have their first edit in the region</source>
-        <target>Lijst van mappers die hun eerste bewerking hebben in de regio</target>
+        <target>Списък на картографите, които са направили първата си редакция в района</target>
       </trans-unit>
       <trans-unit id="aidpUCp" resname="Previous month">
         <source>Previous month</source>
-        <target>Vorige maand</target>
+        <target>Предишен месец</target>
       </trans-unit>
       <trans-unit id="dOUyEf7" resname="Next month">
         <source>Next month</source>
-        <target>Volgende maand</target>
+        <target>Следващ месец</target>
       </trans-unit>
       <trans-unit id="2NosSd8" resname="Note">
         <source>Note</source>
-        <target>Notitie</target>
+        <target>Бележка</target>
       </trans-unit>
       <trans-unit id="n9coxmy" resname="Add">
         <source>Add</source>
-        <target>Voeg toe</target>
+        <target>Добави</target>
       </trans-unit>
       <trans-unit id="MiwOE_9" resname="Add a note">
         <source>Add a note</source>
-        <target>Voeg een notitie toe</target>
+        <target>Добави бележка</target>
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
-        <target>Verwelkomd door {userlink}</target>
+        <target>Привестван от {userlink}</target>
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target>{mapper} werd verwelkomd</target>
+        <target>{mapper} беше приветстван</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
-        <target>{mapper} heeft geantwoord</target>
+        <target>{mapper} е отговорил</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
-        <target>Changeset</target>
+        <target>Списък с промени</target>
       </trans-unit>
       <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
         <source>Not welcomed yet</source>
-        <target>Nog niet verwelkomd</target>
+        <target>Все още не е приветстван</target>
       </trans-unit>
       <trans-unit id="7QGDsnR" resname="Not replied yet">
         <source>Not replied yet</source>
-        <target>Nog niet geantwoord</target>
+        <target>Все още не е отговорено</target>
       </trans-unit>
       <trans-unit id="5JIt4ui" resname="{userlink} has replied">
         <source>{userlink} has replied</source>
-        <target>{userlink} heeft geantwoord</target>
+        <target>{userlink} е отговорил</target>
       </trans-unit>
       <trans-unit id="vQEb23j" resname="Login with OSM">
         <source>Login with OSM</source>
-        <target>Login met OSM</target>
+        <target>Влизане с OSM</target>
       </trans-unit>
       <trans-unit id="GZQaZt8" resname="Open user menu">
         <source>Open user menu</source>
-        <target>Open gebruiker menu</target>
+        <target>Отваряне на потребителското меню</target>
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
-        <target>Verwelkomd</target>
+        <target>Приветствани</target>
       </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
-        <target>Laatste update</target>
+        <target>Последна актуализация</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
         <source>Logout</source>
-        <target>Logout</target>
+        <target>Излизане</target>
       </trans-unit>
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
-        <target>Notities</target>
+        <target>Бележки</target>
       </trans-unit>
       <trans-unit id="R2Pcsb2" resname="Not welcomed">
         <source>Not welcomed</source>
-        <target>Niet verwelkomd</target>
+        <target>Не е приветстван</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;
 It helps you discover new mappers in your region and welcome them.</source>
-        <target>Dit is de OpenStreetMap Welcome Tool.&#13;De tool helpt je nieuwe mappers in je regio te vinden en te verwelkomen.</target>
+        <target>Това е инструментът OpenStreetMap Welcome Tool.&#13;Той ви помага да откриете нови картографи във Вашия регион и да ги приветствате.</target>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>Wil je graag jouw regio of taal toevoegen aan de Welcome Tool, lees dan de {contributing_link_start}contributing guide{link_end}.</target>
+        <target>Ако искате да добавите своя регион или език към Инструмента за посрещане, разгледайте нашето ръководство {contributing_link_start}contributing guide{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target>Ontwikkeld door {osmbe_link_start}OpenStreetMap Belgium{link_end} met steun van {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+        <target>Разработено от {osmbe_link_start}OpenStreetMap Белгия{link_end} и подкрепена от {lccwg_link_start}Работна група "Местни глави и общности" {link_end}.</target>
       </trans-unit>
       <trans-unit id="YIax95J" resname="Previous mapper">
         <source>Previous mapper</source>
-        <target>Vorige mapper</target>
+        <target>Предишен картограф</target>
       </trans-unit>
       <trans-unit id="K5yIR1M" resname="Next mapper">
         <source>Next mapper</source>
-        <target>Volgende mapper</target>
+        <target>Следващ картограф</target>
       </trans-unit>
     </body>
   </file>
