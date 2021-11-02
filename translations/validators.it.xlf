@@ -393,6 +393,18 @@
         <source>This value should be a valid expression.</source>
         <target>Questo valore dovrebbe essere un'espressione valida.</target>
       </trans-unit>
+      <trans-unit id="CQ0wfFa" resname="This value is not a valid CSS color.">
+        <source>This value is not a valid CSS color.</source>
+        <target>Questo valore non è un colore CSS valido.</target>
+      </trans-unit>
+      <trans-unit id="GAaG0KN" resname="This value is not a valid CIDR notation.">
+        <source>This value is not a valid CIDR notation.</source>
+        <target>Questo valore non è una notazione CIDR valida.</target>
+      </trans-unit>
+      <trans-unit id="ddJy.XP" resname="The value of the netmask should be between {{ min }} and {{ max }}.">
+        <source>The value of the netmask should be between {{ min }} and {{ max }}.</source>
+        <target>Il valore della netmask dovrebbe essere compreso tra {{ min }} e {{ max }}.</target>
+      </trans-unit>
       <trans-unit id=".SEaaBa" resname="This form should not contain extra fields.">
         <source>This form should not contain extra fields.</source>
         <target>Questo form non dovrebbe contenere nessun campo extra.</target>
