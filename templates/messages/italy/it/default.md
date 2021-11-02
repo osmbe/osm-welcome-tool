@@ -18,4 +18,3 @@ Se vuoi chiedere qualcosa o semplicemente condividere la tua esperienza o idea d
 Scopri maggiori informazioni sulla [comunità italiana](https://wiki.openstreetmap.org/wiki/Italy).
 
 Buona mappatura!
-
