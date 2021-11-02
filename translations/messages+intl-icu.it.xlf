@@ -23,7 +23,7 @@
       </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
-        <target>Luxemburg</target>
+        <target>Lussemburgo</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
@@ -244,11 +244,11 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="YIax95J" resname="Previous mapper">
         <source>Previous mapper</source>
-        <target>__Previous mapper</target>
+        <target>Contributore precedente</target>
       </trans-unit>
       <trans-unit id="K5yIR1M" resname="Next mapper">
         <source>Next mapper</source>
-        <target>__Next mapper</target>
+        <target>Contributore successivo</target>
       </trans-unit>
     </body>
   </file>
