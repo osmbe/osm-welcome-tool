@@ -33,7 +33,7 @@ regions:
     name: Kansas
     flag: 🇺🇸
     locales: en
-    osmcha.id: TODO
+    osmcha.id: 68d8c9b6-ab1a-4837-89d4-1a558e398232
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
