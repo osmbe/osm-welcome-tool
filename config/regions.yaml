@@ -29,6 +29,11 @@ regions:
     flag: 🇺🇬
     locales: en
     osmcha.id: c17132f4-95eb-4b92-b93a-48c1a75cf3c3
+  kansas:
+    name: Kansas
+    flag: 🇺🇸
+    locales: en
+    osmcha.id: 68d8c9b6-ab1a-4837-89d4-1a558e398232
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
