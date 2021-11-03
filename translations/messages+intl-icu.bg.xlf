@@ -29,6 +29,10 @@
         <source>Uganda</source>
         <target>Уганда</target>
       </trans-unit>
+      <trans-unit id="efbQcyo" resname="Kansas">
+        <source>Kansas</source>
+        <target>Канзас</target>
+      </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
         <target>Щат Масачузетс</target>
