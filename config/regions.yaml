@@ -4,6 +4,10 @@ regions:
     flag: 🇧🇪
     locales: fr|nl|de
     osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
+  bogota:
+    name: Bogotá
+    flag: :colombia:
+    locales: es
   bulgaria:
     name: Bulgaria
     flag: 🇧🇬
