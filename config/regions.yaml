@@ -9,6 +9,10 @@ regions:
     flag: 🇧🇬
     locales: bg
     osmcha.id: 1a15a041-57fa-4f5e-9813-ef8d4afe700d
+  ca-bc:
+    name: British Columbia
+    flag: 🇨🇦
+    locales: en|fr
   ghana:
     name: Ghana
     flag: 🇬🇭
