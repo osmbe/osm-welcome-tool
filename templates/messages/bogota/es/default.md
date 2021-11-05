@@ -42,6 +42,8 @@ En Bogotá tenemos el grupo [MaptimeBogota](http://maptime.io/bogota/) que organ
 Es un evento ideal para principiantes como tu.
 No te pierdas el [siguiente evento](https://www.meetup.com/maptime-bogota-colombia-osm/).
 
+* Si quieres solicitar la adición de un negocio, sin tener que conocer los detalles de mapeo, puede utilizar la [herramienta minegocio](https://maptimebogota.github.io/minegocio/).
+
 Entonces, ¿qué debo mapear ahora?
 Te recomiendo que adiciones cosas qué están cerca de ti y que conoces bien, como:
 Construcciones (casas, edificios); comercios como restaurantes o peluquerías; vías, andenes y caminos peatonales; sillas/bancos.

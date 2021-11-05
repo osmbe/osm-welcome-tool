@@ -43,6 +43,8 @@ In Bogotá, we have the [MaptimeBogota](http://maptime.io/bogota/) group that or
 This event is ideal for beginners like you.
 Do not miss the [next event](https://www.meetup.com/maptime-bogota-colombia-osm/).
 
+* If you want to request the addition of a business, without knowing the whole details about mapping, you can use the [minegocio tool](https://maptimebogota.github.io/minegocio/).
+
 So what should you map next?
 I recommend you to add features that are close to you and you know them well, like:
 Buildings, restaurants, streets, sidewalks, pedestrian paths, benches.
