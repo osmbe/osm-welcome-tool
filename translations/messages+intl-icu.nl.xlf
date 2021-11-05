@@ -13,6 +13,14 @@
         <source>Bulgaria</source>
         <target>Bulgarije</target>
       </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>Bogota</target>
+      </trans-unit>
+      <trans-unit id="a2Fa2xM" resname="Colombia">
+        <source>Colombia</source>
+        <target>Colombia</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Ghana</target>
