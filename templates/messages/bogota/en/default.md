@@ -5,17 +5,17 @@ title: Welcome to OpenStreetMap
 
 Hi {{ mapper.displayName }}
 
-We noticed you made your first contribution to OpenStreetMap.
+I noticed you made your first contribution to OpenStreetMapi in Bogotá.
 Congratulations, and thanks!
 As of now, you can consider yourself part of the Colombian OSM community.
 Your edit is live within a couple of minutes.
 After that, you will have to refresh your browser to see your edit.
 
-We want to be with you during this journey of discovering the world of OpenStreetMap.
+I want to be with you during this journey of discovering the world of OpenStreetMap.
 
-To begin, we share with you some interesting links:
+To begin, I want to share with you some interesting links:
 
-* We highly recommend using the [OSM wiki-pages](http://wiki.openstreetmap.org/).
+* I highly recommend using the [OSM wiki-pages](http://wiki.openstreetmap.org/).
 There you can the information that you need.
 
 * In Colombia, we have a [Guide to map](https://wiki.openstreetmap.org/wiki/Colombia/Guide_for_mapping) that explains in detail what can you map and how to do it.
@@ -39,15 +39,19 @@ This is an space where members discuss about different things about the map.
 
 * For more complicated questions you can search in or post on the [Help-site](http://help.openstreetmap.org).
 
+In Bogotá, we have the [MaptimeBogota](http://maptime.io/bogota/) group that organizes peridic meetings, to map and to talk about the map.
+This event is ideal for beginners like you.
+Do not miss the [next event](https://www.meetup.com/maptime-bogota-colombia-osm/).
+
 So what should you map next?
-We highly recommend adding features around you, like:
-Restaurants, business, streets, sidewalks, benches, basically features that you know best.
-You are the expert.
-If you find a business already mapped, make sure there is an address.
-There is something satisfying about filling in the map around you.
-Or correcting a road when the local government makes changes to it.
-Do you have any special interests, like biking, hiking, or even trains?
-Did you know we have the best bike, hiking and train world wide networks of any site.
-But like everything else, they can always use improvements.
+I recommend you to add features that are close to you and you know them well, like:
+Buildings, restaurants, streets, sidewalks, pedestrian paths, benches.
+You are the expert in your area.
+If you find a business that is already mapped, you can complement it by adding its address, opening hours, social networks.
+You will see how satisfying is filling in the map around you.
 
 Happy Mapping!
+
+
+
+MaptimeBogota

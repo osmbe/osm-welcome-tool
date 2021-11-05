@@ -5,17 +5,17 @@ title: Bienvenido a OpenStreetMap
 
 Hola {{ mapper.displayName }}
 
-Hemos notado que has hecho tu primera contribución a OpenStreetMap-OSM.
+He notado que has hecho tu primera contribución a OpenStreetMap-OSM en Bogotá.
 ¡Felicitaciones y gracias!
 A partir de ahora puedes considerarte parte de la comunidad de OSM Colombia.
 Tu edición estará disponible en el mapa en unos minutos.
 Después tendrás que refrescar el navegador para poder ver tu cambio.
 
-Queremos acompañarte en este viaje de descubrimiento del mundo de OpenStreetMap.
+Quiero acompañarte en este viaje de descubrimiento del mundo de OpenStreetMap.
 
-Para comenzar, aquí te compartimos algunos enlaces interesantes:
+Para comenzar, aquí te comparto algunos enlaces interesantes:
 
-* Te recomendamos leer el [wiki de OSM](https://wiki.openstreetmap.org/wiki/ES:P%C3%A1gina_principal).
+* Primero, te recomiendo leer el [wiki de OSM](https://wiki.openstreetmap.org/wiki/ES:P%C3%A1gina_principal).
 Ahí encontrarás la información que necesites.
 
 * En Colombia, tenemos una [Guía para mapear](https://wiki.openstreetmap.org/wiki/ES:Colombia/Gu%C3%ADa_para_mapear) que explica en detalle qué puedes mapear y cómo lo puedes hacer.
@@ -38,15 +38,19 @@ Si tienes dudas o preguntas como:
 
 * Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](http://help.openstreetmap.org).
 
-Entonces, qué debo mapear ahora?
-Te recomendamos que adiciones cosas cerca de ti, como:
-Restaurantes, negocios, calles, andenes, sillas/bancos, esencialmente características que tu conoces bien.
-¡Tu eres el experto!
-Si encuentras que un negocio ya está mapeado, asegúrate que tiene la dirección en el mapa.
-Vas a ver lo satisfactorio que es llenar de detales el mapa alrededor tuyo.
-O por ejemplo, corregir una vía cuando el gobierno local hace un cambio en esta.
-Tienes algún interés especial, como ciclismo, senderismo, o inclusive trenes?
-Sabías que tenemos los mejores mapas de vías de ciclismo, senderismo y trenes.
-Pero como todo, ellas puede ser mejoradas.
+En Bogotá tenemos el grupo [MaptimeBogota](http://maptime.io/bogota/) que organiza reuniones periódicamente, para mapear y discutir sobre el mapa.
+Es un evento ideal para principiantes como tu.
+No te pierdas el [siguiente evento](https://www.meetup.com/maptime-bogota-colombia-osm/).
+
+Entonces, ¿qué debo mapear ahora?
+Te recomiendo que adiciones cosas qué están cerca de ti y que conoces bien, como:
+Construcciones (casas, edificios); comercios como restaurantes o peluquerías; vías, andenes y caminos peatonales; sillas/bancos.
+¡Tu eres el experto en tu área!
+Si encuentras en el mapa un negocio que ya está mapeado, puedes complementarlo agregando su dirección, su horario, sus redes sociales. 
+Vas a ver lo divertido que es llenar de detales el mapa alrededor tuyo.
 
 ¡Disfruta el mapeo!
+
+
+
+MaptimeBogota
