@@ -13,6 +13,10 @@
         <source>Bulgaria</source>
         <target>Bulgaria</target>
       </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target>Columbia Británica</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Ghana</target>
