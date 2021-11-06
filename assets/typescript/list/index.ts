@@ -2,10 +2,14 @@ import ApexCharts from 'apexcharts';
 import { GeoJSON, Map, TileLayer } from 'leaflet';
 
 import en from 'apexcharts/dist/locales/en.json';
+import es from 'apexcharts/dist/locales/es.json';
 import fr from 'apexcharts/dist/locales/fr.json';
 import it from 'apexcharts/dist/locales/it.json';
+import nl from 'apexcharts/dist/locales/nl.json';
 
 import 'leaflet/dist/leaflet.css';
+
+const locales = [en, es, fr, it, nl];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
@@ -39,8 +43,8 @@ if (chartElement !== null) {
   const options = {
     chart: {
       stacked: true,
-      locales: [en, fr, it],
-      defaultLocale: lang,
+      locales,
+      defaultLocale: typeof lang !== 'undefined' && locales.map(locale => locale.name).includes(lang) ? lang : 'en',
       toolbar: {
         show: false
       },
