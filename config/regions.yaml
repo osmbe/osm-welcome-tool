@@ -39,6 +39,11 @@ regions:
     flag: 🇱🇺
     locales: fr|en|de
     osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+  panama:
+    name: Panama
+    flag: 🇵🇦
+    locales: es
+    osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
   uganda:
     name: Uganda
     flag: 🇺🇬
