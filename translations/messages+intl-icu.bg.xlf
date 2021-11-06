@@ -25,6 +25,10 @@
         <source>Colombia</source>
         <target>Колумбия</target>
       </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target>Демократична република Конго</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Гана</target>

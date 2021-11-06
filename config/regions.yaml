@@ -24,6 +24,11 @@ regions:
     flag: 🇨🇴
     locales: es
     osmcha.id: ec24e3f4-ad8e-4ee9-9ad4-f7676c0b334a
+  drc:
+    name: Democratic Republic of the Congo
+    flag: 🇨🇩
+    locales: fr
+    osmcha.id: 40230cd7-2d13-4df7-bc1e-4ac44bb8478a
   ghana:
     name: Ghana
     flag: 🇬🇭
