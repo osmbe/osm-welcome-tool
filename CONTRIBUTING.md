@@ -22,7 +22,7 @@ A region can be **any** geographical region defined by a geometry. It can be a w
 
 There are only 2 steps to add a new region to the tool:
 
-- Add your region to the [`regions.yaml`](https://github.com/osmbe/osm-welcome-tool/blob/2.x/config/regions.yaml) file:
+- Add your region to the [`config/regions.yaml`](https://github.com/osmbe/osm-welcome-tool/blob/2.x/config/regions.yaml) file:
   - Create a new key (lowerspace, not special characters) ;
   - Add the `name` property with the name of your region ;
   - Add the `flag` property with the flag emoji of the country your region is in ;
