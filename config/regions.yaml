@@ -1,4 +1,9 @@
 regions:
+  bangladesh:
+    name: Bangladesh
+    flag: 🇧🇩
+    locales: en
+    osmcha.id: 
   belgium:
     name: Belgium
     flag: 🇧🇪
