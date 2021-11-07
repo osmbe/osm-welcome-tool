@@ -5,11 +5,12 @@ import en from 'apexcharts/dist/locales/en.json';
 import es from 'apexcharts/dist/locales/es.json';
 import fr from 'apexcharts/dist/locales/fr.json';
 import it from 'apexcharts/dist/locales/it.json';
+import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [en, es, fr, it, nl];
+const locales = [en, es, fr, it, ja, nl];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
