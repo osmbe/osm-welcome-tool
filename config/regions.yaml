@@ -39,6 +39,11 @@ regions:
     flag: 🇮🇹
     locales: it
     osmcha.id: ac2598cc-9b66-432e-b195-9b93e21c5d26
+  japan:
+    name: Japan
+    flag: 🇯🇵
+    locales: ja
+    osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
   libya:
     name: Libya
     flag: 🇱🇾
@@ -84,8 +89,3 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
-  Japan:
-    name: Japan
-    flag: 🇯🇵
-    locales: ja_JP
-    osmcha.id:
