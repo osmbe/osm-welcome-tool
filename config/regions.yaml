@@ -39,6 +39,11 @@ regions:
     flag: 🇮🇹
     locales: it
     osmcha.id: ac2598cc-9b66-432e-b195-9b93e21c5d26
+  libya:
+    name: Libya
+    flag: 🇱🇾
+    locales: en
+    osmcha.id: b1e4eed6-dccb-4207-aecc-d9e5d6ca4871
   luxembourg:
     name: Luxembourg
     flag: 🇱🇺
