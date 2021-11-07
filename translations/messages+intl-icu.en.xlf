@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="Lx1H62e" resname="Bangladesh">
+        <source>Bangladesh</source>
+        <target>Bangladesh</target>
+      </trans-unit>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
         <target>Belgium</target>
@@ -21,6 +25,10 @@
         <source>Colombia</source>
         <target>Colombia</target>
       </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target>Democratic Republic of the Congo</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Ghana</target>
@@ -29,9 +37,21 @@
         <source>Italy</source>
         <target>Italy</target>
       </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target>Libya</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Luxembourg</target>
+      </trans-unit>
+      <trans-unit id="w2aPWBK" resname="Panama">
+        <source>Panama</source>
+        <target>Panama</target>
+      </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target>Tanzania</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
