@@ -49,6 +49,10 @@
         <source>Panama</source>
         <target>Panama</target>
       </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target>Tanzania</target>
+      </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target>Oeganda</target>

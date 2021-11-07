@@ -54,6 +54,11 @@ regions:
     flag: 🇵🇦
     locales: es
     osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
+  tanzania:
+    name: Tanzania
+    flag: 🇹🇿
+    locales: en
+    osmcha.id: 4df237d7-07bb-4b43-afa0-357eb485e8e1
   uganda:
     name: Uganda
     flag: 🇺🇬
