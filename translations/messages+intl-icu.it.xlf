@@ -37,6 +37,10 @@
         <source>Italy</source>
         <target>Italia</target>
       </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target>Libia</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Lussemburgo</target>
