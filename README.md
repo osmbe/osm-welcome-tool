@@ -2,7 +2,7 @@
 
 Website to help welcoming new OpenStreetMap contributors in your region.
 
-You can see it in action on [https://welcome.osm.be/](https://welcome.osm.be/)
+You can see it in action on [https://welcome.osm.be/](https://welcome.osm.be/).
 
 ## Requirements
 
