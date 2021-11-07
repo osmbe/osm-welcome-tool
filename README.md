@@ -2,6 +2,10 @@
 
 Website to help welcoming new OpenStreetMap contributors in your region.
 
+It detects new mappers in various regions and suggests a welcome message (based on templates) that you can then send to the mapper.
+
+Detection of new mappers is automatic, welcome messages are manually send by people using their OSM accounts.
+
 You can see it in action on [https://welcome.osm.be/](https://welcome.osm.be/).
 
 ## Requirements
