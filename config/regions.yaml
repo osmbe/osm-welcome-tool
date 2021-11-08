@@ -19,6 +19,11 @@ regions:
     flag: 🇨🇴
     locales: es
     osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
+  ca-bc:
+    name: British Columbia
+    flag: 🇨🇦
+    locales: en|fr
+    osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
   colombia:
     name: Colombia
     flag: 🇨🇴

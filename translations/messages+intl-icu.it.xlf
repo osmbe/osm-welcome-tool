@@ -21,6 +21,10 @@
         <source>Bogotá</source>
         <target>Bogotá</target>
       </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target>Columbia Britannica</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
