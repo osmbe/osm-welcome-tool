@@ -41,6 +41,10 @@
         <source>Italy</source>
         <target>Italie</target>
       </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target>Japon</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target>Libye</target>

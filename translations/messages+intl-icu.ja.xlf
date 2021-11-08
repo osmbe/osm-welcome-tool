@@ -21,6 +21,10 @@
         <source>Bogotá</source>
         <target>ボゴタ</target>
       </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target>ブリティッシュコロンビア州</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>コロンビア</target>
@@ -36,6 +40,10 @@
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
         <target>イタリア</target>
+      </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target>日本</target>
       </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
