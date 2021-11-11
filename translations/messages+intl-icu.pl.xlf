@@ -57,6 +57,10 @@
         <source>Panama</source>
         <target>Panama</target>
       </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target>Polska</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>Tanzania</target>
