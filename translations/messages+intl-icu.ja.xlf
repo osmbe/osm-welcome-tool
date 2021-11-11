@@ -269,10 +269,6 @@
         <source>Notes</source>
         <target>ノート</target>
       </trans-unit>
-      <trans-unit id="R2Pcsb2" resname="Not welcomed">
-        <source>Not welcomed</source>
-        <target>Not welcomed</target>
-      </trans-unit>
       <trans-unit id="PUDX3.M" resname="This is the OpenStreetMap Welcome Tool. It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool. It helps you discover new mappers in your region and welcome them.</source>
         <target>これはOpenStreetMapのようこそツールです。対象地域の新規マッパーをみつけて、ようこそメッセージを送信できます。</target>
