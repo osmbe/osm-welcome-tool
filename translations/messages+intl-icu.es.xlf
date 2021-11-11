@@ -17,10 +17,6 @@
         <source>Bulgaria</source>
         <target>Bulgaria</target>
       </trans-unit>
-      <trans-unit id="5WQOBAf" resname="Bogotá">
-        <source>Bogotá</source>
-        <target>Bogotá</target>
-      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>Columbia Británica</target>
@@ -28,6 +24,10 @@
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>Bogotá</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
