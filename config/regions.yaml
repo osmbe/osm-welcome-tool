@@ -19,6 +19,11 @@ regions:
     flag: 🇨🇴
     locales: es
     osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
+  ca-bc:
+    name: British Columbia
+    flag: 🇨🇦
+    locales: en|fr
+    osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
   colombia:
     name: Colombia
     flag: 🇨🇴
@@ -39,6 +44,11 @@ regions:
     flag: 🇮🇹
     locales: it
     osmcha.id: ac2598cc-9b66-432e-b195-9b93e21c5d26
+  japan:
+    name: Japan
+    flag: 🇯🇵
+    locales: ja
+    osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
   libya:
     name: Libya
     flag: 🇱🇾
@@ -54,6 +64,11 @@ regions:
     flag: 🇵🇦
     locales: es
     osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
+  poland:
+    name: Poland
+    flag: 🇵🇱
+    locales: pl
+    osmcha.id: 98d2b447-34b6-4681-82f8-9de3adddbf1b
   tanzania:
     name: Tanzania
     flag: 🇹🇿

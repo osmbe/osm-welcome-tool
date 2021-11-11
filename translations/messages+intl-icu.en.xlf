@@ -21,6 +21,10 @@
         <source>Bogotá</source>
         <target>Bogotá</target>
       </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target>British Columbia</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
@@ -37,6 +41,10 @@
         <source>Italy</source>
         <target>Italy</target>
       </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target>Japan</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target>Libya</target>
@@ -48,6 +56,10 @@
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target>Panama</target>
+      </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target>Poland</target>
       </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
