@@ -64,6 +64,11 @@ regions:
     flag: 🇵🇦
     locales: es
     osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
+  poland:
+    name: Poland
+    flag: 🇵🇱
+    locales: pl
+    osmcha.id: 98d2b447-34b6-4681-82f8-9de3adddbf1b
   tanzania:
     name: Tanzania
     flag: 🇹🇿
