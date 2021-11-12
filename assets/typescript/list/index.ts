@@ -7,10 +7,11 @@ import fr from 'apexcharts/dist/locales/fr.json';
 import it from 'apexcharts/dist/locales/it.json';
 import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
+import pl from 'apexcharts/dist/locales/pl.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [en, es, fr, it, ja, nl];
+const locales = [en, es, fr, it, ja, nl, pl];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {

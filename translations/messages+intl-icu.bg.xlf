@@ -17,10 +17,6 @@
         <source>Bulgaria</source>
         <target>България</target>
       </trans-unit>
-      <trans-unit id="5WQOBAf" resname="Bogotá">
-        <source>Bogotá</source>
-        <target>Богота</target>
-      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>Британска Колумбия</target>
@@ -28,6 +24,10 @@
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Колумбия</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>Богота</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -268,10 +268,6 @@
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
         <target>Бележки</target>
-      </trans-unit>
-      <trans-unit id="R2Pcsb2" resname="Not welcomed">
-        <source>Not welcomed</source>
-        <target>Не е приветстван</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;

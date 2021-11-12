@@ -8,6 +8,8 @@ All translations are stored here: <https://github.com/osmbe/osm-welcome-tool/tre
 
 To add a new language, copy the [`messages+intl-icu.en.xlf` file](https://github.com/osmbe/osm-welcome-tool/blob/2.x/translations/messages%2Bintl-icu.en.xlf) and update all the `target` properties to the correct translation in your language.
 
+You don't need to provide translations of `security.en.xlf` and `validators.en.xlf` as these are part of the Symfony framework.
+
 Once done, save your file as `messages+intl-icu.##.xlf` by replacing `##` by the [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of your language.
 
 Upload your new file to our [`translations/`](https://github.com/osmbe/osm-welcome-tool/tree/2.x/translations) folder and create a Pull Request, we'll take it from there!
