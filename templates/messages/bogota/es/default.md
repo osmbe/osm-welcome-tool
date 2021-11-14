@@ -31,7 +31,7 @@ En esa lista podrás ver todo lo que se puede agregar al mapa.
 Al principio, esta lista puede ser enorme, pero con echarle un ojo podrás imaginar cómo mejorar el mapa.
 Aunque no todo lo que se puede mapear es válido para Colombia; por eso te decía que revisaras la guía.
 
-* Si tienes una página web y quieres incorporarle el mapa de OpenSteetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/)
+* Si tienes una página web y quieres incorporarle el mapa de OpenStreetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/)
 
 * Siempre es bueno saber quién está contribuyendo al mapa cerca de donde uno está trabajando, entonces puedes echarle un ojo a [resultmaps.neis-one.org](http://resultmaps.neis-one.org/).
 
