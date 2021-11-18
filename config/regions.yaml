@@ -1,4 +1,9 @@
 regions:
+  austria:
+    name: Österreich
+    flag: 🇦🇹
+    locales: de
+    osmcha.id: 
   bangladesh:
     name: Bangladesh
     flag: 🇧🇩
