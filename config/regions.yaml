@@ -77,8 +77,8 @@ regions:
   turkey:
     name: Turkey
     flag: 🇹🇷
-    locales: tr
-    osmcha.id: id
+    locales: en
+    osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
   uganda:
     name: Uganda
     flag: 🇺🇬
