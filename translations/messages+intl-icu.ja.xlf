@@ -65,6 +65,10 @@
         <source>Tanzania</source>
         <target>タンザニア</target>
       </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>トルコ</target>
+      </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target>ウガンダ</target>
