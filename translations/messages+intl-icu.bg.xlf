@@ -81,6 +81,10 @@
         <source>New York State</source>
         <target>Щат Ню Йорк</target>
       </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Орегон</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>Щат Вашингтон</target>
