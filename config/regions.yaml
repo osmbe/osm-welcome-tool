@@ -1,4 +1,9 @@
 regions:
+  austria:
+    name: Austria
+    flag: 🇦🇹
+    locales: de
+    osmcha.id: e1f0d692-edc1-4dc5-a84a-b7add29c6b90
   bangladesh:
     name: Bangladesh
     flag: 🇧🇩
@@ -14,11 +19,6 @@ regions:
     flag: 🇧🇬
     locales: bg
     osmcha.id: 1a15a041-57fa-4f5e-9813-ef8d4afe700d
-  bogota:
-    name: Bogotá
-    flag: 🇨🇴
-    locales: es
-    osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
   ca-bc:
     name: British Columbia
     flag: 🇨🇦
@@ -29,6 +29,11 @@ regions:
     flag: 🇨🇴
     locales: es
     osmcha.id: ec24e3f4-ad8e-4ee9-9ad4-f7676c0b334a
+  bogota:
+    name: Bogotá
+    flag: 🇨🇴
+    locales: es
+    osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
   drc:
     name: Democratic Republic of the Congo
     flag: 🇨🇩
@@ -69,11 +74,21 @@ regions:
     flag: 🇵🇱
     locales: pl
     osmcha.id: 98d2b447-34b6-4681-82f8-9de3adddbf1b
+  romania:
+    name: Romania
+    flag: 🇷🇴
+    locales: en
+    osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
   tanzania:
     name: Tanzania
     flag: 🇹🇿
     locales: en
     osmcha.id: 4df237d7-07bb-4b43-afa0-357eb485e8e1
+  turkey:
+    name: Turkey
+    flag: 🇹🇷
+    locales: en
+    osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
   uganda:
     name: Uganda
     flag: 🇺🇬
@@ -94,6 +109,11 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
+  oregon:
+    name: Oregon
+    flag: 🇺🇸
+    locales: en
+    osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
   washington:
     name: Washington State
     flag: 🇺🇸

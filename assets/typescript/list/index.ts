@@ -1,16 +1,18 @@
 import ApexCharts from 'apexcharts';
 import { GeoJSON, Map, TileLayer } from 'leaflet';
 
+import de from 'apexcharts/dist/locales/de.json';
 import en from 'apexcharts/dist/locales/en.json';
 import es from 'apexcharts/dist/locales/es.json';
 import fr from 'apexcharts/dist/locales/fr.json';
 import it from 'apexcharts/dist/locales/it.json';
 import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
+import pl from 'apexcharts/dist/locales/pl.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [en, es, fr, it, ja, nl];
+const locales = [de, en, es, fr, it, ja, nl, pl];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {

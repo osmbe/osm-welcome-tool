@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>オーストリア</target>
+      </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
         <target>バングラデシュ</target>
@@ -17,10 +21,6 @@
         <source>Bulgaria</source>
         <target>ブルガリア</target>
       </trans-unit>
-      <trans-unit id="5WQOBAf" resname="Bogotá">
-        <source>Bogotá</source>
-        <target>ボゴタ</target>
-      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>ブリティッシュコロンビア州</target>
@@ -28,6 +28,10 @@
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>コロンビア</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>ボゴタ</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -61,9 +65,17 @@
         <source>Poland</source>
         <target>ポーランド</target>
       </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>ルーマニア</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>タンザニア</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>トルコ</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
@@ -80,6 +92,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>ニューヨーク州</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>オレゴン州</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -268,10 +284,6 @@
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
         <target>ノート</target>
-      </trans-unit>
-      <trans-unit id="R2Pcsb2" resname="Not welcomed">
-        <source>Not welcomed</source>
-        <target>Not welcomed</target>
       </trans-unit>
       <trans-unit id="PUDX3.M" resname="This is the OpenStreetMap Welcome Tool. It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool. It helps you discover new mappers in your region and welcome them.</source>

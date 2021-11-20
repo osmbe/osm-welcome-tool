@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>Austria</target>
+      </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
         <target>Bangladés</target>
@@ -17,10 +21,6 @@
         <source>Bulgaria</source>
         <target>Bulgaria</target>
       </trans-unit>
-      <trans-unit id="5WQOBAf" resname="Bogotá">
-        <source>Bogotá</source>
-        <target>Bogotá</target>
-      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>Columbia Británica</target>
@@ -28,6 +28,10 @@
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>Bogotá</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -61,9 +65,17 @@
         <source>Poland</source>
         <target>Polonia</target>
       </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>Rumania</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>Tanzania</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>Turquía</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
@@ -80,6 +92,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>Estado de Nueva York</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Oregón</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -268,10 +284,6 @@
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
         <target>Notas</target>
-      </trans-unit>
-      <trans-unit id="R2Pcsb2" resname="Not welcomed">
-        <source>Not welcomed</source>
-        <target>No bienvenida/o</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;
