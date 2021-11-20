@@ -74,6 +74,11 @@ regions:
     flag: 🇵🇱
     locales: pl
     osmcha.id: 98d2b447-34b6-4681-82f8-9de3adddbf1b
+  romania:
+    name: Romania
+    flag: 🇷🇴
+    locales: en
+    osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
   tanzania:
     name: Tanzania
     flag: 🇹🇿
