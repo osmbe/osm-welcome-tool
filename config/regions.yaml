@@ -98,6 +98,7 @@ regions:
     name: Oregon
     flag: us
     locales: en
+    osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
   washington:
     name: Washington State
     flag: 🇺🇸
