@@ -81,6 +81,10 @@
         <source>New York State</source>
         <target>Stato di New York (USA)</target>
       </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Oregon</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>Stato di Washington (USA)</target>
