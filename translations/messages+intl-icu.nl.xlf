@@ -65,6 +65,10 @@
         <source>Tanzania</source>
         <target>Tanzania</target>
       </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>Turkije</target>
+      </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target>Oeganda</target>
@@ -80,6 +84,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>New York State</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Oregon</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
