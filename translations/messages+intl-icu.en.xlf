@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>Austria</target>
+      </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
         <target>Bangladesh</target>
