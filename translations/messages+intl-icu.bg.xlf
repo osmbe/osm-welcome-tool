@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>Австрия</target>
+      </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
         <target>Бангладеш</target>
@@ -61,9 +65,17 @@
         <source>Poland</source>
         <target>Полша</target>
       </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>Румъния</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>Танзания</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>Турция</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
@@ -80,6 +92,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>Щат Ню Йорк</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Орегон</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
