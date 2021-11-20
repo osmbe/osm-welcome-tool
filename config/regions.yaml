@@ -111,7 +111,7 @@ regions:
     osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
   oregon:
     name: Oregon
-    flag: us
+    flag: 🇺🇸
     locales: en
     osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
   washington:
