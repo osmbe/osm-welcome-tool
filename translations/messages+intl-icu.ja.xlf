@@ -65,6 +65,10 @@
         <source>Poland</source>
         <target>ポーランド</target>
       </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>ルーマニア</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>タンザニア</target>
