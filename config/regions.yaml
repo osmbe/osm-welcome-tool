@@ -99,6 +99,11 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: 68d8c9b6-ab1a-4837-89d4-1a558e398232
+  kosovo:
+    name: Kosovo
+    flag: 🇽🇰
+    locales: en
+    osmcha.id: 
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
