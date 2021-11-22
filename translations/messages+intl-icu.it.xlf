@@ -73,6 +73,10 @@
         <source>Romania</source>
         <target>Romania</target>
       </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target>Taiwan</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>Tanzania</target>
