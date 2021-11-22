@@ -49,6 +49,10 @@
         <source>Japan</source>
         <target>Japón</target>
       </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target>Kosovo</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target>Libia</target>
