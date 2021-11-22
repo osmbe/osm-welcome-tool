@@ -17,4 +17,4 @@ Nëse dëshironi të pyesni diçka, ose thjesht të ndani përvojën ose idetë 
 
 Zbuloni më shumë këtu për [komunitetin e Kosovës](https://wiki.openstreetmap.org/wiki/WikiProject_Kosovo).
 
-Hartografim argëtues! 
+Hartografim argëtues!
