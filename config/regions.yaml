@@ -79,6 +79,11 @@ regions:
     flag: 🇷🇴
     locales: en
     osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
+  taiwan:
+    name: Taiwan
+    flag: 🇹🇼
+    locales: zh
+    osmcha.id:   
   tanzania:
     name: Tanzania
     flag: 🇹🇿
