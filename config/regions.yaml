@@ -54,6 +54,11 @@ regions:
     flag: 🇯🇵
     locales: ja
     osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
+  kosovo:
+    name: Kosovo
+    flag: 🇽🇰
+    locales: en
+    osmcha.id: 615b1303-2ff7-45d4-9eb2-659f60e06c9f
   libya:
     name: Libya
     flag: 🇱🇾
@@ -99,11 +104,6 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: 68d8c9b6-ab1a-4837-89d4-1a558e398232
-  kosovo:
-    name: Kosovo
-    flag: 🇽🇰
-    locales: en
-    osmcha.id: 
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
