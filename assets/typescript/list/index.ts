@@ -9,10 +9,11 @@ import it from 'apexcharts/dist/locales/it.json';
 import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
 import pl from 'apexcharts/dist/locales/pl.json';
+import sq from 'apexcharts/dist/locales/sq.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [de, en, es, fr, it, ja, nl, pl];
+const locales = [de, en, es, fr, it, ja, nl, pl, sq];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
