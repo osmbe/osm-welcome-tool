@@ -1,4 +1,9 @@
 regions:
+  albania:
+    name: Albania
+    flag: 🇦🇱
+    locales: sq
+    osmcha.id: 
   austria:
     name: Austria
     flag: 🇦🇹
