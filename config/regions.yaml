@@ -19,6 +19,11 @@ regions:
     flag: 🇧🇪
     locales: fr|nl|de
     osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
+  bolivia:
+    name: Bolivia
+    flag: 🇧🇴
+    locales: es
+    osmcha.id: 2717cb5b-09c3-44e3-a7aa-8872b9506f0e
   bulgaria:
     name: Bulgaria
     flag: 🇧🇬
