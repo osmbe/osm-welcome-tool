@@ -94,6 +94,11 @@ regions:
     flag: 🇷🇴
     locales: en
     osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
+  scotland:
+    name: Scotland
+    flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+    locales: en
+    osmcha.id: 2c2d94e5-29bc-4eaa-a5e2-119df5d6b649
   taiwan:
     name: Taiwan
     flag: 🇹🇼
