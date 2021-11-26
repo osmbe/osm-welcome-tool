@@ -81,6 +81,10 @@
         <source>Romania</source>
         <target>Rumania</target>
       </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target>Escocia</target>
+      </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
         <target>Taiwán</target>
