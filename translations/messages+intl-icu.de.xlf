@@ -17,6 +17,10 @@
         <source>Belgium</source>
         <target>Belgien</target>
       </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target>Bolivien</target>
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target>Bulgarien</target>
