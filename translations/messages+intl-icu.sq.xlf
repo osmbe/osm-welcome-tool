@@ -107,7 +107,7 @@
       </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
-        <target>Comonuelthi i Masaçusetsit</target>
+        <target>Komonuelthi i Masaçusetsit</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
@@ -119,11 +119,11 @@
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
-        <target>Shtet i Uashingtonit</target>
+        <target>Shteti i Uashingtonit</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
-        <target>U kerkua rishikim</target>
+        <target>U kërkua rishikim</target>
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
@@ -313,7 +313,7 @@ Ju ndihmon të zbuloni dhe mirëprisni hartografues të rinj në rajonin tuaj.</
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>Nëse dëshironi të shtoni rajonin tuaj ose gjuhën tuaj në Veglën e Mirëseardhjes, kontrolloni {contributing_link_start} udhëzimin tonë{link_end}.</target>
+        <target>Nëse dëshironi të shtoni rajonin ose gjuhën tuaj në Veglën e Mirëseardhjes, shihni {contributing_link_start} udhëzimin{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
@@ -325,7 +325,7 @@ Ju ndihmon të zbuloni dhe mirëprisni hartografues të rinj në rajonin tuaj.</
       </trans-unit>
       <trans-unit id="K5yIR1M" resname="Next mapper">
         <source>Next mapper</source>
-        <target>Hartografuesit tjetër</target>
+        <target>Hartografuesi tjetër</target>
       </trans-unit>
     </body>
   </file>
