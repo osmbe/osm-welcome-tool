@@ -16,7 +16,7 @@ Polska społeczność zrzeszona jest w [Stowarzyszeniu OpenStreetMap Polska](ht
 Poniżej garść przydatnych wskazówek.
 
 * Twoje edycje nie wymagają zatwierdzenia, od razu są zapisane w głównej bazie OSM. Może jednak minąć pewien czas, zanim będą widoczne na mapie [osm.org](https://openstreetmap.org/) (od kilku minut do kilku dni). Inne mapy i aplikacje pobierają nowe dane OSM według własnego harmonogramu.
-* Jeśli używasz iD (edytora online), warto przejść cały [samouczek](https://wiki.openstreetmap.org/wiki/ID_editor_walkthrough). Pozwoli Ci on uniknąć popełnienia częstych błędów.
+* Jeśli używasz iD (edytora online), warto przejść cały [samouczek](https://wiki.openstreetmap.org/wiki/Pl:Samouczek_edytora_iD). Pozwoli Ci on uniknąć popełnienia częstych błędów.
 * Gdy wysyłasz zmiany, [opisz co i dlaczego zmieniłeś/aś](https://wiki.openstreetmap.org/wiki/Pl:Good_changeset_comments).
 * Inni mapowicze mogą [skomentować](https://wiki.openstreetmap.org/wiki/Pl:Zestaw_zmian#Dyskusja_w_zestawie_zmian) Twoje edycje. Dostaniesz wtedy powiadomienie na skrzynkę e‑mail. Upewnij się, że adres e‑mail w Twoim profilu jest aktualny i regularnie przez Ciebie czytany. Jeśli używasz Gmaila, zazwyczaj znajdziesz e‑maile w kategorii „Powiadomienia”.
 * [Uwagi](https://wiki.openstreetmap.org/wiki/Pl:Uwagi) służą do zgłaszania błędów w danych mapy. Możesz przejrzeć zgłoszone w Twojej okolicy uwagi i jeśli się da, rozwiązać je bazując na wiedzy lokalnej.
