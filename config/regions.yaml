@@ -144,3 +144,8 @@ regions:
     flag: 🇺🇸
     locales: en
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
+  Països Catalans:
+    name: Països Catalans
+    flag: es-ct
+    locales: ca
+    osmcha.id:
