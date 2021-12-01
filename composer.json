@@ -40,7 +40,7 @@
         "symfony/property-info": "5.3.*",
         "symfony/proxy-manager-bridge": "5.3.*",
         "symfony/runtime": "5.4.*",
-        "symfony/security-bundle": "5.3.*",
+        "symfony/security-bundle": "5.4.*",
         "symfony/serializer": "5.3.*",
         "symfony/string": "5.3.*",
         "symfony/translation": "5.3.*",
