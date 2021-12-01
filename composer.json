@@ -29,7 +29,7 @@
         "symfony/flex": "^2.0.1",
         "symfony/form": "5.4.*",
         "symfony/framework-bundle": "5.3.*",
-        "symfony/http-client": "5.3.*",
+        "symfony/http-client": "5.4.*",
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
         "symfony/mime": "5.4.*",
