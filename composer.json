@@ -48,7 +48,7 @@
         "symfony/validator": "5.4.*",
         "symfony/web-link": "5.3.*",
         "symfony/webpack-encore-bundle": "^1.12",
-        "symfony/yaml": "5.3.*",
+        "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^3.3",
         "twig/html-extra": "^3.3",
         "twig/intl-extra": "^3.3",
