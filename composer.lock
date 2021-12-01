@@ -8800,22 +8800,22 @@
         },
         {
             "name": "twig/html-extra",
-            "version": "v3.3.3",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/html-extra.git",
-                "reference": "e22ec1a8f2509364877333cb1ebd9518ddf06dcf"
+                "reference": "ce33ea51bb0df393d2bc9945d08e2ce7fbe808c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/e22ec1a8f2509364877333cb1ebd9518ddf06dcf",
-                "reference": "e22ec1a8f2509364877333cb1ebd9518ddf06dcf",
+                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/ce33ea51bb0df393d2bc9945d08e2ce7fbe808c5",
+                "reference": "ce33ea51bb0df393d2bc9945d08e2ce7fbe808c5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
-                "symfony/mime": "^4.3|^5.0|^6.0",
-                "twig/twig": "^2.4|^3.0"
+                "symfony/mime": "^4.4|^5.0|^6.0",
+                "twig/twig": "^2.7|^3.0"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
@@ -8853,7 +8853,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/html-extra/tree/v3.3.3"
+                "source": "https://github.com/twigphp/html-extra/tree/v3.3.4"
             },
             "funding": [
                 {
@@ -8865,7 +8865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-20T14:28:34+00:00"
+            "time": "2021-11-13T16:20:21+00:00"
         },
         {
             "name": "twig/intl-extra",
