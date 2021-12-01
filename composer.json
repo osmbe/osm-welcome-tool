@@ -34,7 +34,7 @@
         "symfony/mailer": "5.3.*",
         "symfony/mime": "5.3.*",
         "symfony/monolog-bundle": "^3.1",
-        "symfony/notifier": "5.3.*",
+        "symfony/notifier": "5.4.*",
         "symfony/process": "5.3.*",
         "symfony/property-access": "5.4.*",
         "symfony/property-info": "5.3.*",
