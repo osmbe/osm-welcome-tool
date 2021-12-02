@@ -24,12 +24,12 @@ Todos los que contribuimos al mapa leemos continuamente el Wiki, y si algo no es
 Te recomiendo que la leas, con eso estás seguro de lo que haces.
 
 * [learnOSM (aprendeOSM)](https://learnosm.org/es/) es un buen lugar donde aprender acerca del mundo de OSM.
-Hay instrucciones para el editor iD (el cual puedes usar desde el navegador) y para un editor más avanzado llamado JOSM.
+Hay instrucciones para el editor iD (el cual puedes usar desde el navegador) y para un editor más avanzado llamado JOSM (Aplicación con Java).
 
-* Si en el editor que estés usando, no encuentras cómo mapear algo, la solución más rápida es buscala en la página del wiki de [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa).
+* Si en el editor que estés usando, no encuentras cómo mapear algo, la solución más rápida es buscarla en la página del wiki de [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa).
 En esa lista podrás ver todo lo que se puede agregar al mapa.
 Al principio, esta lista puede ser enorme, pero con echarle un ojo podrás imaginar cómo mejorar el mapa.
-Aunque no todo lo que se puede mapear es válido para Colombia; por eso te decía que revisaras la guía.
+Aunque no todo lo que se puede mapear es válido para Colombia; por eso te decía que revisaras la guía primero.
 
 * Si tienes una página web y quieres incorporarle el mapa de OpenStreetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/)
 
@@ -50,7 +50,7 @@ No te pierdas el [siguiente evento](https://www.meetup.com/maptime-bogota-colomb
 
 * Si quieres solicitar la adición de un negocio, sin tener que conocer los detalles de mapeo, puede utilizar la [herramienta minegocio](https://maptimebogota.github.io/minegocio/).
 
-Entonces, ¿qué debo mapear ahora?
+Entonces, te preguntarás ¿qué puedo mapear ahora?
 Te recomiendo que adiciones cosas qué están cerca de ti y que conoces bien, como:
 Construcciones (casas, edificios); comercios como restaurantes o peluquerías; vías, andenes y caminos peatonales; sillas/bancos.
 ¡Tu eres el experto en tu área!
