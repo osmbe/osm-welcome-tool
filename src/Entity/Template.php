@@ -21,8 +21,8 @@ class Template
 
         $front = $result->getFrontMatter();
 
-        $this->name = $front['name'];
-        $this->title = $front['title'];
+        $this->name = $front['name'] ?? ucfirst(basename($this->path, '.md'));
+        $this->title = $front['title'] ?? '';
 
         $this->template = $result->getContent();
     }

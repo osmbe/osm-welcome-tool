@@ -5,6 +5,14 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target>Albanie</target>
+      </trans-unit>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>Autriche</target>
+      </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
         <target>Bangladesh</target>
@@ -12,6 +20,10 @@
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
         <target>Belgique</target>
+      </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target>Bolivie</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
@@ -45,6 +57,10 @@
         <source>Japan</source>
         <target>Japon</target>
       </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target>Kosovo</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target>Libye</target>
@@ -61,9 +77,25 @@
         <source>Poland</source>
         <target>Pologne</target>
       </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>Roumanie</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target>Écosse</target>
+      </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target>Taïwan</target>
+      </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target>Tanzanie</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>Turquie</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
@@ -80,6 +112,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>État de New York</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>Oregon</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
