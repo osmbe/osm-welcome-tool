@@ -5,6 +5,7 @@ namespace App\Command;
 use App\Service\RegionsProvider;
 use DateInterval;
 use DateTime;
+use Exception;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -65,10 +66,14 @@ class UpdateCommand extends Command
                     $io->note(sprintf('Get new mappers from %s.', $date));
                 }
 
-                $this->process($key, $date, $output);
+                try {
+                    $this->process($key, $date, $output);
 
-                $lastUpdate->set(date('c'));
-                $this->cache->save($lastUpdate);
+                    $lastUpdate->set(date('c'));
+                    $this->cache->save($lastUpdate);
+                } catch (Exception $e) {
+                    $io->error($e->getMessage());
+                }
             } else {
                 $io->note('Skip, already processed.');
             }
