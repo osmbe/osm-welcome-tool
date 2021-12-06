@@ -45,6 +45,10 @@
         <source>Democratic Republic of the Congo</source>
         <target>Демократична република Конго</target>
       </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target>Германия</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Гана</target>
