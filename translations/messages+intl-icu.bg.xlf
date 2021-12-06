@@ -49,6 +49,10 @@
         <source>Ghana</source>
         <target>Гана</target>
       </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target>Ирландия</target>
+      </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
         <target>Италия</target>
