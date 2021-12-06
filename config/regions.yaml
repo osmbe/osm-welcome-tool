@@ -49,11 +49,21 @@ regions:
     flag: 🇨🇩
     locales: fr
     osmcha.id: 40230cd7-2d13-4df7-bc1e-4ac44bb8478a
+  germany:
+    name: Germany
+    flag: 🇩🇪
+    locales: de
+    osmcha.id: 5489911b-e978-4983-bd71-8055654339df
   ghana:
     name: Ghana
     flag: 🇬🇭
     locales: en
     osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
+  ireland:
+    name: Ireland
+    flag: ☘️
+    locales: en
+    osmcha.id: dfa457d9-b30c-4034-baae-04a268408b39
   italy:
     name: Italy
     flag: 🇮🇹
