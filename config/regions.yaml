@@ -58,7 +58,7 @@ regions:
     name: Ireland
     flag: ☘️
     locales: en
-    osmcha.id:
+    osmcha.id: dfa457d9-b30c-4034-baae-04a268408b39
   italy:
     name: Italy
     flag: 🇮🇹
