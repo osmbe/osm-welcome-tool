@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target>阿爾巴尼亞</target>
+      </trans-unit>      
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
         <target>奧地利</target>
@@ -17,6 +21,10 @@
         <source>Belgium</source>
         <target>比利時</target>
       </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target>玻利維亞</target>
+      </trans-unit>     
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target>保加利亞</target>
@@ -37,9 +45,17 @@
         <source>Democratic Republic of the Congo</source>
         <target>剛果民主共和國</target>
       </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target>德國</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>加納</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target>愛爾蘭</target>
       </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
@@ -72,6 +88,10 @@
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
         <target>羅馬尼亞</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target>蘇格蘭</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
