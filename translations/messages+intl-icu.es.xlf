@@ -33,6 +33,10 @@
         <source>British Columbia</source>
         <target>Columbia Británica</target>
       </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target>Países Catalanes</target>
+      </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
         <target>China</target>
