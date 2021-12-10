@@ -10,10 +10,11 @@ import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
 import pl from 'apexcharts/dist/locales/pl.json';
 import sq from 'apexcharts/dist/locales/sq.json';
+import zh_CN from 'apexcharts/dist/locales/zh-cn.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [de, en, es, fr, it, ja, nl, pl, sq];
+const locales = [de, en, es, fr, it, ja, nl, pl, sq, zh_CN];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
@@ -41,7 +42,7 @@ if (mapElement !== null) {
 
 const chartElement = document.getElementById('chart-stats');
 if (chartElement !== null) {
-  const lang = document.querySelector('html')?.lang;
+  const lang = document.querySelector('html')?.lang.toLowerCase().replace('_', '-');
   const { region, series1, series2 } = chartElement.dataset;
 
   const options = {
