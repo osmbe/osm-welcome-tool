@@ -37,6 +37,10 @@
         <source>Catalan Countries</source>
         <target>Països Catalans</target>
       </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target>China</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Kolumbien</target>

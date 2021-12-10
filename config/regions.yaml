@@ -39,6 +39,11 @@ regions:
     flag: 🏴󠁥󠁳󠁣󠁴󠁿
     locales: ca
     osmcha.id: 401dba26-ce0e-4f9f-8425-7b16506b4410
+  china:
+    name: China
+    flag: 🇨🇳
+    locales: en
+    osmcha.id: 26f398a6-ab46-41cb-9a30-14b04031129a
   colombia:
     name: Colombia
     flag: 🇨🇴
