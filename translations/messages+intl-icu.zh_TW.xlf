@@ -8,7 +8,7 @@
       <trans-unit id="GvALh0." resname="Albania">
         <source>Albania</source>
         <target>阿爾巴尼亞</target>
-      </trans-unit>      
+      </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
         <target>奧地利</target>
@@ -24,7 +24,7 @@
       <trans-unit id="liHAc2R" resname="Bolivia">
         <source>Bolivia</source>
         <target>玻利維亞</target>
-      </trans-unit>     
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target>保加利亞</target>
@@ -32,6 +32,10 @@
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>英屬哥倫比亞</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target>中國</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>

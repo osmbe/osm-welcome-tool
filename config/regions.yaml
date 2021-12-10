@@ -34,6 +34,16 @@ regions:
     flag: 🇨🇦
     locales: en|fr
     osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
+  catalan_countries:
+    name: Catalan Countries
+    flag: 🏴󠁥󠁳󠁣󠁴󠁿
+    locales: ca
+    osmcha.id: 401dba26-ce0e-4f9f-8425-7b16506b4410
+  china:
+    name: China
+    flag: 🇨🇳
+    locales: en
+    osmcha.id: 26f398a6-ab46-41cb-9a30-14b04031129a
   colombia:
     name: Colombia
     flag: 🇨🇴

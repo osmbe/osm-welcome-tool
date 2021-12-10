@@ -11,8 +11,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-versions: ['8.0']
+
     steps:
     - uses: actions/checkout@v2
+
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
