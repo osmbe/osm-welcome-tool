@@ -36,7 +36,7 @@ regions:
     osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
   china:
     name: China
-    flag: 
+    flag: 🇨🇳
     locales: zhcn|en
     osmcha.id: 0
   colombia:
