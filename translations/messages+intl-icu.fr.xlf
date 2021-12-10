@@ -33,6 +33,10 @@
         <source>British Columbia</source>
         <target>Colombie-Britannique</target>
       </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target>Pays catalans</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombie</target>
