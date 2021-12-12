@@ -17,6 +17,12 @@ class ListController extends AbstractController
     ) {
     }
 
+    #[Route('/{regionKey}', name: 'app_region')]
+    public function redirectToList(string $regionKey): Response
+    {
+        return $this->redirectToRoute('app_list', ['regionKey' => $regionKey]);
+    }
+
     #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list')]
     public function index(string $regionKey, ?int $year = null, ?int $month = null): Response
     {
