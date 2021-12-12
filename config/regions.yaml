@@ -69,6 +69,11 @@ regions:
     flag: 🇬🇭
     locales: en
     osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
+  hongkong:
+    name: Hong Kong
+    flag: 🇭🇰
+    locales: en
+    osmcha.id: ddd87c1a-717b-4d30-815a-507ed8d57a3c
   ireland:
     name: Ireland
     flag: ☘️
