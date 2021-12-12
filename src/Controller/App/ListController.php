@@ -33,6 +33,18 @@ class ListController extends AbstractController
             $month = (int) (date('m'));
         }
 
+        if ($month > 12) {
+            $year = $year + 1;
+            $month = 1;
+
+            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+        } elseif ($month < 1) {
+            $year = $year - 1;
+            $month = 12;
+
+            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+        }
+
         /** @var Mapper[] */
         $mappers = $this->getDoctrine()
             ->getRepository(Mapper::class)
