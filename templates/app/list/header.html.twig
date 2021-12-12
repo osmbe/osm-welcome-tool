@@ -27,6 +27,18 @@
                 </a>
                 {% set next_month = (month|date('m')) + 1 %}
                 {% set next_year = (month|date('Y')) %}
+                {% if (next_year > (date()|date('Y'))) or (next_year == (date()|date('Y')) and next_month > (date()|date('m'))) %}
+                <span class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 opacity-50 cursor-not-allowed">
+                    <span class="sr-only">{{ 'Next month'|trans }}</span>
+                    <!-- Heroicon name: solid/chevron-right -->
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+                {% else %}
                 <a class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                     href="{{ path('app_list', {regionKey: region.key, year: next_year, month: next_month}) }}">
                     <span class="sr-only">{{ 'Next month'|trans }}</span>
@@ -38,6 +50,7 @@
                             clip-rule="evenodd" />
                     </svg>
                 </a>
+                {% endif %}
             </span>
         </div>
     </div>
