@@ -61,6 +61,10 @@
         <source>Ghana</source>
         <target>Ghana</target>
       </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target>Hong Kong</target>
+      </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
         <target>Irlanda</target>
