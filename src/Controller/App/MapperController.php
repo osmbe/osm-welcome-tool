@@ -33,7 +33,7 @@ class MapperController extends AbstractController
     ) {
     }
 
-    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper')]
+    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper', requirements: ['regionKey' => '[\w\-_]+'])]
     #[IsGranted('ROLE_USER')]
     public function index(Request $request, string $regionKey, Mapper $mapper): Response
     {

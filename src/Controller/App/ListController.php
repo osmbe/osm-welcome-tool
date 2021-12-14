@@ -17,13 +17,13 @@ class ListController extends AbstractController
     ) {
     }
 
-    #[Route('/{regionKey}', name: 'app_region')]
+    #[Route('/{regionKey}', name: 'app_region', requirements: ['regionKey' => '[\w\-_]+'])]
     public function redirectToList(string $regionKey): Response
     {
         return $this->redirectToRoute('app_list', ['regionKey' => $regionKey]);
     }
 
-    #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list')]
+    #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list', requirements: ['regionKey' => '[\w\-_]+'])]
     public function index(string $regionKey, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($regionKey);
