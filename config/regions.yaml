@@ -104,6 +104,11 @@ regions:
     flag: 🇱🇺
     locales: fr|en|de
     osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+  macau:
+    name: Macau
+    flag: 🇲🇴
+    locales: en|pt
+    osmcha.id:
   panama:
     name: Panama
     flag: 🇵🇦
