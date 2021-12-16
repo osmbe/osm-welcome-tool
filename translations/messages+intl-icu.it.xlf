@@ -89,6 +89,10 @@
         <source>Luxembourg</source>
         <target>Lussemburgo</target>
       </trans-unit>
+      <trans-unit id="peKNxVh" resname="Macau">
+        <source>Macau</source>
+        <target>Macao</target>
+      </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target>Panama</target>
