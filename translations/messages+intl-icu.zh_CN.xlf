@@ -89,6 +89,10 @@
         <source>Luxembourg</source>
         <target>卢森堡</target>
       </trans-unit>
+      <trans-unit id="peKNxVh" resname="Macao">
+        <source>Macao</source>
+        <target>澳门</target>
+      </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target>巴拿马</target>
