@@ -29,10 +29,12 @@
                 <p class="font-medium text-gray-900">
                     {{ region.name|trans }}
                 </p>
+                {% if region.lastUpdate is not null %}
                 <p class="text-xs text-gray-500 truncate">
                     {{ 'Last update'|trans }}:
                     <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|format_datetime('medium') }}</time>
                 </p>
+                {% endif %}
             </a>
         </div>
     </div>
