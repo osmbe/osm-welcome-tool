@@ -23,16 +23,21 @@
         <div class="flex-shrink-0">
             {{ region.flag }}
         </div>
-        <div class="flex-1 min-w-0">
-            <a href="{{ path('app_list', {regionKey: key}) }}" class="focus:outline-none">
+        <div class="flex-1 min-w-0 h-full">
+            <a href="{{ path('app_list', {regionKey: key}) }}" class="flex flex-col h-full focus:outline-none">
                 <span class="absolute inset-0" aria-hidden="true"></span>
-                <p class="font-medium text-gray-900">
+                <p class="flex-grow font-medium text-gray-900">
                     {{ region.name|trans }}
                 </p>
+                {% if region.lastUpdate is not null %}
                 <p class="text-xs text-gray-500 truncate">
                     {{ 'Last update'|trans }}:
                     <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|format_datetime('medium') }}</time>
                 </p>
+                {% endif %}
+                <div class="w-full bg-gray-200 rounded-full h-0.5 dark:bg-gray-700 mt-1">
+                    <div class="bg-gray-600 h-0.5 rounded-full dark:bg-gray-300" style="width: {{ region.percent }}%"></div>
+                </div>
             </a>
         </div>
     </div>

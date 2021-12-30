@@ -2,6 +2,9 @@
 
 namespace App\Service;
 
+use App\Entity\Mapper;
+use App\Repository\MapperRepository;
+use App\Repository\WelcomeRepository;
 use DateTime;
 use Exception;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
@@ -13,6 +16,8 @@ class RegionsProvider
 
     public function __construct(
         private AdapterInterface $cache,
+        private MapperRepository $mapperRepository,
+        private WelcomeRepository $welcomeRepository,
         private string $projectDirectory
     ) {
         $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
@@ -65,5 +70,17 @@ class RegionsProvider
         }
 
         return new DateTime($this->cache->getItem($cacheKey)->get());
+    }
+
+    public function getPercentage(string $key): int
+    {
+        /** @var Mapper[] */
+        $mappers = $this->mapperRepository->findBy(['region' => $key]);
+
+        $checked = array_filter($mappers, function (Mapper $mapper): bool {
+            return null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty();
+        });
+
+        return \count($mappers) > 0 ? round(\count($checked) / \count($mappers) * 100) : 0;
     }
 }
