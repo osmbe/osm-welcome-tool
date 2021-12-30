@@ -78,9 +78,9 @@ class RegionsProvider
         $mappers = $this->mapperRepository->findBy(['region' => $key]);
 
         $checked = array_filter($mappers, function (Mapper $mapper): bool {
-            return !is_null($mapper->getWelcome()) || false === $mapper->getNotes()->isEmpty();
+            return null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty();
         });
 
-        return count($mappers) > 0 ? round(count($checked) / count($mappers) * 100) : 0;
+        return \count($mappers) > 0 ? round(\count($checked) / \count($mappers) * 100) : 0;
     }
 }
