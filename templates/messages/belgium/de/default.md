@@ -17,7 +17,8 @@ Hier ist etwas Hilfe, um Ihnen den Einstieg zu erleichtern:
 Wenn Sie wissen möchten, wie man etwas taggen soll, ist die schnellste Lösung vielleicht die Suche nach dem `site:wiki.openstreetmap.org [Suchbegriff]` mit Ihrer Lieblingssuchmaschine.
 * Es gibt auch einen [wöchentlichen, globalen Newsletter über die OSM-Welt](https://weeklyosm.eu/) den Sie abonnieren können.
 
-Wir haben eine Wiki-Seite, um neuen Mappern den Einstieg zu erleichtern. Für weitere Tipps und Hinweise [schauen Sie dort nach!](https://wiki.openstreetmap.org/wiki/WikiProject_Belgium/Beginner) 
+Wir haben eine Wiki-Seite, um neuen Mappern den Einstieg zu erleichtern. Für weitere Tipps und Hinweise [schauen Sie dort nach!](https://wiki.openstreetmap.org/wiki/WikiProject_Belgium/Beginner)
 
 Happy Mapping!
-{{tool user}}
+
+{{ app.user.displayName }}
