@@ -45,7 +45,7 @@
         "symfony/string": "6.0.*",
         "symfony/translation": "6.0.*",
         "symfony/twig-bundle": "6.0.*",
-        "symfony/validator": "5.4.*",
+        "symfony/validator": "6.0.*",
         "symfony/web-link": "6.0.*",
         "symfony/webpack-encore-bundle": "^1.12",
         "symfony/yaml": "6.0.*",
