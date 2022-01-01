@@ -36,7 +36,7 @@
         "symfony/monolog-bundle": "^3.1",
         "symfony/notifier": "5.4.*",
         "symfony/process": "5.4.*",
-        "symfony/property-access": "5.4.*",
+        "symfony/property-access": "6.0.*",
         "symfony/property-info": "6.0.*",
         "symfony/proxy-manager-bridge": "6.0.*",
         "symfony/runtime": "6.0.*",
