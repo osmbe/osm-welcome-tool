@@ -73,7 +73,7 @@
         "symfony/phpunit-bridge": "^6.0",
         "symfony/stopwatch": "^5.4",
         "symfony/var-dumper": "^5.4",
-        "symfony/web-profiler-bundle": "^5.4"
+        "symfony/web-profiler-bundle": "^6.0"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
