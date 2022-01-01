@@ -68,7 +68,7 @@
         "pluswerk/grumphp-xliff-task": "^5.0",
         "symfony/browser-kit": "^5.4",
         "symfony/css-selector": "^5.4",
-        "symfony/debug-bundle": "^5.4",
+        "symfony/debug-bundle": "^6.0",
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^6.0",
         "symfony/stopwatch": "^5.4",
