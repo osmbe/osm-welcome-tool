@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f38f9dcc13c4d57e8773cd010a5dfa31",
+    "content-hash": "49df008bdba9d5db9f036ef8c08041f2",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5687,50 +5687,30 @@
         },
         {
             "name": "symfony/notifier",
-            "version": "v5.4.0",
+            "version": "v6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/notifier.git",
-                "reference": "181743e5b2abe0082e0e08fa17ffe48d4381b699"
+                "reference": "5a6afab6f6b9f29f1dccb46dd7a41280cc9c1ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/notifier/zipball/181743e5b2abe0082e0e08fa17ffe48d4381b699",
-                "reference": "181743e5b2abe0082e0e08fa17ffe48d4381b699",
+                "url": "https://api.github.com/repos/symfony/notifier/zipball/5a6afab6f6b9f29f1dccb46dd7a41280cc9c1ecc",
+                "reference": "5a6afab6f6b9f29f1dccb46dd7a41280cc9c1ecc",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
-                "psr/log": "^1|^2|^3",
-                "symfony/polyfill-php80": "^1.15"
+                "php": ">=8.0.2",
+                "psr/log": "^1|^2|^3"
             },
             "conflict": {
-                "symfony/discord-notifier": "<5.3",
-                "symfony/esendex-notifier": "<5.3",
-                "symfony/firebase-notifier": "<5.3",
-                "symfony/free-mobile-notifier": "<5.3",
-                "symfony/google-chat-notifier": "<5.3",
-                "symfony/http-kernel": "<4.4",
-                "symfony/infobip-notifier": "<5.3",
-                "symfony/linked-in-notifier": "<5.3",
-                "symfony/mattermost-notifier": "<5.3",
-                "symfony/mobyt-notifier": "<5.3",
-                "symfony/nexmo-notifier": "<5.3",
-                "symfony/ovh-cloud-notifier": "<5.3",
-                "symfony/rocket-chat-notifier": "<5.3",
-                "symfony/sendinblue-notifier": "<5.3",
-                "symfony/sinch-notifier": "<5.3",
-                "symfony/slack-notifier": "<5.3",
-                "symfony/sms77-notifier": "<5.3",
-                "symfony/smsapi-notifier": "<5.3",
-                "symfony/telegram-notifier": "<5.3",
-                "symfony/twilio-notifier": "<5.3",
-                "symfony/zulip-notifier": "<5.3"
+                "symfony/event-dispatcher": "<5.4",
+                "symfony/http-kernel": "<5.4"
             },
             "require-dev": {
                 "symfony/event-dispatcher-contracts": "^2|^3",
                 "symfony/http-client-contracts": "^2|^3",
-                "symfony/messenger": "^4.4|^5.0|^6.0"
+                "symfony/messenger": "^5.4|^6.0"
             },
             "type": "library",
             "autoload": {
@@ -5762,7 +5742,7 @@
                 "notifier"
             ],
             "support": {
-                "source": "https://github.com/symfony/notifier/tree/v5.4.0"
+                "source": "https://github.com/symfony/notifier/tree/v6.0.2"
             },
             "funding": [
                 {
@@ -5778,7 +5758,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-29T14:01:12+00:00"
+            "time": "2021-12-25T20:10:03+00:00"
         },
         {
             "name": "symfony/options-resolver",
