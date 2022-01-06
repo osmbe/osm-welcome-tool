@@ -1,6 +1,6 @@
 ---
 name: Default
-title: Welcome to OpenStreetMap
+title: 歡迎來到開放街圖
 ---
 
 嗨{{ mapper.displayName }}：
