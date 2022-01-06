@@ -3,6 +3,8 @@ name: Default
 title: Welcome to OpenStreetMap
 ---
 
+嗨{{ mapper.displayName }}：
+
 恭喜您完成第一次的地圖編輯！ 
 歡迎加入開放街圖，群眾共同參與，繪製生活週遭大家關心事物的共編地圖。
 以下是相關的參考資料，歡迎隨時指教與提問。
