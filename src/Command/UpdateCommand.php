@@ -6,7 +6,7 @@ use App\Service\RegionsProvider;
 use DateInterval;
 use DateTime;
 use Exception;
-use Symfony\Component\Cache\Adapter\AdapterInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -23,7 +23,7 @@ class UpdateCommand extends Command
 {
     public function __construct(
         private RegionsProvider $provider,
-        private AdapterInterface $cache
+        private CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }

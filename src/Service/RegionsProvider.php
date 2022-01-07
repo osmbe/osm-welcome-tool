@@ -7,7 +7,7 @@ use App\Repository\MapperRepository;
 use App\Repository\WelcomeRepository;
 use DateTime;
 use Exception;
-use Symfony\Component\Cache\Adapter\AdapterInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
 
 class RegionsProvider
@@ -15,7 +15,7 @@ class RegionsProvider
     private array $regions = [];
 
     public function __construct(
-        private AdapterInterface $cache,
+        private CacheItemPoolInterface $cache,
         private MapperRepository $mapperRepository,
         private WelcomeRepository $welcomeRepository,
         private string $projectDirectory
