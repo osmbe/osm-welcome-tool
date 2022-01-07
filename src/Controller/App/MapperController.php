@@ -65,7 +65,7 @@ class MapperController extends AbstractController
 
         // Prev/Next mapper
         /** @var Mapper[] */
-        $mappers = $this->getDoctrine()
+        $mappers = $this->entityManager
             ->getRepository(Mapper::class)
             ->findBy(['region' => $regionKey]);
 

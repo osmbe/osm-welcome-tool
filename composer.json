@@ -23,12 +23,12 @@
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "6.0.*",
         "symfony/cache": "6.0.*",
-        "symfony/console": "5.4.*",
+        "symfony/console": "6.0.*",
         "symfony/dotenv": "6.0.*",
         "symfony/expression-language": "6.0.*",
         "symfony/flex": "^1.0 || ^2.0",
         "symfony/form": "6.0.*",
-        "symfony/framework-bundle": "5.4.*",
+        "symfony/framework-bundle": "6.0.*",
         "symfony/http-client": "6.0.*",
         "symfony/intl": "6.0.*",
         "symfony/mailer": "6.0.*",
@@ -40,7 +40,7 @@
         "symfony/property-info": "6.0.*",
         "symfony/proxy-manager-bridge": "6.0.*",
         "symfony/runtime": "6.0.*",
-        "symfony/security-bundle": "5.4.*",
+        "symfony/security-bundle": "6.0.*",
         "symfony/serializer": "6.0.*",
         "symfony/string": "6.0.*",
         "symfony/translation": "6.0.*",
@@ -58,7 +58,7 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.0",
-        "friendsoftwig/twigcs": "^5.0",
+        "friendsoftwig/twigcs": "dev-main",
         "phpro/grumphp": "^1.6",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "^0.12.94",
@@ -71,8 +71,8 @@
         "symfony/debug-bundle": "^6.0",
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^6.0",
-        "symfony/stopwatch": "^5.4",
-        "symfony/var-dumper": "^5.4",
+        "symfony/stopwatch": "^6.0",
+        "symfony/var-dumper": "^6.0",
         "symfony/web-profiler-bundle": "^6.0"
     },
     "replace": {
@@ -96,6 +96,14 @@
         }
     },
     "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "symfony/flex": true,
+            "symfony/runtime": true,
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true,
+            "phpro/grumphp": true
+        },
         "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
@@ -105,7 +113,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.4.*"
+            "require": "6.0.*"
         }
     },
     "scripts": {
