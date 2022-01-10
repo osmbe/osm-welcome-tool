@@ -44,7 +44,7 @@ Restaurantes, negocios, calles, andenes, sillas/bancos, esencialmente cosas o lu
 También, si encuentras que un negocio ya está mapeado, asegúrate que tiene la dirección en el mapa.
 Así irás agregando detalles a lo que ya existe.
 Recuerda: ¡Tu eres el experto en tu zona!
-Ya vas a ver lo satisfactorio que es llenar de detales el mapa alrededor tuyo.
+Ya vas a ver lo satisfactorio que es llenar de detalles el mapa alrededor tuyo.
 
 No olvides que puedes contar con la comunidad, y preguntarles lo que quieras.
 Todos nosotros alguna vez comenzamos a mapear en OSM, como tu lo estás haciendo en este momento, y lo que queremos es acompañarte en este camino.
