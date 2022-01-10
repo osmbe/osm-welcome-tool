@@ -22,6 +22,7 @@ class HomeController extends AbstractController
         $keys = array_keys($regions);
         foreach ($keys as $key) {
             $regions[$key]['lastUpdate'] = $this->provider->getLastUpdate($key);
+            $regions[$key]['percent'] = $this->provider->getPercentage($key);
         }
 
         return $this->render('app/home/index.html.twig', [

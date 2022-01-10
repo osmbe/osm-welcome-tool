@@ -40,7 +40,7 @@ class OpenStreetMapController extends AbstractController
         // }
     }
 
-    #[Route('/logout', name: 'logout')]
+    #[Route('/logout', name: 'logout', priority: 5)]
     public function logout()
     {
         // controller can be blank: it will never be executed!

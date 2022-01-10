@@ -6,6 +6,7 @@ use App\Entity\Mapper;
 use App\Service\RegionsProvider;
 use DateTime;
 use DateTimeImmutable;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,11 +14,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class ListController extends AbstractController
 {
     public function __construct(
+        private EntityManagerInterface $entityManager,
         private RegionsProvider $provider,
     ) {
     }
 
-    #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list')]
+    #[Route('/{regionKey}', name: 'app_region', requirements: ['regionKey' => '[\w\-_]+'])]
+    public function redirectToList(string $regionKey): Response
+    {
+        return $this->redirectToRoute('app_list', ['regionKey' => $regionKey]);
+    }
+
+    #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list', requirements: ['regionKey' => '[\w\-_]+'])]
     public function index(string $regionKey, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($regionKey);
@@ -27,8 +35,20 @@ class ListController extends AbstractController
             $month = (int) (date('m'));
         }
 
+        if ($month > 12) {
+            $year = $year + 1;
+            $month = 1;
+
+            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+        } elseif ($month < 1) {
+            $year = $year - 1;
+            $month = 12;
+
+            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+        }
+
         /** @var Mapper[] */
-        $mappers = $this->getDoctrine()
+        $mappers = $this->entityManager
             ->getRepository(Mapper::class)
             ->findBy(['region' => $regionKey]);
 

@@ -2,145 +2,140 @@ regions:
   albania:
     name: Albania
     flag: 🇦🇱
-    locales: sq
     osmcha.id: c11ff84e-ce82-465d-9885-aacbb1134422
   austria:
     name: Austria
     flag: 🇦🇹
-    locales: de
     osmcha.id: e1f0d692-edc1-4dc5-a84a-b7add29c6b90
   bangladesh:
     name: Bangladesh
     flag: 🇧🇩
-    locales: en
     osmcha.id: 02900696-ec73-4ead-9784-115fc47dd6d0
   belgium:
     name: Belgium
     flag: 🇧🇪
-    locales: fr|nl|de
     osmcha.id: 640be7af-1f93-4d9c-a521-66cfdd59e6b8
   bolivia:
     name: Bolivia
     flag: 🇧🇴
-    locales: es
     osmcha.id: 2717cb5b-09c3-44e3-a7aa-8872b9506f0e
   bulgaria:
     name: Bulgaria
     flag: 🇧🇬
-    locales: bg
     osmcha.id: 1a15a041-57fa-4f5e-9813-ef8d4afe700d
   ca-bc:
     name: British Columbia
     flag: 🇨🇦
-    locales: en|fr
     osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
+  catalan_countries:
+    name: Catalan Countries
+    flag: 🏴󠁥󠁳󠁣󠁴󠁿
+    osmcha.id: 401dba26-ce0e-4f9f-8425-7b16506b4410
+  china:
+    name: China
+    flag: 🇨🇳
+    osmcha.id: 26f398a6-ab46-41cb-9a30-14b04031129a
   colombia:
     name: Colombia
     flag: 🇨🇴
-    locales: es
     osmcha.id: ec24e3f4-ad8e-4ee9-9ad4-f7676c0b334a
   bogota:
     name: Bogotá
     flag: 🇨🇴
-    locales: es
     osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
   drc:
     name: Democratic Republic of the Congo
     flag: 🇨🇩
-    locales: fr
     osmcha.id: 40230cd7-2d13-4df7-bc1e-4ac44bb8478a
+  germany:
+    name: Germany
+    flag: 🇩🇪
+    osmcha.id: dcef1d6f-db2f-4ff1-8b8b-48e1a6d85abb
   ghana:
     name: Ghana
     flag: 🇬🇭
-    locales: en
     osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
+  hongkong:
+    name: Hong Kong
+    flag: 🇭🇰
+    osmcha.id: ddd87c1a-717b-4d30-815a-507ed8d57a3c
+  ireland:
+    name: Ireland
+    flag: ☘️
+    osmcha.id: dfa457d9-b30c-4034-baae-04a268408b39
   italy:
     name: Italy
     flag: 🇮🇹
-    locales: it
     osmcha.id: ac2598cc-9b66-432e-b195-9b93e21c5d26
   japan:
     name: Japan
     flag: 🇯🇵
-    locales: ja
     osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
   kosovo:
     name: Kosovo
     flag: 🇽🇰
-    locales: en
     osmcha.id: 615b1303-2ff7-45d4-9eb2-659f60e06c9f
   libya:
     name: Libya
     flag: 🇱🇾
-    locales: en
     osmcha.id: b1e4eed6-dccb-4207-aecc-d9e5d6ca4871
   luxembourg:
     name: Luxembourg
     flag: 🇱🇺
-    locales: fr|en|de
     osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+  macao:
+    name: Macao
+    flag: 🇲🇴
+    osmcha.id: 05c456ea-f4b3-4210-a091-55d9b8ec4705
   panama:
     name: Panama
     flag: 🇵🇦
-    locales: es
     osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
   poland:
     name: Poland
     flag: 🇵🇱
-    locales: pl
     osmcha.id: 98d2b447-34b6-4681-82f8-9de3adddbf1b
   romania:
     name: Romania
     flag: 🇷🇴
-    locales: en
     osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
   scotland:
     name: Scotland
     flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-    locales: en
     osmcha.id: 2c2d94e5-29bc-4eaa-a5e2-119df5d6b649
   taiwan:
     name: Taiwan
     flag: 🇹🇼
-    locales: en
     osmcha.id: 71a6e5a5-8a9e-4c27-9e1d-f7e2031bafc9
   tanzania:
     name: Tanzania
     flag: 🇹🇿
-    locales: en
     osmcha.id: 4df237d7-07bb-4b43-afa0-357eb485e8e1
   turkey:
     name: Turkey
     flag: 🇹🇷
-    locales: en
     osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
   uganda:
     name: Uganda
     flag: 🇺🇬
-    locales: en
     osmcha.id: c17132f4-95eb-4b92-b93a-48c1a75cf3c3
   kansas:
     name: Kansas
     flag: 🇺🇸
-    locales: en
     osmcha.id: 68d8c9b6-ab1a-4837-89d4-1a558e398232
   massachusetts:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
-    locales: en
     osmcha.id: 4cd5aef1-8bc3-4013-967b-dae167a9ee2a
   newyork:
     name: New York State
     flag: 🇺🇸
-    locales: en
     osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
   oregon:
     name: Oregon
     flag: 🇺🇸
-    locales: en
     osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
   washington:
     name: Washington State
     flag: 🇺🇸
-    locales: en
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5

@@ -33,6 +33,14 @@
         <source>British Columbia</source>
         <target>Columbia Británica</target>
       </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target>Países Catalanes</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target>China</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
@@ -45,9 +53,21 @@
         <source>Democratic Republic of the Congo</source>
         <target>República Democrática del Congo</target>
       </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target>Alemania</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Ghana</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target>Hong Kong</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target>Irlanda</target>
       </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
@@ -68,6 +88,10 @@
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Luxemburgo</target>
+      </trans-unit>
+      <trans-unit id="peKNxVh" resname="Macao">
+        <source>Macao</source>
+        <target>Macao</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
