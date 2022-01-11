@@ -57,6 +57,10 @@
         <source>Germany</source>
         <target>德國</target>
       </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target>Berlin-Neukölln</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>加納</target>
