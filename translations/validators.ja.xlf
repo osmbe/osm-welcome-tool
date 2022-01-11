@@ -393,6 +393,18 @@
         <source>This value should be a valid expression.</source>
         <target>式でなければなりません。</target>
       </trans-unit>
+      <trans-unit id="CQ0wfFa" resname="This value is not a valid CSS color.">
+        <source>This value is not a valid CSS color.</source>
+        <target>この値は有効なCSSカラーではありません。</target>
+      </trans-unit>
+      <trans-unit id="GAaG0KN" resname="This value is not a valid CIDR notation.">
+        <source>This value is not a valid CIDR notation.</source>
+        <target>この値は有効なCIDR表記ではありません。</target>
+      </trans-unit>
+      <trans-unit id="ddJy.XP" resname="The value of the netmask should be between {{ min }} and {{ max }}.">
+        <source>The value of the netmask should be between {{ min }} and {{ max }}.</source>
+        <target>ネットマスクの値は、{{ min }}から{{ max }}の間にある必要があります。</target>
+      </trans-unit>
       <trans-unit id=".SEaaBa" resname="This form should not contain extra fields.">
         <source>This form should not contain extra fields.</source>
         <target>フィールドグループに追加のフィールドを含んではなりません。</target>
