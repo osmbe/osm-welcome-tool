@@ -131,6 +131,10 @@ regions:
     name: Commonwealth of Massachusetts
     flag: 🇺🇸
     osmcha.id: 4cd5aef1-8bc3-4013-967b-dae167a9ee2a
+  michigan:
+    name: Michigan
+    flag: 🇺🇸
+    osmcha.id:
   newyork:
     name: New York State
     flag: 🇺🇸
