@@ -137,6 +137,10 @@
         <source>Commonwealth of Massachusetts</source>
         <target>Commonwealth du Massachusetts</target>
       </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target>Michigan</target>
+      </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>État de New York</target>
