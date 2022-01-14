@@ -35,8 +35,8 @@
                     <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|format_datetime('medium') }}</time>
                 </p>
                 {% endif %}
-                <div class="w-full bg-gray-200 rounded-full h-0.5 dark:bg-gray-700 mt-1">
-                    <div class="bg-gray-600 h-0.5 rounded-full dark:bg-gray-300" style="width: {{ region.percent }}%"></div>
+                <div class="w-full bg-gray-200 rounded-full h-0.5 mt-1">
+                    <div class="bg-gray-600 h-0.5 rounded-full" style="width: {{ region.percent }}%"></div>
                 </div>
             </a>
         </div>
