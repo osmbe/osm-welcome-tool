@@ -134,7 +134,7 @@ regions:
   michigan:
     name: Michigan
     flag: 🇺🇸
-    osmcha.id:
+    osmcha.id: a5d45476-3601-441e-b4e7-77b7d958e3a8
   newyork:
     name: New York State
     flag: 🇺🇸
