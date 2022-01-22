@@ -57,9 +57,17 @@
         <source>Germany</source>
         <target>ドイツ</target>
       </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target>Berlin-Neukölln</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>ガーナ</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target>香港</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -84,6 +92,10 @@
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>ルクセンブルグ</target>
+      </trans-unit>
+      <trans-unit id="4QlT93Y" resname="Macao">
+        <source>Macao</source>
+        <target>マカオ</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -124,6 +136,10 @@
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
         <target>マサチューセッツ州</target>
+      </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target>ミシガン州</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>

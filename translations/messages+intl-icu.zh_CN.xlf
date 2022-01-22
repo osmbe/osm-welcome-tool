@@ -57,9 +57,17 @@
         <source>Germany</source>
         <target>德国</target>
       </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target>Berlin-Neukölln</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>加纳</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target>香港</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -84,6 +92,10 @@
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>卢森堡</target>
+      </trans-unit>
+      <trans-unit id="4QlT93Y" resname="Macao">
+        <source>Macao</source>
+        <target>澳门</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -125,6 +137,10 @@
         <source>Commonwealth of Massachusetts</source>
         <target>马萨诸塞州</target>
       </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target>密歇根州</target>
+      </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target>纽约州</target>
@@ -155,7 +171,7 @@
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
-        <target>视图</target>
+        <target>查看</target>
       </trans-unit>
       <trans-unit id="nGrjZeg" resname="Open other tools">
         <source>Open other tools</source>
@@ -191,7 +207,7 @@
       </trans-unit>
       <trans-unit id="VrVkt1x" resname="Templates">
         <source>Templates</source>
-        <target>模板</target>
+        <target>消息模板</target>
       </trans-unit>
       <trans-unit id="RXDbS53" resname="Copy text to clipboard">
         <source>Copy text to clipboard</source>
@@ -247,7 +263,7 @@
       </trans-unit>
       <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
         <source>List of mappers that have their first edit in the region</source>
-        <target>列出所有在此地区献上首次编辑的绘图者</target>
+        <target>所有在此地区做出首次编辑的绘图者的列表</target>
       </trans-unit>
       <trans-unit id="aidpUCp" resname="Previous month">
         <source>Previous month</source>
@@ -311,7 +327,7 @@
       </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
-        <target>最后一次更新</target>
+        <target>最后更新</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
         <source>Logout</source>
@@ -328,11 +344,11 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>如果您想要向欢迎工具添加您所在的区域或语言，可访问我们的{contributing_link_start}贡献指南{link_end}。</target>
+        <target>如果您想要向欢迎工具添加您所在的区域或您所用的语言，可访问我们的{contributing_link_start}贡献指南{link_end}。</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target>由{osmbe_link_start}OpenStreetMap Belgium{link_end}开发并受到{lccwg_link_start}Local Chapters and Communities Working Group（地区分会与社区工作小组）{link_end}的支持。</target>
+        <target>由{osmbe_link_start}OpenStreetMap 比利时{link_end}开发并受到{lccwg_link_start}Local Chapters and Communities Working Group（地区分会与社区工作小组）{link_end}的支持。</target>
       </trans-unit>
       <trans-unit id="YIax95J" resname="Previous mapper">
         <source>Previous mapper</source>
