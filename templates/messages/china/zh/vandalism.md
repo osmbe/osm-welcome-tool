@@ -1,5 +1,5 @@
 ---
-name: Default
+name: Vandalism
 title: 欢迎来到OpenStreetMap
 ---
 
@@ -12,6 +12,8 @@ title: 欢迎来到OpenStreetMap
 不过，我们愿意首先相信您是怀着更好编辑OpenStreetMap的愿望做出的编辑。在继续之前，请您注意仔细阅读下方的编辑指南。
 
 此外，若您是Pokemon Go或Ingress等地理相关游戏，您需要认真阅读《[游戏绘图指南](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)（英文）》。如果您的编辑属于组织性编辑，例如大学教师为GIS专业布置的绘图体验作业，或企业希望成批修改现有数据，请参考OSMWiki《[组织编辑指南](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)（英文）》，并尽快与DWG及OSMChina DataTeam取得联系。
+
+{{ app.user.displayName }}，自豪的作为OSMChina的一员敬上。
 
 ### 编辑指南
 
