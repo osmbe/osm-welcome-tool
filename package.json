@@ -1,7 +1,7 @@
 {
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
-        "@headlessui/react": "^1.4.2",
+        "@headlessui/react": "^1.4.3",
         "@heroicons/react": "^1.0.5",
         "@popperjs/core": "^2.11.0",
         "@symfony/webpack-encore": "^1.7.0",
