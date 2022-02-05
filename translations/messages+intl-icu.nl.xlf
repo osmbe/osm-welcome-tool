@@ -53,6 +53,10 @@
         <source>Democratic Republic of the Congo</source>
         <target>Democratische Republiek Congo</target>
       </trans-unit>
+      <trans-unit id="ehyk73U" resname="France">
+        <source>France</source>
+        <target>Frankrijk</target>
+      </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
         <target>Duitsland</target>
