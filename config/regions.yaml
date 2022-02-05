@@ -35,6 +35,10 @@ regions:
     name: China
     flag: 🇨🇳
     osmcha.id: 26f398a6-ab46-41cb-9a30-14b04031129a
+  china-beijing:
+    name: China-Beijing
+    flag: 🇨🇳
+    osmcha.id: 7f04c1ed-35f4-4fbf-bc36-9356e39ec438
   colombia:
     name: Colombia
     flag: 🇨🇴
