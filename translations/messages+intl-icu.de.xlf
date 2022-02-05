@@ -41,6 +41,10 @@
         <source>China</source>
         <target>China</target>
       </trans-unit>
+      <trans-unit id="" resname="China-Beijing">
+        <source>China-Beijing</source>
+        <target>China-Peking</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Kolumbien</target>
