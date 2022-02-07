@@ -3,9 +3,9 @@ name: Vandalism
 title: 欢迎来到OpenStreetMap
 ---
 
-您好，{{ mapper.displayName }}
+您好，{{ mapper.displayName }}，北京欢迎你！
 
-欢迎来到OpenStreetMap世界，我们注意到您做出了一些编辑，恭喜！
+欢迎来到OpenStreetMap世界，我们OSM北京本地社区注意到您做出了一些编辑，恭喜！
 
 但很遗憾，这些数据质量并不高，甚至可能存在各种错误。它可能是无意的或有意的，但无论如何，它们对数据集的质量造成了一定损坏。没关系，我们会去尽力去修正它。但若您在了解到编辑错误后持续不断进行错误修改，您的修改可能会被OSMChina志愿者回退，或被提报隶属OSM基金会的DWG后暂时封禁。
 
@@ -13,7 +13,9 @@ title: 欢迎来到OpenStreetMap
 
 此外，若您是Pokemon Go或Ingress等地理相关游戏玩家，您需要认真阅读《[游戏绘图指南](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)（英文）》。如果您的编辑属于组织性编辑，例如大学教师为GIS专业布置的绘图体验作业，或企业希望成批修改现有数据，请参考OSMWiki《[组织编辑指南](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)（英文）》，并尽快与DWG及OSMChina DataTeam取得联系。
 
-{{ app.user.displayName }}，自豪的作为OSMChina的一员敬上。
+此外，由于北京地区的特殊性，若您身处中华人民共和国境内，我们强烈建议您不要编辑涉及军事相关内容。按照OSM基金会的使用条款，“您应为您自己在编辑中的行为负责……OSM基金会不提供任何保护、担保、赦免或赔偿”。即若您因标注军事相关内容而被指控，OSM基金会不承担任何责任。详细的介绍您可参见[OSMWiki Zh-hans:Military](https://wiki.openstreetmap.org/wiki/Zh-hans:Military)。
+
+{{ app.user.displayName }}，自豪的作为OSMChina的一员敬上，并代表北京本地社区再次欢迎您！
 
 ### 编辑指南
 
@@ -35,8 +37,8 @@ title: 欢迎来到OpenStreetMap
 
 * 网站：[osmchina.org](https://osmchina.org)
 
-* Telegram群：[t.me/osmchina](https://t.me/osmchina)
+* Telegram群（全国各省市）：[t.me/osmchina](https://t.me/osmchina)
 
-* QQ群：290278518
+* 北京地区编辑者QQ群：934831605
 
 * 邮件列表：[talk-cn@openstreetmap.org](mailto:talk-cn@openstreetmap.org) (QQ邮箱可能无法正常发信)
