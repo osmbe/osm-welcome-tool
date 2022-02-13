@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fa" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target>آلبانی</target>
+      </trans-unit>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target>اتریش</target>
+      </trans-unit>
+      <trans-unit id="Lx1H62e" resname="Bangladesh">
+        <source>Bangladesh</source>
+        <target>بنگلادش</target>
+      </trans-unit>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target>بلژیک</target>
+      </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target>بولیوی</target>
+      </trans-unit>
+      <trans-unit id="Zrhr8PB" resname="Bulgaria">
+        <source>Bulgaria</source>
+        <target>بلغارستان</target>
+      </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target>بریتیش کلمبیا</target>
+      </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target>کشورهای کاتالان</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target>چین</target>
+      </trans-unit>
+      <trans-unit id="a2Fa2xM" resname="Colombia">
+        <source>Colombia</source>
+        <target>کلمبیا</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target>بوگوتا</target>
+      </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target>جمهوری دموکراتیک کنگو</target>
+      </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target>آلمان</target>
+      </trans-unit>
+      <trans-unit id="WDIBwe_" resname="Ghana">
+        <source>Ghana</source>
+        <target>غنا</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target>هنگ کنگ</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target>ایرلند</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target>ایتالیا</target>
+      </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target>ژاپن</target>
+      </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target>کوزوو</target>
+      </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target>لیبی</target>
+      </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target>لوکزامبورگ</target>
+      </trans-unit>
+      <trans-unit id="w2aPWBK" resname="Panama">
+        <source>Panama</source>
+        <target>پاناما</target>
+      </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target>لهستان</target>
+      </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target>رومانی</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target>اسکاتلند</target>
+      </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target>تایوان</target>
+      </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target>تانزانیا</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target>ترکیه</target>
+      </trans-unit>
+      <trans-unit id="iT1ThWO" resname="Uganda">
+        <source>Uganda</source>
+        <target>اوگاندا</target>
+      </trans-unit>
+      <trans-unit id="efbQcyo" resname="Kansas">
+        <source>Kansas</source>
+        <target>کانزاس</target>
+      </trans-unit>
+      <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
+        <source>Commonwealth of Massachusetts</source>
+        <target>ایالت ماساچوست</target>
+      </trans-unit>
+      <trans-unit id="Z5_V2E6" resname="New York State">
+        <source>New York State</source>
+        <target>ایالت نیویورک</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target>اورگان</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target>ایالت واشنگتن</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target>مرور درخواست شد</target>
+      </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target>تغییر تگ نامعتبر</target>
+      </trans-unit>
+      <trans-unit id="nvrTGpK" resname="No note.">
+        <source>No note.</source>
+        <target>بدون یادداشت.</target>
+      </trans-unit>
+      <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
+        <source>Markdown is allowed.</source>
+        <target>مارک‌داون اجازه دارید.</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target>نشان بده</target>
+      </trans-unit>
+      <trans-unit id="nGrjZeg" resname="Open other tools">
+        <source>Open other tools</source>
+        <target>ابزارهای دیگر را باز کنید</target>
+      </trans-unit>
+      <trans-unit id="PzH3t8N" resname="Harmful">
+        <source>Harmful</source>
+        <target>مضر</target>
+      </trans-unit>
+      <trans-unit id="Dv2SozW" resname="Checked">
+        <source>Checked</source>
+        <target>بررسی شد</target>
+      </trans-unit>
+      <trans-unit id="nc.5jid" resname="Timeline">
+        <source>Timeline</source>
+        <target>جدول زمانی</target>
+      </trans-unit>
+      <trans-unit id="9jh5.Wk" resname="Account created">
+        <source>Account created</source>
+        <target>حساب کاربری ایجاد شد</target>
+      </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target>{date} نقشه کش از</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target>پروفایل</target>
+      </trans-unit>
+      <trans-unit id="6wYsMHV" resname="Send a welcome message">
+        <source>Send a welcome message</source>
+        <target>پیام خوشامدگویی بفرستید</target>
+      </trans-unit>
+      <trans-unit id="VrVkt1x" resname="Templates">
+        <source>Templates</source>
+        <target>قالب ها</target>
+      </trans-unit>
+      <trans-unit id="RXDbS53" resname="Copy text to clipboard">
+        <source>Copy text to clipboard</source>
+        <target>کپی به کلیپ بورد</target>
+      </trans-unit>
+      <trans-unit id="k6JrHq." resname="Send message">
+        <source>Send message</source>
+        <target>پیام بفرست</target>
+      </trans-unit>
+      <trans-unit id="oJyOJvo" resname="Changesets">
+        <source>Changesets</source>
+        <target>تغییرات</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target>تاریخ</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>خونه</target>
+      </trans-unit>
+      <trans-unit id="byAvVKe" resname="List">
+        <source>List</source>
+        <target>لیست</target>
+      </trans-unit>
+      <trans-unit id="_nTKo1O" resname="Mapper">
+        <source>Mapper</source>
+        <target>نقشه بردار</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>نام کاربری</target>
+      </trans-unit>
+      <trans-unit id="7z7rhD." resname="First changeset">
+        <source>First changeset</source>
+        <target>اولین تغییرات</target>
+      </trans-unit>
+      <trans-unit id="k2oWHDk" resname="Editor">
+        <source>Editor</source>
+        <target>ویرایشگر</target>
+      </trans-unit>
+      <trans-unit id="yj3GEvR" resname="Locale">
+        <source>Locale</source>
+        <target>محلی</target>
+      </trans-unit>
+      <trans-unit id="1HiPJW9" resname="View profile">
+        <source>View profile</source>
+        <target>مشاهده پروفایل</target>
+      </trans-unit>
+      <trans-unit id="7fvt8pP" resname="Mappers">
+        <source>Mappers</source>
+        <target>نقشه برداران</target>
+      </trans-unit>
+      <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
+        <source>List of mappers that have their first edit in the region</source>
+        <target>فهرست نقشه برداران که اولین ویرایش خود را دارند در منطقه</target>
+      </trans-unit>
+      <trans-unit id="aidpUCp" resname="Previous month">
+        <source>Previous month</source>
+        <target>ماه گذشته</target>
+      </trans-unit>
+      <trans-unit id="dOUyEf7" resname="Next month">
+        <source>Next month</source>
+        <target>ماه آینده</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target>نت</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target>اضافه کردن</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target>یک یادداشت اضافه کنید</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target>قرار گرفت {userlink} مورد استقبال</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target>مورد استقبال قرار گرفته است {mapper}</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target>پاسخ داده است {mapper}</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target>تغییرات</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target>هنوز استقبال نشده است</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target>هنوز پاسخ داده نشده است</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target>پاسخ داده است {userlink}</target>
+      </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target>وارد شوید OSM با</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target>منوی کاربر را باز کنید</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target>خوش آمدید شدند</target>
+      </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target>اخرین بروزرسانی</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>خروج</target>
+      </trans-unit>
+      <trans-unit id="inUlsUk" resname="Notes">
+        <source>Notes</source>
+        <target>نتس</target>
+      </trans-unit>
+      <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
+        <source>This is the OpenStreetMap Welcome Tool.&#13;
+It helps you discover new mappers in your region and welcome them.</source>
+        <target>This is the OpenStreetMap Welcome Tool.&#13;It helps you discover new mappers in your region and welcome them.</target>
+      </trans-unit>
+      <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
+        <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
+        <target>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
+      </trans-unit>
+      <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
+        <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
+        <target>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+      </trans-unit>
+      <trans-unit id="YIax95J" resname="Previous mapper">
+        <source>Previous mapper</source>
+        <target>Previous mapper</target>
+      </trans-unit>
+      <trans-unit id="K5yIR1M" resname="Next mapper">
+        <source>Next mapper</source>
+        <target>Next mapper</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
