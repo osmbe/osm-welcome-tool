@@ -4680,16 +4680,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v6.0.3",
+            "version": "v6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "201f7ae26e74340c38047472cd23cfe6bd99d1f5"
+                "reference": "2465793d4ad8e40752a45997193d392eb1fc3384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/201f7ae26e74340c38047472cd23cfe6bd99d1f5",
-                "reference": "201f7ae26e74340c38047472cd23cfe6bd99d1f5",
+                "url": "https://api.github.com/repos/symfony/form/zipball/2465793d4ad8e40752a45997193d392eb1fc3384",
+                "reference": "2465793d4ad8e40752a45997193d392eb1fc3384",
                 "shasum": ""
             },
             "require": {
@@ -4762,7 +4762,7 @@
             "description": "Allows to easily create, process and reuse HTML forms",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/form/tree/v6.0.3"
+                "source": "https://github.com/symfony/form/tree/v6.0.5"
             },
             "funding": [
                 {
@@ -4778,7 +4778,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-26T17:23:29+00:00"
+            "time": "2022-02-08T14:58:41+00:00"
         },
         {
             "name": "symfony/framework-bundle",
