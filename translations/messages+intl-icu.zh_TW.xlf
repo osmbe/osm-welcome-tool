@@ -65,6 +65,10 @@
         <source>Germany</source>
         <target>德國</target>
       </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target>柏林</target>
+      </trans-unit>
       <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
         <source>Berlin-Neukölln</source>
         <target>柏林-新克爾恩</target>

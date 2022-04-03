@@ -59,6 +59,10 @@ regions:
     name: Germany
     flag: 🇩🇪
     osmcha.id: dcef1d6f-db2f-4ff1-8b8b-48e1a6d85abb
+  germany-berlin:
+    name: Berlin
+    flag: 🇩🇪
+    osmcha.id: a5516ac3-4728-47bc-aac7-b444155ded7a
   germany-berlin-neukoelln:
     name: Berlin-Neukölln
     flag: 🇩🇪

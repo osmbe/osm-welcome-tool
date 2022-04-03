@@ -65,9 +65,13 @@
         <source>Germany</source>
         <target>ドイツ</target>
       </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target>ベルリン</target>
+      </trans-unit>
       <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
         <source>Berlin-Neukölln</source>
-        <target>Berlin-Neukölln</target>
+        <target>ベルリン-Neukölln</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
