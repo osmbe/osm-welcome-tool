@@ -65,6 +65,10 @@
         <source>Germany</source>
         <target>Germany</target>
       </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target>Berlin</target>
+      </trans-unit>
       <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
         <source>Berlin-Neukölln</source>
         <target>Berlin-Neukölln</target>
