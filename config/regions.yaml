@@ -161,4 +161,5 @@ regions:
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
   utah:
     name: Utah
+    flag: 🇺🇸
     osmcha.id: 
