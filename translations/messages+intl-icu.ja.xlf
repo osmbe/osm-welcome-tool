@@ -113,6 +113,10 @@
         <source>Panama</source>
         <target>パナマ</target>
       </trans-unit>
+      <trans-unit id="w3gshtg" resname="Philippines">
+        <source>Philippines</source>
+        <target>フィリピン</target>
+      </trans-unit>
       <trans-unit id="f2lkmtc" resname="Poland">
         <source>Poland</source>
         <target>ポーランド</target>
