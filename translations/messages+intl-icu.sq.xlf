@@ -161,6 +161,10 @@
         <source>Oregon</source>
         <target>Oregoni</target>
       </trans-unit>
+      <trans-unit id="grzhC1_" resname="Utah">
+        <source>Utah</source>
+        <target>Utah</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>Shteti i Uashingtonit</target>
