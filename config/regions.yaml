@@ -155,11 +155,11 @@ regions:
     name: Oregon
     flag: 🇺🇸
     osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
+  utah:
+    name: Utah
+    flag: 🇺🇸
+    osmcha.id: 236244c4-9835-4c3e-872c-f4125ea1632c
   washington:
     name: Washington State
     flag: 🇺🇸
     osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
-  utah:
-    name: Utah
-    flag: 🇺🇸
-    osmcha.id: 
