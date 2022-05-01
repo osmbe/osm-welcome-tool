@@ -7,11 +7,11 @@ Hello @{{ mapper.displayName }}
 
 Congratulations on making your first edit to OpenStreetMap(OSM) in the Philippines! Thank you for your help making the map a little bit better.
 
-I'm {{ app.user.displayName }}, a fellow OSM contributor in the Philippines. Like-minded folks support mappers in the Philippines to keep improving the map. Here's [some of our projects](https://openstreetmap.org/wiki/Philippines/Projects). We don't only exist online, but also meet in real life, from time-to-time.
+I'm {{ app.user.displayName }}, a fellow OSM contributor in the Philippines. Like-minded folks support fellow mappers in the Philippines to keep improving the map. Here's [some of our projects](https://openstreetmap.org/wiki/Philippines/Projects). We don't only exist online, but also meet in real life, from time-to-time.
 
-**OpenStreetMap Philippines** is an informal community of all OSM contributors - mappers and users alike. To get in touch with fellow contributors, check out the available [Philippine community channels](https://osm.org/wiki/PH) in your platform.
+**OpenStreetMap Philippines** is an informal community of all OSM contributors in the country - mappers and users alike. To get in touch with fellow contributors, check out the available [Philippine community channels](https://osm.org/wiki/PH) in your platform.
 
-If you've got any questions, we can help you: if you don't know for sure how to map something, or want to know more about OpenStreetMap, or simply want to get in touch with fellow mappers, you may try the following channels that are most active:
+If you've got any questions or concerns, we may be able to help you: if you don't know for sure how to map something, or want to know more about OpenStreetMap, or simply want to get in touch with fellow mappers, you may try the following channels that are most active:
 
 - **Mailing list** Sign up for the mailing list [talk-ph@openstreetmap.org](https://lists.openstreetmap.org/listinfo/talk-ph)
 - **Telegram** [OpenStreetMap Local Communities (LoCo) in the Philippines](https://t.me/OSMph)
@@ -28,7 +28,7 @@ If you want to know how to tag something, the quickest solution may be to search
 - Keep track of your edits with the [how did you contribute tool](http://hdyc.neis-one.org/)
 - We also compiled some [FAQs about data sources](https://hackmd.io/@osmph/BJx5exZWw) that are relevant to contributors in the Philippines
 
-Have a Map-py Day, and we hope to hear from you
+Have a Map-py Day, and we hope to hear from you in one of our above-memtioned channels.
 
 On behalf of the OSM-PH community,
 
