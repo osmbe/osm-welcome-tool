@@ -28,7 +28,7 @@ If you want to know how to tag something, the quickest solution may be to search
 - Keep track of your edits with the [how did you contribute tool](http://hdyc.neis-one.org/)
 - We also compiled some [FAQs about data sources](https://hackmd.io/@osmph/BJx5exZWw) that are relevant to contributors in the Philippines
 
-Have a Map-py Day, and we hope to hear from you in one of our channels.
+Have a Map-py Day, and we hope to hear from you in one of our above-memtioned channels.
 
 On behalf of the OSM-PH community,
 
