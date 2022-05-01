@@ -12,7 +12,7 @@
         "apexcharts": "^3.35.0",
         "autoprefixer": "^10.4.4",
         "codejar": "^3.5.0",
-        "core-js": "^3.21.1",
+        "core-js": "^3.22.3",
         "eslint": "^8.14.0",
         "eslint-plugin-react": "^7.29.4",
         "file-loader": "^6.2.0",
