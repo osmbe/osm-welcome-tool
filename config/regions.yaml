@@ -163,6 +163,10 @@ regions:
     name: Utah
     flag: 🇺🇸
     osmcha.id: 236244c4-9835-4c3e-872c-f4125ea1632c
+  vermont:
+    name: Vermont
+    flag: 🇺🇸
+    osmcha.id: 41070e3d-787f-4cc0-b5e5-ab90eb227a96
   washington:
     name: Washington State
     flag: 🇺🇸

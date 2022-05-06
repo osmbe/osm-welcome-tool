@@ -169,6 +169,10 @@
         <source>Utah</source>
         <target>Utah</target>
       </trans-unit>
+      <trans-unit id="b.yzrtq" resname="Vermont">
+        <source>Vermont</source>
+        <target>Vermont</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>État de Washington</target>
