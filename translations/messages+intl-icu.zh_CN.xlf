@@ -169,6 +169,10 @@
         <source>Utah</source>
         <target>犹他州</target>
       </trans-unit>
+      <trans-unit id="b.yzrtq" resname="Vermont">
+        <source>Vermont</source>
+        <target>佛蒙特州</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>华盛顿州</target>
