@@ -166,7 +166,7 @@ regions:
   vermont:
     name: Vermont
     flag: 🇺🇸
-    osmcha.id: ''
+    osmcha.id: 41070e3d-787f-4cc0-b5e5-ab90eb227a96
   washington:
     name: Washington State
     flag: 🇺🇸
