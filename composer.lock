@@ -7793,16 +7793,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v6.0.8",
+            "version": "v6.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "c0dc7766aaa59b9191930f722532454e5df4d203"
+                "reference": "5208e87aa1ad1405cd10e207b73f2f355cfbb123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/c0dc7766aaa59b9191930f722532454e5df4d203",
-                "reference": "c0dc7766aaa59b9191930f722532454e5df4d203",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/5208e87aa1ad1405cd10e207b73f2f355cfbb123",
+                "reference": "5208e87aa1ad1405cd10e207b73f2f355cfbb123",
                 "shasum": ""
             },
             "require": {
@@ -7893,7 +7893,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v6.0.8"
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.0.9"
             },
             "funding": [
                 {
@@ -7909,7 +7909,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-12T16:11:42+00:00"
+            "time": "2022-05-21T13:33:31+00:00"
         },
         {
             "name": "symfony/twig-bundle",
@@ -8499,7 +8499,7 @@
         },
         {
             "name": "twig/extra-bundle",
-            "version": "v3.3.8",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/twig-extra-bundle.git",
@@ -8562,7 +8562,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.3.8"
+                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.4.0"
             },
             "funding": [
                 {
