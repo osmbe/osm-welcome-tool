@@ -13,7 +13,7 @@
         "autoprefixer": "^10.4.7",
         "codejar": "^3.6.0",
         "core-js": "^3.22.8",
-        "eslint": "^8.17.0",
+        "eslint": "^8.18.0",
         "eslint-plugin-react": "^7.30.0",
         "file-loader": "^6.2.0",
         "highlight.js": "^11.5.1",
