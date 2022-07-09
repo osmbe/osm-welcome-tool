@@ -39,7 +39,7 @@ class RegionController extends AbstractController
         $count = [];
         foreach ($mappers as $mapper) {
             $datetime = $mapper->getFirstChangeset()->getCreatedAt();
-            $date = $datetime->format('Y-m-d');
+            $date = $datetime->format('Y-m');
 
             if (!isset($count[$date])) {
                 $count[$date] = ['total' => 0, 'welcome' => 0];
