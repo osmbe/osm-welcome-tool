@@ -86,10 +86,10 @@ class NewMapperCommand extends Command
             $changesetsCollection = $changesetsResponse->toArray();
 
             $usersId = array_map(function (array $feature): int {
-                return (int) ($feature['properties']['uid']);
+                return (int) $feature['properties']['uid'];
             }, $changesetsCollection['features']);
             $changesetsId = array_map(function (array $feature): int {
-                return (int) ($feature['id']);
+                return (int) $feature['id'];
             }, $changesetsCollection['features']);
 
             $getUsersResponse = $this->osm->getUsers($usersId);
@@ -109,7 +109,7 @@ class NewMapperCommand extends Command
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
                 $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature): bool {
-                    return $mapper->getId() === (int) ($feature['properties']['uid']);
+                    return $mapper->getId() === (int) $feature['properties']['uid'];
                 }));
 
                 $changeset = $this->changesetProvider->fromOSMCha($feature);

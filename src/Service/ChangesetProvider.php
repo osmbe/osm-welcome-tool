@@ -55,10 +55,10 @@ class ChangesetProvider
         $changeset = $this->repository->find((int) $attributes->id);
         if (null === $changeset) {
             $extent = [
-                (float) (self::extractTag($element->tag, 'min_lon')),
-                (float) (self::extractTag($element->tag, 'min_lat')),
-                (float) (self::extractTag($element->tag, 'max_lon')),
-                (float) (self::extractTag($element->tag, 'max_lat')),
+                (float) self::extractTag($element->tag, 'min_lon'),
+                (float) self::extractTag($element->tag, 'min_lat'),
+                (float) self::extractTag($element->tag, 'max_lon'),
+                (float) self::extractTag($element->tag, 'max_lat'),
             ];
 
             $changeset = new Changeset();
@@ -67,7 +67,7 @@ class ChangesetProvider
             $changeset->setComment(self::extractTag($element->tag, 'comment') ?? '');
             $changeset->setEditor(self::extractTag($element->tag, 'created_by') ?? '');
             $changeset->setLocale(self::extractTag($element->tag, 'locale'));
-            $changeset->setChangesCount((int) ($attributes->changes_count));
+            $changeset->setChangesCount((int) $attributes->changes_count);
             $changeset->setExtent($extent);
             // $changeset->setMapper($mapper);
         }
