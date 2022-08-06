@@ -4,7 +4,7 @@
         "@headlessui/react": "^1.6.6",
         "@heroicons/react": "^1.0.6",
         "@popperjs/core": "^2.11.5",
-        "@symfony/webpack-encore": "^2.1.0",
+        "@symfony/webpack-encore": "^3.0.0",
         "@types/leaflet": "^1.7.11",
         "@types/react-dom": "^18.0.6",
         "@typescript-eslint/eslint-plugin": "^5.32.0",
