@@ -9,7 +9,7 @@
         "@types/react-dom": "^18.0.6",
         "@typescript-eslint/eslint-plugin": "^5.30.5",
         "@typescript-eslint/parser": "^5.30.0",
-        "apexcharts": "^3.35.3",
+        "apexcharts": "^3.35.4",
         "autoprefixer": "^10.4.8",
         "codejar": "^3.6.0",
         "core-js": "^3.24.1",
