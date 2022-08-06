@@ -31,8 +31,8 @@ class ListController extends AbstractController
         $region = $this->provider->getRegion($regionKey);
 
         if (null === $year && null === $month) {
-            $year = (int) (date('Y'));
-            $month = (int) (date('m'));
+            $year = (int) date('Y');
+            $month = (int) date('m');
         }
 
         if ($month > 12) {
