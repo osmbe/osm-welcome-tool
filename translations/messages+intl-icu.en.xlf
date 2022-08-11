@@ -45,6 +45,10 @@
         <source>Beijing</source>
         <target>Beijing</target>
       </trans-unit>
+      <trans-unit id="" resname="Hunan">
+        <source>Hunan</source>
+        <target>Hunan</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombia</target>
