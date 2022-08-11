@@ -3,6 +3,16 @@ name: 标准
 title: 欢迎来到OpenStreetMap
 ---
 
+# 特别提醒
+
+**若您为中南大学或其他高校的在校生，且您编辑OSM是作为您绘图体验作业的一部分出现，或您属于希望成批修改现有数据的企业，您的编辑属于组织性编辑。请参考《[组织编辑指南](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)（英文）》，并尽快与DWG及OSMChina DataTeam取得联系。**
+
+**您应按照下述的要求规范绘图。另有一份为高校学生准备的注意指南《[OpenStreetMap标注指南.pdf](https://osmchina.oss-cn-beijing.aliyuncs.com/OpenStreetMap_Guide_For_Student.pdf)》，建议在开始绘图前阅读。若您无视其他编辑者在您评论区提出的意见或建议，您有可能被提交至DWG并封停账号。感谢您的理解与支持！**
+
+<hr/>
+
+### 欢迎
+
 您好，{{ mapper.displayName }}
 
 欢迎来到OpenStreetMap世界，并恭喜您完成了您的第一次编辑。
@@ -35,6 +45,6 @@ OpenStreetMap 是一个开放的平台。你可以自由地，创造性地去使
 
 * Telegram群：[t.me/osmchina](https://t.me/osmchina)
 
-* QQ群：290278518
+* QQ群：290278518 (若长时间未能进群亦可联系QQ号1340759082或QQ号2748984655)
 
 * 邮件列表：[talk-cn@openstreetmap.org](mailto:talk-cn@openstreetmap.org) (QQ邮箱可能无法正常发信)

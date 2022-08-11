@@ -1,5 +1,5 @@
 ---
-name: Default
+name: 标准
 title: 欢迎来到OpenStreetMap
 ---
 

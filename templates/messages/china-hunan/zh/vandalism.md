@@ -3,15 +3,23 @@ name: 新手或破坏者
 title: 欢迎来到OpenStreetMap
 ---
 
+# 特别提醒
+
+**若您为中南大学或其他高校的在校生，且您编辑OSM是作为您绘图体验作业的一部分出现，或您属于希望成批修改现有数据的企业，您的编辑属于组织性编辑。请参考《[组织编辑指南](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)（英文）》，并尽快与DWG及OSMChina DataTeam取得联系。**
+
+**您应按照下述的要求规范绘图。另有一份为高校学生准备的注意指南《[OpenStreetMap标注指南.pdf](https://osmchina.oss-cn-beijing.aliyuncs.com/OpenStreetMap_Guide_For_Student.pdf)》，建议在开始绘图前阅读。若您无视其他编辑者在您评论区提出的意见或建议，您有可能被提交至DWG并封停账号。感谢您的理解与支持！**
+
+<hr/>
+
+### 欢迎
+
 您好，{{ mapper.displayName }}
 
 欢迎来到OpenStreetMap世界，我们注意到您做出了一些编辑，恭喜！
 
 但很遗憾，这些数据质量并不高，甚至可能存在各种错误。它可能是无意的或有意的，但无论如何，它们对数据集的质量造成了一定损坏。没关系，我们会去尽力去修正它。但若您在了解到编辑错误后持续不断进行错误修改，您的修改可能会被OSMChina志愿者回退，或被提报隶属OSM基金会的DWG后暂时封禁。
 
-不过，我们愿意首先相信您是怀着更好编辑OpenStreetMap的愿望做出的编辑。在继续之前，请您注意仔细阅读下方的编辑指南。
-
-此外，若您是Pokemon Go或Ingress等地理相关游戏玩家，您需要认真阅读《[游戏绘图指南](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)（英文）》。如果您的编辑属于组织性编辑，例如大学教师为GIS专业布置的绘图体验作业，或企业希望成批修改现有数据，请参考OSMWiki《[组织编辑指南](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)（英文）》，并尽快与DWG及OSMChina DataTeam取得联系。
+不过，我们愿意首先相信您是怀着更好编辑OpenStreetMap的愿望做出的编辑。在继续之前，请您注意仔细阅读下方的编辑指南。此外，若您是Pokemon Go或Ingress等地理相关游戏玩家，您需要认真阅读《[游戏绘图指南](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)（英文）》。
 
 {{ app.user.displayName }}，自豪的作为OSMChina的一员敬上。
 
@@ -37,6 +45,6 @@ title: 欢迎来到OpenStreetMap
 
 * Telegram群：[t.me/osmchina](https://t.me/osmchina)
 
-* QQ群：290278518
+* QQ群：290278518 (若长时间未能进群亦可联系QQ号1340759082或QQ号2748984655)
 
 * 邮件列表：[talk-cn@openstreetmap.org](mailto:talk-cn@openstreetmap.org) (QQ邮箱可能无法正常发信)
