@@ -1,5 +1,5 @@
 ---
-name: Vandalism
+name: 新手或破坏者
 title: 欢迎来到OpenStreetMap
 ---
 

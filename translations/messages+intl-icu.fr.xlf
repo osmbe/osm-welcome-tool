@@ -45,6 +45,10 @@
         <source>Beijing</source>
         <target>Pékin</target>
       </trans-unit>
+      <trans-unit id="EAhQbhX" resname="Hunan">
+        <source>Hunan</source>
+        <target>Hunan</target>
+      </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
         <target>Colombie</target>
