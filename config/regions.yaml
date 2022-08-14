@@ -42,7 +42,7 @@ regions:
   china-hunan:
     name: Hunan
     flag: 🇨🇳
-    osmcha.id: 
+    osmcha.id: d58be17d-5181-4640-861d-eafaac565631
   colombia:
     name: Colombia
     flag: 🇨🇴
