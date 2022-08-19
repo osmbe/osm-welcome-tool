@@ -81,7 +81,7 @@ regions:
     osmcha.id: ddd87c1a-717b-4d30-815a-507ed8d57a3c
   indonesia:
     name: Indonesia
-    flag: id
+    flag: ID
     osmcha.id:
   ireland:
     name: Ireland
