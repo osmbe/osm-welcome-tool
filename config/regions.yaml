@@ -82,7 +82,7 @@ regions:
   indonesia:
     name: Indonesia
     flag: 🇮🇩
-    osmcha.id:
+    osmcha.id: af24c9ea-4ba1-439f-80fd-0f7b30fa6952
   ireland:
     name: Ireland
     flag: ☘️
