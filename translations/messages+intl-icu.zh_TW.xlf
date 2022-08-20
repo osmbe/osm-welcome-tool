@@ -85,6 +85,10 @@
         <source>Hong Kong</source>
         <target>香港</target>
       </trans-unit>
+      <trans-unit id="28dKNtj" resname="Indonesia">
+        <source>Indonesia</source>
+        <target>印度尼西亞</target>
+      </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
         <target>愛爾蘭</target>
