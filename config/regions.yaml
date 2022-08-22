@@ -71,6 +71,10 @@ regions:
     name: Berlin-Neukölln
     flag: 🇩🇪
     osmcha.id: 56415477-5107-4647-934a-26b975f7da49
+  germany-bremen:
+    name: Bremen
+    flag: 🇩🇪
+    osmcha.id: 
   ghana:
     name: Ghana
     flag: 🇬🇭
