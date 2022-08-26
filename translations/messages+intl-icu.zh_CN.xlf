@@ -77,6 +77,10 @@
         <source>Berlin-Neukölln</source>
         <target>柏林-新克尔恩</target>
       </trans-unit>
+      <trans-unit id="XS9ZcZj" resname="Bremen">
+        <source>Bremen</source>
+        <target>不来梅</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>加纳</target>
