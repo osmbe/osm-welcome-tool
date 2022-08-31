@@ -54,6 +54,7 @@ regions:
   dachli-obersee-rheintal:
     name: DACHLI-Obersee-Rheintal
     flag: 🇩🇪🇦🇹🇨🇭🇱🇮
+    osmcha.id: abfd17fc-2809-4285-86ab-1e0336a68915
   drc:
     name: Democratic Republic of the Congo
     flag: 🇨🇩
