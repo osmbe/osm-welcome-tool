@@ -57,6 +57,10 @@
         <source>Bogotá</source>
         <target>波哥大</target>
       </trans-unit>
+      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
+        <source>DACHLI-Obersee-Rheintal</source>
+        <target>DACHLI-Obersee-Rheintal</target>
+      </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
         <target>刚果民主共和国</target>
