@@ -32,14 +32,14 @@ class RegionsProvider
 
     public function getRegion(?string $continent, string $key): array
     {
-        if (!is_null($continent) && !isset($this->regions[$continent][$key])) {
+        if (null !== $continent && !isset($this->regions[$continent][$key])) {
             throw new Exception(sprintf('Key "%s.%s" is not defined in regions configuration file.', $continent, $key));
         }
 
-        if (is_null($continent)) {
-            $group = array_filter($this->regions, function ($value) use ($key) { return in_array($key, array_keys($value), true); });
+        if (null === $continent) {
+            $group = array_filter($this->regions, function ($value) use ($key) { return \in_array($key, array_keys($value), true); });
 
-            if (0 === count($group)) {
+            if (0 === \count($group)) {
                 throw new Exception(sprintf('Key "%s" is not defined in regions configuration file.', $key));
             } else {
                 $continent = array_key_first($group);
