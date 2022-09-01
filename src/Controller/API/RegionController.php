@@ -17,10 +17,10 @@ class RegionController extends AbstractController
     ) {
     }
 
-    #[Route('/api/region/{regionKey}.{_format}', name: 'api_region', format: 'geojson', requirements: ['_format' => 'geojson'])]
-    public function index(string $regionKey): Response
+    #[Route('/api/region/{continent}/{regionKey}.{_format}', name: 'api_region', format: 'geojson', requirements: ['_format' => 'geojson'])]
+    public function index(string $continent, string $regionKey): Response
     {
-        $region = $this->provider->getRegion($regionKey);
+        $region = $this->provider->getRegion($continent, $regionKey);
         $geometry = $this->provider->getGeometry($regionKey);
 
         return new JsonResponse([
@@ -31,8 +31,8 @@ class RegionController extends AbstractController
         ]);
     }
 
-    #[Route('/api/region/{regionKey}/count.{_format}', name: 'api_region_count', format: 'json', requirements: ['_format' => 'json'])]
-    public function count(string $regionKey): Response
+    #[Route('/api/region/{continent}/{regionKey}/count.{_format}', name: 'api_region_count', format: 'json', requirements: ['_format' => 'json'])]
+    public function count(string $continent, string $regionKey): Response
     {
         $mappers = $this->mapperRepository->findBy(['region' => $regionKey]);
 
