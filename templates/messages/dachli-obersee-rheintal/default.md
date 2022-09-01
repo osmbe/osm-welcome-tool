@@ -1,4 +1,3 @@
-
 ---
 name: Default (DACHLI)
 title: Willkommen bei OpenStreetMap
