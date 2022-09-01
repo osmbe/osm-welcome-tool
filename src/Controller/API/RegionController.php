@@ -21,7 +21,7 @@ class RegionController extends AbstractController
     public function index(string $continent, string $regionKey): Response
     {
         $region = $this->provider->getRegion($continent, $regionKey);
-        $geometry = $this->provider->getGeometry($regionKey);
+        $geometry = $this->provider->getGeometry($continent, $regionKey);
 
         return new JsonResponse([
             'type' => 'Feature',
