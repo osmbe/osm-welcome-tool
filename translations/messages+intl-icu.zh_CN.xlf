@@ -253,9 +253,9 @@
         <source>Copy text to clipboard</source>
         <target>将文本复制到剪贴板</target>
       </trans-unit>
-      <trans-unit id="k6JrHq." resname="Send message">
-        <source>Send message</source>
-        <target>发送信息</target>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target>Load message in osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>

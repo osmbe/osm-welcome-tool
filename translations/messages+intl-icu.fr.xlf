@@ -253,9 +253,9 @@
         <source>Copy text to clipboard</source>
         <target>Copier le texte dans le presse-papier</target>
       </trans-unit>
-      <trans-unit id="k6JrHq." resname="Send message">
-        <source>Send message</source>
-        <target>Envoyer le message</target>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target>Charger le message sur osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
