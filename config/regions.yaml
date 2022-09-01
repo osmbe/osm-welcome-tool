@@ -51,6 +51,10 @@ regions:
     name: Bogotá
     flag: 🇨🇴
     osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
+  dachli-obersee-rheintal:
+    name: DACHLI-Obersee-Rheintal
+    flag: 4️
+    osmcha.id: abfd17fc-2809-4285-86ab-1e0336a68915
   drc:
     name: Democratic Republic of the Congo
     flag: 🇨🇩
