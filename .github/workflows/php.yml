@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         # See https://www.php.net/supported-versions.php
         php-versions: [ '8.0', '8.1' ]
