@@ -117,6 +117,7 @@ class MapperController extends AbstractController
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
             $welcome->setDate(new DateTime());
+            $welcome->setUser($this->getUser());
         }
         $welcome->setReply($state ? new DateTime() : null);
 
