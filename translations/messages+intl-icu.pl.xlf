@@ -253,9 +253,9 @@
         <source>Copy text to clipboard</source>
         <target>Kopiuj tekst do schowka</target>
       </trans-unit>
-      <trans-unit id="k6JrHq." resname="Send message">
-        <source>Send message</source>
-        <target>Wyślij wiadomość</target>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target>Load message in osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
