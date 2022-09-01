@@ -6,8 +6,8 @@
     <img class="inline-block h-9 w-9 rounded-full border" src="{{ asset('build/images/avatar_large.png') }}"
         alt="Default profile picture">
     {% endif %}
-    <div class="ml-3">
-        <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+    <div class="max-w-xs ml-3">
+        <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900 text-ellipsis overflow-hidden">
             {{ mapper.displayName }}
         </p>
         {% if app.user is not null %}
