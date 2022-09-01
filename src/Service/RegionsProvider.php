@@ -53,9 +53,9 @@ class RegionsProvider
         return $region;
     }
 
-    public function getGeometry(string $key): array
+    public function getGeometry(string $continent, string $key): array
     {
-        $path = sprintf('%s/assets/regions/%s.geojson', $this->projectDirectory, $key);
+        $path = sprintf('%s/assets/regions/%s/%s.geojson', $this->projectDirectory, $continent, $key);
         if (!file_exists($path) || !is_readable($path)) {
             throw new Exception(sprintf('Geometry is not defined for region "%s".', $key));
         }
