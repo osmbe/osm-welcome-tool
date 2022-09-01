@@ -65,7 +65,7 @@ regions:
       name: Turkey
       flag: 🇹🇷
       osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
-  australia:
+  australia: []
   europe:
     albania:
       name: Albania
