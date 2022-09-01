@@ -26,9 +26,10 @@ class ListController extends AbstractController
     }
 
     #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list', requirements: ['regionKey' => '[\w\-_]+'])]
-    public function index(string $regionKey, ?int $year = null, ?int $month = null): Response
+    #[Route('/{continent}/{regionKey}/list/{year}/{month}', name: 'app_list_full', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america', 'regionKey' => '[\w\-_]+'])]
+    public function index(string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
     {
-        $region = $this->provider->getRegion($regionKey);
+        $region = $this->provider->getRegion($continent, $regionKey);
 
         if (null === $year && null === $month) {
             $year = (int) date('Y');
@@ -39,12 +40,12 @@ class ListController extends AbstractController
             $year = $year + 1;
             $month = 1;
 
-            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+            return $this->redirectToRoute('app_list_full', ['continent' => $region['continent'], 'regionKey' => $region['key'], 'year' => $year, 'month' => $month]);
         } elseif ($month < 1) {
             $year = $year - 1;
             $month = 12;
 
-            return $this->redirectToRoute('app_list', ['regionKey' => $regionKey, 'year' => $year, 'month' => $month]);
+            return $this->redirectToRoute('app_list_full', ['continent' => $region['continent'], 'regionKey' => $region['key'], 'year' => $year, 'month' => $month]);
         }
 
         /** @var Mapper[] */
