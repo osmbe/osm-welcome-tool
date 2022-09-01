@@ -33,41 +33,41 @@ class MapperController extends AbstractController
     ) {
     }
 
-    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper', requirements: ['regionKey' => '[\w\-_]+'])]
+    #[Route('/mapper/{id}', name: 'app_mapper')]
     #[IsGranted('ROLE_USER')]
-    public function index(Request $request, string $regionKey, Mapper $mapper): Response
+    public function index(Request $request, Mapper $mapper): Response
     {
         $this->mapper = $mapper;
 
-        $region = $this->provider->getRegion($regionKey);
+        $region = $this->provider->getRegion(null, $this->mapper->getRegion());
 
         // Welcome
         if ($request->query->has('welcome')) {
             $this->updateWelcomeDate($request->query->getBoolean('welcome'));
 
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
         if ($request->query->has('reply')) {
             $this->updateWelcomeReply($request->query->getBoolean('reply'));
 
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
 
         // Templates
-        $this->templates = $this->templatesProvider->getTemplates($regionKey);
+        $this->templates = $this->templatesProvider->getTemplates($region['key']);
         $template = $this->getDefaultTemplate($request);
 
         // Notes
         $formNote = $this->note($request);
         if (true === $formNote->isSubmitted() && true === $formNote->isValid()) {
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
 
         // Prev/Next mapper
         /** @var Mapper[] */
         $mappers = $this->entityManager
             ->getRepository(Mapper::class)
-            ->findBy(['region' => $regionKey]);
+            ->findBy(['region' => $region['key']]);
 
         $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?DateTimeImmutable {
             return $mapper->getFirstChangeset()->getCreatedAt();

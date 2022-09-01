@@ -16,15 +16,22 @@
     </p>
 </div>
 
-<div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-    {% for key, region in regions %}
+{% for continent, group in regions %}
+
+{% if group|length > 0 %}
+<div class="pt-5 mb-3">
+    <h3 class="text-xl font-medium leading-6 text-gray-900">{{ continent|trans }}</h3>
+</div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+    {% for key, region in group %}
     <div
         class="relative rounded-lg border border-gray-300 bg-white p-4 shadow-sm flex items-start space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
         <div class="shrink-0">
             {{ region.flag }}
         </div>
         <div class="flex-1 min-w-0 h-full">
-            <a href="{{ path('app_list', {regionKey: key}) }}" class="flex flex-col h-full focus:outline-none">
+            <a href="{{ path('app_list_full', {continent, regionKey: key}) }}" class="flex flex-col h-full focus:outline-none">
                 <span class="absolute inset-0" aria-hidden="true"></span>
                 <p class="grow font-medium text-gray-900">
                     {{ region.name|trans }}
@@ -43,5 +50,8 @@
     </div>
     {% endfor %}
 </div>
+{% endif %}
+
+{% endfor %}
 
 {% endblock %}

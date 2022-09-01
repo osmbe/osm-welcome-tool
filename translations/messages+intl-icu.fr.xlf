@@ -398,6 +398,30 @@ It helps you discover new mappers in your region and welcome them.</source>
         <source>Next mapper</source>
         <target>Cartographe suivant</target>
       </trans-unit>
+      <trans-unit id="P1BTs65" resname="africa">
+        <source>africa</source>
+        <target>Afrique</target>
+      </trans-unit>
+      <trans-unit id="7hOb0P2" resname="asia">
+        <source>asia</source>
+        <target>Asie</target>
+      </trans-unit>
+      <trans-unit id="xYXx3su" resname="australia">
+        <source>australia</source>
+        <target>Australie</target>
+      </trans-unit>
+      <trans-unit id="sR8gPo5" resname="europe">
+        <source>europe</source>
+        <target>Europe</target>
+      </trans-unit>
+      <trans-unit id="RU.NdIz" resname="north-america">
+        <source>north-america</source>
+        <target>Amérique du Nord</target>
+      </trans-unit>
+      <trans-unit id="OplCJNt" resname="south-america">
+        <source>south-america</source>
+        <target>Amérique du Sud</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

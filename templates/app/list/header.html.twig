@@ -15,7 +15,7 @@
                 {% set prev_month = (month|date('m')) - 1 %}
                 {% set prev_year = (month|date('Y')) %}
                 <a class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
-                    href="{{ path('app_list', {regionKey: region.key, year: prev_year, month: prev_month}) }}">
+                    href="{{ path('app_list_full', {continent: region.continent, regionKey: region.key, year: prev_year, month: prev_month}) }}">
                     <span class="sr-only">{{ 'Previous month'|trans }}</span>
                     <!-- Heroicon name: solid/chevron-left -->
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -40,7 +40,7 @@
                 </span>
                 {% else %}
                 <a class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
-                    href="{{ path('app_list', {regionKey: region.key, year: next_year, month: next_month}) }}">
+                    href="{{ path('app_list_full', {continent: region.continent, regionKey: region.key, year: next_year, month: next_month}) }}">
                     <span class="sr-only">{{ 'Next month'|trans }}</span>
                     <!-- Heroicon name: solid/chevron-right -->
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
