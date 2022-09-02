@@ -30,6 +30,8 @@ class ListController extends AbstractController
     public function index(string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($continent, $regionKey);
+        $region['lastUpdate'] = $this->provider->getLastUpdate($regionKey);
+        $region['count'] = $this->provider->getPercentage($regionKey);
 
         if (null === $year && null === $month) {
             $year = (int) date('Y');

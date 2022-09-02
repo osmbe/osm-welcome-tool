@@ -39,11 +39,11 @@
                 {% if region.lastUpdate is not null %}
                 <p class="text-xs text-gray-500 truncate">
                     {{ 'Last update'|trans }}:
-                    <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|format_datetime('medium') }}</time>
+                    <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|ago }}</time>
                 </p>
                 {% endif %}
                 <div class="w-full bg-gray-200 rounded-full h-0.5 mt-1">
-                    <div class="bg-gray-600 h-0.5 rounded-full" style="width: {{ region.percent }}%"></div>
+                    <div class="bg-gray-600 h-0.5 rounded-full" style="width: {{ region.count.percentage }}%"></div>
                 </div>
             </a>
         </div>

@@ -166,6 +166,9 @@
     "justinrainbow/json-schema": {
         "version": "5.2.11"
     },
+    "knplabs/knp-time-bundle": {
+        "version": "v1.19.0"
+    },
     "knpuniversity/oauth2-client-bundle": {
         "version": "2.9",
         "recipe": {

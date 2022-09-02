@@ -22,7 +22,7 @@ class HomeController extends AbstractController
         foreach ($regions as $continent => &$group) {
             foreach ($group as $key => &$region) {
                 $region['lastUpdate'] = $this->provider->getLastUpdate($key);
-                $region['percent'] = $this->provider->getPercentage($key);
+                $region['count'] = $this->provider->getPercentage($key);
             }
         }
 

@@ -4,14 +4,28 @@
 
 {% block content %}
 
-<div class="flex h-48 mb-5">
+<div class="flex h-48">
     {{ include('app/list/map.html.twig') }}
     {{ include('app/list/chart.html.twig') }}
 </div>
 
-{{ include('app/list/header.html.twig') }}
+<div class="mt-5">
+    {{ include('app/list/header.html.twig') }}
+</div>
 
-<main class="pt-5">
+<main class="mt-5">
+    <div class="flex justify-between mb-3 text-sm text-gray-600">
+        <div>
+            {{ '{count} new mappers ({percent} %) have already been welcomed'|trans({'{count}': region.count.count, '{percent}': region.count.percentage}) }}
+        </div>
+        {% if region.lastUpdate is not null %}
+        <div>
+            {{ 'Last update'|trans }}:
+            <time class="cursor-help" datetime="{{ region.lastUpdate|date('c') }}" title="{{ region.lastUpdate|format_datetime('medium') }}">{{ region.lastUpdate|ago }}</time>
+        </div>
+        {% endif %}
+    </div>
+
     {{ include('app/list/table.html.twig') }}
 </main>
 
