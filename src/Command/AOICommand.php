@@ -52,7 +52,7 @@ class AOICommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $key = $input->getArgument('region');
-        $region = $this->provider->getRegion($key);
+        $region = $this->provider->getRegion(null, $key);
 
         if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
@@ -62,7 +62,7 @@ class AOICommand extends Command
 
         $name = sprintf('Welcome Tool for %s', $region['name']);
         $filters = [
-            'geometry' => $this->provider->getGeometry($key),
+            'geometry' => $this->provider->getGeometry($region['continent'], $region['key']),
             'all_reasons' => '40',
         ];
 

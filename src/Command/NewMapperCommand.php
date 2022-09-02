@@ -63,7 +63,7 @@ class NewMapperCommand extends Command
 
         $key = $input->getArgument('region');
         $date = $input->getOption('date');
-        $region = $this->regionsProvider->getRegion($key);
+        $region = $this->regionsProvider->getRegion(null, $key);
 
         if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
