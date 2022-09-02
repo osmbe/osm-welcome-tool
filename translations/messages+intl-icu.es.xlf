@@ -422,6 +422,10 @@ It helps you discover new mappers in your region and welcome them.</source>
         <source>south-america</source>
         <target>South-America</target>
       </trans-unit>
+      <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
+        <source>{count} new mappers ({percent} %) have already been welcomed</source>
+        <target>{count} new mappers ({percent} %) have already been welcomed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
