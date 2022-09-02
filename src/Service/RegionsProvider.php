@@ -83,7 +83,7 @@ class RegionsProvider
         return new DateTime($this->cache->getItem($cacheKey)->get());
     }
 
-    public function getPercentage(string $key): int
+    public function getPercentage(string $key): array
     {
         /** @var Mapper[] */
         $mappers = $this->mapperRepository->findBy(['region' => $key]);
@@ -92,6 +92,10 @@ class RegionsProvider
             return null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty();
         });
 
-        return \count($mappers) > 0 ? round(\count($checked) / \count($mappers) * 100) : 0;
+        return [
+            'count' => \count($checked),
+            'total' => \count($mappers),
+            'percentage' => \count($mappers) > 0 ? round(\count($checked) / \count($mappers) * 100) : 0,
+        ];
     }
 }
