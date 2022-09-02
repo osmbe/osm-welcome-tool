@@ -1,6 +1,7 @@
 import ApexCharts from 'apexcharts';
 import { GeoJSON, Map, TileLayer } from 'leaflet';
 
+// import bg from 'apexcharts/dist/locales/bg.json';
 import de from 'apexcharts/dist/locales/de.json';
 import en from 'apexcharts/dist/locales/en.json';
 import es from 'apexcharts/dist/locales/es.json';
@@ -11,10 +12,11 @@ import nl from 'apexcharts/dist/locales/nl.json';
 import pl from 'apexcharts/dist/locales/pl.json';
 import sq from 'apexcharts/dist/locales/sq.json';
 import zh_CN from 'apexcharts/dist/locales/zh-cn.json';
+import zh_TW from 'apexcharts/dist/locales/zh-tw.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [de, en, es, fr, it, ja, nl, pl, sq, zh_CN];
+const locales = [de, en, es, fr, it, ja, nl, pl, sq, zh_CN, zh_TW];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
