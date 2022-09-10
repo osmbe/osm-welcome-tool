@@ -424,7 +424,7 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target>{count} new mappers ({percent} %) have already been welcomed</target>
+        <target>已有{count}位({percent} %)新绘图者被欢迎</target>
       </trans-unit>
     </body>
   </file>
