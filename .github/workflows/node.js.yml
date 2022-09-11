@@ -15,8 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # See https://nodejs.org/en/about/releases/
-        node-version: [ 16.x, 18.x ]
+        node-version: [ 16.x ] # See https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
