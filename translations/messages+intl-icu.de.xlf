@@ -31,10 +31,10 @@
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
-        <target>British Columbia</target>
+        <target>Britisch-Kolumbien</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
-        <source>Catalan Countries</source>
+        <source>Katalanische Länder</source>
         <target>Països Catalans</target>
       </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
-        <target>Commonwealth of Massachusetts</target>
+        <target>Commonwealth von Massachusetts</target>
       </trans-unit>
       <trans-unit id="JjJaVG_" resname="Michigan">
         <source>Michigan</source>
@@ -255,7 +255,7 @@
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target>Load message in osm.org</target>
+        <target>Nachricht in osm.org laden</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -303,7 +303,7 @@
       </trans-unit>
       <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
         <source>List of mappers that have their first edit in the region</source>
-        <target>Liste der Kartenzeichner, die ihre erste Bearbeitung in der Region haben</target>
+        <target>Liste der Kartierer, die ihre erste Bearbeitung in der Region haben</target>
       </trans-unit>
       <trans-unit id="aidpUCp" resname="Previous month">
         <source>Previous month</source>
@@ -400,31 +400,31 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="P1BTs65" resname="africa">
         <source>africa</source>
-        <target>Africa</target>
+        <target>Afrika</target>
       </trans-unit>
       <trans-unit id="7hOb0P2" resname="asia">
         <source>asia</source>
-        <target>Asia</target>
+        <target>Asien</target>
       </trans-unit>
       <trans-unit id="xYXx3su" resname="australia">
         <source>australia</source>
-        <target>Australia</target>
+        <target>Australien</target>
       </trans-unit>
       <trans-unit id="sR8gPo5" resname="europe">
         <source>europe</source>
-        <target>Europe</target>
+        <target>Europa</target>
       </trans-unit>
       <trans-unit id="RU.NdIz" resname="north-america">
         <source>north-america</source>
-        <target>North-America</target>
+        <target>Nordamerika</target>
       </trans-unit>
       <trans-unit id="OplCJNt" resname="south-america">
         <source>south-america</source>
-        <target>South-America</target>
+        <target>Südamerika</target>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target>{count} new mappers ({percent} %) have already been welcomed</target>
+        <target>{count} neue Kartierer ({percent} %) wurden bereits begrüßt.</target>
       </trans-unit>
     </body>
   </file>
