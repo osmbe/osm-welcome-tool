@@ -145,6 +145,10 @@
         <source>Scotland</source>
         <target>苏格兰</target>
       </trans-unit>
+      <trans-unit id="jvQeb0s" resname="Spain">
+        <source>Spain</source>
+        <target>西班牙</target>
+      </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
         <target>台湾</target>
