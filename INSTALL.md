@@ -12,6 +12,7 @@
 
   ```cmd
   php bin/console doctrine:database:create
+  php bin/console doctrine:schema:create
   ```
 
 - Create `OSMCHA_API_KEY` in your environment with your [OSMCha](https://osmcha.org/) API key
