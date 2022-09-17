@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2deba371e1769f0dbab5b31a4263f70",
+    "content-hash": "6d4230b3494afbbaf0f95486e1f6ff5b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -10208,13 +10208,18 @@
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
                 "php": "^7.4 || ^8.0",
                 "symfony/console": "^4.4 || ^5.3 || ^6.0",
                 "symfony/filesystem": "^4.4 || ^5.3 || ^6.0",
                 "symfony/finder": "^4.4 || ^5.3 || ^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0 || ^9.0"
+                "phpunit/phpunit": "^9.5.20"
             },
             "default-branch": true,
             "bin": [
@@ -10727,12 +10732,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Opis\\Closure\\": "src/"
-                },
                 "files": [
                     "functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
