@@ -139,7 +139,7 @@
       </trans-unit>
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
-        <target>Rumania</target>
+        <target>Rumanía</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -259,7 +259,7 @@
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target>Load message in osm.org</target>
+        <target>Cargar mensaje en osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -295,7 +295,7 @@
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
-        <target>Locale</target>
+        <target>Lugar</target>
       </trans-unit>
       <trans-unit id="1HiPJW9" resname="View profile">
         <source>View profile</source>
@@ -404,7 +404,7 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="P1BTs65" resname="africa">
         <source>africa</source>
-        <target>Africa</target>
+        <target>África</target>
       </trans-unit>
       <trans-unit id="7hOb0P2" resname="asia">
         <source>asia</source>
@@ -416,19 +416,19 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="sR8gPo5" resname="europe">
         <source>europe</source>
-        <target>Europe</target>
+        <target>Europa</target>
       </trans-unit>
       <trans-unit id="RU.NdIz" resname="north-america">
         <source>north-america</source>
-        <target>North-America</target>
+        <target>América del Norte</target>
       </trans-unit>
       <trans-unit id="OplCJNt" resname="south-america">
         <source>south-america</source>
-        <target>South-America</target>
+        <target>América del Sur</target>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target>{count} new mappers ({percent} %) have already been welcomed</target>
+        <target>{count} nuevos mapeadores ({percent} %) ya han sido bienvenidos</target>
       </trans-unit>
     </body>
   </file>
