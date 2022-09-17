@@ -2,17 +2,15 @@
 
 ## Translation
 
-**Your want to translate the tool in your own language ?**
+[![Crowdin](https://badges.crowdin.net/osm-welcome-tool/localized.svg)](https://crowdin.com/project/osm-welcome-tool)
 
-All translations are stored here: <https://github.com/osmbe/osm-welcome-tool/tree/2.x/translations>
+**You want to add a new language ?**
 
-To add a new language, copy the [`messages+intl-icu.en.xlf` file](https://github.com/osmbe/osm-welcome-tool/blob/2.x/translations/messages%2Bintl-icu.en.xlf) and update all the `target` properties to the correct translation in your language.
+Request a new language by creating a new issue ; the translation is managed via [Crowdin](https://crowdin.com/), once the language is added to Crowndin, you'll be able to translate it here: <https://crowdin.com/project/osm-welcome-tool>
 
-You don't need to provide translations of `security.en.xlf` and `validators.en.xlf` as these are part of the Symfony framework.
+**You want to contribute to the translation of the tool in your own language ?**
 
-Once done, save your file as `messages+intl-icu.##.xlf` by replacing `##` by the [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of your language.
-
-Upload your new file to our [`translations/`](https://github.com/osmbe/osm-welcome-tool/tree/2.x/translations) folder and create a Pull Request, we'll take it from there!
+Translation is managed via [Crowdin](https://crowdin.com/), go to <https://crowdin.com/project/osm-welcome-tool> to contribute!
 
 ---
 
