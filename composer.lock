@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b61ae5eefd1589cbc739bbd82f9831c",
+    "content-hash": "6d4230b3494afbbaf0f95486e1f6ff5b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -3941,6 +3941,79 @@
                 }
             ],
             "time": "2022-08-23T20:52:30+00:00"
+        },
+        {
+            "name": "symfony/crowdin-translation-provider",
+            "version": "v6.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/crowdin-translation-provider.git",
+                "reference": "c7f39eb3583a3380d9cfde19d100b485d643b8bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/crowdin-translation-provider/zipball/c7f39eb3583a3380d9cfde19d100b485d643b8bd",
+                "reference": "c7f39eb3583a3380d9cfde19d100b485d643b8bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/http-client": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0"
+            },
+            "type": "symfony-translation-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\Bridge\\Crowdin\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrii Bodnar",
+                    "homepage": "https://github.com/andrii-bodnar"
+                },
+                {
+                    "name": "Mathieu Santostefano",
+                    "homepage": "https://github.com/welcomattic"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Crowdin Translation Provider Bridge",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "crowdin",
+                "provider",
+                "translation"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/crowdin-translation-provider/tree/v6.0.12"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-12T13:08:57+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -10135,13 +10208,18 @@
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
                 "php": "^7.4 || ^8.0",
                 "symfony/console": "^4.4 || ^5.3 || ^6.0",
                 "symfony/filesystem": "^4.4 || ^5.3 || ^6.0",
                 "symfony/finder": "^4.4 || ^5.3 || ^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0 || ^9.0"
+                "phpunit/phpunit": "^9.5.20"
             },
             "default-branch": true,
             "bin": [
@@ -10654,12 +10732,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Opis\\Closure\\": "src/"
-                },
                 "files": [
                     "functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -13241,5 +13319,5 @@
         "ext-sodium": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

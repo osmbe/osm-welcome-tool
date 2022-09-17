@@ -417,6 +417,15 @@
             "bin/console"
         ]
     },
+    "symfony/crowdin-translation-provider": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "8acdcff2acee247e79f16ed0b2abc8fd53cf0d30"
+        }
+    },
     "symfony/css-selector": {
         "version": "v6.0.2"
     },
