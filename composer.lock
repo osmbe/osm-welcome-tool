@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b61ae5eefd1589cbc739bbd82f9831c",
+    "content-hash": "6d4230b3494afbbaf0f95486e1f6ff5b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -3423,16 +3423,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v6.2.7",
+            "version": "v6.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "b27b8d6a43c508db1ea0df6c87774dd49014913c"
+                "reference": "bb962f8aed09e60b0942545f6e4842ffeee4aafd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/b27b8d6a43c508db1ea0df6c87774dd49014913c",
-                "reference": "b27b8d6a43c508db1ea0df6c87774dd49014913c",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/bb962f8aed09e60b0942545f6e4842ffeee4aafd",
+                "reference": "bb962f8aed09e60b0942545f6e4842ffeee4aafd",
                 "shasum": ""
             },
             "require": {
@@ -3495,9 +3495,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/issues",
-                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.7"
+                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.8"
             },
-            "time": "2022-06-16T09:06:24+00:00"
+            "time": "2022-09-05T16:44:56+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -10033,16 +10033,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.10.0",
+            "version": "v3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe"
+                "reference": "7dcdea3f2f5f473464e835be9be55283ff8cfdc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe",
-                "reference": "76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/7dcdea3f2f5f473464e835be9be55283ff8cfdc3",
+                "reference": "7dcdea3f2f5f473464e835be9be55283ff8cfdc3",
                 "shasum": ""
             },
             "require": {
@@ -10110,7 +10110,7 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
-                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.10.0"
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.11.0"
             },
             "funding": [
                 {
@@ -10118,7 +10118,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-17T22:13:10+00:00"
+            "time": "2022-09-01T18:24:51+00:00"
         },
         {
             "name": "friendsoftwig/twigcs",
@@ -10135,13 +10135,18 @@
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
                 "php": "^7.4 || ^8.0",
                 "symfony/console": "^4.4 || ^5.3 || ^6.0",
                 "symfony/filesystem": "^4.4 || ^5.3 || ^6.0",
                 "symfony/finder": "^4.4 || ^5.3 || ^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0 || ^9.0"
+                "phpunit/phpunit": "^9.5.20"
             },
             "default-branch": true,
             "bin": [
@@ -10654,12 +10659,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Opis\\Closure\\": "src/"
-                },
                 "files": [
                     "functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -10965,16 +10970,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.8.2",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "c53312ecc575caf07b0e90dee43883fdf90ca67c"
+                "reference": "f6598a5ff12ca4499a836815e08b4d77a2ddeb20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c53312ecc575caf07b0e90dee43883fdf90ca67c",
-                "reference": "c53312ecc575caf07b0e90dee43883fdf90ca67c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f6598a5ff12ca4499a836815e08b4d77a2ddeb20",
+                "reference": "f6598a5ff12ca4499a836815e08b4d77a2ddeb20",
                 "shasum": ""
             },
             "require": {
@@ -10998,9 +11003,13 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.8.2"
+                "source": "https://github.com/phpstan/phpstan/tree/1.8.5"
             },
             "funding": [
                 {
@@ -11012,33 +11021,29 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://www.patreon.com/phpstan",
-                    "type": "patreon"
-                },
-                {
                     "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-20T09:57:31+00:00"
+            "time": "2022-09-07T16:05:32+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "4e57160a710dea304fbd1a177ce38edd9b3848db"
+                "reference": "431b3d6e8040075de196680cd5bc95735987b4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/4e57160a710dea304fbd1a177ce38edd9b3848db",
-                "reference": "4e57160a710dea304fbd1a177ce38edd9b3848db",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/431b3d6e8040075de196680cd5bc95735987b4ae",
+                "reference": "431b3d6e8040075de196680cd5bc95735987b4ae",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.7.15"
+                "phpstan/phpstan": "^1.8.3"
             },
             "require-dev": {
                 "nikic/php-parser": "^4.13.0",
@@ -11066,9 +11071,9 @@
             "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.4.2"
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.4.3"
             },
-            "time": "2022-08-25T15:04:21+00:00"
+            "time": "2022-08-26T15:05:46+00:00"
         },
         {
             "name": "phpstan/phpstan-symfony",
@@ -12704,6 +12709,79 @@
             "time": "2022-07-27T15:50:26+00:00"
         },
         {
+            "name": "symfony/crowdin-translation-provider",
+            "version": "v6.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/crowdin-translation-provider.git",
+                "reference": "c7f39eb3583a3380d9cfde19d100b485d643b8bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/crowdin-translation-provider/zipball/c7f39eb3583a3380d9cfde19d100b485d643b8bd",
+                "reference": "c7f39eb3583a3380d9cfde19d100b485d643b8bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/http-client": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0"
+            },
+            "type": "symfony-translation-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\Bridge\\Crowdin\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrii Bodnar",
+                    "homepage": "https://github.com/andrii-bodnar"
+                },
+                {
+                    "name": "Mathieu Santostefano",
+                    "homepage": "https://github.com/welcomattic"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Crowdin Translation Provider Bridge",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "crowdin",
+                "provider",
+                "translation"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/crowdin-translation-provider/tree/v6.0.12"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-12T13:08:57+00:00"
+        },
+        {
             "name": "symfony/css-selector",
             "version": "v6.0.11",
             "source": {
@@ -13241,5 +13319,5 @@
         "ext-sodium": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

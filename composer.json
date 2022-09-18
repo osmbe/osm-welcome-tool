@@ -68,6 +68,7 @@
         "phpunit/phpunit": "^9.5",
         "pluswerk/grumphp-xliff-task": "^5.0",
         "symfony/browser-kit": "^6.0",
+        "symfony/crowdin-translation-provider": "^6.0",
         "symfony/css-selector": "^6.0",
         "symfony/debug-bundle": "^6.0",
         "symfony/maker-bundle": "^1.0",

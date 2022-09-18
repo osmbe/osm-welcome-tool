@@ -17,15 +17,15 @@ jobs:
       matrix:
         node-version: [ 16.x ] # See https://nodejs.org/en/about/releases/
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: assets-${{ matrix.node-version }}
         path: public/build
@@ -34,6 +34,6 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - run: npm ci
     - run: npm run lint --if-present

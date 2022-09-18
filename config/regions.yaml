@@ -139,6 +139,10 @@ regions:
       name: Scotland
       flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
       osmcha.id: 2c2d94e5-29bc-4eaa-a5e2-119df5d6b649
+    spain:
+      name: Spain
+      flag: 🇪🇸
+      osmcha.id: e3402391-1831-4e71-a4f8-17f6a335a66b
   north-america:
     ca-bc:
       name: British Columbia
