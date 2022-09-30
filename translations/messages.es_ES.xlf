@@ -33,6 +33,10 @@
         <source>British Columbia</source>
         <target state="translated">Columbia Británica</target>
       </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target state="translated">Ontario</target>
+      </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
         <target state="translated">Países Catalanes</target>
@@ -59,7 +63,7 @@
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+        <target state="translated">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -291,7 +295,7 @@
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target state="needs-translation">Editor</target>
+        <target state="translated">Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
