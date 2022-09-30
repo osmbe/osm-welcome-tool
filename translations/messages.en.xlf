@@ -33,6 +33,10 @@
         <source>British Columbia</source>
         <target>British Columbia</target>
       </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target>Ontario</target>
+      </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
         <target>Catalan Countries</target>
