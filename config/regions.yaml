@@ -151,6 +151,7 @@ regions:
     ca-on:
       name: Ontario
       flag: 🇨🇦
+      osmcha.id: e996293a-99b8-4fef-8321-f997c2ba7740
     panama:
       name: Panama
       flag: 🇵🇦
