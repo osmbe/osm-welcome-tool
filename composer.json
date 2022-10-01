@@ -4,7 +4,7 @@
     "license": "ISC",
     "type": "project",
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
