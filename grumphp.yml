@@ -19,7 +19,7 @@ grumphp:
     phpstan: ~
     phpunit: ~
     phpversion:
-      project: "8.0"
+      project: "8.1"
     twigcs:
       ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
       exclude: ["vendor/"]
