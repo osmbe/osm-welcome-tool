@@ -8,7 +8,7 @@
         "@types/leaflet": "^1.8.0",
         "@types/react-dom": "^18.0.6",
         "@typescript-eslint/eslint-plugin": "^5.37.0",
-        "@typescript-eslint/parser": "^5.36.1",
+        "@typescript-eslint/parser": "^5.38.1",
         "apexcharts": "^3.35.5",
         "autoprefixer": "^10.4.12",
         "codejar": "^3.6.0",
