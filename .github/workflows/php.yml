@@ -14,8 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # See https://www.php.net/supported-versions.php
-        php-versions: [ '8.0', '8.1' ]
+        php-versions: [ '8.1' ] # See https://www.php.net/supported-versions.php
 
     steps:
     - uses: actions/checkout@v3
