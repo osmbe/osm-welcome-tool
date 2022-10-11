@@ -12,8 +12,8 @@ Welcome to the OpenStreetMap! OpenStreetMap is a collaborative project, which ga
 The following links are helpful reference documents and community pages, might help you to know the local standards and discuss mapping issues.
 
 Editing Guideline:
-* Taiwan Tagging: [http://wiki.openstreetmap.org/wiki/Taiwan](http://wiki.openstreetmap.org/wiki/Taiwan)
-* Map features page for reference: [http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
+* Taiwan Tagging: [https://wiki.openstreetmap.org/wiki/Taiwan](https://wiki.openstreetmap.org/wiki/Taiwan)
+* Map features page for reference: [https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
 * Tips for Pókemon Go Players: [https://wiki.openstreetmap.org/wiki/Tips\_for\_new_(Pokemon\_Go)\_mappers](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)
 * Organizated edit guideline: [https://wiki.osmfoundation.org/wiki/Organised\_Editing\_Guidelines](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)
 
