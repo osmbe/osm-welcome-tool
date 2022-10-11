@@ -33,6 +33,10 @@
         <source>British Columbia</source>
         <target state="translated">Британска Колумбия</target>
       </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target state="translated">Онтарио</target>
+      </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
         <target state="needs-translation">Catalan Countries</target>

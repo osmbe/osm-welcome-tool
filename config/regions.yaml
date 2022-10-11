@@ -148,6 +148,10 @@ regions:
       name: British Columbia
       flag: 🇨🇦
       osmcha.id: 9e58ce7f-ad64-4d5f-9242-895c9ed428e0
+    ca-on:
+      name: Ontario
+      flag: 🇨🇦
+      osmcha.id: e996293a-99b8-4fef-8321-f997c2ba7740
     panama:
       name: Panama
       flag: 🇵🇦

@@ -16,7 +16,7 @@ Hier einige nützliche Vorschläge für den Anfang:
 * Ein guter Start in OpenStreetMap ist die [Android-App StreetComplete](https://github.com/streetcomplete/StreetComplete#download), mit der Du ganz einfach deine Umgebung vervollständigen kannst. Probier es gleich beim nächsten Spaziergang aus!
 * Ich empfehle, die OSM [wiki-page für Austria](https://wiki.openstreetmap.org/wiki/Austria) und die [Tipps für Einsteiger](https://wiki.openstreetmap.org/wiki/DE:Beginners%27_guide) zu nutzen.
 * Wenn Du nicht herausfindest, wie Du etwas mit dem Editor deiner Wahl kartieren kannst, ist die schnellste Lösung ein Blick auf [Map Features](https://wiki.openstreetmap.org/wiki/DE:Map_Features) im Wiki.
-* Kompliziertere Fragen kann eine Suche in der [Hilfe-Seite](https://wiki.openstreetmap.org/wiki/DE:Hilfe) beantworten oder man kann konkret im [Forum](https://forum.openstreetmap.org/viewforum.php?id=14) nachfragen. Es gibt auch eine große Liste von [anderen Kommunikationsarten](https://wiki.openstreetmap.org/wiki/Contact_channels) wie Telegram, Slack oder Discord!
+* Kompliziertere Fragen kannst du in der [Community](https://community.openstreetmap.org/c/communities/at/59) nachfragen. Es gibt auch eine große Liste von [anderen Kommunikationsarten](https://wiki.openstreetmap.org/wiki/Contact_channels) wie Telegram, Slack oder Discord!
 * [learnOSM](https://learnosm.org/de/) ist ein guter Ort, um mehr über OSM zu erfahren. Es gibt Anleitungen für die Verwendung des iD-Browser-Editors und des fortgeschritteneren JOSM-Editors.
 
 Viel Spaß beim Mappen und in der OSM-Gemeinschaft!
