@@ -1,0 +1,7 @@
+.github/
+docs/
+node_modules/
+public/build/
+var/
+vendor/
+.env.*
