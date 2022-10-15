@@ -12,8 +12,8 @@ title: 歡迎來到開放街圖
 紲來是相關的參考資料，歡迎定定參詳佮提問。
 
 編輯欲知影的代誌：
-* 台灣的標示遵照準則會當參考 [http://wiki.openstreetmap.org/wiki/Taiwan](http://wiki.openstreetmap.org/wiki/Taiwan)
-* 定定需要參考的圖徵標示方式 [http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
+* 台灣的標示遵照準則會當參考 [https://wiki.openstreetmap.org/wiki/Taiwan](https://wiki.openstreetmap.org/wiki/Taiwan)
+* 定定需要參考的圖徵標示方式 [https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
 * 予Pokemon Go的建議：[https://wiki.openstreetmap.org/wiki/Tips\_for\_new_(Pokemon\_Go)\_mappers](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)
 * 組織性編輯指南：[https://wiki.osmfoundation.org/wiki/Organised\_Editing\_Guidelines](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)
 

@@ -15,7 +15,7 @@ vous pouvez aussi nous contacter via OpenStreetMap RDC sur Facebook, __@OSM_CD__
 Quelques trucs et astuces pour bien commencer :
 
 * Vous pouvez trouver beaucoup d'informations via [le wiki](https://wiki.openstreetmap.org/wiki/FR:Page_principale).
-* [LearnOSM](http://learnosm.org/fr) est un bon endroit pour en apprendre plus sur OSM. Des instructions sont disponibles sur l'utilisation de l'éditeur iD intégré au navigateur et sur JOSM, un éditeur plus avancé.
+* [LearnOSM](https://learnosm.org/fr) est un bon endroit pour en apprendre plus sur OSM. Des instructions sont disponibles sur l'utilisation de l'éditeur iD intégré au navigateur et sur JOSM, un éditeur plus avancé.
 * Si vous voulez savoir comment tagger quelque chose, la solution la plus rapide est de faire une recherche en ligne avec `site:wiki.openstreetmap.org [terme recherché]`.
 * Quand vous sauvegarder vos modifications, ajoutez un commentaire clair sur ce que vous avez modifié ([documentation](https://wiki.openstreetmap.org/wiki/FR:Bons_commentaires_de_groupe_de_modifications)).
 * Ne connectez pas les polygones de couverture du sol `landuse` aux `routes`; laissez un petit espace entre les deux.

@@ -33,7 +33,7 @@ Aunque no todo lo que se puede mapear es válido para Colombia; por eso te decí
 
 * Si tienes una página web y quieres incorporarle el mapa de OpenStreetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/)
 
-* Siempre es bueno saber quién está contribuyendo al mapa cerca de donde uno está trabajando, entonces puedes echarle un ojo a [resultmaps.neis-one.org](http://resultmaps.neis-one.org/).
+* Siempre es bueno saber quién está contribuyendo al mapa cerca de donde uno está trabajando, entonces puedes echarle un ojo a [resultmaps.neis-one.org](https://resultmaps.neis-one.org/).
 
 Si tienes dudas o preguntas como:
 ¿creo que he dañado algo?, ¿cómo mapeo cierta cosa que no encuentro en el wiki? entonces puedes usar uno de estos medios para contactar la comunidad:
@@ -42,9 +42,9 @@ Si tienes dudas o preguntas como:
 Es un espacio donde los miembros discuten cosas alrededor del mapa.
 Puedes comenzar saludando a la comunidad.
 
-* Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](http://help.openstreetmap.org).
+* Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](https://help.openstreetmap.org).
 
-En Bogotá tenemos el grupo [MaptimeBogota](http://maptime.io/bogota/) que organiza reuniones periódicamente, para mapear y discutir sobre el mapa.
+En Bogotá tenemos el grupo [MaptimeBogota](https://maptime.io/bogota/) que organiza reuniones periódicamente, para mapear y discutir sobre el mapa.
 Es un evento ideal para principiantes como tu.
 No te pierdas el [siguiente evento](https://www.meetup.com/maptime-bogota-colombia-osm/).
 
