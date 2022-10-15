@@ -92,7 +92,7 @@ regions:
       flag: 4️
       osmcha.id: abfd17fc-2809-4285-86ab-1e0336a68915
     france:
-      name: France Métropolitaine
+      name: France
       flag: 🇫🇷
       osmcha.id:
     germany:
