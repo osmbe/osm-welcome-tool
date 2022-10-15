@@ -13,14 +13,14 @@ title: 歡迎來到開放街圖
 
 編輯須知：
 
-* 台灣的標示依循準則可參考 [http://wiki.openstreetmap.org/wiki/Taiwan](http://wiki.openstreetmap.org/wiki/Taiwan)
-* 常見的圖徵標示方式可參考 [http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](http://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
+* 台灣的標示依循準則可參考 [https://wiki.openstreetmap.org/wiki/Taiwan](https://wiki.openstreetmap.org/wiki/Taiwan)
+* 常見的圖徵標示方式可參考 [https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features](https://wiki.openstreetmap.org/wiki/Zh-hant:Map_Features)
 給Pokemon Go玩家的建議：[https://wiki.openstreetmap.org/wiki/Tips\_for\_new_(Pokemon\_Go)\_mappers](https://wiki.openstreetmap.org/wiki/Tips_for_new_(Pokemon_Go)_mappers)
 * 組織性編輯指南：[https://wiki.osmfoundation.org/wiki/Organised\_Editing\_Guidelines](https://wiki.osmfoundation.org/wiki/Organised_Editing_Guidelines)
 
 台灣社群網站：
 
-* 台灣 OpenStreetMap 網站   [http](https://osm.tw/)[s://osm.tw/](https://osm.tw/)
+* 台灣 OpenStreetMap 網站   [https://osm.tw/](https://osm.tw/)
 * 臉書粉絲頁OpenStreetMap台灣 [https://www.facebook.com/ope](https://www.facebook.com/openstreetmaptaiwan/)[n](https://www.facebook.com/openstreetmaptaiwan/)[streetmaptaiwan/](https://www.facebook.com/openstreetmaptaiwan/)
 * 台灣社群Facebook社團 [https://www.facebook.com/groups/OpenStreetMap.TW/](https://www.facebook.com/groups/OpenStreetMap.TW/)
 * 郵件論壇 [https://lists.openstreetmap.org/listinfo/talk-tw](https://lists.openstreetmap.org/listinfo/talk-tw)

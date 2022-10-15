@@ -13,7 +13,7 @@ If your contribution is sporadic, it doesn't matter! Maybe you know someone arou
 
 In addition to contributing to the map, you can help us by, for example, uploading GPS tracks, reporting errors, or promoting OpenStreetMap.
 
-If you want to ask something, or just share your experience or ideas for improvement, we'll be happy to meet you on our [Telegram chat](http://t.me/osmkosovo). 
+If you want to ask something, or just share your experience or ideas for improvement, we'll be happy to meet you on our [Telegram chat](https://t.me/osmkosovo). 
 
 Find out more about the [Kosovo community](https://wiki.openstreetmap.org/wiki/WikiProject_Kosovo). 
 

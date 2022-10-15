@@ -18,7 +18,7 @@ Si vous voulez savoir comment "taguer" quelque chose, la solution la plus simple
 * Quand vous enregistrez vos modifications, ajoutez un commentaire court mais explicite sur ce que vous avez changé. ([Plus d'informations ici](https://wiki.openstreetmap.org/wiki/Good_changeset_comments)) ;
 * Assurez-vous que les routes soient connectées les unes aux autres mais ne les connectez pas aux champs ou aux zones résidentielles ni aux autres informations sur l'usage des terrains ;
 * Pour avoir un aperçu de ce qui se passe dans le monde, inscrivez-vous à la [lettre d'information hebdomadaire relative au monde d'OpenStreetMap](https://weeklyosm.eu/fr/) ;
-* Vous avez une trace de ce que vous avez édité avec [l'outil "comment vous avez contribué"](http://hdyc.neis-one.org/) ;
+* Vous avez une trace de ce que vous avez édité avec [l'outil "comment vous avez contribué"](https://hdyc.neis-one.org/) ;
 
 Nous avons une page sur notre wiki pour vous aider à démarrer. Pour plus de trucs et astuces, [regardez ici](https://wiki.openstreetmap.org/wiki/FR:Guide_du_d%C3%A9butant) !
 
