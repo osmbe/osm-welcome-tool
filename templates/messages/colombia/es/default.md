@@ -29,14 +29,14 @@ Al principio, esta lista puede ser enorme, pero con echarle un ojo podrás imagi
 
 * Si tienes una página web y quieres incorporar el mapa de OpenSteetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/).
 
-* Siempre es bueno saber quién está colaborando cerca de donde uno está trabajando, entonces puedes visitar [resultmaps.neis-one.org](http://resultmaps.neis-one.org/).
+* Siempre es bueno saber quién está colaborando cerca de donde uno está trabajando, entonces puedes visitar [resultmaps.neis-one.org](https://resultmaps.neis-one.org/).
 
 Si tienes dudas o preguntas como:
 ¿creo que he dañado algo?, ¿cómo mapeo cierta cosa que no encuentro en el wiki? entonces puedes usar uno de estos canales para contactar la comunidad:
 
 * La comunidad de OpenStreetMap en Colombia tiene un [canal de Telegram](https://telegram.me/osmco), donde puedes hacer preguntas o conocer sobre las actividades que realizan. Es un espacio donde los miembros discuten cosas alrededor del mapa.
 
-* Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](http://help.openstreetmap.org).
+* Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](https://help.openstreetmap.org).
 
 Entonces, ¿qué puedes mapear ahora?
 Te recomendamos que adiciones cosas cerca de ti, como:

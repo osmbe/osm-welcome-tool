@@ -18,7 +18,7 @@ Als je wil weten hoe je iets best 'tagt', is de snelste optie wellicht om te zoe
 * Wanneer je je wijzigingen oplaadt, voorzie een korte maar duidelijke beschrijving van je aanpassingen ([meer info hier](https://wiki.openstreetmap.org/wiki/Good_changeset_comments)).
 * Zorg er zeker voor dat wegen en paden met elkaar verbonden zijn, maar verbind ze niet aan vlakken van landgebruik, zoals velden en woonzones.
 * Voor een kijk op wat er leeft wereldwijd, kan je intekenen op een [wekelijkse nieuwsbrief over de OpenStreetMap wereld](https://weeklyosm.eu/).
-* Je kan je eigen edits volgens via de [how did you contribute](http://hdyc.neis-one.org/) tool
+* Je kan je eigen edits volgens via de [how did you contribute](https://hdyc.neis-one.org/) tool
 
 We hebben een wiki-pagina om nieuwe mappers op weg te zetten. Voor meer tips en aanwijzingen, [neem hier een kijkje!](https://wiki.openstreetmap.org/wiki/WikiProject_Belgium/Beginner)
 We horen graag van je terug, en tot die tijd:

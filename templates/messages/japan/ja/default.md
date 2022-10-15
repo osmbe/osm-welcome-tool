@@ -11,8 +11,8 @@ OpenStreetMapへ最初の編集をいただき、ありがとうございます�
 
 * 日本コミュニティは、マッパーがチャットする[Slackチャンネル](https://bit.ly/OSM_Japan) を運営しています。
 * [Twitterのハッシュタグ #osmjp](https://twitter.com/hashtag/osmjp)や、[Facebookページ OpenStreetMap Japan Community](https://www.facebook.com/groups/osmjapan)でも交流が行われています。
-* マッピングのやりかたを学ぶには、[learnOSM](http://learnosm.org) がオススメです。
-* OSMの[wikiページ](http://wiki.openstreetmap.org/)には、[地物に付与するタグ](https://wiki.openstreetmap.org/wiki/Map_Features)など、情報が満載です。[日本に関するページ](https://wiki.openstreetmap.org/wiki/Japan)も用意されています。また、[Help-site](https://help.openstreetmap.org)では、日本以外のコミュニティからもフィードバックを得られるでしょう。
+* マッピングのやりかたを学ぶには、[learnOSM](https://learnosm.org) がオススメです。
+* OSMの[wikiページ](https://wiki.openstreetmap.org/)には、[地物に付与するタグ](https://wiki.openstreetmap.org/wiki/Map_Features)など、情報が満載です。[日本に関するページ](https://wiki.openstreetmap.org/wiki/Japan)も用意されています。また、[Help-site](https://help.openstreetmap.org)では、日本以外のコミュニティからもフィードバックを得られるでしょう。
 * マッピングパーティなどのイベントは[OSM Japanウェブページ](https://openstreetmap.jp/)にまとまっています。
 * あなたの近所でどんな人がマッピングしているか確認したり、ご自身の活動状況を知るには[resultmaps.neis-one.org](https://resultmaps.neis-one.org/)のマップを確認してみてください。
 * お仕事や趣味でウェブサイトにOpenStreetMapの地図を埋め込む方法は[Switch2OSM](https://switch2osm.org/)にまとまっています。

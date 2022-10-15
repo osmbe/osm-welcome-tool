@@ -10,7 +10,7 @@ I saw that you made your first edit on OpenStreetMap. Congratulations and thank 
 There are many resources to get you started. Here are a few:
 
 * [Official OpenStreetMap Welcome](https://www.openstreetmap.org/welcome)
-* [Learn OpenStreetMap](http://learnosm.org/en/)
+* [Learn OpenStreetMap](https://learnosm.org/en/)
 * [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Main_Page)
 * [Good Practice guidelines](https://wiki.openstreetmap.org/wiki/Good_practice)
 
