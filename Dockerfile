@@ -51,7 +51,6 @@ COPY --chown=www-data . .
 COPY .docker/cron.daily/welcome-update.sh /etc/cron.daily/welcome-update
 
 RUN rm -Rf .docker/
-RUN rm -Rf assets/
 
 COPY --from=node --chown=www-data "/assets/public/build" "./public/build"
 
