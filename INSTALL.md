@@ -8,10 +8,15 @@
   composer install
   ```
 
-- Create database:
+- Create database (if needed):
 
   ```cmd
   php bin/console doctrine:database:create
+  ```
+
+- Initialize schema:
+
+  ```cmd
   php bin/console doctrine:schema:create
   ```
 
