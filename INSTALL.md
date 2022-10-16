@@ -30,8 +30,8 @@ Check [Symfony local server documentation](https://symfony.com/doc/current/setup
 ### Docker
 
 ```cmd
-docker build . -t osm-welcome-tool
-docker run -d --env-file=.env.local osm-welcome-tool
+docker build . --tag osm-welcome-tool
+docker run --detach --publish 80:80 --env-file .env.local osm-welcome-tool
 ```
 
 ## Deploy
