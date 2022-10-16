@@ -42,12 +42,13 @@ RUN apache2ctl restart
 
 ## Copy/Clean files
 
-# ENV APP_ENV=prod
-ENV APP_ENV=dev
+ENV APP_ENV=prod
+# ENV APP_ENV=dev
 
 WORKDIR "/var/www/app"
 
 COPY --chown=www-data . .
+COPY .docker/cron.daily/welcome-update.sh /etc/cron.daily/welcome-update
 
 RUN rm -Rf .docker/
 RUN rm -Rf assets/
@@ -61,12 +62,12 @@ COPY --from=composer "/usr/bin/composer" "/usr/bin/composer"
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 RUN composer validate
-# RUN composer install --no-ansi --no-interaction --no-progress --prefer-dist --optimize-autoloader --no-scripts --no-dev
-RUN composer install --no-ansi --no-interaction --no-progress --prefer-dist --optimize-autoloader --no-scripts
+RUN composer install --no-ansi --no-interaction --no-progress --prefer-dist --optimize-autoloader --no-scripts --no-dev
+# RUN composer install --no-ansi --no-interaction --no-progress --prefer-dist --optimize-autoloader --no-scripts
 RUN composer clear-cache
 RUN composer dump-env prod
-# RUN composer run-script post-install-cmd --no-dev
-RUN composer run-script post-install-cmd
+RUN composer run-script post-install-cmd --no-dev
+# RUN composer run-script post-install-cmd
 RUN chmod +x bin/console; sync;
 
 ###> recipes ###
