@@ -8,10 +8,15 @@
   composer install
   ```
 
-- Create database:
+- Create database (if needed):
 
   ```cmd
   php bin/console doctrine:database:create
+  ```
+
+- Initialize schema:
+
+  ```cmd
   php bin/console doctrine:schema:create
   ```
 
@@ -19,11 +24,20 @@
 
 ## Run locally
 
+### Symfony Local Web Server
+
 - Install [Symfony CLI](https://symfony.com/download)
 - Run `symfony server:start`
 - Browse the given URL
 
 Check [Symfony local server documentation](https://symfony.com/doc/current/setup/symfony_server.html) for more information.
+
+### Docker
+
+```cmd
+docker build . --tag osm-welcome-tool
+docker run --detach --publish 80:80 --env-file .env.local osm-welcome-tool
+```
 
 ## Deploy
 
