@@ -27,9 +27,8 @@ RUN docker-php-ext-install -j$(nproc) intl pdo_pgsql sodium zip
 
 ## Install Symfony CLI
 
-# RUN apk add --no-cache bash
-# RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.alpine.sh' | bash
-# RUN apk add symfony-cli
+# RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | bash
+# RUN apt-get install symfony-cli
 
 ## Configure Apache
 
