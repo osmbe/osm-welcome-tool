@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 16.x ] # See https://nodejs.org/en/about/releases/
+        node-version: [ 16.x, 18.x ] # See https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -24,7 +24,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build
+    - if: matrix.node-version != '18.x'
+      run: npm run build
+    - if: matrix.node-version == '18.x'
+      run: NODE_OPTIONS=--openssl-legacy-provider npm run build
     - uses: actions/upload-artifact@v3
       with:
         name: assets-${{ matrix.node-version }}
