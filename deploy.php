@@ -3,8 +3,10 @@
 namespace Deployer;
 
 require 'recipe/symfony.php';
+require 'contrib/php-fpm.php'; // See https://deployer.org/docs/7.x/contrib/php-fpm + https://deployer.org/docs/7.x/avoid-php-fpm-reloading
 
 set('git_tty', true);
+set('php_fpm_version', '8.1');
 
 // Config
 
@@ -25,3 +27,5 @@ host('welcome.osm.be')
 // Hooks
 
 after('deploy:failed', 'deploy:unlock');
+
+after('deploy:success', 'php-fpm:reload');
