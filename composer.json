@@ -58,6 +58,7 @@
         "twig/twig": "^3.3"
     },
     "require-dev": {
+        "deployer/deployer": "^7.0",
         "ergebnis/composer-normalize": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.0",
         "friendsoftwig/twigcs": "dev-main",

@@ -42,3 +42,11 @@ docker run --detach --publish 80:80 --env-file .env.local osm-welcome-tool
 ## Deploy
 
 Check [Symfony deployment documentation](https://symfony.com/doc/current/deployment.html).
+
+### Using Deployer
+
+```cmd
+vendor/bin/dep deploy --branch=2.x welcome.osm.be
+npm run build
+rsync -e ssh -avz public/build/ root@welcome.osm.be:/var/www/osm-welcome-tool/current/public/build/
+```

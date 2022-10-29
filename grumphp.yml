@@ -16,7 +16,8 @@ grumphp:
         - /^assets\/typescript\/(.*)/
     phpcsfixer:
       config: ".php-cs-fixer.dist.php"
-    phpstan: ~
+    phpstan:
+      ignore_patterns: [deploy.php]
     phpunit: ~
     phpversion:
       project: "8.1"
