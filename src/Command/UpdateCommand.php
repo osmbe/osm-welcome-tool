@@ -3,9 +3,6 @@
 namespace App\Command;
 
 use App\Service\RegionsProvider;
-use DateInterval;
-use DateTime;
-use Exception;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -55,15 +52,15 @@ class UpdateCommand extends Command
                 if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
                     if (!$lastUpdate->isHit()) {
                         // If cache is not set, get new mappers from the last 5 days
-                        $date = (new DateTime())->sub(new DateInterval('P5D'))->format('Y-m-d');
+                        $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
                         $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
                     } elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
                         // If last update was today and process is forced, get new mappers from yesterday
-                        $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
+                        $date = (new \DateTime($lastUpdate->get()))->sub(new \DateInterval('P1D'))->format('Y-m-d');
                         $io->note(sprintf('Get new mappers from %s (forced).', $date));
                     } else {
                         // Get new mappers from the last update date
-                        $date = (new DateTime($lastUpdate->get()))->format('Y-m-d');
+                        $date = (new \DateTime($lastUpdate->get()))->format('Y-m-d');
                         $io->note(sprintf('Get new mappers from %s.', $date));
                     }
 
@@ -72,7 +69,7 @@ class UpdateCommand extends Command
 
                         $lastUpdate->set(date('c'));
                         $this->cache->save($lastUpdate);
-                    } catch (Exception $e) {
+                    } catch (\Exception $e) {
                         $io->error($e->getMessage());
                     }
                 } else {
