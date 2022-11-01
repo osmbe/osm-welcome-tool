@@ -4,8 +4,6 @@ namespace App\Service;
 
 use App\Entity\Changeset;
 use App\Repository\ChangesetRepository;
-use DateTimeImmutable;
-use SimpleXMLElement;
 
 class ChangesetProvider
 {
@@ -26,7 +24,7 @@ class ChangesetProvider
 
             $changeset = new Changeset();
             $changeset->setId($feature['id']);
-            $changeset->setCreatedAt(new DateTimeImmutable($feature['properties']['date']));
+            $changeset->setCreatedAt(new \DateTimeImmutable($feature['properties']['date']));
             $changeset->setComment($feature['properties']['comment'] ?? '');
             $changeset->setEditor($feature['properties']['editor']);
             $changeset->setLocale($feature['properties']['metadata']['locale'] ?? null);
@@ -48,7 +46,7 @@ class ChangesetProvider
         return $changeset;
     }
 
-    public function fromOSM(SimpleXMLElement $element): Changeset
+    public function fromOSM(\SimpleXMLElement $element): Changeset
     {
         $attributes = $element->attributes();
 
@@ -63,7 +61,7 @@ class ChangesetProvider
 
             $changeset = new Changeset();
             $changeset->setId((int) $attributes->id);
-            $changeset->setCreatedAt(new DateTimeImmutable((string) $attributes->created_at));
+            $changeset->setCreatedAt(new \DateTimeImmutable((string) $attributes->created_at));
             $changeset->setComment(self::extractTag($element->tag, 'comment') ?? '');
             $changeset->setEditor(self::extractTag($element->tag, 'created_by') ?? '');
             $changeset->setLocale(self::extractTag($element->tag, 'locale'));
@@ -75,14 +73,14 @@ class ChangesetProvider
         return $changeset;
     }
 
-    private static function extractTag(SimpleXMLElement $element, string $key): ?string
+    private static function extractTag(\SimpleXMLElement $element, string $key): ?string
     {
-        /** @var SimpleXMLElement[] */
+        /** @var \SimpleXMLElement[] */
         $tags = [];
         foreach ($element as $tag) {
             $tags[] = $tag;
         }
-        $filter = array_filter($tags, function (SimpleXMLElement $element) use ($key): bool {
+        $filter = array_filter($tags, function (\SimpleXMLElement $element) use ($key): bool {
             $attr = $element->attributes();
 
             return (string) $attr->k === $key;

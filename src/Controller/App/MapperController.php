@@ -8,8 +8,6 @@ use App\Entity\Template;
 use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
-use DateTime;
-use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -69,7 +67,7 @@ class MapperController extends AbstractController
             ->getRepository(Mapper::class)
             ->findBy(['region' => $region['key']]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?DateTimeImmutable {
+        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
             return $mapper->getFirstChangeset()->getCreatedAt();
         }, $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
@@ -99,7 +97,7 @@ class MapperController extends AbstractController
         }
 
         if (true === $state) {
-            $welcome->setDate(new DateTime());
+            $welcome->setDate(new \DateTime());
             $welcome->setUser($this->getUser());
 
             $this->entityManager->persist($welcome);
@@ -116,10 +114,10 @@ class MapperController extends AbstractController
         if (null === $welcome) {
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
-            $welcome->setDate(new DateTime());
+            $welcome->setDate(new \DateTime());
             $welcome->setUser($this->getUser());
         }
-        $welcome->setReply($state ? new DateTime() : null);
+        $welcome->setReply($state ? new \DateTime() : null);
 
         $this->entityManager->persist($welcome);
         $this->entityManager->flush();
@@ -176,7 +174,7 @@ class MapperController extends AbstractController
         $form->handleRequest($request);
 
         if (true === $form->isSubmitted() && true === $form->isValid()) {
-            $note->setDate(new DateTime());
+            $note->setDate(new \DateTime());
 
             $this->entityManager->persist($note);
             $this->entityManager->flush();

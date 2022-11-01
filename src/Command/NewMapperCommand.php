@@ -10,8 +10,6 @@ use App\Service\OpenStreetMapAPI;
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
 use Doctrine\ORM\EntityManagerInterface;
-use ErrorException;
-use SimpleXMLElement;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -53,7 +51,7 @@ class NewMapperCommand extends Command
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
         if ($validate->count() > 0) {
-            throw new ErrorException($validate->get(0)->getMessage());
+            throw new \ErrorException($validate->get(0)->getMessage());
         }
     }
 
@@ -160,15 +158,15 @@ class NewMapperCommand extends Command
 
         $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
-        $xml = new SimpleXMLElement($response->getContent());
+        $xml = new \SimpleXMLElement($response->getContent());
 
-        /** @var SimpleXMLElement[] */
+        /** @var \SimpleXMLElement[] */
         $changesetsElement = [];
         foreach ($xml->changeset as $changeset) {
             $changesetsElement[] = $changeset;
         }
         /** @var Changeset[] */
-        $changesets = array_map(function (SimpleXMLElement $element): Changeset {
+        $changesets = array_map(function (\SimpleXMLElement $element): Changeset {
             return $this->changesetProvider->fromOSM($element);
         }, $changesetsElement);
 

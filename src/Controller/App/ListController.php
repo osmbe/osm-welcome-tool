@@ -4,8 +4,6 @@ namespace App\Controller\App;
 
 use App\Entity\Mapper;
 use App\Service\RegionsProvider;
-use DateTime;
-use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -55,17 +53,17 @@ class ListController extends AbstractController
             ->getRepository(Mapper::class)
             ->findBy(['region' => $regionKey]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?DateTimeImmutable {
+        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
             return $mapper->getFirstChangeset()->getCreatedAt();
         }, $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
-        $month = (new DateTime())->setDate($year, $month, 1);
+        $month = (new \DateTime())->setDate($year, $month, 1);
 
         $mappers = array_filter(
             $mappers,
             function (Mapper $mapper) use ($month): bool {
-                /** @var DateTimeImmutable */
+                /** @var \DateTimeImmutable */
                 $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
 
                 return $createdAt->format('Ym') === $month->format('Ym');
