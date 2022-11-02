@@ -17,8 +17,12 @@ class EditorExtension extends AbstractExtension
     /**
      * Function based on https://github.com/cliffordsnow/sql/blob/master/editors.sql.
      */
-    public function shortenEditorName(string $name): string
+    public function shortenEditorName(?string $name): string
     {
+        if (null === $name) {
+            return '';
+        }
+
         if (1 === preg_match('/^iD/', $name)) {
             $shortName = 'iD';
         } elseif (1 === preg_match('/^(reverter;)?JOSM/', $name)) {

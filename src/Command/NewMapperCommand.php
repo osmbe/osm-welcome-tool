@@ -10,8 +10,6 @@ use App\Service\OpenStreetMapAPI;
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
 use Doctrine\ORM\EntityManagerInterface;
-use ErrorException;
-use SimpleXMLElement;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -53,7 +51,7 @@ class NewMapperCommand extends Command
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
         if ($validate->count() > 0) {
-            throw new ErrorException($validate->get(0)->getMessage());
+            throw new \ErrorException($validate->get(0)->getMessage());
         }
     }
 
@@ -63,7 +61,7 @@ class NewMapperCommand extends Command
 
         $key = $input->getArgument('region');
         $date = $input->getOption('date');
-        $region = $this->regionsProvider->getRegion($key);
+        $region = $this->regionsProvider->getRegion(null, $key);
 
         if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
@@ -86,10 +84,10 @@ class NewMapperCommand extends Command
             $changesetsCollection = $changesetsResponse->toArray();
 
             $usersId = array_map(function (array $feature): int {
-                return (int) ($feature['properties']['uid']);
+                return (int) $feature['properties']['uid'];
             }, $changesetsCollection['features']);
             $changesetsId = array_map(function (array $feature): int {
-                return (int) ($feature['id']);
+                return (int) $feature['id'];
             }, $changesetsCollection['features']);
 
             $getUsersResponse = $this->osm->getUsers($usersId);
@@ -109,7 +107,7 @@ class NewMapperCommand extends Command
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
                 $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature): bool {
-                    return $mapper->getId() === (int) ($feature['properties']['uid']);
+                    return $mapper->getId() === (int) $feature['properties']['uid'];
                 }));
 
                 $changeset = $this->changesetProvider->fromOSMCha($feature);
@@ -160,15 +158,15 @@ class NewMapperCommand extends Command
 
         $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
-        $xml = new SimpleXMLElement($response->getContent());
+        $xml = new \SimpleXMLElement($response->getContent());
 
-        /** @var SimpleXMLElement[] */
+        /** @var \SimpleXMLElement[] */
         $changesetsElement = [];
         foreach ($xml->changeset as $changeset) {
             $changesetsElement[] = $changeset;
         }
         /** @var Changeset[] */
-        $changesets = array_map(function (SimpleXMLElement $element): Changeset {
+        $changesets = array_map(function (\SimpleXMLElement $element): Changeset {
             return $this->changesetProvider->fromOSM($element);
         }, $changesetsElement);
 

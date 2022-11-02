@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="bg" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target state="translated">Албания</target>
+      </trans-unit>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target state="translated">Австрия</target>
+      </trans-unit>
+      <trans-unit id="Lx1H62e" resname="Bangladesh">
+        <source>Bangladesh</source>
+        <target state="translated">Бангладеш</target>
+      </trans-unit>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target state="translated">Белгия</target>
+      </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target state="translated">Боливия</target>
+      </trans-unit>
+      <trans-unit id="Zrhr8PB" resname="Bulgaria">
+        <source>Bulgaria</source>
+        <target state="translated">България</target>
+      </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target state="translated">Британска Колумбия</target>
+      </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target state="translated">Онтарио</target>
+      </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target state="needs-translation">Catalan Countries</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target state="translated">Китай</target>
+      </trans-unit>
+      <trans-unit id="ZbtG7Qe" resname="Beijing">
+        <source>Beijing</source>
+        <target state="translated">Пекин</target>
+      </trans-unit>
+      <trans-unit id="EAhQbhX" resname="Hunan">
+        <source>Hunan</source>
+        <target state="translated">Хунан</target>
+      </trans-unit>
+      <trans-unit id="a2Fa2xM" resname="Colombia">
+        <source>Colombia</source>
+        <target state="translated">Колумбия</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target state="translated">Богота</target>
+      </trans-unit>
+      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
+        <source>DACHLI-Obersee-Rheintal</source>
+        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+      </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target state="translated">Демократична република Конго</target>
+      </trans-unit>
+      <trans-unit id="ehyk73U" resname="France">
+        <source>France</source>
+        <target state="translated">Франция</target>
+      </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target state="translated">Германия</target>
+      </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target state="translated">Берлин</target>
+      </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target state="translated">Берлин-Neukölln</target>
+      </trans-unit>
+      <trans-unit id="XS9ZcZj" resname="Bremen">
+        <source>Bremen</source>
+        <target state="translated">Бремен</target>
+      </trans-unit>
+      <trans-unit id="WDIBwe_" resname="Ghana">
+        <source>Ghana</source>
+        <target state="translated">Гана</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target state="translated">Хонконг</target>
+      </trans-unit>
+      <trans-unit id="28dKNtj" resname="Indonesia">
+        <source>Indonesia</source>
+        <target state="translated">Индонезия</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target state="translated">Ирландия</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target state="translated">Италия</target>
+      </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target state="translated">Япония</target>
+      </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target state="translated">Косово</target>
+      </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target state="translated">Либия</target>
+      </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target state="translated">Люксембург</target>
+      </trans-unit>
+      <trans-unit id="4QlT93Y" resname="Macao">
+        <source>Macao</source>
+        <target state="translated">Макао</target>
+      </trans-unit>
+      <trans-unit id="w2aPWBK" resname="Panama">
+        <source>Panama</source>
+        <target state="translated">Панама</target>
+      </trans-unit>
+      <trans-unit id="w3gshtg" resname="Philippines">
+        <source>Philippines</source>
+        <target state="translated">Филипини</target>
+      </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target state="translated">Полша</target>
+      </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target state="translated">Румъния</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target state="translated">Шотландия</target>
+      </trans-unit>
+      <trans-unit id="jvQeb0s" resname="Spain">
+        <source>Spain</source>
+        <target state="translated">Испания</target>
+      </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target state="translated">Тайван</target>
+      </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target state="translated">Танзания</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target state="translated">Турция</target>
+      </trans-unit>
+      <trans-unit id="iT1ThWO" resname="Uganda">
+        <source>Uganda</source>
+        <target state="translated">Уганда</target>
+      </trans-unit>
+      <trans-unit id="efbQcyo" resname="Kansas">
+        <source>Kansas</source>
+        <target state="translated">Канзас</target>
+      </trans-unit>
+      <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
+        <source>Commonwealth of Massachusetts</source>
+        <target state="translated">Щат Масачузетс</target>
+      </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target state="translated">Мичиган</target>
+      </trans-unit>
+      <trans-unit id="Z5_V2E6" resname="New York State">
+        <source>New York State</source>
+        <target state="translated">Щат Ню Йорк</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target state="translated">Орегон</target>
+      </trans-unit>
+      <trans-unit id="grzhC1_" resname="Utah">
+        <source>Utah</source>
+        <target state="translated">Юта</target>
+      </trans-unit>
+      <trans-unit id="b.yzrtq" resname="Vermont">
+        <source>Vermont</source>
+        <target state="translated">Върмонт</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target state="translated">Щат Вашингтон</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target state="translated">Поискан преглед</target>
+      </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target state="translated">Невалидна модихикация</target>
+      </trans-unit>
+      <trans-unit id="nvrTGpK" resname="No note.">
+        <source>No note.</source>
+        <target state="translated">Няма бележка.</target>
+      </trans-unit>
+      <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
+        <source>Markdown is allowed.</source>
+        <target state="translated">Разрешено е използването на Markdown.</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target state="translated">Виж</target>
+      </trans-unit>
+      <trans-unit id="nGrjZeg" resname="Open other tools">
+        <source>Open other tools</source>
+        <target state="translated">Отваряне на други инструменти</target>
+      </trans-unit>
+      <trans-unit id="PzH3t8N" resname="Harmful">
+        <source>Harmful</source>
+        <target state="translated">Вредно</target>
+      </trans-unit>
+      <trans-unit id="Dv2SozW" resname="Checked">
+        <source>Checked</source>
+        <target state="translated">Проверено</target>
+      </trans-unit>
+      <trans-unit id="nc.5jid" resname="Timeline">
+        <source>Timeline</source>
+        <target state="translated">Времева линия</target>
+      </trans-unit>
+      <trans-unit id="9jh5.Wk" resname="Account created">
+        <source>Account created</source>
+        <target state="translated">Акаунта е създаден</target>
+      </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target state="translated">Картограф от {date}</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target state="translated">Профил</target>
+      </trans-unit>
+      <trans-unit id="6wYsMHV" resname="Send a welcome message">
+        <source>Send a welcome message</source>
+        <target state="translated">Изпращане на съобщение за добре дошли</target>
+      </trans-unit>
+      <trans-unit id="VrVkt1x" resname="Templates">
+        <source>Templates</source>
+        <target state="translated">Шаблони</target>
+      </trans-unit>
+      <trans-unit id="RXDbS53" resname="Copy text to clipboard">
+        <source>Copy text to clipboard</source>
+        <target state="translated">Копиране на текста в клипборда</target>
+      </trans-unit>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target state="needs-translation">Load message in osm.org</target>
+      </trans-unit>
+      <trans-unit id="oJyOJvo" resname="Changesets">
+        <source>Changesets</source>
+        <target state="translated">Списък с промени</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target state="translated">История</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target state="translated">Начало</target>
+      </trans-unit>
+      <trans-unit id="byAvVKe" resname="List">
+        <source>List</source>
+        <target state="translated">Списък</target>
+      </trans-unit>
+      <trans-unit id="_nTKo1O" resname="Mapper">
+        <source>Mapper</source>
+        <target state="translated">Картограф</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target state="translated">Потребителско име</target>
+      </trans-unit>
+      <trans-unit id="7z7rhD." resname="First changeset">
+        <source>First changeset</source>
+        <target state="translated">Първи списък с промени</target>
+      </trans-unit>
+      <trans-unit id="k2oWHDk" resname="Editor">
+        <source>Editor</source>
+        <target state="translated">Редактор</target>
+      </trans-unit>
+      <trans-unit id="yj3GEvR" resname="Locale">
+        <source>Locale</source>
+        <target state="needs-translation">Locale</target>
+      </trans-unit>
+      <trans-unit id="1HiPJW9" resname="View profile">
+        <source>View profile</source>
+        <target state="translated">Виж профила</target>
+      </trans-unit>
+      <trans-unit id="7fvt8pP" resname="Mappers">
+        <source>Mappers</source>
+        <target state="translated">Картографи</target>
+      </trans-unit>
+      <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
+        <source>List of mappers that have their first edit in the region</source>
+        <target state="translated">Списък на картографите, които са направили първата си редакция в района</target>
+      </trans-unit>
+      <trans-unit id="aidpUCp" resname="Previous month">
+        <source>Previous month</source>
+        <target state="translated">Предишен месец</target>
+      </trans-unit>
+      <trans-unit id="dOUyEf7" resname="Next month">
+        <source>Next month</source>
+        <target state="translated">Следващ месец</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target state="translated">Бележка</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target state="translated">Добави</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target state="translated">Добави бележка</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target state="translated">Привестван от {userlink}</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target state="translated">{mapper} беше приветстван</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target state="translated">{mapper} е отговорил</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target state="translated">Списък с промени</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target state="translated">Все още не е приветстван</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target state="translated">Все още не е отговорено</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target state="translated">{userlink} е отговорил</target>
+      </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target state="translated">Влизане с OSM</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target state="translated">Отваряне на потребителското меню</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target state="translated">Приветствани</target>
+      </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target state="translated">Последна актуализация</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target state="translated">Излизане</target>
+      </trans-unit>
+      <trans-unit id="inUlsUk" resname="Notes">
+        <source>Notes</source>
+        <target state="translated">Бележки</target>
+      </trans-unit>
+      <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
+        <source>This is the OpenStreetMap Welcome Tool.&#13;
+It helps you discover new mappers in your region and welcome them.</source>
+        <target state="translated">Това е инструментът OpenStreetMap Welcome Tool.
+Той ви помага да откриете нови картографи във Вашия регион и да ги приветствате.</target>
+      </trans-unit>
+      <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
+        <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
+        <target state="translated">Ако искате да добавите своя регион или език към Инструмента за посрещане, разгледайте нашето ръководство {contributing_link_start}contributing guide{link_end}.</target>
+      </trans-unit>
+      <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
+        <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
+        <target state="translated">Разработено от {osmbe_link_start}OpenStreetMap Белгия{link_end} и подкрепена от {lccwg_link_start}Работна група "Местни глави и общности" {link_end}.</target>
+      </trans-unit>
+      <trans-unit id="YIax95J" resname="Previous mapper">
+        <source>Previous mapper</source>
+        <target state="translated">Предишен картограф</target>
+      </trans-unit>
+      <trans-unit id="K5yIR1M" resname="Next mapper">
+        <source>Next mapper</source>
+        <target state="translated">Следващ картограф</target>
+      </trans-unit>
+      <trans-unit id="P1BTs65" resname="africa">
+        <source>africa</source>
+        <target state="translated">Африка</target>
+      </trans-unit>
+      <trans-unit id="7hOb0P2" resname="asia">
+        <source>asia</source>
+        <target state="translated">Азия</target>
+      </trans-unit>
+      <trans-unit id="xYXx3su" resname="australia">
+        <source>australia</source>
+        <target state="translated">Австралия</target>
+      </trans-unit>
+      <trans-unit id="sR8gPo5" resname="europe">
+        <source>europe</source>
+        <target state="translated">Европа</target>
+      </trans-unit>
+      <trans-unit id="RU.NdIz" resname="north-america">
+        <source>north-america</source>
+        <target state="translated">Северна Америка</target>
+      </trans-unit>
+      <trans-unit id="OplCJNt" resname="south-america">
+        <source>south-america</source>
+        <target state="translated">Южна Америка</target>
+      </trans-unit>
+      <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
+        <source>{count} new mappers ({percent} %) have already been welcomed</source>
+        <target state="needs-translation">{count} new mappers ({percent} %) have already been welcomed</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

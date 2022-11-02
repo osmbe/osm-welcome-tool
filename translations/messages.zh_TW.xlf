@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="zh-TW" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target state="translated">阿爾巴尼亞</target>
+      </trans-unit>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target state="translated">奧地利</target>
+      </trans-unit>
+      <trans-unit id="Lx1H62e" resname="Bangladesh">
+        <source>Bangladesh</source>
+        <target state="translated">孟加拉</target>
+      </trans-unit>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target state="translated">比利時</target>
+      </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target state="translated">玻利維亞</target>
+      </trans-unit>
+      <trans-unit id="Zrhr8PB" resname="Bulgaria">
+        <source>Bulgaria</source>
+        <target state="translated">保加利亞</target>
+      </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target state="translated">英屬哥倫比亞</target>
+      </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target state="needs-translation">Ontario</target>
+      </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target state="translated">加泰隆尼亞諸國</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target state="translated">中國</target>
+      </trans-unit>
+      <trans-unit id="ZbtG7Qe" resname="Beijing">
+        <source>Beijing</source>
+        <target state="translated">北京</target>
+      </trans-unit>
+      <trans-unit id="EAhQbhX" resname="Hunan">
+        <source>Hunan</source>
+        <target state="translated">湖南</target>
+      </trans-unit>
+      <trans-unit id="a2Fa2xM" resname="Colombia">
+        <source>Colombia</source>
+        <target state="translated">哥倫比亞</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target state="translated">波哥大</target>
+      </trans-unit>
+      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
+        <source>DACHLI-Obersee-Rheintal</source>
+        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+      </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target state="translated">剛果民主共和國</target>
+      </trans-unit>
+      <trans-unit id="ehyk73U" resname="France">
+        <source>France</source>
+        <target state="translated">法國</target>
+      </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target state="translated">德國</target>
+      </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target state="translated">柏林</target>
+      </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target state="translated">柏林-新克爾恩</target>
+      </trans-unit>
+      <trans-unit id="XS9ZcZj" resname="Bremen">
+        <source>Bremen</source>
+        <target state="translated">不來梅</target>
+      </trans-unit>
+      <trans-unit id="WDIBwe_" resname="Ghana">
+        <source>Ghana</source>
+        <target state="translated">加納</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target state="translated">香港</target>
+      </trans-unit>
+      <trans-unit id="28dKNtj" resname="Indonesia">
+        <source>Indonesia</source>
+        <target state="translated">印度尼西亞</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target state="translated">愛爾蘭</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target state="translated">義大利</target>
+      </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target state="translated">日本</target>
+      </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target state="translated">科索沃</target>
+      </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target state="translated">利比亞</target>
+      </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target state="translated">蘆森堡</target>
+      </trans-unit>
+      <trans-unit id="4QlT93Y" resname="Macao">
+        <source>Macao</source>
+        <target state="translated">澳門</target>
+      </trans-unit>
+      <trans-unit id="w2aPWBK" resname="Panama">
+        <source>Panama</source>
+        <target state="translated">巴拿馬</target>
+      </trans-unit>
+      <trans-unit id="w3gshtg" resname="Philippines">
+        <source>Philippines</source>
+        <target state="translated">菲律賓</target>
+      </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target state="translated">波蘭</target>
+      </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target state="translated">羅馬尼亞</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target state="translated">蘇格蘭</target>
+      </trans-unit>
+      <trans-unit id="jvQeb0s" resname="Spain">
+        <source>Spain</source>
+        <target state="translated">西班牙</target>
+      </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target state="translated">臺灣</target>
+      </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target state="translated">坦尚尼亞</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target state="translated">土耳其</target>
+      </trans-unit>
+      <trans-unit id="iT1ThWO" resname="Uganda">
+        <source>Uganda</source>
+        <target state="translated">烏干達</target>
+      </trans-unit>
+      <trans-unit id="efbQcyo" resname="Kansas">
+        <source>Kansas</source>
+        <target state="translated">肯堪斯</target>
+      </trans-unit>
+      <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
+        <source>Commonwealth of Massachusetts</source>
+        <target state="translated">麻薩諸塞邦</target>
+      </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target state="translated">密歇根州</target>
+      </trans-unit>
+      <trans-unit id="Z5_V2E6" resname="New York State">
+        <source>New York State</source>
+        <target state="translated">紐約州</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target state="translated">俄勒岡</target>
+      </trans-unit>
+      <trans-unit id="grzhC1_" resname="Utah">
+        <source>Utah</source>
+        <target state="translated">猶他州</target>
+      </trans-unit>
+      <trans-unit id="b.yzrtq" resname="Vermont">
+        <source>Vermont</source>
+        <target state="translated">佛蒙特州</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target state="translated">華盛頓州</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target state="translated">需要審核</target>
+      </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target state="translated">無效的標籤變動</target>
+      </trans-unit>
+      <trans-unit id="nvrTGpK" resname="No note.">
+        <source>No note.</source>
+        <target state="translated">沒有註解。</target>
+      </trans-unit>
+      <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
+        <source>Markdown is allowed.</source>
+        <target state="translated">允許用 Markdown 語法。</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target state="translated">檢視</target>
+      </trans-unit>
+      <trans-unit id="nGrjZeg" resname="Open other tools">
+        <source>Open other tools</source>
+        <target state="translated">開放其他工具</target>
+      </trans-unit>
+      <trans-unit id="PzH3t8N" resname="Harmful">
+        <source>Harmful</source>
+        <target state="translated">有害的</target>
+      </trans-unit>
+      <trans-unit id="Dv2SozW" resname="Checked">
+        <source>Checked</source>
+        <target state="translated">已經檢查</target>
+      </trans-unit>
+      <trans-unit id="nc.5jid" resname="Timeline">
+        <source>Timeline</source>
+        <target state="translated">時間軸</target>
+      </trans-unit>
+      <trans-unit id="9jh5.Wk" resname="Account created">
+        <source>Account created</source>
+        <target state="translated">已創建帳號</target>
+      </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target state="translated">從 {date} 的圖客</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target state="translated">帳號檔案</target>
+      </trans-unit>
+      <trans-unit id="6wYsMHV" resname="Send a welcome message">
+        <source>Send a welcome message</source>
+        <target state="translated">寄送歡迎訊息</target>
+      </trans-unit>
+      <trans-unit id="VrVkt1x" resname="Templates">
+        <source>Templates</source>
+        <target state="translated">模版</target>
+      </trans-unit>
+      <trans-unit id="RXDbS53" resname="Copy text to clipboard">
+        <source>Copy text to clipboard</source>
+        <target state="translated">複製文字到剪貼簿</target>
+      </trans-unit>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target state="translated">在 osm.org 中加載訊息</target>
+      </trans-unit>
+      <trans-unit id="oJyOJvo" resname="Changesets">
+        <source>Changesets</source>
+        <target state="translated">變更集</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target state="translated">歷史</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target state="translated">首頁</target>
+      </trans-unit>
+      <trans-unit id="byAvVKe" resname="List">
+        <source>List</source>
+        <target state="translated">清單</target>
+      </trans-unit>
+      <trans-unit id="_nTKo1O" resname="Mapper">
+        <source>Mapper</source>
+        <target state="translated">圖客</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target state="translated">使用者名稱</target>
+      </trans-unit>
+      <trans-unit id="7z7rhD." resname="First changeset">
+        <source>First changeset</source>
+        <target state="translated">首次變更集</target>
+      </trans-unit>
+      <trans-unit id="k2oWHDk" resname="Editor">
+        <source>Editor</source>
+        <target state="translated">編輯器</target>
+      </trans-unit>
+      <trans-unit id="yj3GEvR" resname="Locale">
+        <source>Locale</source>
+        <target state="translated">在地化</target>
+      </trans-unit>
+      <trans-unit id="1HiPJW9" resname="View profile">
+        <source>View profile</source>
+        <target state="translated">檢視個人檔案</target>
+      </trans-unit>
+      <trans-unit id="7fvt8pP" resname="Mappers">
+        <source>Mappers</source>
+        <target state="translated">圖客</target>
+      </trans-unit>
+      <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
+        <source>List of mappers that have their first edit in the region</source>
+        <target state="translated">這一區域內做出首次編輯的圖客名單</target>
+      </trans-unit>
+      <trans-unit id="aidpUCp" resname="Previous month">
+        <source>Previous month</source>
+        <target state="translated">上個月</target>
+      </trans-unit>
+      <trans-unit id="dOUyEf7" resname="Next month">
+        <source>Next month</source>
+        <target state="translated">下個月</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target state="translated">註解</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target state="translated">新增</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target state="translated">新增註解</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target state="translated">由 {userlink} 寄送歡迎訊息</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target state="translated">已經歡迎 {mapper}</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target state="translated">已經有 {mapper} 回應</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target state="translated">變更集</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target state="translated">還沒有歡迎</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target state="translated">還沒有回應</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target state="translated">{userlink} 已經回應</target>
+      </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target state="translated">登入 OSM</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target state="translated">開啟使用者選單</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target state="translated">歡迎</target>
+      </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target state="translated">最後更新</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target state="translated">登出</target>
+      </trans-unit>
+      <trans-unit id="inUlsUk" resname="Notes">
+        <source>Notes</source>
+        <target state="translated">註解</target>
+      </trans-unit>
+      <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
+        <source>This is the OpenStreetMap Welcome Tool.&#13;
+It helps you discover new mappers in your region and welcome them.</source>
+        <target state="translated">這是開放街圖歡迎工具。
+能夠幫助你發現所在區域的新圖客，並且歡迎他們。</target>
+      </trans-unit>
+      <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
+        <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
+        <target state="translated">如果你想加所在區域或你所使用的語言到歡迎工具，請看我們的 {contributing_link_start}貢獻指南{link_end}。</target>
+      </trans-unit>
+      <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
+        <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
+        <target state="translated">{osmbe_link_start}開放街圖比利時{link_end}開發，並且由 {lccwg_link_start}在地社群與工作小組{link_end}支援。</target>
+      </trans-unit>
+      <trans-unit id="YIax95J" resname="Previous mapper">
+        <source>Previous mapper</source>
+        <target state="translated">上一位圖客</target>
+      </trans-unit>
+      <trans-unit id="K5yIR1M" resname="Next mapper">
+        <source>Next mapper</source>
+        <target state="translated">下一位圖客</target>
+      </trans-unit>
+      <trans-unit id="P1BTs65" resname="africa">
+        <source>africa</source>
+        <target state="translated">非洲</target>
+      </trans-unit>
+      <trans-unit id="7hOb0P2" resname="asia">
+        <source>asia</source>
+        <target state="translated">亞洲</target>
+      </trans-unit>
+      <trans-unit id="xYXx3su" resname="australia">
+        <source>australia</source>
+        <target state="translated">澳大利亞洲</target>
+      </trans-unit>
+      <trans-unit id="sR8gPo5" resname="europe">
+        <source>europe</source>
+        <target state="translated">歐洲</target>
+      </trans-unit>
+      <trans-unit id="RU.NdIz" resname="north-america">
+        <source>north-america</source>
+        <target state="translated">北美</target>
+      </trans-unit>
+      <trans-unit id="OplCJNt" resname="south-america">
+        <source>south-america</source>
+        <target state="translated">南美</target>
+      </trans-unit>
+      <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
+        <source>{count} new mappers ({percent} %) have already been welcomed</source>
+        <target state="translated">{count} 位新圖客 ({percent} %) 已被歡迎</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

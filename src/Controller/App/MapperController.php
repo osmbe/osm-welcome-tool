@@ -8,8 +8,6 @@ use App\Entity\Template;
 use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
-use DateTime;
-use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -33,43 +31,43 @@ class MapperController extends AbstractController
     ) {
     }
 
-    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper', requirements: ['regionKey' => '[\w\-_]+'])]
+    #[Route('/mapper/{id}', name: 'app_mapper')]
     #[IsGranted('ROLE_USER')]
-    public function index(Request $request, string $regionKey, Mapper $mapper): Response
+    public function index(Request $request, Mapper $mapper): Response
     {
         $this->mapper = $mapper;
 
-        $region = $this->provider->getRegion($regionKey);
+        $region = $this->provider->getRegion(null, $this->mapper->getRegion());
 
         // Welcome
         if ($request->query->has('welcome')) {
             $this->updateWelcomeDate($request->query->getBoolean('welcome'));
 
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
         if ($request->query->has('reply')) {
             $this->updateWelcomeReply($request->query->getBoolean('reply'));
 
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
 
         // Templates
-        $this->templates = $this->templatesProvider->getTemplates($regionKey);
+        $this->templates = $this->templatesProvider->getTemplates($region['key']);
         $template = $this->getDefaultTemplate($request);
 
         // Notes
         $formNote = $this->note($request);
         if (true === $formNote->isSubmitted() && true === $formNote->isValid()) {
-            return $this->redirectToRoute('app_mapper', ['regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
         }
 
         // Prev/Next mapper
         /** @var Mapper[] */
         $mappers = $this->entityManager
             ->getRepository(Mapper::class)
-            ->findBy(['region' => $regionKey]);
+            ->findBy(['region' => $region['key']]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?DateTimeImmutable {
+        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
             return $mapper->getFirstChangeset()->getCreatedAt();
         }, $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
@@ -99,7 +97,7 @@ class MapperController extends AbstractController
         }
 
         if (true === $state) {
-            $welcome->setDate(new DateTime());
+            $welcome->setDate(new \DateTime());
             $welcome->setUser($this->getUser());
 
             $this->entityManager->persist($welcome);
@@ -116,9 +114,10 @@ class MapperController extends AbstractController
         if (null === $welcome) {
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
-            $welcome->setDate(new DateTime());
+            $welcome->setDate(new \DateTime());
+            $welcome->setUser($this->getUser());
         }
-        $welcome->setReply($state ? new DateTime() : null);
+        $welcome->setReply($state ? new \DateTime() : null);
 
         $this->entityManager->persist($welcome);
         $this->entityManager->flush();
@@ -175,7 +174,7 @@ class MapperController extends AbstractController
         $form->handleRequest($request);
 
         if (true === $form->isSubmitted() && true === $form->isValid()) {
-            $note->setDate(new DateTime());
+            $note->setDate(new \DateTime());
 
             $this->entityManager->persist($note);
             $this->entityManager->flush();

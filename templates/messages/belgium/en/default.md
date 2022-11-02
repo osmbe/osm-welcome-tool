@@ -18,7 +18,7 @@ If you want to know how to tag something, the quickest solution may be to search
 * When you save your changeset, add a short but clear comment on what you have changed. ([more info here](https://wiki.openstreetmap.org/wiki/Good_changeset_comments)).
 * Make sure roads connect to each other, but don't connect them to landuse such as fields or residential areas.
 * To get a glimpse of what is going on around the world, subscribe to the [weekly newsletter about the OpenStreetMap world](https://weeklyosm.eu/).
-* Keep track of your edits with the [how did you contribute tool](http://hdyc.neis-one.org/)
+* Keep track of your edits with the [how did you contribute tool](https://hdyc.neis-one.org/)
 
 We have a wiki page to help new mappers get started. For more tips and pointers, [have a look there!](https://wiki.openstreetmap.org/wiki/WikiProject_Belgium/Beginner)
 We do hope to hear from you, and meanwhile:

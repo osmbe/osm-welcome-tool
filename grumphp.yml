@@ -16,10 +16,11 @@ grumphp:
         - /^assets\/typescript\/(.*)/
     phpcsfixer:
       config: ".php-cs-fixer.dist.php"
-    phpstan: ~
+    phpstan:
+      ignore_patterns: [deploy.php]
     phpunit: ~
     phpversion:
-      project: "8.0"
+      project: "8.1"
     twigcs:
       ruleset: "\\FriendsOfTwig\\Twigcs\\Ruleset\\Official"
       exclude: ["vendor/"]

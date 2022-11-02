@@ -3,9 +3,6 @@
 namespace App\Command;
 
 use App\Service\RegionsProvider;
-use DateInterval;
-use DateTime;
-use Exception;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -45,37 +42,39 @@ class UpdateCommand extends Command
         $lastUpdate = [];
         $regions = $this->provider->getRegions();
 
-        foreach ($regions as $key => $region) {
-            $cacheKey = sprintf('last_update.%s', $key);
+        foreach ($regions as $continent => $group) {
+            foreach ($group as $key => $region) {
+                $cacheKey = sprintf('last_update.%s', $key);
 
-            $io->title(sprintf('%s (%s)', $region['name'], date('Y-m-d')));
+                $io->title(sprintf('%s (%s)', $region['name'], date('Y-m-d')));
 
-            $lastUpdate = $this->cache->getItem($cacheKey);
-            if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
-                if (!$lastUpdate->isHit()) {
-                    // If cache is not set, get new mappers from the last 5 days
-                    $date = (new DateTime())->sub(new DateInterval('P5D'))->format('Y-m-d');
-                    $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
-                } elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
-                    // If last update was today and process is forced, get new mappers from yesterday
-                    $date = (new DateTime($lastUpdate->get()))->sub(new DateInterval('P1D'))->format('Y-m-d');
-                    $io->note(sprintf('Get new mappers from %s (forced).', $date));
+                $lastUpdate = $this->cache->getItem($cacheKey);
+                if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
+                    if (!$lastUpdate->isHit()) {
+                        // If cache is not set, get new mappers from the last 5 days
+                        $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
+                        $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
+                    } elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
+                        // If last update was today and process is forced, get new mappers from yesterday
+                        $date = (new \DateTime($lastUpdate->get()))->sub(new \DateInterval('P1D'))->format('Y-m-d');
+                        $io->note(sprintf('Get new mappers from %s (forced).', $date));
+                    } else {
+                        // Get new mappers from the last update date
+                        $date = (new \DateTime($lastUpdate->get()))->format('Y-m-d');
+                        $io->note(sprintf('Get new mappers from %s.', $date));
+                    }
+
+                    try {
+                        $this->process($key, $date, $output);
+
+                        $lastUpdate->set(date('c'));
+                        $this->cache->save($lastUpdate);
+                    } catch (\Exception $e) {
+                        $io->error($e->getMessage());
+                    }
                 } else {
-                    // Get new mappers from the last update date
-                    $date = (new DateTime($lastUpdate->get()))->format('Y-m-d');
-                    $io->note(sprintf('Get new mappers from %s.', $date));
+                    $io->note('Skip, already processed.');
                 }
-
-                try {
-                    $this->process($key, $date, $output);
-
-                    $lastUpdate->set(date('c'));
-                    $this->cache->save($lastUpdate);
-                } catch (Exception $e) {
-                    $io->error($e->getMessage());
-                }
-            } else {
-                $io->note('Skip, already processed.');
             }
         }
 

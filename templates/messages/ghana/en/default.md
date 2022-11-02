@@ -15,7 +15,7 @@ Here's some help to get you started:
 
 * [Welcome Mat](https://welcome.openstreetmap.org/) gives a good overview of the What? Who? Why? How?, about and Working with OpenStreetMap 
 * You can find a lot of information about how to map on [the wiki](https://wiki.openstreetmap.org/wiki/).  
-* [LearnOSM](http://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor.
+* [LearnOSM](https://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor.
 * If you want to know how to tag something, the quickest solution may be to search for `site:wiki.openstreetmap.org [search term]` with your favourite search engine.
 * When you save your changeset, add a clear comment on what you have changed, not just a symbol or random text ([documentation](https://wiki.openstreetmap.org/wiki/Good_changeset_comments)).
 * Do not connect `landuse` to `roads`; leave a small empty area between the two.

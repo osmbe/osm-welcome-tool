@@ -16,7 +16,7 @@ Encore
   // copy image assets
   .copyFiles({
     from: './assets/images',
-    to: 'images/[path][name].[hash:8].[ext]',
+    to: Encore.isProduction() ? 'images/[path][name].[hash:8].[ext]' : 'images/[path][name].[ext]',
   })
 
   /*

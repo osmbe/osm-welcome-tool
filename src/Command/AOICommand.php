@@ -4,7 +4,6 @@ namespace App\Command;
 
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
-use ErrorException;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -43,7 +42,7 @@ class AOICommand extends Command
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
         if ($validate->count() > 0) {
-            throw new ErrorException($validate->get(0)->getMessage());
+            throw new \ErrorException($validate->get(0)->getMessage());
         }
     }
 
@@ -52,7 +51,7 @@ class AOICommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $key = $input->getArgument('region');
-        $region = $this->provider->getRegion($key);
+        $region = $this->provider->getRegion(null, $key);
 
         if (null === $region) {
             $io->error(sprintf('Region "%s" is not a valid key.', $key));
@@ -62,7 +61,7 @@ class AOICommand extends Command
 
         $name = sprintf('Welcome Tool for %s', $region['name']);
         $filters = [
-            'geometry' => $this->provider->getGeometry($key),
+            'geometry' => $this->provider->getGeometry($region['continent'], $region['key']),
             'all_reasons' => '40',
         ];
 

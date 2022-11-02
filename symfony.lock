@@ -166,6 +166,9 @@
     "justinrainbow/json-schema": {
         "version": "5.2.11"
     },
+    "knplabs/knp-time-bundle": {
+        "version": "v1.19.0"
+    },
     "knpuniversity/oauth2-client-bundle": {
         "version": "2.9",
         "recipe": {
@@ -413,6 +416,15 @@
         "files": [
             "bin/console"
         ]
+    },
+    "symfony/crowdin-translation-provider": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "8acdcff2acee247e79f16ed0b2abc8fd53cf0d30"
+        }
     },
     "symfony/css-selector": {
         "version": "v6.0.2"

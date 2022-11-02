@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="GvALh0." resname="Albania">
+        <source>Albania</source>
+        <target state="translated">Albanien</target>
+      </trans-unit>
+      <trans-unit id="ycqwI43" resname="Austria">
+        <source>Austria</source>
+        <target state="translated">Österreich</target>
+      </trans-unit>
+      <trans-unit id="Lx1H62e" resname="Bangladesh">
+        <source>Bangladesh</source>
+        <target state="translated">Bangladesch</target>
+      </trans-unit>
+      <trans-unit id="NIhB71P" resname="Belgium">
+        <source>Belgium</source>
+        <target state="translated">Belgien</target>
+      </trans-unit>
+      <trans-unit id="liHAc2R" resname="Bolivia">
+        <source>Bolivia</source>
+        <target state="translated">Bolivien</target>
+      </trans-unit>
+      <trans-unit id="Zrhr8PB" resname="Bulgaria">
+        <source>Bulgaria</source>
+        <target state="translated">Bulgarien</target>
+      </trans-unit>
+      <trans-unit id="qCJN1GK" resname="British Columbia">
+        <source>British Columbia</source>
+        <target state="translated">Britisch-Kolumbien</target>
+      </trans-unit>
+      <trans-unit id="7tvm2Ww" resname="Ontario">
+        <source>Ontario</source>
+        <target state="translated">Ontario</target>
+      </trans-unit>
+      <trans-unit id="OMKd.Cf" resname="Catalan Countries">
+        <source>Catalan Countries</source>
+        <target state="translated">Països Catalans</target>
+      </trans-unit>
+      <trans-unit id="EENoKQM" resname="China">
+        <source>China</source>
+        <target state="translated">China</target>
+      </trans-unit>
+      <trans-unit id="ZbtG7Qe" resname="Beijing">
+        <source>Beijing</source>
+        <target state="translated">Peking</target>
+      </trans-unit>
+      <trans-unit id="EAhQbhX" resname="Hunan">
+        <source>Hunan</source>
+        <target state="translated">Hunan</target>
+      </trans-unit>
+      <trans-unit id="a2Fa2xM" resname="Colombia">
+        <source>Colombia</source>
+        <target state="translated">Kolumbien</target>
+      </trans-unit>
+      <trans-unit id="5WQOBAf" resname="Bogotá">
+        <source>Bogotá</source>
+        <target state="translated">Bogota</target>
+      </trans-unit>
+      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
+        <source>DACHLI-Obersee-Rheintal</source>
+        <target state="translated">DACHLI-Obersee-Rheintal</target>
+      </trans-unit>
+      <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
+        <source>Democratic Republic of the Congo</source>
+        <target state="translated">Demokratische Republik Kongo</target>
+      </trans-unit>
+      <trans-unit id="ehyk73U" resname="France">
+        <source>France</source>
+        <target state="translated">Frankreich</target>
+      </trans-unit>
+      <trans-unit id="gNtMzco" resname="Germany">
+        <source>Germany</source>
+        <target state="translated">Deutschland</target>
+      </trans-unit>
+      <trans-unit id="2tEUtu1" resname="Berlin">
+        <source>Berlin</source>
+        <target state="translated">Berlin</target>
+      </trans-unit>
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+        <source>Berlin-Neukölln</source>
+        <target state="translated">Berlin-Neukölln</target>
+      </trans-unit>
+      <trans-unit id="XS9ZcZj" resname="Bremen">
+        <source>Bremen</source>
+        <target state="translated">Bremen</target>
+      </trans-unit>
+      <trans-unit id="WDIBwe_" resname="Ghana">
+        <source>Ghana</source>
+        <target state="translated">Ghana</target>
+      </trans-unit>
+      <trans-unit id="HtjH5Wy" resname="Hong Kong">
+        <source>Hong Kong</source>
+        <target state="translated">Hongkong</target>
+      </trans-unit>
+      <trans-unit id="28dKNtj" resname="Indonesia">
+        <source>Indonesia</source>
+        <target state="translated">Indonesien</target>
+      </trans-unit>
+      <trans-unit id="Ar8d_po" resname="Ireland">
+        <source>Ireland</source>
+        <target state="translated">Irland</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target state="translated">Italien</target>
+      </trans-unit>
+      <trans-unit id="ZHKUODs" resname="Japan">
+        <source>Japan</source>
+        <target state="translated">Japan</target>
+      </trans-unit>
+      <trans-unit id="SoZ0JMc" resname="Kosovo">
+        <source>Kosovo</source>
+        <target state="translated">Kosovo</target>
+      </trans-unit>
+      <trans-unit id="KqL871D" resname="Libya">
+        <source>Libya</source>
+        <target state="translated">Libyen</target>
+      </trans-unit>
+      <trans-unit id="7XbxkWI" resname="Luxembourg">
+        <source>Luxembourg</source>
+        <target state="translated">Luxemburg</target>
+      </trans-unit>
+      <trans-unit id="4QlT93Y" resname="Macao">
+        <source>Macao</source>
+        <target state="translated">Macau</target>
+      </trans-unit>
+      <trans-unit id="w2aPWBK" resname="Panama">
+        <source>Panama</source>
+        <target state="translated">Panama</target>
+      </trans-unit>
+      <trans-unit id="w3gshtg" resname="Philippines">
+        <source>Philippines</source>
+        <target state="translated">Philippinen</target>
+      </trans-unit>
+      <trans-unit id="f2lkmtc" resname="Poland">
+        <source>Poland</source>
+        <target state="translated">Polen</target>
+      </trans-unit>
+      <trans-unit id="6iNybdD" resname="Romania">
+        <source>Romania</source>
+        <target state="translated">Rumänien</target>
+      </trans-unit>
+      <trans-unit id="okZnDb9" resname="Scotland">
+        <source>Scotland</source>
+        <target state="translated">Schottland</target>
+      </trans-unit>
+      <trans-unit id="jvQeb0s" resname="Spain">
+        <source>Spain</source>
+        <target state="translated">Spanien</target>
+      </trans-unit>
+      <trans-unit id="3XavGW4" resname="Taiwan">
+        <source>Taiwan</source>
+        <target state="translated">Taiwan</target>
+      </trans-unit>
+      <trans-unit id="lVVmT89" resname="Tanzania">
+        <source>Tanzania</source>
+        <target state="translated">Tansania</target>
+      </trans-unit>
+      <trans-unit id="B8Z9du_" resname="Turkey">
+        <source>Turkey</source>
+        <target state="translated">Türkei</target>
+      </trans-unit>
+      <trans-unit id="iT1ThWO" resname="Uganda">
+        <source>Uganda</source>
+        <target state="translated">Uganda</target>
+      </trans-unit>
+      <trans-unit id="efbQcyo" resname="Kansas">
+        <source>Kansas</source>
+        <target state="translated">Kansas</target>
+      </trans-unit>
+      <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
+        <source>Commonwealth of Massachusetts</source>
+        <target state="translated">Commonwealth von Massachusetts</target>
+      </trans-unit>
+      <trans-unit id="JjJaVG_" resname="Michigan">
+        <source>Michigan</source>
+        <target state="translated">Michigan</target>
+      </trans-unit>
+      <trans-unit id="Z5_V2E6" resname="New York State">
+        <source>New York State</source>
+        <target state="translated">Bundesstaat New York</target>
+      </trans-unit>
+      <trans-unit id="mMtv4M6" resname="Oregon">
+        <source>Oregon</source>
+        <target state="translated">Oregon</target>
+      </trans-unit>
+      <trans-unit id="grzhC1_" resname="Utah">
+        <source>Utah</source>
+        <target state="translated">Utah</target>
+      </trans-unit>
+      <trans-unit id="b.yzrtq" resname="Vermont">
+        <source>Vermont</source>
+        <target state="translated">Vermont</target>
+      </trans-unit>
+      <trans-unit id="MjJ73ih" resname="Washington State">
+        <source>Washington State</source>
+        <target state="translated">Bundesstaat Washington</target>
+      </trans-unit>
+      <trans-unit id="dE9wKAg" resname="Review requested">
+        <source>Review requested</source>
+        <target state="translated">Überprüfung erbeten</target>
+      </trans-unit>
+      <trans-unit id="UjpP989" resname="Invalid tag modification">
+        <source>Invalid tag modification</source>
+        <target state="translated">Ungültige Tag-Änderung</target>
+      </trans-unit>
+      <trans-unit id="nvrTGpK" resname="No note.">
+        <source>No note.</source>
+        <target state="translated">Keine Notiz.</target>
+      </trans-unit>
+      <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
+        <source>Markdown is allowed.</source>
+        <target state="translated">Markdown ist erlaubt.</target>
+      </trans-unit>
+      <trans-unit id="3Mg5pAF" resname="View">
+        <source>View</source>
+        <target state="translated">Ansicht</target>
+      </trans-unit>
+      <trans-unit id="nGrjZeg" resname="Open other tools">
+        <source>Open other tools</source>
+        <target state="translated">Andere Tools öffnen</target>
+      </trans-unit>
+      <trans-unit id="PzH3t8N" resname="Harmful">
+        <source>Harmful</source>
+        <target state="translated">Schädlich</target>
+      </trans-unit>
+      <trans-unit id="Dv2SozW" resname="Checked">
+        <source>Checked</source>
+        <target state="translated">Geprüft</target>
+      </trans-unit>
+      <trans-unit id="nc.5jid" resname="Timeline">
+        <source>Timeline</source>
+        <target state="translated">Zeitleiste</target>
+      </trans-unit>
+      <trans-unit id="9jh5.Wk" resname="Account created">
+        <source>Account created</source>
+        <target state="translated">Konto erstellt</target>
+      </trans-unit>
+      <trans-unit id="9kKaXhE" resname="Mapper since {date}">
+        <source>Mapper since {date}</source>
+        <target state="translated">Kartierer seit {date}</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target state="translated">Profil</target>
+      </trans-unit>
+      <trans-unit id="6wYsMHV" resname="Send a welcome message">
+        <source>Send a welcome message</source>
+        <target state="translated">Willkommensnachricht senden</target>
+      </trans-unit>
+      <trans-unit id="VrVkt1x" resname="Templates">
+        <source>Templates</source>
+        <target state="translated">Vorlagen</target>
+      </trans-unit>
+      <trans-unit id="RXDbS53" resname="Copy text to clipboard">
+        <source>Copy text to clipboard</source>
+        <target state="translated">Text in Zwischenablage kopieren</target>
+      </trans-unit>
+      <trans-unit id="OEQc50U" resname="Load message in osm.org">
+        <source>Load message in osm.org</source>
+        <target state="translated">Nachricht in osm.org laden</target>
+      </trans-unit>
+      <trans-unit id="oJyOJvo" resname="Changesets">
+        <source>Changesets</source>
+        <target state="translated">Änderungssätze</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target state="translated">Geschichte</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target state="translated">Startseite</target>
+      </trans-unit>
+      <trans-unit id="byAvVKe" resname="List">
+        <source>List</source>
+        <target state="translated">Liste</target>
+      </trans-unit>
+      <trans-unit id="_nTKo1O" resname="Mapper">
+        <source>Mapper</source>
+        <target state="translated">Kartierer</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target state="translated">Benutzername</target>
+      </trans-unit>
+      <trans-unit id="7z7rhD." resname="First changeset">
+        <source>First changeset</source>
+        <target state="translated">Erste Änderung</target>
+      </trans-unit>
+      <trans-unit id="k2oWHDk" resname="Editor">
+        <source>Editor</source>
+        <target state="translated">Editor</target>
+      </trans-unit>
+      <trans-unit id="yj3GEvR" resname="Locale">
+        <source>Locale</source>
+        <target state="translated">Sprache</target>
+      </trans-unit>
+      <trans-unit id="1HiPJW9" resname="View profile">
+        <source>View profile</source>
+        <target state="translated">Profile ansehen</target>
+      </trans-unit>
+      <trans-unit id="7fvt8pP" resname="Mappers">
+        <source>Mappers</source>
+        <target state="translated">Kartierer</target>
+      </trans-unit>
+      <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
+        <source>List of mappers that have their first edit in the region</source>
+        <target state="translated">Liste der Kartierer, die ihre erste Bearbeitung in der Region haben</target>
+      </trans-unit>
+      <trans-unit id="aidpUCp" resname="Previous month">
+        <source>Previous month</source>
+        <target state="translated">Vorheriges Monat</target>
+      </trans-unit>
+      <trans-unit id="dOUyEf7" resname="Next month">
+        <source>Next month</source>
+        <target state="translated">Nächstes Monat</target>
+      </trans-unit>
+      <trans-unit id="2NosSd8" resname="Note">
+        <source>Note</source>
+        <target state="translated">Notiz</target>
+      </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target state="translated">Hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="MiwOE_9" resname="Add a note">
+        <source>Add a note</source>
+        <target state="translated">Notiz hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
+        <source>Welcomed by {userlink}</source>
+        <target state="translated">Begrüßt von {userlink}</target>
+      </trans-unit>
+      <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
+        <source>{mapper} has been welcomed</source>
+        <target state="translated">{mapper} wurde begrüßt</target>
+      </trans-unit>
+      <trans-unit id="03qZ_zI" resname="{mapper} has replied">
+        <source>{mapper} has replied</source>
+        <target state="translated">{mapper} hat geantwortet</target>
+      </trans-unit>
+      <trans-unit id="zbCuPR7" resname="Changeset">
+        <source>Changeset</source>
+        <target state="translated">Änderungssatz</target>
+      </trans-unit>
+      <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
+        <source>Not welcomed yet</source>
+        <target state="translated">Noch nicht begrüßt</target>
+      </trans-unit>
+      <trans-unit id="7QGDsnR" resname="Not replied yet">
+        <source>Not replied yet</source>
+        <target state="translated">Noch nicht geantwortet</target>
+      </trans-unit>
+      <trans-unit id="5JIt4ui" resname="{userlink} has replied">
+        <source>{userlink} has replied</source>
+        <target state="translated">{userlink} hat geantwortet</target>
+      </trans-unit>
+      <trans-unit id="vQEb23j" resname="Login with OSM">
+        <source>Login with OSM</source>
+        <target state="translated">Mit OSM anmelden</target>
+      </trans-unit>
+      <trans-unit id="GZQaZt8" resname="Open user menu">
+        <source>Open user menu</source>
+        <target state="translated">Benutzermenü öffnen</target>
+      </trans-unit>
+      <trans-unit id="SpAiaNX" resname="Welcomed">
+        <source>Welcomed</source>
+        <target state="translated">Begrüßt</target>
+      </trans-unit>
+      <trans-unit id="s25GbG6" resname="Last update">
+        <source>Last update</source>
+        <target state="translated">Letzte Aktualisierung</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target state="translated">Abmelden</target>
+      </trans-unit>
+      <trans-unit id="inUlsUk" resname="Notes">
+        <source>Notes</source>
+        <target state="translated">Notizen</target>
+      </trans-unit>
+      <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
+        <source>This is the OpenStreetMap Welcome Tool.&#13;
+It helps you discover new mappers in your region and welcome them.</source>
+        <target state="translated">Dies ist das OpenStreetMap Welcome Tool
+Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu heißen.</target>
+      </trans-unit>
+      <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
+        <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
+        <target state="translated">Wenn du deine Region oder deine Sprache zum Willkommens-Tool hinzufügen möchtest, schau dir unseren {contributing_link_start}Anleitung zur Mitarbeit{link_end} an.</target>
+      </trans-unit>
+      <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
+        <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
+        <target state="translated">Entwickelt von {osmbe_link_start}OpenStreetMap Belgien{link_end} und unterstützt von der {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+      </trans-unit>
+      <trans-unit id="YIax95J" resname="Previous mapper">
+        <source>Previous mapper</source>
+        <target state="translated">Vorheriger Kartierer</target>
+      </trans-unit>
+      <trans-unit id="K5yIR1M" resname="Next mapper">
+        <source>Next mapper</source>
+        <target state="translated">Nächster Kartierer</target>
+      </trans-unit>
+      <trans-unit id="P1BTs65" resname="africa">
+        <source>africa</source>
+        <target state="translated">Afrika</target>
+      </trans-unit>
+      <trans-unit id="7hOb0P2" resname="asia">
+        <source>asia</source>
+        <target state="translated">Asien</target>
+      </trans-unit>
+      <trans-unit id="xYXx3su" resname="australia">
+        <source>australia</source>
+        <target state="translated">Australien</target>
+      </trans-unit>
+      <trans-unit id="sR8gPo5" resname="europe">
+        <source>europe</source>
+        <target state="translated">Europa</target>
+      </trans-unit>
+      <trans-unit id="RU.NdIz" resname="north-america">
+        <source>north-america</source>
+        <target state="translated">Nordamerika</target>
+      </trans-unit>
+      <trans-unit id="OplCJNt" resname="south-america">
+        <source>south-america</source>
+        <target state="translated">Südamerika</target>
+      </trans-unit>
+      <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
+        <source>{count} new mappers ({percent} %) have already been welcomed</source>
+        <target state="translated">{count} neue Kartierer ({percent} %) wurden bereits begrüßt</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
