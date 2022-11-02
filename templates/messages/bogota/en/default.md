@@ -3,57 +3,71 @@ name: Default
 title: Welcome to OpenStreetMap
 ---
 
-Hi {{ mapper.displayName }}
+Hello {{ mapper.displayName }}
 
-I noticed you made your first contribution to OpenStreetMapi in Bogotá.
-Congratulations, and thanks!
-As of now, you can consider yourself part of the Colombian OSM community.
-Your edit is live within a couple of minutes.
-After that, you will have to refresh your browser to see your edit.
+I noticed that you have made your first contribution to OpenStreetMap-OSM in Bogotá.
+Congratulations and thank you!
+From now on you can consider yourself part of the OSM Colombia community.
+Your edits are already in the database, but some of them may not be visible in the maps yet. You have to wait a bit, or refresh your browser.
 
-I want to be with you during this journey of discovering the world of OpenStreetMap.
+I tell you that you have started this journey into the world of OpenStreetMap, where you will discover many things.
+You will see that it is very interesting.
 
-To begin, I want to share with you some interesting links:
+To start, here are some interesting links:
 
-* I highly recommend using the [OSM wiki-pages](https://wiki.openstreetmap.org/).
-There you can the information that you need.
+* I recommend you to read the [OSM wiki](https://wiki.openstreetmap.org/wiki/ES:P%C3%A1gina_principal).
+There you will find all the information you need.
+All of us who contribute to the map continuously read the Wiki; and if something is not well explained, we document it there.
 
-* In Colombia, we have a [Guide to map](https://wiki.openstreetmap.org/wiki/Colombia/Guide_for_mapping) that explains in detail what can you map and how to do it.
+* In Colombia, we have a [Guide to mapping](https://wiki.openstreetmap.org/wiki/ES:Colombia/Gu%C3%ADa_para_mapear) that explains in detail what you can map and how you can do it.
+I recommend you to read it, with that you are sure of what you are doing.
 
-* [learnOSM](https://learnosm.org) is a good place to learn more about OSM.
-Instructions are available for using the iD browser editor and the more advanced JOSM editor.
+* learnOSM](https://learnosm.org/es/) is a good place to learn about the OSM world.
+There are instructions for the iD editor (which you can use from the web browser) and for a more advanced editor called JOSM (Java Application).
 
-* If you don’t find how to map something within the editor of your choice, the quickest solution is look at [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) on the wiki.
-In that list you can see all that you can add to the map.
-At the beginning, this list could be huge, but by just taking a look you can imagine how can improve the map.
+* If in the editor you are using, you can't find how to map something, the quickest solution is to look it up on the [map features] wiki page (https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa).
+In that list you can see everything that can be added to the map.
+At first, this list may be huge, but with a glance you will be able to figure out how to improve the map.
+Keep in mind that not everything that can be mapped is valid for Colombia; that's why I told you to check the guide first.
 
-* If you are a business owner and want to learn how to add OpenStreetMap to your website, check out the site [Switch2OSM](https://switch2osm.org/)
+* If you have a web page and you want to incorporate the OpenStreetMap map, you can check this site: [Switch2OSM](https://switch2osm.org/)
 
-* Want to see who’s mapping near you, or want to see how much you’ve been doing yourself, check out the maps at [resultmaps.neis-one.org](https://resultmaps.neis-one.org/).
+* It's always good to know who is contributing to the map near where you are working, so you can take a look at [resultmaps.neis-one.org](https://resultmaps.neis-one.org/). There you will see that we are hundreds of people working on this project.
 
-If you have any questions like:
-I think I might have broken something, or you’re in doubt how to map something particular, then you can use one of these channels to contact the community:
+If you have doubts or questions like the following:
 
-* The OpenStreetMap Colombian community has a [Telegram channel](https://telegram.me/osmco) where you can ask anything or to know the activities that they do.
-This is an space where members discuss about different things about the map.
+* do I think I have damaged something?
+* how do I map a certain thing that I can't find in the wiki?
 
-* For more complicated questions you can search in or post on the [Help-site](https://help.openstreetmap.org).
+Then you can use one of these means to contact the community:
 
-In Bogotá, we have the [MaptimeBogota](https://maptime.io/bogota/) group that organizes peridic meetings, to map and to talk about the map.
-This event is ideal for beginners like you.
-Do not miss the [next event](https://www.meetup.com/maptime-bogota-colombia-osm/).
+* the OpenStreetMap community in Colombia has a [Telegram channel](https://telegram.me/osmco), where you can ask questions or learn about their activities.
+It is a space where members discuss things around the map.
+You can start by greeting the community, introducing yourself and sharing your interest in OSM.
 
-* If you want to request the addition of a business, without knowing the whole details about mapping, you can use the [minegocio tool](https://maptimebogota.github.io/minegocio/).
+* There is also [the communications platform Community (Discourse)](https://community.openstreetmap.org/), where you can ask anything, and have a wider audience.
 
-So what should you map next?
-I recommend you to add features that are close to you and you know them well, like:
-Buildings, restaurants, streets, sidewalks, pedestrian paths, benches.
-You are the expert in your area.
-If you find a business that is already mapped, you can complement it by adding its address, opening hours, social networks.
-You will see how satisfying is filling in the map around you.
+* In Bogota, we have the group [MaptimeBogota](https://maptime.io/bogota/) that organizes meetings periodically, to map the city.
+It is an ideal event for beginners like you, since we explain everything from the beginning.
+Don't miss the [next event](https://www.meetup.com/maptime-bogota-colombia-osm/).
+You can also contact us by [Telegram](https://t.me/MaptimeBogota).
 
-Happy Mapping!
+* On the other hand, if you want to request the addition of a business, without having to know the mapping details, you can use the [minebusiness tool](https://maptimebogota.github.io/minegocio/).
+
+Now you may be wondering what can I map now?
+I recommend that you add things that are close to you and that you know well, such as:
+Buildings (houses, buildings); stores (restaurants, hairdressers), roads, sidewalks and pedestrian paths; chairs/benches.
+You are the expert in your area!
+If you find a business on the map that is already mapped, you can complement it by adding its address, opening hours, social networks. 
+You will see how much fun it is to fill the map around you with details.
+
+You can also use applications like [EveryDoor](https://every-door.app/) or [StreetComplete](https://streetcomplete.app/) to add to the map from your cell phone.
+
+Finally, reply to this message or join one of the local channels, so the community can get to know you, and we can work together.
+
+Enjoy the mapping!
 
 
 
 MaptimeBogota
+
