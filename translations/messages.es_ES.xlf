@@ -97,6 +97,10 @@
         <source>Hong Kong</source>
         <target state="translated">Hong Kong</target>
       </trans-unit>
+      <trans-unit id="UEvjCE9" resname="Hungary">
+        <source>Hungary</source>
+        <target state="translated">Hungría</target>
+      </trans-unit>
       <trans-unit id="28dKNtj" resname="Indonesia">
         <source>Indonesia</source>
         <target state="translated">Indonesia</target>
