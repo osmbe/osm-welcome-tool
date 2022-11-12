@@ -133,6 +133,10 @@
         <source>Macao</source>
         <target state="translated">マカオ</target>
       </trans-unit>
+      <trans-unit id="BJUqD5h" resname="Nigeria">
+        <source>Nigeria</source>
+        <target state="translated">ナイジェリア</target>
+      </trans-unit>
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target state="translated">朝鮮民主主義人民共和国</target>
