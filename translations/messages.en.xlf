@@ -133,6 +133,10 @@
         <source>Macao</source>
         <target>Macao</target>
       </trans-unit>
+      <trans-unit id="BJUqD5h" resname="Nigeria">
+        <source>Nigeria</source>
+        <target>Nigeria</target>
+      </trans-unit>
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target>North Korea</target>
