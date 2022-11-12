@@ -12,6 +12,10 @@ regions:
       name: Libya
       flag: 🇱🇾
       osmcha.id: b1e4eed6-dccb-4207-aecc-d9e5d6ca4871
+    nigeria:
+      name: Nigeria
+      flag: 🇳🇬
+      osmcha.id: c9a55728-9619-422b-abb0-e0fd55e0a780
     tanzania:
       name: Tanzania
       flag: 🇹🇿
