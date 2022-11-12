@@ -129,6 +129,10 @@
         <source>Macao</source>
         <target state="translated">Macao</target>
       </trans-unit>
+      <trans-unit id="rmF18cz" resname="North Korea">
+        <source>North Korea</source>
+        <target state="translated">Corea del Norte</target>
+      </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target state="translated">Panamá</target>

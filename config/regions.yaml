@@ -53,6 +53,10 @@ regions:
       name: Macao
       flag: 🇲🇴
       osmcha.id: 05c456ea-f4b3-4210-a091-55d9b8ec4705
+    north-korea:
+      name: North Korea
+      flag: 🇰🇵
+      osmcha.id: c09f9eb0-4a5b-4f5d-b485-9ea9024b9b5e
     philippines:
       name: Philippines
       flag: 🇵🇭
