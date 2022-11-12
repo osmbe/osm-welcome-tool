@@ -115,6 +115,10 @@ regions:
       name: Bremen
       flag: 🇩🇪
       osmcha.id: 348c2d07-4503-4fec-a727-674259670ec5
+    hungary:
+      name: Hungary
+      flag: 🇭🇺
+      osmcha.id: b874522b-99f2-4ef7-ad1f-b5d27323ca3a
     ireland:
       name: Ireland
       flag: ☘️
