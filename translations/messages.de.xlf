@@ -41,6 +41,10 @@
         <source>Catalan Countries</source>
         <target state="translated">Països Catalans</target>
       </trans-unit>
+      <trans-unit id="9Sc_I21" resname="Chile">
+        <source>Chile</source>
+        <target state="translated">Chile</target>
+      </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
         <target state="translated">China</target>
