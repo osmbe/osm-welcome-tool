@@ -209,6 +209,10 @@ regions:
       name: Bolivia
       flag: 🇧🇴
       osmcha.id: 2717cb5b-09c3-44e3-a7aa-8872b9506f0e
+    chile:
+      name: Chile
+      flag: 🇨🇱
+      osmcha.id: dc4766e3-6b07-454c-a777-56652b1dc438
     colombia:
       name: Colombia
       flag: 🇨🇴
@@ -217,6 +221,3 @@ regions:
       name: Bogotá
       flag: 🇨🇴
       osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
-    chile:
-      name: Chile
-      flag: 🇨🇱
