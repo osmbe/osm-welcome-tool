@@ -6,6 +6,7 @@ import de from 'apexcharts/dist/locales/de.json';
 import en from 'apexcharts/dist/locales/en.json';
 import es from 'apexcharts/dist/locales/es.json';
 import fr from 'apexcharts/dist/locales/fr.json';
+import hu from 'apexcharts/dist/locales/hu.json';
 import it from 'apexcharts/dist/locales/it.json';
 import ja from 'apexcharts/dist/locales/ja.json';
 import nl from 'apexcharts/dist/locales/nl.json';
@@ -16,7 +17,7 @@ import zh_TW from 'apexcharts/dist/locales/zh-tw.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [de, en, es, fr, it, ja, nl, pl, sq, zh_CN, zh_TW];
+const locales = [de, en, es, fr, hu, it, ja, nl, pl, sq, zh_CN, zh_TW];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
