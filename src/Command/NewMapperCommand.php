@@ -4,6 +4,7 @@ namespace App\Command;
 
 use App\Entity\Changeset;
 use App\Entity\Mapper;
+use App\Entity\Region;
 use App\Service\ChangesetProvider;
 use App\Service\MapperProvider;
 use App\Service\OpenStreetMapAPI;
@@ -149,6 +150,16 @@ class NewMapperCommand extends Command
                     );
                 }
             }
+
+            /** @var Region|null */
+            $r = $this->entityManager->find(Region::class, $key);
+            if (is_null($r)) {
+                $r = new Region();
+                $r->setId($key);
+            }
+            $r->setLastUpdate(new \DateTime());
+            $this->entityManager->persist($r);
+            $this->entityManager->flush();
 
             return Command::SUCCESS;
         } catch (ClientException $e) {
