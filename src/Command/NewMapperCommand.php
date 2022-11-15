@@ -89,7 +89,7 @@ class NewMapperCommand extends Command
                 $filesystem = new Filesystem();
                 $filesystem->dumpFile($path, $this->osm->getDeletedUsers()->getContent());
             }
-            $usersDeleted = array_map(fn ($line) => (int) (trim($line)), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
+            $usersDeleted = array_map(fn ($line) => (int) trim($line), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
 
             $features = array_filter($changesetsCollection['features'], fn (array $feature) => !\in_array((int) $feature['properties']['uid'], $usersDeleted, true));
 
