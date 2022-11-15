@@ -4,8 +4,8 @@ namespace App\Service;
 
 use App\Entity\Mapper;
 use App\Repository\MapperRepository;
+use App\Repository\RegionRepository;
 use App\Repository\WelcomeRepository;
-use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
 
 class RegionsProvider
@@ -13,7 +13,7 @@ class RegionsProvider
     private array $regions = [];
 
     public function __construct(
-        private CacheItemPoolInterface $cache,
+        private RegionRepository $regionRepository,
         private MapperRepository $mapperRepository,
         private WelcomeRepository $welcomeRepository,
         private string $projectDirectory
@@ -72,13 +72,13 @@ class RegionsProvider
 
     public function getLastUpdate(string $key): ?\DateTime
     {
-        $cacheKey = sprintf('last_update.%s', $key);
+        $region = $this->regionRepository->find($key);
 
-        if (true !== $this->cache->hasItem($cacheKey)) {
+        if (is_null($region)) {
             return null;
         }
 
-        return new \DateTime($this->cache->getItem($cacheKey)->get());
+        return $region->getLastUpdate();
     }
 
     public function getPercentage(string $key): array
