@@ -10,14 +10,15 @@ use App\Service\OpenStreetMapAPI;
 use App\Service\OSMChaAPI;
 use App\Service\RegionsProvider;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpClient\Exception\ClientException;
 use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
@@ -35,7 +36,8 @@ class NewMapperCommand extends Command
         private ChangesetProvider $changesetProvider,
         private MapperProvider $mapperProvider,
         private OSMChaAPI $osmcha,
-        private OpenStreetMapAPI $osm
+        private OpenStreetMapAPI $osm,
+        private CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }
@@ -58,6 +60,16 @@ class NewMapperCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $usersDeletedCache = $this->cache->getItem(DeletedUsersCommand::CACHE_KEY);
+        if (!$usersDeletedCache->isHit()) {
+            $deletedUsersCommand = $this->getApplication()->find('osm:deleted-users');
+            $deletedUsersCommand->run(new ArrayInput([]), $output);
+
+            $usersDeletedCache = $this->cache->getItem(DeletedUsersCommand::CACHE_KEY);
+        }
+
+        $usersDeleted = $usersDeletedCache->get();
+
         $io = new SymfonyStyle($input, $output);
 
         $key = $input->getArgument('region');
@@ -84,14 +96,11 @@ class NewMapperCommand extends Command
 
             $changesetsCollection = $changesetsResponse->toArray();
 
-            $path = 'var/users_deleted.txt';
-            (new Filesystem())->dumpFile($path, $this->osm->getDeletedUsers()->getContent());
-            $usersDeleted = array_map(fn ($line) => (int) trim($line), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
-
             $features = array_filter($changesetsCollection['features'], fn (array $feature) => !\in_array((int) $feature['properties']['uid'], $usersDeleted, true));
 
             $usersId = array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features);
 
+            /** @var Mapper[] */
             $mappers = [];
             $usersIdChunks = array_chunk($usersId, 50);
             foreach ($usersIdChunks as $i => $chunk) {
@@ -117,7 +126,9 @@ class NewMapperCommand extends Command
 
                 /* @todo Add first changeset check date ?? */
                 if (true === \in_array($firstChangeset->getId(), $changesetsId, true)) {
-                    $this->entityManager->persist($mapper);
+                    if (null === $this->entityManager->find(Mapper::class, $mapper->getId())) {
+                        $this->entityManager->persist($mapper);
+                    }
 
                     $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper): bool {
                         return $changeset->getMapper() === $mapper;
