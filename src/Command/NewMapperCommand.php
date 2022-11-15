@@ -17,6 +17,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpClient\Exception\ClientException;
 use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
@@ -83,26 +84,24 @@ class NewMapperCommand extends Command
 
             $changesetsCollection = $changesetsResponse->toArray();
 
-            $usersId = array_map(function (array $feature): int {
-                return (int) $feature['properties']['uid'];
-            }, $changesetsCollection['features']);
-            $changesetsId = array_map(function (array $feature): int {
-                return (int) $feature['id'];
-            }, $changesetsCollection['features']);
+            $path = 'var/users_deleted.txt';
+            if (!file_exists($path)) {
+                $filesystem = new Filesystem();
+                $filesystem->dumpFile($path, $this->osm->getDeletedUsers()->getContent());
+            }
+            $usersDeleted = array_map(fn ($line) => intval(trim($line)), file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));
 
-            $getUsersResponse = $this->osm->getUsers($usersId);
+            $features = array_filter($changesetsCollection['features'], fn (array $feature) => !in_array((int) $feature['properties']['uid'], $usersDeleted, true));
 
-            $io->text(sprintf('%s %s', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url')));
+            $usersId = array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features);
 
-            $usersArray = $getUsersResponse->toArray();
+            $mappers = [];
+            $usersIdChunks = array_chunk($usersId, 50);
+            foreach ($usersIdChunks as $i => $chunk) {
+                $mappers = array_merge($mappers, $this->getUsers($key, $chunk, $io));
+            }
 
-            /** @var Mapper[] */
-            $mappers = array_map(function (array $array) use ($key): Mapper {
-                $mapper = $this->mapperProvider->fromOSM($array);
-                $mapper->setRegion($key);
-
-                return $mapper;
-            }, $usersArray['users']);
+            $changesetsId = array_map(fn (array $feature) => (int) $feature['id'], $features);
 
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
@@ -114,7 +113,7 @@ class NewMapperCommand extends Command
                 $changeset->setMapper($mapper);
 
                 return $changeset;
-            }, $changesetsCollection['features']);
+            }, $features);
 
             foreach ($mappers as $mapper) {
                 $firstChangeset = $this->getFirstChangeset($mapper, $io);
@@ -177,5 +176,30 @@ class NewMapperCommand extends Command
         array_multisort($createdAt, \SORT_ASC, \SORT_NUMERIC, $changesets);
 
         return $changesets[0];
+    }
+
+    private function getUsers(string $key, array $ids, SymfonyStyle $io): array
+    {
+        try {
+            $getUsersResponse = $this->osm->getUsers($ids);
+
+            $io->text(sprintf('%s %s', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url')));
+
+            $usersArray = $getUsersResponse->toArray();
+
+            /** @var Mapper[] */
+            $mappers = array_map(function (array $array) use ($key): Mapper {
+                $mapper = $this->mapperProvider->fromOSM($array);
+                $mapper->setRegion($key);
+
+                return $mapper;
+            }, $usersArray['users']);
+
+            return $mappers;
+        } catch (\Exception $exception) {
+            $io->warning($exception->getMessage());
+
+            return [];
+        }
     }
 }
