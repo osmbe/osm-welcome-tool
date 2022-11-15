@@ -64,6 +64,8 @@ class NewMapperCommand extends Command
         if (!$usersDeletedCache->isHit()) {
             $deletedUsersCommand = $this->getApplication()->find('osm:deleted-users');
             $deletedUsersCommand->run(new ArrayInput([]), $output);
+
+            $usersDeletedCache = $this->cache->getItem(DeletedUsersCommand::CACHE_KEY);
         }
 
         $usersDeleted = $usersDeletedCache->get();
@@ -98,6 +100,7 @@ class NewMapperCommand extends Command
 
             $usersId = array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features);
 
+            /** @var Mapper[] */
             $mappers = [];
             $usersIdChunks = array_chunk($usersId, 50);
             foreach ($usersIdChunks as $i => $chunk) {
@@ -123,7 +126,9 @@ class NewMapperCommand extends Command
 
                 /* @todo Add first changeset check date ?? */
                 if (true === \in_array($firstChangeset->getId(), $changesetsId, true)) {
-                    $this->entityManager->persist($mapper);
+                    if (null === $this->entityManager->find(Mapper::class, $mapper->getId())) {
+                        $this->entityManager->persist($mapper);
+                    }
 
                     $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper): bool {
                         return $changeset->getMapper() === $mapper;
