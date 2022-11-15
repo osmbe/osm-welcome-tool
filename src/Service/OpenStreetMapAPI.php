@@ -8,7 +8,8 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 class OpenStreetMapAPI
 {
     public function __construct(
-        private HttpClientInterface $osmClient
+        private HttpClientInterface $osmClient,
+        private HttpClientInterface $client
     ) {
     }
 
@@ -26,7 +27,17 @@ class OpenStreetMapAPI
     {
         $response = $this->osmClient->request(
             'GET',
-            sprintf('changesets.xml?%s', http_build_query(['user' => $id])),
+            sprintf('changesets.xml?%s', http_build_query(['user' => $id]))
+        );
+
+        return $response;
+    }
+
+    public function getDeletedUsers(): ResponseInterface
+    {
+        $response = $this->client->request(
+            'GET',
+            'https://planet.openstreetmap.org/users_deleted/users_deleted.txt'
         );
 
         return $response;
