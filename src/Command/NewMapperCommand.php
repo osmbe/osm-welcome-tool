@@ -153,7 +153,7 @@ class NewMapperCommand extends Command
 
             /** @var Region|null */
             $r = $this->entityManager->find(Region::class, $key);
-            if (is_null($r)) {
+            if (null === $r) {
                 $r = new Region();
                 $r->setId($key);
             }

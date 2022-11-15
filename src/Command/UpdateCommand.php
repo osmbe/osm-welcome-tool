@@ -49,12 +49,12 @@ class UpdateCommand extends Command
             foreach ($group as $key => $region) {
                 /** @var Region|null */
                 $r = $this->entityManager->find(Region::class, $key);
-                $lastUpdate = is_null($r) ? null : $r->getLastUpdate();
+                $lastUpdate = null === $r ? null : $r->getLastUpdate();
 
                 $io->title(sprintf('%s (%s)', $region['name'], date('Y-m-d')));
 
-                if (true === $input->getOption('force') || is_null($lastUpdate) || $lastUpdate->format('Y-m-d') < date('Y-m-d')) {
-                    if (is_null($lastUpdate)) {
+                if (true === $input->getOption('force') || null === $lastUpdate || $lastUpdate->format('Y-m-d') < date('Y-m-d')) {
+                    if (null === $lastUpdate) {
                         // If there never was an update, get new mappers from the last 5 days
                         $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
                         $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));

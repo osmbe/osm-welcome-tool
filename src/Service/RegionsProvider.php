@@ -74,7 +74,7 @@ class RegionsProvider
     {
         $region = $this->regionRepository->find($key);
 
-        if (is_null($region)) {
+        if (null === $region) {
             return null;
         }
 
