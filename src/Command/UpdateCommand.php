@@ -2,7 +2,9 @@
 
 namespace App\Command;
 
+use App\Entity\Region;
 use App\Service\RegionsProvider;
+use Doctrine\ORM\EntityManagerInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -20,6 +22,7 @@ class UpdateCommand extends Command
 {
     public function __construct(
         private RegionsProvider $provider,
+        private EntityManagerInterface $entityManager,
         private CacheItemPoolInterface $cache
     ) {
         parent::__construct();
@@ -44,31 +47,29 @@ class UpdateCommand extends Command
 
         foreach ($regions as $continent => $group) {
             foreach ($group as $key => $region) {
-                $cacheKey = sprintf('last_update.%s', $key);
+                /** @var Region|null */
+                $r = $this->entityManager->find(Region::class, $key);
+                $lastUpdate = null === $r ? null : $r->getLastUpdate();
 
                 $io->title(sprintf('%s (%s)', $region['name'], date('Y-m-d')));
 
-                $lastUpdate = $this->cache->getItem($cacheKey);
-                if (true === $input->getOption('force') || !$lastUpdate->isHit() || $lastUpdate->get() < date('Y-m-d')) {
-                    if (!$lastUpdate->isHit()) {
-                        // If cache is not set, get new mappers from the last 5 days
+                if (true === $input->getOption('force') || null === $lastUpdate || $lastUpdate->format('Y-m-d') < date('Y-m-d')) {
+                    if (null === $lastUpdate) {
+                        // If there never was an update, get new mappers from the last 5 days
                         $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
                         $io->note(sprintf('Cache is not set, get new mappers from %s.', $date));
-                    } elseif (true === $input->getOption('force') && $lastUpdate->get() === date('Y-m-d')) {
+                    } elseif (true === $input->getOption('force') && $lastUpdate->format('Y-m-d') === date('Y-m-d')) {
                         // If last update was today and process is forced, get new mappers from yesterday
-                        $date = (new \DateTime($lastUpdate->get()))->sub(new \DateInterval('P1D'))->format('Y-m-d');
+                        $date = $lastUpdate->sub(new \DateInterval('P1D'))->format('Y-m-d');
                         $io->note(sprintf('Get new mappers from %s (forced).', $date));
                     } else {
                         // Get new mappers from the last update date
-                        $date = (new \DateTime($lastUpdate->get()))->format('Y-m-d');
+                        $date = $lastUpdate->format('Y-m-d');
                         $io->note(sprintf('Get new mappers from %s.', $date));
                     }
 
                     try {
                         $this->process($key, $date, $output);
-
-                        $lastUpdate->set(date('c'));
-                        $this->cache->save($lastUpdate);
                     } catch (\Exception $e) {
                         $io->error($e->getMessage());
                     }
