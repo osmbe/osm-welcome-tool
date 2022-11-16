@@ -12,8 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class RegionController extends AbstractController
 {
     public function __construct(
-        private RegionsProvider $provider,
-        private MapperRepository $mapperRepository
+        private readonly RegionsProvider $provider,
+        private readonly MapperRepository $mapperRepository
     ) {
     }
 

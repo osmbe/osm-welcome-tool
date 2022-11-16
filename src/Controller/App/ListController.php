@@ -12,8 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class ListController extends AbstractController
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private RegionsProvider $provider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RegionsProvider $provider,
     ) {
     }
 
@@ -53,9 +53,7 @@ class ListController extends AbstractController
             ->getRepository(Mapper::class)
             ->findBy(['region' => $regionKey]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
-            return $mapper->getFirstChangeset()->getCreatedAt();
-        }, $mappers);
+        $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
         $month = (new \DateTime())->setDate($year, $month, 1);

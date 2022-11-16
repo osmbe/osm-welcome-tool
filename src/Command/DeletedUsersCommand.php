@@ -18,12 +18,12 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 )]
 class DeletedUsersCommand extends Command
 {
-    public const CACHE_KEY = 'users_deleted';
+    final public const CACHE_KEY = 'users_deleted';
 
     public function __construct(
-        private HttpClientInterface $client,
-        private Filesystem $filesystem,
-        private CacheItemPoolInterface $cache
+        private readonly HttpClientInterface $client,
+        private readonly Filesystem $filesystem,
+        private readonly CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }

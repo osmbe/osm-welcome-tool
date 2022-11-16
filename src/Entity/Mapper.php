@@ -7,60 +7,38 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=MapperRepository::class)
- */
+#[ORM\Entity(repositoryClass: MapperRepository::class)]
 class Mapper
 {
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private $region;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private $display_name;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    #[ORM\Column(type: 'datetime')]
     private $account_created;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Column(type: 'integer')]
     private $changesets_count;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private $status;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Changeset::class, mappedBy="mapper", orphanRemoval=true)
-     */
+    #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
     private $changesets;
 
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
+    #[ORM\Column(type: 'text', nullable: true)]
     private $image;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Note::class, mappedBy="mapper", orphanRemoval=true)
-     */
+    #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
     private $notes;
 
-    /**
-     * @ORM\OneToOne(targetEntity=Welcome::class, mappedBy="mapper", cascade={"persist"})
-     */
+    #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
     private $welcome;
 
     public function __construct()
@@ -219,9 +197,7 @@ class Mapper
         $changesets = $this->getChangesets()->toArray();
 
         /** @var \DateTimeImmutable[] */
-        $createdAt = array_map(function (Changeset $changeset): ?\DateTimeImmutable {
-            return $changeset->getCreatedAt();
-        }, $changesets);
+        $createdAt = array_map(fn (Changeset $changeset): ?\DateTimeImmutable => $changeset->getCreatedAt(), $changesets);
 
         array_multisort($createdAt, \SORT_ASC, $changesets);
 

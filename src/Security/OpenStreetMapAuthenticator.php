@@ -23,9 +23,9 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
     use TargetPathTrait;
 
     public function __construct(
-        private ClientRegistry $clientRegistry,
-        private EntityManagerInterface $entityManager,
-        private RouterInterface $router
+        private readonly ClientRegistry $clientRegistry,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RouterInterface $router
     ) {
     }
 

@@ -25,9 +25,9 @@ class MapperController extends AbstractController
     private array $templates;
 
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private RegionsProvider $provider,
-        private TemplatesProvider $templatesProvider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RegionsProvider $provider,
+        private readonly TemplatesProvider $templatesProvider,
     ) {
     }
 
@@ -67,9 +67,7 @@ class MapperController extends AbstractController
             ->getRepository(Mapper::class)
             ->findBy(['region' => $region['key']]);
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
-            return $mapper->getFirstChangeset()->getCreatedAt();
-        }, $mappers);
+        $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
         $current = array_search($mapper, $mappers, true);
@@ -131,10 +129,8 @@ class MapperController extends AbstractController
         if (null !== $templateFilename && '' !== $templateLocale) {
             $filter = array_filter(
                 $this->templates,
-                function (Template $template) use ($templateLocale, $templateFilename): bool {
-                    return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
-                        && $template->getFilename() === $templateFilename;
-                }
+                fn (Template $template): bool => substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
+                    && $template->getFilename() === $templateFilename
             );
             if (\count($filter) > 0) {
                 return current($filter);
@@ -144,9 +140,7 @@ class MapperController extends AbstractController
         // Get current template based on mapper locale
         $locale = $this->mapper->getFirstChangeset()->getLocale();
         if (null !== $locale) {
-            $filter = array_filter($this->templates, function (Template $template) use ($locale): bool {
-                return substr($template->getLocale(), 0, 2) === substr($locale, 0, 2);
-            });
+            $filter = array_filter($this->templates, fn (Template $template): bool => substr($template->getLocale(), 0, 2) === substr($locale, 0, 2));
             if (\count($filter) > 0) {
                 return current($filter);
             }

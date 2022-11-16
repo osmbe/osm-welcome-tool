@@ -5,20 +5,14 @@ namespace App\Entity;
 use App\Repository\RegionRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=RegionRepository::class)
- */
+#[ORM\Entity(repositoryClass: RegionRepository::class)]
 class Region
 {
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="string")
-     */
+    #[ORM\Id]
+    #[ORM\Column(type: 'string')]
     private ?string $id = null;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    #[ORM\Column(type: 'datetime')]
     private $lastUpdate;
 
     public function getId(): ?string

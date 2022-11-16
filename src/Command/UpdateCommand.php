@@ -21,9 +21,9 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 class UpdateCommand extends Command
 {
     public function __construct(
-        private RegionsProvider $provider,
-        private EntityManagerInterface $entityManager,
-        private CacheItemPoolInterface $cache
+        private readonly RegionsProvider $provider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }

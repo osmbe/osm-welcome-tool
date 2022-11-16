@@ -10,8 +10,8 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 class OSMChaAPI
 {
     public function __construct(
-        private HttpClientInterface $osmchaClient,
-        private ValidatorInterface $validator
+        private readonly HttpClientInterface $osmchaClient,
+        private readonly ValidatorInterface $validator
     ) {
     }
 

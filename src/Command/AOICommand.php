@@ -22,9 +22,9 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class AOICommand extends Command
 {
     public function __construct(
-        private ValidatorInterface $validator,
-        private RegionsProvider $provider,
-        private OSMChaAPI $api
+        private readonly ValidatorInterface $validator,
+        private readonly RegionsProvider $provider,
+        private readonly OSMChaAPI $api
     ) {
         parent::__construct();
     }
