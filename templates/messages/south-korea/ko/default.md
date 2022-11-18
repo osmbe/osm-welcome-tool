@@ -12,11 +12,12 @@ title: 오픈스트리트맵에 입문하신 것을 환영합니다!
 * 네이버 지도, 카카오맵, 구글 지도 대신 오픈스트리트맵을 이용하고 싶으신가요? [Switch2OSM 홈페이지](https://switch2osm.org)를 확인하세요!
 
 혹시나 지도 제작과 관련해 궁금한 점이나 문제가 있으시다면 오픈스트리트맵 한국 커뮤니티에 주저하지 말고 물어보세요!
-1. [오픈스트리트맵 한국 페이스북 그룹](https://facebook.com/groups/osmkorea)
+1. [오픈스트리트맵 한반도 커뮤니티 스레드](https://community.openstreetmap.org/c/communities/ko/74)
 2. [오픈스트리트맵 한국 텔레그램 채널](https://t.me/osmKorea)
-3. [오픈스트리트맵 한국 트위터 계정](https://twitter.com/osmkorea)
-4. [오픈스트리트맵 talk-ko 메일링 리스트](https://lists.openstreetmap.org/listinfo/talk-ko)
-5. [오픈스트리트맵 한국 홈페이지](https://osm.kr)
+3. [오픈스트리트맵 한국 페이스북 그룹](https://facebook.com/groups/osmkorea)
+4. [오픈스트리트맵 한국 트위터 계정](https://twitter.com/osmkorea)
+5. [오픈스트리트맵 talk-ko 메일링 리스트](https://lists.openstreetmap.org/listinfo/talk-ko)
+6. [오픈스트리트맵 한국 홈페이지](https://osm.kr)
 
 전 세계 사람들이 모이는 커뮤니티도 있습니다!
 1. [오픈스트리트맵 세계 텔레그램 채널](https://t.me/OpenStreetMapOrg)
