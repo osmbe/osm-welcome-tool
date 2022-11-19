@@ -200,8 +200,18 @@ class NewMapperCommand extends Command
 
             /** @var Mapper[] */
             $mappers = array_map(function (array $array) use ($key): Mapper {
+                $region = $this->regionsProvider->getEntity($key);
+
+                if (null === $region) {
+                    $region = new Region();
+                    $region->setId($key);
+                    $region->setLastUpdate(new \DateTime('1970-01-01'));
+
+                    $this->entityManager->persist($region);
+                }
+
                 $mapper = $this->mapperProvider->fromOSM($array);
-                $mapper->setRegion($key);
+                $mapper->addRegion($region);
 
                 return $mapper;
             }, $usersArray['users']);

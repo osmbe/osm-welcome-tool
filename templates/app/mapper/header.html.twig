@@ -18,6 +18,9 @@
                 {% set date = mapper.accountCreated|format_date('long') %}
                 {{ 'Mapper since {date}'|trans({'{date}': date}) }}
             </p>
+            <p class="text-sm font-medium text-gray-500">
+                {{ 'Mapper detected in {count} region(s)'|trans({'{count}': mapper.region|length}) }}
+            </p>
         </div>
     </div>
     <div class="mt-6 flex flex-col-reverse justify-stretch space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-x-reverse sm:space-y-0 sm:space-x-3 md:mt-0 md:flex-row md:space-x-3">
@@ -32,7 +35,7 @@
 
         <span class="relative z-0 inline-flex shadow-sm rounded-md">
             <a class="{{ prev_mapper is null ? 'opacity-50 cursor-default' : '' }} relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
-                href="{{ prev_mapper is null ? '#' : path('app_mapper', {id: prev_mapper.id}) }}"
+                href="{{ prev_mapper is null ? '#' : path('app_mapper_full', {continent: region.continent, regionKey: region.key, id: prev_mapper.id}) }}"
                 title="{{ prev_mapper is null ? '' : prev_mapper.displayName }}">
                 <span class="sr-only">{{ 'Previous mapper'|trans }}</span>
                 <!-- Heroicon name: solid/chevron-left -->
@@ -44,7 +47,7 @@
                 </svg>
             </a>
             <a class="-ml-px {{ next_mapper is null ? 'opacity-50 cursor-default' : '' }} relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
-                href="{{ next_mapper is null ? '#' : path('app_mapper', {id: next_mapper.id}) }}"
+                href="{{ next_mapper is null ? '#' : path('app_mapper_full', {continent: region.continent, regionKey: region.key, id: next_mapper.id}) }}"
                 title="{{ next_mapper is null ? '' : next_mapper.displayName }}">
                 <span class="sr-only">{{ 'Next mapper'|trans }}</span>
                 <!-- Heroicon name: solid/chevron-right -->
