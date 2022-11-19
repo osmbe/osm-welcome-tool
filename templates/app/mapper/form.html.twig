@@ -18,7 +18,7 @@
                         <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
                         {% set active = template == selectedTemplate %}
                         <a class="group flex items-center px-3 py-2 text-sm font-medium rounded-md {{ active ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50' }}"
-                            href="{{ path('app_mapper', {id: mapper.id}) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
+                            href="{{ path('app_mapper_full', {continent: region.continent, regionKey: region.key, id: mapper.id}) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
                             <span class="truncate">
                                 {{ template.name }} ({{ template.locale|language_name }})
                             </span>
