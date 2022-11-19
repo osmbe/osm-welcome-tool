@@ -83,7 +83,7 @@ class NewMapperCommand extends Command
             return Command::FAILURE;
         }
 
-        if (!is_null($date)) {
+        if (null !== $date) {
             $aoiCommand = $this->getApplication()->find('osmcha:aoi');
             $aoiCommand->run(new ArrayInput([
                 'region' => $key,
