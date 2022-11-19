@@ -29,7 +29,7 @@ class ListController extends AbstractController
     {
         $region = $this->provider->getRegion($continent, $regionKey);
         $regionEntity = $this->provider->getEntity($regionKey);
-        $region['lastUpdate'] = is_null($regionEntity) ? null : $regionEntity->getLastUpdate();
+        $region['lastUpdate'] = null === $regionEntity ? null : $regionEntity->getLastUpdate();
         $region['count'] = $this->provider->getPercentage($regionKey);
 
         if (null === $year && null === $month) {
@@ -49,9 +49,9 @@ class ListController extends AbstractController
             return $this->redirectToRoute('app_list_full', ['continent' => $region['continent'], 'regionKey' => $region['key'], 'year' => $year, 'month' => $month]);
         }
 
-        $mappers = is_null($regionEntity) ? [] : $regionEntity->getMappers()->toArray();
+        $mappers = null === $regionEntity ? [] : $regionEntity->getMappers()->toArray();
 
-        if (count($mappers) > 0) {
+        if (\count($mappers) > 0) {
             $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
             array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 

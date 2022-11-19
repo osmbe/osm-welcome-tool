@@ -43,7 +43,7 @@ class MapperController extends AbstractController
 
         $mapperRegions = array_map(fn (Region $region) => $region->getId(), $this->mapper->getRegion()->toArray());
 
-        if (!in_array($regionKey, $mapperRegions, true)) {
+        if (!\in_array($regionKey, $mapperRegions, true)) {
             throw $this->createNotFoundException('This mapper was not detected in this region.');
         }
 

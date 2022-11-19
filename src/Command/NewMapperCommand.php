@@ -202,7 +202,7 @@ class NewMapperCommand extends Command
             $mappers = array_map(function (array $array) use ($key): Mapper {
                 $region = $this->regionsProvider->getEntity($key);
 
-                if (is_null($region)) {
+                if (null === $region) {
                     $region = new Region();
                     $region->setId($key);
                     $region->setLastUpdate(new \DateTime('1970-01-01'));

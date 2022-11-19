@@ -79,7 +79,7 @@ class RegionsProvider
     public function getPercentage(string $key): array
     {
         $region = $this->getEntity($key);
-        $mappers = is_null($region) ? [] : $region->getMappers()->toArray();
+        $mappers = null === $region ? [] : $region->getMappers()->toArray();
 
         $checked = array_filter($mappers, fn (Mapper $mapper): bool => null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty());
 

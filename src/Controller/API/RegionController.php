@@ -35,7 +35,7 @@ class RegionController extends AbstractController
     public function count(string $continent, string $regionKey): Response
     {
         $region = $this->provider->getEntity($regionKey);
-        $mappers = is_null($region) ? [] : $region->getMappers()->toArray();
+        $mappers = null === $region ? [] : $region->getMappers()->toArray();
 
         $count = [];
         foreach ($mappers as $mapper) {
