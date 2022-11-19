@@ -4,6 +4,7 @@ namespace App\Controller\App;
 
 use App\Entity\Mapper;
 use App\Entity\Note;
+use App\Entity\Region;
 use App\Entity\Template;
 use App\Entity\Welcome;
 use App\Service\RegionsProvider;
@@ -31,13 +32,20 @@ class MapperController extends AbstractController
     ) {
     }
 
-    #[Route('/mapper/{id}', name: 'app_mapper')]
+    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper', requirements: ['regionKey' => '[\w\-_]+'])]
+    #[Route('/{continent}/{regionKey}/mapper/{id}', name: 'app_mapper_full', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america', 'regionKey' => '[\w\-_]+'])]
     #[IsGranted('ROLE_USER')]
-    public function index(Request $request, Mapper $mapper): Response
+    public function index(Request $request, Mapper $mapper, string $regionKey, ?string $continent): Response
     {
+        $region = $this->provider->getRegion($continent, $regionKey);
+
         $this->mapper = $mapper;
 
-        $region = $this->provider->getRegion(null, $this->mapper->getRegion());
+        $mapperRegions = array_map(fn (Region $region) => $region->getId(), $this->mapper->getRegion()->toArray());
+
+        if (!in_array($regionKey, $mapperRegions, true)) {
+            throw $this->createNotFoundException('This mapper was not detected in this region.');
+        }
 
         // Welcome
         if ($request->query->has('welcome')) {
@@ -63,9 +71,7 @@ class MapperController extends AbstractController
 
         // Prev/Next mapper
         /** @var Mapper[] */
-        $mappers = $this->entityManager
-            ->getRepository(Mapper::class)
-            ->findBy(['region' => $region['key']]);
+        $mappers = $this->provider->getEntity($regionKey)?->getMappers()->toArray() ?? [];
 
         $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);

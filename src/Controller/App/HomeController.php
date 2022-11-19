@@ -21,7 +21,7 @@ class HomeController extends AbstractController
 
         foreach ($regions as $continent => &$group) {
             foreach ($group as $key => &$region) {
-                $region['lastUpdate'] = $this->provider->getLastUpdate($key);
+                $region['lastUpdate'] = $this->provider->getEntity($key)?->getLastUpdate();
                 $region['count'] = $this->provider->getPercentage($key);
             }
         }
