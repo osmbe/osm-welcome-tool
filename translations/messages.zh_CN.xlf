@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target state="translated">利比亚</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target state="translated">利比里亚</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target state="translated">卢森堡</target>
