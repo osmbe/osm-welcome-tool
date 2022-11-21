@@ -51,12 +51,12 @@ class MapperController extends AbstractController
         if ($request->query->has('welcome')) {
             $this->updateWelcomeDate($request->query->getBoolean('welcome'));
 
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
         if ($request->query->has('reply')) {
             $this->updateWelcomeReply($request->query->getBoolean('reply'));
 
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
         // Templates
@@ -66,7 +66,7 @@ class MapperController extends AbstractController
         // Notes
         $formNote = $this->note($request);
         if (true === $formNote->isSubmitted() && true === $formNote->isValid()) {
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
         // Prev/Next mapper
