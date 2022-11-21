@@ -459,6 +459,10 @@ Il vous aide à détecter les nouveaux contributeurs dans votre région et à le
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="final">{count} nouveaux contributeurs ({percent} %) ont déjà été accueillis</target>
       </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="final">Cartographe détecté dans {count} région(s)</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
