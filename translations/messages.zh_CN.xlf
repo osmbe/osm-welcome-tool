@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="needs-translation">Ontario</target>
+        <target state="translated">安大略省</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
@@ -458,6 +458,10 @@ It helps you discover new mappers in your region and welcome them.</source>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">已有{count}位({percent} %)新绘图者被欢迎</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="translated">在{count}个区域活跃的绘图者</target>
       </trans-unit>
     </body>
   </file>

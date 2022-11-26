@@ -459,6 +459,10 @@ Ti aiuta a scoprire i nuovi contributori nella tua regione e dargli il benvenuto
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">{count} nuovi mappatori ({percent} %) hanno già ricevuto il benvenuto</target>
       </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="translated">Mappatore rilevato in {count} regione/i</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
