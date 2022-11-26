@@ -76,7 +76,7 @@ regions:
     south-korea:
       name: South Korea
       flag: 🇰🇷
-      osmcha.id:
+      osmcha.id: de3cd652-a238-410c-8ad6-348ee35f64ca
     taiwan:
       name: Taiwan
       flag: 🇹🇼
