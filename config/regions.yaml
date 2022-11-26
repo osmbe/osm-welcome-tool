@@ -73,6 +73,10 @@ regions:
       name: Philippines
       flag: 🇵🇭
       osmcha.id: 6f6dcbc8-8811-4e5c-934d-ebb13af0590a
+    south-korea:
+      name: South Korea
+      flag: 🇰🇷
+      osmcha.id: de3cd652-a238-410c-8ad6-348ee35f64ca
     taiwan:
       name: Taiwan
       flag: 🇹🇼
