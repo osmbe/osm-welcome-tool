@@ -173,6 +173,10 @@
         <source>Scotland</source>
         <target state="translated">Scozia</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target state="translated">Corea del Sud</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target state="translated">Spagna</target>
