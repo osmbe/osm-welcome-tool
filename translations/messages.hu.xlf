@@ -465,7 +465,7 @@ Segít megtalálni a régiódban először szerkesztőket és üdvözölni őket
       </trans-unit>
       <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
         <source>Mapper detected in {count} region(s)</source>
-        <target state="needs-translation">__Mapper detected in {count} region(s)</target>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
       </trans-unit>
     </body>
   </file>

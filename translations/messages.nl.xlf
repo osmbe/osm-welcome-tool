@@ -463,6 +463,10 @@ De tool helpt je nieuwe mappers in je regio te vinden en te verwelkomen.</target
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">{count} nieuw mappers ({percent} %) zijn reeds verwelkomt</target>
       </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

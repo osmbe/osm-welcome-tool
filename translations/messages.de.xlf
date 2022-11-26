@@ -463,6 +463,10 @@ Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">{count} neue Kartierer ({percent} %) wurden bereits begrüßt</target>
       </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
