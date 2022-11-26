@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target>Libya</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target>Liberia</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Luxembourg</target>
@@ -454,6 +458,10 @@ It helps you discover new mappers in your region and welcome them.</target>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target>{count} new mappers ({percent} %) have already been welcomed</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target>Mapper detected in {count} region(s)</target>
       </trans-unit>
     </body>
   </file>

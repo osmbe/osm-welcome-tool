@@ -81,7 +81,11 @@ class AOICommand extends Command
 
             $data = $response->toArray();
 
-            $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s".', $name, $data['id']));
+            if (null !== $date) {
+                $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s" (%s).', $name, $data['id'], $data['properties']['filters']['date__gte']));
+            } else {
+                $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s".', $name, $data['id']));
+            }
 
             return Command::SUCCESS;
         } catch (ClientException $e) {

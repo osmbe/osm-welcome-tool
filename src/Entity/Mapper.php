@@ -15,9 +15,6 @@ class Mapper
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $region;
-
-    #[ORM\Column(type: 'string', length: 255)]
     private $display_name;
 
     #[ORM\Column(type: 'datetime')]
@@ -41,10 +38,14 @@ class Mapper
     #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
     private $welcome;
 
+    #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
+    private Collection $region;
+
     public function __construct()
     {
         $this->changesets = new ArrayCollection();
         $this->notes = new ArrayCollection();
+        $this->region = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -55,18 +56,6 @@ class Mapper
     public function setId(int $id): self
     {
         $this->id = $id;
-
-        return $this;
-    }
-
-    public function getRegion(): ?string
-    {
-        return $this->region;
-    }
-
-    public function setRegion(string $region): self
-    {
-        $this->region = $region;
 
         return $this;
     }
@@ -217,6 +206,30 @@ class Mapper
         }
 
         $this->welcome = $welcome;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, region>
+     */
+    public function getRegion(): Collection
+    {
+        return $this->region;
+    }
+
+    public function addRegion(region $region): self
+    {
+        if (!$this->region->contains($region)) {
+            $this->region->add($region);
+        }
+
+        return $this;
+    }
+
+    public function removeRegion(region $region): self
+    {
+        $this->region->removeElement($region);
 
         return $this;
     }

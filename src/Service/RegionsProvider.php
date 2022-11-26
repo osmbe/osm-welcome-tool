@@ -3,6 +3,7 @@
 namespace App\Service;
 
 use App\Entity\Mapper;
+use App\Entity\Region;
 use App\Repository\MapperRepository;
 use App\Repository\RegionRepository;
 use App\Repository\WelcomeRepository;
@@ -70,21 +71,15 @@ class RegionsProvider
         return $data;
     }
 
-    public function getLastUpdate(string $key): ?\DateTime
+    public function getEntity(string $key): ?Region
     {
-        $region = $this->regionRepository->find($key);
-
-        if (null === $region) {
-            return null;
-        }
-
-        return $region->getLastUpdate();
+        return $this->regionRepository->find($key);
     }
 
     public function getPercentage(string $key): array
     {
-        /** @var Mapper[] */
-        $mappers = $this->mapperRepository->findBy(['region' => $key]);
+        $region = $this->getEntity($key);
+        $mappers = null === $region ? [] : $region->getMappers()->toArray();
 
         $checked = array_filter($mappers, fn (Mapper $mapper): bool => null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty());
 
