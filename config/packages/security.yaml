@@ -1,4 +1,6 @@
 security:
+    # https://symfony.com/doc/current/security/experimental_authenticators.html
+    enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
@@ -19,6 +21,10 @@ security:
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
+            custom_authenticators:
+                - App\Security\OpenStreetMapAuthenticator
+            logout:
+                path: logout
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
