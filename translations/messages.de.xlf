@@ -469,7 +469,7 @@ Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu
       </trans-unit>
       <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
         <source>Mapper detected in {count} region(s)</source>
-        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+        <target state="translated">Kartierer in {count} Region(en) entdeckt</target>
       </trans-unit>
     </body>
   </file>
