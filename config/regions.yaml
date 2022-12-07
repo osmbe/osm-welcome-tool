@@ -183,6 +183,7 @@ regions:
     california:
       name: California
       flag: 🇺🇸
+      osmcha.id: 766165a5-0a47-4cb8-8cde-d12fed551ff0
     kansas:
       name: Kansas
       flag: 🇺🇸
