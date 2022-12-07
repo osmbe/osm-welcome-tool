@@ -40,3 +40,10 @@ jobs:
     - uses: actions/checkout@v3
     - run: npm ci
     - run: npm run lint --if-present
+
+  geojsonhint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: npm ci
+    - run: npm run geojsonhint --if-present
