@@ -22,7 +22,7 @@
         "eslint-plugin-react": "^7.31.10",
         "file-loader": "^6.2.0",
         "highlight.js": "^11.7.0",
-        "leaflet": "^1.9.2",
+        "leaflet": "^1.9.3",
         "postcss": "^8.4.19",
         "postcss-loader": "^7.0.2",
         "prop-types": "^15.8.1",
