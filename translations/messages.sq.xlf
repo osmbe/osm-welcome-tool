@@ -197,6 +197,10 @@
         <source>Uganda</source>
         <target state="translated">Uganda</target>
       </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">Kalifornia</target>
+      </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
         <target state="translated">Kanzasi</target>
