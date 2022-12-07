@@ -19,7 +19,7 @@
         "codejar": "^3.6.0",
         "core-js": "^3.26.1",
         "eslint": "^8.26.0",
-        "eslint-plugin-react": "^7.31.10",
+        "eslint-plugin-react": "^7.31.11",
         "file-loader": "^6.2.0",
         "highlight.js": "^11.7.0",
         "leaflet": "^1.9.3",
