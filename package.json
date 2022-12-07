@@ -9,7 +9,7 @@
         "@mapbox/geojsonhint": "^3.1.0",
         "@popperjs/core": "^2.11.6",
         "@symfony/stimulus-bridge": "^3.2.0",
-        "@symfony/webpack-encore": "^4.1.1",
+        "@symfony/webpack-encore": "^4.1.2",
         "@types/leaflet": "^1.9.0",
         "@types/react-dom": "^18.0.9",
         "@typescript-eslint/eslint-plugin": "^5.45.1",
