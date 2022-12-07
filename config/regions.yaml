@@ -180,6 +180,10 @@ regions:
       name: Panama
       flag: 🇵🇦
       osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
+    california:
+      name: California
+      flag: 🇺🇸
+      osmcha.id: 766165a5-0a47-4cb8-8cde-d12fed551ff0
     kansas:
       name: Kansas
       flag: 🇺🇸

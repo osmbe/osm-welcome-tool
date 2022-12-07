@@ -197,6 +197,10 @@
         <source>Uganda</source>
         <target state="translated">乌干达</target>
       </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">加利福尼亚州</target>
+      </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
         <target state="translated">堪萨斯州</target>
