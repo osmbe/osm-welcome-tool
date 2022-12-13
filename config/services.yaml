@@ -7,7 +7,7 @@ parameters:
     osmcha.api.url: 'https://osmcha.org/api/v1/'
     osmcha.api.key: '%env(OSMCHA_API_KEY)%'
     osm.api.url: 'https://api.openstreetmap.org/api/0.6/'
-    app.locales: ['en','fr','it','nl','bg','es_ES','ja','pl','de','sq','zh_TW','zh_CN','hu']
+    app.locales: ['en','fr','it','nl','bg','es_ES','ja','pl','de','sq','zh_TW','zh_CN','hu','ko']
     app.userAgent: 'OpenStreetMap Welcome Tool'
     app.title: 'OpenStreetMap Welcome Tool'
 
