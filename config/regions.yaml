@@ -72,7 +72,7 @@ regions:
     pakistan:
       name: Pakistan
       flag: 🇵🇰
-      osmcha.id:
+      osmcha.id: cbf7911d-471c-4066-88d0-f35b6830aad3
     philippines:
       name: Philippines
       flag: 🇵🇭
