@@ -153,6 +153,10 @@
         <source>North Korea</source>
         <target state="translated">朝鮮民主主義人民共和国</target>
       </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target state="translated">パキスタン</target>
+      </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target state="translated">パナマ</target>

@@ -153,6 +153,10 @@
         <source>North Korea</source>
         <target>North Korea</target>
       </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target>Pakistan</target>
+      </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target>Panama</target>
