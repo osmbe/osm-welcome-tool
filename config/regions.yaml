@@ -69,6 +69,10 @@ regions:
       name: North Korea
       flag: 🇰🇵
       osmcha.id: c09f9eb0-4a5b-4f5d-b485-9ea9024b9b5e
+    pakistan:
+      name: Pakistan
+      flag: 🇵🇰
+      osmcha.id: cbf7911d-471c-4066-88d0-f35b6830aad3
     philippines:
       name: Philippines
       flag: 🇵🇭
