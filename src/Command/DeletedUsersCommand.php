@@ -85,27 +85,27 @@ class DeletedUsersCommand extends Command
                     int $bytes_max
                 ) use ($io, $progress) {
                     switch ($notification_code) {
-                        case STREAM_NOTIFY_RESOLVE:
-                        case STREAM_NOTIFY_AUTH_REQUIRED:
-                        case STREAM_NOTIFY_MIME_TYPE_IS:
-                        case STREAM_NOTIFY_COMPLETED:
-                        case STREAM_NOTIFY_FAILURE:
-                        case STREAM_NOTIFY_AUTH_RESULT:
+                        case \STREAM_NOTIFY_RESOLVE:
+                        case \STREAM_NOTIFY_AUTH_REQUIRED:
+                        case \STREAM_NOTIFY_MIME_TYPE_IS:
+                        case \STREAM_NOTIFY_COMPLETED:
+                        case \STREAM_NOTIFY_FAILURE:
+                        case \STREAM_NOTIFY_AUTH_RESULT:
                             break;
 
-                        case STREAM_NOTIFY_REDIRECTED:
+                        case \STREAM_NOTIFY_REDIRECTED:
                             $io->comment(sprintf('Being redirected to: %s', $message));
                             break;
 
-                        case STREAM_NOTIFY_CONNECT:
+                        case \STREAM_NOTIFY_CONNECT:
                             $io->comment('Connected...');
                             break;
 
-                        case STREAM_NOTIFY_FILE_SIZE_IS:
+                        case \STREAM_NOTIFY_FILE_SIZE_IS:
                             $progress->start($bytes_max);
                             break;
 
-                        case STREAM_NOTIFY_PROGRESS:
+                        case \STREAM_NOTIFY_PROGRESS:
                             $progress->setProgress($bytes_transferred);
                             break;
                     }
