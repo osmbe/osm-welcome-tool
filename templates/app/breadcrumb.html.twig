@@ -25,7 +25,7 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <span class="ml-4 text-sm font-medium text-gray-500 cursor-default">{{ region.continent|trans }}</span>
+                <a href="{{ path('app_home') }}#{{ region.continent }}" class="ml-4 text-sm font-medium text-gray-500">{{ region.continent|trans }}</a>
             </div>
         </li>
 
@@ -38,7 +38,7 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <span class="ml-4 text-sm font-medium text-gray-500 cursor-default">{{ region.name|trans }}</span>
+                <a href="{{ path('app_home') }}#{{ region.continent }}" class="ml-4 text-sm font-medium text-gray-500">{{ region.name|trans }}</a>
             </div>
         </li>
 
