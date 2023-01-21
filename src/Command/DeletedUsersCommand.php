@@ -41,6 +41,10 @@ class DeletedUsersCommand extends Command
 
         $path = $this->download($io);
 
+        $this->filesystem->remove($path);
+
+        $io->text(sprintf('"%s" deleted!', $path));
+
         // $usersDeleted = $this->cache->getItem(self::CACHE_KEY);
         // $usersDeleted->expiresAfter(new \DateInterval('PT1H'));
 
