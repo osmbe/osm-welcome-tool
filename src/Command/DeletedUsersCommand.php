@@ -42,28 +42,91 @@ class DeletedUsersCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $usersDeleted = $this->cache->getItem(self::CACHE_KEY);
-        $usersDeleted->expiresAfter(new \DateInterval('PT1H'));
+        $path = $this->download($io);
 
-        if ($usersDeleted->isHit() && true !== $input->getOption('force')) {
-            $io->note('OpenStreetMap deleted users is alread cached.');
-        } else {
-            $response = $this->client->request('GET', 'https://planet.openstreetmap.org/users_deleted/users_deleted.txt');
-            $content = $response->getContent();
+        // $usersDeleted = $this->cache->getItem(self::CACHE_KEY);
+        // $usersDeleted->expiresAfter(new \DateInterval('PT1H'));
 
-            $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
+        // if ($usersDeleted->isHit() && true !== $input->getOption('force')) {
+        //     $io->note('OpenStreetMap deleted users is alread cached.');
+        // } else {
+        //     $response = $this->client->request('GET', 'https://planet.openstreetmap.org/users_deleted/users_deleted.txt');
+        //     $content = $response->getContent();
 
-            $this->filesystem->dumpFile($path, $content);
+        //     $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
 
-            $list = array_map(fn ($line) => (int) trim($line), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
+        //     $this->filesystem->dumpFile($path, $content);
 
-            $usersDeleted->set($list);
+        //     $list = array_map(fn ($line) => (int) trim($line), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
 
-            $this->cache->save($usersDeleted);
+        //     $usersDeleted->set($list);
 
-            $io->success('OpenStreetMap deleted users have been downloaded and cached.');
-        }
+        //     $this->cache->save($usersDeleted);
+
+        //     $io->success('OpenStreetMap deleted users have been downloaded and cached.');
+        // }
 
         return Command::SUCCESS;
+    }
+
+    protected function download(SymfonyStyle $io): string
+    {
+        $progress = $io->createProgressBar();
+
+        $context = stream_context_create(
+            [],
+            [
+                'notification' => function (
+                    int $notification_code,
+                    int $severity,
+                    ?string $message,
+                    int $message_code,
+                    int $bytes_transferred,
+                    int $bytes_max
+                ) use ($io, $progress) {
+                    switch ($notification_code) {
+                        case STREAM_NOTIFY_RESOLVE:
+                        case STREAM_NOTIFY_AUTH_REQUIRED:
+                        case STREAM_NOTIFY_MIME_TYPE_IS:
+                        case STREAM_NOTIFY_COMPLETED:
+                        case STREAM_NOTIFY_FAILURE:
+                        case STREAM_NOTIFY_AUTH_RESULT:
+                            break;
+
+                        case STREAM_NOTIFY_REDIRECTED:
+                            $io->comment(sprintf('Being redirected to: %s', $message));
+                            break;
+
+                        case STREAM_NOTIFY_CONNECT:
+                            $io->comment('Connected...');
+                            break;
+
+                        case STREAM_NOTIFY_FILE_SIZE_IS:
+                            $progress->start($bytes_max);
+                            break;
+
+                        case STREAM_NOTIFY_PROGRESS:
+                            $progress->setProgress($bytes_transferred);
+                            break;
+                    }
+                },
+            ]
+        );
+
+        $content = file_get_contents('https://planet.openstreetmap.org/users_deleted/users_deleted.txt', false, $context);
+
+        $progress->finish();
+
+        $io->newLine(2);
+
+        $io->success('Downloaded!');
+
+        $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
+
+        $this->filesystem->dumpFile($path, $content);
+
+        $io->success(sprintf('Saved to "%s"!', $path));
+
+        return $path;
     }
 }
