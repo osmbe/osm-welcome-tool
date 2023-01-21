@@ -91,11 +91,11 @@ class DeletedUsersCommand extends Command
                             break;
 
                         case \STREAM_NOTIFY_REDIRECTED:
-                            $io->comment(sprintf('Being redirected to: %s', $message));
+                            $io->text(sprintf('Being redirected to: %s', $message));
                             break;
 
                         case \STREAM_NOTIFY_CONNECT:
-                            $io->comment('Connected...');
+                            $io->text('Connected...');
                             break;
 
                         case \STREAM_NOTIFY_FILE_SIZE_IS:
@@ -114,15 +114,15 @@ class DeletedUsersCommand extends Command
 
         $progress->finish();
 
-        $io->newLine(2);
+        $io->newLine();
 
-        $io->success('Downloaded!');
+        $io->text('Downloaded!');
 
         $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
 
         $this->filesystem->dumpFile($path, $content);
 
-        $io->success(sprintf('Saved to "%s"!', $path));
+        $io->text(sprintf('Saved to "%s"!', $path));
 
         return $path;
     }
