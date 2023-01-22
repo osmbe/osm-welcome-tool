@@ -40,3 +40,7 @@ task('npm', ['npm:build', 'npm:rsync']);
 after('deploy:update_code', 'npm');
 after('deploy:failed', 'deploy:unlock');
 after('deploy:success', 'php-fpm:reload');
+
+set('bin/composer', function () {
+    return '/usr/bin/php{{php_fpm_version}} /usr/local/bin/composer';
+});
