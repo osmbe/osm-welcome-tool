@@ -42,6 +42,9 @@ class UpdateCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
+        $deletedUsersCommand = $this->getApplication()->find('osm:deleted-users');
+        $deletedUsersCommand->run(new ArrayInput([]), $output);
+
         $lastUpdate = [];
         $regions = $this->provider->getRegions();
 
@@ -84,9 +87,6 @@ class UpdateCommand extends Command
 
     private function process(string $region, string $date, OutputInterface $output): void
     {
-        $deletedUsersCommand = $this->getApplication()->find('osm:deleted-users');
-        $deletedUsersCommand->run(new ArrayInput([]), $output);
-
         $newMapperCommand = $this->getApplication()->find('osmcha:new-mapper');
         $newMapperCommand->run(new ArrayInput(['region' => $region, '-d' => $date]), $output);
     }
