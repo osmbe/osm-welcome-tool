@@ -475,6 +475,10 @@ It helps you discover new mappers in your region and welcome them.</target>
         <source>Mapper detected in {count} region(s)</source>
         <target>Mapper detected in {count} region(s)</target>
       </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target>Download OSMCha RSS feed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

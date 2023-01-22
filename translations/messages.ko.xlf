@@ -475,6 +475,10 @@ It helps you discover new mappers in your region and welcome them.</source>
         <source>Mapper detected in {count} region(s)</source>
         <target state="translated">{count}개 지역에서 감지된 기여자</target>
       </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

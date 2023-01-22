@@ -475,6 +475,10 @@ De tool helpt je nieuwe mappers in je regio te vinden en te verwelkomen.</target
         <source>Mapper detected in {count} region(s)</source>
         <target state="needs-translation">Mapper detected in {count} region(s)</target>
       </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
