@@ -118,7 +118,7 @@ class DeletedUsersCommand extends Command
 
         $this->cache->save($usersDeletedCache);
 
-        $io->note(sprintf('Deleted users: %d', count($list)));
+        $io->note(sprintf('Deleted users: %d', \count($list)));
 
         return $usersDeletedCache;
     }
@@ -132,7 +132,7 @@ class DeletedUsersCommand extends Command
 
         $chunks = array_chunk($usersDeleted, self::CHUNK);
 
-        $progress = $io->createProgressBar(count($usersDeleted));
+        $progress = $io->createProgressBar(\count($usersDeleted));
 
         foreach ($chunks as $i => $chunk) {
             // Clean `mapper` table
@@ -145,7 +145,7 @@ class DeletedUsersCommand extends Command
                 ->setParameter('id', $chunk)
                 ->execute();
 
-            $progress->advance(count($chunk));
+            $progress->advance(\count($chunk));
         }
 
         $progress->finish();
