@@ -14,7 +14,7 @@ use Symfony\Component\Filesystem\Filesystem;
 
 #[AsCommand(
     name: 'osm:deleted-users',
-    description: 'Download OpenStreetMap deleted users',
+    description: 'Download and cache OpenStreetMap deleted users',
 )]
 class DeletedUsersCommand extends Command
 {
