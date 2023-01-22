@@ -475,6 +475,10 @@ Ju ndihmon të zbuloni dhe mirëprisni hartografues të rinj në rajonin tuaj.</
         <source>Mapper detected in {count} region(s)</source>
         <target state="needs-translation">Mapper detected in {count} region(s)</target>
       </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

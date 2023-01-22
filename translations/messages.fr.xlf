@@ -475,6 +475,10 @@ Il vous aide à détecter les nouveaux contributeurs dans votre région et à le
         <source>Mapper detected in {count} region(s)</source>
         <target state="final">Cartographe détecté dans {count} région(s)</target>
       </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="final">Télécharger le flux RSS d'OSMCha</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
