@@ -112,13 +112,21 @@ class DeletedUsersCommand extends Command
     {
         $usersDeletedCache = $this->cache->getItem(self::CACHE_KEY);
 
-        $list = array_map(fn ($line) => (int) trim($line), file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES));
+        $list = [];
+
+        $resource = @fopen($path, 'r');
+        if (false !== $resource) {
+            while (($line = fgets($resource, 512)) !== false) {
+                $list[] = (int) trim($line);
+            }
+            fclose($resource);
+        }
 
         $usersDeletedCache->set($list);
 
         $this->cache->save($usersDeletedCache);
 
-        $io->note(sprintf('Deleted users: %d', \count($list)));
+        $io->note(sprintf('%d deleted users', \count($list)));
 
         return $usersDeletedCache;
     }
