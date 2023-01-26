@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target state="translated">Libyen</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target state="translated">Liberia</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target state="translated">Luxemburg</target>
@@ -148,6 +152,10 @@
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target state="translated">Nordkorea</target>
+      </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target state="translated">Pakistan</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -169,6 +177,10 @@
         <source>Scotland</source>
         <target state="translated">Schottland</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target state="translated">Südkorea</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target state="translated">Spanien</target>
@@ -188,6 +200,10 @@
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target state="translated">Uganda</target>
+      </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">Kalifornien</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
@@ -454,6 +470,14 @@ Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">{count} neue Kartierer ({percent} %) wurden bereits begrüßt</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="translated">Kartierer in {count} Region(en) entdeckt</target>
+      </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>

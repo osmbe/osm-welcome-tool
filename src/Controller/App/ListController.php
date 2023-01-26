@@ -12,8 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class ListController extends AbstractController
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private RegionsProvider $provider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RegionsProvider $provider,
     ) {
     }
 
@@ -28,7 +28,8 @@ class ListController extends AbstractController
     public function index(string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($continent, $regionKey);
-        $region['lastUpdate'] = $this->provider->getLastUpdate($regionKey);
+        $regionEntity = $this->provider->getEntity($regionKey);
+        $region['lastUpdate'] = null === $regionEntity ? null : $regionEntity->getLastUpdate();
         $region['count'] = $this->provider->getPercentage($regionKey);
 
         if (null === $year && null === $month) {
@@ -48,27 +49,24 @@ class ListController extends AbstractController
             return $this->redirectToRoute('app_list_full', ['continent' => $region['continent'], 'regionKey' => $region['key'], 'year' => $year, 'month' => $month]);
         }
 
-        /** @var Mapper[] */
-        $mappers = $this->entityManager
-            ->getRepository(Mapper::class)
-            ->findBy(['region' => $regionKey]);
+        $mappers = null === $regionEntity ? [] : $regionEntity->getMappers()->toArray();
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
-            return $mapper->getFirstChangeset()->getCreatedAt();
-        }, $mappers);
-        array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
+        if (\count($mappers) > 0) {
+            $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
+            array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
-        $month = (new \DateTime())->setDate($year, $month, 1);
+            $month = (new \DateTime())->setDate($year, $month, 1);
 
-        $mappers = array_filter(
-            $mappers,
-            function (Mapper $mapper) use ($month): bool {
-                /** @var \DateTimeImmutable */
-                $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
+            $mappers = array_filter(
+                $mappers,
+                function (Mapper $mapper) use ($month): bool {
+                    /** @var \DateTimeImmutable */
+                    $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
 
-                return $createdAt->format('Ym') === $month->format('Ym');
-            }
-        );
+                    return $createdAt->format('Ym') === $month->format('Ym');
+                }
+            );
+        }
 
         return $this->render('app/list/index.html.twig', [
             'region' => $region,

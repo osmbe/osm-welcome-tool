@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="needs-translation">Ontario</target>
+        <target state="translated">安大略省</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target state="translated">利比亚</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target state="translated">利比里亚</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target state="translated">卢森堡</target>
@@ -148,6 +152,10 @@
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target state="translated">朝鲜</target>
+      </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target state="translated">巴基斯坦</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -169,6 +177,10 @@
         <source>Scotland</source>
         <target state="translated">苏格兰</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target state="translated">韩国</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target state="translated">西班牙</target>
@@ -188,6 +200,10 @@
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target state="translated">乌干达</target>
+      </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">加利福尼亚州</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
@@ -454,6 +470,14 @@ It helps you discover new mappers in your region and welcome them.</source>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">已有{count}位({percent} %)新绘图者被欢迎</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="translated">在{count}个区域活跃的绘图者</target>
+      </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>

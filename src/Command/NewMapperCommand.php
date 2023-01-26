@@ -31,14 +31,14 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class NewMapperCommand extends Command
 {
     public function __construct(
-        private ValidatorInterface $validator,
-        private EntityManagerInterface $entityManager,
-        private RegionsProvider $regionsProvider,
-        private ChangesetProvider $changesetProvider,
-        private MapperProvider $mapperProvider,
-        private OSMChaAPI $osmcha,
-        private OpenStreetMapAPI $osm,
-        private CacheItemPoolInterface $cache
+        private readonly ValidatorInterface $validator,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RegionsProvider $regionsProvider,
+        private readonly ChangesetProvider $changesetProvider,
+        private readonly MapperProvider $mapperProvider,
+        private readonly OSMChaAPI $osmcha,
+        private readonly OpenStreetMapAPI $osm,
+        private readonly CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }
@@ -83,6 +83,14 @@ class NewMapperCommand extends Command
             return Command::FAILURE;
         }
 
+        if (null !== $date) {
+            $aoiCommand = $this->getApplication()->find('osmcha:aoi');
+            $aoiCommand->run(new ArrayInput([
+                'region' => $key,
+                '-d' => $date,
+            ]), $output);
+        }
+
         try {
             /** @var int[] */
             $usersId = [];
@@ -112,9 +120,7 @@ class NewMapperCommand extends Command
 
             /** @var Changeset[] */
             $changesets = array_map(function (array $feature) use ($mappers): Changeset {
-                $mapper = current(array_filter($mappers, function (Mapper $mapper) use ($feature): bool {
-                    return $mapper->getId() === (int) $feature['properties']['uid'];
-                }));
+                $mapper = current(array_filter($mappers, fn (Mapper $mapper): bool => $mapper->getId() === (int) $feature['properties']['uid']));
 
                 $changeset = $this->changesetProvider->fromOSMCha($feature);
                 $changeset->setMapper($mapper);
@@ -131,9 +137,7 @@ class NewMapperCommand extends Command
                         $this->entityManager->persist($mapper);
                     }
 
-                    $mapperChangesets = array_filter($changesets, function (Changeset $changeset) use ($mapper): bool {
-                        return $changeset->getMapper() === $mapper;
-                    });
+                    $mapperChangesets = array_filter($changesets, fn (Changeset $changeset): bool => $changeset->getMapper() === $mapper);
                     foreach ($mapperChangesets as $changeset) {
                         $this->entityManager->persist($changeset);
                     }
@@ -184,13 +188,9 @@ class NewMapperCommand extends Command
             $changesetsElement[] = $changeset;
         }
         /** @var Changeset[] */
-        $changesets = array_map(function (\SimpleXMLElement $element): Changeset {
-            return $this->changesetProvider->fromOSM($element);
-        }, $changesetsElement);
+        $changesets = array_map(fn (\SimpleXMLElement $element): Changeset => $this->changesetProvider->fromOSM($element), $changesetsElement);
 
-        $createdAt = array_map(function (Changeset $changeset): int {
-            return $changeset->getCreatedAt()->getTimestamp();
-        }, $changesets);
+        $createdAt = array_map(fn (Changeset $changeset): int => $changeset->getCreatedAt()->getTimestamp(), $changesets);
 
         array_multisort($createdAt, \SORT_ASC, \SORT_NUMERIC, $changesets);
 
@@ -208,8 +208,18 @@ class NewMapperCommand extends Command
 
             /** @var Mapper[] */
             $mappers = array_map(function (array $array) use ($key): Mapper {
+                $region = $this->regionsProvider->getEntity($key);
+
+                if (null === $region) {
+                    $region = new Region();
+                    $region->setId($key);
+                    $region->setLastUpdate(new \DateTime('1970-01-01'));
+
+                    $this->entityManager->persist($region);
+                }
+
                 $mapper = $this->mapperProvider->fromOSM($array);
-                $mapper->setRegion($key);
+                $mapper->addRegion($region);
 
                 return $mapper;
             }, $usersArray['users']);

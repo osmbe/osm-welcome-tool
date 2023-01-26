@@ -32,11 +32,11 @@
         <tbody>
             {% for mapper in mappers %}
 
-            <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }}">
+            <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }} {{ mapper.region|length > 3 ? 'opacity-25 hover:opacity-75' }}">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {% if app.user is not null %}
                     <a class="shrink-0 group block"
-                        href="{{ path('app_mapper', {id: mapper.id}) }}">
+                        href="{{ path('app_mapper_full', {continent: region.continent, regionKey: region.key, id: mapper.id}) }}">
                         {{ include('app/list/avatar.html.twig', {mapper}, with_context=false) }}
                     </a>
                     {% else %}

@@ -1,5 +1,5 @@
 import { Menu } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { createPopper, Options } from '@popperjs/core';
 import React, {  RefCallback, useRef, useCallback, useMemo } from 'react';
 import ReactDOM, { render } from 'react-dom';

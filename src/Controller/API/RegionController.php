@@ -12,8 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class RegionController extends AbstractController
 {
     public function __construct(
-        private RegionsProvider $provider,
-        private MapperRepository $mapperRepository
+        private readonly RegionsProvider $provider,
+        private readonly MapperRepository $mapperRepository
     ) {
     }
 
@@ -34,7 +34,8 @@ class RegionController extends AbstractController
     #[Route('/api/region/{continent}/{regionKey}/count.{_format}', name: 'api_region_count', format: 'json', requirements: ['_format' => 'json'])]
     public function count(string $continent, string $regionKey): Response
     {
-        $mappers = $this->mapperRepository->findBy(['region' => $regionKey]);
+        $region = $this->provider->getEntity($regionKey);
+        $mappers = null === $region ? [] : $region->getMappers()->toArray();
 
         $count = [];
         foreach ($mappers as $mapper) {

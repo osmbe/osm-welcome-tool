@@ -7,31 +7,21 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-/**
- * @ORM\Table(name="users")
- * @ORM\Entity(repositoryClass=UserRepository::class)
- */
+#[ORM\Table(name: 'users')]
+#[ORM\Entity(repositoryClass: UserRepository::class)]
 class User implements UserInterface
 {
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=180, unique=true)
-     */
+    #[ORM\Column(type: 'string', length: 180, unique: true)]
     private $display_name;
 
-    /**
-     * @ORM\Column(type="json")
-     */
-    private $roles = [];
+    #[ORM\Column(type: 'json')]
+    private array $roles = [];
 
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
+    #[ORM\Column(type: 'text', nullable: true)]
     private $image;
 
     public function getId(): ?int

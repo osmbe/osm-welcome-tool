@@ -47,8 +47,6 @@ Check [Symfony deployment documentation](https://symfony.com/doc/current/deploym
 
 ```cmd
 vendor/bin/dep deploy --branch=2.x welcome.osm.be
-npm run build
-rsync -e ssh -avz public/build/ root@welcome.osm.be:/var/www/osm-welcome-tool/current/public/build/
 ```
 
 ### Automated update

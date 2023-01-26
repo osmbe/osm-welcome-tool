@@ -10,7 +10,7 @@ class EditorExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new TwigFilter('editor', [$this, 'shortenEditorName'], ['is_safe' => ['html']]),
+            new TwigFilter('editor', $this->shortenEditorName(...), ['is_safe' => ['html']]),
         ];
     }
 

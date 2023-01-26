@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target>Libya</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target>Liberia</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target>Luxembourg</target>
@@ -148,6 +152,10 @@
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target>North Korea</target>
+      </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target>Pakistan</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -169,6 +177,10 @@
         <source>Scotland</source>
         <target>Scotland</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target>South Korea</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target>Spain</target>
@@ -188,6 +200,10 @@
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target>Uganda</target>
+      </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target>California</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
@@ -454,6 +470,14 @@ It helps you discover new mappers in your region and welcome them.</target>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target>{count} new mappers ({percent} %) have already been welcomed</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target>Mapper detected in {count} region(s)</target>
+      </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target>Download OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>

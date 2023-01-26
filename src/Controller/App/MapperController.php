@@ -4,12 +4,12 @@ namespace App\Controller\App;
 
 use App\Entity\Mapper;
 use App\Entity\Note;
+use App\Entity\Region;
 use App\Entity\Template;
 use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -17,6 +17,7 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 class MapperController extends AbstractController
 {
@@ -25,30 +26,37 @@ class MapperController extends AbstractController
     private array $templates;
 
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private RegionsProvider $provider,
-        private TemplatesProvider $templatesProvider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly RegionsProvider $provider,
+        private readonly TemplatesProvider $templatesProvider,
     ) {
     }
 
-    #[Route('/mapper/{id}', name: 'app_mapper')]
+    #[Route('/{regionKey}/mapper/{id}', name: 'app_mapper', requirements: ['regionKey' => '[\w\-_]+'])]
+    #[Route('/{continent}/{regionKey}/mapper/{id}', name: 'app_mapper_full', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america', 'regionKey' => '[\w\-_]+'])]
     #[IsGranted('ROLE_USER')]
-    public function index(Request $request, Mapper $mapper): Response
+    public function index(Request $request, string $regionKey, int $id, ?string $continent): Response
     {
-        $this->mapper = $mapper;
+        $region = $this->provider->getRegion($continent, $regionKey);
 
-        $region = $this->provider->getRegion(null, $this->mapper->getRegion());
+        $this->mapper = $this->entityManager->find(Mapper::class, $id);
+
+        $mapperRegions = array_map(fn (Region $region) => $region->getId(), $this->mapper->getRegion()->toArray());
+
+        if (!\in_array($regionKey, $mapperRegions, true)) {
+            throw $this->createNotFoundException('This mapper was not detected in this region.');
+        }
 
         // Welcome
         if ($request->query->has('welcome')) {
             $this->updateWelcomeDate($request->query->getBoolean('welcome'));
 
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
         if ($request->query->has('reply')) {
             $this->updateWelcomeReply($request->query->getBoolean('reply'));
 
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
         // Templates
@@ -58,21 +66,17 @@ class MapperController extends AbstractController
         // Notes
         $formNote = $this->note($request);
         if (true === $formNote->isSubmitted() && true === $formNote->isValid()) {
-            return $this->redirectToRoute('app_mapper', ['id' => $this->mapper->getId()]);
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
 
         // Prev/Next mapper
         /** @var Mapper[] */
-        $mappers = $this->entityManager
-            ->getRepository(Mapper::class)
-            ->findBy(['region' => $region['key']]);
+        $mappers = $this->provider->getEntity($regionKey)?->getMappers()->toArray() ?? [];
 
-        $firstChangetsetCreatedAt = array_map(function (Mapper $mapper): ?\DateTimeImmutable {
-            return $mapper->getFirstChangeset()->getCreatedAt();
-        }, $mappers);
+        $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
         array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
 
-        $current = array_search($mapper, $mappers, true);
+        $current = array_search($this->mapper, $mappers, true);
         $prev = $current > 0 ? $mappers[$current - 1] : null;
         $next = $current < (\count($mappers) - 1) ? $mappers[$current + 1] : null;
 
@@ -131,10 +135,8 @@ class MapperController extends AbstractController
         if (null !== $templateFilename && '' !== $templateLocale) {
             $filter = array_filter(
                 $this->templates,
-                function (Template $template) use ($templateLocale, $templateFilename): bool {
-                    return substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
-                        && $template->getFilename() === $templateFilename;
-                }
+                fn (Template $template): bool => substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
+                    && $template->getFilename() === $templateFilename
             );
             if (\count($filter) > 0) {
                 return current($filter);
@@ -144,9 +146,7 @@ class MapperController extends AbstractController
         // Get current template based on mapper locale
         $locale = $this->mapper->getFirstChangeset()->getLocale();
         if (null !== $locale) {
-            $filter = array_filter($this->templates, function (Template $template) use ($locale): bool {
-                return substr($template->getLocale(), 0, 2) === substr($locale, 0, 2);
-            });
+            $filter = array_filter($this->templates, fn (Template $template): bool => substr($template->getLocale(), 0, 2) === substr($locale, 0, 2));
             if (\count($filter) > 0) {
                 return current($filter);
             }

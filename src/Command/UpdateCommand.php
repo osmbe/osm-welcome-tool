@@ -21,9 +21,9 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 class UpdateCommand extends Command
 {
     public function __construct(
-        private RegionsProvider $provider,
-        private EntityManagerInterface $entityManager,
-        private CacheItemPoolInterface $cache
+        private readonly RegionsProvider $provider,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly CacheItemPoolInterface $cache
     ) {
         parent::__construct();
     }
@@ -41,6 +41,9 @@ class UpdateCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
+
+        $deletedUsersCommand = $this->getApplication()->find('osm:deleted-users');
+        $deletedUsersCommand->run(new ArrayInput([]), $output);
 
         $lastUpdate = [];
         $regions = $this->provider->getRegions();
@@ -84,16 +87,7 @@ class UpdateCommand extends Command
 
     private function process(string $region, string $date, OutputInterface $output): void
     {
-        $aoiCommand = $this->getApplication()->find('osmcha:aoi');
-        $aoiCommand->run(new ArrayInput([
-            'region' => $region,
-            '-d' => $date,
-        ]), $output);
-
         $newMapperCommand = $this->getApplication()->find('osmcha:new-mapper');
-        $newMapperCommand->run(new ArrayInput([
-            'region' => $region,
-            '-d' => $date,
-        ]), $output);
+        $newMapperCommand->run(new ArrayInput(['region' => $region, '-d' => $date]), $output);
     }
 }

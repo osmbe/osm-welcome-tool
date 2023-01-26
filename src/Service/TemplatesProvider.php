@@ -8,14 +8,14 @@ class TemplatesProvider
 {
     private array $templates = [];
 
-    public function __construct(private string $projectDirectory)
+    public function __construct(private readonly string $projectDirectory)
     {
         $glob = glob(sprintf('%s/templates/messages/*/*/*.md', $this->projectDirectory));
 
         foreach ($glob as $path) {
             if (true === is_readable($path)) {
-                $region = basename(\dirname($path, 2));
-                $locale = basename(\dirname($path));
+                $region = basename(\dirname((string) $path, 2));
+                $locale = basename(\dirname((string) $path));
 
                 $markdown = file_get_contents($path);
 

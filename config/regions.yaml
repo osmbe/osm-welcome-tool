@@ -12,6 +12,10 @@ regions:
       name: Togo
       flag: 🇹🇬
       osmcha.id: 
+    liberia:
+      name: Liberia
+      flag: 🇱🇷
+      osmcha.id: 20cc427e-7f55-4527-b355-88f0f4d67fea
     libya:
       name: Libya
       flag: 🇱🇾
@@ -69,10 +73,18 @@ regions:
       name: North Korea
       flag: 🇰🇵
       osmcha.id: c09f9eb0-4a5b-4f5d-b485-9ea9024b9b5e
+    pakistan:
+      name: Pakistan
+      flag: 🇵🇰
+      osmcha.id: cbf7911d-471c-4066-88d0-f35b6830aad3
     philippines:
       name: Philippines
       flag: 🇵🇭
       osmcha.id: 6f6dcbc8-8811-4e5c-934d-ebb13af0590a
+    south-korea:
+      name: South Korea
+      flag: 🇰🇷
+      osmcha.id: de3cd652-a238-410c-8ad6-348ee35f64ca
     taiwan:
       name: Taiwan
       flag: 🇹🇼
@@ -176,6 +188,10 @@ regions:
       name: Panama
       flag: 🇵🇦
       osmcha.id: 0a2b4874-4c19-45e3-8e75-8b40a8f7f3aa
+    california:
+      name: California
+      flag: 🇺🇸
+      osmcha.id: 766165a5-0a47-4cb8-8cde-d12fed551ff0
     kansas:
       name: Kansas
       flag: 🇺🇸

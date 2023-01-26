@@ -3,6 +3,7 @@
 namespace App\Service;
 
 use App\Entity\Mapper;
+use App\Entity\Region;
 use App\Repository\MapperRepository;
 use App\Repository\RegionRepository;
 use App\Repository\WelcomeRepository;
@@ -13,10 +14,10 @@ class RegionsProvider
     private array $regions = [];
 
     public function __construct(
-        private RegionRepository $regionRepository,
-        private MapperRepository $mapperRepository,
-        private WelcomeRepository $welcomeRepository,
-        private string $projectDirectory
+        private readonly RegionRepository $regionRepository,
+        private readonly MapperRepository $mapperRepository,
+        private readonly WelcomeRepository $welcomeRepository,
+        private readonly string $projectDirectory
     ) {
         $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
 
@@ -35,7 +36,7 @@ class RegionsProvider
         }
 
         if (null === $continent) {
-            $group = array_filter($this->regions, function ($value) use ($key) { return \in_array($key, array_keys($value), true); });
+            $group = array_filter($this->regions, fn ($value) => \in_array($key, array_keys($value), true));
 
             if (0 === \count($group)) {
                 throw new \Exception(sprintf('Key "%s" is not defined in regions configuration file.', $key));
@@ -62,7 +63,7 @@ class RegionsProvider
         if (false === $content) {
             throw new \Exception(sprintf('Can\'t read geometry for region "%s".', $key));
         }
-        $data = json_decode($content, true);
+        $data = json_decode($content, true, 512, \JSON_THROW_ON_ERROR);
         if (null === $data) {
             throw new \Exception(sprintf('Geometry for region "%s" doesn\'t seem to be valid.', $key));
         }
@@ -70,25 +71,17 @@ class RegionsProvider
         return $data;
     }
 
-    public function getLastUpdate(string $key): ?\DateTime
+    public function getEntity(string $key): ?Region
     {
-        $region = $this->regionRepository->find($key);
-
-        if (null === $region) {
-            return null;
-        }
-
-        return $region->getLastUpdate();
+        return $this->regionRepository->find($key);
     }
 
     public function getPercentage(string $key): array
     {
-        /** @var Mapper[] */
-        $mappers = $this->mapperRepository->findBy(['region' => $key]);
+        $region = $this->getEntity($key);
+        $mappers = null === $region ? [] : $region->getMappers()->toArray();
 
-        $checked = array_filter($mappers, function (Mapper $mapper): bool {
-            return null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty();
-        });
+        $checked = array_filter($mappers, fn (Mapper $mapper): bool => null !== $mapper->getWelcome() || false === $mapper->getNotes()->isEmpty());
 
         return [
             'count' => \count($checked),

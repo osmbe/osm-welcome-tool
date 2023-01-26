@@ -7,7 +7,7 @@ Cześć {{ mapper.displayName }}!
 
 Dziękuję za Twój wkład w ulepszenie mapy — i witaj w polskiej społeczności OpenStreetMap! Jeśli masz jakieś pytania lub po prostu chcesz pogadać, znajdziesz nas na:
 
-* [polskim forum](https://forum.openstreetmap.org/viewforum.php?id=23),
+* [polskim forum](https://community.openstreetmap.org/c/communities/pl/40),
 * [grupie na Facebooku](https://www.facebook.com/groups/osmpolska),
 * [czacie Discord](https://openstreetmap.org.pl/discord) — oprócz bieżących rozmów, co piątek po 19 spotykamy się na kanale głosowym.
 

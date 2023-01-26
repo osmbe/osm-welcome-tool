@@ -129,6 +129,10 @@
         <source>Libya</source>
         <target state="translated">Либия</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target state="translated">Либерия</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target state="translated">Люксембург</target>
@@ -148,6 +152,10 @@
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target state="translated">Северна Корея</target>
+      </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target state="translated">Пакистан</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -169,6 +177,10 @@
         <source>Scotland</source>
         <target state="translated">Шотландия</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target state="translated">Южна Корея</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target state="translated">Испания</target>
@@ -188,6 +200,10 @@
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target state="translated">Уганда</target>
+      </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">Калифорния</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
@@ -454,6 +470,14 @@ It helps you discover new mappers in your region and welcome them.</source>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="needs-translation">{count} new mappers ({percent} %) have already been welcomed</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+      </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>

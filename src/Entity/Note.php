@@ -5,38 +5,26 @@ namespace App\Entity;
 use App\Repository\NoteRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=NoteRepository::class)
- */
+#[ORM\Entity(repositoryClass: NoteRepository::class)]
 class Note
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Mapper::class, inversedBy="notes")
-     * @ORM\JoinColumn(nullable=false)
-     */
+    #[ORM\ManyToOne(targetEntity: Mapper::class, inversedBy: 'notes')]
+    #[ORM\JoinColumn(nullable: false)]
     private $mapper;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    #[ORM\Column(type: 'datetime')]
     private $date;
 
-    /**
-     * @ORM\Column(type="text")
-     */
+    #[ORM\Column(type: 'text')]
     private $text;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=User::class)
-     * @ORM\JoinColumn(nullable=false)
-     */
+    #[ORM\ManyToOne(targetEntity: User::class)]
+    #[ORM\JoinColumn(nullable: false)]
     private $author;
 
     public function getId(): ?int

@@ -41,6 +41,10 @@
         <source>Catalan Countries</source>
         <target state="translated">Katalán országok</target>
       </trans-unit>
+      <trans-unit id="9Sc_I21" resname="Chile">
+        <source>Chile</source>
+        <target state="translated">Chile</target>
+      </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
         <target state="translated">Kína</target>
@@ -125,6 +129,10 @@
         <source>Libya</source>
         <target state="translated">Líbia</target>
       </trans-unit>
+      <trans-unit id="ydJgTdU" resname="Liberia">
+        <source>Liberia</source>
+        <target state="translated">Libéria</target>
+      </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
         <target state="translated">Luxemburg</target>
@@ -144,6 +152,10 @@
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
         <target state="translated">Észak-Korea</target>
+      </trans-unit>
+      <trans-unit id="4lZzEux" resname="Pakistan">
+        <source>Pakistan</source>
+        <target state="translated">Pakisztán</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
@@ -165,6 +177,10 @@
         <source>Scotland</source>
         <target state="translated">Skócia</target>
       </trans-unit>
+      <trans-unit id="yFMp43e" resname="South Korea">
+        <source>South Korea</source>
+        <target state="translated">Dél-Korea</target>
+      </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
         <target state="translated">Spanyolország</target>
@@ -184,6 +200,10 @@
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
         <target state="translated">Uganda</target>
+      </trans-unit>
+      <trans-unit id="ytBTXez" resname="California">
+        <source>California</source>
+        <target state="translated">Kalifornia</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
@@ -409,7 +429,7 @@ Segít megtalálni a régiódban először szerkesztőket és üdvözölni őket
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target state="translated">Ha szeretnéd a saját régiódat vagy nyelvedet hozzáadni az Üdvözlőgéphz akkor nézd meg a {contributing_link_start}részvételi útmutatót{link_end}.</target>
+        <target state="translated">Ha szeretnéd a saját régiódat vagy nyelvedet hozzáadni az Üdvözlőgéphez akkor nézd meg a {contributing_link_start}részvételi útmutatót{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
@@ -450,6 +470,14 @@ Segít megtalálni a régiódban először szerkesztőket és üdvözölni őket
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
         <target state="translated">{count} új szerksztő ({percent} %) kapott eddig üdvözletet</target>
+      </trans-unit>
+      <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
+        <source>Mapper detected in {count} region(s)</source>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+      </trans-unit>
+      <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
+        <source>Download OSMCha RSS feed</source>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>

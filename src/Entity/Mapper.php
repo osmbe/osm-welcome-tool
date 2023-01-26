@@ -7,66 +7,45 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=MapperRepository::class)
- */
+#[ORM\Entity(repositoryClass: MapperRepository::class)]
 class Mapper
 {
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $region;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private $display_name;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    #[ORM\Column(type: 'datetime')]
     private $account_created;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Column(type: 'integer')]
     private $changesets_count;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private $status;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Changeset::class, mappedBy="mapper", orphanRemoval=true)
-     */
+    #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
     private $changesets;
 
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
+    #[ORM\Column(type: 'text', nullable: true)]
     private $image;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Note::class, mappedBy="mapper", orphanRemoval=true)
-     */
+    #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
     private $notes;
 
-    /**
-     * @ORM\OneToOne(targetEntity=Welcome::class, mappedBy="mapper", cascade={"persist"})
-     */
+    #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
     private $welcome;
+
+    #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
+    private Collection $region;
 
     public function __construct()
     {
         $this->changesets = new ArrayCollection();
         $this->notes = new ArrayCollection();
+        $this->region = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -77,18 +56,6 @@ class Mapper
     public function setId(int $id): self
     {
         $this->id = $id;
-
-        return $this;
-    }
-
-    public function getRegion(): ?string
-    {
-        return $this->region;
-    }
-
-    public function setRegion(string $region): self
-    {
-        $this->region = $region;
 
         return $this;
     }
@@ -219,9 +186,7 @@ class Mapper
         $changesets = $this->getChangesets()->toArray();
 
         /** @var \DateTimeImmutable[] */
-        $createdAt = array_map(function (Changeset $changeset): ?\DateTimeImmutable {
-            return $changeset->getCreatedAt();
-        }, $changesets);
+        $createdAt = array_map(fn (Changeset $changeset): ?\DateTimeImmutable => $changeset->getCreatedAt(), $changesets);
 
         array_multisort($createdAt, \SORT_ASC, $changesets);
 
@@ -241,6 +206,30 @@ class Mapper
         }
 
         $this->welcome = $welcome;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, region>
+     */
+    public function getRegion(): Collection
+    {
+        return $this->region;
+    }
+
+    public function addRegion(region $region): self
+    {
+        if (!$this->region->contains($region)) {
+            $this->region->add($region);
+        }
+
+        return $this;
+    }
+
+    public function removeRegion(region $region): self
+    {
+        $this->region->removeElement($region);
 
         return $this;
     }

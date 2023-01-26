@@ -8,7 +8,7 @@ use App\Repository\ChangesetRepository;
 class ChangesetProvider
 {
     public function __construct(
-        private ChangesetRepository $repository
+        private readonly ChangesetRepository $repository
     ) {
     }
 
@@ -36,9 +36,7 @@ class ChangesetProvider
             // $changeset->setMapper($mapper);
         }
 
-        $changeset->setReasons(array_map(function ($reason): string {
-            return $reason['name'];
-        }, $feature['properties']['reasons']));
+        $changeset->setReasons(array_map(fn ($reason): string => $reason['name'], $feature['properties']['reasons']));
         $changeset->setSuspect($feature['properties']['is_suspect']);
         $changeset->setHarmful($feature['properties']['harmful']);
         $changeset->setChecked($feature['properties']['checked']);

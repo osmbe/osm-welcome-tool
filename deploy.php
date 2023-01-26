@@ -24,8 +24,23 @@ host('welcome.osm.be')
     ->set('remote_user', 'root')
     ->set('deploy_path', '/var/www/osm-welcome-tool');
 
+// Tasks
+
+task('npm:build', function () {
+    runLocally('npm install');
+    runLocally('npm run build');
+});
+task('npm:rsync', function () {
+    runLocally('rsync -e ssh -az public/build/ {{remote_user}}@{{hostname}}:{{release_path}}/public/build/');
+});
+task('npm', ['npm:build', 'npm:rsync']);
+
 // Hooks
 
+after('deploy:update_code', 'npm');
 after('deploy:failed', 'deploy:unlock');
-
 after('deploy:success', 'php-fpm:reload');
+
+set('bin/composer', function () {
+    return '/usr/bin/php{{php_fpm_version}} /usr/local/bin/composer';
+});
