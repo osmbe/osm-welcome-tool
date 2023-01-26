@@ -8,6 +8,10 @@ regions:
       name: Ghana
       flag: 🇬🇭
       osmcha.id: 0d8dfe15-dcd1-4f53-9c65-30bc164f61ef
+    togo:
+      name: Togo
+      flag: 🇹🇬
+      osmcha.id: 
     libya:
       name: Libya
       flag: 🇱🇾
