@@ -43,7 +43,7 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "geojsonhint": "for f in assets/regions/*/*.geojson ; do geojsonhint \"$f\" ; done",
+        "geojsonhint": "set -e ; for f in assets/regions/*/*.geojson ; do geojsonhint \"$f\" ; done",
         "lint": "eslint \"assets/typescript\"",
         "lint:fix": "eslint --fix \"assets/typescript\""
     },
