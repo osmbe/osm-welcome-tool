@@ -193,6 +193,10 @@
         <source>Tanzania</source>
         <target state="translated">Танзания</target>
       </trans-unit>
+      <trans-unit id="QIA0PuD" resname="Togo">
+        <source>Togo</source>
+        <target state="translated">Того</target>
+      </trans-unit>
       <trans-unit id="B8Z9du_" resname="Turkey">
         <source>Turkey</source>
         <target state="translated">Турция</target>

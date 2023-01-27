@@ -28,6 +28,10 @@ regions:
       name: Tanzania
       flag: 🇹🇿
       osmcha.id: 4df237d7-07bb-4b43-afa0-357eb485e8e1
+    togo:
+      name: Togo
+      flag: 🇹🇬
+      osmcha.id: 72be6502-f732-4a77-9311-0c2f49de6679
     uganda:
       name: Uganda
       flag: 🇺🇬
