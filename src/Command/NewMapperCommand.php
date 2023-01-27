@@ -107,7 +107,7 @@ class NewMapperCommand extends Command
 
             $features = array_filter($changesetsCollection['features'], fn (array $feature) => !\in_array((int) $feature['properties']['uid'], $usersDeleted, true));
 
-            $usersId = array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features);
+            $usersId = array_unique(array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features), SORT_NUMERIC);
 
             /** @var Mapper[] */
             $mappers = [];
@@ -119,11 +119,16 @@ class NewMapperCommand extends Command
             $changesetsId = array_map(fn (array $feature) => (int) $feature['id'], $features);
 
             /** @var Changeset[] */
-            $changesets = array_map(function (array $feature) use ($mappers): Changeset {
+            $changesets = array_map(function (array $feature) use ($io, $mappers): Changeset {
                 $mapper = current(array_filter($mappers, fn (Mapper $mapper): bool => $mapper->getId() === (int) $feature['properties']['uid']));
 
                 $changeset = $this->changesetProvider->fromOSMCha($feature);
-                $changeset->setMapper($mapper);
+
+                if (false === $mapper) {
+                    $io->warning(sprintf('Can\'t find mapper #%d', $feature['properties']['uid']));
+                } else {
+                    $changeset->setMapper($mapper);
+                }
 
                 return $changeset;
             }, $features);
@@ -202,9 +207,28 @@ class NewMapperCommand extends Command
         try {
             $getUsersResponse = $this->osm->getUsers($ids);
 
-            $io->text(sprintf('%s %s', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url')));
+            if (404 === $getUsersResponse->getStatusCode() && \count($ids) > 1) {
+                $io->warning(sprintf('%s %s (%d)', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url'), $getUsersResponse->getStatusCode()));
 
-            $usersArray = $getUsersResponse->toArray();
+                $users = [];
+                foreach ($ids as $id) {
+                    $getUserResponse = $this->osm->getUsers([$id]);
+
+                    if (404 !== $getUserResponse->getStatusCode()) {
+                        $io->text(sprintf('%s %s', $getUserResponse->getInfo('http_method'), $getUserResponse->getInfo('url')));
+
+                        $response = $getUserResponse->toArray();
+                        $users = array_merge($users, $response['users']);
+                    } else {
+                        $io->warning(sprintf('%s %s (%d)', $getUserResponse->getInfo('http_method'), $getUserResponse->getInfo('url'), $getUserResponse->getStatusCode()));
+                    }
+                }
+            } else {
+                $io->text(sprintf('%s %s', $getUsersResponse->getInfo('http_method'), $getUsersResponse->getInfo('url')));
+
+                $response = $getUsersResponse->toArray();
+                $users = $response['users'];
+            }
 
             /** @var Mapper[] */
             $mappers = array_map(function (array $array) use ($key): Mapper {
@@ -222,7 +246,7 @@ class NewMapperCommand extends Command
                 $mapper->addRegion($region);
 
                 return $mapper;
-            }, $usersArray['users']);
+            }, $users);
 
             return $mappers;
         } catch (\Exception $exception) {
