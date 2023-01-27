@@ -107,7 +107,7 @@ class NewMapperCommand extends Command
 
             $features = array_filter($changesetsCollection['features'], fn (array $feature) => !\in_array((int) $feature['properties']['uid'], $usersDeleted, true));
 
-            $usersId = array_unique(array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features), SORT_NUMERIC);
+            $usersId = array_unique(array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features), \SORT_NUMERIC);
 
             /** @var Mapper[] */
             $mappers = [];
