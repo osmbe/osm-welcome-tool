@@ -201,6 +201,10 @@
         <source>Uganda</source>
         <target state="translated">우간다</target>
       </trans-unit>
+      <trans-unit id="WA7txmn" resname="Ukraine">
+        <source>Ukraine</source>
+        <target state="translated">우크라이나</target>
+      </trans-unit>
       <trans-unit id="ytBTXez" resname="California">
         <source>California</source>
         <target state="translated">캘리포니아</target>

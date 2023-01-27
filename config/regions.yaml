@@ -171,6 +171,10 @@ regions:
       name: Spain
       flag: 🇪🇸
       osmcha.id: e3402391-1831-4e71-a4f8-17f6a335a66b
+    ukraine:
+      name: Ukraine
+      flag: 🇺🇦
+      osmcha.id: 2453d07e-4c46-44eb-9b60-9b836338288d
   north-america:
     ca-bc:
       name: British Columbia
