@@ -174,7 +174,7 @@ regions:
     ukraine:
       name: Ukraine
       flag: 🇺🇦
-      osmcha.id: 
+      osmcha.id: 2453d07e-4c46-44eb-9b60-9b836338288d
   north-america:
     ca-bc:
       name: British Columbia
