@@ -44,6 +44,6 @@ PS. Добірка посилань:
 
 * [Українська вікі проєкту](https://wiki.openstreetmap.org/wiki/Uk:Main_Page),
 
-* [Посібник – Switch2OSM](https://switch2.openstreetmap.org.ua/),
+* [Посібник Switch2OSM](https://switch2.openstreetmap.org.ua/),
 
 * [Тижневик OSM](https://weeklyosm.eu/uk/)
