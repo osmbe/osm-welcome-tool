@@ -13,12 +13,15 @@ import ko from 'apexcharts/dist/locales/ko.json';
 import nl from 'apexcharts/dist/locales/nl.json';
 import pl from 'apexcharts/dist/locales/pl.json';
 import sq from 'apexcharts/dist/locales/sq.json';
+import uk from 'apexcharts/dist/locales/ua.json';
 import zh_CN from 'apexcharts/dist/locales/zh-cn.json';
 import zh_TW from 'apexcharts/dist/locales/zh-tw.json';
 
 import 'leaflet/dist/leaflet.css';
 
-const locales = [de, en, es, fr, hu, it, ja, ko, nl, pl, sq, zh_CN, zh_TW];
+uk.name = 'uk'; // Overwrite "ua" by "uk"
+
+const locales = [de, en, es, fr, hu, it, ja, ko, nl, pl, sq, uk, zh_CN, zh_TW];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
