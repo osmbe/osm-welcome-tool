@@ -70,4 +70,3 @@ Enjoy the mapping!
 
 
 MaptimeBogota
-
