@@ -169,6 +169,10 @@
         <source>Poland</source>
         <target state="translated">Польща</target>
       </trans-unit>
+      <trans-unit id="TH3iw9p" resname="Portugal">
+        <source>Portugal</source>
+        <target state="translated">Португалія</target>
+      </trans-unit>
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
         <target state="translated">Румунія</target>

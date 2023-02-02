@@ -169,6 +169,10 @@
         <source>Poland</source>
         <target>Poland</target>
       </trans-unit>
+      <trans-unit id="TH3iw9p" resname="Portugal">
+        <source>Portugal</source>
+        <target>Portugal</target>
+      </trans-unit>
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
         <target>Romania</target>
