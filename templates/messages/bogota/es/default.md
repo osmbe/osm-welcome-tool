@@ -70,4 +70,5 @@ Finalmente, respóndeme este mensaje o ingresa a uno de los canales locales, par
 
 
 {{ app.user.displayName }}
+
 MaptimeBogota
