@@ -68,6 +68,7 @@ Finally, reply to this message or join one of the local channels, so the communi
 Enjoy the mapping!
 
 
+{{ app.user.displayName }}
 
 MaptimeBogota
 

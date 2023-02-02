@@ -50,3 +50,7 @@ No olvides que puedes contar con la comunidad, y preguntarles lo que quieras.
 Todos nosotros alguna vez comenzamos a mapear en OSM, como tu lo estás haciendo en este momento, y lo que queremos es acompañarte en este camino.
 
 ¡Disfruta el mapeo!
+
+
+
+{{ app.user.displayName }}
