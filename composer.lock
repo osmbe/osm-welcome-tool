@@ -8706,16 +8706,16 @@
         },
         {
             "name": "twig/html-extra",
-            "version": "v3.4.0",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/html-extra.git",
-                "reference": "f31c6296b1f0797118c142cf9c9bddf1d8e0acea"
+                "reference": "4b3d75eaae5bb0e3bf8e4a78f2a98af44b9c4497"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/f31c6296b1f0797118c142cf9c9bddf1d8e0acea",
-                "reference": "f31c6296b1f0797118c142cf9c9bddf1d8e0acea",
+                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/4b3d75eaae5bb0e3bf8e4a78f2a98af44b9c4497",
+                "reference": "4b3d75eaae5bb0e3bf8e4a78f2a98af44b9c4497",
                 "shasum": ""
             },
             "require": {
@@ -8729,7 +8729,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -8759,7 +8759,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/html-extra/tree/v3.4.0"
+                "source": "https://github.com/twigphp/html-extra/tree/v3.5.0"
             },
             "funding": [
                 {
@@ -8771,7 +8771,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T10:02:25+00:00"
+            "time": "2022-12-27T12:23:36+00:00"
         },
         {
             "name": "twig/intl-extra",
