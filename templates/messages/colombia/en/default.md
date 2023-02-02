@@ -51,3 +51,6 @@ Did you know we have the best bike, hiking and train world wide networks of any 
 But like everything else, they can always use improvements.
 
 Happy Mapping!
+
+
+{{ app.user.displayName }}
