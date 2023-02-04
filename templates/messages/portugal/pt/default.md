@@ -5,13 +5,13 @@ title: Bem-vind@ ao OpenStreetMap!
 
 Olá, {{ mapper.displayName }}.
 
-Parabéns pela tua primeira edição do OpenStreetMap em Portugal!
+Parabéns pela tua primeira edição do OpenStreetMap em Portugal!  
 A comunidade agradece-te por ajudares a deixar o mapa um pouco melhor.
 
-O meu nome no OpenStreetMap é {{ app.user.displayName }} e sou um contribuidor da comunidade portuguesa, que apoia os mapeadores que pretendem melhorar o mapa em Portugal.
+O meu nome no OpenStreetMap é {{ app.user.displayName }} e sou um contribuidor da comunidade portuguesa, que apoia os mapeadores que pretendem melhorar o mapa em Portugal.  
 Poderás encontrar-nos em vários canais de ajuda, que encontras [aqui](https://www.openstreetmap.org/help), mas o principal é o canal Telegram da comunidade portuguesa de OSM, para o qual [te convidamos](https://t.me/OSMPortugal).
 
-Se tiveres alguma dúvida, estamos cá para ajudar. Se achares que "estragaste" alguma coisa, se não souberes como mapear alguma coisa ou se simplesmente quiseres saber mais sobre o OpenStreetMap (assim o esperamos!), entra em contacto connosco!
+Se tiveres alguma dúvida, estamos cá para ajudar. Se achares que "estragaste" alguma coisa, se não souberes como mapear alguma coisa ou se simplesmente quiseres saber mais sobre o OpenStreetMap (assim o esperamos!), entra em contacto connosco!  
 Além disso, fica à vontade para me contactares, respondendo a esta mensagem ou através do meu perfil no OpenStreetMap.
 
 Aqui tens algumas dicas que te ajudarão a começar:
@@ -25,8 +25,8 @@ Se quiseres saber como etiquetar alguma coisa, a solução mais rápida poderá 
 * Para teres uma ideia do que se passa ao nível da comunidade global, aconselhamos-te a subscrever o [boletim semanal sobre o OpenStreetMap](https://weeklyosm.eu/).
 * Podes acompanhar as tuas edições com a ferramenta [how did you contribute](https://hdyc.neis-one.org/).
 
-Esperamos receber notícias tuas. Entretanto...
+Esperamos receber notícias tuas. Entretanto...  
 bons mapeamentos!
 
-Cumprimentos,
+Cumprimentos,  
 {{ app.user.displayName }}
