@@ -1,6 +1,6 @@
 <footer class="border-t border-gray-200 py-4 text-sm text-gray-600">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between">
+        <div class="flex justify-between gap-4">
             <div class="divide-solid">
                 {% for locale in welcome.locales %}
                 {% if loop.index0 > 0 %} &bull; {% endif %}
@@ -8,7 +8,7 @@
                 {% endfor %}
             </div>
 
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 w-48">
                 <div class="flex items-center">
                     <img class="h-4 mr-1" src="{{ asset('build/images/GitHub-Mark-32px.png') }}" alt="GitHub logo">
                     <a target="_blank" href="https://github.com/osmbe/osm-welcome-tool">GitHub</a>
