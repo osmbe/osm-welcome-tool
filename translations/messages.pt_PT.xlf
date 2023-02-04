@@ -259,7 +259,7 @@
       </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
-        <target state="translated">Sem nota.</target>
+        <target state="translated">Sem notas.</target>
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
@@ -311,7 +311,7 @@
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target state="translated">Carregar mensagem em osm.org</target>
+        <target state="translated">Publicar em osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -387,11 +387,11 @@
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target state="translated">{mapper} recebeu as boas-vindas</target>
+        <target state="translated">{mapper} recebeu as boas-vindas?</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
-        <target state="translated">{mapper} respondeu</target>
+        <target state="translated">{mapper} respondeu?</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
