@@ -85,10 +85,6 @@ regions:
       name: South Korea
       flag: 🇰🇷
       osmcha.id: de3cd652-a238-410c-8ad6-348ee35f64ca
-    vietnam:
-      name: Vietnam
-      flag: VN
-      osmcha.id: 
     taiwan:
       name: Taiwan
       flag: 🇹🇼
@@ -97,6 +93,10 @@ regions:
       name: Turkey
       flag: 🇹🇷
       osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
+    vietnam:
+      name: Vietnam
+      flag: 🇻🇳
+      osmcha.id: fb840b79-4bb6-472c-87e9-ef7e34378db6
   australia: []
   europe:
     albania:
