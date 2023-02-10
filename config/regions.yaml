@@ -41,6 +41,10 @@ regions:
       name: Bangladesh
       flag: 🇧🇩
       osmcha.id: 02900696-ec73-4ead-9784-115fc47dd6d0
+    cambodia:
+      name: Cambodia
+      flag: 🇰🇭
+      osmcha.id: a4c7297c-ee0f-4196-84a2-348fcfc650d4
     china:
       name: China
       flag: 🇨🇳
