@@ -253,6 +253,10 @@
         <source>Washington State</source>
         <target state="translated">Estado de Washington</target>
       </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">Vietname</target>
+      </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
         <target state="translated">Revisão solicitada</target>
