@@ -201,6 +201,10 @@
         <source>Tanzania</source>
         <target state="translated">Танзанія</target>
       </trans-unit>
+      <trans-unit id="voF9.Tt" resname="East Timor">
+        <source>East Timor</source>
+        <target state="translated">Східний Тимор</target>
+      </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
         <target state="translated">Тоґо</target>
@@ -252,6 +256,10 @@
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target state="translated">Штат Вашингтон</target>
+      </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">В'єтнам</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
