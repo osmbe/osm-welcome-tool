@@ -89,10 +89,10 @@ regions:
       name: Taiwan
       flag: 🇹🇼
       osmcha.id: 71a6e5a5-8a9e-4c27-9e1d-f7e2031bafc9
-      timor leste:
+    timor-leste:
       name: Timor Leste
-      flag: TL
-      osmcha.id: 
+      flag: 🇹🇱
+      osmcha.id: 06163dc0-900f-4a6d-9127-21905edf299c
     turkey:
       name: Turkey
       flag: 🇹🇷
