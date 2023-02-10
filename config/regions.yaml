@@ -57,6 +57,10 @@ regions:
       name: Hunan
       flag: 🇨🇳
       osmcha.id: d58be17d-5181-4640-861d-eafaac565631
+    east-timor:
+      name: East Timor
+      flag: 🇹🇱
+      osmcha.id: 06163dc0-900f-4a6d-9127-21905edf299c
     hongkong:
       name: Hong Kong
       flag: 🇭🇰
@@ -81,6 +85,10 @@ regions:
       name: Pakistan
       flag: 🇵🇰
       osmcha.id: cbf7911d-471c-4066-88d0-f35b6830aad3
+    papua-new-guinea:
+      name: Papua New Guinea
+      flag: 🇵🇬
+      osmcha.id: 901b8eea-7a95-4937-88bc-e41930085dc2
     philippines:
       name: Philippines
       flag: 🇵🇭
@@ -97,6 +105,10 @@ regions:
       name: Turkey
       flag: 🇹🇷
       osmcha.id: e77ac469-aef9-4780-bc4b-57a445dceca3
+    vietnam:
+      name: Vietnam
+      flag: 🇻🇳
+      osmcha.id: fb840b79-4bb6-472c-87e9-ef7e34378db6
   australia: []
   europe:
     albania:

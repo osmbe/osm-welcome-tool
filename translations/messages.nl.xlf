@@ -165,6 +165,10 @@
         <source>Panama</source>
         <target state="translated">Panama</target>
       </trans-unit>
+      <trans-unit id="xldCzrK" resname="Papua New Guinea">
+        <source>Papua New Guinea</source>
+        <target state="translated">Papoea-Nieuw-Guinea</target>
+      </trans-unit>
       <trans-unit id="w3gshtg" resname="Philippines">
         <source>Philippines</source>
         <target state="translated">Filipijnen</target>
@@ -200,6 +204,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">Tanzania</target>
+      </trans-unit>
+      <trans-unit id="voF9.Tt" resname="East Timor">
+        <source>East Timor</source>
+        <target state="translated">Oost-Timor</target>
       </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
@@ -252,6 +260,10 @@
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target state="translated">Washington State</target>
+      </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">Vietnam</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
