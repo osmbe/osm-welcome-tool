@@ -44,7 +44,7 @@ regions:
     cambodia:
       name: Cambodia
       flag: 🇰🇭
-      osmcha.id:
+      osmcha.id: a4c7297c-ee0f-4196-84a2-348fcfc650d4
     china:
       name: China
       flag: 🇨🇳
