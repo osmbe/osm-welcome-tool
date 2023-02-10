@@ -77,10 +77,10 @@ regions:
       name: Pakistan
       flag: 🇵🇰
       osmcha.id: cbf7911d-471c-4066-88d0-f35b6830aad3
-      papua-new-guinea:
+    papua-new-guinea:
       name: Papua New Guinea
-      flag: PG
-      osmcha.id: 
+      flag: 🇵🇬
+      osmcha.id: 901b8eea-7a95-4937-88bc-e41930085dc2
     philippines:
       name: Philippines
       flag: 🇵🇭
