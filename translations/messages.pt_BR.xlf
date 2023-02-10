@@ -161,6 +161,10 @@
         <source>Panama</source>
         <target state="translated">Panamá</target>
       </trans-unit>
+      <trans-unit id="xldCzrK" resname="Papua New Guinea">
+        <source>Papua New Guinea</source>
+        <target state="translated">Papua-Nova Guiné</target>
+      </trans-unit>
       <trans-unit id="w3gshtg" resname="Philippines">
         <source>Philippines</source>
         <target state="translated">Filipinas</target>
