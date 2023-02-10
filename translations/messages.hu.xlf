@@ -197,6 +197,10 @@
         <source>Tanzania</source>
         <target state="translated">Tanzánia</target>
       </trans-unit>
+      <trans-unit id="voF9.Tt" resname="East Timor">
+        <source>East Timor</source>
+        <target state="translated">Kelet-Timor</target>
+      </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
         <target state="translated">Togo</target>
