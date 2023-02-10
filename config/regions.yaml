@@ -53,6 +53,10 @@ regions:
       name: Hunan
       flag: 🇨🇳
       osmcha.id: d58be17d-5181-4640-861d-eafaac565631
+    east-timor:
+      name: East Timor
+      flag: 🇹🇱
+      osmcha.id: 06163dc0-900f-4a6d-9127-21905edf299c
     hongkong:
       name: Hong Kong
       flag: 🇭🇰
@@ -89,10 +93,6 @@ regions:
       name: Taiwan
       flag: 🇹🇼
       osmcha.id: 71a6e5a5-8a9e-4c27-9e1d-f7e2031bafc9
-    timor-leste:
-      name: Timor Leste
-      flag: 🇹🇱
-      osmcha.id: 06163dc0-900f-4a6d-9127-21905edf299c
     turkey:
       name: Turkey
       flag: 🇹🇷
