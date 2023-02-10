@@ -249,6 +249,10 @@
         <source>Washington State</source>
         <target state="translated">ワシントン州</target>
       </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">ベトナム</target>
+      </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
         <target state="translated">要求されたレビュー</target>

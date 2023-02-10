@@ -249,6 +249,10 @@
         <source>Washington State</source>
         <target state="translated">Shteti i Uashingtonit</target>
       </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">Vietnami</target>
+      </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
         <target state="translated">U kërkua rishikim</target>
