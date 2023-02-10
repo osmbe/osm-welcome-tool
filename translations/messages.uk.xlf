@@ -29,6 +29,10 @@
         <source>Bulgaria</source>
         <target state="translated">Болгарія</target>
       </trans-unit>
+      <trans-unit id="DCywGi2" resname="Cambodia">
+        <source>Cambodia</source>
+        <target state="translated">Камбоджа</target>
+      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target state="translated">Британська Колумбія</target>
