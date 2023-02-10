@@ -249,6 +249,10 @@
         <source>Washington State</source>
         <target>Washington State</target>
       </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target>Vietnam</target>
+      </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
         <target>Review requested</target>
