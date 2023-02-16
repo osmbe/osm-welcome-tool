@@ -66,6 +66,10 @@ regions:
       flag: 🇯🇵
       osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
     macao:
+      name: Laos
+      flag: LA
+      osmcha.id: 
+    macao:
       name: Macao
       flag: 🇲🇴
       osmcha.id: 05c456ea-f4b3-4210-a091-55d9b8ec4705
