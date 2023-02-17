@@ -73,10 +73,10 @@ regions:
       name: Japan
       flag: 🇯🇵
       osmcha.id: dca30c0e-cd95-4ca7-9c82-d0d7ec71c452
-    loas:
+    laos:
       name: Laos
-      flag: LA
-      osmcha.id:
+      flag: 🇱🇦
+      osmcha.id: 8164870e-c677-4d1c-9229-9a56d75b6fdf
     macao:
       name: Macao
       flag: 🇲🇴
