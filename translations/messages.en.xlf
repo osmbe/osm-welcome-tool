@@ -129,6 +129,10 @@
         <source>Kosovo</source>
         <target>Kosovo</target>
       </trans-unit>
+      <trans-unit id="mOGPRmh" resname="Laos">
+        <source>Laos</source>
+        <target>Laos</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target>Libya</target>

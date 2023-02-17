@@ -129,6 +129,10 @@
         <source>Kosovo</source>
         <target state="translated">코소보</target>
       </trans-unit>
+      <trans-unit id="mOGPRmh" resname="Laos">
+        <source>Laos</source>
+        <target state="translated">라오스</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target state="translated">리비아</target>
