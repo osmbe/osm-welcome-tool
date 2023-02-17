@@ -81,10 +81,10 @@ regions:
       name: Macao
       flag: 🇲🇴
       osmcha.id: 05c456ea-f4b3-4210-a091-55d9b8ec4705
-      myanmar:
+    myanmar:
       name: Myanmar
-      flag: MM
-      osmcha.id:
+      flag: 🇲🇲
+      osmcha.id: 4ecd8633-cfa9-4d0d-933a-50d8bcf5c97a
     north-korea:
       name: North Korea
       flag: 🇰🇵
