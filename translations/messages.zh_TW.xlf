@@ -149,6 +149,10 @@
         <source>Macao</source>
         <target state="translated">澳門</target>
       </trans-unit>
+      <trans-unit id="uiA5pM9" resname="Myanmar">
+        <source>Myanmar</source>
+        <target state="translated">緬甸</target>
+      </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
         <target state="translated">尼日</target>

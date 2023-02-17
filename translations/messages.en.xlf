@@ -149,6 +149,10 @@
         <source>Macao</source>
         <target>Macao</target>
       </trans-unit>
+      <trans-unit id="uiA5pM9" resname="Myanmar">
+        <source>Myanmar</source>
+        <target>Myanmar</target>
+      </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
         <target>Niger</target>
