@@ -9,7 +9,7 @@ Congratulations on making your first edit to OpenStreetMap (OSM) in Laos! Thank 
 
 I'm {{ app.user.displayName }}, a fellow OSM contributor. Like-minded folks support fellow mappers from all over the world to keep improving the map. We don't only exist online, but also meet in real life, from time-to-time.
 
-**OpenStreetMap in Laos** is an informal community of all global supporters and OSM contributors in the country - mappers and users alike. 
+**OpenStreetMap in Laos** is an informal community of all global supporters and OSM contributors in the country - mappers and users alike.
 
 Here are some tips to get you started:
 
