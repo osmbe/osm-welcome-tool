@@ -8,7 +8,7 @@ Congratulations on making your first edit to OpenStreetMap(OSM) in Papua New Gui
 
 I'm {{ app.user.displayName }}, a fellow OSM contributor. Like-minded folks support fellow mappers from all over the world to keep improving the map. We don't only exist online, but also meet in real life, from time-to-time.
 
-**OpenStreetMap in Papua New Guinea** is an informal community of all global supporters and OSM contributors in the country - mappers and users alike. To get in touch with fellow contributors, check out the available [Papua New Guinea Facebook Group]](https://www.facebook.com/groups/4996748003765887) in your platform.
+**OpenStreetMap in Papua New Guinea** is an informal community of all global supporters and OSM contributors in the country - mappers and users alike. To get in touch with fellow contributors, check out the available [Papua New Guinea Facebook Group](https://www.facebook.com/groups/4996748003765887) in your platform.
 
 Here are some tips to get you started:
 
