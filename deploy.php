@@ -11,10 +11,9 @@ set('php_fpm_version', '8.1');
 // Config
 
 set('repository', 'https://github.com/osmbe/osm-welcome-tool.git');
+set('branch', '2.x');
 
-add('shared_files', [
-    'var/data.db',
-]);
+add('shared_files', ['var/data.db']);
 add('shared_dirs', []);
 add('writable_dirs', []);
 
