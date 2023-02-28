@@ -29,6 +29,10 @@
         <source>Bulgaria</source>
         <target state="translated">Bullgarien</target>
       </trans-unit>
+      <trans-unit id="DCywGi2" resname="Cambodia">
+        <source>Cambodia</source>
+        <target state="translated">Kamboxhia</target>
+      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target state="translated">Kolumbia Britanike</target>
@@ -125,6 +129,10 @@
         <source>Kosovo</source>
         <target state="translated">Kosova</target>
       </trans-unit>
+      <trans-unit id="mOGPRmh" resname="Laos">
+        <source>Laos</source>
+        <target state="translated">Laosi</target>
+      </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
         <target state="translated">Libia</target>
@@ -140,6 +148,10 @@
       <trans-unit id="4QlT93Y" resname="Macao">
         <source>Macao</source>
         <target state="translated">Makao</target>
+      </trans-unit>
+      <trans-unit id="uiA5pM9" resname="Myanmar">
+        <source>Myanmar</source>
+        <target state="translated">Birmania</target>
       </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
@@ -160,6 +172,10 @@
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
         <target state="translated">Panamaja</target>
+      </trans-unit>
+      <trans-unit id="xldCzrK" resname="Papua New Guinea">
+        <source>Papua New Guinea</source>
+        <target state="translated">Papua Guinea e Re</target>
       </trans-unit>
       <trans-unit id="w3gshtg" resname="Philippines">
         <source>Philippines</source>
@@ -196,6 +212,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">Tanzania</target>
+      </trans-unit>
+      <trans-unit id="voF9.Tt" resname="East Timor">
+        <source>East Timor</source>
+        <target state="translated">Timori Lindor</target>
       </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
@@ -248,6 +268,10 @@
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target state="translated">Shteti i Uashingtonit</target>
+      </trans-unit>
+      <trans-unit id="Ll6BBmo" resname="Vietnam">
+        <source>Vietnam</source>
+        <target state="translated">Vietnami</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
