@@ -12,7 +12,7 @@ I'm {{ app.user.displayName }}, a fellow OSM contributor. Like-minded folks supp
 
 Here are some tips to get you started:
 
-- You may check the local [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Vietnam). 
+- You may check the local [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Vietnam).
 - While the editing tools try to make it easy to find out how to map things, our [wiki pages](https://wiki.openstreetmap.org/wiki/) have much more detail. You can find a lot of information about how to map on [the wiki](https://wiki.openstreetmap.org/wiki/).  
 If you want to know how to tag something, the quickest solution may be to search for `site:wiki.openstreetmap.org [search term]` with your favourite search engine.
 - When you save your changeset, add a short but clear comment on what you have changed. ([more info here](https://wiki.openstreetmap.org/wiki/Good_changeset_comments)).
