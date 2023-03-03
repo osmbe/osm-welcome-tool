@@ -15,7 +15,7 @@
         "@types/react-dom": "^18.0.10",
         "@typescript-eslint/eslint-plugin": "^5.50.0",
         "@typescript-eslint/parser": "^5.50.0",
-        "apexcharts": "^3.36.3",
+        "apexcharts": "^3.37.1",
         "autoprefixer": "^10.4.13",
         "codejar": "^3.6.0",
         "core-js": "^3.29.0",
