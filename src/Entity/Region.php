@@ -15,7 +15,7 @@ class Region
     private ?string $id = null;
 
     #[ORM\Column(type: 'datetime')]
-    private $lastUpdate;
+    private \DateTime $lastUpdate;
 
     #[ORM\ManyToMany(targetEntity: Mapper::class, mappedBy: 'region')]
     private Collection $mappers;

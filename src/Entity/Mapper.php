@@ -12,31 +12,31 @@ class Mapper
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private ?int $id = null;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $display_name;
+    private ?string $display_name = null;
 
     #[ORM\Column(type: 'datetime')]
-    private $account_created;
+    private ?\DateTimeInterface $account_created = null;
 
     #[ORM\Column(type: 'integer')]
-    private $changesets_count;
+    private ?int $changesets_count = null;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $status;
+    private ?string $status = null;
 
     #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
-    private $changesets;
+    private Collection $changesets;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private $image;
+    private ?string $image = null;
 
     #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
-    private $notes;
+    private Collection $notes;
 
     #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
-    private $welcome;
+    private ?Welcome $welcome = null;
 
     #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
     private Collection $region;
@@ -128,11 +128,9 @@ class Mapper
 
     public function removeChangeset(Changeset $changeset): self
     {
-        if ($this->changesets->removeElement($changeset)) {
-            // set the owning side to null (unless already changed)
-            if ($changeset->getMapper() === $this) {
-                $changeset->setMapper(null);
-            }
+        // set the owning side to null (unless already changed)
+        if ($this->changesets->removeElement($changeset) && $changeset->getMapper() === $this) {
+            $changeset->setMapper(null);
         }
 
         return $this;
@@ -170,11 +168,9 @@ class Mapper
 
     public function removeNote(Note $note): self
     {
-        if ($this->notes->removeElement($note)) {
-            // set the owning side to null (unless already changed)
-            if ($note->getMapper() === $this) {
-                $note->setMapper(null);
-            }
+        // set the owning side to null (unless already changed)
+        if ($this->notes->removeElement($note) && $note->getMapper() === $this) {
+            $note->setMapper(null);
         }
 
         return $this;
@@ -182,11 +178,9 @@ class Mapper
 
     public function getFirstChangeset(): Changeset
     {
-        /** @var Changeset[] */
-        $changesets = $this->getChangesets()->toArray();
+        $changesets = $this->changesets->toArray();
 
-        /** @var \DateTimeImmutable[] */
-        $createdAt = array_map(fn (Changeset $changeset): ?\DateTimeImmutable => $changeset->getCreatedAt(), $changesets);
+        $createdAt = array_map(static fn (Changeset $changeset): ?\DateTimeImmutable => $changeset->getCreatedAt(), $changesets);
 
         array_multisort($createdAt, \SORT_ASC, $changesets);
 
