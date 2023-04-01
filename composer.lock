@@ -1833,16 +1833,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.4.3",
+            "version": "2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d"
+                "reference": "3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/67c26b443f348a51926030c83481b85718457d3d",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf",
+                "reference": "3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf",
                 "shasum": ""
             },
             "require": {
@@ -1932,7 +1932,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.4.3"
+                "source": "https://github.com/guzzle/psr7/tree/2.4.4"
             },
             "funding": [
                 {
@@ -1948,7 +1948,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-26T14:07:24+00:00"
+            "time": "2023-03-09T13:19:02+00:00"
         },
         {
             "name": "jbelien/oauth2-openstreetmap",
@@ -2073,16 +2073,16 @@
         },
         {
             "name": "knpuniversity/oauth2-client-bundle",
-            "version": "v2.13.1",
+            "version": "v2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/knpuniversity/oauth2-client-bundle.git",
-                "reference": "f7fe73e98f193503b8aaf2e11f50a0d72539dc7c"
+                "reference": "f022a334902fc995815f9d2b586a4a0061101410"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/knpuniversity/oauth2-client-bundle/zipball/f7fe73e98f193503b8aaf2e11f50a0d72539dc7c",
-                "reference": "f7fe73e98f193503b8aaf2e11f50a0d72539dc7c",
+                "url": "https://api.github.com/repos/knpuniversity/oauth2-client-bundle/zipball/f022a334902fc995815f9d2b586a4a0061101410",
+                "reference": "f022a334902fc995815f9d2b586a4a0061101410",
                 "shasum": ""
             },
             "require": {
@@ -2127,9 +2127,9 @@
             ],
             "support": {
                 "issues": "https://github.com/knpuniversity/oauth2-client-bundle/issues",
-                "source": "https://github.com/knpuniversity/oauth2-client-bundle/tree/v2.13.1"
+                "source": "https://github.com/knpuniversity/oauth2-client-bundle/tree/v2.14.0"
             },
-            "time": "2023-02-03T13:57:47+00:00"
+            "time": "2023-03-20T14:31:20+00:00"
         },
         {
             "name": "laminas/laminas-code",
