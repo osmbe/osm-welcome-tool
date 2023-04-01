@@ -4,7 +4,7 @@
         "@babel/preset-env": "^7.21.4",
         "@babel/preset-react": "^7.18.6",
         "@headlessui/react": "^1.7.13",
-        "@heroicons/react": "^2.0.16",
+        "@heroicons/react": "^2.0.17",
         "@hotwired/stimulus": "^3.0.0",
         "@mapbox/geojson-rewind": "^0.5.2",
         "@mapbox/geojsonhint": "^3.1.0",
