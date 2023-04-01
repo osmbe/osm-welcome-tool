@@ -3,7 +3,7 @@
         "@babel/core": "^7.21.0",
         "@babel/preset-env": "^7.21.4",
         "@babel/preset-react": "^7.18.6",
-        "@headlessui/react": "^1.7.12",
+        "@headlessui/react": "^1.7.13",
         "@heroicons/react": "^2.0.16",
         "@hotwired/stimulus": "^3.0.0",
         "@mapbox/geojson-rewind": "^0.5.2",
