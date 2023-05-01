@@ -4769,16 +4769,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v6.2.8",
+            "version": "v6.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "751efa84f868337c63e29560c02cff7ae27d874b"
+                "reference": "a123512b46caea497ab8d96d9dbdbdaaf416a606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/751efa84f868337c63e29560c02cff7ae27d874b",
-                "reference": "751efa84f868337c63e29560c02cff7ae27d874b",
+                "url": "https://api.github.com/repos/symfony/form/zipball/a123512b46caea497ab8d96d9dbdbdaaf416a606",
+                "reference": "a123512b46caea497ab8d96d9dbdbdaaf416a606",
                 "shasum": ""
             },
             "require": {
@@ -4853,7 +4853,7 @@
             "description": "Allows to easily create, process and reuse HTML forms",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/form/tree/v6.2.8"
+                "source": "https://github.com/symfony/form/tree/v6.2.10"
             },
             "funding": [
                 {
@@ -4869,7 +4869,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-31T11:20:06+00:00"
+            "time": "2023-04-19T08:03:37+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -6650,16 +6650,16 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v6.2.8",
+            "version": "v6.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "400a019b7c05030599fd15f02b3d4ce287631732"
+                "reference": "617177c24e1a92e011851948ba973758429a68b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/400a019b7c05030599fd15f02b3d4ce287631732",
-                "reference": "400a019b7c05030599fd15f02b3d4ce287631732",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/617177c24e1a92e011851948ba973758429a68b2",
+                "reference": "617177c24e1a92e011851948ba973758429a68b2",
                 "shasum": ""
             },
             "require": {
@@ -6719,7 +6719,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v6.2.8"
+                "source": "https://github.com/symfony/property-info/tree/v6.2.10"
             },
             "funding": [
                 {
@@ -6735,7 +6735,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-14T15:00:05+00:00"
+            "time": "2023-04-18T13:46:08+00:00"
         },
         {
             "name": "symfony/proxy-manager-bridge",
