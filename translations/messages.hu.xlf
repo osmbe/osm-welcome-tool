@@ -57,6 +57,10 @@
         <source>Beijing</source>
         <target state="translated">Peking</target>
       </trans-unit>
+      <trans-unit id="" resname="Heilongjiang">
+        <source>Heilongjiang</source>
+        <target state="translated">Hejlungcsiang</target>
+      </trans-unit>
       <trans-unit id="EAhQbhX" resname="Hunan">
         <source>Hunan</source>
         <target state="translated">Hunan</target>

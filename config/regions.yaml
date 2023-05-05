@@ -53,14 +53,14 @@ regions:
       name: Beijing
       flag: 🇨🇳
       osmcha.id: 7f04c1ed-35f4-4fbf-bc36-9356e39ec438
-    china-hunan:
-      name: Hunan
-      flag: 🇨🇳
-      osmcha.id: d58be17d-5181-4640-861d-eafaac565631
     china-heilongjiang:
       name: Heilongjiang
       flag: 🇨🇳
       osmcha.id: 
+    china-hunan:
+      name: Hunan
+      flag: 🇨🇳
+      osmcha.id: d58be17d-5181-4640-861d-eafaac565631
     east-timor:
       name: East Timor
       flag: 🇹🇱
