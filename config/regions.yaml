@@ -240,6 +240,10 @@ regions:
       name: New York State
       flag: 🇺🇸
       osmcha.id: be301bd2-e35c-45fe-bcff-17892fce6e2e
+    ohio:
+      name: Ohio
+      flag: 🇺🇸
+      osmcha.id: 
     oregon:
       name: Oregon
       flag: 🇺🇸
