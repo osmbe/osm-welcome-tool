@@ -253,6 +253,10 @@
         <source>New York State</source>
         <target>New York State</target>
       </trans-unit>
+      <trans-unit id="Q4p9WQT" resname="Ohio">
+        <source>Ohio</source>
+        <target>Ohio</target>
+      </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
         <target>Oregon</target>
