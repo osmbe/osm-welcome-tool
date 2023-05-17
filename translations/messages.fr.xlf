@@ -257,6 +257,10 @@
         <source>New York State</source>
         <target state="final">État de New York</target>
       </trans-unit>
+      <trans-unit id="Q4p9WQT" resname="Ohio">
+        <source>Ohio</source>
+        <target state="final">Ohio</target>
+      </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
         <target state="final">Oregon</target>
