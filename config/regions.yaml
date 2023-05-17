@@ -53,6 +53,10 @@ regions:
       name: Beijing
       flag: 🇨🇳
       osmcha.id: 7f04c1ed-35f4-4fbf-bc36-9356e39ec438
+    china-heilongjiang:
+      name: Heilongjiang
+      flag: 🇨🇳
+      osmcha.id: e54192ee-b3bd-40c8-acda-11ca6e04a706
     china-hunan:
       name: Hunan
       flag: 🇨🇳
