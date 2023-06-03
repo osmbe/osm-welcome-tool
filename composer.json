@@ -65,7 +65,7 @@
         "phpstan/phpstan": "^1.3.2",
         "phpstan/phpstan-strict-rules": "^1.1.0",
         "phpstan/phpstan-symfony": "^1.0.4",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10.1",
         "pluswerk/grumphp-xliff-task": "^5.0",
         "symfony/browser-kit": "^6.0",
         "symfony/css-selector": "^6.0",
