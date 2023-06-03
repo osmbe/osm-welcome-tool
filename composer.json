@@ -21,7 +21,7 @@
         "phpdocumentor/reflection-docblock": "^5.2",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "6.2.*",
-        "symfony/cache": "6.2.*",
+        "symfony/cache": "6.3.*",
         "symfony/console": "6.2.*",
         "symfony/crowdin-translation-provider": "6.2.*",
         "symfony/dotenv": "6.3.*",
