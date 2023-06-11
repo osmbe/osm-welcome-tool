@@ -3,7 +3,7 @@ name: Default
 title: Bienvenue sur OpenStreetMap
 ---
 
-Bonjour, {{ mapper.displayName }}
+Bonjour {{ mapper.displayName }},
 
 Félicitations pour votre première contribution sur OpenStreetMap en France ! Merci de nous aider à améliorer la carte.
 
