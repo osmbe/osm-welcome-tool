@@ -69,6 +69,9 @@ regions:
       name: Hong Kong
       flag: 🇭🇰
       osmcha.id: ddd87c1a-717b-4d30-815a-507ed8d57a3c
+    india:
+      name: India
+      flag: 🇮🇳
     indonesia:
       name: Indonesia
       flag: 🇮🇩
