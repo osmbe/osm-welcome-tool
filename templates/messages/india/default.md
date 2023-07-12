@@ -7,6 +7,8 @@ Hi {{ mapper.displayName }}
 
 I noticed you made your first contribution to OpenStreetMap. Congratulations, and thanks! As of now, you can consider yourself part of the  OSM India community. Your edit is live within a couple of minutes. You may have to refresh your browser to see your edit.
 
+For mapping guidance visit the [India page](https://wiki.openstreetmap.org/wiki/India) on OpenStreetMap wiki. You can also find mapping status of states, sub districts, highways etc. on the wiki.
+
 If you have any questions at all, we can help out: if you think you might have broken something, are in doubt how to map something particular, or just want to know more about OpenStreetMap, contact us!
 
 Here are some useful things to get you started:
