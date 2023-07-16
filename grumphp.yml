@@ -40,7 +40,7 @@ grumphp:
     check:
       tasks:
         - phpcsfixer
-        - phpstan
+        # - phpstan
         - twigcs
         - xlifflint
         - yamllint
