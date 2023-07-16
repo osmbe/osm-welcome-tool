@@ -402,12 +402,12 @@
         ]
     },
     "symfony/crowdin-translation-provider": {
-        "version": "6.0",
+        "version": "6.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "5.3",
-            "ref": "8acdcff2acee247e79f16ed0b2abc8fd53cf0d30"
+            "ref": "9f5f1508bc80ed56c8a3ae7febc53a8aa982e424"
         }
     },
     "symfony/css-selector": {
