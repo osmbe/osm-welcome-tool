@@ -72,6 +72,7 @@ regions:
     india:
       name: India
       flag: 🇮🇳
+      osmcha.id:  a7a66965-f901-4321-90bb-2c3b5c660c70
     indonesia:
       name: Indonesia
       flag: 🇮🇩
