@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf2e4666c74a5f81424c251f09e0f629",
+    "content-hash": "fb2398269c1bb52d5c4c411035a7ce2a",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5373,16 +5373,16 @@
         },
         {
             "name": "symfony/intl",
-            "version": "v6.2.12",
+            "version": "v6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",
-                "reference": "99753f03c85ac7187e15f8d81f55a26267b8ed01"
+                "reference": "fdf4aff85fff2cc681cc45936b6b2a52731acc23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/intl/zipball/99753f03c85ac7187e15f8d81f55a26267b8ed01",
-                "reference": "99753f03c85ac7187e15f8d81f55a26267b8ed01",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/fdf4aff85fff2cc681cc45936b6b2a52731acc23",
+                "reference": "fdf4aff85fff2cc681cc45936b6b2a52731acc23",
                 "shasum": ""
             },
             "require": {
@@ -5434,7 +5434,7 @@
                 "localization"
             ],
             "support": {
-                "source": "https://github.com/symfony/intl/tree/v6.2.12"
+                "source": "https://github.com/symfony/intl/tree/v6.3.1"
             },
             "funding": [
                 {
@@ -5450,7 +5450,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-20T21:12:34+00:00"
+            "time": "2023-06-21T12:08:28+00:00"
         },
         {
             "name": "symfony/mailer",
