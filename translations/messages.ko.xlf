@@ -411,15 +411,15 @@
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
-        <target state="translated">{userlink}에게 환영받음</target>
+        <target state="translated">{userlink} 님에게 환영받음</target>
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target state="translated">{mapper}이(가) 환영받음</target>
+        <target state="translated">{mapper} 님을 환영함</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
-        <target state="translated">{mapper}이(가) 답장을 보냄</target>
+        <target state="translated">{mapper} 님이 답장을 보냄</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
@@ -435,7 +435,7 @@
       </trans-unit>
       <trans-unit id="5JIt4ui" resname="{userlink} has replied">
         <source>{userlink} has replied</source>
-        <target state="translated">{userlink}이(가) 답장을 보냄</target>
+        <target state="translated">{userlink} 님이 답장을 보냄</target>
       </trans-unit>
       <trans-unit id="vQEb23j" resname="Login with OSM">
         <source>Login with OSM</source>
