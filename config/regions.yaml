@@ -77,6 +77,10 @@ regions:
       name: Indonesia
       flag: 🇮🇩
       osmcha.id: af24c9ea-4ba1-439f-80fd-0f7b30fa6952
+    iraq:
+      name: Iraq
+      flag: 🇮🇶
+      osmcha.id: 
     japan:
       name: Japan
       flag: 🇯🇵
