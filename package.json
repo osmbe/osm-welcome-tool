@@ -4,7 +4,7 @@
         "@babel/plugin-proposal-class-properties": "^7.18.6",
         "@babel/preset-env": "^7.22.9",
         "@babel/preset-react": "^7.22.5",
-        "@headlessui/react": "^1.7.14",
+        "@headlessui/react": "^1.7.16",
         "@heroicons/react": "^2.0.18",
         "@hotwired/stimulus": "^3.0.0",
         "@mapbox/geojson-rewind": "^0.5.2",
