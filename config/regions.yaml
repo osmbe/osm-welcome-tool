@@ -211,6 +211,9 @@ regions:
       name: Spain
       flag: 🇪🇸
       osmcha.id: e3402391-1831-4e71-a4f8-17f6a335a66b
+    switzerland:
+      name: Switzerland
+      flag: 🇨🇭
     ukraine:
       name: Ukraine
       flag: 🇺🇦
