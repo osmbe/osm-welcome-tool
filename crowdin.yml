@@ -1,0 +1,9 @@
+files:
+  - source: /translations/messages.en.xlf
+    translation: /translations/messages.%locale_with_underscore%.xlf
+  - source: /translations/security.en.xlf
+    translation: /translations/security.%locale_with_underscore%.xlf
+  - source: /translations/validators.en.xlf
+    translation: /translations/validators.%locale_with_underscore%.xlf
+  - source: /translations/time+intl-icu.en.xlf
+    translation: /translations/time+intl-icu.%locale_with_underscore%.xlf
