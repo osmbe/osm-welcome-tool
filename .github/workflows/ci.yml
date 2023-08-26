@@ -38,8 +38,8 @@ jobs:
       run: vendor/bin/grumphp run --testsuite=composer
     - name: Run checks
       run: vendor/bin/grumphp run --testsuite=check
-    # - name: Run test suite
-    #   run: vendor/bin/phpunit
+    - name: Run test suite
+      run: vendor/bin/phpunit
 
   node-build:
     runs-on: ubuntu-latest
