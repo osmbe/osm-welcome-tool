@@ -222,6 +222,7 @@ regions:
     switzerland:
       name: Switzerland
       flag: 🇨🇭
+      osmcha.id: 5bdd4a48-8e34-43da-bc19-7b74048c3612
     ukraine:
       name: Ukraine
       flag: 🇺🇦
