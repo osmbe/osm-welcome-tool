@@ -7,15 +7,15 @@
     <body>
       <trans-unit id="GvALh0." resname="Albania">
         <source>Albania</source>
-        <target state="translated">Albania</target>
+        <target state="needs-translation">Albania</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
-        <target state="translated">Austria</target>
+        <target state="needs-translation">Austria</target>
       </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
-        <target state="translated">Bangladesh</target>
+        <target state="needs-translation">Bangladesh</target>
       </trans-unit>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
@@ -23,11 +23,11 @@
       </trans-unit>
       <trans-unit id="liHAc2R" resname="Bolivia">
         <source>Bolivia</source>
-        <target state="translated">Bolivia</target>
+        <target state="needs-translation">Bolivia</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
-        <target state="translated">Bulgaria</target>
+        <target state="needs-translation">Bulgaria</target>
       </trans-unit>
       <trans-unit id="DCywGi2" resname="Cambodia">
         <source>Cambodia</source>
@@ -39,7 +39,7 @@
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="translated">Ontario</target>
+        <target state="needs-translation">Ontario</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
@@ -59,23 +59,23 @@
       </trans-unit>
       <trans-unit id="f5jx79f" resname="Heilongjiang">
         <source>Heilongjiang</source>
-        <target state="translated">Heilongjiang</target>
+        <target state="needs-translation">Heilongjiang</target>
       </trans-unit>
       <trans-unit id="EAhQbhX" resname="Hunan">
         <source>Hunan</source>
-        <target state="translated">Hunan</target>
+        <target state="needs-translation">Hunan</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
-        <target state="translated">Colombia</target>
+        <target state="needs-translation">Colombia</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
-        <target state="translated">Bogotá</target>
+        <target state="needs-translation">Bogotá</target>
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="translated">DACHLI-Obersee-Rheintal</target>
+        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -84,6 +84,10 @@
       <trans-unit id="ehyk73U" resname="France">
         <source>France</source>
         <target state="translated">Francia</target>
+      </trans-unit>
+      <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
+        <source>Basque Country South Landes</source>
+        <target state="needs-translation">Basque Country South Landes</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -103,11 +107,11 @@
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
-        <target state="translated">Ghana</target>
+        <target state="needs-translation">Ghana</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
-        <target state="translated">Hong Kong</target>
+        <target state="needs-translation">Hong Kong</target>
       </trans-unit>
       <trans-unit id="UEvjCE9" resname="Hungary">
         <source>Hungary</source>
@@ -115,7 +119,15 @@
       </trans-unit>
       <trans-unit id="28dKNtj" resname="Indonesia">
         <source>Indonesia</source>
-        <target state="translated">Indonesia</target>
+        <target state="needs-translation">Indonesia</target>
+      </trans-unit>
+      <trans-unit id="q9FJIUU" resname="India">
+        <source>India</source>
+        <target state="needs-translation">India</target>
+      </trans-unit>
+      <trans-unit id="3lAI0ZS" resname="Iraq">
+        <source>Iraq</source>
+        <target state="needs-translation">Iraq</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -131,11 +143,11 @@
       </trans-unit>
       <trans-unit id="SoZ0JMc" resname="Kosovo">
         <source>Kosovo</source>
-        <target state="translated">Kosovo</target>
+        <target state="needs-translation">Kosovo</target>
       </trans-unit>
       <trans-unit id="mOGPRmh" resname="Laos">
         <source>Laos</source>
-        <target state="translated">Laos</target>
+        <target state="needs-translation">Laos</target>
       </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
@@ -143,7 +155,7 @@
       </trans-unit>
       <trans-unit id="ydJgTdU" resname="Liberia">
         <source>Liberia</source>
-        <target state="translated">Liberia</target>
+        <target state="needs-translation">Liberia</target>
       </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
@@ -151,7 +163,7 @@
       </trans-unit>
       <trans-unit id="4QlT93Y" resname="Macao">
         <source>Macao</source>
-        <target state="translated">Macao</target>
+        <target state="needs-translation">Macao</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
@@ -159,11 +171,11 @@
       </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
-        <target state="translated">Niger</target>
+        <target state="needs-translation">Niger</target>
       </trans-unit>
       <trans-unit id="BJUqD5h" resname="Nigeria">
         <source>Nigeria</source>
-        <target state="translated">Nigeria</target>
+        <target state="needs-translation">Nigeria</target>
       </trans-unit>
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
@@ -171,11 +183,11 @@
       </trans-unit>
       <trans-unit id="4lZzEux" resname="Pakistan">
         <source>Pakistan</source>
-        <target state="translated">Pakistan</target>
+        <target state="needs-translation">Pakistan</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
-        <target state="translated">Panama</target>
+        <target state="needs-translation">Panama</target>
       </trans-unit>
       <trans-unit id="xldCzrK" resname="Papua New Guinea">
         <source>Papua New Guinea</source>
@@ -195,7 +207,7 @@
       </trans-unit>
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
-        <target state="translated">Romania</target>
+        <target state="needs-translation">Romania</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -209,13 +221,17 @@
         <source>Spain</source>
         <target state="translated">Spagna</target>
       </trans-unit>
+      <trans-unit id="InVYMZb" resname="Switzerland">
+        <source>Switzerland</source>
+        <target state="needs-translation">Switzerland</target>
+      </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
-        <target state="translated">Taiwan</target>
+        <target state="needs-translation">Taiwan</target>
       </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
-        <target state="translated">Tanzania</target>
+        <target state="needs-translation">Tanzania</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
@@ -223,7 +239,7 @@
       </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
-        <target state="translated">Togo</target>
+        <target state="needs-translation">Togo</target>
       </trans-unit>
       <trans-unit id="B8Z9du_" resname="Turkey">
         <source>Turkey</source>
@@ -231,7 +247,7 @@
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
-        <target state="translated">Uganda</target>
+        <target state="needs-translation">Uganda</target>
       </trans-unit>
       <trans-unit id="WA7txmn" resname="Ukraine">
         <source>Ukraine</source>
@@ -239,11 +255,11 @@
       </trans-unit>
       <trans-unit id="ytBTXez" resname="California">
         <source>California</source>
-        <target state="translated">California</target>
+        <target state="needs-translation">California</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
-        <target state="translated">Kansas</target>
+        <target state="needs-translation">Kansas</target>
       </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
@@ -251,23 +267,27 @@
       </trans-unit>
       <trans-unit id="JjJaVG_" resname="Michigan">
         <source>Michigan</source>
-        <target state="translated">Michigan</target>
+        <target state="needs-translation">Michigan</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target state="translated">Stato di New York</target>
       </trans-unit>
+      <trans-unit id="Q4p9WQT" resname="Ohio">
+        <source>Ohio</source>
+        <target state="needs-translation">Ohio</target>
+      </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
-        <target state="translated">Oregon</target>
+        <target state="needs-translation">Oregon</target>
       </trans-unit>
       <trans-unit id="grzhC1_" resname="Utah">
         <source>Utah</source>
-        <target state="translated">Utah</target>
+        <target state="needs-translation">Utah</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
-        <target state="translated">Vermont</target>
+        <target state="needs-translation">Vermont</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -275,7 +295,7 @@
       </trans-unit>
       <trans-unit id="Ll6BBmo" resname="Vietnam">
         <source>Vietnam</source>
-        <target state="translated">Vietnam</target>
+        <target state="needs-translation">Vietnam</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
@@ -351,7 +371,7 @@
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
         <source>Home</source>
-        <target state="translated">Home</target>
+        <target state="needs-translation">Home</target>
       </trans-unit>
       <trans-unit id="byAvVKe" resname="List">
         <source>List</source>
@@ -371,7 +391,7 @@
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target state="translated">Editor</target>
+        <target state="needs-translation">Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
@@ -485,15 +505,15 @@ Ti aiuta a scoprire i nuovi contributori nella tua regione e dargli il benvenuto
       </trans-unit>
       <trans-unit id="P1BTs65" resname="africa">
         <source>africa</source>
-        <target state="translated">Africa</target>
+        <target state="needs-translation">Africa</target>
       </trans-unit>
       <trans-unit id="7hOb0P2" resname="asia">
         <source>asia</source>
-        <target state="translated">Asia</target>
+        <target state="needs-translation">Asia</target>
       </trans-unit>
       <trans-unit id="xYXx3su" resname="australia">
         <source>australia</source>
-        <target state="translated">Australia</target>
+        <target state="needs-translation">Australia</target>
       </trans-unit>
       <trans-unit id="sR8gPo5" resname="europe">
         <source>europe</source>
