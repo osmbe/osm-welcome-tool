@@ -6,7 +6,7 @@
         "@babel/preset-react": "^7.22.5",
         "@headlessui/react": "^1.7.17",
         "@heroicons/react": "^2.0.18",
-        "@hotwired/stimulus": "^3.0.0",
+        "@hotwired/stimulus": "^3.2.2",
         "@mapbox/geojson-rewind": "^0.5.2",
         "@mapbox/geojsonhint": "^3.2.0",
         "@popperjs/core": "^2.11.8",
