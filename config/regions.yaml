@@ -158,7 +158,7 @@ regions:
     basque-country-south-landes:
       name: Basque Country South Landes
       flag: 🇫🇷
-      osmcha.id:
+      osmcha.id: 8fe86f39-e472-45a6-b128-33a2c4931fe4
     germany:
       name: Germany
       flag: 🇩🇪
