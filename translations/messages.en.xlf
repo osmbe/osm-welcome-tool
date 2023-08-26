@@ -85,6 +85,10 @@
         <source>France</source>
         <target>France</target>
       </trans-unit>
+      <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
+        <source>Basque Country South Landes</source>
+        <target>Basque Country South Landes</target>
+      </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
         <target>Germany</target>
