@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="M4RAXb_" resname="diff.empty">
         <source>diff.empty</source>
-        <target>现在</target>
+        <target state="translated">现在</target>
       </trans-unit>
     </body>
   </file>
