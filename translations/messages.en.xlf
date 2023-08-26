@@ -221,6 +221,10 @@
         <source>Spain</source>
         <target>Spain</target>
       </trans-unit>
+      <trans-unit id="InVYMZb" resname="Switzerland">
+        <source>Switzerland</source>
+        <target>Switzerland</target>
+      </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
         <target>Taiwan</target>
