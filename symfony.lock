@@ -1,27 +1,6 @@
 {
-    "amphp/amp": {
-        "version": "v2.6.1"
-    },
-    "amphp/byte-stream": {
-        "version": "v1.8.1"
-    },
-    "amphp/parallel": {
-        "version": "v1.4.1"
-    },
     "amphp/parallel-functions": {
         "version": "v1.0.0"
-    },
-    "amphp/parser": {
-        "version": "v1.0.0"
-    },
-    "amphp/process": {
-        "version": "v1.1.3"
-    },
-    "amphp/serialization": {
-        "version": "v1.0.0"
-    },
-    "amphp/sync": {
-        "version": "v1.4.2"
     },
     "composer/pcre": {
         "version": "1.0.0"
@@ -144,9 +123,6 @@
     "friendsoftwig/twigcs": {
         "version": "dev-main"
     },
-    "gitonomy/gitlib": {
-        "version": "v1.3.2"
-    },
     "guzzlehttp/guzzle": {
         "version": "7.4.1"
     },
@@ -207,9 +183,6 @@
     "nikic/php-parser": {
         "version": "v4.13.2"
     },
-    "ondram/ci-detector": {
-        "version": "4.1.0"
-    },
     "opis/closure": {
         "version": "3.6.2"
     },
@@ -233,9 +206,6 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.6.0"
-    },
-    "phpro/grumphp": {
-        "version": "v1.7.0"
     },
     "phpspec/prophecy": {
         "version": "v1.15.0"
@@ -289,9 +259,6 @@
             "phpunit.xml.dist",
             "tests/bootstrap.php"
         ]
-    },
-    "pluswerk/grumphp-xliff-task": {
-        "version": "5.0.0"
     },
     "psr/cache": {
         "version": "3.0.0"
@@ -367,9 +334,6 @@
     },
     "sebastian/version": {
         "version": "3.0.2"
-    },
-    "seld/jsonlint": {
-        "version": "1.8.3"
     },
     "symfony/apache-pack": {
         "version": "1.0",
