@@ -15,7 +15,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.1",
         "doctrine/orm": "^2.9",
         "jbelien/oauth2-openstreetmap": "^0.1.1",
-        "knplabs/knp-time-bundle": "^1.19",
+        "knplabs/knp-time-bundle": "^2.0",
         "knpuniversity/oauth2-client-bundle": "^2.8",
         "league/commonmark": "^2.0",
         "phpdocumentor/reflection-docblock": "^5.2",
