@@ -8,7 +8,7 @@
         "@heroicons/react": "^2.0.18",
         "@hotwired/stimulus": "^3.0.0",
         "@mapbox/geojson-rewind": "^0.5.2",
-        "@mapbox/geojsonhint": "^3.1.1",
+        "@mapbox/geojsonhint": "^3.2.0",
         "@popperjs/core": "^2.11.8",
         "@symfony/stimulus-bridge": "^3.2.2",
         "@symfony/webpack-encore": "^4.3.0",
