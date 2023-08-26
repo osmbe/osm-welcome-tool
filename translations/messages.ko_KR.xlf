@@ -75,7 +75,7 @@
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="translated">DACHLI-Obersee-Rheintal</target>
+        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -84,6 +84,10 @@
       <trans-unit id="ehyk73U" resname="France">
         <source>France</source>
         <target state="translated">프랑스</target>
+      </trans-unit>
+      <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
+        <source>Basque Country South Landes</source>
+        <target state="needs-translation">Basque Country South Landes</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -116,6 +120,14 @@
       <trans-unit id="28dKNtj" resname="Indonesia">
         <source>Indonesia</source>
         <target state="translated">인도네시아</target>
+      </trans-unit>
+      <trans-unit id="q9FJIUU" resname="India">
+        <source>India</source>
+        <target state="needs-translation">India</target>
+      </trans-unit>
+      <trans-unit id="3lAI0ZS" resname="Iraq">
+        <source>Iraq</source>
+        <target state="needs-translation">Iraq</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -209,6 +221,10 @@
         <source>Spain</source>
         <target state="translated">스페인</target>
       </trans-unit>
+      <trans-unit id="InVYMZb" resname="Switzerland">
+        <source>Switzerland</source>
+        <target state="needs-translation">Switzerland</target>
+      </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
         <target state="translated">대만</target>
@@ -256,6 +272,10 @@
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
         <target state="translated">뉴욕주</target>
+      </trans-unit>
+      <trans-unit id="Q4p9WQT" resname="Ohio">
+        <source>Ohio</source>
+        <target state="needs-translation">Ohio</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
