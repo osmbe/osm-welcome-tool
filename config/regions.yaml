@@ -80,7 +80,7 @@ regions:
     iraq:
       name: Iraq
       flag: 🇮🇶
-      osmcha.id: 
+      osmcha.id: 1b39e039-7793-444c-b2a1-3fe62db19aba
     japan:
       name: Japan
       flag: 🇯🇵
