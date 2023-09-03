@@ -43,7 +43,7 @@ class UpdateCommand extends Command
         $validate = $this->validator->validate($input->getArgument('continent'), new Callback(function (string $value, ExecutionContextInterface $context) {
             $regions = $this->provider->getRegions();
 
-            if (!isset($regions[$value]) || 0 === count($regions[$value])) {
+            if (!isset($regions[$value]) || 0 === \count($regions[$value])) {
                 $context
                     ->buildViolation(sprintf('Continent "%s" does not exist.', $value))
                     ->addViolation();
