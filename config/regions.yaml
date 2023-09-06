@@ -199,6 +199,10 @@ regions:
       name: Luxembourg
       flag: 🇱🇺
       osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+    montenegro:
+      name: Montenegro
+      flag: 🇲🇪
+      osmcha.id:
     poland:
       name: Poland
       flag: 🇵🇱
