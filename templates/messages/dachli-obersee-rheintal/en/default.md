@@ -3,18 +3,17 @@ name: Default (DACHLI)
 title: Welcome to OpenStreetMap
 ---
 
-Hello {{ mapper.displayName }}
+Hello {{ mapper.displayName }} and welcome as a new member of the OpenStreetMap community 😊
 
-thank you for your first contribution to OpenStreetMap and welcome to the OSM community in the four-country region around Lake Constance and the Rhine Valley!
+I'm very happy to welcome you here and hope you already feel comfortable in our big, worldwide OSM family. By registering with OpenStreetMap, you've taken a great step. Here you will find a vibrant community of people who are passionate about cartography and the dissemination of geospatial data. There are so many exciting ways to get involved - whether it's adding roads, points of interest, or even discovering and reporting map errors.
 
-If you have any questions, we would like to help you: As a first point of contact I recommend our [**Forum**](https://community.openstreetmap.org). There you can easily register with your existing OSM account and ask questions or just get in contact with other mappers.
+If you have any questions, I'm happy to help. Whether you're having trouble editing or just want to learn more about the different aspects of OpenStreetMap, don't hesitate to contact me.
 
-Especially in the beginning it can still be very overwhelming what you can map in OSM. A very easy way to get started with OpenStreetMap is to use the [**Android app StreetComplete**](https://streetcomplete.app/), which allows you to easily complete your neighborhood by answering short questions. Try it out on your next walk right away!
+The OSM community is very helpful and happy to share their knowledge. A great place to start discussions and ask further questions is the [**OpenStreetMap Forum**](https://community.openstreetmap.org). There you will find experienced mappers and enthusiasts who will be happy to help you.
 
-Here are a few more links to get you started:
+As a beginner's tip, I'd like to recommend the [**Android App StreetComplete**](https://streetcomplete.app/). It's an excellent tool for filling in missing information on the map, and it's fun to use to explore your surroundings. Try it out on your next walk right away! For iOS and Android there is also the app [**EveryDoor**](https://every-door.app) that helps you contribute information about stores, buildings and addresses.
 
-* I recommend using the [Tips for Beginners](https://wiki.openstreetmap.org/wiki/DE:Beginners%27_guide).
-* If you can't figure out how to map something with the editor of your choice, the quickest solution is to look at [Map Features](https://wiki.openstreetmap.org/wiki/DE:Map_Features) on the wiki.
-* [learnOSM](https://learnosm.org/de/) is a good place to learn more about OSM. There are instructions for using the iD browser editor and the more advanced JOSM editor.
+Again, welcome to OpenStreetMap! We look forward to mapping and improving the world together. If you need support or advice, I'm here to help.
 
-Have fun mapping and being part of the OSM community!
+Happy Mapping!
+mcliquid
