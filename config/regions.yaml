@@ -280,6 +280,9 @@ regions:
       name: Washington State
       flag: 🇺🇸
       osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
+    texas:
+      name: Texas
+      flag: 🇺🇸
   south-america:
     bolivia:
       name: Bolivia
