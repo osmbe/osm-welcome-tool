@@ -127,7 +127,7 @@
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target state="needs-translation">Iraq</target>
+        <target state="translated">伊拉克</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -223,7 +223,7 @@
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target state="needs-translation">Switzerland</target>
+        <target state="translated">瑞士</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
@@ -275,7 +275,7 @@
       </trans-unit>
       <trans-unit id="Q4p9WQT" resname="Ohio">
         <source>Ohio</source>
-        <target state="needs-translation">Ohio</target>
+        <target state="translated">俄亥俄州</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
@@ -537,7 +537,7 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">下載 OSMCha RSS feed</target>
       </trans-unit>
     </body>
   </file>
