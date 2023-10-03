@@ -14,7 +14,7 @@
         "@symfony/webpack-encore": "^4.4.0",
         "@types/leaflet": "^1.9.4",
         "@types/react-dom": "^18.2.7",
-        "@typescript-eslint/eslint-plugin": "^6.5.0",
+        "@typescript-eslint/eslint-plugin": "^6.7.4",
         "@typescript-eslint/parser": "^6.5.0",
         "apexcharts": "^3.43.0",
         "autoprefixer": "^10.4.15",
