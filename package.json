@@ -19,7 +19,7 @@
         "apexcharts": "^3.43.0",
         "autoprefixer": "^10.4.15",
         "codejar": "^4.2.0",
-        "core-js": "^3.32.1",
+        "core-js": "^3.33.0",
         "eslint": "^8.48.0",
         "eslint-plugin-react": "^7.32.2",
         "file-loader": "^6.2.0",
