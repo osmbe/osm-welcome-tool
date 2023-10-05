@@ -223,7 +223,7 @@
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target state="needs-translation">Switzerland</target>
+        <target state="translated">Schweiz</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
@@ -391,7 +391,7 @@
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target state="needs-translation">Editor</target>
+        <target state="translated">Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
@@ -537,7 +537,7 @@ Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">OSMCha RSS Feed herunterladen</target>
       </trans-unit>
     </body>
   </file>
