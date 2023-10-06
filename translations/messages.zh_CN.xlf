@@ -123,11 +123,11 @@
       </trans-unit>
       <trans-unit id="q9FJIUU" resname="India">
         <source>India</source>
-        <target state="needs-translation">India</target>
+        <target state="translated">印度</target>
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target state="needs-translation">Iraq</target>
+        <target state="translated">伊拉克</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -223,7 +223,7 @@
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target state="needs-translation">Switzerland</target>
+        <target state="translated">瑞士</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
