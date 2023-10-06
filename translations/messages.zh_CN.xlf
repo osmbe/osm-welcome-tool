@@ -87,7 +87,7 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">法属朗德省南北巴斯克</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -275,7 +275,7 @@
       </trans-unit>
       <trans-unit id="Q4p9WQT" resname="Ohio">
         <source>Ohio</source>
-        <target state="needs-translation">Ohio</target>
+        <target state="translated">俄亥俄州</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
@@ -537,7 +537,7 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">下载OSMCha RSS订阅</target>
       </trans-unit>
     </body>
   </file>
