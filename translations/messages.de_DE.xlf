@@ -87,7 +87,7 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">Baskenland Südliche Landesteile</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -123,11 +123,11 @@
       </trans-unit>
       <trans-unit id="q9FJIUU" resname="India">
         <source>India</source>
-        <target state="needs-translation">India</target>
+        <target state="translated">Indien</target>
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target state="needs-translation">Iraq</target>
+        <target state="translated">Irak</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
