@@ -33,8 +33,16 @@ OpenStreetMap 是一个开放的平台。你可以自由地，创造性地去使
 
 * 网站：[osmchina.org](https://osmchina.org)
 
+* 邮件列表：[talk-cn@openstreetmap.org](mailto:talk-cn@openstreetmap.org)
+
+* Matrix群：[#osmchina:matrix.org](https://matrix.to/#/#osmchina:matrix.org)
+
 * Telegram群：[t.me/osmchina](https://t.me/osmchina)
 
 * QQ群：290278518
 
-* 邮件列表：[talk-cn@openstreetmap.org](mailto:talk-cn@openstreetmap.org) (QQ邮箱可能无法正常发信)
+ 注意：
+ 
+ * QQ邮箱无法正常向 openstreetmap.org 域内地址发信
+ 
+ * QQ群需要告知ID确认为有编辑的真实OSM贡献者，大小写敏感，其他平台无此限制

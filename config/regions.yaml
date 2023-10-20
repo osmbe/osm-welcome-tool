@@ -69,10 +69,18 @@ regions:
       name: Hong Kong
       flag: 🇭🇰
       osmcha.id: ddd87c1a-717b-4d30-815a-507ed8d57a3c
+    india:
+      name: India
+      flag: 🇮🇳
+      osmcha.id: 27c935d1-c28f-4f0d-9b83-7487210a9027
     indonesia:
       name: Indonesia
       flag: 🇮🇩
       osmcha.id: af24c9ea-4ba1-439f-80fd-0f7b30fa6952
+    iraq:
+      name: Iraq
+      flag: 🇮🇶
+      osmcha.id: 1b39e039-7793-444c-b2a1-3fe62db19aba
     japan:
       name: Japan
       flag: 🇯🇵
@@ -151,6 +159,10 @@ regions:
       name: France
       flag: 🇫🇷
       osmcha.id: 757de22c-1627-48f6-9fa9-86134e0c396b
+    basque-country-south-landes:
+      name: Basque Country South Landes
+      flag: 🇫🇷
+      osmcha.id: 8fe86f39-e472-45a6-b128-33a2c4931fe4
     germany:
       name: Germany
       flag: 🇩🇪
@@ -207,6 +219,10 @@ regions:
       name: Spain
       flag: 🇪🇸
       osmcha.id: e3402391-1831-4e71-a4f8-17f6a335a66b
+    switzerland:
+      name: Switzerland
+      flag: 🇨🇭
+      osmcha.id: 5bdd4a48-8e34-43da-bc19-7b74048c3612
     ukraine:
       name: Ukraine
       flag: 🇺🇦
