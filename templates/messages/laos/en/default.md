@@ -14,7 +14,7 @@ I'm {{ app.user.displayName }}, a fellow OSM contributor. Like-minded folks supp
 Here are some tips to get you started:
 
 - We recommend going to the local [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/WikiProject_Laos) for updates on local community activities and tagging information specific to Laos.
-- Join the [OSM Laos Community Whatsapp](https://chat.whatsapp.com/HGoot25zEdMKu1D9C7TYXy) for frequent community updates.
+- Join the [OSM Laos Community Whatsapp](https://chat.whatsapp.com/CdyrKXk7Qrf0fmC3wj6fYx) for frequent community updates.
 
 - While the editing tools try to make it easy to find out how to map things, our [wiki pages](https://wiki.openstreetmap.org/wiki/) have much more detail. You can find a lot of information about how to map on [the wiki](https://wiki.openstreetmap.org/wiki/).  
 If you want to know how to tag something, the quickest solution may be to search for `site:wiki.openstreetmap.org [search term]` with your favourite search engine.
