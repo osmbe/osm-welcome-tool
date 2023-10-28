@@ -87,7 +87,7 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">Baskenland Südliche Landesteile</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -123,11 +123,11 @@
       </trans-unit>
       <trans-unit id="q9FJIUU" resname="India">
         <source>India</source>
-        <target state="needs-translation">India</target>
+        <target state="translated">Indien</target>
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target state="needs-translation">Iraq</target>
+        <target state="translated">Irak</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -164,6 +164,10 @@
       <trans-unit id="4QlT93Y" resname="Macao">
         <source>Macao</source>
         <target state="translated">Macau</target>
+      </trans-unit>
+      <trans-unit id="erWX4bX" resname="Montenegro">
+        <source>Montenegro</source>
+        <target state="needs-translation">Montenegro</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
@@ -223,7 +227,7 @@
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target state="needs-translation">Switzerland</target>
+        <target state="translated">Schweiz</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
@@ -232,6 +236,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">Tansania</target>
+      </trans-unit>
+      <trans-unit id="S5XOYnI" resname="Texas">
+        <source>Texas</source>
+        <target state="needs-translation">Texas</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
@@ -391,7 +399,7 @@
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target state="needs-translation">Editor</target>
+        <target state="translated">Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
@@ -537,7 +545,7 @@ Es hilft dir, neue Kartierer in deiner Region zu entdecken und sie willkommen zu
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">OSMCha RSS Feed herunterladen</target>
       </trans-unit>
     </body>
   </file>
