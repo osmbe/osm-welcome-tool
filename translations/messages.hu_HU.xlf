@@ -165,6 +165,10 @@
         <source>Macao</source>
         <target state="translated">Makaó</target>
       </trans-unit>
+      <trans-unit id="erWX4bX" resname="Montenegro">
+        <source>Montenegro</source>
+        <target state="needs-translation">Montenegro</target>
+      </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
         <target state="translated">Mianmar</target>
@@ -232,6 +236,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">Tanzánia</target>
+      </trans-unit>
+      <trans-unit id="S5XOYnI" resname="Texas">
+        <source>Texas</source>
+        <target state="needs-translation">Texas</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
