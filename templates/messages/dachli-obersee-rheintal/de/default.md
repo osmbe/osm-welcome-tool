@@ -16,4 +16,4 @@ Als Anfängertipp möchte ich dir die [**Android-App StreetComplete**](https://s
 Nochmals herzlich willkommen bei OpenStreetMap! Wir freuen uns darauf, gemeinsam die Welt zu kartieren und zu verbessern. Wenn du Unterstützung oder Ratschläge benötigst, bin ich hier, um zu helfen.
 
 Happy Mapping!
-mcliquid
+{{ app.user.displayName }}
