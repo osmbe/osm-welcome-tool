@@ -202,7 +202,7 @@ regions:
     montenegro:
       name: Montenegro
       flag: 🇲🇪
-      osmcha.id:
+      osmcha.id: 878c56c8-dab1-411d-864c-02a3d7ce9ac6
     poland:
       name: Poland
       flag: 🇵🇱
