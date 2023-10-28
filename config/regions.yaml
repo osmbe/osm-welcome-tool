@@ -272,6 +272,10 @@ regions:
       name: Oregon
       flag: 🇺🇸
       osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
+    texas:
+      name: Texas
+      flag: 🇺🇸
+      osmcha.id: 8675e60e-900a-4a04-b625-432fc4f54cf3
     utah:
       name: Utah
       flag: 🇺🇸
