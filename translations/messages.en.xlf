@@ -543,10 +543,6 @@ It helps you discover new mappers in your region and welcome them.</target>
         <source>Download OSMCha RSS feed</source>
         <target>Download OSMCha RSS feed</target>
       </trans-unit>
-      <trans-unit id="8jd_cvK" resname="regions">
-        <source>regions</source>
-        <target>__regions</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
