@@ -199,6 +199,10 @@ regions:
       name: Luxembourg
       flag: 🇱🇺
       osmcha.id: 9188383c-271b-4d3e-9c2d-d212fb784937
+    montenegro:
+      name: Montenegro
+      flag: 🇲🇪
+      osmcha.id: 878c56c8-dab1-411d-864c-02a3d7ce9ac6
     poland:
       name: Poland
       flag: 🇵🇱
@@ -268,6 +272,10 @@ regions:
       name: Oregon
       flag: 🇺🇸
       osmcha.id: 2f110fd8-c4df-4917-b2cd-1ed098b1eafb
+    texas:
+      name: Texas
+      flag: 🇺🇸
+      osmcha.id: 8675e60e-900a-4a04-b625-432fc4f54cf3
     utah:
       name: Utah
       flag: 🇺🇸
