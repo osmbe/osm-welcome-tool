@@ -2,7 +2,8 @@ import { Menu } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { createPopper, Options } from '@popperjs/core';
 import React, {  RefCallback, useRef, useCallback, useMemo } from 'react';
-import ReactDOM, { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 function getItems(id: number) {
   return [
@@ -130,5 +131,6 @@ export default function createDropdown(
   element: Element,
   prop: { id: number; label: string }
 ): void {
-  render(<Dropdown id={prop.id} label={prop.label} />, element);
+  const root = createRoot(element);
+  root.render(<Dropdown id={prop.id} label={prop.label} />);
 }
