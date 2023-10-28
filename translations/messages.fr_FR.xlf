@@ -57,13 +57,13 @@
         <source>Beijing</source>
         <target state="final">Pékin</target>
       </trans-unit>
-      <trans-unit id="f5jx79f" resname="Heilongjiang">
+      <trans-unit id="f5jx79f" resname="Heilongjiang" approved="yes">
         <source>Heilongjiang</source>
-        <target state="translated">Heilongjiang</target>
+        <target state="final">Heilongjiang</target>
       </trans-unit>
-      <trans-unit id="EAhQbhX" resname="Hunan">
+      <trans-unit id="EAhQbhX" resname="Hunan" approved="yes">
         <source>Hunan</source>
-        <target state="translated">Hunan</target>
+        <target state="final">Hunan</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia" approved="yes">
         <source>Colombia</source>
@@ -97,9 +97,9 @@
         <source>Berlin</source>
         <target state="final">Berlin</target>
       </trans-unit>
-      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
+      <trans-unit id="_8gBrCS" resname="Berlin-Neukölln" approved="yes">
         <source>Berlin-Neukölln</source>
-        <target state="translated">Berlin-Neukölln</target>
+        <target state="final">Berlin-Neukölln</target>
       </trans-unit>
       <trans-unit id="XS9ZcZj" resname="Bremen" approved="yes">
         <source>Bremen</source>
@@ -165,9 +165,9 @@
         <source>Macao</source>
         <target state="final">Macao</target>
       </trans-unit>
-      <trans-unit id="erWX4bX" resname="Montenegro">
+      <trans-unit id="erWX4bX" resname="Montenegro" approved="yes">
         <source>Montenegro</source>
-        <target state="needs-translation">Montenegro</target>
+        <target state="final">Monténégro</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar" approved="yes">
         <source>Myanmar</source>
@@ -237,9 +237,9 @@
         <source>Tanzania</source>
         <target state="final">Tanzanie</target>
       </trans-unit>
-      <trans-unit id="S5XOYnI" resname="Texas">
+      <trans-unit id="S5XOYnI" resname="Texas" approved="yes">
         <source>Texas</source>
-        <target state="needs-translation">Texas</target>
+        <target state="final">Texas</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor" approved="yes">
         <source>East Timor</source>
