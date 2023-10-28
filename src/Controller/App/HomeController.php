@@ -19,14 +19,24 @@ class HomeController extends AbstractController
     {
         $regions = $this->provider->getRegions();
 
-        foreach ($regions as $continent => &$group) {
-            foreach ($group as $key => &$region) {
-                $region['lastUpdate'] = $this->provider->getEntity($key)?->getLastUpdate();
-                $region['count'] = $this->provider->getPercentage($key);
-            }
+        return $this->render('app/home/continent.html.twig', [
+            'regions' => $regions,
+        ]);
+    }
+
+    #[Route('/{continent}', name: 'app_continent', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america'])]
+    public function continent(string $continent): Response
+    {
+        $regions = $this->provider->getRegions();
+        $regions = $regions[$continent];
+
+        foreach ($regions as $key => &$region) {
+            $region['lastUpdate'] = $this->provider->getEntity($key)?->getLastUpdate();
+            $region['count'] = $this->provider->getPercentage($key);
         }
 
-        return $this->render('app/home/index.html.twig', [
+        return $this->render('app/home/region.html.twig', [
+            'continent' => $continent,
             'regions' => $regions,
         ]);
     }

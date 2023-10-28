@@ -31,6 +31,7 @@ services:
     App\EventSubscriber\LocaleSubscriber:
         arguments:
             $defaultLocale: "%kernel.default_locale%"
+            $locales: "%app.locales%"
     App\Service\RegionsProvider:
         arguments:
             $projectDirectory: "%kernel.project_dir%"
