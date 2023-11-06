@@ -16,4 +16,4 @@ As a beginner's tip, I'd like to recommend the [**Android App StreetComplete**](
 Again, welcome to OpenStreetMap! We look forward to mapping and improving the world together. If you need support or advice, I'm here to help.
 
 Happy Mapping!
-mcliquid
+{{ app.user.displayName }}
