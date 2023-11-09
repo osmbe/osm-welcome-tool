@@ -47,11 +47,11 @@
       </trans-unit>
       <trans-unit id="9Sc_I21" resname="Chile">
         <source>Chile</source>
-        <target state="needs-translation">Chile</target>
+        <target state="translated">Chile</target>
       </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
-        <target state="needs-translation">China</target>
+        <target state="translated">China</target>
       </trans-unit>
       <trans-unit id="ZbtG7Qe" resname="Beijing">
         <source>Beijing</source>
@@ -59,11 +59,11 @@
       </trans-unit>
       <trans-unit id="f5jx79f" resname="Heilongjiang">
         <source>Heilongjiang</source>
-        <target state="needs-translation">Heilongjiang</target>
+        <target state="translated">Heilonquião</target>
       </trans-unit>
       <trans-unit id="EAhQbhX" resname="Hunan">
         <source>Hunan</source>
-        <target state="needs-translation">Hunan</target>
+        <target state="translated">Hunão</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
@@ -71,11 +71,11 @@
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
-        <target state="needs-translation">Bogotá</target>
+        <target state="translated">Bogotá</target>
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+        <target state="translated">Obersee-Vale do Reno</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -87,7 +87,7 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">País Basco francês</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -103,7 +103,7 @@
       </trans-unit>
       <trans-unit id="XS9ZcZj" resname="Bremen">
         <source>Bremen</source>
-        <target state="needs-translation">Bremen</target>
+        <target state="translated">Bremen</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
