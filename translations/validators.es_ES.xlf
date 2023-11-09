@@ -319,7 +319,7 @@
       </trans-unit>
       <trans-unit id="VKDowX6" resname="Error">
         <source>Error</source>
-        <target state="needs-translation">Error</target>
+        <target state="translated">Error</target>
       </trans-unit>
       <trans-unit id="8zqt0Ik" resname="This is not a valid UUID.">
         <source>This is not a valid UUID.</source>
