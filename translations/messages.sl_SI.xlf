@@ -35,11 +35,11 @@
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
-        <target state="needs-translation">British Columbia</target>
+        <target state="translated">Britanska Kolumbija</target>
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="needs-translation">Ontario</target>
+        <target state="translated">Ontario</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
@@ -147,7 +147,7 @@
       </trans-unit>
       <trans-unit id="mOGPRmh" resname="Laos">
         <source>Laos</source>
-        <target state="needs-translation">Laos</target>
+        <target state="translated">Laos</target>
       </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
@@ -163,7 +163,7 @@
       </trans-unit>
       <trans-unit id="4QlT93Y" resname="Macao">
         <source>Macao</source>
-        <target state="needs-translation">Macao</target>
+        <target state="translated">Makav</target>
       </trans-unit>
       <trans-unit id="erWX4bX" resname="Montenegro">
         <source>Montenegro</source>
@@ -175,7 +175,7 @@
       </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
-        <target state="needs-translation">Niger</target>
+        <target state="translated">Niger</target>
       </trans-unit>
       <trans-unit id="BJUqD5h" resname="Nigeria">
         <source>Nigeria</source>
@@ -195,7 +195,7 @@
       </trans-unit>
       <trans-unit id="xldCzrK" resname="Papua New Guinea">
         <source>Papua New Guinea</source>
-        <target state="needs-translation">Papua New Guinea</target>
+        <target state="translated">Papuanska Nova Gvineja</target>
       </trans-unit>
       <trans-unit id="w3gshtg" resname="Philippines">
         <source>Philippines</source>
@@ -275,7 +275,7 @@
       </trans-unit>
       <trans-unit id="JjJaVG_" resname="Michigan">
         <source>Michigan</source>
-        <target state="needs-translation">Michigan</target>
+        <target state="translated">Michigan</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
@@ -283,7 +283,7 @@
       </trans-unit>
       <trans-unit id="Q4p9WQT" resname="Ohio">
         <source>Ohio</source>
-        <target state="needs-translation">Ohio</target>
+        <target state="translated">Ohio</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
@@ -319,7 +319,7 @@
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
-        <target state="needs-translation">Markdown is allowed.</target>
+        <target state="translated">Dovoljen je Markdown.</target>
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
@@ -471,7 +471,7 @@
       </trans-unit>
       <trans-unit id="GZQaZt8" resname="Open user menu">
         <source>Open user menu</source>
-        <target state="needs-translation">Open user menu</target>
+        <target state="translated">Odpri meni uporabnika</target>
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
