@@ -222,7 +222,7 @@ regions:
     slovenia:
       name: Slovenia
       flag: 🇸🇮
-      # osmcha.id: TODO
+      osmcha.id: 9ab087a0-f6d2-49e6-8503-e3cf0810d51e
     spain:
       name: Spain
       flag: 🇪🇸
