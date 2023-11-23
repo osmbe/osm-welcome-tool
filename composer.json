@@ -99,12 +99,12 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
-            "symfony/flex": true,
-            "symfony/runtime": true,
             "ergebnis/composer-normalize": true,
-            "phpstan/extension-installer": true,
             "phpro/grumphp": true,
-            "phpro/grumphp-shim": true
+            "phpro/grumphp-shim": true,
+            "phpstan/extension-installer": true,
+            "symfony/flex": true,
+            "symfony/runtime": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
