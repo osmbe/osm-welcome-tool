@@ -303,7 +303,7 @@
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
-        <target state="needs-translation">Washington State</target>
+        <target state="translated">Zvezna država Washington</target>
       </trans-unit>
       <trans-unit id="Ll6BBmo" resname="Vietnam">
         <source>Vietnam</source>
@@ -311,7 +311,7 @@
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
-        <target state="needs-translation">Review requested</target>
+        <target state="translated">Zahtevan pregled</target>
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
