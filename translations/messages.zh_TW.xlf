@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="erWX4bX" resname="Montenegro">
         <source>Montenegro</source>
-        <target state="needs-translation">Montenegro</target>
+        <target state="translated">蒙特尼格羅</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
@@ -217,6 +217,10 @@
         <source>Scotland</source>
         <target state="translated">蘇格蘭</target>
       </trans-unit>
+      <trans-unit id="VgWef7T" resname="Slovenia">
+        <source>Slovenia</source>
+        <target state="translated">斯洛維尼亞</target>
+      </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
         <target state="translated">南韓</target>
@@ -239,7 +243,7 @@
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
-        <target state="needs-translation">Texas</target>
+        <target state="translated">德克薩斯</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>

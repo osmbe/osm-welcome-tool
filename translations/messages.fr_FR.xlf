@@ -73,9 +73,9 @@
         <source>Bogotá</source>
         <target state="final">Bogota</target>
       </trans-unit>
-      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
+      <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal" approved="yes">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="translated">DACHLI-Obersee-Rheintal</target>
+        <target state="final">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo" approved="yes">
         <source>Democratic Republic of the Congo</source>
@@ -216,6 +216,10 @@
       <trans-unit id="okZnDb9" resname="Scotland" approved="yes">
         <source>Scotland</source>
         <target state="final">Écosse</target>
+      </trans-unit>
+      <trans-unit id="VgWef7T" resname="Slovenia" approved="yes">
+        <source>Slovenia</source>
+        <target state="final">Slovénie</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea" approved="yes">
         <source>South Korea</source>

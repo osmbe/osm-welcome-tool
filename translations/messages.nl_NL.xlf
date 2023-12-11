@@ -217,6 +217,10 @@
         <source>Scotland</source>
         <target state="translated">Schotland</target>
       </trans-unit>
+      <trans-unit id="VgWef7T" resname="Slovenia">
+        <source>Slovenia</source>
+        <target state="translated">Slovenië</target>
+      </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
         <target state="translated">Zuid-Korea</target>
