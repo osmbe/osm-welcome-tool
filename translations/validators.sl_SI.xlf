@@ -59,11 +59,11 @@
       </trans-unit>
       <trans-unit id="3KeHbZy" resname="The file could not be found.">
         <source>The file could not be found.</source>
-        <target state="needs-translation">The file could not be found.</target>
+        <target state="translated">Ne najdem datoteke.</target>
       </trans-unit>
       <trans-unit id="KtJhQZo" resname="The file is not readable.">
         <source>The file is not readable.</source>
-        <target state="needs-translation">The file is not readable.</target>
+        <target state="translated">Datoteka ni berljiva.</target>
       </trans-unit>
       <trans-unit id="JocOVM2" resname="The file is too large ({{ size }} {{ suffix }}). Allowed maximum size is {{ limit }} {{ suffix }}.">
         <source>The file is too large ({{ size }} {{ suffix }}). Allowed maximum size is {{ limit }} {{ suffix }}.</source>
