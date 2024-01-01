@@ -59,7 +59,7 @@ jobs:
       run: npm run build
     - if: matrix.node-version == '18.x'
       run: NODE_OPTIONS=--openssl-legacy-provider npm run build
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: assets-${{ matrix.node-version }}
         path: public/build
