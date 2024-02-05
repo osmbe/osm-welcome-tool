@@ -36,7 +36,7 @@ Si tienes dudas o preguntas como:
 
 * La comunidad de OpenStreetMap en Colombia tiene un [canal de Telegram](https://telegram.me/osmco), donde puedes hacer preguntas o conocer sobre las actividades que realizan. Es un espacio donde los miembros discuten cosas alrededor del mapa.
 
-* Si tienes una pregunta más complicada, puedes publicarla en [el centro de preguntas y respuestas de OSM](https://help.openstreetmap.org).
+* Si tienes una pregunta más complicada, puedes publicarla en [el foro de OSM](https://community.openstreetmap.org).
 
 Entonces, ¿qué puedes mapear ahora?
 Te recomendamos que adiciones cosas cerca de ti, como:

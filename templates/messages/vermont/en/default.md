@@ -12,7 +12,7 @@ If you have any questions at all, we can help out: if you think you might have b
 Here are some useful things to get you started:
 
 * OpenStreetMap's US Chapter runs a [Slack](https://slack.openstreetmap.us/) server.  Slack is a collaboration tool for OSM mappers, organizers, and developers.  Slack even has our own #local-vermont channel where you can chat with other Vermont mappers. This is a very active forum and the best way to get in touch with other local mappers in Vermont and the rest of the United States.
-* I highly recommend using the OSM [wiki-pages](https://wiki.openstreetmap.org/). If you don’t find how to map something within the editor of your choice, the quickest solution is look at [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) on the wiki. For more complicated questions you can search in or post on the [Help-site](https://help.openstreetmap.org) or ask in Slack.
+* I highly recommend using the OSM [wiki-pages](https://wiki.openstreetmap.org/). If you don’t find how to map something within the editor of your choice, the quickest solution is look at [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) on the wiki. For more complicated questions you can search in or post on the [forum](https://community.openstreetmap.org) or ask in Slack.
 * [learnOSM](https://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor.
 * On the [Vermont Wiki page](https://wiki.openstreetmap.org/wiki/Vermont) you will find information specific to mapping Vermont.
 * Want to see who’s mapping near you, or want to see how much you’ve been doing yourself, check out the maps at [resultmaps.neis-one.org](https://resultmaps.neis-one.org/).
