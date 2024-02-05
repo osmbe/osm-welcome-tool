@@ -40,12 +40,12 @@
         "version": "v0.5.3"
     },
     "doctrine/doctrine-bundle": {
-        "version": "2.10",
+        "version": "2.11",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "2.10",
-            "ref": "e025a6cb69b195970543820b2f18ad21724473fa"
+            "ref": "0b4a11ee7e60b36227502ed26874edd7e8b66353"
         },
         "files": [
             "config/packages/doctrine.yaml",
@@ -210,10 +210,10 @@
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "main",
             "version": "1.0",
-            "ref": "d74d4d719d5f53856c9c13544aa22d44144b1819"
+            "ref": "5e490cc197fb6bb1ae22e5abbc531ddc633b6767"
         },
         "files": [
-            "phpstan.neon"
+            "phpstan.dist.neon"
         ]
     },
     "phpstan/phpstan-strict-rules": {
@@ -275,7 +275,7 @@
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "main",
             "version": "1.0",
-            "ref": "efb318193e48384eb5c5aadff15396ed698f8ffc"
+            "ref": "0f18b4decdf5695d692c1d0dfd65516a07a6adf1"
         },
         "files": [
             "public/.htaccess"
@@ -472,12 +472,12 @@
         "version": "v6.0.2"
     },
     "symfony/phpunit-bridge": {
-        "version": "6.3",
+        "version": "7.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "6.3",
-            "ref": "01dfaa98c58f7a7b5a9b30e6edb7074af7ed9819"
+            "ref": "1f5830c331065b6e4c9d5fa2105e322d29fcd573"
         },
         "files": [
             ".env.test",
