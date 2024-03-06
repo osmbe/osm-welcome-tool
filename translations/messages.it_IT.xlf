@@ -7,15 +7,15 @@
     <body>
       <trans-unit id="GvALh0." resname="Albania">
         <source>Albania</source>
-        <target state="needs-translation">Albania</target>
+        <target state="translated">Albania</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
-        <target state="needs-translation">Austria</target>
+        <target state="translated">Austria</target>
       </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
-        <target state="needs-translation">Bangladesh</target>
+        <target state="translated">Bangladesh</target>
       </trans-unit>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
@@ -23,11 +23,11 @@
       </trans-unit>
       <trans-unit id="liHAc2R" resname="Bolivia">
         <source>Bolivia</source>
-        <target state="needs-translation">Bolivia</target>
+        <target state="translated">Bolivia</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
-        <target state="needs-translation">Bulgaria</target>
+        <target state="translated">Bulgaria</target>
       </trans-unit>
       <trans-unit id="DCywGi2" resname="Cambodia">
         <source>Cambodia</source>
@@ -39,7 +39,7 @@
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="needs-translation">Ontario</target>
+        <target state="translated">Ontario</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
