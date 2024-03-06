@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="erWX4bX" resname="Montenegro">
         <source>Montenegro</source>
-        <target state="needs-translation">Montenegro</target>
+        <target state="translated">黑山</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
@@ -243,7 +243,7 @@
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
-        <target state="needs-translation">Texas</target>
+        <target state="translated">德克萨斯州</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
