@@ -13,7 +13,7 @@
         "composer/package-versions-deprecated": "^1.11.99.2",
         "doctrine/doctrine-bundle": "^2.4",
         "doctrine/doctrine-migrations-bundle": "^3.1",
-        "doctrine/orm": "^2.9",
+        "doctrine/orm": "^3.1",
         "jbelien/oauth2-openstreetmap": "^0.1.1",
         "knplabs/knp-time-bundle": "^2.0",
         "knpuniversity/oauth2-client-bundle": "^2.8",
