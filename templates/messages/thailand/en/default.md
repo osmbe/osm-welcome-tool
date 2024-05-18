@@ -13,7 +13,7 @@ Here are some tips to help you get started:
 - Check out the [Thailand Wiki Guidelines](https://wiki.openstreetmap.org/wiki/WikiProject_Thailand) and the [Global Wiki](https://wiki.openstreetmap.org/). If you’re unsure how to map something, the [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) page can be very helpful.
 - [learnOSM](https://learnosm.org) is a fantastic resource for learning more about OSM. It includes instructions for using the iD browser editor and the more advanced JOSM editor.
 - When you save your changeset, add a clear comment on what you have changed. You can find more information on good changeset comments [here](https://wiki.openstreetmap.org/wiki/Good_changeset_comments).
-- Keep track of your edits with the [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/?{{ mapper.displayName }}) tool.
+- Keep track of your edits with the [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) tool.
 - If you’re part of an organization conducting mapping campaigns in Thailand, ensure your organization adheres to the [Organised Editing Guidelines](https://osmfoundation.org/wiki/Organised_Editing_Guidelines).
 
 So, what should you map next? We highly recommend adding features around you, such as restaurants, businesses, streets, sidewalks, benches—basically anything you know well. You are the expert!
