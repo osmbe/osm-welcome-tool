@@ -1,3 +1,8 @@
+---
+name: Default
+title: Welcome to OpenStreetMap
+---
+
 Hello @{{ mapper.displayName }},
 
 Congratulations on making your first edit to OpenStreetMap (OSM) in Thailand! Your contribution helps make the map better for everyone. Thank you for your effort!
