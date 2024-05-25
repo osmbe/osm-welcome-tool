@@ -255,6 +255,7 @@ regions:
     guatemala:
       name: Guatemala
       flag: 🇬🇹
+      osmcha.id: 017f54d7-155b-49fa-b0cd-5f48243d4133
     kansas:
       name: Kansas
       flag: 🇺🇸
