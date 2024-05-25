@@ -73,6 +73,10 @@
         <source>Bogotá</source>
         <target state="translated">Bogotá</target>
       </trans-unit>
+      <trans-unit id="B.YrAhd" resname="Brazil">
+        <source>Brazil</source>
+        <target state="needs-translation">Brazil</target>
+      </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
         <target state="translated">Lago Ober-Valle del Rin</target>
@@ -108,6 +112,10 @@
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target state="translated">Ghana</target>
+      </trans-unit>
+      <trans-unit id="RaFaJHD" resname="Guatemala">
+        <source>Guatemala</source>
+        <target state="needs-translation">Guatemala</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
@@ -240,6 +248,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">Tanzania</target>
+      </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand">
+        <source>Thailand</source>
+        <target state="needs-translation">Thailand</target>
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
@@ -550,6 +562,10 @@ Ayuda a descubrir nuevos colaboradores en tu región y darles la bienvenida.</ta
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
         <target state="translated">Descar el feed RSS de OSMCha</target>
+      </trans-unit>
+      <trans-unit id="8jd_cvK" resname="regions">
+        <source>regions</source>
+        <target state="needs-translation">regions</target>
       </trans-unit>
     </body>
   </file>

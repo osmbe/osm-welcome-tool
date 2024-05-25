@@ -73,6 +73,10 @@
         <source>Bogotá</source>
         <target state="final">Bogota</target>
       </trans-unit>
+      <trans-unit id="B.YrAhd" resname="Brazil" approved="yes">
+        <source>Brazil</source>
+        <target state="final">Brésil</target>
+      </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal" approved="yes">
         <source>DACHLI-Obersee-Rheintal</source>
         <target state="final">DACHLI-Obersee-Rheintal</target>
@@ -87,7 +91,7 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">Pays basque français</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany" approved="yes">
         <source>Germany</source>
@@ -108,6 +112,10 @@
       <trans-unit id="WDIBwe_" resname="Ghana" approved="yes">
         <source>Ghana</source>
         <target state="final">Ghana</target>
+      </trans-unit>
+      <trans-unit id="RaFaJHD" resname="Guatemala" approved="yes">
+        <source>Guatemala</source>
+        <target state="final">Guatémala</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong" approved="yes">
         <source>Hong Kong</source>
@@ -240,6 +248,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania" approved="yes">
         <source>Tanzania</source>
         <target state="final">Tanzanie</target>
+      </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand" approved="yes">
+        <source>Thailand</source>
+        <target state="final">Thaïlande</target>
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas" approved="yes">
         <source>Texas</source>
@@ -550,6 +562,10 @@ Il vous aide à détecter les nouveaux contributeurs dans votre région et à le
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed" approved="yes">
         <source>Download OSMCha RSS feed</source>
         <target state="final">Télécharger le flux RSS d'OSMCha</target>
+      </trans-unit>
+      <trans-unit id="8jd_cvK" resname="regions" approved="yes">
+        <source>regions</source>
+        <target state="final">régions</target>
       </trans-unit>
     </body>
   </file>
