@@ -121,6 +121,10 @@ regions:
       name: Taiwan
       flag: 🇹🇼
       osmcha.id: 71a6e5a5-8a9e-4c27-9e1d-f7e2031bafc9
+    thailand:
+      name: Thailand
+      flag: 🇹🇭
+      osmcha.id: e4a53bd9-2f1d-47e0-bca0-3c06fae14326
     turkey:
       name: Turkey
       flag: 🇹🇷
