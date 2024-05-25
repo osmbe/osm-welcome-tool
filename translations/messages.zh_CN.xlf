@@ -249,6 +249,10 @@
         <source>Tanzania</source>
         <target state="translated">坦桑尼亚</target>
       </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand">
+        <source>Thailand</source>
+        <target state="needs-translation">Thailand</target>
+      </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
         <target state="translated">德克萨斯州</target>
