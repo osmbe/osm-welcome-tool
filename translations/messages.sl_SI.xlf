@@ -73,6 +73,10 @@
         <source>Bogotá</source>
         <target state="translated">Bogota</target>
       </trans-unit>
+      <trans-unit id="B.YrAhd" resname="Brazil">
+        <source>Brazil</source>
+        <target state="needs-translation">Brazil</target>
+      </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
         <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
@@ -108,6 +112,10 @@
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target state="translated">Gana</target>
+      </trans-unit>
+      <trans-unit id="RaFaJHD" resname="Guatemala">
+        <source>Guatemala</source>
+        <target state="needs-translation">Guatemala</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
@@ -241,6 +249,10 @@
         <source>Tanzania</source>
         <target state="translated">Tanzanija</target>
       </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand">
+        <source>Thailand</source>
+        <target state="needs-translation">Thailand</target>
+      </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
         <target state="translated">Teksas</target>
@@ -299,7 +311,7 @@
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
-        <target state="needs-translation">Vermont</target>
+        <target state="translated">Vermont</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -550,6 +562,10 @@ Pomaga vam odkriti nove kartografe na vašem področji in jim poslati dobrodošl
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
         <target state="translated">Prenesi OSMCha vir RSS</target>
+      </trans-unit>
+      <trans-unit id="8jd_cvK" resname="regions">
+        <source>regions</source>
+        <target state="needs-translation">regions</target>
       </trans-unit>
     </body>
   </file>
