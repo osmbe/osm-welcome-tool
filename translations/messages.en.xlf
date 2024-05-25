@@ -109,6 +109,10 @@
         <source>Ghana</source>
         <target>Ghana</target>
       </trans-unit>
+      <trans-unit id="RaFaJHD" resname="Guatemala">
+        <source>Guatemala</source>
+        <target>Guatemala</target>
+      </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
         <target>Hong Kong</target>
