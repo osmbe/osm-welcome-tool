@@ -9,9 +9,9 @@
         <source>Albania</source>
         <target state="final">Albanie</target>
       </trans-unit>
-      <trans-unit id="we9AzgS" resname="Australia">
+      <trans-unit id="we9AzgS" resname="Australia" approved="yes">
         <source>Australia</source>
-        <target state="translated">Australie</target>
+        <target state="final">Australie</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria" approved="yes">
         <source>Austria</source>
@@ -93,9 +93,9 @@
         <source>France</source>
         <target state="final">France</target>
       </trans-unit>
-      <trans-unit id="bNiYvKN" resname="Basque Country South Landes" approved="yes">
+      <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="final">Pays basque français</target>
+        <target state="translated">Pays basque français</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany" approved="yes">
         <source>Germany</source>
