@@ -9,6 +9,10 @@
         <source>Albania</source>
         <target>Albania</target>
       </trans-unit>
+      <trans-unit id="we9AzgS" resname="Australia">
+        <source>Australia</source>
+        <target>Australia</target>
+      </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
         <target>Austria</target>
