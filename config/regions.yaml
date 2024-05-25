@@ -137,6 +137,7 @@ regions:
     australia:
       name: Australia
       flag: 🇦🇺
+      osmcha.id: 9e54be79-d54e-4465-8404-1010137e6c6b
   europe:
     albania:
       name: Albania
