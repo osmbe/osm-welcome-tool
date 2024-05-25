@@ -557,7 +557,7 @@ It helps you discover new mappers in your region and welcome them.</target>
       </trans-unit>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
-        <target>__regions</target>
+        <target>regions</target>
       </trans-unit>
     </body>
   </file>
