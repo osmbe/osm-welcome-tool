@@ -124,7 +124,7 @@ regions:
     thailand:
       name: Thailand
       flag: 🇹🇭
-      osmcha.id:
+      osmcha.id: e4a53bd9-2f1d-47e0-bca0-3c06fae14326
     turkey:
       name: Turkey
       flag: 🇹🇷
