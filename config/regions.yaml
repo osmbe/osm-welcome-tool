@@ -133,7 +133,11 @@ regions:
       name: Vietnam
       flag: 🇻🇳
       osmcha.id: fb840b79-4bb6-472c-87e9-ef7e34378db6
-  australia: []
+  australia:
+    australia:
+      name: Australia
+      flag: 🇦🇺
+      osmcha.id: 9e54be79-d54e-4465-8404-1010137e6c6b
   europe:
     albania:
       name: Albania
