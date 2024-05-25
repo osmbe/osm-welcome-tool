@@ -300,7 +300,7 @@ regions:
     brazil:
       name: Brazil
       flag: 🇧🇷
-      osmcha.id:
+      osmcha.id: 076f0d5c-4979-4658-8f44-f6a87ebffc78
     chile:
       name: Chile
       flag: 🇨🇱
