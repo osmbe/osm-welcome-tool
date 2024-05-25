@@ -249,6 +249,10 @@
         <source>Tanzania</source>
         <target>Tanzania</target>
       </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand">
+        <source>Thailand</source>
+        <target>Thailand</target>
+      </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
         <target>Texas</target>
