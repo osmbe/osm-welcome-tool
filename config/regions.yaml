@@ -252,6 +252,10 @@ regions:
       name: California
       flag: 🇺🇸
       osmcha.id: 766165a5-0a47-4cb8-8cde-d12fed551ff0
+    guatemala:
+      name: Guatemala
+      flag: 🇬🇹
+      osmcha.id: 017f54d7-155b-49fa-b0cd-5f48243d4133
     kansas:
       name: Kansas
       flag: 🇺🇸
