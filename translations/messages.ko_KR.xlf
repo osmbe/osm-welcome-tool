@@ -9,6 +9,10 @@
         <source>Albania</source>
         <target state="translated">알바니아</target>
       </trans-unit>
+      <trans-unit id="we9AzgS" resname="Australia">
+        <source>Australia</source>
+        <target state="needs-translation">Australia</target>
+      </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
         <target state="translated">오스트리아</target>
@@ -73,6 +77,10 @@
         <source>Bogotá</source>
         <target state="translated">보고타</target>
       </trans-unit>
+      <trans-unit id="B.YrAhd" resname="Brazil">
+        <source>Brazil</source>
+        <target state="needs-translation">Brazil</target>
+      </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
         <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
@@ -108,6 +116,10 @@
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target state="translated">가나</target>
+      </trans-unit>
+      <trans-unit id="RaFaJHD" resname="Guatemala">
+        <source>Guatemala</source>
+        <target state="needs-translation">Guatemala</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
@@ -240,6 +252,10 @@
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
         <target state="translated">탄자니아</target>
+      </trans-unit>
+      <trans-unit id="bknmUIG" resname="Thailand">
+        <source>Thailand</source>
+        <target state="needs-translation">Thailand</target>
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
@@ -550,6 +566,10 @@ It helps you discover new mappers in your region and welcome them.</source>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
         <target state="needs-translation">Download OSMCha RSS feed</target>
+      </trans-unit>
+      <trans-unit id="8jd_cvK" resname="regions">
+        <source>regions</source>
+        <target state="needs-translation">regions</target>
       </trans-unit>
     </body>
   </file>
