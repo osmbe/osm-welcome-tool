@@ -7,7 +7,7 @@ parameters:
     osmcha.api.url: 'https://osmcha.org/api/v1/'
     osmcha.api.key: '%env(OSMCHA_API_KEY)%'
     osm.api.url: 'https://api.openstreetmap.org/api/0.6/'
-    app.locales: ['en','fr','it','nl','bg','es_ES','ja','pl','de','sq','zh_TW','zh_CN','hu','ko','uk','pt_PT']
+    app.locales: ['en','fr_FR','it_IT','nl_NL','bg_BG','es_ES','ja_JP','pl_PL','de_DE','sq_AL','zh_TW','zh_CN','hu_HU','ko_KR','uk_UA','pt_PT','pt_BR']
     app.userAgent: 'OpenStreetMap Welcome Tool'
     app.title: 'OpenStreetMap Welcome Tool'
 
@@ -31,6 +31,7 @@ services:
     App\EventSubscriber\LocaleSubscriber:
         arguments:
             $defaultLocale: "%kernel.default_locale%"
+            $locales: "%app.locales%"
     App\Service\RegionsProvider:
         arguments:
             $projectDirectory: "%kernel.project_dir%"

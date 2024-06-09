@@ -8,11 +8,18 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 class LocaleSubscriber implements EventSubscriberInterface
 {
-    public function __construct(private readonly string $defaultLocale)
-    {
+    /**
+     * @param string[] $locales
+     *
+     * @return void
+     */
+    public function __construct(
+        private readonly string $defaultLocale,
+        private readonly array $locales
+    ) {
     }
 
-    public function onKernelRequest(RequestEvent $event)
+    public function onKernelRequest(RequestEvent $event): void
     {
         $request = $event->getRequest();
 
@@ -36,7 +43,12 @@ class LocaleSubscriber implements EventSubscriberInterface
         } elseif (\count($request->getLanguages()) > 0) {
             // if we still don't have a locale defined, use the browser languages
             $languages = $request->getLanguages();
-            $request->setLocale($languages[0]);
+            foreach ($languages as $lang) {
+                if (\in_array($lang, $this->locales, true)) {
+                    $request->setLocale($lang);
+                    break;
+                }
+            }
         } else {
             // or use the default locale
             $request->setLocale($this->defaultLocale);
