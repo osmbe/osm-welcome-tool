@@ -309,12 +309,12 @@
         ]
     },
     "symfony/crowdin-translation-provider": {
-        "version": "6.2",
+        "version": "6.4",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "5.3",
-            "ref": "9f5f1508bc80ed56c8a3ae7febc53a8aa982e424"
+            "ref": "15c55fd0c3c77c24346815387bdcd73a78305123"
         }
     },
     "symfony/css-selector": {
