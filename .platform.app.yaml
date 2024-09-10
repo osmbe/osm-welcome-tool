@@ -50,13 +50,13 @@ hooks:
 crons:
     update-belgium:
         spec: '0 1 * * *'
-        commands: |
-            php bin/console osmcha:new-mapper belgium
+        commands:
+            start: php bin/console osmcha:new-mapper belgium
     update-berlin:
         spec: '30 1 * * *'
-        commands: |
-            php bin/console osmcha:new-mapper berlin
+        commands:
+            start: php bin/console osmcha:new-mapper berlin
     update-brazil:
         spec: '0 4 * * *'
-        commands: |
-            php bin/console osmcha:new-mapper brazil
+        commands:
+            start: php bin/console osmcha:new-mapper brazil
