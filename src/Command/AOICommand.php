@@ -24,7 +24,7 @@ class AOICommand extends Command
     public function __construct(
         private readonly ValidatorInterface $validator,
         private readonly RegionsProvider $provider,
-        private readonly OSMChaAPI $api
+        private readonly OSMChaAPI $api,
     ) {
         parent::__construct();
     }

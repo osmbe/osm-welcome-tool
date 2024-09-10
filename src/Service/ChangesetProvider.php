@@ -8,7 +8,7 @@ use App\Repository\ChangesetRepository;
 class ChangesetProvider
 {
     public function __construct(
-        private readonly ChangesetRepository $repository
+        private readonly ChangesetRepository $repository,
     ) {
     }
 
