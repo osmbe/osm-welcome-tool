@@ -1,5 +1,5 @@
 # The name given to the PostgreSQL service (lowercase alphanumeric only).
-postgresql:
+database:
     # The type of your service (postgresql), which uses the format
     # 'type:version'. Be sure to consult the PostgreSQL documentation
     # (https://docs.platform.sh/add-services/postgresql.html#supported-versions)
