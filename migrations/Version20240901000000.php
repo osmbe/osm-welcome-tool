@@ -21,7 +21,7 @@ final class Version20240901000000 extends AbstractMigration
         $this->addSql('CREATE TABLE users (id BIGINT NOT NULL, display_name TEXT DEFAULT NULL, roles TEXT DEFAULT NULL, image TEXT DEFAULT NULL, PRIMARY KEY(id))');
         $this->addSql('CREATE UNIQUE INDEX idx_users_display_name ON users (display_name)');
 
-        $this->addSql('CREATE TABLE note (id BIGSERIAL NOT NULL, mapper_id BIGINT DEFAULT NULL REFERENCES mapper(id), author_id BIGINT DEFAULT NULL REFERENCES users(id), date TIMESTAMP WITH TIME ZONE DEFAULT NULL, text TEXT DEFAULT NULL, PRIMARY KEY(id))');
+        $this->addSql('CREATE TABLE note (id BIGSERIAL, mapper_id BIGINT DEFAULT NULL REFERENCES mapper(id), author_id BIGINT DEFAULT NULL REFERENCES users(id), date TIMESTAMP WITH TIME ZONE DEFAULT NULL, text TEXT DEFAULT NULL, PRIMARY KEY(id))');
         $this->addSql('CREATE INDEX idx_note_mapper_id ON note (mapper_id)');
         $this->addSql('CREATE INDEX idx_note_author_id ON note (author_id)');
 
@@ -34,7 +34,7 @@ final class Version20240901000000 extends AbstractMigration
         $this->addSql('CREATE TABLE changeset (id BIGINT NOT NULL, mapper_id BIGINT DEFAULT NULL REFERENCES mapper(id), editor TEXT DEFAULT NULL, comment TEXT DEFAULT NULL, reasons TEXT DEFAULT NULL, changes_count BIGINT DEFAULT NULL, extent TEXT DEFAULT NULL, created_at TIMESTAMP WITH TIME ZONE DEFAULT NULL, locale TEXT DEFAULT NULL, create_count BIGINT DEFAULT NULL, modify_count BIGINT DEFAULT NULL, delete_count BIGINT DEFAULT NULL, harmful BOOLEAN DEFAULT NULL, suspect BOOLEAN DEFAULT NULL, checked BOOLEAN DEFAULT NULL, PRIMARY KEY(id))');
         $this->addSql('CREATE INDEX idx_changeset_mapper_id ON changeset (mapper_id)');
 
-        $this->addSql('CREATE TABLE welcome (id BIGSERIAL NOT NULL, mapper_id BIGINT DEFAULT NULL REFERENCES mapper(id), user_id BIGINT DEFAULT NULL REFERENCES users(id), date TIMESTAMP WITH TIME ZONE DEFAULT NULL, reply TIMESTAMP WITH TIME ZONE DEFAULT NULL, PRIMARY KEY(id))');
+        $this->addSql('CREATE TABLE welcome (id BIGSERIAL, mapper_id BIGINT DEFAULT NULL REFERENCES mapper(id), user_id BIGINT DEFAULT NULL REFERENCES users(id), date TIMESTAMP WITH TIME ZONE DEFAULT NULL, reply TIMESTAMP WITH TIME ZONE DEFAULT NULL, PRIMARY KEY(id))');
         $this->addSql('CREATE UNIQUE INDEX uniq_welcome_mapper_id ON welcome (mapper_id)');
         $this->addSql('CREATE INDEX idx_welcome_user_id ON welcome (user_id)');
     }
