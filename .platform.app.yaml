@@ -1,0 +1,48 @@
+name: app
+
+type: php:8.3
+
+relationships:
+    postgresql:
+
+runtime:
+    extensions:
+        - apcu
+        - mbstring
+        - sodium
+        - ctype
+        - iconv
+        - intl
+        - pdo
+        - sodium
+
+variables:
+   php:
+       opcache.preload: config/preload.php
+
+build:
+    flavor: none
+
+disk: 512
+
+web:
+    locations:
+        "/":
+            root: "public"
+            expires: 1h
+            passthru: "/index.php"
+
+mounts:
+    "/var": { source: local, source_path: var }
+
+hooks:
+    build: |
+        set -x -e
+
+        curl -fs https://get.symfony.com/cloud/configurator | bash
+
+        NODE_VERSION=18 symfony-build
+    deploy: |
+        set -x -e
+
+        symfony-deploy
