@@ -38,7 +38,7 @@ class NewMapperCommand extends Command
         private readonly MapperProvider $mapperProvider,
         private readonly OSMChaAPI $osmcha,
         private readonly OpenStreetMapAPI $osm,
-        private readonly CacheItemPoolInterface $cache
+        private readonly CacheItemPoolInterface $cache,
     ) {
         parent::__construct();
     }

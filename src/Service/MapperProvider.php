@@ -8,7 +8,7 @@ use App\Repository\MapperRepository;
 class MapperProvider
 {
     public function __construct(
-        private readonly MapperRepository $repository
+        private readonly MapperRepository $repository,
     ) {
     }
 
