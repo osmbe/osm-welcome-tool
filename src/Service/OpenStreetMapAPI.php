@@ -8,7 +8,7 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 class OpenStreetMapAPI
 {
     public function __construct(
-        private readonly HttpClientInterface $osmClient
+        private readonly HttpClientInterface $osmClient,
     ) {
     }
 

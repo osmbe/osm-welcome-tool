@@ -14,7 +14,7 @@ class Template
     public function __construct(
         private string $path,
         private string $locale,
-        string $markdown
+        string $markdown,
     ) {
         $frontMatterParser = new FrontMatterParser(new SymfonyYamlFrontMatterParser());
         $result = $frontMatterParser->parse($markdown);

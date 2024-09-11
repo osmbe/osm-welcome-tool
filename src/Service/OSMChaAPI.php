@@ -11,7 +11,7 @@ class OSMChaAPI
 {
     public function __construct(
         private readonly HttpClientInterface $osmchaClient,
-        private readonly ValidatorInterface $validator
+        private readonly ValidatorInterface $validator,
     ) {
     }
 
