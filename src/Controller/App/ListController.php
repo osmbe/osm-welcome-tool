@@ -25,7 +25,7 @@ class ListController extends AbstractController
 
     #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list', requirements: ['regionKey' => '[\w\-_]+'])]
     #[Route('/{continent}/{regionKey}/list/{year}/{month}', name: 'app_list_full', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america', 'regionKey' => '[\w\-_]+'])]
-    public function index(string $regionKey, ?string $continent, int $year = null, int $month = null): Response
+    public function index(string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($continent, $regionKey);
         $regionEntity = $this->provider->getEntity($regionKey);

@@ -17,7 +17,7 @@ class RegionsProvider
         private readonly RegionRepository $regionRepository,
         private readonly MapperRepository $mapperRepository,
         private readonly WelcomeRepository $welcomeRepository,
-        private readonly string $projectDirectory
+        private readonly string $projectDirectory,
     ) {
         $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
 

@@ -15,7 +15,7 @@ class LocaleSubscriber implements EventSubscriberInterface
      */
     public function __construct(
         private readonly string $defaultLocale,
-        private readonly array $locales
+        private readonly array $locales,
     ) {
     }
 

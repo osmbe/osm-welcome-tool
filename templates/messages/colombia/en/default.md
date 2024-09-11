@@ -37,7 +37,7 @@ I think I might have broken something, or you’re in doubt how to map something
 * The OpenStreetMap Colombian community has a [Telegram channel](https://telegram.me/osmco) where you can ask anything or to know the activities that they do.
 This is an space where members discuss about different things about the map.
 
-* For more complicated questions you can search in or post on the [Help-site](https://help.openstreetmap.org).
+* For more complicated questions you can search in or post on the [forum](https://community.openstreetmap.org).
 
 So what should you map next?
 We highly recommend adding features around you, like:

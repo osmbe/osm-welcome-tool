@@ -25,7 +25,7 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
     public function __construct(
         private readonly ClientRegistry $clientRegistry,
         private readonly EntityManagerInterface $entityManager,
-        private readonly RouterInterface $router
+        private readonly RouterInterface $router,
     ) {
     }
 

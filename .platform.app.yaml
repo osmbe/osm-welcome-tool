@@ -1,0 +1,162 @@
+name: app
+
+type: php:8.3
+
+relationships:
+    database: "database:postgresql"
+
+runtime:
+    extensions:
+        - apcu
+        - mbstring
+        - sodium
+        - ctype
+        - iconv
+        - intl
+        - pdo_pgsql
+        - sodium
+
+variables:
+   php:
+       opcache.preload: config/preload.php
+
+build:
+    flavor: none
+
+disk: 512
+
+web:
+    locations:
+        "/":
+            root: "public"
+            expires: 1h
+            passthru: "/index.php"
+
+mounts:
+    "/var": { source: local, source_path: var }
+
+hooks:
+    build: |
+        set -x -e
+
+        curl -fs https://get.symfony.com/cloud/configurator | bash
+
+        NODE_VERSION=18 symfony-build
+    deploy: |
+        set -x -e
+
+        symfony-deploy
+
+crons:
+    clean-delete-users:
+        spec: '0 0 * * *'
+        commands:
+            start: php bin/console osm:deleted-users
+    update-asia-bangladesh:
+        spec: '0 19 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-asia-cambodia:
+        spec: '0 18 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper cambodia
+    update-asia-china-beijing:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper china-beijing
+    update-asia-china-heilongjiang:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper china-heilongjiang
+    update-asia-china-hunan:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper china-hunan
+    update-asia-china:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper china
+    update-asia-east-timor:
+        spec: '0 16 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper east-timor
+    update-asia-hongkong:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper hongkong
+    update-asia-india:
+        spec: '30 19 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper india
+    update-asia-indonesia:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper indonesia
+    update-asia-iraq:
+        spec: '0 20 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper iraq
+    update-asia-japan:
+        spec: '0 16 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper japan
+    update-asia-laos:
+        spec: '0 18 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper laos
+    update-asia-macao:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper macao
+    update-asia-myanmar:
+        spec: '30 18 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper myanmar
+    update-asia-north-korea:
+        spec: '0 16 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper north-korea
+    update-asia-pakistan:
+        spec: '0 20 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper pakistan
+    update-asia-papua-new-guinea:
+        spec: '0 15 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper papua-new-guinea
+    update-asia-philippines:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper philippines
+    update-asia-south-korea:
+        spec: '0 16 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper south-korea
+    update-asia-taiwan:
+        spec: '0 17 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper taiwan
+    update-asia-thailand:
+        spec: '0 18 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper thailand
+    update-asia-turkey:
+        spec: '0 22 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper turkey
+    update-asia-vietnam:
+        spec: '0 18 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper vietnam
+    update-belgium:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper belgium
+    update-germany-berlin:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany-berlin
+    update-brazil:
+        spec: '0 4 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper brazil

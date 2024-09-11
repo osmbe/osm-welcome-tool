@@ -24,7 +24,7 @@ class DeletedUsersCommand extends Command
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
         private readonly Filesystem $filesystem,
-        private readonly CacheItemPoolInterface $cache
+        private readonly CacheItemPoolInterface $cache,
     ) {
         parent::__construct();
     }
@@ -60,7 +60,7 @@ class DeletedUsersCommand extends Command
                     ?string $message,
                     int $message_code,
                     int $bytes_transferred,
-                    int $bytes_max
+                    int $bytes_max,
                 ) use ($io, $progress) {
                     switch ($notification_code) {
                         case \STREAM_NOTIFY_RESOLVE:

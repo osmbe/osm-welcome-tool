@@ -26,7 +26,7 @@ class UpdateCommand extends Command
     public function __construct(
         private readonly ValidatorInterface $validator,
         private readonly RegionsProvider $provider,
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
         parent::__construct();
     }

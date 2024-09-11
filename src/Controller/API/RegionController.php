@@ -13,7 +13,7 @@ class RegionController extends AbstractController
 {
     public function __construct(
         private readonly RegionsProvider $provider,
-        private readonly MapperRepository $mapperRepository
+        private readonly MapperRepository $mapperRepository,
     ) {
     }
 
