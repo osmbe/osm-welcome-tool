@@ -17,7 +17,7 @@
         "@typescript-eslint/eslint-plugin": "^6.18.0",
         "@typescript-eslint/parser": "^6.18.0",
         "apexcharts": "^3.44.0",
-        "autoprefixer": "^10.4.16",
+        "autoprefixer": "^10.4.20",
         "codejar": "^4.2.0",
         "core-js": "^3.37.1",
         "eslint": "^8.56.0",
