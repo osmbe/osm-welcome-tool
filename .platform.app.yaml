@@ -52,6 +52,42 @@ crons:
         spec: '0 0 * * *'
         commands:
             start: php bin/console osm:deleted-users
+    update-africa-drc:
+        spec: '0 0 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-ghana:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-liberia:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-libya:
+        spec: '0 23 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-niger:
+        spec: '0 0 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-nigeria:
+        spec: '0 0 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-tanzania:
+        spec: '0 22 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-togo:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
+    update-africa-uganda:
+        spec: '0 22 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bangladesh
     update-asia-bangladesh:
         spec: '0 19 * * *'
         commands:
