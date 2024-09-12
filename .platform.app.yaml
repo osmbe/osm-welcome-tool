@@ -352,7 +352,23 @@ crons:
         spec: '0 9 * * *'
         commands:
             start: php bin/console osmcha:new-mapper washington
-    update-brazil:
-        spec: '0 4 * * *'
+    update-southamerica-bogota:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bogota
+    update-southamerica-bolivia:
+        spec: '0 5 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bolivia
+    update-southamerica-brazil:
+        spec: '30 4 * * *'
         commands:
             start: php bin/console osmcha:new-mapper brazil
+    update-southamerica-chile:
+        spec: '30 4 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper chile
+    update-southamerica-colombia:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper colombia
