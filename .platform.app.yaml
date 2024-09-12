@@ -53,41 +53,41 @@ crons:
         commands:
             start: php bin/console osm:deleted-users
     update-africa-drc:
-        spec: '0 0 * * *'
+        spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper drc
     update-africa-ghana:
         spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper ghana
     update-africa-liberia:
         spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper liberia
     update-africa-libya:
         spec: '0 23 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper libya
     update-africa-niger:
-        spec: '0 0 * * *'
+        spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper niger
     update-africa-nigeria:
-        spec: '0 0 * * *'
+        spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper nigeria
     update-africa-tanzania:
         spec: '0 22 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper tanzania
     update-africa-togo:
         spec: '0 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper togo
     update-africa-uganda:
         spec: '0 22 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper bangladesh
+            start: php bin/console osmcha:new-mapper uganda
     update-asia-bangladesh:
         spec: '0 19 * * *'
         commands:
@@ -184,14 +184,174 @@ crons:
         spec: '0 18 * * *'
         commands:
             start: php bin/console osmcha:new-mapper vietnam
-    update-belgium:
+    update-australia-australia:
+        spec: '30 15 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper australia
+    update-europe-albania:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper albania
+    update-europe-austria:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper austria
+    update-europe-basque-country-south-landes:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper basque-country-south-landes
+    update-europe-belgium:
         spec: '0 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper belgium
-    update-germany-berlin:
+    update-europe-bulgaria:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper bulgaria
+    update-europe-catalan_countries:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper catalan_countries
+    update-europe-dachli-obersee-rheintal:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper dachli-obersee-rheintal
+    update-europe-france:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper france
+    update-europe-germany-berlin-neukoelln:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany-berlin-neukoelln
+    update-europe-germany-berlin:
         spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper germany-berlin
+    update-europe-germany-bremen:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany-bremen
+    update-europe-germany:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany
+    update-europe-hungary:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper hungary
+    update-europe-ireland:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper ireland
+    update-europe-italy:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper italy
+    update-europe-kosovo:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper kosovo
+    update-europe-luxembourg:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper luxembourg
+    update-europe-montenegro:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper montenegro
+    update-europe-poland:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper poland
+    update-europe-portugal:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper portugal
+    update-europe-romania:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper romania
+    update-europe-scotland:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper scotland
+    update-europe-slovenia:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper slovenia
+    update-europe-spain:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper spain
+    update-europe-switzerland:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper switzerland
+    update-europe-ukraine:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper ukraine
+    update-northamerica-ca-bc:
+        spec: '0 9 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper ca-bc
+    update-northamerica-ca-on:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper ca-on
+    update-northamerica-california:
+        spec: '0 9 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper california
+    update-northamerica-guatemala:
+        spec: '0 7 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper guatemala
+    update-northamerica-kansas:
+        spec: '0 7 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper kansas
+    update-northamerica-massachusetts:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper massachusetts
+    update-northamerica-michigan:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper michigan
+    update-northamerica-newyork:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper newyork
+    update-northamerica-ohio:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper ohio
+    update-northamerica-oregon:
+        spec: '0 9 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper oregon
+    update-northamerica-panama:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper panama
+    update-northamerica-texas:
+        spec: '0 7 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper texas
+    update-northamerica-utah:
+        spec: '0 8 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper utah
+    update-northamerica-vermont:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper vermont
+    update-northamerica-washington:
+        spec: '0 9 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper washington
     update-brazil:
         spec: '0 4 * * *'
         commands:
