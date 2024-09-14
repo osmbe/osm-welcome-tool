@@ -53,12 +53,6 @@ class AOICommand extends Command
         $key = $input->getArgument('region');
         $region = $this->provider->getRegion(null, $key);
 
-        if (null === $region) {
-            $io->error(sprintf('Region "%s" is not a valid key.', $key));
-
-            return Command::FAILURE;
-        }
-
         $name = sprintf('Welcome Tool for %s', $region['name']);
         $filters = [
             'geometry' => $this->provider->getGeometry($region['continent'], $region['key']),

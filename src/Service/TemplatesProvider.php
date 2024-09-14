@@ -14,8 +14,8 @@ class TemplatesProvider
 
         foreach ($glob as $path) {
             if (true === is_readable($path)) {
-                $region = basename(\dirname((string) $path, 2));
-                $locale = basename(\dirname((string) $path));
+                $region = basename(\dirname($path, 2));
+                $locale = basename(\dirname($path));
 
                 $markdown = file_get_contents($path);
 

@@ -205,14 +205,14 @@ class Mapper
     }
 
     /**
-     * @return Collection<int, region>
+     * @return Collection<int, Region>
      */
     public function getRegion(): Collection
     {
         return $this->region;
     }
 
-    public function addRegion(region $region): self
+    public function addRegion(Region $region): self
     {
         if (!$this->region->contains($region)) {
             $this->region->add($region);
@@ -221,7 +221,7 @@ class Mapper
         return $this;
     }
 
-    public function removeRegion(region $region): self
+    public function removeRegion(Region $region): self
     {
         $this->region->removeElement($region);
 

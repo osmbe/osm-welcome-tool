@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Table(name: 'users')]
@@ -13,16 +12,16 @@ class User implements UserInterface
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private int $id;
 
     #[ORM\Column(type: 'string', length: 180, unique: true)]
-    private $display_name;
+    private string $display_name;
 
     #[ORM\Column(type: 'json')]
     private array $roles = [];
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private $image;
+    private ?string $image = null;
 
     public function getId(): ?int
     {
@@ -51,23 +50,15 @@ class User implements UserInterface
     /**
      * A visual identifier that represents this user.
      *
-     * @see UserInterface
+     * @see Symfony\Component\Security\Core\User\UserInterface
      */
     public function getUserIdentifier(): string
     {
-        return (string) $this->display_name;
+        return $this->display_name;
     }
 
     /**
-     * @deprecated since Symfony 5.3, use getUserIdentifier instead
-     */
-    public function getUsername(): string
-    {
-        return (string) $this->display_name;
-    }
-
-    /**
-     * @see UserInterface
+     * @see Symfony\Component\Security\Core\User\UserInterface
      */
     public function getRoles(): array
     {
@@ -88,7 +79,7 @@ class User implements UserInterface
     /**
      * This method can be removed in Symfony 6.0 - is not needed for apps that do not check user passwords.
      *
-     * @see PasswordAuthenticatedUserInterface
+     * @see Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface
      */
     public function getPassword(): ?string
     {
@@ -98,7 +89,7 @@ class User implements UserInterface
     /**
      * This method can be removed in Symfony 6.0 - is not needed for apps that do not check user passwords.
      *
-     * @see UserInterface
+     * @see Symfony\Component\Security\Core\User\UserInterface
      */
     public function getSalt(): ?string
     {
@@ -106,7 +97,7 @@ class User implements UserInterface
     }
 
     /**
-     * @see UserInterface
+     * @see Symfony\Component\Security\Core\User\UserInterface
      */
     public function eraseCredentials()
     {

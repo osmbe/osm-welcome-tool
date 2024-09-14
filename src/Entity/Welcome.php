@@ -11,21 +11,21 @@ class Welcome
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private int $id;
 
     #[ORM\OneToOne(targetEntity: Mapper::class, inversedBy: 'welcome', cascade: ['persist'])]
     #[ORM\JoinColumn(nullable: false)]
-    private $mapper;
+    private Mapper $mapper;
 
     #[ORM\Column(type: 'datetime')]
-    private $date;
+    private \DateTime $date;
 
     #[ORM\Column(type: 'datetime', nullable: true)]
-    private $reply;
+    private \DateTime $reply;
 
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(nullable: false)]
-    private $user;
+    private User $user;
 
     public function getId(): ?int
     {
@@ -44,24 +44,24 @@ class Welcome
         return $this;
     }
 
-    public function getDate(): \DateTimeInterface
+    public function getDate(): \DateTime
     {
         return $this->date;
     }
 
-    public function setDate(\DateTimeInterface $date): self
+    public function setDate(\DateTime $date): self
     {
         $this->date = $date;
 
         return $this;
     }
 
-    public function getReply(): ?\DateTimeInterface
+    public function getReply(): ?\DateTime
     {
         return $this->reply;
     }
 
-    public function setReply(?\DateTimeInterface $reply): self
+    public function setReply(?\DateTime $reply): self
     {
         $this->reply = $reply;
 

@@ -2,7 +2,6 @@
 
 namespace App\Controller\API;
 
-use App\Repository\MapperRepository;
 use App\Service\RegionsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -13,7 +12,6 @@ class RegionController extends AbstractController
 {
     public function __construct(
         private readonly RegionsProvider $provider,
-        private readonly MapperRepository $mapperRepository,
     ) {
     }
 

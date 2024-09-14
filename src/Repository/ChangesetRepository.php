@@ -11,6 +11,8 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Changeset|null findOneBy(array $criteria, array $orderBy = null)
  * @method Changeset[]    findAll()
  * @method Changeset[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ *
+ * @extends ServiceEntityRepository<Changeset>
  */
 class ChangesetRepository extends ServiceEntityRepository
 {

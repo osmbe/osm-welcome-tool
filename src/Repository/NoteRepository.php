@@ -11,6 +11,8 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Note|null findOneBy(array $criteria, array $orderBy = null)
  * @method Note[]    findAll()
  * @method Note[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ *
+ * @extends ServiceEntityRepository<Note>
  */
 class NoteRepository extends ServiceEntityRepository
 {

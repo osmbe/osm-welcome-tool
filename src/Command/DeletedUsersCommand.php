@@ -133,6 +133,8 @@ class DeletedUsersCommand extends Command
 
     /**
      * Remove deleted users from `mapper` and `user` tables.
+     *
+     * @param int[] $usersDeleted
      */
     private function delete(SymfonyStyle $io, array $usersDeleted): void
     {
