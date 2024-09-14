@@ -47,7 +47,6 @@ ENV APP_ENV=prod
 WORKDIR "/var/www/app"
 
 COPY --chown=www-data . .
-COPY .docker/cron.daily/welcome-update.sh /etc/cron.daily/welcome-update
 
 RUN rm -Rf .docker/
 

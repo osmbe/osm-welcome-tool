@@ -49,30 +49,6 @@ Check [Symfony deployment documentation](https://symfony.com/doc/current/deploym
 vendor/bin/dep deploy --branch=2.x welcome.osm.be
 ```
 
-### Automated update
-
-#### Cron Job (SQLite)
-
-Create an `osm-welcome-tool` file in `/etc/cron.daily` folder (for a daily update):
-
-```sh
-#!/bin/sh
-
-BACKUP_DIRECTORY=/root/osm-welcome-tool
-BACKUP_FILENAME=data.db
-
-mkdir -p $BACKUP_DIRECTORY
-
-# Remove all backups older than 30 days
-find $BACKUP_DIRECTORY/$BACKUP_FILENAME.* -mtime +30 -delete
-# Backup database
-cp "/var/www/osm-welcome-tool/current/var/data.db" "$BACKUP_DIRECTORY/$BACKUP_FILENAME.$(date +"%Y%m%d")"
-
-# Trigger update
-cd "/var/www/osm-welcome-tool/current/"
-php bin/console welcome:update
-```
-
 ## Translating OpenStreetMap Welcome Tool
 
 1. Update XLIFF files for English
