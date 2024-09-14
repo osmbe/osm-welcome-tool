@@ -12,31 +12,31 @@ class Mapper
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private ?int $id = null;
+    private ?int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $display_name = null;
+    private ?string $display_name;
 
     #[ORM\Column(type: 'datetime')]
-    private ?\DateTimeInterface $account_created = null;
+    private ?\DateTimeInterface $account_created;
 
     #[ORM\Column(type: 'integer')]
-    private ?int $changesets_count = null;
+    private ?int $changesets_count;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $status = null;
+    private ?string $status;
 
     #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $changesets;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private ?string $image = null;
+    private ?string $image;
 
     #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $notes;
 
     #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
-    private ?Welcome $welcome = null;
+    private ?Welcome $welcome;
 
     #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
     private Collection $region;

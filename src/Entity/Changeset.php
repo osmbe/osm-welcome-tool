@@ -13,10 +13,10 @@ class Changeset
     private int $id;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private ?string $editor = null;
+    private ?string $editor;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private ?string $comment = null;
+    private ?string $comment;
 
     #[ORM\Column(type: 'array', nullable: true)]
     private ?array $reasons = [];
@@ -35,25 +35,25 @@ class Changeset
     private \DateTimeImmutable $created_at;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private ?string $locale = null;
+    private ?string $locale;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private ?int $create_count = null;
+    private ?int $create_count;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private ?int $modify_count = null;
+    private ?int $modify_count;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private ?int $delete_count = null;
+    private ?int $delete_count;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private ?bool $harmful = null;
+    private ?bool $harmful;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private ?bool $suspect = null;
+    private ?bool $suspect;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private ?bool $checked = null;
+    private ?bool $checked;
 
     public function getId(): ?int
     {

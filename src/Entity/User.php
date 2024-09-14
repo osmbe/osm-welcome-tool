@@ -21,7 +21,7 @@ class User implements UserInterface
     private array $roles = [];
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private ?string $image = null;
+    private ?string $image;
 
     public function getId(): ?int
     {
@@ -102,7 +102,7 @@ class User implements UserInterface
     public function eraseCredentials()
     {
         // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
+        // $this->plainPassword;
     }
 
     public function getImage(): ?string

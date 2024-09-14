@@ -21,7 +21,7 @@ class Welcome
     private \DateTime $date;
 
     #[ORM\Column(type: 'datetime', nullable: true)]
-    private \DateTime $reply;
+    private ?\DateTime $reply;
 
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(nullable: false)]
