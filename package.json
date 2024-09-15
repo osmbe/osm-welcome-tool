@@ -45,7 +45,8 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "geojsonhint": "set -e ; for f in assets/regions/*/*.geojson ; do geojsonhint \"$f\" ; done",
+        "geojsonhint": "set -e ; for f in assets/regions/*/*.geojson ; do echo $f; geojsonhint \"$f\" ; done",
+        "rewind": "set -e ; for f in assets/regions/*/*.geojson ; do echo $f; geojson-rewind \"$f\" > \"$f.tmp\" && mv \"$f.tmp\" \"$f\" ; done",
         "lint": "eslint \"assets/typescript\"",
         "lint:fix": "eslint --fix \"assets/typescript\""
     },
