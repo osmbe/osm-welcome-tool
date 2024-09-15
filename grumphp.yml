@@ -18,7 +18,7 @@ grumphp:
       config: ".php-cs-fixer.dist.php"
     phpstan:
       ignore_patterns: [deploy.php]
-    phpunit: ~
+    phpunitbridge: ~
     phpversion:
       project: "8.1"
     twigcs:
