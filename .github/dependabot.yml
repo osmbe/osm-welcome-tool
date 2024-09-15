@@ -23,10 +23,20 @@ updates:
           - "phpstan/*"
   - package-ecosystem: "npm"
     directory: "/"
-    open-pull-requests-limit: 10
+    target-branch: "2.x"
     schedule:
       interval: "monthly"
-    target-branch: "2.x"
+    groups:
+      babel:
+        patterns:
+          - "@babel/*"
+      eslint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint*"
+      webpack:
+        patterns:
+          - "webpack*"
   - package-ecosystem: "github-actions"
     directory: "/"
     open-pull-requests-limit: 10
