@@ -26,18 +26,21 @@ class Mapper
     #[ORM\Column(type: 'string', length: 255)]
     private ?string $status;
 
+    /** @var Collection<int,Changeset> */
     #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $changesets;
 
     #[ORM\Column(type: 'text', nullable: true)]
     private ?string $image;
 
+    /** @var Collection<int,Note> */
     #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $notes;
 
     #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
     private ?Welcome $welcome;
 
+    /** @var Collection<int,Region> */
     #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
     private Collection $region;
 
@@ -109,7 +112,7 @@ class Mapper
     }
 
     /**
-     * @return Collection|Changeset[]
+     * @return Collection<int,Changeset>
      */
     public function getChangesets(): Collection
     {
@@ -149,7 +152,7 @@ class Mapper
     }
 
     /**
-     * @return Collection|Note[]
+     * @return Collection<int,Note>
      */
     public function getNotes(): Collection
     {

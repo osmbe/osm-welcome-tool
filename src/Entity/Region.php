@@ -17,6 +17,7 @@ class Region
     #[ORM\Column(type: 'datetime')]
     private \DateTime $lastUpdate;
 
+    /** @var Collection<int,Mapper> */
     #[ORM\ManyToMany(targetEntity: Mapper::class, mappedBy: 'region')]
     private Collection $mappers;
 

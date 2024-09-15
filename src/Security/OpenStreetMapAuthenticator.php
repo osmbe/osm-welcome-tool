@@ -44,9 +44,9 @@ class OpenStreetMapAuthenticator extends OAuth2Authenticator
                 $openstreetmapUser = $client->fetchUserFromToken($accessToken);
 
                 $user = $this->entityManager->getRepository(User::class)->find($openstreetmapUser->getId());
-                if (null === $user) {
+                if (null === $user && null !== $openstreetmapUser->getId()) {
                     $user = new User();
-                    $user->setId($openstreetmapUser->getId());
+                    $user->setId((int) $openstreetmapUser->getId());
                 }
 
                 $user->setDisplayName($openstreetmapUser->getDisplayName());
