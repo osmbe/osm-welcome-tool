@@ -11,21 +11,21 @@ class Note
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private int $id;
 
     #[ORM\ManyToOne(targetEntity: Mapper::class, inversedBy: 'notes')]
     #[ORM\JoinColumn(nullable: false)]
-    private $mapper;
+    private Mapper $mapper;
 
     #[ORM\Column(type: 'datetime')]
-    private $date;
+    private \DateTime $date;
 
     #[ORM\Column(type: 'text')]
-    private $text;
+    private string $text;
 
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(nullable: false)]
-    private $author;
+    private User $author;
 
     public function getId(): ?int
     {
@@ -44,12 +44,12 @@ class Note
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
+    public function getDate(): ?\DateTime
     {
         return $this->date;
     }
 
-    public function setDate(\DateTimeInterface $date): self
+    public function setDate(\DateTime $date): self
     {
         $this->date = $date;
 

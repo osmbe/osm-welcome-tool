@@ -11,6 +11,8 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Mapper|null findOneBy(array $criteria, array $orderBy = null)
  * @method Mapper[]    findAll()
  * @method Mapper[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ *
+ * @extends ServiceEntityRepository<Mapper>
  */
 class MapperRepository extends ServiceEntityRepository
 {

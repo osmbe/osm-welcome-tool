@@ -28,7 +28,8 @@ There are only 2 steps to add a new region to the tool:
   - Add the `flag` property with the flag emoji of the country your region is in ;
   - You don't have to worry about the `osmcha.id` id, we'll take care of that ;
 - Add a GeoJSON for your region in the [`assets/regions`](https://github.com/osmbe/osm-welcome-tool/tree/2.x/assets/regions) folder.  
-You can use <http://polygons.openstreetmap.fr/> to easily create a (simplified) GeoJSON file for a specific OSM relation.
+You can use <http://polygons.openstreetmap.fr/> to easily create a (simplified) GeoJSON file for a specific OSM relation.  
+**Please keep your file under 100Ko!**
 
 Create a Pull Request with those 2 steps and we'll take it from there!
 

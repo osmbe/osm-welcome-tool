@@ -11,6 +11,8 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Welcome|null findOneBy(array $criteria, array $orderBy = null)
  * @method Welcome[]    findAll()
  * @method Welcome[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ *
+ * @extends ServiceEntityRepository<Welcome>
  */
 class WelcomeRepository extends ServiceEntityRepository
 {

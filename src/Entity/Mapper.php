@@ -12,32 +12,35 @@ class Mapper
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private ?int $id = null;
+    private ?int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $display_name = null;
+    private ?string $display_name;
 
     #[ORM\Column(type: 'datetime')]
-    private ?\DateTimeInterface $account_created = null;
+    private ?\DateTimeInterface $account_created;
 
     #[ORM\Column(type: 'integer')]
-    private ?int $changesets_count = null;
+    private ?int $changesets_count;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $status = null;
+    private ?string $status;
 
+    /** @var Collection<int,Changeset> */
     #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $changesets;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private ?string $image = null;
+    private ?string $image;
 
+    /** @var Collection<int,Note> */
     #[ORM\OneToMany(targetEntity: Note::class, mappedBy: 'mapper', orphanRemoval: true)]
     private Collection $notes;
 
     #[ORM\OneToOne(targetEntity: Welcome::class, mappedBy: 'mapper', cascade: ['persist'])]
-    private ?Welcome $welcome = null;
+    private ?Welcome $welcome;
 
+    /** @var Collection<int,Region> */
     #[ORM\ManyToMany(targetEntity: Region::class, inversedBy: 'mappers')]
     private Collection $region;
 
@@ -109,7 +112,7 @@ class Mapper
     }
 
     /**
-     * @return Collection|Changeset[]
+     * @return Collection<int,Changeset>
      */
     public function getChangesets(): Collection
     {
@@ -149,7 +152,7 @@ class Mapper
     }
 
     /**
-     * @return Collection|Note[]
+     * @return Collection<int,Note>
      */
     public function getNotes(): Collection
     {
@@ -205,14 +208,14 @@ class Mapper
     }
 
     /**
-     * @return Collection<int, region>
+     * @return Collection<int, Region>
      */
     public function getRegion(): Collection
     {
         return $this->region;
     }
 
-    public function addRegion(region $region): self
+    public function addRegion(Region $region): self
     {
         if (!$this->region->contains($region)) {
             $this->region->add($region);
@@ -221,7 +224,7 @@ class Mapper
         return $this;
     }
 
-    public function removeRegion(region $region): self
+    public function removeRegion(Region $region): self
     {
         $this->region->removeElement($region);
 

@@ -24,7 +24,7 @@ class AOICommand extends Command
     public function __construct(
         private readonly ValidatorInterface $validator,
         private readonly RegionsProvider $provider,
-        private readonly OSMChaAPI $api
+        private readonly OSMChaAPI $api,
     ) {
         parent::__construct();
     }
@@ -52,12 +52,6 @@ class AOICommand extends Command
 
         $key = $input->getArgument('region');
         $region = $this->provider->getRegion(null, $key);
-
-        if (null === $region) {
-            $io->error(sprintf('Region "%s" is not a valid key.', $key));
-
-            return Command::FAILURE;
-        }
 
         $name = sprintf('Welcome Tool for %s', $region['name']);
         $filters = [

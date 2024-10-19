@@ -6,6 +6,7 @@ use App\Entity\Mapper;
 use App\Entity\Note;
 use App\Entity\Region;
 use App\Entity\Template;
+use App\Entity\User;
 use App\Entity\Welcome;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
@@ -22,6 +23,9 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 class MapperController extends AbstractController
 {
     private Mapper $mapper;
+
+    private ?User $user;
+
     /** @var Template[] */
     private array $templates;
 
@@ -39,6 +43,7 @@ class MapperController extends AbstractController
     {
         $region = $this->provider->getRegion($continent, $regionKey);
 
+        $this->user = $this->getUser(); // @phpstan-ignore assign.propertyType
         $this->mapper = $this->entityManager->find(Mapper::class, $id);
 
         $mapperRegions = array_map(fn (Region $region) => $region->getId(), $this->mapper->getRegion()->toArray());
@@ -102,7 +107,7 @@ class MapperController extends AbstractController
 
         if (true === $state) {
             $welcome->setDate(new \DateTime());
-            $welcome->setUser($this->getUser());
+            $welcome->setUser($this->user);
 
             $this->entityManager->persist($welcome);
         } else {
@@ -119,7 +124,7 @@ class MapperController extends AbstractController
             $welcome = new Welcome();
             $welcome->setMapper($this->mapper);
             $welcome->setDate(new \DateTime());
-            $welcome->setUser($this->getUser());
+            $welcome->setUser($this->user);
         }
         $welcome->setReply($state ? new \DateTime() : null);
 
@@ -164,7 +169,7 @@ class MapperController extends AbstractController
     {
         $note = new Note();
         $note->setMapper($this->mapper);
-        $note->setAuthor($this->getUser());
+        $note->setAuthor($this->user);
 
         $form = $this->createFormBuilder($note)
             ->add('text', TextareaType::class, ['label' => 'Note'])

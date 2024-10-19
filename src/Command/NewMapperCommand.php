@@ -38,7 +38,7 @@ class NewMapperCommand extends Command
         private readonly MapperProvider $mapperProvider,
         private readonly OSMChaAPI $osmcha,
         private readonly OpenStreetMapAPI $osm,
-        private readonly CacheItemPoolInterface $cache
+        private readonly CacheItemPoolInterface $cache,
     ) {
         parent::__construct();
     }
@@ -77,19 +77,26 @@ class NewMapperCommand extends Command
         $date = $input->getOption('date');
         $region = $this->regionsProvider->getRegion(null, $key);
 
-        if (null === $region) {
-            $io->error(sprintf('Region "%s" is not a valid key.', $key));
+        if (null === $date) {
+            /** @var Region|null */
+            $r = $this->entityManager->find(Region::class, $key);
+            $lastUpdate = null === $r ? null : $r->getLastUpdate();
 
-            return Command::FAILURE;
+            if (null === $r || null === $lastUpdate) {
+                // If there never was an update, get new mappers from the last 5 days
+                $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
+                $io->note(sprintf('Region was not processed yet, get new mappers from %s.', $date));
+            } else {
+                $date = $lastUpdate->sub(new \DateInterval('P1D'))->format('Y-m-d');
+                $io->note(sprintf('Get new mappers from %s.', $date));
+            }
         }
 
-        if (null !== $date) {
-            $aoiCommand = $this->getApplication()->find('osmcha:aoi');
-            $aoiCommand->run(new ArrayInput([
-                'region' => $key,
-                '-d' => $date,
-            ]), $output);
-        }
+        $aoiCommand = $this->getApplication()->find('osmcha:aoi');
+        $aoiCommand->run(new ArrayInput([
+            'region' => $key,
+            '-d' => $date,
+        ]), $output);
 
         try {
             /** @var int[] */
