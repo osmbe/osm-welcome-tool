@@ -137,7 +137,7 @@ class NewMapperCommand extends Command
 
                             $this->entityManager->persist($mapper);
 
-                            $io->info(sprintf('Mapper %s (%d) added with %d changeset(s) (first changeset: %d)', $mapper->getDisplayName(), $mapper->getId(), count($mapperChangesets), $firstChangeset->getId()));
+                            $io->info(sprintf('Mapper %s (%d) added with %d changeset(s) (first changeset: %d)', $mapper->getDisplayName(), $mapper->getId(), \count($mapperChangesets), $firstChangeset->getId()));
                         }
                     } else {
                         $io->note(sprintf('Mapper #%d already exists', $usersId[$i]));
