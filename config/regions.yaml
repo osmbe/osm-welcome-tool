@@ -227,6 +227,10 @@ regions:
       name: Scotland
       flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
       osmcha.id: 2c2d94e5-29bc-4eaa-a5e2-119df5d6b649
+    serbia:
+      name: Serbia
+      flag: 🇷🇸
+      osmcha.id: 8717e15e-7a84-431f-8ae8-0730519b2b9b
     slovenia:
       name: Slovenia
       flag: 🇸🇮

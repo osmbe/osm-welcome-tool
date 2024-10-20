@@ -276,6 +276,10 @@ crons:
         spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper scotland
+    update-europe-serbia:
+        spec: '30 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper serbia
     update-europe-slovenia:
         spec: '30 1 * * *'
         commands:
