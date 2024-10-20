@@ -229,6 +229,10 @@
         <source>Scotland</source>
         <target state="translated">スコットランド</target>
       </trans-unit>
+      <trans-unit id="6HOcg5V" resname="Serbia">
+        <source>Serbia</source>
+        <target state="needs-translation">Serbia</target>
+      </trans-unit>
       <trans-unit id="VgWef7T" resname="Slovenia">
         <source>Slovenia</source>
         <target state="translated">スロベニア</target>
