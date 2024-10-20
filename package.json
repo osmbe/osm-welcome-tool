@@ -30,7 +30,7 @@
         "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.3.1",
-        "regenerator-runtime": "^0.14.0",
+        "regenerator-runtime": "^0.14.1",
         "tailwindcss": "^3.4.10",
         "ts-loader": "^9.5.1",
         "typescript": "^5.6.2",
