@@ -15,7 +15,7 @@ FROM composer:2 as composer
 
 # Application
 
-FROM php:8.1-apache as app
+FROM php:8.3-apache as app
 
 ## Install PHP dependencies
 
