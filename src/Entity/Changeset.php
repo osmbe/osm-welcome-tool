@@ -10,50 +10,50 @@ class Changeset
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private int $id;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private $editor;
+    private ?string $editor;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private $comment;
+    private ?string $comment;
 
     #[ORM\Column(type: 'array', nullable: true)]
-    private $reasons = [];
+    private ?array $reasons = [];
 
     #[ORM\ManyToOne(targetEntity: Mapper::class, inversedBy: 'changesets')]
     #[ORM\JoinColumn(nullable: false)]
-    private $mapper;
+    private Mapper $mapper;
 
     #[ORM\Column(type: 'integer')]
-    private $changes_count;
+    private int $changes_count;
 
     #[ORM\Column(type: 'array')]
     private array $extent = [];
 
     #[ORM\Column(type: 'datetime_immutable')]
-    private $created_at;
+    private \DateTimeImmutable $created_at;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private $locale;
+    private ?string $locale;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private $create_count;
+    private ?int $create_count;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private $modify_count;
+    private ?int $modify_count;
 
     #[ORM\Column(type: 'integer', nullable: true)]
-    private $delete_count;
+    private ?int $delete_count;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private $harmful;
+    private ?bool $harmful;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private $suspect;
+    private ?bool $suspect;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
-    private $checked;
+    private ?bool $checked;
 
     public function getId(): ?int
     {

@@ -12,11 +12,12 @@ class Region
 {
     #[ORM\Id]
     #[ORM\Column(type: 'string')]
-    private ?string $id = null;
+    private ?string $id;
 
     #[ORM\Column(type: 'datetime')]
     private \DateTime $lastUpdate;
 
+    /** @var Collection<int,Mapper> */
     #[ORM\ManyToMany(targetEntity: Mapper::class, mappedBy: 'region')]
     private Collection $mappers;
 
