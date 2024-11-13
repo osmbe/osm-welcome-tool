@@ -12,19 +12,19 @@ class Mapper
 {
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
-    private ?int $id;
+    private int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $display_name;
+    private string $display_name;
 
     #[ORM\Column(type: 'datetime')]
-    private ?\DateTimeInterface $account_created;
+    private \DateTimeInterface $account_created;
 
     #[ORM\Column(type: 'integer')]
-    private ?int $changesets_count;
+    private int $changesets_count;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $status;
+    private string $status;
 
     /** @var Collection<int,Changeset> */
     #[ORM\OneToMany(targetEntity: Changeset::class, mappedBy: 'mapper', orphanRemoval: true)]

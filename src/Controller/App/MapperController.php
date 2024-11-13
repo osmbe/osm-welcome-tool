@@ -165,6 +165,9 @@ class MapperController extends AbstractController
         return null;
     }
 
+    /**
+     * @return FormInterface<Note>
+     */
     private function note(Request $request): FormInterface
     {
         $note = new Note();

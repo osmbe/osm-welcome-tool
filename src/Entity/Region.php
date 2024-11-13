@@ -12,7 +12,7 @@ class Region
 {
     #[ORM\Id]
     #[ORM\Column(type: 'string')]
-    private ?string $id;
+    private string $id;
 
     #[ORM\Column(type: 'datetime')]
     private \DateTime $lastUpdate;

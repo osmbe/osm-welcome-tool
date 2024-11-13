@@ -8,6 +8,6 @@ if (method_exists(Dotenv::class, 'bootEnv')) { // @phpstan-ignore function.alrea
     (new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
 }
 
-if ($_SERVER['APP_DEBUG']) {
+if (isset($_SERVER['APP_DEBUG'])) {
     umask(0000);
 }
