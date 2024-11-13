@@ -73,6 +73,10 @@
         <source>Colombia</source>
         <target state="translated">Колумбия</target>
       </trans-unit>
+      <trans-unit id="SuYr9Og" resname="Colorado">
+        <source>Colorado</source>
+        <target state="needs-translation">Colorado</target>
+      </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
         <target state="translated">Богота</target>
