@@ -9451,20 +9451,31 @@
         },
         {
             "name": "deployer/deployer",
-            "version": "v7.4.0",
+            "version": "v7.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deployphp/deployer.git",
-                "reference": "b438dc22545ab2ecc67d79c80c7a79c156de3599"
+                "reference": "1b37d639e0ffad980f6cc3873859b16de29ecad7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deployphp/deployer/zipball/b438dc22545ab2ecc67d79c80c7a79c156de3599",
-                "reference": "b438dc22545ab2ecc67d79c80c7a79c156de3599",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/1b37d639e0ffad980f6cc3873859b16de29ecad7",
+                "reference": "1b37d639e0ffad980f6cc3873859b16de29ecad7",
                 "shasum": ""
             },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0|^7.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.64",
+                "pestphp/pest": "^3.3",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/php-code-coverage": "^11.0",
+                "phpunit/phpunit": "^11.4"
+            },
             "bin": [
-                "dep"
+                "bin/dep"
             ],
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -9490,7 +9501,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-17T20:55:49+00:00"
+            "time": "2024-11-08T13:18:44+00:00"
         },
         {
             "name": "ergebnis/composer-normalize",
