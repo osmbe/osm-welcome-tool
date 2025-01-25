@@ -241,6 +241,10 @@
         <source>Slovenia</source>
         <target state="translated">Eslovenia</target>
       </trans-unit>
+      <trans-unit id="PgSdeNl" resname="South Africa">
+        <source>South Africa</source>
+        <target state="needs-translation">South Africa</target>
+      </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
         <target state="translated">Corea del Sur</target>
