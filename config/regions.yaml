@@ -317,6 +317,10 @@ regions:
       flag: 🇺🇸
       osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
   south-america:
+    argentina:
+      name: Argentina
+      flag: :argentina:
+      osmcha.id:
     bolivia:
       name: Bolivia
       flag: 🇧🇴
