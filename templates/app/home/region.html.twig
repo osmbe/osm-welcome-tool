@@ -39,11 +39,11 @@
                     <time datetime="{{ region.lastUpdate|date('c') }}">{{ region.lastUpdate|ago }}</time>
                 </p>
                 {% endif %}
-                {% if region.lastUpdate is defined %}
+                {# {% if region.lastUpdate is defined %}
                 <div class="w-full bg-gray-200 rounded-full h-0.5 mt-1">
                     <div class="bg-gray-600 h-0.5 rounded-full" style="width: {{ region.count.percentage }}%"></div>
                 </div>
-                {% endif %}
+                {% endif %} #}
             </a>
         </div>
     </div>
