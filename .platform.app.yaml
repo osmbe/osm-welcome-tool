@@ -364,6 +364,10 @@ crons:
         spec: '0 9 * * *'
         commands:
             start: php bin/console osmcha:new-mapper washington
+    update-southamerica-argentina:
+        spec: '30 5 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper argentina
     update-southamerica-bogota:
         spec: '0 6 * * *'
         commands:
