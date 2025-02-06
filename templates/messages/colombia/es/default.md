@@ -23,7 +23,7 @@ Ahí encontrarás toda la información que necesites para comenzar.
 * [learnOSM (aprendeOSM)](https://learnosm.org/es/) es una página web donde podrás aprender acerca del mundo de OSM.
 Ahí hay instrucciones para manejar el editor iD (el cual puedes usar desde cualquier navegador) y para un editor más avanzado llamado JOSM (aplicación con Java).
 
-* Si en el editor que estés usando, no encuentras cómo mapear algo en particular, la solución más rápida es buscar en la página [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa) del wiki.
+* Si en el editor que estés usando, no encuentras cómo mapear algo en particular, la solución más rápida es buscar en la página [objetos del mapa](https://wiki.openstreetmap.org/wiki/ES:Objetos_del_mapa) del wiki.
 En esa lista podrás ver todo lo que se puede agregar al mapa.
 Al principio, esta lista puede parecer enorme, pero con echarle un ojo podrás tener presente las distintas formas mejorar el mapa.
 
@@ -38,13 +38,10 @@ Si tienes dudas o preguntas como:
 
 También usamos varias redes sociales, para que puedas interactuar con la comunidad, y también te enteres de los próximos eventos, hitos alcanzados o cualquier elemento relativo a OSM en Colombia. Estas son las redes sociales que usamos para que nos sigas y nos ayudes a difundir el proyecto:
 
-* [X Twitter](https://twitter.com/OSM_Colombia).
 * [Instagram](https://www.instagram.com/osm_colombia/).
-* [Mastodon](https://en.osm.town/@OSM_Colombia).
-* [TikTok](https://www.tiktok.com/@osm_colombia).
-* [Facebook](https://www.facebook.com/groups/OsmCol/).
-* [LinkedIn](https://www.linkedin.com/groups/13038204/).
-* [YouTube](https://www.youtube.com/@OSM_Colombia).
+* [X Twitter](https://twitter.com/OSM_Colombia).
+* [LinkedIn](https://www.linkedin.com/company/osmcolombia).
+* [Linktree](https://linktr.ee/osm_colombia).
 
 Entonces, ¿qué puedes mapear ahora?
 Te recomendamos que adiciones elementos cerca de ti, como:
