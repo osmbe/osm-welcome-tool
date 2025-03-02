@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="6guTfqM" resname="Argentina">
         <source>Argentina</source>
-        <target state="needs-translation">Argentina</target>
+        <target state="translated">Argentina</target>
       </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
@@ -79,7 +79,7 @@
       </trans-unit>
       <trans-unit id="SuYr9Og" resname="Colorado">
         <source>Colorado</source>
-        <target state="needs-translation">Colorado</target>
+        <target state="translated">Colorado</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
@@ -239,7 +239,7 @@
       </trans-unit>
       <trans-unit id="6HOcg5V" resname="Serbia">
         <source>Serbia</source>
-        <target state="needs-translation">Serbia</target>
+        <target state="translated">Sérvia</target>
       </trans-unit>
       <trans-unit id="VgWef7T" resname="Slovenia">
         <source>Slovenia</source>
@@ -247,7 +247,7 @@
       </trans-unit>
       <trans-unit id="PgSdeNl" resname="South Africa">
         <source>South Africa</source>
-        <target state="needs-translation">South Africa</target>
+        <target state="translated">África do Sul</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
