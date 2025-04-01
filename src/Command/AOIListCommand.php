@@ -36,7 +36,7 @@ class AOIListCommand extends Command
             $features = array_merge($features, $content['results']['features']);
         }
 
-        $io->info(sprintf('Found %d Area(s) of Interest.', $count));
+        $io->info(\sprintf('Found %d Area(s) of Interest.', $count));
 
         $welcome = array_filter($features, fn ($feature) => 'Welcome Tool' === substr($feature['properties']['name'], 0, 12));
 

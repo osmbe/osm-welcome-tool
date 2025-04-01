@@ -15,7 +15,7 @@ class RegionsProvider
         private readonly RegionRepository $regionRepository,
         private readonly string $projectDirectory,
     ) {
-        $yaml = Yaml::parseFile(sprintf('%s/config/regions.yaml', $this->projectDirectory));
+        $yaml = Yaml::parseFile(\sprintf('%s/config/regions.yaml', $this->projectDirectory));
 
         $this->regions = $yaml['regions'] ?? [];
     }
@@ -28,14 +28,14 @@ class RegionsProvider
     public function getRegion(?string $continent, string $key): array
     {
         if (null !== $continent && !isset($this->regions[$continent][$key])) {
-            throw new \Exception(sprintf('Key "%s.%s" is not defined in regions configuration file.', $continent, $key));
+            throw new \Exception(\sprintf('Key "%s.%s" is not defined in regions configuration file.', $continent, $key));
         }
 
         if (null === $continent) {
             $group = array_filter($this->regions, fn ($value) => \in_array($key, array_keys($value), true));
 
             if (0 === \count($group)) {
-                throw new \Exception(sprintf('Key "%s" is not defined in regions configuration file.', $key));
+                throw new \Exception(\sprintf('Key "%s" is not defined in regions configuration file.', $key));
             } else {
                 $continent = array_key_first($group);
             }
@@ -50,18 +50,18 @@ class RegionsProvider
 
     public function getGeometry(string $continent, string $key): array
     {
-        $path = sprintf('%s/assets/regions/%s/%s.geojson', $this->projectDirectory, $continent, $key);
+        $path = \sprintf('%s/assets/regions/%s/%s.geojson', $this->projectDirectory, $continent, $key);
         if (!file_exists($path) || !is_readable($path)) {
-            throw new \Exception(sprintf('Geometry is not defined for region "%s".', $key));
+            throw new \Exception(\sprintf('Geometry is not defined for region "%s".', $key));
         }
 
         $content = file_get_contents($path);
         if (false === $content) {
-            throw new \Exception(sprintf('Can\'t read geometry for region "%s".', $key));
+            throw new \Exception(\sprintf('Can\'t read geometry for region "%s".', $key));
         }
         $data = json_decode($content, true, 512, \JSON_THROW_ON_ERROR);
         if (null === $data) {
-            throw new \Exception(sprintf('Geometry for region "%s" doesn\'t seem to be valid.', $key));
+            throw new \Exception(\sprintf('Geometry for region "%s" doesn\'t seem to be valid.', $key));
         }
 
         return $data;

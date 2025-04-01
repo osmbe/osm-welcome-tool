@@ -83,7 +83,7 @@ class NewMapperCommand extends Command
 
                 // If there never was an update, get new mappers from the last 5 days
                 $date = (new \DateTime())->sub(new \DateInterval('P5D'))->format('Y-m-d');
-                $io->info(sprintf('Region was not processed yet, get new mappers from %s.', $date));
+                $io->info(\sprintf('Region was not processed yet, get new mappers from %s.', $date));
             } else {
                 $date = $region->getLastUpdate()->sub(new \DateInterval('P1D'))->format('Y-m-d');
             }
@@ -96,7 +96,7 @@ class NewMapperCommand extends Command
 
         $this->stopwatch->start('update-aoi');
 
-        $io->title(sprintf('Update the Area of Interest "%s" (%s)', $key, $date));
+        $io->title(\sprintf('Update the Area of Interest "%s" (%s)', $key, $date));
 
         $aoiCommand = $this->getApplication()->find('osmcha:aoi');
         $aoiCommand->run(new ArrayInput([
@@ -108,7 +108,7 @@ class NewMapperCommand extends Command
 
         $this->stopwatch->start('process');
 
-        $io->title(sprintf('Get new mappers from Area of Interest "%s"', $key));
+        $io->title(\sprintf('Get new mappers from Area of Interest "%s"', $key));
 
         try {
             /** @var int[] $usersId */
@@ -137,10 +137,10 @@ class NewMapperCommand extends Command
 
                             $this->entityManager->persist($mapper);
 
-                            $io->info(sprintf('Mapper %s (%d) added with %d changeset(s) (first changeset: %d)', $mapper->getDisplayName(), $mapper->getId(), \count($mapperChangesets), $firstChangeset->getId()));
+                            $io->info(\sprintf('Mapper %s (%d) added with %d changeset(s) (first changeset: %d)', $mapper->getDisplayName(), $mapper->getId(), \count($mapperChangesets), $firstChangeset->getId()));
                         }
                     } else {
-                        $io->note(sprintf('Mapper #%d already exists', $usersId[$i]));
+                        $io->note(\sprintf('Mapper #%d already exists', $usersId[$i]));
                     }
                 } catch (\Exception $e) {
                     $io->error($e->getMessage());
@@ -180,7 +180,7 @@ class NewMapperCommand extends Command
 
         $users = array_values(array_unique(array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features), \SORT_NUMERIC));
 
-        $io->success(sprintf('Found %d new changeset(s) from %d new user(s)', \count($features), \count($users)));
+        $io->success(\sprintf('Found %d new changeset(s) from %d new user(s)', \count($features), \count($users)));
 
         return $features;
     }
@@ -219,7 +219,7 @@ class NewMapperCommand extends Command
         $users = $response['users'];
 
         if (0 === \count($users)) {
-            throw new \InvalidArgumentException(sprintf('User #%d not found', $userId));
+            throw new \InvalidArgumentException(\sprintf('User #%d not found', $userId));
         }
 
         $mapper = $this->mapperProvider->fromOSM($users[0]);
@@ -237,6 +237,6 @@ class NewMapperCommand extends Command
         ];
 
         $io->table(['Event', 'Duration (ms)', 'Memory (MB)'], $perf);
-        $io->text(sprintf('Total: %.2f seconds - %.1f MB', array_sum(array_column($perf, 1)) / 1000, array_sum(array_column($perf, 2))));
+        $io->text(\sprintf('Total: %.2f seconds - %.1f MB', array_sum(array_column($perf, 1)) / 1000, array_sum(array_column($perf, 2))));
     }
 }
