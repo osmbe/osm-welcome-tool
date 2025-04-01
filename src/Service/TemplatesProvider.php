@@ -10,7 +10,7 @@ class TemplatesProvider
 
     public function __construct(private readonly string $projectDirectory)
     {
-        $glob = glob(sprintf('%s/templates/messages/*/*/*.md', $this->projectDirectory));
+        $glob = glob(\sprintf('%s/templates/messages/*/*/*.md', $this->projectDirectory));
 
         foreach ($glob as $path) {
             if (true === is_readable($path)) {
