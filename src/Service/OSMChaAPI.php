@@ -70,7 +70,7 @@ class OSMChaAPI
 
         $response = $this->osmchaClient->request(
             'PUT',
-            sprintf('aoi/%s/', $id),
+            \sprintf('aoi/%s/', $id),
             [
                 'json' => [
                     'name' => $name,
@@ -92,7 +92,7 @@ class OSMChaAPI
 
         $response = $this->osmchaClient->request(
             'GET',
-            sprintf('aoi/%s/changesets/', $id),
+            \sprintf('aoi/%s/changesets/', $id),
             [
                 'query' => [
                     'page_size' => 500,

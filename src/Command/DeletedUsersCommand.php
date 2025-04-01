@@ -82,7 +82,7 @@ class DeletedUsersCommand extends Command
                             break;
 
                         case \STREAM_NOTIFY_REDIRECTED:
-                            $io->text(sprintf('Being redirected to: %s', $message));
+                            $io->text(\sprintf('Being redirected to: %s', $message));
                             break;
 
                         case \STREAM_NOTIFY_CONNECT:
@@ -110,7 +110,7 @@ class DeletedUsersCommand extends Command
 
         $this->filesystem->dumpFile($path, $content);
 
-        $io->info(sprintf('Saved to "%s"!', $path));
+        $io->info(\sprintf('Saved to "%s"!', $path));
 
         $this->stopwatch->stop('download');
 
@@ -167,7 +167,7 @@ class DeletedUsersCommand extends Command
 
         $this->filesystem->remove($path);
 
-        $io->info(sprintf('"%s" deleted!', $path));
+        $io->info(\sprintf('"%s" deleted!', $path));
 
         $this->stopwatch->start('clean');
     }
@@ -181,6 +181,6 @@ class DeletedUsersCommand extends Command
         ];
 
         $io->table(['Event', 'Duration (ms)', 'Memory (MB)'], $perf);
-        $io->text(sprintf('Total: %.2f seconds - %.1f MB', array_sum(array_column($perf, 1)) / 1000, array_sum(array_column($perf, 2))));
+        $io->text(\sprintf('Total: %.2f seconds - %.1f MB', array_sum(array_column($perf, 1)) / 1000, array_sum(array_column($perf, 2))));
     }
 }
