@@ -53,7 +53,7 @@ class AOICommand extends Command
         $key = $input->getArgument('region');
         $region = $this->provider->getRegion(null, $key);
 
-        $name = sprintf('Welcome Tool for %s', $region['name']);
+        $name = \sprintf('Welcome Tool for %s', $region['name']);
         $filters = [
             'geometry' => $this->provider->getGeometry($region['continent'], $region['key']),
             'all_reasons' => '40',
@@ -71,14 +71,14 @@ class AOICommand extends Command
                 $response = $this->api->updateAreaOfInterest($region['osmcha.id'], $name, $filters);
             }
 
-            $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+            $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
             $data = $response->toArray();
 
             if (null !== $date) {
-                $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s" (%s).', $name, $data['id'], $data['properties']['filters']['date__gte']));
+                $io->success(\sprintf('OSMCha Area of Interest identifier for "%s" is "%s" (%s).', $name, $data['id'], $data['properties']['filters']['date__gte']));
             } else {
-                $io->success(sprintf('OSMCha Area of Interest identifier for "%s" is "%s".', $name, $data['id']));
+                $io->success(\sprintf('OSMCha Area of Interest identifier for "%s" is "%s".', $name, $data['id']));
             }
 
             return Command::SUCCESS;
