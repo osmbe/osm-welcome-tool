@@ -82,7 +82,7 @@ class EditorExtension extends AbstractExtension
         }
 
         return isset($shortName) ?
-            sprintf('<span class="cursor-help" title="%s">%s</span>', $name, $shortName) :
+            \sprintf('<span class="cursor-help" title="%s">%s</span>', $name, $shortName) :
             $name;
     }
 }
