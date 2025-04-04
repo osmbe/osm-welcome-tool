@@ -3,7 +3,7 @@ name: Moin und Willkommen
 title: Willkommen bei OpenStreetMap in Hamburg
 ---
 
-Moin und herzlich Willkommen bei OpenStreetMap in Hamburg, {{ mapper.displayName }}!
+Moin und herzlich willkommen bei OpenStreetMap in Hamburg, {{ mapper.displayName }}!
 
 Eventuell bist du schon voll drin im OpenStreetMap-Universum vielleicht aber auch noch nicht.
 Deswegen schreibe ich dir, denn aller Anfang ist schwer und vielleicht können ein paar Tipps und Informationen für dich ja interessant sein:
@@ -15,9 +15,9 @@ Gerade das Wiki kann jedoch manchmal etwas erschlagend wirken, vielleicht findes
 
 ### Die lokale Hamburger Community
 Es mag manchmal nicht so wirken, aber es gibt viele aktive Mapper um dich herum. 
-Die Hamburger OSM-Community ist ziemlich aktiv und bietet zwei wesentliche Kontaktmöglichkeiten an: Die [Mailingliste](https://lists.openstreetmap.de/mailman/listinfo/hamburg) und den [Telegram-Kanal](https://t.me/osm_de_hh).
+Die Hamburger OSM-Community ist ziemlich aktiv und bietet zwei wesentliche Kontaktmöglichkeiten an: die [Mailingliste](https://lists.openstreetmap.de/mailman/listinfo/hamburg) und den [Telegram-Kanal](https://t.me/osm_de_hh).
 
-Zudem findet ein [monatliches lockeres Treffen](https://wiki.openstreetmap.org/wiki/Hamburger_Mappertreffen) zum gegenseitigen kennenlernen und Austauschen statt.
+Zudem findet ein [monatliches lockeres Treffen](https://wiki.openstreetmap.org/wiki/Hamburger_Mappertreffen) zum gegenseitigen Kennenlernen und Austauschen statt.
 Vielleicht sieht man dich da auch mal?
 
 ### Newsletter
