@@ -31,8 +31,9 @@ También usamos varias redes sociales, para que puedas interactuar con la comuni
 * [Mastodon](https://en.osm.town/@OSM_Colombia).
 * [TikTok](https://www.tiktok.com/@osm_colombia).
 * [Facebook](https://www.facebook.com/groups/OsmCol/).
-* [LinkedIn](https://www.linkedin.com/company/104755425/).
+* [LinkedIn](https://www.linkedin.com/company/osmcolombia).
 * [YouTube](https://www.youtube.com/@OSM_Colombia).
+* [Linktree](https://linktr.ee/osm_colombia).
 
 ----
 
