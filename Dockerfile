@@ -1,6 +1,6 @@
 # Node.js (Build assets)
 
-FROM node:16-alpine as node
+FROM node:22-alpine AS node
 
 WORKDIR /assets
 
@@ -11,11 +11,11 @@ RUN npm run build
 
 # Composer
 
-FROM composer:2 as composer
+FROM composer:2 AS composer
 
 # Application
 
-FROM php:8.1-apache as app
+FROM php:8.3-apache AS app
 
 ## Install PHP dependencies
 

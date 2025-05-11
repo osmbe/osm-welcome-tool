@@ -32,7 +32,7 @@ class HomeController extends AbstractController
 
         foreach ($regions as $key => &$region) {
             $region['lastUpdate'] = $this->provider->getEntity($key)?->getLastUpdate();
-            $region['count'] = $this->provider->getPercentage($key);
+            // $region['count'] = $this->provider->getPercentage($key);
         }
 
         return $this->render('app/home/region.html.twig', [

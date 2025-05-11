@@ -24,6 +24,10 @@ regions:
       name: Nigeria
       flag: 🇳🇬
       osmcha.id: c9a55728-9619-422b-abb0-e0fd55e0a780
+    south-africa:
+      name: South Africa
+      flag: 🇿🇦
+      osmcha.id: 5d310fee-75ab-4191-b58e-7689760ad2c2
     tanzania:
       name: Tanzania
       flag: 🇹🇿
@@ -227,6 +231,10 @@ regions:
       name: Scotland
       flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
       osmcha.id: 2c2d94e5-29bc-4eaa-a5e2-119df5d6b649
+    serbia:
+      name: Serbia
+      flag: 🇷🇸
+      osmcha.id: 8717e15e-7a84-431f-8ae8-0730519b2b9b
     slovenia:
       name: Slovenia
       flag: 🇸🇮
@@ -260,6 +268,10 @@ regions:
       name: California
       flag: 🇺🇸
       osmcha.id: 766165a5-0a47-4cb8-8cde-d12fed551ff0
+    colorado:
+      name: Colorado
+      flag: 🇺🇸
+      osmcha.id: c3c8954f-bb6d-4713-b311-e5ce9fea2244
     guatemala:
       name: Guatemala
       flag: 🇬🇹
@@ -305,6 +317,10 @@ regions:
       flag: 🇺🇸
       osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
   south-america:
+    argentina:
+      name: Argentina
+      flag: 🇦🇷
+      osmcha.id: 572b770e-e0bc-4077-acd6-2eac6abc8b3a
     bolivia:
       name: Bolivia
       flag: 🇧🇴

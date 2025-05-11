@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-versions: [ '8.2', '8.3' ] # See https://www.php.net/supported-versions.php
+        php-versions: [ '8.3' ] # See https://www.php.net/supported-versions.php
     steps:
     - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
@@ -46,7 +46,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 16.x, 18.x ] # See https://nodejs.org/en/about/releases/
+        node-version: [ 22.x ] # See https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}

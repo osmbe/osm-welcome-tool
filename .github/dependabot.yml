@@ -37,6 +37,12 @@ updates:
       webpack:
         patterns:
           - "webpack*"
+  - package-ecosystem: "docker"
+    directory: "/"
+    open-pull-requests-limit: 10
+    schedule:
+      interval: "monthly"
+    target-branch: "2.x"
   - package-ecosystem: "github-actions"
     directory: "/"
     open-pull-requests-limit: 10

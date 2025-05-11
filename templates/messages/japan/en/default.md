@@ -1,5 +1,5 @@
 ---
-name: Default
+name: Default-EN
 title: Welcome to OpenStreetMap
 ---
 
@@ -11,8 +11,8 @@ If you have any questions at all, we can help out: if you think you might have b
 
 Here are some useful things to get you started:
 
-* OpenStreetMap Japan community runs a [Slack](https://bit.ly/OSM_Japan) channel. Slack is a collaboration tool for OSM mappers, organizers, and developers.  This is a very active forum and the best way to get in touch with other local mappers in Japan.
-* We also has [Twitter hashtag #osmjp](https://twitter.com/hashtag/osmjp) and [Facebook page OpenStreetMap Japan Community](https://www.facebook.com/groups/osmjapan). You can contact us on those channels.
+* OpenStreetMap Japan community runs a [Discord](https://discord.gg/pNuUM99kUX) channel. Slack is a collaboration tool for OSM mappers, organizers, and developers.  This is a very active forum and the best way to get in touch with other local mappers in Japan.
+* We also has [X (Twitter) hashtag #osmjp](https://x.com/hashtag/osmjp) and [Facebook page OpenStreetMap Japan Community](https://www.facebook.com/groups/osmjapan). You can contact us on those channels.
 * Want to join Mapping Party? Check [OSM Japan website](https://openstreetmap.jp/) for details.
 * I highly recommend using the OSM [wiki-pages](https://wiki.openstreetmap.org/). If you don’t find how to map something within the editor of your choice, the quickest solution is look at [Map Features](https://wiki.openstreetmap.org/wiki/Map_Features) on the wiki. For more complicated questions you can search in or post on the [forum](https://community.openstreetmap.org) or ask in Slack.
 * [learnOSM](https://learnosm.org) is a good place to learn more about OSM. Instructions are available for using the iD browser editor and the more advanced JOSM editor.

@@ -46,6 +46,16 @@ También usamos varias redes sociales, para que puedas interactuar con la comuni
 * [LinkedIn](https://www.linkedin.com/groups/13038204/).
 * [YouTube](https://www.youtube.com/@OSM_Colombia).
 
+También usamos varias redes sociales, para que puedas interactuar con la comunidad, y también te enteres de los próximos eventos, hitos alcanzados o cualquier elemento relativo a OSM en Colombia. Estas son las redes sociales que usamos para que nos sigas y nos ayudes a difundir el proyecto:
+
+* [X Twitter](https://twitter.com/OSM_Colombia).
+* [Instagram](https://www.instagram.com/osm_colombia/).
+* [Mastodon](https://en.osm.town/@OSM_Colombia).
+* [TikTok](https://www.tiktok.com/@osm_colombia).
+* [Facebook](https://www.facebook.com/groups/OsmCol/).
+* [LinkedIn](https://www.linkedin.com/groups/13038204/).
+* [YouTube](https://www.youtube.com/@OSM_Colombia).
+
 Entonces, ¿qué puedes mapear ahora?
 Te recomendamos que adiciones elementos cerca de ti, como:
 Restaurantes, negocios, calles, andenes, sillas/bancos, esencialmente elementos o lugares que tú conoces bien y sabes dónde están.

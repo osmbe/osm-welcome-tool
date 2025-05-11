@@ -16,7 +16,7 @@ class OpenStreetMapAPI
     {
         $response = $this->osmClient->request(
             'GET',
-            sprintf('users.json?%s', http_build_query(['users' => implode(',', $ids)]))
+            \sprintf('users.json?%s', http_build_query(['users' => implode(',', $ids)]))
         );
 
         return $response;
@@ -26,7 +26,7 @@ class OpenStreetMapAPI
     {
         $response = $this->osmClient->request(
             'GET',
-            sprintf('changesets.xml?%s', http_build_query(['user' => $id]))
+            \sprintf('changesets.xml?%s', http_build_query(['user' => $id]))
         );
 
         return $response;
