@@ -33,7 +33,7 @@ We also use several social networks, so you can interact with the community and 
 * [TikTok](https://www.tiktok.com/@osm_colombia).
 * [Facebook](https://www.facebook.com/groups/OsmCol/).
 * [LinkedIn](https://www.linkedin.com/company/osmcolombia).
-* YouTube](https://www.youtube.com/@OSM_Colombia).
+* [YouTube](https://www.youtube.com/@OSM_Colombia).
 * [Linktree](https://linktr.ee/osm_colombia).
 ----
 
