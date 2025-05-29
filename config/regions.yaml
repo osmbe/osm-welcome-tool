@@ -194,6 +194,7 @@ regions:
     germany-hamburg:
       name: Hamburg
       flag: 🇩🇪
+      osmcha.id: f2991887-fd00-4421-9d47-d7c12838fe75
     hungary:
       name: Hungary
       flag: 🇭🇺
