@@ -121,6 +121,10 @@
         <source>Bremen</source>
         <target>Bremen</target>
       </trans-unit>
+      <trans-unit id="R6.P89y" resname="Hamburg">
+        <source>Hamburg</source>
+        <target>Hamburg</target>
+      </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
         <target>Ghana</target>

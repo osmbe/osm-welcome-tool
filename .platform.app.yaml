@@ -224,8 +224,12 @@ crons:
         spec: '0 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper france
-    update-europe-germany-berlin-neukoelln:
+    update-europe-germany:
         spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany
+    update-europe-germany-berlin-neukoelln:
+        spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper germany-berlin-neukoelln
     update-europe-germany-berlin:
@@ -236,10 +240,10 @@ crons:
         spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper germany-bremen
-    update-europe-germany:
+    update-europe-germany-hamburg:
         spec: '30 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper germany
+            start: php bin/console osmcha:new-mapper germany-hamburg
     update-europe-hungary:
         spec: '30 1 * * *'
         commands:
