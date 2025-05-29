@@ -1,48 +1,56 @@
 ---
-name: Umbraosm e OSM Brasil
+name: Umbraosm 
 title: Bem-vindo a Comunidade Brasileira do OpenStreetMap!
 ---
+Bem-vindo à Comunidade Brasileira do OpenStreetMap!
 
-Olá, {{ mapper.displayName }}
+Olá, {{ mapper.displayName }}!
 
-Parabéns por sua primeira edição do OpenStreetMap no Brasil!
-A comunidade agradece por ajudar a deixar o mapa um pouco melhor.
+Parabéns pela sua primeira contribuição ao OpenStreetMap no Brasil! A comunidade OSM agradece por ajudar a tornar o mapa mais completo e preciso.
 
-A partir de agora você pode se considerar parte da comunidade OSM Brasil. Sua edição estará disponível no mapa em alguns minutos. Talvez tenha que atualizar o navegador para ver sua alteração.
+A partir de agora, você faz parte da comunidade OSM Brasil. Sua edição estará disponível no mapa em alguns minutos. Caso não veja a alteração imediatamente, tente atualizar a página.
 
-O meu nome no OpenStreetMap é {{ app.user.displayName }} e sou um contribuidor da comunidade brasileira do Openstreetmap que apoia os mapeadores que pretendem melhorar o mapa no Brasil.
+Sou {{ app.user.displayName }} e também sou um colaborador da comunidade brasileira do OpenStreetMap. Estamos aqui para apoiar todos os mapeadores que desejam aprimorar o mapa no Brasil.
 
-Você pode nos encontrar em vários canais, como em nosso canal no Telegram, [Clique Aqui](https://t.me/grupoumbraosm) ou em nosso Site: http://www.umbraosm.com.br/
+🌍 Junte-se à UMBRAOSM
+Participe conosco! Mapeie, construa mapas e ajude a construir um futuro melhor.
 
-no Youtube, https://www.youtube.com/@umbraosm, Instagram, https://www.instagram.com/umbraosmbrasil/ e twitter, https://x.com/Umbraosm2022 
+Conecte-se conosco:
 
-Os Grupos Locais você pode encontrar [aqui](https://wiki.openstreetmap.org/wiki/Pt:Canais_para_contato), e o canal do Telegram da comunidade brasileira de OSM, 
-você pode entrar clicando [aqui](https://telegram.me/OSMBrasil_Comunidade).
+    Telegram: [Clique Aqui](https://t.me/grupoumbraosm)
 
-Se tiver alguma dúvida, estamos aqui para lhe ajudar, entre em contato!
+    Site: http://umbraosm.com.br/
 
-Para começar, compartilhamos aqui alguns links interessantes:
+    YouTube:[ UmbraOSM](https://www.youtube.com/@umbraosm)
 
-*  Recomendamos que você leia a [wiki do OSM](https://wiki.openstreetmap.org/wiki/Pt:P%C3%A1gina_principal). Lá você encontrará todas as informações que precisa.
+    Instagram: https://www.instagram.com/umbraosmbrasil 
 
-* Temos um [Guia de Mapeamento](https://wiki.openstreetmap.org/wiki/Pt-br:Beginners%27_guide) que explica detalhadamente o que você pode mapear e como fazê-lo.
+    Twitter: @Umbraosm2022
 
-* [learnOSM (aprendaOSM)](https://learnosm.org/pt/) é um bom lugar para aprender sobre o mundo do OSM. Há instruções para o editor iD (editor padrão, que você pode usar no navegador) e para um editor mais avançado chamado JOSM.
+Encontre os Grupos Locais aqui.
 
-* Quando enviar o seu conjunto de alterações (changeset), adicione um comentário curto mas claro sobre as suas alterações, para que outros mapeadores possam saber o que foi feito na sua edição.
-Mais informações [aqui](https://wiki.openstreetmap.org/wiki/Pt:Boas_práticas#Bons_comentários_no_conjunto_de_alterações_(changesets)).
+Caso tenha alguma dúvida, a comunidade está aqui para ajudar. Não hesite em nos contatar!
 
-Então, o que você pode mapear agora? Recomendamos que adicione coisas perto de onde esteja, como:
+Links úteis para começar:
 
-Restaurantes, empresas, ruas, cadeiras/bancos, essencialmente coisas ou locais que conhece bem e sabe onde estão.
-Além disso, se você descobrir que uma empresa já está mapeada, certifique-se de que ela tenha o endereço no mapa.
-Dessa forma você adicionará detalhes ao que já existe.
-Lembre-se: você é o especialista na sua área!
-Você verá como é gratificante preencher o mapa ao seu redor com detalhes.
+    Acesse a wiki do OSM para obter todas as informações que você precisa para começar.
 
-Não se esqueça que você pode contar com a comunidade e perguntar o que quiser.
-Todos nós em algum momento começamos a mapear no OSM, como você está fazendo agora, e o que queremos é acompanhá-lo nesse caminho. Não tenha medo de editar!
+    Ao enviar seu conjunto de alterações (changeset), adicione um comentário claro e conciso sobre suas edições, para que outros mapeadores saibam o que foi alterado. Mais detalhes aqui.
 
-Se algo estiver errado, corrija! se não estiver lá ainda, adicione!
+O que você pode mapear agora?
+Comece mapeando pontos de interesse perto de você, como:
 
+    Restaurantes, empresas, ruas, praças, bancos, e outros locais que você conhece bem.
+
+    Se encontrar um estabelecimento já mapeado, verifique se ele tem o endereço correto e adicione ou corrija as informações necessárias.
+
+Lembre-se: você é o melhor especialista no seu entorno! Cada detalhe que você adicionar torna o mapa mais útil para todos.
+
+E o mais importante: você não está sozinho. A comunidade está aqui para ajudar, então, se tiver dúvidas, pergunte! Todos nós começamos assim, e queremos acompanhá-lo nesse caminho.
+
+Se algo estiver incorreto, corrija! Se algo estiver faltando, adicione!
+
+Estamos juntos nessa jornada de mapeamento!
+
+Atenciosamente,
 {{ app.user.displayName }}
