@@ -234,7 +234,7 @@ regions:
     russia:
       name: Russia
       flag: 🇷🇺
-      osmcha.id: 
+      osmcha.id: 0b9bb204-723c-487e-bffd-98400db248cb
     scotland:
       name: Scotland
       flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
