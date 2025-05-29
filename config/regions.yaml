@@ -231,6 +231,10 @@ regions:
       name: Romania
       flag: 🇷🇴
       osmcha.id: 34c3f6b6-8728-471e-8cee-d1545abbae91
+    russia:
+      name: Russia
+      flag: 🇷🇺
+      osmcha.id: 0b9bb204-723c-487e-bffd-98400db248cb
     scotland:
       name: Scotland
       flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
