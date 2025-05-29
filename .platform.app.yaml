@@ -283,7 +283,7 @@ crons:
     update-europe-russia:
         spec: '0 22 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper romania
+            start: php bin/console osmcha:new-mapper russia
     update-europe-scotland:
         spec: '30 1 * * *'
         commands:
