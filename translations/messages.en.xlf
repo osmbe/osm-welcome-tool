@@ -237,6 +237,10 @@
         <source>Romania</source>
         <target>Romania</target>
       </trans-unit>
+      <trans-unit id="M6PY7ZK" resname="Russia">
+        <source>Russia</source>
+        <target>Russia</target>
+      </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
         <target>Scotland</target>
