@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="6guTfqM" resname="Argentina">
         <source>Argentina</source>
-        <target state="needs-translation">Argentina</target>
+        <target state="translated">阿根廷</target>
       </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
@@ -247,7 +247,7 @@
       </trans-unit>
       <trans-unit id="PgSdeNl" resname="South Africa">
         <source>South Africa</source>
-        <target state="needs-translation">South Africa</target>
+        <target state="translated">南非</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
