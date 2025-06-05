@@ -121,9 +121,9 @@
         <source>Bremen</source>
         <target state="final">Brême</target>
       </trans-unit>
-      <trans-unit id="R6.P89y" resname="Hamburg">
+      <trans-unit id="R6.P89y" resname="Hamburg" approved="yes">
         <source>Hamburg</source>
-        <target state="needs-translation">Hamburg</target>
+        <target state="final">Hambourg</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana" approved="yes">
         <source>Ghana</source>
@@ -237,9 +237,9 @@
         <source>Romania</source>
         <target state="final">Roumanie</target>
       </trans-unit>
-      <trans-unit id="M6PY7ZK" resname="Russia">
+      <trans-unit id="M6PY7ZK" resname="Russia" approved="yes">
         <source>Russia</source>
-        <target state="needs-translation">Russia</target>
+        <target state="final">Russie</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland" approved="yes">
         <source>Scotland</source>
