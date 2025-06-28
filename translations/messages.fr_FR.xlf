@@ -595,17 +595,17 @@ Il vous aide à détecter les nouveaux contributeurs dans votre région et à le
         <source>regions</source>
         <target state="final">régions</target>
       </trans-unit>
-      <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
+      <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results" approved="yes">
         <source>Showing {from} to {to} of {total} results</source>
-        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
+        <target state="final">Résultats {from} à {to} sur un total de {total}</target>
       </trans-unit>
-      <trans-unit id="pXsIpIC" resname="Previous">
+      <trans-unit id="pXsIpIC" resname="Previous" approved="yes">
         <source>Previous</source>
-        <target state="needs-translation">Previous</target>
+        <target state="final">Précédent</target>
       </trans-unit>
-      <trans-unit id="H.V6Kdf" resname="Next">
+      <trans-unit id="H.V6Kdf" resname="Next" approved="yes">
         <source>Next</source>
-        <target state="needs-translation">Next</target>
+        <target state="final">Suivant</target>
       </trans-unit>
     </body>
   </file>
