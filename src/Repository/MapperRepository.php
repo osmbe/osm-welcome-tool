@@ -28,7 +28,7 @@ class MapperRepository extends ServiceEntityRepository
 
     public function findPaginated(Region $region, int $year, int $month, int $page): Paginator
     {
-        $from = new \DateTimeImmutable(sprintf('%d-%02d-01 00:00:00', $year, $month));
+        $from = new \DateTimeImmutable(\sprintf('%d-%02d-01 00:00:00', $year, $month));
         $to = (clone $from)->modify('last day of this month')->setTime(23, 59, 59);
 
         $page = max(1, $page);
