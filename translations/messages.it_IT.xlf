@@ -595,6 +595,18 @@ Ti aiuta a scoprire i nuovi contributori nella tua regione e dargli il benvenuto
         <source>regions</source>
         <target state="needs-translation">regions</target>
       </trans-unit>
+      <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
+        <source>Showing {from} to {to} of {total} results</source>
+        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
+      </trans-unit>
+      <trans-unit id="pXsIpIC" resname="Previous">
+        <source>Previous</source>
+        <target state="needs-translation">Previous</target>
+      </trans-unit>
+      <trans-unit id="H.V6Kdf" resname="Next">
+        <source>Next</source>
+        <target state="needs-translation">Next</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
