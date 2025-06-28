@@ -34,6 +34,7 @@ class MapperRepository extends ServiceEntityRepository
         $page = max(1, $page);
 
         $query = $this->createQueryBuilder('m')
+            ->addSelect('(SELECT MIN(c.created_at) FROM '.Changeset::class.' c WHERE c.mapper = m.id) AS HIDDEN firstChangeset')
             // Filter on region
             ->join('m.region', 'r')
             ->andWhere('r.id = :region')
@@ -43,6 +44,8 @@ class MapperRepository extends ServiceEntityRepository
             ->setParameter('from', $from)
             ->andWhere('(SELECT MIN(c2.created_at) FROM '.Changeset::class.' c2 WHERE c2.mapper = m.id) <= :to')
             ->setParameter('to', $to)
+            // Set order by first changeset date
+            ->orderBy('firstChangeset', 'DESC')
             // Set pagination
             ->setFirstResult(($page - 1) * self::MAPPERS_PER_PAGE)
             ->setMaxResults(self::MAPPERS_PER_PAGE)
