@@ -2,9 +2,10 @@
 
 namespace App\Controller\App;
 
-use App\Entity\Mapper;
+use App\Repository\MapperRepository;
 use App\Service\RegionsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -12,6 +13,7 @@ class ListController extends AbstractController
 {
     public function __construct(
         private readonly RegionsProvider $provider,
+        private readonly MapperRepository $repository,
     ) {
     }
 
@@ -23,7 +25,7 @@ class ListController extends AbstractController
 
     #[Route('/{regionKey}/list/{year}/{month}', name: 'app_list', requirements: ['regionKey' => '[\w\-_]+'])]
     #[Route('/{continent}/{regionKey}/list/{year}/{month}', name: 'app_list_full', requirements: ['continent' => 'asia|africa|australia|europe|north-america|south-america', 'regionKey' => '[\w\-_]+'])]
-    public function index(string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
+    public function index(Request $request, string $regionKey, ?string $continent, ?int $year = null, ?int $month = null): Response
     {
         $region = $this->provider->getRegion($continent, $regionKey);
         $regionEntity = $this->provider->getEntity($regionKey);
@@ -47,29 +49,18 @@ class ListController extends AbstractController
             return $this->redirectToRoute('app_list_full', ['continent' => $region['continent'], 'regionKey' => $region['key'], 'year' => $year, 'month' => $month]);
         }
 
-        $mappers = null === $regionEntity ? [] : $regionEntity->getMappers()->toArray();
+        $page = $request->query->getInt('page', 1);
 
-        if (\count($mappers) > 0) {
-            $firstChangetsetCreatedAt = array_map(fn (Mapper $mapper): ?\DateTimeImmutable => $mapper->getFirstChangeset()->getCreatedAt(), $mappers);
-            array_multisort($firstChangetsetCreatedAt, \SORT_DESC, $mappers);
-
-            $month = (new \DateTime())->setDate($year, $month, 1);
-
-            $mappers = array_filter(
-                $mappers,
-                function (Mapper $mapper) use ($month): bool {
-                    /** @var \DateTimeImmutable */
-                    $createdAt = $mapper->getFirstChangeset()->getCreatedAt();
-
-                    return $createdAt->format('Ym') === $month->format('Ym');
-                }
-            );
-        }
+        $paginator = $this->repository->findPaginated($regionEntity, $year, $month, $page);
 
         return $this->render('app/list/index.html.twig', [
             'region' => $region,
-            'mappers' => $mappers,
-            'month' => $month,
+            'month' => (new \DateTime())->setDate($year, $month, 1),
+            'paginator' => $paginator,
+            'limit' => MapperRepository::MAPPERS_PER_PAGE,
+            'currentPage' => $page,
+            'previousPage' => max(1, $page - 1),
+            'nextPage' => min(ceil($paginator->count() / MapperRepository::MAPPERS_PER_PAGE), $page + 1),
         ]);
     }
 }

@@ -30,7 +30,7 @@
             </tr>
         </thead>
         <tbody>
-            {% for mapper in mappers %}
+            {% for mapper in paginator %}
 
             <tr class="{{ loop.index0 % 2 == 0 ? 'bg-white' : 'bg-gray-50' }} {{ mapper.region|length > 3 ? 'opacity-25 hover:opacity-75' }}">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -114,4 +114,17 @@
             {% endfor %}
         </tbody>
     </table>
+    {% if paginator.count > 0 %}
+    <nav class="flex items-center justify-between border-t border-gray-200 bg-white px-3 py-3" aria-label="Pagination">
+        <div class="block">
+            <p class="text-sm text-gray-700">
+                {{ 'Showing {from} to {to} of {total} results'|trans({'{from}': ((currentPage - 1) * limit) + 1, '{to}': min(paginator.count, currentPage * limit), '{total}': paginator.count}) }}
+            </p>
+        </div>
+        <div class="flex flex-1 justify-between sm:justify-end">
+            <a href="?page={{ previousPage }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Previous'|trans }}</a>
+            <a href="?page={{ nextPage }}" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Next'|trans }}</a>
+        </div>
+    </nav>
+    {% endif %}
 </div>
