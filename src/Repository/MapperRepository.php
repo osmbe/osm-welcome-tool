@@ -2,8 +2,11 @@
 
 namespace App\Repository;
 
+use App\Entity\Changeset;
 use App\Entity\Mapper;
+use App\Entity\Region;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -16,9 +19,39 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class MapperRepository extends ServiceEntityRepository
 {
+    public const MAPPERS_PER_PAGE = 50;
+
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Mapper::class);
+    }
+
+    public function findPaginated(Region $region, int $year, int $month, int $page): Paginator
+    {
+        $from = new \DateTimeImmutable(\sprintf('%d-%02d-01 00:00:00', $year, $month));
+        $to = (clone $from)->modify('last day of this month')->setTime(23, 59, 59);
+
+        $page = max(1, $page);
+
+        $query = $this->createQueryBuilder('m')
+            // Filter on region
+            ->join('m.region', 'r')
+            ->andWhere('r.id = :region')
+            ->setParameter('region', $region->getId())
+            // Filter on date range
+            ->andWhere('(SELECT MIN(c1.created_at) FROM '.Changeset::class.' c1 WHERE c1.mapper = m.id) >= :from')
+            ->setParameter('from', $from)
+            ->andWhere('(SELECT MIN(c2.created_at) FROM '.Changeset::class.' c2 WHERE c2.mapper = m.id) <= :to')
+            ->setParameter('to', $to)
+            // Set pagination
+            ->setFirstResult(($page - 1) * self::MAPPERS_PER_PAGE)
+            ->setMaxResults(self::MAPPERS_PER_PAGE)
+            ->getQuery()
+        ;
+
+        // dd($query->getSQL());
+
+        return new Paginator($query, true);
     }
 
     // /**
