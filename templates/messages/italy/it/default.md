@@ -5,7 +5,7 @@ title: Benvenuto su OpenStreetMap
 
 Ciao {{ mapper.displayName }},
 
-grazie per il tuo primo contributo su OpenStreetMap!
+grazie per il tuo primo contributo a OpenStreetMap!
 
 Ti diamo un caloroso benvenuto nella comunità di appassionati che da diversi anni integrano e migliorano la mappa e speriamo tu possa appassionarti e continuare a contribuire ancora a lungo.
 
