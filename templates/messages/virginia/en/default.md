@@ -21,7 +21,7 @@ Here are some useful resources to get you started:
 Virginia has a few local communities you can connect with:
 
 * [MapRVA](https://maprva.org), based in the Richmond, hosts in-person and virtual events
-* MappingDC brings together mappers from in the DMV area, they communicate in the #local-dc channel of our Slack
+* NoVA mappers can coordinate in #local-virginia on Slack, and MappingDC brings together the DMV community in #local-dc.
 * There is a [Signal group](https://signal.group/#CjQKIL1jGgWB33mnMdfvh55Ku0bn_InsGxfoYDVIYL0Q_6TeEhAWYhTVF5l_8sofCOldYZbW) for Lynchburg mappers!
 
 So what should you map next? I recommend adding features around you. Restaurants, business, streets, sidewalks, benches…whatever you know best. You are the expert. If you find a business already mapped, make sure there is an address. There is something satisfying about filling in the map around you. Or correcting a road when the local government makes changes to it. Do you enjoy biking, hiking, or trains? The OSM community maps all of the above and more, and we are proud of the quality we have achieved. Welcome, and thank you again for helping us make the map even better.
