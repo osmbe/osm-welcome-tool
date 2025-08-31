@@ -331,7 +331,7 @@ regions:
     washington-dc:
       name: Washington, D.C.
       flag: 🇺🇸
-      osmcha.id: TODO
+      osmcha.id: 17b64bff-2fd9-4d30-b468-d83f1b917326
   south-america:
     argentina:
       name: Argentina
