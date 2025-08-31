@@ -1,0 +1,32 @@
+name: Crowdin Action
+
+on:
+  push:
+    branches: [ 2.x ]
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: crowdin action
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          upload_translations: false
+          download_translations: true
+          create_pull_request: true
+          import_eq_suggestions: true
+          crowdin_branch_name: 2.x
+        env:
+          # A classic GitHub Personal Access Token with the 'repo' scope selected (the user should have write access to the repository).
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          
+          # A numeric ID, found at https://crowdin.com/project/<projectName>/tools/api
+          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
+
+          # Visit https://crowdin.com/settings#api-key to create this token
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
