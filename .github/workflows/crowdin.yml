@@ -1,8 +1,11 @@
 name: Crowdin Action
 
 on:
+  cron:
+    schedule: '0 0 * * *'
   push:
     branches: [ 2.x ]
+  workflow_dispatch:
 
 jobs:
   synchronize-with-crowdin:
