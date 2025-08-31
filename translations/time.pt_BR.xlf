@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="pt-BR" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="BJMjkzc" resname="diff.ago.year">
+        <source>diff.ago.year</source>
+        <target state="needs-translation">1 year ago|%count% years ago</target>
+      </trans-unit>
+      <trans-unit id="QlOaaz7" resname="diff.ago.month">
+        <source>diff.ago.month</source>
+        <target state="needs-translation">1 month ago|%count% months ago</target>
+      </trans-unit>
+      <trans-unit id="0icjxey" resname="diff.ago.day">
+        <source>diff.ago.day</source>
+        <target state="needs-translation">1 day ago|%count% days ago</target>
+      </trans-unit>
+      <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
+        <source>diff.ago.hour</source>
+        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+      </trans-unit>
+      <trans-unit id="ildUKt_" resname="diff.ago.minute">
+        <source>diff.ago.minute</source>
+        <target state="needs-translation">1 minute ago|%count% minutes ago</target>
+      </trans-unit>
+      <trans-unit id="UQtErIZ" resname="diff.ago.second">
+        <source>diff.ago.second</source>
+        <target state="needs-translation">1 second ago|%count% seconds ago</target>
+      </trans-unit>
+      <trans-unit id="VgQkGkv" resname="diff.in.second">
+        <source>diff.in.second</source>
+        <target state="needs-translation">in 1 second|in %count% seconds</target>
+      </trans-unit>
+      <trans-unit id="dJQGobP" resname="diff.in.hour">
+        <source>diff.in.hour</source>
+        <target state="needs-translation">in 1 hour|in %count% hours</target>
+      </trans-unit>
+      <trans-unit id="AFqulYH" resname="diff.in.minute">
+        <source>diff.in.minute</source>
+        <target state="needs-translation">in 1 minute|in %count% minutes</target>
+      </trans-unit>
+      <trans-unit id="vKk2WhV" resname="diff.in.day">
+        <source>diff.in.day</source>
+        <target state="needs-translation">in 1 day|in %count% days</target>
+      </trans-unit>
+      <trans-unit id="INy1OSI" resname="diff.in.month">
+        <source>diff.in.month</source>
+        <target state="needs-translation">in 1 month|in %count% months</target>
+      </trans-unit>
+      <trans-unit id="Zy1_IlC" resname="diff.in.year">
+        <source>diff.in.year</source>
+        <target state="needs-translation">in 1 year|in %count% years</target>
+      </trans-unit>
+      <trans-unit id="8uG.Z9X" resname="duration.second">
+        <source>duration.second</source>
+        <target state="needs-translation">1 second|%count% seconds</target>
+      </trans-unit>
+      <trans-unit id="MorJRc_" resname="duration.minute">
+        <source>duration.minute</source>
+        <target state="needs-translation">1 minute|%count% minutes</target>
+      </trans-unit>
+      <trans-unit id="FynQfYn" resname="duration.hour">
+        <source>duration.hour</source>
+        <target state="needs-translation">1 hour|%count% hours</target>
+      </trans-unit>
+      <trans-unit id="4rZn5fT" resname="duration.day">
+        <source>duration.day</source>
+        <target state="needs-translation">1 day|%count% days</target>
+      </trans-unit>
+      <trans-unit id="erNVD2d" resname="duration.none">
+        <source>duration.none</source>
+        <target state="needs-translation"><![CDATA[< 1 second]]></target>
+      </trans-unit>
+      <trans-unit id="AT9UQAy" resname="age">
+        <source>age</source>
+        <target state="needs-translation">1 year old|%count% years old</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
