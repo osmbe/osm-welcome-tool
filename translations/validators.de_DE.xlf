@@ -469,9 +469,9 @@
         <source>This value should not be after week "{{ max }}".</source>
         <target state="needs-translation">This value should not be after week "{{ max }}".</target>
       </trans-unit>
-      <trans-unit id="my3IOqd" resname="This value is not a valid slug.">
-        <source>This value is not a valid slug.</source>
-        <target state="needs-translation">This value is not a valid slug.</target>
+      <trans-unit id="ZCF28Im" resname="This value is not a valid Twig template.">
+        <source>This value is not a valid Twig template.</source>
+        <target state="needs-translation">This value is not a valid Twig template.</target>
       </trans-unit>
       <trans-unit id=".SEaaBa" resname="This form should not contain extra fields.">
         <source>This form should not contain extra fields.</source>
@@ -604,6 +604,10 @@
       <trans-unit id="PU.w6nC" resname="Please enter a valid week.">
         <source>Please enter a valid week.</source>
         <target state="translated">Bitte geben Sie eine gültige Woche ein.</target>
+      </trans-unit>
+      <trans-unit id="my3IOqd" resname="This value is not a valid slug.">
+        <source>This value is not a valid slug.</source>
+        <target state="needs-translation">This value is not a valid slug.</target>
       </trans-unit>
     </body>
   </file>

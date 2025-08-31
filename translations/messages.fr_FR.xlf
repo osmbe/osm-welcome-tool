@@ -341,13 +341,13 @@
         <source>Vermont</source>
         <target state="final">Vermont</target>
       </trans-unit>
-      <trans-unit id="DuAztff" resname="Virginia">
+      <trans-unit id="DuAztff" resname="Virginia" approved="yes">
         <source>Virginia</source>
-        <target state="needs-translation">Virginia</target>
+        <target state="final">Virginie</target>
       </trans-unit>
-      <trans-unit id="HIwbKem" resname="Washington, D.C.">
+      <trans-unit id="HIwbKem" resname="Washington, D.C." approved="yes">
         <source>Washington, D.C.</source>
-        <target state="needs-translation">Washington, D.C.</target>
+        <target state="final">Washington, D.C.</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State" approved="yes">
         <source>Washington State</source>
