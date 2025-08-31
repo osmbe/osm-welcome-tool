@@ -341,6 +341,14 @@
         <source>Vermont</source>
         <target state="translated">Vermont</target>
       </trans-unit>
+      <trans-unit id="DuAztff" resname="Virginia">
+        <source>Virginia</source>
+        <target state="needs-translation">Virginia</target>
+      </trans-unit>
+      <trans-unit id="HIwbKem" resname="Washington, D.C.">
+        <source>Washington, D.C.</source>
+        <target state="needs-translation">Washington, D.C.</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target state="translated">Stato di Washington</target>
