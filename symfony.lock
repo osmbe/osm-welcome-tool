@@ -183,9 +183,6 @@
     "opis/closure": {
         "version": "3.6.2"
     },
-    "paragonie/random_compat": {
-        "version": "v9.99.100"
-    },
     "php-cs-fixer/diff": {
         "version": "v2.0.2"
     },

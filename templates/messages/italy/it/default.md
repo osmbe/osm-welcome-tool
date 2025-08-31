@@ -1,11 +1,11 @@
 ---
 name: Default
-title: Benvenuto in OpenStreetMap
+title: Benvenuto su OpenStreetMap
 ---
 
 Ciao {{ mapper.displayName }},
 
-Grazie per il tuo primo contributo a OpenStreetMap!
+grazie per il tuo primo contributo a OpenStreetMap!
 
 Ti diamo un caloroso benvenuto nella comunità di appassionati che da diversi anni integrano e migliorano la mappa e speriamo tu possa appassionarti e continuare a contribuire ancora a lungo.
 
@@ -13,7 +13,7 @@ Se invece il tuo è un contributo sporadico, non importa! Forse conosci qualcuno
 
 Oltre a contribuire alla mappa, puoi aiutarci, ad esempio, caricando tracciati GPS, segnalando errori o promuovendo OpenStreetMap.
 
-Se vuoi chiedere qualcosa, o semplicemente condividere la tua esperienza o idee per migliorare, saremo felici di incontrarti nel [gruppo ufficiale](https://community.openstreetmap.org/c/communities/it/60) , in quello [Telegram](https://telegram.me/OpenStreetMapItalia) oppure  nella mailing list dei mappatori italiani, [talk-it](https://lists.openstreetmap.org/listinfo/talk-it). Per altri canali consulta la [Wiki](https://wiki.openstreetmap.org/wiki/IT:Contact).
+Se vuoi chiedere qualcosa, o semplicemente condividere la tua esperienza o idee per migliorare, saremo felici di incontrarti nel [forum ufficiale](https://community.openstreetmap.org/c/communities/it/60), nel [gruppo Telegram](https://telegram.me/OpenStreetMapItalia) oppure nella mailing list dei mappatori italiani, [talk-it](https://lists.openstreetmap.org/listinfo/talk-it). Per altri canali consulta la [Wiki](https://wiki.openstreetmap.org/wiki/IT:Contact).
 
 Scopri maggiori informazioni sulla [comunità italiana](https://wiki.openstreetmap.org/wiki/Italy).
 
