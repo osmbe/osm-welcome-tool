@@ -345,6 +345,10 @@
         <source>Virginia</source>
         <target>Virginia</target>
       </trans-unit>
+      <trans-unit id="HIwbKem" resname="Washington, D.C.">
+        <source>Washington, D.C.</source>
+        <target>Washington, D.C.</target>
+      </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
         <target>Washington State</target>
