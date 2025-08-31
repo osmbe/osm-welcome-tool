@@ -323,7 +323,7 @@ regions:
     virginia:
       name: Virginia
       flag: 🇺🇸
-      osmcha.id: TODO
+      osmcha.id: a8a0603e-8997-4953-afce-c477667c1690
     washington:
       name: Washington State
       flag: 🇺🇸
