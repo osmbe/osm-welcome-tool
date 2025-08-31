@@ -328,6 +328,10 @@ regions:
       name: Washington State
       flag: 🇺🇸
       osmcha.id: 968ad875-8065-4d55-ac9b-87b07bc6f1f5
+    washington-dc:
+      name: Washington, D.C.
+      flag: 🇺🇸
+      osmcha.id: 17b64bff-2fd9-4d30-b468-d83f1b917326
   south-america:
     argentina:
       name: Argentina
