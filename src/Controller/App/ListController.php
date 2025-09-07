@@ -51,16 +51,27 @@ class ListController extends AbstractController
 
         $page = $request->query->getInt('page', 1);
 
-        $paginator = $this->repository->findPaginated($regionEntity, $year, $month, $page);
+        if (null !== $regionEntity) {
+            $paginator = $this->repository->findPaginated($regionEntity, $year, $month, $page);
 
-        return $this->render('app/list/index.html.twig', [
-            'region' => $region,
-            'month' => (new \DateTime())->setDate($year, $month, 1),
-            'paginator' => $paginator,
-            'limit' => MapperRepository::MAPPERS_PER_PAGE,
-            'currentPage' => $page,
-            'previousPage' => max(1, $page - 1),
-            'nextPage' => min(ceil($paginator->count() / MapperRepository::MAPPERS_PER_PAGE), $page + 1),
-        ]);
+            return $this->render('app/list/index.html.twig', [
+                'region' => $region,
+                'month' => (new \DateTime())->setDate($year, $month, 1),
+                'paginator' => $paginator,
+                'limit' => MapperRepository::MAPPERS_PER_PAGE,
+                'currentPage' => $page,
+                'previousPage' => max(1, $page - 1),
+                'nextPage' => min(ceil($paginator->count() / MapperRepository::MAPPERS_PER_PAGE), $page + 1),
+            ]);
+        } else {
+            return $this->render('app/list/index.html.twig', [
+                'region' => $region,
+                'month' => (new \DateTime())->setDate($year, $month, 1),
+                'paginator' => null,
+                'limit' => MapperRepository::MAPPERS_PER_PAGE,
+                'currentPage' => $page,
+                'previousPage' => max(1, $page - 1),
+            ]);
+        }
     }
 }
