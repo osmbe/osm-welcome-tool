@@ -105,6 +105,18 @@
         <source>Basque Country South Landes</source>
         <target state="translated">Pays basque français</target>
       </trans-unit>
+      <trans-unit id="RpFJIXn" resname="Georgia" approved="yes">
+        <source>Georgia</source>
+        <target state="final">Géorgie</target>
+      </trans-unit>
+      <trans-unit id="UxBLePE" resname="Abkhazia" approved="yes">
+        <source>Abkhazia</source>
+        <target state="final">Abkhazie</target>
+      </trans-unit>
+      <trans-unit id="ok76r4z" resname="Tskhinvali" approved="yes">
+        <source>Tskhinvali</source>
+        <target state="final">Tskhinvali</target>
+      </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany" approved="yes">
         <source>Germany</source>
         <target state="final">Allemagne</target>
