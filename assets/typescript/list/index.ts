@@ -58,61 +58,57 @@ if (chartElement !== null) {
     lang = lang.substring(0, 2);
   }
 
-  const options = {
-    chart: {
-      stacked: true,
-      locales,
-      defaultLocale: typeof lang !== 'undefined' && locales.map(locale => locale.name).includes(lang) ? lang : 'en',
-      toolbar: {
-        show: false
-      },
-      type: 'bar',
-      height: '100%',
-      width: '100%',
-      zoom: {
-        enabled: false
-      }
-    },
-    legend: {
-      position: 'top'
-    },
-    xaxis: {
-      type: 'datetime',
-      max: new Date().getTime(),
-    },
-    noData: {
-      text: 'Loading...'
-    },
-    series: []
-  };
-
-  const chart = new ApexCharts(chartElement, options);
-  chart.render();
-
   fetch(`/api/region/${continent}/${region}/count.json`, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
     .then(response => response.json())
     .then(json => {
-      const series: ApexAxisChartSeries = [
-        {
-          name: series1,
-          data: Object.keys(json).map(key => {
-            const datetime = new Date(key);
-            datetime.setUTCHours(0);
+      if (Object.keys(json).length > 0) {
+        const series: ApexAxisChartSeries = [
+          {
+            name: series1,
+            data: Object.keys(json).map(key => {
+              const datetime = new Date(key);
+              datetime.setUTCHours(0);
 
-            return { x: datetime.getTime(), y: (json[key].total - json[key].welcome) };
-          })
-        },
-        {
-          name: series2,
-          data: Object.keys(json).map(key => {
-            const datetime = new Date(key);
-            datetime.setUTCHours(0);
+              return { x: datetime.getTime(), y: (json[key].total - json[key].welcome) };
+            })
+          },
+          {
+            name: series2,
+            data: Object.keys(json).map(key => {
+              const datetime = new Date(key);
+              datetime.setUTCHours(0);
 
-            return { x: datetime.getTime(), y: json[key].welcome };
-          })
-        }
-      ];
+              return { x: datetime.getTime(), y: json[key].welcome };
+            })
+          }
+        ];
 
-      chart.updateSeries(series);
+        const chart = new ApexCharts(chartElement, {
+          chart: {
+            stacked: true,
+            locales,
+            defaultLocale: typeof lang !== 'undefined' && locales.map(locale => locale.name).includes(lang) ? lang : 'en',
+            toolbar: {
+              show: false
+            },
+            type: 'bar',
+            height: '100%',
+            width: '100%',
+            zoom: {
+              enabled: false
+            }
+          },
+          legend: {
+            position: 'top'
+          },
+          xaxis: {
+            type: 'datetime',
+            max: new Date().getTime(),
+          },
+          series
+        });
+
+        chart.render();
+      }
     });
 }
