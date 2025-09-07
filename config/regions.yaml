@@ -175,6 +175,18 @@ regions:
       name: Basque Country South Landes
       flag: 🇫🇷
       osmcha.id: 8fe86f39-e472-45a6-b128-33a2c4931fe4
+    georgia:
+      name: Georgia
+      flag: 🇬🇪
+      osmcha.id: 020a0c7a-eda3-48a0-9fa2-25cc3630c6f1
+    georgia-abkhazia:
+      name: Abkhazia
+      flag: 🇬🇪
+      osmcha.id: 99f7afa1-99e8-4e8e-b0fd-9e99939b3842
+    georgia-tskhinvali:
+      name: Tskhinvali
+      flag: 🇬🇪
+      osmcha.id: 0d5f758a-9493-4ffa-baed-95031d95255b
     germany:
       name: Germany
       flag: 🇩🇪
