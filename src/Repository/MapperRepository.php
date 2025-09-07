@@ -19,7 +19,7 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class MapperRepository extends ServiceEntityRepository
 {
-    public const MAPPERS_PER_PAGE = 100;
+    public const MAPPERS_PER_PAGE = 50;
 
     public function __construct(ManagerRegistry $registry)
     {
