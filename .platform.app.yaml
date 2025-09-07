@@ -224,6 +224,18 @@ crons:
         spec: '0 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper france
+    update-europe-georgia:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia
+    update-europe-georgia-abkhazia:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia-abkhazia
+    update-europe-georgia-tskhinvali:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia-tskhinvali
     update-europe-germany:
         spec: '0 1 * * *'
         commands:
