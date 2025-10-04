@@ -7,75 +7,75 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">1 year ago|%count% years ago</target>
+        <target state="translated">1 рік тому|%count% роки(ів) тому</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">1 month ago|%count% months ago</target>
+        <target state="translated">1 місяць тому|%count% місяці(в) тому</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">1 day ago|%count% days ago</target>
+        <target state="translated">1 день тому|%count% дні(в) тому</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+        <target state="translated">1 година тому|%count% годин(и) тому</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
-        <target state="needs-translation">1 minute ago|%count% minutes ago</target>
+        <target state="translated">1 хвилину тому|%count% хвилин(и) тому</target>
       </trans-unit>
       <trans-unit id="UQtErIZ" resname="diff.ago.second">
         <source>diff.ago.second</source>
-        <target state="needs-translation">1 second ago|%count% seconds ago</target>
+        <target state="translated">1 секунда тому|%count% секунд(и) тому</target>
       </trans-unit>
       <trans-unit id="VgQkGkv" resname="diff.in.second">
         <source>diff.in.second</source>
-        <target state="needs-translation">in 1 second|in %count% seconds</target>
+        <target state="translated">за 1 секунду|за %count% секунд(и)</target>
       </trans-unit>
       <trans-unit id="dJQGobP" resname="diff.in.hour">
         <source>diff.in.hour</source>
-        <target state="needs-translation">in 1 hour|in %count% hours</target>
+        <target state="translated">за 1 годину|за %count% годин(и)</target>
       </trans-unit>
       <trans-unit id="AFqulYH" resname="diff.in.minute">
         <source>diff.in.minute</source>
-        <target state="needs-translation">in 1 minute|in %count% minutes</target>
+        <target state="translated">за 1 хвилину|за %count% хвилин(и)</target>
       </trans-unit>
       <trans-unit id="vKk2WhV" resname="diff.in.day">
         <source>diff.in.day</source>
-        <target state="needs-translation">in 1 day|in %count% days</target>
+        <target state="translated">за 1 день|за %count% дні(в)</target>
       </trans-unit>
       <trans-unit id="INy1OSI" resname="diff.in.month">
         <source>diff.in.month</source>
-        <target state="needs-translation">in 1 month|in %count% months</target>
+        <target state="translated">за 1 місяць|за %count% місяці(в)</target>
       </trans-unit>
       <trans-unit id="Zy1_IlC" resname="diff.in.year">
         <source>diff.in.year</source>
-        <target state="needs-translation">in 1 year|in %count% years</target>
+        <target state="translated">за 1 рік|за %count% роки(ів)</target>
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
-        <target state="needs-translation">1 second|%count% seconds</target>
+        <target state="translated">1 секунда|%count% секунд(и)</target>
       </trans-unit>
       <trans-unit id="MorJRc_" resname="duration.minute">
         <source>duration.minute</source>
-        <target state="needs-translation">1 minute|%count% minutes</target>
+        <target state="translated">1 хвилина|%count% хвилин(и)</target>
       </trans-unit>
       <trans-unit id="FynQfYn" resname="duration.hour">
         <source>duration.hour</source>
-        <target state="needs-translation">1 hour|%count% hours</target>
+        <target state="translated">1 година|%count% годин(и)</target>
       </trans-unit>
       <trans-unit id="4rZn5fT" resname="duration.day">
         <source>duration.day</source>
-        <target state="needs-translation">1 day|%count% days</target>
+        <target state="translated">1 день|%count% дні(в)</target>
       </trans-unit>
       <trans-unit id="erNVD2d" resname="duration.none">
         <source>duration.none</source>
-        <target state="needs-translation"><![CDATA[< 1 second]]></target>
+        <target state="translated"><![CDATA[< 1 секунда]]></target>
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>
-        <target state="needs-translation">1 year old|%count% years old</target>
+        <target state="translated">1 рік|%count% роки(ів)</target>
       </trans-unit>
     </body>
   </file>
