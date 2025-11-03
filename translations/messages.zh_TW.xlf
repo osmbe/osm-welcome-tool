@@ -107,15 +107,15 @@
       </trans-unit>
       <trans-unit id="RpFJIXn" resname="Georgia">
         <source>Georgia</source>
-        <target state="needs-translation">Georgia</target>
+        <target state="translated">喬治亞</target>
       </trans-unit>
       <trans-unit id="UxBLePE" resname="Abkhazia">
         <source>Abkhazia</source>
-        <target state="needs-translation">Abkhazia</target>
+        <target state="translated">阿布哈茲</target>
       </trans-unit>
       <trans-unit id="ok76r4z" resname="Tskhinvali">
         <source>Tskhinvali</source>
-        <target state="needs-translation">Tskhinvali</target>
+        <target state="translated">茲辛瓦利</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -355,11 +355,11 @@
       </trans-unit>
       <trans-unit id="DuAztff" resname="Virginia">
         <source>Virginia</source>
-        <target state="needs-translation">Virginia</target>
+        <target state="translated">維吉尼亞州</target>
       </trans-unit>
       <trans-unit id="HIwbKem" resname="Washington, D.C.">
         <source>Washington, D.C.</source>
-        <target state="needs-translation">Washington, D.C.</target>
+        <target state="translated">華盛頓特區</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
