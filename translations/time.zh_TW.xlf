@@ -7,75 +7,75 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">1 year ago|%count% years ago</target>
+        <target state="translated">1年以前|%count%年以前</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">1 month ago|%count% months ago</target>
+        <target state="translated">1個月以前|%count%個月以前</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">1 day ago|%count% days ago</target>
+        <target state="translated">1天以前|%count%天以前</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+        <target state="translated">1小時以前|%count%小時以前</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
-        <target state="needs-translation">1 minute ago|%count% minutes ago</target>
+        <target state="translated">1分鐘以前|%count%分鐘以前</target>
       </trans-unit>
       <trans-unit id="UQtErIZ" resname="diff.ago.second">
         <source>diff.ago.second</source>
-        <target state="needs-translation">1 second ago|%count% seconds ago</target>
+        <target state="translated">1秒鐘以前|%count%秒鐘以前</target>
       </trans-unit>
       <trans-unit id="VgQkGkv" resname="diff.in.second">
         <source>diff.in.second</source>
-        <target state="needs-translation">in 1 second|in %count% seconds</target>
+        <target state="translated">在1分鐘|在%count%分鐘</target>
       </trans-unit>
       <trans-unit id="dJQGobP" resname="diff.in.hour">
         <source>diff.in.hour</source>
-        <target state="needs-translation">in 1 hour|in %count% hours</target>
+        <target state="translated">在1小時|在%count%小時</target>
       </trans-unit>
       <trans-unit id="AFqulYH" resname="diff.in.minute">
         <source>diff.in.minute</source>
-        <target state="needs-translation">in 1 minute|in %count% minutes</target>
+        <target state="translated">在1分鐘|在%count%分鐘</target>
       </trans-unit>
       <trans-unit id="vKk2WhV" resname="diff.in.day">
         <source>diff.in.day</source>
-        <target state="needs-translation">in 1 day|in %count% days</target>
+        <target state="translated">在1天|在%count%天</target>
       </trans-unit>
       <trans-unit id="INy1OSI" resname="diff.in.month">
         <source>diff.in.month</source>
-        <target state="needs-translation">in 1 month|in %count% months</target>
+        <target state="translated">在1個月|在%count%個月</target>
       </trans-unit>
       <trans-unit id="Zy1_IlC" resname="diff.in.year">
         <source>diff.in.year</source>
-        <target state="needs-translation">in 1 year|in %count% years</target>
+        <target state="translated">在1年|在%count%年</target>
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
-        <target state="needs-translation">1 second|%count% seconds</target>
+        <target state="translated">1秒鐘|%count%秒鐘</target>
       </trans-unit>
       <trans-unit id="MorJRc_" resname="duration.minute">
         <source>duration.minute</source>
-        <target state="needs-translation">1 minute|%count% minutes</target>
+        <target state="translated">1分鐘|%count%分鐘</target>
       </trans-unit>
       <trans-unit id="FynQfYn" resname="duration.hour">
         <source>duration.hour</source>
-        <target state="needs-translation">1 hour|%count% hours</target>
+        <target state="translated">1小時|%count%小時</target>
       </trans-unit>
       <trans-unit id="4rZn5fT" resname="duration.day">
         <source>duration.day</source>
-        <target state="needs-translation">1 day|%count% days</target>
+        <target state="translated">1天|%count%天</target>
       </trans-unit>
       <trans-unit id="erNVD2d" resname="duration.none">
         <source>duration.none</source>
-        <target state="needs-translation"><![CDATA[< 1 second]]></target>
+        <target state="translated"><![CDATA[< 1秒鐘]]></target>
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>
-        <target state="needs-translation">1 year old|%count% years old</target>
+        <target state="translated">1年的時間|%count%年的時間</target>
       </trans-unit>
     </body>
   </file>
