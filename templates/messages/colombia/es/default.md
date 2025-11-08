@@ -11,30 +11,18 @@ A partir de ahora puedes considerarte parte de la comunidad de OSM Colombia.
 Tu edición estará disponible en el mapa en unos minutos.
 Después tendrás que refrescar el navegador para poder ver los cambios que hayas realizado.
 
+## Dónde obtener información
+
 Queremos acompañarte en este viaje de descubrimiento del mundo de OpenStreetMap.
+Al comenzar puedes tener muchas dudas y preguntas, te recomendamos que visites nuestro [Tapete de Bienvenida](https://welcome.openstreetmap.org/what-is-openstreetmap/) (en inglés).
 
-Para comenzar, aquí te compartimos algunos enlaces interesantes:
+Queremos que visites la página de [guia para principiantes](https://wiki.openstreetmap.org/wiki/ES:Gu%C3%ADa_de_principiantes) que te dará muchas herramientas para comenzar en este proceso.
 
-* Te recomendamos leer el [wiki de OSM](https://wiki.openstreetmap.org/wiki/ES:P%C3%A1gina_principal).
-Ahí encontrarás toda la información que necesites para comenzar.
+En nuestro país, tenemos la [página principal de Colombia](https://wiki.openstreetmap.org/wiki/ES:Colombia), donde podrás conocer lo que hace la comunidad. Ahí también encontrarás una [guía de mapeo](https://wiki.openstreetmap.org/wiki/ES:Colombia/Gu%C3%ADa_para_mapear) con la que puedes comprender cómo adaptamos el mapeo a nuestro territorio.
 
-* En Colombia, tenemos una [Guía para mapear](https://wiki.openstreetmap.org/wiki/ES:Colombia/Gu%C3%ADa_para_mapear) que explica en detalle qué puedes mapear y cómo lo puedes hacer.
+Si tienes una pregunta diferente, la puedes hacer en nuestra plataforma de preguntas y respuestas llamada [Community](https://community.openstreetmap.org/) o desde el espacio de chat de la [comunidad OSM en Colombia Telegram](https://telegram.me/osmco).
 
-* [learnOSM (aprendeOSM)](https://learnosm.org/es/) es una página web donde podrás aprender acerca del mundo de OSM.
-Ahí hay instrucciones para manejar el editor iD (el cual puedes usar desde cualquier navegador) y para un editor más avanzado llamado JOSM (aplicación con Java).
-
-* Si en el editor que estés usando, no encuentras cómo mapear algo en particular, la solución más rápida es buscar en la página [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa) del wiki.
-En esa lista podrás ver todo lo que se puede agregar al mapa.
-Al principio, esta lista puede parecer enorme, pero con echarle un ojo podrás tener presente las distintas formas mejorar el mapa.
-
-* Si tienes una página web y quieres incorporar el mapa de OpenSteetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/).
-
-Si tienes dudas o preguntas como:
-¿creo que he dañado algo?, ¿cómo mapeo cierta elemento que no encuentro en el wiki? entonces puedes usar uno de estos canales para contactar la comunidad:
-
-* La comunidad de OpenStreetMap en Colombia tiene un [canal de Telegram](https://telegram.me/osmco), donde puedes hacer preguntas o conocer sobre las actividades que realizan. Es un espacio donde los miembros discuten aspectos importantes alrededor del mapa.
-
-* Si tienes una pregunta más complicada, puedes publicarla en [el foro de OSM](https://community.openstreetmap.org).
+## Redes sociales
 
 También usamos varias redes sociales, para que puedas interactuar con la comunidad, y también te enteres de los próximos eventos, hitos alcanzados o cualquier elemento relativo a OSM en Colombia. Estas son las redes sociales que usamos para que nos sigas y nos ayudes a difundir el proyecto:
 
@@ -43,8 +31,11 @@ También usamos varias redes sociales, para que puedas interactuar con la comuni
 * [Mastodon](https://en.osm.town/@OSM_Colombia).
 * [TikTok](https://www.tiktok.com/@osm_colombia).
 * [Facebook](https://www.facebook.com/groups/OsmCol/).
-* [LinkedIn](https://www.linkedin.com/groups/13038204/).
+* [LinkedIn](https://www.linkedin.com/company/osmcolombia).
 * [YouTube](https://www.youtube.com/@OSM_Colombia).
+* [Linktree](https://linktr.ee/osm_colombia).
+
+----
 
 Entonces, ¿qué puedes mapear ahora?
 Te recomendamos que adiciones elementos cerca de ti, como:

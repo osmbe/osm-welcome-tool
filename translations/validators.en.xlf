@@ -405,6 +405,74 @@
         <source>The value of the netmask should be between {{ min }} and {{ max }}.</source>
         <target>The value of the netmask should be between {{ min }} and {{ max }}.</target>
       </trans-unit>
+      <trans-unit id="O5pay9e" resname="The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.">
+        <source>The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</source>
+        <target>The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</target>
+      </trans-unit>
+      <trans-unit id="f_lviDt" resname="The password strength is too low. Please use a stronger password.">
+        <source>The password strength is too low. Please use a stronger password.</source>
+        <target>The password strength is too low. Please use a stronger password.</target>
+      </trans-unit>
+      <trans-unit id="xfCh6.k" resname="This value contains characters that are not allowed by the current restriction-level.">
+        <source>This value contains characters that are not allowed by the current restriction-level.</source>
+        <target>This value contains characters that are not allowed by the current restriction-level.</target>
+      </trans-unit>
+      <trans-unit id="x15dlan" resname="Using invisible characters is not allowed.">
+        <source>Using invisible characters is not allowed.</source>
+        <target>Using invisible characters is not allowed.</target>
+      </trans-unit>
+      <trans-unit id="2NiS4YC" resname="Mixing numbers from different scripts is not allowed.">
+        <source>Mixing numbers from different scripts is not allowed.</source>
+        <target>Mixing numbers from different scripts is not allowed.</target>
+      </trans-unit>
+      <trans-unit id="W8N1HuG" resname="Using hidden overlay characters is not allowed.">
+        <source>Using hidden overlay characters is not allowed.</source>
+        <target>Using hidden overlay characters is not allowed.</target>
+      </trans-unit>
+      <trans-unit id="pifGDXc" resname="The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.">
+        <source>The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.</source>
+        <target>The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.</target>
+      </trans-unit>
+      <trans-unit id="cM9fJA2" resname="The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.">
+        <source>The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.</source>
+        <target>The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.</target>
+      </trans-unit>
+      <trans-unit id="gC.d7MB" resname="This value is not a valid MAC address.">
+        <source>This value is not a valid MAC address.</source>
+        <target>This value is not a valid MAC address.</target>
+      </trans-unit>
+      <trans-unit id="ci.Qrc8" resname="This URL is missing a top-level domain.">
+        <source>This URL is missing a top-level domain.</source>
+        <target>This URL is missing a top-level domain.</target>
+      </trans-unit>
+      <trans-unit id="FncpElD" resname="This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.">
+        <source>This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.</source>
+        <target>This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.</target>
+      </trans-unit>
+      <trans-unit id="kGbgUFJ" resname="This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.">
+        <source>This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.</source>
+        <target>This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.</target>
+      </trans-unit>
+      <trans-unit id="MEKoMch" resname="This value does not represent a valid week in the ISO 8601 format.">
+        <source>This value does not represent a valid week in the ISO 8601 format.</source>
+        <target>This value does not represent a valid week in the ISO 8601 format.</target>
+      </trans-unit>
+      <trans-unit id="Bm5h3cd" resname="This value is not a valid week.">
+        <source>This value is not a valid week.</source>
+        <target>This value is not a valid week.</target>
+      </trans-unit>
+      <trans-unit id="EqKiNq." resname="This value should not be before week &quot;{{ min }}&quot;.">
+        <source>This value should not be before week "{{ min }}".</source>
+        <target>This value should not be before week "{{ min }}".</target>
+      </trans-unit>
+      <trans-unit id="bFhAyVV" resname="This value should not be after week &quot;{{ max }}&quot;.">
+        <source>This value should not be after week "{{ max }}".</source>
+        <target>This value should not be after week "{{ max }}".</target>
+      </trans-unit>
+      <trans-unit id="ZCF28Im" resname="This value is not a valid Twig template.">
+        <source>This value is not a valid Twig template.</source>
+        <target>This value is not a valid Twig template.</target>
+      </trans-unit>
       <trans-unit id=".SEaaBa" resname="This form should not contain extra fields.">
         <source>This form should not contain extra fields.</source>
         <target>This form should not contain extra fields.</target>
@@ -536,6 +604,10 @@
       <trans-unit id="PU.w6nC" resname="Please enter a valid week.">
         <source>Please enter a valid week.</source>
         <target>Please enter a valid week.</target>
+      </trans-unit>
+      <trans-unit id="my3IOqd" resname="This value is not a valid slug.">
+        <source>This value is not a valid slug.</source>
+        <target>This value is not a valid slug.</target>
       </trans-unit>
     </body>
   </file>

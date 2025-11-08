@@ -76,6 +76,10 @@ crons:
         spec: '0 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper nigeria
+    update-africa-south-africa:
+        spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper south-africa
     update-africa-tanzania:
         spec: '0 22 * * *'
         commands:
@@ -220,8 +224,24 @@ crons:
         spec: '0 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper france
-    update-europe-germany-berlin-neukoelln:
+    update-europe-georgia:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia
+    update-europe-georgia-abkhazia:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia-abkhazia
+    update-europe-georgia-tskhinvali:
+        spec: '0 3 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper georgia-tskhinvali
+    update-europe-germany:
         spec: '0 1 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper germany
+    update-europe-germany-berlin-neukoelln:
+        spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper germany-berlin-neukoelln
     update-europe-germany-berlin:
@@ -232,10 +252,10 @@ crons:
         spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper germany-bremen
-    update-europe-germany:
+    update-europe-germany-hamburg:
         spec: '30 1 * * *'
         commands:
-            start: php bin/console osmcha:new-mapper germany
+            start: php bin/console osmcha:new-mapper germany-hamburg
     update-europe-hungary:
         spec: '30 1 * * *'
         commands:
@@ -272,6 +292,10 @@ crons:
         spec: '30 1 * * *'
         commands:
             start: php bin/console osmcha:new-mapper romania
+    update-europe-russia:
+        spec: '0 22 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper russia
     update-europe-scotland:
         spec: '30 1 * * *'
         commands:
@@ -356,10 +380,22 @@ crons:
         spec: '0 6 * * *'
         commands:
             start: php bin/console osmcha:new-mapper vermont
+    update-northamerica-virginia:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper virginia
+    update-northamerica-washington-dc:
+        spec: '0 6 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper washington-dc
     update-northamerica-washington:
         spec: '0 9 * * *'
         commands:
             start: php bin/console osmcha:new-mapper washington
+    update-southamerica-argentina:
+        spec: '30 5 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper argentina
     update-southamerica-bogota:
         spec: '0 6 * * *'
         commands:

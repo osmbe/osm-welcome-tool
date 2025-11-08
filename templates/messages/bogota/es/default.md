@@ -23,16 +23,16 @@ Todos los que contribuimos al mapa leemos continuamente el Wiki; y si algo no es
 Te recomiendo que la leas, con eso estás seguro de lo que haces.
 
 * [learnOSM (aprendeOSM)](https://learnosm.org/es/) es un buen lugar donde aprender acerca del mundo de OSM.
-Hay instrucciones para el editor iD (el cual puedes usar desde el navegador web) y para un editor más avanzado llamado JOSM (Aplicación con Java).
+Hay instrucciones para el editor iD (el cual puedes usar desde el navegador web) y para un editor más avanzado llamado JOSM (una aplicación Java).
 
-* Si en el editor que estés usando, no encuentras cómo mapear algo, la solución más rápida es buscarla en la página del wiki de [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Caracter%C3%ADsticas_del_mapa).
+* Si en el editor que estés usando, no encuentras cómo mapear algo, la solución más rápida es buscarla en la página del wiki de [características del mapa](https://wiki.openstreetmap.org/wiki/ES:Objetos_del_mapa).
 En esa lista podrás ver todo lo que se puede agregar al mapa.
 Al principio, esta lista puede ser enorme, pero con echarle un ojo podrás imaginar cómo mejorar el mapa.
-Ten presente que no todo lo que se puede mapear es válido para Colombia; por eso te decía que revisaras la guía primero.
+Ten presente que no todo lo que se puede mapear es válido para Colombia; por eso te decía que revisares la guía primero.
 
-* Si tienes una página web y quieres incorporarle el mapa de OpenStreetMap, puedes revisar este sitio: [Switch2OSM](https://switch2osm.org/)
+* Si tienes una página web y quieres incorporarle el mapa de OpenStreetMap, puedes visitar este sitio: [Switch2OSM](https://switch2osm.org/)
 
-* Siempre es bueno saber quién está contribuyendo al mapa cerca de donde uno está trabajando, entonces puedes echarle un ojo a [resultmaps.neis-one.org](https://resultmaps.neis-one.org/). Ahí verás que somos cientos de personas trabajando en este proyecto.
+* Siempre es bueno saber quién está contribuyendo al mapa cerca de donde uno está trabajando, entonces puedes echarle un ojo a [resultmaps](https://resultmaps.neis-one.org/oooc?zoom=12&lat=4.67719&lon=-74.06536&layers=BTFFFFFT&contributors=TTTTTT). Ahí verás que somos cientos de personas trabajando en este proyecto.
 
 Si tienes dudas o preguntas como las siguientes:
 

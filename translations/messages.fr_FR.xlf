@@ -9,6 +9,10 @@
         <source>Albania</source>
         <target state="final">Albanie</target>
       </trans-unit>
+      <trans-unit id="6guTfqM" resname="Argentina" approved="yes">
+        <source>Argentina</source>
+        <target state="final">Argentine</target>
+      </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia" approved="yes">
         <source>Australia</source>
         <target state="final">Australie</target>
@@ -101,6 +105,18 @@
         <source>Basque Country South Landes</source>
         <target state="translated">Pays basque français</target>
       </trans-unit>
+      <trans-unit id="RpFJIXn" resname="Georgia" approved="yes">
+        <source>Georgia</source>
+        <target state="final">Géorgie</target>
+      </trans-unit>
+      <trans-unit id="UxBLePE" resname="Abkhazia" approved="yes">
+        <source>Abkhazia</source>
+        <target state="final">Abkhazie</target>
+      </trans-unit>
+      <trans-unit id="ok76r4z" resname="Tskhinvali" approved="yes">
+        <source>Tskhinvali</source>
+        <target state="final">Tskhinvali</target>
+      </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany" approved="yes">
         <source>Germany</source>
         <target state="final">Allemagne</target>
@@ -116,6 +132,10 @@
       <trans-unit id="XS9ZcZj" resname="Bremen" approved="yes">
         <source>Bremen</source>
         <target state="final">Brême</target>
+      </trans-unit>
+      <trans-unit id="R6.P89y" resname="Hamburg" approved="yes">
+        <source>Hamburg</source>
+        <target state="final">Hambourg</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana" approved="yes">
         <source>Ghana</source>
@@ -229,6 +249,10 @@
         <source>Romania</source>
         <target state="final">Roumanie</target>
       </trans-unit>
+      <trans-unit id="M6PY7ZK" resname="Russia" approved="yes">
+        <source>Russia</source>
+        <target state="final">Russie</target>
+      </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland" approved="yes">
         <source>Scotland</source>
         <target state="final">Écosse</target>
@@ -240,6 +264,10 @@
       <trans-unit id="VgWef7T" resname="Slovenia" approved="yes">
         <source>Slovenia</source>
         <target state="final">Slovénie</target>
+      </trans-unit>
+      <trans-unit id="PgSdeNl" resname="South Africa" approved="yes">
+        <source>South Africa</source>
+        <target state="final">Afrique du Sud</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea" approved="yes">
         <source>South Korea</source>
@@ -324,6 +352,14 @@
       <trans-unit id="b.yzrtq" resname="Vermont" approved="yes">
         <source>Vermont</source>
         <target state="final">Vermont</target>
+      </trans-unit>
+      <trans-unit id="DuAztff" resname="Virginia" approved="yes">
+        <source>Virginia</source>
+        <target state="final">Virginie</target>
+      </trans-unit>
+      <trans-unit id="HIwbKem" resname="Washington, D.C." approved="yes">
+        <source>Washington, D.C.</source>
+        <target state="final">Washington, D.C.</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State" approved="yes">
         <source>Washington State</source>
@@ -578,6 +614,18 @@ Il vous aide à détecter les nouveaux contributeurs dans votre région et à le
       <trans-unit id="8jd_cvK" resname="regions" approved="yes">
         <source>regions</source>
         <target state="final">régions</target>
+      </trans-unit>
+      <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results" approved="yes">
+        <source>Showing {from} to {to} of {total} results</source>
+        <target state="final">Résultats {from} à {to} sur un total de {total}</target>
+      </trans-unit>
+      <trans-unit id="pXsIpIC" resname="Previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Précédent</target>
+      </trans-unit>
+      <trans-unit id="H.V6Kdf" resname="Next" approved="yes">
+        <source>Next</source>
+        <target state="final">Suivant</target>
       </trans-unit>
     </body>
   </file>

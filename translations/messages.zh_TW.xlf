@@ -9,6 +9,10 @@
         <source>Albania</source>
         <target state="translated">阿爾巴尼亞</target>
       </trans-unit>
+      <trans-unit id="6guTfqM" resname="Argentina">
+        <source>Argentina</source>
+        <target state="translated">阿根廷</target>
+      </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
         <target state="translated">澳洲</target>
@@ -75,7 +79,7 @@
       </trans-unit>
       <trans-unit id="SuYr9Og" resname="Colorado">
         <source>Colorado</source>
-        <target state="needs-translation">Colorado</target>
+        <target state="translated">科羅拉多</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
@@ -101,6 +105,18 @@
         <source>Basque Country South Landes</source>
         <target state="translated">巴斯克地區南朗德</target>
       </trans-unit>
+      <trans-unit id="RpFJIXn" resname="Georgia">
+        <source>Georgia</source>
+        <target state="translated">喬治亞</target>
+      </trans-unit>
+      <trans-unit id="UxBLePE" resname="Abkhazia">
+        <source>Abkhazia</source>
+        <target state="translated">阿布哈茲</target>
+      </trans-unit>
+      <trans-unit id="ok76r4z" resname="Tskhinvali">
+        <source>Tskhinvali</source>
+        <target state="translated">茲辛瓦利</target>
+      </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
         <target state="translated">德國</target>
@@ -115,7 +131,11 @@
       </trans-unit>
       <trans-unit id="XS9ZcZj" resname="Bremen">
         <source>Bremen</source>
-        <target state="translated">不來梅</target>
+        <target state="translated">布萊梅</target>
+      </trans-unit>
+      <trans-unit id="R6.P89y" resname="Hamburg">
+        <source>Hamburg</source>
+        <target state="translated">漢堡</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
@@ -229,6 +249,10 @@
         <source>Romania</source>
         <target state="translated">羅馬尼亞</target>
       </trans-unit>
+      <trans-unit id="M6PY7ZK" resname="Russia">
+        <source>Russia</source>
+        <target state="translated">俄羅斯</target>
+      </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
         <target state="translated">蘇格蘭</target>
@@ -240,6 +264,10 @@
       <trans-unit id="VgWef7T" resname="Slovenia">
         <source>Slovenia</source>
         <target state="translated">斯洛維尼亞</target>
+      </trans-unit>
+      <trans-unit id="PgSdeNl" resname="South Africa">
+        <source>South Africa</source>
+        <target state="translated">南非</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
@@ -303,7 +331,7 @@
       </trans-unit>
       <trans-unit id="JjJaVG_" resname="Michigan">
         <source>Michigan</source>
-        <target state="translated">密歇根州</target>
+        <target state="translated">密西根州</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
@@ -324,6 +352,14 @@
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
         <target state="translated">佛蒙特州</target>
+      </trans-unit>
+      <trans-unit id="DuAztff" resname="Virginia">
+        <source>Virginia</source>
+        <target state="translated">維吉尼亞州</target>
+      </trans-unit>
+      <trans-unit id="HIwbKem" resname="Washington, D.C.">
+        <source>Washington, D.C.</source>
+        <target state="translated">華盛頓特區</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -578,6 +614,18 @@ It helps you discover new mappers in your region and welcome them.</source>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
         <target state="translated">地區</target>
+      </trans-unit>
+      <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
+        <source>Showing {from} to {to} of {total} results</source>
+        <target state="translated">顯示 {from} 到 {to} 的 {total} 結果</target>
+      </trans-unit>
+      <trans-unit id="pXsIpIC" resname="Previous">
+        <source>Previous</source>
+        <target state="translated">上一個</target>
+      </trans-unit>
+      <trans-unit id="H.V6Kdf" resname="Next">
+        <source>Next</source>
+        <target state="translated">下一個</target>
       </trans-unit>
     </body>
   </file>
