@@ -26,6 +26,9 @@ class MapperRepository extends ServiceEntityRepository
         parent::__construct($registry, Mapper::class);
     }
 
+    /**
+     * @return Paginator<Mapper>
+     */
     public function findPaginated(Region $region, int $year, int $month, int $page): Paginator
     {
         $from = new \DateTimeImmutable(\sprintf('%d-%02d-01 00:00:00', $year, $month));
