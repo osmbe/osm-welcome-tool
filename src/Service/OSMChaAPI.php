@@ -39,7 +39,7 @@ class OSMChaAPI
     }
 
     /**
-     * @param array<string,string> $filters
+     * @param array<string,mixed> $filters
      */
     public function createAreaOfInterest(string $name, array $filters): ResponseInterface
     {
@@ -58,7 +58,7 @@ class OSMChaAPI
     }
 
     /**
-     * @param array<string,string> $filters
+     * @param array<string,mixed> $filters
      */
     public function updateAreaOfInterest(string $id, string $name, array $filters): ResponseInterface
     {
