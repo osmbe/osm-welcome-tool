@@ -34,6 +34,10 @@
     </listeners>
 
     <extensions>
+        <bootstrap class="Symfony\Bridge\PhpUnit\SymfonyExtension">
+            <parameter name="clock-mock-namespaces" value="App" />
+            <parameter name="dns-mock-namespaces" value="App" />
+        </bootstrap>
         <!-- Run `composer require symfony/panther` before enabling this extension -->
         <!-- <extension class="Symfony\Component\Panther\ServerExtension" /> -->
     </extensions>
