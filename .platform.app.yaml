@@ -38,13 +38,10 @@ mounts:
 hooks:
     build: |
         set -x -e
-
         curl -fs https://get.symfony.com/cloud/configurator | bash
-
-        NODE_VERSION=22 symfony-build
+        NODE_VERSION=24 symfony-build
     deploy: |
         set -x -e
-
         symfony-deploy
 
 crons:
