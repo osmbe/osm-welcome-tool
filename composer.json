@@ -67,7 +67,7 @@
         "phpstan/phpstan-doctrine": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0",
         "phpstan/phpstan-symfony": "^2.0",
-        "pluswerk/grumphp-xliff-task": "^6.0",
+        "pluswerk/grumphp-xliff-task": "^10.1",
         "symfony/browser-kit": "*",
         "symfony/css-selector": "*",
         "symfony/debug-bundle": "*",

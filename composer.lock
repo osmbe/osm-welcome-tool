@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe492ec191e4b4a7ec70f7b63e89df3d",
+    "content-hash": "f4d9b5710c53d0bbd54ec680ec3afc65",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -11228,16 +11228,16 @@
         },
         {
             "name": "pluswerk/grumphp-xliff-task",
-            "version": "6.2.0",
+            "version": "10.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersundsehr/grumphp-xliff-task.git",
-                "reference": "594333d3315da0ddf520dc7e5bb9469b8a97d8b5"
+                "reference": "c7b445f04a43760d27298fd78aa83bea7cbbed64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/grumphp-xliff-task/zipball/594333d3315da0ddf520dc7e5bb9469b8a97d8b5",
-                "reference": "594333d3315da0ddf520dc7e5bb9469b8a97d8b5",
+                "url": "https://api.github.com/repos/andersundsehr/grumphp-xliff-task/zipball/c7b445f04a43760d27298fd78aa83bea7cbbed64",
+                "reference": "c7b445f04a43760d27298fd78aa83bea7cbbed64",
                 "shasum": ""
             },
             "require": {
@@ -11278,7 +11278,7 @@
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
                 "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/grumphp-xliff-task"
             },
-            "time": "2025-05-22T12:31:41+00:00"
+            "time": "2025-09-30T14:26:39+00:00"
         },
         {
             "name": "react/cache",
