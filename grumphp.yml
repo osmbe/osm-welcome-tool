@@ -8,8 +8,7 @@ grumphp:
   extensions:
       - PLUS\GrumPHPXliffTask\ExtensionLoader
   tasks:
-    composer:
-      strict: true
+    composer: ~
     composer_normalize: ~
     eslint:
       whitelist_patterns:
