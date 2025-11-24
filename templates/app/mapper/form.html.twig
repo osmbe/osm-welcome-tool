@@ -20,7 +20,7 @@
                         <a class="group flex items-center px-3 py-2 text-sm font-medium rounded-md {{ active ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50' }}"
                             href="{{ path('app_mapper_full', {continent: region.continent, regionKey: region.key, id: mapper.id}) }}?locale={{ template.locale }}&amp;template={{ template.filename }}">
                             <span class="truncate">
-                                {{ template.name }} ({{ template.locale|language_name }})
+                                {{ template.name }} ({{ template.locale|locale_name }})
                             </span>
                         </a>
 
