@@ -135,12 +135,12 @@ class MapperController extends AbstractController
     private function getDefaultTemplate(Request $request): ?Template
     {
         // Get current template based on query
-        $templateLocale = $request->query->getAlpha('locale');
+        $templateLocale = $request->query->get('locale');
         $templateFilename = $request->query->get('template');
         if (null !== $templateFilename && '' !== $templateLocale) {
             $filter = array_filter(
                 $this->templates,
-                fn (Template $template): bool => substr($template->getLocale(), 0, 2) === substr($templateLocale, 0, 2)
+                fn (Template $template): bool => $template->getLocale() === $templateLocale
                     && $template->getFilename() === $templateFilename
             );
             if (\count($filter) > 0) {
