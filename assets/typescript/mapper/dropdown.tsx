@@ -31,7 +31,6 @@ function usePopper(options?: Partial<Options>): [RefCallback<Element | null>, Re
   const reference = useRef<Element>(null);
   const popper = useRef<HTMLElement>(null);
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   const cleanupCallback = useRef(() => {});
 
   const instantiatePopper = useCallback(() => {
