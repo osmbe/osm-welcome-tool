@@ -71,7 +71,7 @@
       </trans-unit>
       <trans-unit id="erNVD2d" resname="duration.none">
         <source>duration.none</source>
-        <target state="needs-translation"><![CDATA[< 1 second]]></target>
+        <target state="translated"><![CDATA[< 1 sekunda]]></target>
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>

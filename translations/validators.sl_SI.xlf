@@ -119,11 +119,11 @@
       </trans-unit>
       <trans-unit id="fIlB1B_" resname="The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.">
         <source>The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.</source>
-        <target state="needs-translation">The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.</target>
+        <target state="translated">Datoteka je prevelika. Največja dovoljena velikost je {{ limit }} {{ suffix }}.</target>
       </trans-unit>
       <trans-unit id="tW7o0t9" resname="The file is too large.">
         <source>The file is too large.</source>
-        <target state="needs-translation">The file is too large.</target>
+        <target state="translated">Datoteka je prevelika.</target>
       </trans-unit>
       <trans-unit id=".exF5Ww" resname="The file could not be uploaded.">
         <source>The file could not be uploaded.</source>
