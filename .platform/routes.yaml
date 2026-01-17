@@ -1,2 +1,10 @@
-"https://{all}/": { type: upstream, upstream: "app:http" }
-"http://{all}/": { type: redirect, to: "https://{all}/" }
+"https://{all}/": 
+  type: upstream
+  upstream: "app:http"
+  tls:
+    strict_transport_security:
+      enabled: true
+      preload: true
+"http://{all}/": 
+  type: redirect
+  to: "https://{all}/"
