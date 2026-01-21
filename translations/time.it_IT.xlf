@@ -7,19 +7,19 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">1 year ago|%count% years ago</target>
+        <target state="translated">1 anno fa|%count% anni fa</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">1 month ago|%count% months ago</target>
+        <target state="translated">1 mese fa|%count% mesi fa</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">1 day ago|%count% days ago</target>
+        <target state="translated">1 giorno fa|%count% giorni fa</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+        <target state="translated">1 ora fa|%count% ore fa</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
