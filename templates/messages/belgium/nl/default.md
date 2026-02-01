@@ -7,7 +7,7 @@ Dag {{ mapper.displayName }},
 
 Gefeliciteerd met je eerste aanpassingen in OpenStreetMap in België! Bedankt voor je hulp bij het beter maken van de kaart.
 
-Ik ben {{ app.user.displayName }}, OpenStreetMap bijdrager in België. We ondersteunen mappers in België om de kaart blijvend te verbeteren. Hier zijn [een aantal van onze projecten](https://openstreetmap.be/nl/projects.html). We bestaan niet enkel online, maar spreken ook regelmatig af ['in real life'](https://openstreetmap.be/nl/category/event.html).
+Ik ben {{ app.user.displayName }}, OpenStreetMap bijdrager in België. We ondersteunen mappers in België om de kaart blijvend te verbeteren. Hier zijn [een aantal van onze projecten](https://openstreetmap.be/nl/projects/index.html). We bestaan niet enkel online, maar spreken ook regelmatig af ['in real life'](https://osmcal.org/?in=Belgium).
 
 Als je vragen hebt, kunnen we je helpen: als je denkt dat je iets stuk gemaakt hebt, niet weet hoe iets te mappen, of gewoon meer wil weten over OpenStreetMap, neem contact. Er is een [actieve chat](https://app.element.io/#/room/#osmbe:matrix.org) (Engels, Nederlands & Frans worden er gesproken) waar beginners-vragen zeker welkom zijn. Het staat je zeker ook vrij gewoon op dit bericht te antwoorden om me te contacteren, of neem een kijkje naar de andere [communicatie-kanalen](https://openstreetmap.be/nl/contact.html) of kom ons ontmoeten op eens van onze [meetups](https://www.meetup.com/OpenStreetMap-Belgium/).
 

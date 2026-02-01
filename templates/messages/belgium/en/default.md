@@ -7,9 +7,9 @@ Hi {{ mapper.displayName }}
 
 Congratulations on making your first edit to OpenStreetMap in Belgium! Thank you for your help making the map a little bit better.
 
-I'm {{ app.user.displayName }}, OpenStreetMap contributor in Belgium. We support mappers in Belgium to keep improving the map. Here's [some of our projects](https://openstreetmap.be/nl/projects.html). We don't only exist online, but also often [meet in real life](https://openstreetmap.be/en/category/event.html).
+I'm {{ app.user.displayName }}, OpenStreetMap contributor in Belgium. We support mappers in Belgium to keep improving the map. Here's [some of our projects](https://openstreetmap.be/en/projects/index.html). We don't only exist online, but also often [meet in real life](https://osmcal.org/?in=Belgium).
 
-If you've got any questions, we can help you: if you think you broke something, don't know for sure how to map something, or just want to know more about OpenStreetMap, get in touch. There's a [lively chat](https://app.element.io/#/room/#osmbe:matrix.org) (English, Dutch & French are spoken) where beginner questions are more than welcome. Also feel free to just answer to this message to contact me, or have a look at the other [contact channels](https://openstreetmap.be/en/contact.html) or join one of our [meetups](https://www.meetup.com/OpenStreetMap-Belgium/).
+If you've got any questions, we can help you: if you think you broke something, don't know for sure how to map something, or just want to know more about OpenStreetMap, get in touch. There's a [lively chat](https://app.element.io/#/room/#osmbe:matrix.org) (English, Dutch & French are spoken) where beginner questions are more than welcome. Also feel free to just answer to this message to contact me, or have a look at the other [contact channels](https://openstreetmap.be/contact.html) or join one of our [meetups](https://www.meetup.com/OpenStreetMap-Belgium/).
 
 Here's some tips to get you started:
 

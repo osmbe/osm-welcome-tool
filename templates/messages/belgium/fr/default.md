@@ -7,7 +7,7 @@ Bonjour, {{ mapper.displayName }}
 
 Félicitations pour votre première contribution sur OpenStreetMap en Belgique ! Merci de nous aider à améliorer la carte.
 
-Je suis {{ app.user.displayName }}, contributeur OpenStreetMap en Belgique. Nous aidons les cartographes de Belgique pour qu'ils participent à l'amélioration de la carte. Vous trouverez [quelques-uns de nos projets ici](https://openstreetmap.be/fr/projects.html). Nous n'existons pas uniquement en ligne, mais [nous nous réunissons aussi dans la vie réelle](https://openstreetmap.be/fr/category/event.html).
+Je suis {{ app.user.displayName }}, contributeur OpenStreetMap en Belgique. Nous aidons les cartographes de Belgique pour qu'ils participent à l'amélioration de la carte. Vous trouverez [quelques-uns de nos projets ici](https://openstreetmap.be/fr/projects/index.html). Nous n'existons pas uniquement en ligne, mais [nous nous réunissons aussi dans la vie réelle](https://osmcal.org/?in=Belgium).
 
 Si vous avez des questions, nous pouvons vous aider : si vous pensez avoir fait une erreur, si vous n'êtes pas certain de savoir comment il faut cartographier quelque chose, ou si vous voulez juste en savoir plus à propos d'OpenStreetMap, contactez-nous. Il y a un [salon de discussion](https://app.element.io/#/room/#osmbe:matrix.org) dans lequel les questions des débutants sont plus que les bienvenues (on y parle anglais, néerlandais, et français). N'ayez pas peur de répondre à ce message pour me contacter, ou alors, regardez-les [autres canaux](https://openstreetmap.be/fr/contact.html) ou encore, rejoignez une de nos [réunions](https://www.meetup.com/OpenStreetMap-Belgium/).
 
