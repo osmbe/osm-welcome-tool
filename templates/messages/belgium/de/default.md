@@ -7,9 +7,9 @@ Hallo {{ mapper.displayName }}
 
 Ich habe gesehen, dass Sie Ihren ersten Edit auf OpenStreetMap gemacht haben. Herzlichen Glückwunsch und Danke! Sie sind jetzt Mitglied der OpenStreetMap-Gemeinschaft.
 
-Wir existieren nicht nur [online](https://openstreetmap.be/), sondern auch [im wirklichen Leben](https://openstreetmap.be/en/category/event.html).
+Wir existieren nicht nur [online](https://openstreetmap.be/), sondern auch [im wirklichen Leben](https://osmcal.org/?in=Belgium).
 
-Wenn Sie Fragen haben, können wir Ihnen helfen. Wenn Sie denken, dass Sie etwas kaputt gemacht haben, nicht sicher sind, wie man etwas kartografieren soll, oder einfach nur mehr über OpenStreetMap wissen wollen, können Sie und [kontaktieren](https://openstreetmap.be/en/contact.html).
+Wenn Sie Fragen haben, können wir Ihnen helfen. Wenn Sie denken, dass Sie etwas kaputt gemacht haben, nicht sicher sind, wie man etwas kartografieren soll, oder einfach nur mehr über OpenStreetMap wissen wollen, können Sie und [kontaktieren](https://openstreetmap.be/contact.html).
 
 Hier ist etwas Hilfe, um Ihnen den Einstieg zu erleichtern:
 
