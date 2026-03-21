@@ -419,7 +419,7 @@
       </trans-unit>
       <trans-unit id="x15dlan" resname="Using invisible characters is not allowed.">
         <source>Using invisible characters is not allowed.</source>
-        <target state="needs-translation">Using invisible characters is not allowed.</target>
+        <target state="translated">Utiliser des caractères invisibles n'est pas autorisé.</target>
       </trans-unit>
       <trans-unit id="2NiS4YC" resname="Mixing numbers from different scripts is not allowed.">
         <source>Mixing numbers from different scripts is not allowed.</source>
@@ -439,11 +439,11 @@
       </trans-unit>
       <trans-unit id="gC.d7MB" resname="This value is not a valid MAC address.">
         <source>This value is not a valid MAC address.</source>
-        <target state="needs-translation">This value is not a valid MAC address.</target>
+        <target state="translated">Cette valeur n'est pas une adresse MAC valide.</target>
       </trans-unit>
       <trans-unit id="ci.Qrc8" resname="This URL is missing a top-level domain.">
         <source>This URL is missing a top-level domain.</source>
-        <target state="needs-translation">This URL is missing a top-level domain.</target>
+        <target state="translated">Cette URL doit contenir un domaine de premier niveau.</target>
       </trans-unit>
       <trans-unit id="FncpElD" resname="This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.">
         <source>This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.</source>
@@ -455,23 +455,23 @@
       </trans-unit>
       <trans-unit id="MEKoMch" resname="This value does not represent a valid week in the ISO 8601 format.">
         <source>This value does not represent a valid week in the ISO 8601 format.</source>
-        <target state="needs-translation">This value does not represent a valid week in the ISO 8601 format.</target>
+        <target state="translated">Cette valeur ne représente pas une semaine valide au format ISO 8601.</target>
       </trans-unit>
       <trans-unit id="Bm5h3cd" resname="This value is not a valid week.">
         <source>This value is not a valid week.</source>
-        <target state="needs-translation">This value is not a valid week.</target>
+        <target state="translated">Cette valeur n'est pas une semaine valide.</target>
       </trans-unit>
       <trans-unit id="EqKiNq." resname="This value should not be before week &quot;{{ min }}&quot;.">
         <source>This value should not be before week "{{ min }}".</source>
-        <target state="needs-translation">This value should not be before week "{{ min }}".</target>
+        <target state="translated">Cette valeur ne doit pas être avant la semaine "{{ min }}".</target>
       </trans-unit>
       <trans-unit id="bFhAyVV" resname="This value should not be after week &quot;{{ max }}&quot;.">
         <source>This value should not be after week "{{ max }}".</source>
-        <target state="needs-translation">This value should not be after week "{{ max }}".</target>
+        <target state="translated">Cette valeur ne doit pas être postérieure à la semaine "{{ max }}".</target>
       </trans-unit>
       <trans-unit id="ZCF28Im" resname="This value is not a valid Twig template.">
         <source>This value is not a valid Twig template.</source>
-        <target state="needs-translation">This value is not a valid Twig template.</target>
+        <target state="translated">Cette valeur n'est pas un modèle Twig valide.</target>
       </trans-unit>
       <trans-unit id=".SEaaBa" resname="This form should not contain extra fields.">
         <source>This form should not contain extra fields.</source>
@@ -607,7 +607,7 @@
       </trans-unit>
       <trans-unit id="my3IOqd" resname="This value is not a valid slug.">
         <source>This value is not a valid slug.</source>
-        <target state="needs-translation">This value is not a valid slug.</target>
+        <target state="translated">Cette valeur n'est pas un slug valide.</target>
       </trans-unit>
     </body>
   </file>
