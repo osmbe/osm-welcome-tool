@@ -20,7 +20,7 @@ class OpenStreetMapController extends AbstractController
     }
 
     #[Route('/connect/openstreetmap/check', name: 'connect_openstreetmap_check')]
-    public function connectCheckAction(Request $request, ClientRegistry $clientRegistry): void
+    public function connectCheckAction(Request $request, ClientRegistry $clientRegistry): RedirectResponse
     {
         // ** if you want to *authenticate* the user, then
         // leave this method blank and create a Guard authenticator
@@ -39,6 +39,8 @@ class OpenStreetMapController extends AbstractController
         //     // probably you should return the reason to the user
         //     var_dump($e->getMessage()); exit();
         // }
+
+        return $this->redirectToRoute('app_home');
     }
 
     #[Route('/logout', name: 'logout', priority: 5)]
