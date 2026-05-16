@@ -12,7 +12,7 @@
         "ext-sodium": "*",
         "composer/package-versions-deprecated": "^1.11.99.2",
         "doctrine/doctrine-bundle": "^3.0",
-        "doctrine/doctrine-migrations-bundle": "^3.1",
+        "doctrine/doctrine-migrations-bundle": "^4.0",
         "doctrine/orm": "^3.5",
         "jbelien/oauth2-openstreetmap": "^0.1.1",
         "knplabs/knp-time-bundle": "^2.0",
