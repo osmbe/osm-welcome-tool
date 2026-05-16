@@ -6,6 +6,10 @@ security:
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
         users_in_memory: { memory: null }
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: display_name
 
     firewalls:
         dev:
@@ -14,10 +18,14 @@ security:
             security: false
         main:
             lazy: true
-            provider: users_in_memory
+            provider: app_user_provider
 
             # Activate different ways to authenticate:
             # https://symfony.com/doc/current/security.html#the-firewall
+            custom_authenticators:
+                - App\Security\OpenStreetMapAuthenticator
+            logout:
+                path: logout
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
