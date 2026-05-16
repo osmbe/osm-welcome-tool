@@ -63,15 +63,15 @@ class ListController extends AbstractController
                 'previousPage' => max(1, $page - 1),
                 'nextPage' => min(ceil($paginator->count() / MapperRepository::MAPPERS_PER_PAGE), $page + 1),
             ]);
-        } else {
-            return $this->render('app/list/index.html.twig', [
-                'region' => $region,
-                'month' => (new \DateTime())->setDate($year, $month, 1),
-                'paginator' => null,
-                'limit' => MapperRepository::MAPPERS_PER_PAGE,
-                'currentPage' => $page,
-                'previousPage' => max(1, $page - 1),
-            ]);
         }
+
+        return $this->render('app/list/index.html.twig', [
+            'region' => $region,
+            'month' => (new \DateTime())->setDate($year, $month, 1),
+            'paginator' => null,
+            'limit' => MapperRepository::MAPPERS_PER_PAGE,
+            'currentPage' => $page,
+            'previousPage' => max(1, $page - 1),
+        ]);
     }
 }

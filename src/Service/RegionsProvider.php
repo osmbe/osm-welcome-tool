@@ -36,9 +36,8 @@ class RegionsProvider
 
             if (0 === \count($group)) {
                 throw new \Exception(\sprintf('Key "%s" is not defined in regions configuration file.', $key));
-            } else {
-                $continent = array_key_first($group);
             }
+            $continent = array_key_first($group);
         }
 
         $region = $this->regions[$continent][$key];
