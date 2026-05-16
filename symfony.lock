@@ -106,12 +106,12 @@
         "version": "2.0.0"
     },
     "friendsofphp/php-cs-fixer": {
-        "version": "3.4",
+        "version": "3.95",
         "recipe": {
             "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.0",
-            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+            "branch": "main",
+            "version": "3.39",
+            "ref": "97aaf9026490db73b86c23d49e5774bc89d2b232"
         },
         "files": [
             ".php-cs-fixer.dist.php"
