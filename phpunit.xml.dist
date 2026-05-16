@@ -19,6 +19,7 @@
         <!-- ###+ symfony/framework-bundle ### -->
         <env name="APP_ENV" value="dev"/>
         <env name="APP_SECRET" value=""/>
+        <env name="APP_SHARE_DIR" value="var/share"/>
         <!-- ###- symfony/framework-bundle ### -->
 
         <!-- ###+ symfony/routing ### -->
