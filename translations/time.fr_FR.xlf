@@ -75,7 +75,7 @@
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>
-        <target state="needs-translation">1 year old|%count% years old</target>
+        <target state="translated">1 an|%count% ans</target>
       </trans-unit>
     </body>
   </file>

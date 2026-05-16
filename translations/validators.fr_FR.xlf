@@ -407,15 +407,15 @@
       </trans-unit>
       <trans-unit id="O5pay9e" resname="The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.">
         <source>The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</source>
-        <target state="needs-translation">The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</target>
+        <target state="translated">Le nom du fichier est trop long. Il doit contenir au maximum {{ filename_max_length }} caractères.|Le nom de fichier est trop long. Il doit contenir au maximum {{ filename_max_length }} caractères.</target>
       </trans-unit>
       <trans-unit id="f_lviDt" resname="The password strength is too low. Please use a stronger password.">
         <source>The password strength is too low. Please use a stronger password.</source>
-        <target state="needs-translation">The password strength is too low. Please use a stronger password.</target>
+        <target state="translated">Le mot de passe est trop faible. Veuillez utiliser un mot de passe plus fort.</target>
       </trans-unit>
       <trans-unit id="xfCh6.k" resname="This value contains characters that are not allowed by the current restriction-level.">
         <source>This value contains characters that are not allowed by the current restriction-level.</source>
-        <target state="needs-translation">This value contains characters that are not allowed by the current restriction-level.</target>
+        <target state="translated">Cette valeur contient des caractères qui ne sont pas autorisés par le niveau de restriction actuel.</target>
       </trans-unit>
       <trans-unit id="x15dlan" resname="Using invisible characters is not allowed.">
         <source>Using invisible characters is not allowed.</source>
@@ -423,19 +423,19 @@
       </trans-unit>
       <trans-unit id="2NiS4YC" resname="Mixing numbers from different scripts is not allowed.">
         <source>Mixing numbers from different scripts is not allowed.</source>
-        <target state="needs-translation">Mixing numbers from different scripts is not allowed.</target>
+        <target state="translated">Mélanger des chiffres provenant de différents scripts n'est pas autorisé.</target>
       </trans-unit>
       <trans-unit id="W8N1HuG" resname="Using hidden overlay characters is not allowed.">
         <source>Using hidden overlay characters is not allowed.</source>
-        <target state="needs-translation">Using hidden overlay characters is not allowed.</target>
+        <target state="translated">Utiliser des caractères de superposition cachés n'est pas autorisé.</target>
       </trans-unit>
       <trans-unit id="pifGDXc" resname="The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.">
         <source>The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.</source>
-        <target state="needs-translation">The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.</target>
+        <target state="translated">L'extension {{ extension }} du fichier est invalide. Les extensions autorisées sont {{ extensions }}.</target>
       </trans-unit>
       <trans-unit id="cM9fJA2" resname="The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.">
         <source>The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.</source>
-        <target state="needs-translation">The detected character encoding is invalid ({{ detected }}). Allowed encodings are {{ encodings }}.</target>
+        <target state="translated">Le codage des caractères détecté ({{ detected }}) n'est pas valide. Les encodages autorisés sont {{ encodings }}.</target>
       </trans-unit>
       <trans-unit id="gC.d7MB" resname="This value is not a valid MAC address.">
         <source>This value is not a valid MAC address.</source>
@@ -447,11 +447,11 @@
       </trans-unit>
       <trans-unit id="FncpElD" resname="This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.">
         <source>This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.</source>
-        <target state="needs-translation">This value is too short. It should contain at least one word.|This value is too short. It should contain at least {{ min }} words.</target>
+        <target state="translated">Cette valeur est trop courte. Elle doit contenir au moins un mot.|Cette valeur est trop courte. Elle doit contenir au moins {{ min }} mots.</target>
       </trans-unit>
       <trans-unit id="kGbgUFJ" resname="This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.">
         <source>This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.</source>
-        <target state="needs-translation">This value is too long. It should contain one word.|This value is too long. It should contain {{ max }} words or less.</target>
+        <target state="translated">Cette valeur est trop longue. Elle doit contenir au maximum un mot.|Cette valeur est trop longue. Elle doit contenir au maximum {{ max }} mots.</target>
       </trans-unit>
       <trans-unit id="MEKoMch" resname="This value does not represent a valid week in the ISO 8601 format.">
         <source>This value does not represent a valid week in the ISO 8601 format.</source>
