@@ -8,6 +8,7 @@ use App\Entity\Region;
 use App\Entity\Template;
 use App\Entity\User;
 use App\Entity\Welcome;
+use App\Service\OpenStreetMapAPI;
 use App\Service\RegionsProvider;
 use App\Service\TemplatesProvider;
 use Doctrine\ORM\EntityManagerInterface;
@@ -33,6 +34,7 @@ class MapperController extends AbstractController
         private readonly EntityManagerInterface $entityManager,
         private readonly RegionsProvider $provider,
         private readonly TemplatesProvider $templatesProvider,
+        private readonly OpenStreetMapAPI $osm,
     ) {
     }
 
@@ -60,6 +62,17 @@ class MapperController extends AbstractController
         }
         if ($request->query->has('reply')) {
             $this->updateWelcomeReply($request->query->getBoolean('reply'));
+
+            return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
+        }
+
+        // Send message
+        if ($request->request->has('title') && $request->request->has('body')) {
+            $this->osm->sendMessage(
+                $this->mapper->getId(),
+                $request->request->get('title'),
+                $request->request->get('body')
+            );
 
             return $this->redirectToRoute('app_mapper_full', ['continent' => $continent, 'regionKey' => $regionKey, 'id' => $this->mapper->getId()]);
         }
