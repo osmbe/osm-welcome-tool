@@ -15,7 +15,7 @@ FROM dhi.io/composer:2.2-alpine-php8.4-dev AS composer
 
 # Application
 
-FROM php:8.5-apache AS app
+FROM docker.io/library/php:8.5-apache AS app
 
 ## Install PHP dependencies
 
@@ -37,7 +37,7 @@ COPY ".docker/apache/app.conf" "/etc/apache2/sites-available/"
 RUN a2enmod rewrite alias
 RUN a2dissite 000-default
 RUN a2ensite app
-RUN apache2ctl restart
+# RUN apache2ctl restart
 
 ## Copy/Clean files
 
@@ -54,7 +54,7 @@ COPY --from=node --chown=www-data "/assets/public/build" "./public/build"
 
 ## Install Composer & Dependencies
 
-COPY --from=composer "/usr/bin/composer" "/usr/bin/composer"
+COPY --from=composer "/usr/local/bin/composer" "/usr/local/bin/composer"
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
