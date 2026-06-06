@@ -1,6 +1,6 @@
 # Node.js (Build assets)
 
-FROM node:24-alpine AS node
+FROM dhi.io/node:24-alpine-dev AS node
 
 WORKDIR /assets
 
@@ -11,7 +11,7 @@ RUN npm run build
 
 # Composer
 
-FROM composer:2 AS composer
+FROM dhi.io/composer:2.2-alpine-php8.4-dev AS composer
 
 # Application
 
