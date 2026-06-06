@@ -4,9 +4,6 @@ services:
   symfony:
     container_name: symfony
     build: .
-    env_file:
-      - .env
-      - .compose.env
     ports:
       - 8080:80
     depends_on:
@@ -17,8 +14,6 @@ services:
   postgresql:
     container_name: postgresql
     image: dhi.io/postgres:18-alpine3.22
-    env_file:
-      - .compose.env
     volumes:
       - postgresql-data:/var/lib/postgresql
     healthcheck:
