@@ -5,7 +5,7 @@ namespace App\Util;
 final class DeletedUsersChunkReader
 {
     /**
-     * @return \Generator<int[], void, mixed, void>
+     * @return \Generator<int, list<int>, mixed, void>
      */
     public static function fromFile(string $path, int $chunkSize): \Generator
     {
