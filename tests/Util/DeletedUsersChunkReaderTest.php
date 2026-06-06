@@ -13,12 +13,14 @@ final class DeletedUsersChunkReaderTest extends TestCase
 
         self::assertNotFalse($path);
 
-        file_put_contents($path, "1\n2\n3\n\n4\n5\n");
+        try {
+            file_put_contents($path, "1\n2\n3\n\n4\n5\n");
 
-        self::assertSame(5, DeletedUsersChunkReader::count($path));
-        self::assertSame([[1, 2], [3, 4], [5]], iterator_to_array(DeletedUsersChunkReader::fromFile($path, 2), false));
-
-        unlink($path);
+            self::assertSame(5, DeletedUsersChunkReader::count($path));
+            self::assertSame([[1, 2], [3, 4], [5]], iterator_to_array(DeletedUsersChunkReader::fromFile($path, 2), false));
+        } finally {
+            unlink($path);
+        }
     }
 
     public function testItRaisesADescriptiveExceptionForMissingFiles(): void

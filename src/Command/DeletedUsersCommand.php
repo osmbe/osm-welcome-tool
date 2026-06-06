@@ -94,18 +94,22 @@ class DeletedUsersCommand extends Command
         );
 
         $source = @fopen('https://planet.openstreetmap.org/users_deleted/users_deleted.txt', 'r', false, $context);
+        if (false === $source) {
+            throw new \RuntimeException('Unable to open the deleted users source stream.');
+        }
+
         $destination = @fopen($path, 'w');
+        if (false === $destination) {
+            fclose($source);
 
-        if (false === $source || false === $destination || false === stream_copy_to_stream($source, $destination)) {
-            if (false !== $source) {
-                fclose($source);
-            }
+            throw new \RuntimeException(\sprintf('Unable to open the temporary deleted users file "%s" for writing.', $path));
+        }
 
-            if (false !== $destination) {
-                fclose($destination);
-            }
+        if (false === stream_copy_to_stream($source, $destination)) {
+            fclose($source);
+            fclose($destination);
 
-            throw new \RuntimeException('Unable to download "users_deleted.txt".');
+            throw new \RuntimeException(\sprintf('Unable to copy deleted users data to "%s".', $path));
         }
 
         fclose($source);
