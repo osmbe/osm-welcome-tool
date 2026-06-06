@@ -2,6 +2,7 @@
 
 namespace App\Command;
 
+use App\Util\DeletedUsersChunkReader;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -33,17 +34,7 @@ class DeletedUsersCommand extends Command
 
         $path = $this->download($io);
 
-        $list = [];
-
-        $resource = @fopen($path, 'r');
-        if (false !== $resource) {
-            while (($line = fgets($resource, 512)) !== false) {
-                $list[] = (int) trim($line);
-            }
-            fclose($resource);
-        }
-
-        $this->delete($io, $list);
+        $this->delete($io, $path);
 
         $this->clean($io, $path);
 
@@ -60,6 +51,7 @@ class DeletedUsersCommand extends Command
         $this->stopwatch->start('download');
 
         $progress = $io->createProgressBar();
+        $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
 
         $context = stream_context_create(
             [],
@@ -101,14 +93,26 @@ class DeletedUsersCommand extends Command
             ]
         );
 
-        $content = file_get_contents('https://planet.openstreetmap.org/users_deleted/users_deleted.txt', false, $context);
+        $source = @fopen('https://planet.openstreetmap.org/users_deleted/users_deleted.txt', 'r', false, $context);
+        $destination = @fopen($path, 'w');
+
+        if (false === $source || false === $destination || false === stream_copy_to_stream($source, $destination)) {
+            if (false !== $source) {
+                fclose($source);
+            }
+
+            if (false !== $destination) {
+                fclose($destination);
+            }
+
+            throw new \RuntimeException('Unable to download "users_deleted.txt".');
+        }
+
+        fclose($source);
+        fclose($destination);
 
         $progress->finish();
         $io->newLine();
-
-        $path = $this->filesystem->tempnam(sys_get_temp_dir(), 'users_deleted_', '.txt');
-
-        $this->filesystem->dumpFile($path, $content);
 
         $io->info(\sprintf('Saved to "%s"!', $path));
 
@@ -119,22 +123,17 @@ class DeletedUsersCommand extends Command
 
     /**
      * Remove deleted users from `mapper` and `user` tables.
-     *
-     * @param int[] $usersDeleted
      */
-    private function delete(SymfonyStyle $io, array $usersDeleted): void
+    private function delete(SymfonyStyle $io, string $path): void
     {
         $this->stopwatch->start('delete');
 
         $io->text('Process...');
 
-        $totalUsers = \count($usersDeleted);
-
+        $totalUsers = DeletedUsersChunkReader::count($path);
         $progress = $io->createProgressBar($totalUsers);
 
-        for ($i = 0; $i < $totalUsers; $i += self::CHUNK) {
-            $chunk = \array_slice($usersDeleted, $i, self::CHUNK);
-
+        foreach (DeletedUsersChunkReader::fromFile($path, self::CHUNK) as $chunk) {
             // Clean `mapper` table
             $this->entityManager->createQuery('DELETE FROM App\Entity\Mapper m WHERE m.id IN (:id)')
                 ->setParameter('id', $chunk)
