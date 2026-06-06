@@ -20,4 +20,14 @@ final class DeletedUsersChunkReaderTest extends TestCase
 
         unlink($path);
     }
+
+    public function testItRaisesADescriptiveExceptionForMissingFiles(): void
+    {
+        $path = sys_get_temp_dir().'/deleted_users_missing_'.uniqid('', true).'.txt';
+
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage(\sprintf('Unable to read deleted users file "%s".', $path));
+
+        DeletedUsersChunkReader::count($path);
+    }
 }

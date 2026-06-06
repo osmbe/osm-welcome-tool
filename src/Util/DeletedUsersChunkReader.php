@@ -9,7 +9,7 @@ final class DeletedUsersChunkReader
      */
     public static function fromFile(string $path, int $chunkSize): \Generator
     {
-        $file = new \SplFileObject($path, 'r');
+        $file = self::openFile($path);
         $chunk = [];
 
         while (!$file->eof()) {
@@ -35,7 +35,7 @@ final class DeletedUsersChunkReader
     public static function count(string $path): int
     {
         $count = 0;
-        $file = new \SplFileObject($path, 'r');
+        $file = self::openFile($path);
 
         while (!$file->eof()) {
             if ('' !== trim($file->fgets())) {
@@ -44,5 +44,14 @@ final class DeletedUsersChunkReader
         }
 
         return $count;
+    }
+
+    private static function openFile(string $path): \SplFileObject
+    {
+        try {
+            return new \SplFileObject($path, 'r');
+        } catch (\RuntimeException $exception) {
+            throw new \RuntimeException(\sprintf('Unable to read deleted users file "%s".', $path), 0, $exception);
+        }
     }
 }
