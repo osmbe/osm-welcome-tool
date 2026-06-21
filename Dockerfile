@@ -35,6 +35,7 @@ RUN docker-php-ext-install -j$(nproc) intl pdo_pgsql sodium zip
 ## Configure Apache
 
 COPY ".docker/apache/app.conf" "/etc/apache2/sites-available/"
+COPY ".docker/apache/ports.conf" "/etc/apache2/"
 
 RUN a2enmod rewrite alias
 RUN a2dissite 000-default
