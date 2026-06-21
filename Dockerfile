@@ -19,8 +19,10 @@ FROM docker.io/library/php:8.4-apache AS app
 
 ## Install PHP dependencies
 
-RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install -y libicu-dev libpq-dev libsodium-dev libzip-dev
+RUN apt-get update -y \
+    && apt-get install -y libicu-dev libpq-dev libsodium-dev libzip-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-configure zip;
 RUN docker-php-ext-install -j$(nproc) intl pdo_pgsql sodium zip
@@ -37,7 +39,6 @@ COPY ".docker/apache/app.conf" "/etc/apache2/sites-available/"
 RUN a2enmod rewrite alias
 RUN a2dissite 000-default
 RUN a2ensite app
-# RUN apache2ctl restart
 
 ## Copy/Clean files
 
