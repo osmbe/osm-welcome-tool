@@ -7,7 +7,7 @@ services:
     env_file:
       - stack.env
     ports:
-      - 8080:80
+      - 8080:8080
     depends_on:
       postgresql:
         condition: service_healthy

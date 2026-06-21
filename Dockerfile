@@ -79,4 +79,4 @@ RUN chmod +x bin/console; sync;
 RUN mkdir -p var/cache/${APP_ENV} var/log/
 RUN chown -R www-data:www-data var/
 
-EXPOSE 80
+EXPOSE 8080
