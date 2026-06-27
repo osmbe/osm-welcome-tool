@@ -7,7 +7,9 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/yassinedoghri/devcontainers/php-extensions-installer:1": {},
+		"ghcr.io/yassinedoghri/devcontainers/php-extensions-installer:1": {
+			"extensions": "intl"
+		},
         "ghcr.io/devcontainers/features/node:2": {
             "version": "24"
         }
