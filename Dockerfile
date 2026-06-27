@@ -46,7 +46,7 @@ COPY --chown=www-data . .
 
 RUN rm -Rf .docker/
 
-COPY --from=node "/assets/public/build" "./public/build"
+COPY --from=node --chown=www-data "/assets/public/build" "./public/build"
 
 ## Install Composer & Dependencies
 
