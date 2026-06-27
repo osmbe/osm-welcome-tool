@@ -46,8 +46,6 @@ COPY --chown=www-data . .
 
 RUN rm -Rf .docker/
 
-USER www-data
-
 COPY --from=node "/assets/public/build" "./public/build"
 
 ## Install Composer & Dependencies
@@ -67,5 +65,7 @@ RUN composer run-script post-install-cmd --no-dev
 
 RUN mkdir -p var/cache/${APP_ENV} var/log/
 RUN chown -R www-data:www-data var/
+
+USER www-data
 
 EXPOSE 8080
