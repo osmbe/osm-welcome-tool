@@ -87,7 +87,10 @@ jobs:
   docker-build:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       packages: write
+      attestations: write
+      id-token: write
     steps:
       - uses: actions/checkout@v7
       - name: Set up Docker Buildx
@@ -105,8 +108,17 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build and push Docker image
+        id: push
         uses: docker/build-push-action@v7
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+      - name: Generate artifact attestation
+        uses: actions/attest@v4
+        if: github.event_name != 'pull_request'
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
