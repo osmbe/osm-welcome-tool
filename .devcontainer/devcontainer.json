@@ -12,7 +12,8 @@
 		},
         "ghcr.io/devcontainers/features/node:2": {
             "version": "24"
-        }
+        },
+		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
 	},
 
 	// Configure tool-specific properties.
