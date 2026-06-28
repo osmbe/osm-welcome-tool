@@ -349,6 +349,10 @@
         <source>Utah</source>
         <target>Utah</target>
       </trans-unit>
+      <trans-unit id="KHbthuj" resname="Venezuela">
+        <source>Venezuela</source>
+        <target>Venezuela</target>
+      </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
         <target>Vermont</target>
