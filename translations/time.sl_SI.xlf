@@ -7,51 +7,51 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">1 year ago|%count% years ago</target>
+        <target state="needs-translation">{1}pred 1 letom|{2}pred %count% letoma|[3, Inf]pred %count% leti</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">1 month ago|%count% months ago</target>
+        <target state="needs-translation">{1}pred 1 mesecem|{2}pred %count% mesecema|[3, Inf]pred %count% meseci</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">1 day ago|%count% days ago</target>
+        <target state="needs-translation">{1}pred 1 dnevom|{2}pred %count% dnevoma|[3, Inf]pred %count% dnevi</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+        <target state="needs-translation">{1}pred 1 uro|{2}pred %count% urama|[3, Inf]pred %count% urami</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
-        <target state="needs-translation">1 minute ago|%count% minutes ago</target>
+        <target state="needs-translation">{1}pred 1 minuto|{2}pred %count% minutama|[3, Inf]pred %count% minutami</target>
       </trans-unit>
       <trans-unit id="UQtErIZ" resname="diff.ago.second">
         <source>diff.ago.second</source>
-        <target state="needs-translation">1 second ago|%count% seconds ago</target>
+        <target state="needs-translation">{1}pred 1 sekundo|{2}pred %count% sekundama|[3, Inf]pred %count% sekundami</target>
       </trans-unit>
       <trans-unit id="VgQkGkv" resname="diff.in.second">
         <source>diff.in.second</source>
-        <target state="needs-translation">in 1 second|in %count% seconds</target>
+        <target state="needs-translation">{1}za 1 sekundo|{2}za %count% sekundi|[3, Inf]za %count% sekunde</target>
       </trans-unit>
       <trans-unit id="dJQGobP" resname="diff.in.hour">
         <source>diff.in.hour</source>
-        <target state="needs-translation">in 1 hour|in %count% hours</target>
+        <target state="needs-translation">{1}za 1 uro|{2}za %count% uri|[3, Inf]za %count% ure</target>
       </trans-unit>
       <trans-unit id="AFqulYH" resname="diff.in.minute">
         <source>diff.in.minute</source>
-        <target state="needs-translation">in 1 minute|in %count% minutes</target>
+        <target state="needs-translation">{1}za 1 minuto|{2}za %count% minuti|[3, Inf]za %count% minute</target>
       </trans-unit>
       <trans-unit id="vKk2WhV" resname="diff.in.day">
         <source>diff.in.day</source>
-        <target state="needs-translation">in 1 day|in %count% days</target>
+        <target state="needs-translation">{1}za 1 dan|{2}za %count% dneva|[3, Inf]za %count% dni</target>
       </trans-unit>
       <trans-unit id="INy1OSI" resname="diff.in.month">
         <source>diff.in.month</source>
-        <target state="needs-translation">in 1 month|in %count% months</target>
+        <target state="needs-translation">{1}za 1 mesec|{2}za %count% meseca|[3, Inf]za %count% mesece</target>
       </trans-unit>
       <trans-unit id="Zy1_IlC" resname="diff.in.year">
         <source>diff.in.year</source>
-        <target state="needs-translation">in 1 year|in %count% years</target>
+        <target state="needs-translation">{1}za 1 leto|{2}za %count% leti|[3, Inf]za %count% let</target>
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
