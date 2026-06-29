@@ -1,0 +1,30 @@
+name: osm-welcome-tool
+
+services:
+  symfony:
+    container_name: symfony
+    build: .
+    env_file:
+      - stack.env
+    ports:
+      - 8080:8080
+    depends_on:
+      postgresql:
+        condition: service_healthy
+
+  postgresql:
+    container_name: postgresql
+    image: dhi.io/postgres:18-alpine3.22
+    env_file:
+      - stack.env
+    volumes:
+      - postgresql-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 30s
+      timeout: 60s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  postgresql-data:

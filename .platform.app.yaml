@@ -45,10 +45,10 @@ hooks:
         symfony-deploy
 
 crons:
-    clean-delete-users:
-        spec: '0 0 * * *'
-        commands:
-            start: php bin/console osm:deleted-users
+    # clean-delete-users:
+    #     spec: '0 0 * * *'
+    #     commands:
+    #         start: php bin/console osm:deleted-users
     update-africa-drc:
         spec: '0 1 * * *'
         commands:

@@ -7,7 +7,7 @@ use App\Service\RegionsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 
 class ListController extends AbstractController
 {
@@ -63,15 +63,15 @@ class ListController extends AbstractController
                 'previousPage' => max(1, $page - 1),
                 'nextPage' => min(ceil($paginator->count() / MapperRepository::MAPPERS_PER_PAGE), $page + 1),
             ]);
-        } else {
-            return $this->render('app/list/index.html.twig', [
-                'region' => $region,
-                'month' => (new \DateTime())->setDate($year, $month, 1),
-                'paginator' => null,
-                'limit' => MapperRepository::MAPPERS_PER_PAGE,
-                'currentPage' => $page,
-                'previousPage' => max(1, $page - 1),
-            ]);
         }
+
+        return $this->render('app/list/index.html.twig', [
+            'region' => $region,
+            'month' => (new \DateTime())->setDate($year, $month, 1),
+            'paginator' => null,
+            'limit' => MapperRepository::MAPPERS_PER_PAGE,
+            'currentPage' => $page,
+            'previousPage' => max(1, $page - 1),
+        ]);
     }
 }
