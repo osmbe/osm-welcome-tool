@@ -1,635 +1,631 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="ar" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
       <trans-unit id="GvALh0." resname="Albania">
         <source>Albania</source>
-        <target>Albania</target>
+        <target state="needs-translation">Albania</target>
       </trans-unit>
       <trans-unit id="6guTfqM" resname="Argentina">
         <source>Argentina</source>
-        <target>Argentina</target>
+        <target state="needs-translation">Argentina</target>
       </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
-        <target>Australia</target>
+        <target state="needs-translation">Australia</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
-        <target>Austria</target>
+        <target state="needs-translation">Austria</target>
       </trans-unit>
       <trans-unit id="Lx1H62e" resname="Bangladesh">
         <source>Bangladesh</source>
-        <target>Bangladesh</target>
+        <target state="needs-translation">Bangladesh</target>
       </trans-unit>
       <trans-unit id="NIhB71P" resname="Belgium">
         <source>Belgium</source>
-        <target>Belgium</target>
+        <target state="needs-translation">Belgium</target>
       </trans-unit>
       <trans-unit id="liHAc2R" resname="Bolivia">
         <source>Bolivia</source>
-        <target>Bolivia</target>
+        <target state="needs-translation">Bolivia</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
-        <target>Bulgaria</target>
+        <target state="needs-translation">Bulgaria</target>
       </trans-unit>
       <trans-unit id="DCywGi2" resname="Cambodia">
         <source>Cambodia</source>
-        <target>Cambodia</target>
+        <target state="needs-translation">Cambodia</target>
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
-        <target>British Columbia</target>
+        <target state="needs-translation">British Columbia</target>
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target>Ontario</target>
+        <target state="needs-translation">Ontario</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
-        <target>Catalan Countries</target>
+        <target state="needs-translation">Catalan Countries</target>
       </trans-unit>
       <trans-unit id="9Sc_I21" resname="Chile">
         <source>Chile</source>
-        <target>Chile</target>
+        <target state="needs-translation">Chile</target>
       </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
-        <target>China</target>
+        <target state="needs-translation">China</target>
       </trans-unit>
       <trans-unit id="ZbtG7Qe" resname="Beijing">
         <source>Beijing</source>
-        <target>Beijing</target>
+        <target state="needs-translation">Beijing</target>
       </trans-unit>
       <trans-unit id="f5jx79f" resname="Heilongjiang">
         <source>Heilongjiang</source>
-        <target>Heilongjiang</target>
+        <target state="needs-translation">Heilongjiang</target>
       </trans-unit>
       <trans-unit id="EAhQbhX" resname="Hunan">
         <source>Hunan</source>
-        <target>Hunan</target>
+        <target state="needs-translation">Hunan</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
-        <target>Colombia</target>
+        <target state="needs-translation">Colombia</target>
       </trans-unit>
       <trans-unit id="SuYr9Og" resname="Colorado">
         <source>Colorado</source>
-        <target>Colorado</target>
+        <target state="needs-translation">Colorado</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
-        <target>Bogotá</target>
+        <target state="needs-translation">Bogotá</target>
       </trans-unit>
       <trans-unit id="B.YrAhd" resname="Brazil">
         <source>Brazil</source>
-        <target>Brazil</target>
+        <target state="needs-translation">Brazil</target>
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target>DACHLI-Obersee-Rheintal</target>
+        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
-        <target>Democratic Republic of the Congo</target>
+        <target state="needs-translation">Democratic Republic of the Congo</target>
       </trans-unit>
       <trans-unit id="ehyk73U" resname="France">
         <source>France</source>
-        <target>France</target>
+        <target state="needs-translation">France</target>
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target>Basque Country South Landes</target>
+        <target state="needs-translation">Basque Country South Landes</target>
       </trans-unit>
       <trans-unit id="RpFJIXn" resname="Georgia">
         <source>Georgia</source>
-        <target>Georgia</target>
+        <target state="needs-translation">Georgia</target>
       </trans-unit>
       <trans-unit id="UxBLePE" resname="Abkhazia">
         <source>Abkhazia</source>
-        <target>Abkhazia</target>
+        <target state="needs-translation">Abkhazia</target>
       </trans-unit>
       <trans-unit id="ok76r4z" resname="Tskhinvali">
         <source>Tskhinvali</source>
-        <target>Tskhinvali</target>
+        <target state="needs-translation">Tskhinvali</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
-        <target>Germany</target>
+        <target state="needs-translation">Germany</target>
       </trans-unit>
       <trans-unit id="2tEUtu1" resname="Berlin">
         <source>Berlin</source>
-        <target>Berlin</target>
+        <target state="needs-translation">Berlin</target>
       </trans-unit>
       <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
         <source>Berlin-Neukölln</source>
-        <target>Berlin-Neukölln</target>
+        <target state="needs-translation">Berlin-Neukölln</target>
       </trans-unit>
       <trans-unit id="XS9ZcZj" resname="Bremen">
         <source>Bremen</source>
-        <target>Bremen</target>
+        <target state="needs-translation">Bremen</target>
       </trans-unit>
       <trans-unit id="R6.P89y" resname="Hamburg">
         <source>Hamburg</source>
-        <target>Hamburg</target>
+        <target state="needs-translation">Hamburg</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
-        <target>Ghana</target>
+        <target state="needs-translation">Ghana</target>
       </trans-unit>
       <trans-unit id="RaFaJHD" resname="Guatemala">
         <source>Guatemala</source>
-        <target>Guatemala</target>
+        <target state="needs-translation">Guatemala</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
-        <target>Hong Kong</target>
+        <target state="needs-translation">Hong Kong</target>
       </trans-unit>
       <trans-unit id="UEvjCE9" resname="Hungary">
         <source>Hungary</source>
-        <target>Hungary</target>
+        <target state="needs-translation">Hungary</target>
       </trans-unit>
       <trans-unit id="28dKNtj" resname="Indonesia">
         <source>Indonesia</source>
-        <target>Indonesia</target>
+        <target state="needs-translation">Indonesia</target>
       </trans-unit>
       <trans-unit id="q9FJIUU" resname="India">
         <source>India</source>
-        <target>India</target>
+        <target state="needs-translation">India</target>
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target>Iraq</target>
+        <target state="needs-translation">Iraq</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
-        <target>Ireland</target>
+        <target state="needs-translation">Ireland</target>
       </trans-unit>
       <trans-unit id="Wpz2csi" resname="Italy">
         <source>Italy</source>
-        <target>Italy</target>
+        <target state="needs-translation">Italy</target>
       </trans-unit>
       <trans-unit id="ZHKUODs" resname="Japan">
         <source>Japan</source>
-        <target>Japan</target>
+        <target state="needs-translation">Japan</target>
       </trans-unit>
       <trans-unit id="SoZ0JMc" resname="Kosovo">
         <source>Kosovo</source>
-        <target>Kosovo</target>
+        <target state="needs-translation">Kosovo</target>
       </trans-unit>
       <trans-unit id="mOGPRmh" resname="Laos">
         <source>Laos</source>
-        <target>Laos</target>
+        <target state="needs-translation">Laos</target>
       </trans-unit>
       <trans-unit id="KqL871D" resname="Libya">
         <source>Libya</source>
-        <target>Libya</target>
+        <target state="needs-translation">Libya</target>
       </trans-unit>
       <trans-unit id="ydJgTdU" resname="Liberia">
         <source>Liberia</source>
-        <target>Liberia</target>
+        <target state="needs-translation">Liberia</target>
       </trans-unit>
       <trans-unit id="7XbxkWI" resname="Luxembourg">
         <source>Luxembourg</source>
-        <target>Luxembourg</target>
+        <target state="needs-translation">Luxembourg</target>
       </trans-unit>
       <trans-unit id="4QlT93Y" resname="Macao">
         <source>Macao</source>
-        <target>Macao</target>
+        <target state="needs-translation">Macao</target>
       </trans-unit>
       <trans-unit id="erWX4bX" resname="Montenegro">
         <source>Montenegro</source>
-        <target>Montenegro</target>
+        <target state="needs-translation">Montenegro</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
-        <target>Myanmar</target>
+        <target state="needs-translation">Myanmar</target>
       </trans-unit>
       <trans-unit id="LL68VB_" resname="Niger">
         <source>Niger</source>
-        <target>Niger</target>
+        <target state="needs-translation">Niger</target>
       </trans-unit>
       <trans-unit id="BJUqD5h" resname="Nigeria">
         <source>Nigeria</source>
-        <target>Nigeria</target>
+        <target state="needs-translation">Nigeria</target>
       </trans-unit>
       <trans-unit id="rmF18cz" resname="North Korea">
         <source>North Korea</source>
-        <target>North Korea</target>
+        <target state="needs-translation">North Korea</target>
       </trans-unit>
       <trans-unit id="4lZzEux" resname="Pakistan">
         <source>Pakistan</source>
-        <target>Pakistan</target>
+        <target state="needs-translation">Pakistan</target>
       </trans-unit>
       <trans-unit id="w2aPWBK" resname="Panama">
         <source>Panama</source>
-        <target>Panama</target>
+        <target state="needs-translation">Panama</target>
       </trans-unit>
       <trans-unit id="xldCzrK" resname="Papua New Guinea">
         <source>Papua New Guinea</source>
-        <target>Papua New Guinea</target>
+        <target state="needs-translation">Papua New Guinea</target>
       </trans-unit>
       <trans-unit id="w3gshtg" resname="Philippines">
         <source>Philippines</source>
-        <target>Philippines</target>
+        <target state="needs-translation">Philippines</target>
       </trans-unit>
       <trans-unit id="f2lkmtc" resname="Poland">
         <source>Poland</source>
-        <target>Poland</target>
+        <target state="needs-translation">Poland</target>
       </trans-unit>
       <trans-unit id="TH3iw9p" resname="Portugal">
         <source>Portugal</source>
-        <target>Portugal</target>
+        <target state="needs-translation">Portugal</target>
       </trans-unit>
       <trans-unit id="6iNybdD" resname="Romania">
         <source>Romania</source>
-        <target>Romania</target>
+        <target state="needs-translation">Romania</target>
       </trans-unit>
       <trans-unit id="M6PY7ZK" resname="Russia">
         <source>Russia</source>
-        <target>Russia</target>
+        <target state="needs-translation">Russia</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
-        <target>Scotland</target>
+        <target state="needs-translation">Scotland</target>
       </trans-unit>
       <trans-unit id="6HOcg5V" resname="Serbia">
         <source>Serbia</source>
-        <target>Serbia</target>
+        <target state="needs-translation">Serbia</target>
       </trans-unit>
       <trans-unit id="VgWef7T" resname="Slovenia">
         <source>Slovenia</source>
-        <target>Slovenia</target>
+        <target state="needs-translation">Slovenia</target>
       </trans-unit>
       <trans-unit id="PgSdeNl" resname="South Africa">
         <source>South Africa</source>
-        <target>South Africa</target>
+        <target state="needs-translation">South Africa</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
-        <target>South Korea</target>
+        <target state="needs-translation">South Korea</target>
       </trans-unit>
       <trans-unit id="jvQeb0s" resname="Spain">
         <source>Spain</source>
-        <target>Spain</target>
+        <target state="needs-translation">Spain</target>
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target>Switzerland</target>
+        <target state="needs-translation">Switzerland</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
-        <target>Taiwan</target>
+        <target state="needs-translation">Taiwan</target>
       </trans-unit>
       <trans-unit id="lVVmT89" resname="Tanzania">
         <source>Tanzania</source>
-        <target>Tanzania</target>
+        <target state="needs-translation">Tanzania</target>
       </trans-unit>
       <trans-unit id="bknmUIG" resname="Thailand">
         <source>Thailand</source>
-        <target>Thailand</target>
+        <target state="needs-translation">Thailand</target>
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
-        <target>Texas</target>
+        <target state="needs-translation">Texas</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
-        <target>East Timor</target>
+        <target state="needs-translation">East Timor</target>
       </trans-unit>
       <trans-unit id="QIA0PuD" resname="Togo">
         <source>Togo</source>
-        <target>Togo</target>
+        <target state="needs-translation">Togo</target>
       </trans-unit>
       <trans-unit id="B8Z9du_" resname="Turkey">
         <source>Turkey</source>
-        <target>Turkey</target>
+        <target state="needs-translation">Turkey</target>
       </trans-unit>
       <trans-unit id="iT1ThWO" resname="Uganda">
         <source>Uganda</source>
-        <target>Uganda</target>
+        <target state="needs-translation">Uganda</target>
       </trans-unit>
       <trans-unit id="WA7txmn" resname="Ukraine">
         <source>Ukraine</source>
-        <target>Ukraine</target>
+        <target state="needs-translation">Ukraine</target>
       </trans-unit>
       <trans-unit id="ytBTXez" resname="California">
         <source>California</source>
-        <target>California</target>
+        <target state="needs-translation">California</target>
       </trans-unit>
       <trans-unit id="efbQcyo" resname="Kansas">
         <source>Kansas</source>
-        <target>Kansas</target>
+        <target state="needs-translation">Kansas</target>
       </trans-unit>
       <trans-unit id="ZKpyFMI" resname="Commonwealth of Massachusetts">
         <source>Commonwealth of Massachusetts</source>
-        <target>Commonwealth of Massachusetts</target>
+        <target state="needs-translation">Commonwealth of Massachusetts</target>
       </trans-unit>
       <trans-unit id="JjJaVG_" resname="Michigan">
         <source>Michigan</source>
-        <target>Michigan</target>
+        <target state="needs-translation">Michigan</target>
       </trans-unit>
       <trans-unit id="Z5_V2E6" resname="New York State">
         <source>New York State</source>
-        <target>New York State</target>
+        <target state="needs-translation">New York State</target>
       </trans-unit>
       <trans-unit id="Q4p9WQT" resname="Ohio">
         <source>Ohio</source>
-        <target>Ohio</target>
+        <target state="needs-translation">Ohio</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
-        <target>Oregon</target>
+        <target state="needs-translation">Oregon</target>
       </trans-unit>
       <trans-unit id="grzhC1_" resname="Utah">
         <source>Utah</source>
-        <target>Utah</target>
-      </trans-unit>
-      <trans-unit id="KHbthuj" resname="Venezuela">
-        <source>Venezuela</source>
-        <target>Venezuela</target>
+        <target state="needs-translation">Utah</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
-        <target>Vermont</target>
+        <target state="needs-translation">Vermont</target>
       </trans-unit>
       <trans-unit id="DuAztff" resname="Virginia">
         <source>Virginia</source>
-        <target>Virginia</target>
+        <target state="needs-translation">Virginia</target>
       </trans-unit>
       <trans-unit id="HIwbKem" resname="Washington, D.C.">
         <source>Washington, D.C.</source>
-        <target>Washington, D.C.</target>
+        <target state="needs-translation">Washington, D.C.</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
-        <target>Washington State</target>
+        <target state="needs-translation">Washington State</target>
       </trans-unit>
       <trans-unit id="Ll6BBmo" resname="Vietnam">
         <source>Vietnam</source>
-        <target>Vietnam</target>
+        <target state="needs-translation">Vietnam</target>
       </trans-unit>
       <trans-unit id="dE9wKAg" resname="Review requested">
         <source>Review requested</source>
-        <target>Review requested</target>
+        <target state="needs-translation">Review requested</target>
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
-        <target>Invalid tag modification</target>
+        <target state="needs-translation">Invalid tag modification</target>
       </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
-        <target>No note.</target>
+        <target state="needs-translation">No note.</target>
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
-        <target>Markdown is allowed.</target>
+        <target state="needs-translation">Markdown is allowed.</target>
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
-        <target>View</target>
+        <target state="needs-translation">View</target>
       </trans-unit>
       <trans-unit id="nGrjZeg" resname="Open other tools">
         <source>Open other tools</source>
-        <target>Open other tools</target>
+        <target state="needs-translation">Open other tools</target>
       </trans-unit>
       <trans-unit id="PzH3t8N" resname="Harmful">
         <source>Harmful</source>
-        <target>Harmful</target>
+        <target state="needs-translation">Harmful</target>
       </trans-unit>
       <trans-unit id="Dv2SozW" resname="Checked">
         <source>Checked</source>
-        <target>Checked</target>
+        <target state="needs-translation">Checked</target>
       </trans-unit>
       <trans-unit id="nc.5jid" resname="Timeline">
         <source>Timeline</source>
-        <target>Timeline</target>
+        <target state="needs-translation">Timeline</target>
       </trans-unit>
       <trans-unit id="9jh5.Wk" resname="Account created">
         <source>Account created</source>
-        <target>Account created</target>
+        <target state="needs-translation">Account created</target>
       </trans-unit>
       <trans-unit id="9kKaXhE" resname="Mapper since {date}">
         <source>Mapper since {date}</source>
-        <target>Mapper since {date}</target>
+        <target state="needs-translation">Mapper since {date}</target>
       </trans-unit>
       <trans-unit id="1pajW90" resname="Profile">
         <source>Profile</source>
-        <target>Profile</target>
+        <target state="needs-translation">Profile</target>
       </trans-unit>
       <trans-unit id="6wYsMHV" resname="Send a welcome message">
         <source>Send a welcome message</source>
-        <target>Send a welcome message</target>
+        <target state="needs-translation">Send a welcome message</target>
       </trans-unit>
       <trans-unit id="VrVkt1x" resname="Templates">
         <source>Templates</source>
-        <target>Templates</target>
+        <target state="needs-translation">Templates</target>
       </trans-unit>
       <trans-unit id="RXDbS53" resname="Copy text to clipboard">
         <source>Copy text to clipboard</source>
-        <target>Copy text to clipboard</target>
+        <target state="needs-translation">Copy text to clipboard</target>
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target>Load message in osm.org</target>
+        <target state="needs-translation">Load message in osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
-        <target>Changesets</target>
+        <target state="needs-translation">Changesets</target>
       </trans-unit>
       <trans-unit id="DnaWAJM" resname="History">
         <source>History</source>
-        <target>History</target>
+        <target state="needs-translation">History</target>
       </trans-unit>
       <trans-unit id="OnhpU4i" resname="Home">
         <source>Home</source>
-        <target>Home</target>
+        <target state="needs-translation">Home</target>
       </trans-unit>
       <trans-unit id="byAvVKe" resname="List">
         <source>List</source>
-        <target>List</target>
+        <target state="needs-translation">List</target>
       </trans-unit>
       <trans-unit id="_nTKo1O" resname="Mapper">
         <source>Mapper</source>
-        <target>Mapper</target>
+        <target state="needs-translation">Mapper</target>
       </trans-unit>
       <trans-unit id="47ienTP" resname="Username">
         <source>Username</source>
-        <target>Username</target>
+        <target state="needs-translation">Username</target>
       </trans-unit>
       <trans-unit id="7z7rhD." resname="First changeset">
         <source>First changeset</source>
-        <target>First changeset</target>
+        <target state="needs-translation">First changeset</target>
       </trans-unit>
       <trans-unit id="k2oWHDk" resname="Editor">
         <source>Editor</source>
-        <target>Editor</target>
+        <target state="needs-translation">Editor</target>
       </trans-unit>
       <trans-unit id="yj3GEvR" resname="Locale">
         <source>Locale</source>
-        <target>Locale</target>
+        <target state="needs-translation">Locale</target>
       </trans-unit>
       <trans-unit id="1HiPJW9" resname="View profile">
         <source>View profile</source>
-        <target>View profile</target>
+        <target state="needs-translation">View profile</target>
       </trans-unit>
       <trans-unit id="7fvt8pP" resname="Mappers">
         <source>Mappers</source>
-        <target>Mappers</target>
+        <target state="needs-translation">Mappers</target>
       </trans-unit>
       <trans-unit id="IJYeoIW" resname="List of mappers that have their first edit in the region">
         <source>List of mappers that have their first edit in the region</source>
-        <target>List of mappers that have their first edit in the region</target>
+        <target state="needs-translation">List of mappers that have their first edit in the region</target>
       </trans-unit>
       <trans-unit id="aidpUCp" resname="Previous month">
         <source>Previous month</source>
-        <target>Previous month</target>
+        <target state="needs-translation">Previous month</target>
       </trans-unit>
       <trans-unit id="dOUyEf7" resname="Next month">
         <source>Next month</source>
-        <target>Next month</target>
+        <target state="needs-translation">Next month</target>
       </trans-unit>
       <trans-unit id="2NosSd8" resname="Note">
         <source>Note</source>
-        <target>Note</target>
+        <target state="needs-translation">Note</target>
       </trans-unit>
       <trans-unit id="n9coxmy" resname="Add">
         <source>Add</source>
-        <target>Add</target>
+        <target state="needs-translation">Add</target>
       </trans-unit>
       <trans-unit id="MiwOE_9" resname="Add a note">
         <source>Add a note</source>
-        <target>Add a note</target>
+        <target state="needs-translation">Add a note</target>
       </trans-unit>
       <trans-unit id="PLQQlCt" resname="Welcomed by {userlink}">
         <source>Welcomed by {userlink}</source>
-        <target>Welcomed by {userlink}</target>
+        <target state="needs-translation">Welcomed by {userlink}</target>
       </trans-unit>
       <trans-unit id="FoiCwFH" resname="{mapper} has been welcomed">
         <source>{mapper} has been welcomed</source>
-        <target>{mapper} has been welcomed</target>
+        <target state="needs-translation">{mapper} has been welcomed</target>
       </trans-unit>
       <trans-unit id="03qZ_zI" resname="{mapper} has replied">
         <source>{mapper} has replied</source>
-        <target>{mapper} has replied</target>
+        <target state="needs-translation">{mapper} has replied</target>
       </trans-unit>
       <trans-unit id="zbCuPR7" resname="Changeset">
         <source>Changeset</source>
-        <target>Changeset</target>
+        <target state="needs-translation">Changeset</target>
       </trans-unit>
       <trans-unit id="wP.kHJ5" resname="Not welcomed yet">
         <source>Not welcomed yet</source>
-        <target>Not welcomed yet</target>
+        <target state="needs-translation">Not welcomed yet</target>
       </trans-unit>
       <trans-unit id="7QGDsnR" resname="Not replied yet">
         <source>Not replied yet</source>
-        <target>Not replied yet</target>
+        <target state="needs-translation">Not replied yet</target>
       </trans-unit>
       <trans-unit id="5JIt4ui" resname="{userlink} has replied">
         <source>{userlink} has replied</source>
-        <target>{userlink} has replied</target>
+        <target state="needs-translation">{userlink} has replied</target>
       </trans-unit>
       <trans-unit id="vQEb23j" resname="Login with OSM">
         <source>Login with OSM</source>
-        <target>Login with OSM</target>
+        <target state="needs-translation">Login with OSM</target>
       </trans-unit>
       <trans-unit id="GZQaZt8" resname="Open user menu">
         <source>Open user menu</source>
-        <target>Open user menu</target>
+        <target state="needs-translation">Open user menu</target>
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
-        <target>Welcomed</target>
+        <target state="needs-translation">Welcomed</target>
       </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
-        <target>Last update</target>
+        <target state="needs-translation">Last update</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
         <source>Logout</source>
-        <target>Logout</target>
+        <target state="needs-translation">Logout</target>
       </trans-unit>
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
-        <target>Notes</target>
+        <target state="needs-translation">Notes</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;
 It helps you discover new mappers in your region and welcome them.</source>
-        <target>This is the OpenStreetMap Welcome Tool.
+        <target state="needs-translation">This is the OpenStreetMap Welcome Tool.
 It helps you discover new mappers in your region and welcome them.</target>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
+        <target state="needs-translation">If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+        <target state="needs-translation">Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
       </trans-unit>
       <trans-unit id="YIax95J" resname="Previous mapper">
         <source>Previous mapper</source>
-        <target>Previous mapper</target>
+        <target state="needs-translation">Previous mapper</target>
       </trans-unit>
       <trans-unit id="K5yIR1M" resname="Next mapper">
         <source>Next mapper</source>
-        <target>Next mapper</target>
+        <target state="needs-translation">Next mapper</target>
       </trans-unit>
       <trans-unit id="P1BTs65" resname="africa">
         <source>africa</source>
-        <target>Africa</target>
+        <target state="needs-translation">Africa</target>
       </trans-unit>
       <trans-unit id="7hOb0P2" resname="asia">
         <source>asia</source>
-        <target>Asia</target>
+        <target state="needs-translation">Asia</target>
       </trans-unit>
       <trans-unit id="xYXx3su" resname="australia">
         <source>australia</source>
-        <target>Australia</target>
+        <target state="needs-translation">Australia</target>
       </trans-unit>
       <trans-unit id="sR8gPo5" resname="europe">
         <source>europe</source>
-        <target>Europe</target>
+        <target state="needs-translation">Europe</target>
       </trans-unit>
       <trans-unit id="RU.NdIz" resname="north-america">
         <source>north-america</source>
-        <target>North-America</target>
+        <target state="needs-translation">North-America</target>
       </trans-unit>
       <trans-unit id="OplCJNt" resname="south-america">
         <source>south-america</source>
-        <target>South-America</target>
+        <target state="needs-translation">South-America</target>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target>{count} new mappers ({percent} %) have already been welcomed</target>
+        <target state="needs-translation">{count} new mappers ({percent} %) have already been welcomed</target>
       </trans-unit>
       <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
         <source>Mapper detected in {count} region(s)</source>
-        <target>Mapper detected in {count} region(s)</target>
+        <target state="needs-translation">Mapper detected in {count} region(s)</target>
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target>Download OSMCha RSS feed</target>
+        <target state="needs-translation">Download OSMCha RSS feed</target>
       </trans-unit>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
-        <target>regions</target>
+        <target state="needs-translation">regions</target>
       </trans-unit>
       <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
         <source>Showing {from} to {to} of {total} results</source>
-        <target>Showing {from} to {to} of {total} results</target>
+        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
       </trans-unit>
       <trans-unit id="pXsIpIC" resname="Previous">
         <source>Previous</source>
-        <target>Previous</target>
+        <target state="needs-translation">Previous</target>
       </trans-unit>
       <trans-unit id="H.V6Kdf" resname="Next">
         <source>Next</source>
-        <target>Next</target>
+        <target state="needs-translation">Next</target>
       </trans-unit>
     </body>
   </file>

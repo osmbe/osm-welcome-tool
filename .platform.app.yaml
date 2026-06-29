@@ -413,3 +413,7 @@ crons:
         spec: '0 6 * * *'
         commands:
             start: php bin/console osmcha:new-mapper colombia
+    update-southamerica-venezuela:
+        spec: '0 5 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper venezuela
