@@ -165,6 +165,10 @@ crons:
         spec: '0 17 * * *'
         commands:
             start: php bin/console osmcha:new-mapper philippines
+    update-asia-saudi-arabia:
+        spec: '0 20 * * *'
+        commands:
+            start: php bin/console osmcha:new-mapper saudi-arabia
     update-asia-south-korea:
         spec: '0 16 * * *'
         commands:

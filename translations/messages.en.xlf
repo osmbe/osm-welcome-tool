@@ -253,6 +253,10 @@
         <source>Russia</source>
         <target>Russia</target>
       </trans-unit>
+      <trans-unit id="JLHJS5l" resname="Saudi Arabia">
+        <source>Saudi Arabia</source>
+        <target>Saudi Arabia</target>
+      </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
         <target>Scotland</target>
