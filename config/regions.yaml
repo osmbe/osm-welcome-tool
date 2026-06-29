@@ -369,3 +369,7 @@ regions:
       name: Bogotá
       flag: 🇨🇴
       osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
+    venezuela:
+      name: Venezuela
+      flag: 🇻🇪
+      osmcha.id: b873ce2a-9597-4557-9488-657848512924
