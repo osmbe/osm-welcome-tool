@@ -15,7 +15,7 @@ FROM dhi.io/composer:2.2-alpine-php8.4-dev AS composer
 
 # Application
 
-FROM docker.io/library/php:8.4-apache AS app
+FROM docker.io/library/php:8.5-apache AS app
 
 ## Install PHP dependencies
 
