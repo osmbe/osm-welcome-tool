@@ -7,51 +7,51 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">{1}pred 1 letom|{2}pred %count% letoma|[3, Inf]pred %count% leti</target>
+        <target state="translated">{1}pred %count% letom|{2}pred %count% letoma|[3, Inf]pred %count% leti</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">{1}pred 1 mesecem|{2}pred %count% mesecema|[3, Inf]pred %count% meseci</target>
+        <target state="translated">{1}pred %count% mesecem|{2}pred %count% mesecema|[3, Inf]pred %count% meseci</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">{1}pred 1 dnevom|{2}pred %count% dnevoma|[3, Inf]pred %count% dnevi</target>
+        <target state="translated">{1}pred %count% dnevom|{2}pred %count% dnevoma|[3, Inf]pred %count% dnevi</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">{1}pred 1 uro|{2}pred %count% urama|[3, Inf]pred %count% urami</target>
+        <target state="translated">{1}pred %count% uro|{2}pred %count% urama|[3, Inf]pred %count% urami</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
-        <target state="needs-translation">{1}pred 1 minuto|{2}pred %count% minutama|[3, Inf]pred %count% minutami</target>
+        <target state="translated">{1}pred %count% minuto|{2}pred %count% minutama|[3, Inf]pred %count% minutami</target>
       </trans-unit>
       <trans-unit id="UQtErIZ" resname="diff.ago.second">
         <source>diff.ago.second</source>
-        <target state="needs-translation">{1}pred 1 sekundo|{2}pred %count% sekundama|[3, Inf]pred %count% sekundami</target>
+        <target state="translated">{1}pred %count% sekundo|{2}pred %count% sekundama|[3, Inf]pred %count% sekundami</target>
       </trans-unit>
       <trans-unit id="VgQkGkv" resname="diff.in.second">
         <source>diff.in.second</source>
-        <target state="needs-translation">{1}za 1 sekundo|{2}za %count% sekundi|[3, Inf]za %count% sekunde</target>
+        <target state="translated">{1}čez %count% sekundo|{2}čez %count% sekundi|{3}čez %count% sekunde|[4, Inf]čez %count% sekund</target>
       </trans-unit>
       <trans-unit id="dJQGobP" resname="diff.in.hour">
         <source>diff.in.hour</source>
-        <target state="needs-translation">{1}za 1 uro|{2}za %count% uri|[3, Inf]za %count% ure</target>
+        <target state="translated">{1}čez %count% uro|{2}čez %count% uri|{3}čez %count% ure|[4, Inf]čez %count% ur</target>
       </trans-unit>
       <trans-unit id="AFqulYH" resname="diff.in.minute">
         <source>diff.in.minute</source>
-        <target state="needs-translation">{1}za 1 minuto|{2}za %count% minuti|[3, Inf]za %count% minute</target>
+        <target state="translated">{1}čez 1 minuto|{2}čez %count% minuti|[3, Inf]čez %count% minute</target>
       </trans-unit>
       <trans-unit id="vKk2WhV" resname="diff.in.day">
         <source>diff.in.day</source>
-        <target state="needs-translation">{1}za 1 dan|{2}za %count% dneva|[3, Inf]za %count% dni</target>
+        <target state="translated">{1}čez %count% dan|{2}čez %count% dneva|[3, Inf]čez %count% dni</target>
       </trans-unit>
       <trans-unit id="INy1OSI" resname="diff.in.month">
         <source>diff.in.month</source>
-        <target state="needs-translation">{1}za 1 mesec|{2}za %count% meseca|[3, Inf]za %count% mesece</target>
+        <target state="translated">{1}čez %count% mesec|{2}čez %count% meseca|{3}čez %count% mesece|[4, Inf]čez %count% mesecev</target>
       </trans-unit>
       <trans-unit id="Zy1_IlC" resname="diff.in.year">
         <source>diff.in.year</source>
-        <target state="needs-translation">{1}za 1 leto|{2}za %count% leti|[3, Inf]za %count% let</target>
+        <target state="translated">{1}čez %count% leto|{2}čez %count% leti|{3}čez %count% leta|[4, Inf]čez %count% let</target>
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
