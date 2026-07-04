@@ -9,13 +9,6 @@
                 {{ app.request.locale|locale_name(app.request.locale)|capitalize }}
             </a>
 
-            <!--<div class="divide-solid">
-                {% for locale in welcome.locales %}
-                {% if loop.index0 > 0 %} &bull; {% endif %}
-                <a href="?l={{ locale }}">{{ locale|locale_name(locale)|capitalize }}</a>
-                {% endfor %}
-            </div>-->
-
             <div class="flex items-center gap-2">
                 <div class="flex items-center">
                     <img class="h-4 mr-1" src="{{ asset('build/images/GitHub-Mark-32px.png') }}" alt="GitHub logo">
