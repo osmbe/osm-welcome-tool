@@ -44,6 +44,34 @@ jobs:
     - name: Run test suite
       run: vendor/bin/simple-phpunit
 
+  symfony-lint:container:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - run: php bin/console lint:container
+  symfony-lint:translations:
+    runs-on: ubuntu-latest
+    matrix:
+      locale: [ ar_SA, bg_BG, de_DE, en, es_ES, fr_FR, hu_HU, it_IT, ja_JP, ko_KR, nl_NL, pl_PL, pt_BR, pt_PT, sl_SI, sq_AL, uk_UA, zh_CN, zh_TW ]
+    steps:
+    - uses: actions/checkout@v7
+    - run: php bin/console lint:translations --locale=${{ matrix.locale }}
+  symfony-lint:twig:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - run: php bin/console lint:twig templates/
+  symfony-lint:xliff:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - run: php bin/console lint:xliff translations/
+  symfony-lint:yaml:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - run: php bin/console lint:yaml config/
+
   node-build:
     runs-on: ubuntu-latest
     strategy:
