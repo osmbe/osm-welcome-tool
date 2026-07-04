@@ -44,6 +44,111 @@ jobs:
     - name: Run test suite
       run: vendor/bin/simple-phpunit
 
+  symfony-lint-container:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:container
+  symfony-lint-translations:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        locale: [ ar, bg, de, en, es_ES, fr, hu, it, ja, ko, nl, pl, pt_BR, pt_PT, sl, sq, uk, zh_CN, zh_TW ]
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:translations --locale=${{ matrix.locale }}
+  symfony-lint-twig:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:twig templates/
+  symfony-lint-xliff:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:xliff translations/
+  symfony-lint-yaml:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:yaml config/
+
   node-build:
     runs-on: ubuntu-latest
     strategy:
