@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="sl" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="BJMjkzc" resname="diff.ago.year">
+        <source>diff.ago.year</source>
+        <target state="translated">{1}pred %count% letom|{2}pred %count% letoma|[3, Inf]pred %count% leti</target>
+      </trans-unit>
+      <trans-unit id="QlOaaz7" resname="diff.ago.month">
+        <source>diff.ago.month</source>
+        <target state="translated">{1}pred %count% mesecem|{2}pred %count% mesecema|[3, Inf]pred %count% meseci</target>
+      </trans-unit>
+      <trans-unit id="0icjxey" resname="diff.ago.day">
+        <source>diff.ago.day</source>
+        <target state="translated">{1}pred %count% dnevom|{2}pred %count% dnevoma|[3, Inf]pred %count% dnevi</target>
+      </trans-unit>
+      <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
+        <source>diff.ago.hour</source>
+        <target state="translated">{1}pred %count% uro|{2}pred %count% urama|[3, Inf]pred %count% urami</target>
+      </trans-unit>
+      <trans-unit id="ildUKt_" resname="diff.ago.minute">
+        <source>diff.ago.minute</source>
+        <target state="translated">{1}pred %count% minuto|{2}pred %count% minutama|[3, Inf]pred %count% minutami</target>
+      </trans-unit>
+      <trans-unit id="UQtErIZ" resname="diff.ago.second">
+        <source>diff.ago.second</source>
+        <target state="translated">{1}pred %count% sekundo|{2}pred %count% sekundama|[3, Inf]pred %count% sekundami</target>
+      </trans-unit>
+      <trans-unit id="VgQkGkv" resname="diff.in.second">
+        <source>diff.in.second</source>
+        <target state="translated">{1}čez %count% sekundo|{2}čez %count% sekundi|{3}čez %count% sekunde|[4, Inf]čez %count% sekund</target>
+      </trans-unit>
+      <trans-unit id="dJQGobP" resname="diff.in.hour">
+        <source>diff.in.hour</source>
+        <target state="translated">{1}čez %count% uro|{2}čez %count% uri|{3}čez %count% ure|[4, Inf]čez %count% ur</target>
+      </trans-unit>
+      <trans-unit id="AFqulYH" resname="diff.in.minute">
+        <source>diff.in.minute</source>
+        <target state="translated">{1}čez 1 minuto|{2}čez %count% minuti|[3, Inf]čez %count% minute</target>
+      </trans-unit>
+      <trans-unit id="vKk2WhV" resname="diff.in.day">
+        <source>diff.in.day</source>
+        <target state="translated">{1}čez %count% dan|{2}čez %count% dneva|[3, Inf]čez %count% dni</target>
+      </trans-unit>
+      <trans-unit id="INy1OSI" resname="diff.in.month">
+        <source>diff.in.month</source>
+        <target state="translated">{1}čez %count% mesec|{2}čez %count% meseca|{3}čez %count% mesece|[4, Inf]čez %count% mesecev</target>
+      </trans-unit>
+      <trans-unit id="Zy1_IlC" resname="diff.in.year">
+        <source>diff.in.year</source>
+        <target state="translated">{1}čez %count% leto|{2}čez %count% leti|{3}čez %count% leta|[4, Inf]čez %count% let</target>
+      </trans-unit>
+      <trans-unit id="8uG.Z9X" resname="duration.second">
+        <source>duration.second</source>
+        <target state="needs-translation">1 second|%count% seconds</target>
+      </trans-unit>
+      <trans-unit id="MorJRc_" resname="duration.minute">
+        <source>duration.minute</source>
+        <target state="needs-translation">1 minute|%count% minutes</target>
+      </trans-unit>
+      <trans-unit id="FynQfYn" resname="duration.hour">
+        <source>duration.hour</source>
+        <target state="needs-translation">1 hour|%count% hours</target>
+      </trans-unit>
+      <trans-unit id="4rZn5fT" resname="duration.day">
+        <source>duration.day</source>
+        <target state="needs-translation">1 day|%count% days</target>
+      </trans-unit>
+      <trans-unit id="erNVD2d" resname="duration.none">
+        <source>duration.none</source>
+        <target state="translated"><![CDATA[< 1 sekunda]]></target>
+      </trans-unit>
+      <trans-unit id="AT9UQAy" resname="age">
+        <source>age</source>
+        <target state="needs-translation">1 year old|%count% years old</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
