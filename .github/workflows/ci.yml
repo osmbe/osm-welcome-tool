@@ -44,12 +44,12 @@ jobs:
     - name: Run test suite
       run: vendor/bin/simple-phpunit
 
-  symfony-lint:container:
+  symfony-lint-container:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
     - run: php bin/console lint:container
-  symfony-lint:translations:
+  symfony-lint-translations:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -58,17 +58,17 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - run: php bin/console lint:translations --locale=${{ matrix.locale }}
-  symfony-lint:twig:
+  symfony-lint-twig:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
     - run: php bin/console lint:twig templates/
-  symfony-lint:xliff:
+  symfony-lint-xliff:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
     - run: php bin/console lint:xliff translations/
-  symfony-lint:yaml:
+  symfony-lint-yaml:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
