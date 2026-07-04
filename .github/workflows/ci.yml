@@ -69,7 +69,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        locale: [ ar_SA, bg_BG, de_DE, en, es_ES, fr_FR, hu_HU, it_IT, ja_JP, ko_KR, nl_NL, pl_PL, pt_BR, pt_PT, sl_SI, sq_AL, uk_UA, zh_CN, zh_TW ]
+        locale: [ ar, bg, de, en, es_ES, fr, hu, it, ja, ko, nl, pl, pt_BR, pt_PT, sl, sq, uk, zh_CN, zh_TW ]
     steps:
     - uses: actions/checkout@v7
     - uses: shivammathur/setup-php@v2

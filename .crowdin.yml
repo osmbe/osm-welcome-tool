@@ -1,13 +1,10 @@
 files:
-  - source: /translations/messages.en.xlf
-    translation: /translations/messages.%locale_with_underscore%.xlf
-  - source: /translations/security.en.xlf
-    translation: /translations/security.%locale_with_underscore%.xlf
-  - source: /translations/validators.en.xlf
-    translation: /translations/validators.%locale_with_underscore%.xlf
-  - source: /translations/time.en.xlf
-    translation: /translations/time.%locale_with_underscore%.xlf
-  - source: /translations/time+intl-icu.en.xlf
-    translation: /translations/time+intl-icu.%locale_with_underscore%.xlf
-  - source: /translations/validators.en.xlf
-    translation: /translations/validators.%locale_with_underscore%.xlf
+  - source: "/translations/*.en.xlf"
+    translation: "/translations/%original_file_name%-%locale%.xlf"
+    languages_mapping:
+      locale:
+        es: "es_ES"
+        pt: "pt_PT"
+        pt-BR: "pt_BR"
+        zh: "zh_CN"
+        zh-TW: "zh_TW"
