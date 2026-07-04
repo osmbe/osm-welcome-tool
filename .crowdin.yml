@@ -1,6 +1,42 @@
 files:
-  - source: "/translations/*.en.xlf"
-    translation: "/translations/%original_file_name%-%locale%.xlf"
+  - source: "/translations/messages.en.xlf"
+    translation: "/translations/messages.%two_letters_code%.xlf"
+    languages_mapping:
+      locale:
+        es-ES: "es_ES"
+        pt-PT: "pt_PT"
+        pt-BR: "pt_BR"
+        zh-CN: "zh_CN"
+        zh-TW: "zh_TW"
+  - source: "/translations/security.en.xlf"
+    translation: "/translations/security.%two_letters_code%.xlf"
+    languages_mapping:
+      locale:
+        es-ES: "es_ES"
+        pt-PT: "pt_PT"
+        pt-BR: "pt_BR"
+        zh-CN: "zh_CN"
+        zh-TW: "zh_TW"
+  - source: "/translations/time.en.xlf"
+    translation: "/translations/time.%two_letters_code%.xlf"
+    languages_mapping:
+      locale:
+        es-ES: "es_ES"
+        pt-PT: "pt_PT"
+        pt-BR: "pt_BR"
+        zh-CN: "zh_CN"
+        zh-TW: "zh_TW"
+  - source: "/translations/time+intl-icu.en.xlf"
+    translation: "/translations/time+intl-icu.%two_letters_code%.xlf"
+    languages_mapping:
+      locale:
+        es-ES: "es_ES"
+        pt-PT: "pt_PT"
+        pt-BR: "pt_BR"
+        zh-CN: "zh_CN"
+        zh-TW: "zh_TW"
+  - source: "/translations/validators.en.xlf"
+    translation: "/translations/validators.%two_letters_code%.xlf"
     languages_mapping:
       locale:
         es-ES: "es_ES"
