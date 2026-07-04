@@ -1,6 +1,7 @@
 import ApexCharts from 'apexcharts';
 import { GeoJSON, Map, TileLayer } from 'leaflet';
 
+import ar from 'apexcharts/dist/locales/ar.json';
 // import bg from 'apexcharts/dist/locales/bg.json';
 import de from 'apexcharts/dist/locales/de.json';
 import en from 'apexcharts/dist/locales/en.json';
@@ -24,7 +25,7 @@ import 'leaflet/dist/leaflet.css';
 
 uk.name = 'uk'; // Overwrite "ua" by "uk"
 
-const locales = [de, en, es, fr, hu, it, ja, ko, nl, pl, pt, pt_BR, sl, sq, uk, zh_CN, zh_TW];
+const locales = [ar, de, en, es, fr, hu, it, ja, ko, nl, pl, pt, pt_BR, sl, sq, uk, zh_CN, zh_TW];
 
 const mapElement = document.getElementById('map-region');
 if (mapElement !== null) {
