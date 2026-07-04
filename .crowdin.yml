@@ -3,8 +3,8 @@ files:
     translation: "/translations/%original_file_name%-%locale%.xlf"
     languages_mapping:
       locale:
-        es: "es_ES"
-        pt: "pt_PT"
+        es-ES: "es_ES"
+        pt-PT: "pt_PT"
         pt-BR: "pt_BR"
-        zh: "zh_CN"
+        zh-CN: "zh_CN"
         zh-TW: "zh_TW"
