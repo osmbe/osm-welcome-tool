@@ -6,12 +6,12 @@
                 {{ 'List of mappers that have their first edit in the region'|trans }}
             </p>
         </div>
-        <div class="mt-3 flex items-center sm:mt-0 sm:ml-4">
-            <div class="mr-5">
+        <div class="mt-3 flex items-center sm:mt-0 ltr:sm:ml-4 rtl:sm:mr-4">
+            <div class="ltr:mr-5 rtl:ml-5">
                 {{ month|format_date(pattern='MMMM yyyy') }}
             </div>
 
-            <span class="relative z-0 inline-flex shadow-sm rounded-md">
+            <span class="relative z-0 inline-flex rtl:flex-row-reverse shadow-sm rounded-md">
                 {% set prev_month = (month|date('m')) - 1 %}
                 {% set prev_year = (month|date('Y')) %}
                 <a class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
