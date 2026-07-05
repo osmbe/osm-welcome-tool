@@ -15,7 +15,7 @@
       </trans-unit>
       <trans-unit id="3RJINQ0" resname="Authentication request could not be processed due to a system problem.">
         <source>Authentication request could not be processed due to a system problem.</source>
-        <target state="needs-translation">Authentication request could not be processed due to a system problem.</target>
+        <target state="translated">تعذر معالجة طلب المصادقة بسبب مشكلة في النظام.</target>
       </trans-unit>
       <trans-unit id="qr0aiUo" resname="Invalid credentials.">
         <source>Invalid credentials.</source>
@@ -23,11 +23,11 @@
       </trans-unit>
       <trans-unit id="zrJWK0F" resname="Cookie has already been used by someone else.">
         <source>Cookie has already been used by someone else.</source>
-        <target state="needs-translation">Cookie has already been used by someone else.</target>
+        <target state="translated">تم استخدام Cookie بالفعل من قِبل مستخدم آخر.</target>
       </trans-unit>
       <trans-unit id="blC0fXX" resname="Not privileged to request the resource.">
         <source>Not privileged to request the resource.</source>
-        <target state="needs-translation">Not privileged to request the resource.</target>
+        <target state="translated">لا تملك الصلاحية لطلب هذا المورد.</target>
       </trans-unit>
       <trans-unit id="dLzMRPR" resname="Invalid CSRF token.">
         <source>Invalid CSRF token.</source>
@@ -47,7 +47,7 @@
       </trans-unit>
       <trans-unit id="z3cOUZo" resname="Username could not be found.">
         <source>Username could not be found.</source>
-        <target state="needs-translation">Username could not be found.</target>
+        <target state="translated">تعذر العثور على اسم المستخدم.</target>
       </trans-unit>
       <trans-unit id="By5eLYM" resname="Account has expired.">
         <source>Account has expired.</source>
@@ -59,11 +59,11 @@
       </trans-unit>
       <trans-unit id="NrSSfLs" resname="Account is disabled.">
         <source>Account is disabled.</source>
-        <target state="needs-translation">Account is disabled.</target>
+        <target state="translated">الحساب موقوف.</target>
       </trans-unit>
       <trans-unit id="O5ZyxHr" resname="Account is locked.">
         <source>Account is locked.</source>
-        <target state="needs-translation">Account is locked.</target>
+        <target state="translated">الحساب مغلق.</target>
       </trans-unit>
       <trans-unit id="gd.MOnZ" resname="Too many failed login attempts, please try again later.">
         <source>Too many failed login attempts, please try again later.</source>
