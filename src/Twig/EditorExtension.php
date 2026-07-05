@@ -4,6 +4,7 @@ namespace App\Twig;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
+use Twig\TwigFunction;
 
 class EditorExtension extends AbstractExtension
 {
@@ -12,6 +13,20 @@ class EditorExtension extends AbstractExtension
         return [
             new TwigFilter('editor', $this->shortenEditorName(...), ['is_safe' => ['html']]),
         ];
+    }
+
+    public function getFunctions()
+    {
+        return [
+            new TwigFunction('locale_is_rtl', static fn (string $locale): bool => self::isLocaleRightToLeft($locale)),
+        ];
+    }
+
+    private static function isLocaleRightToLeft(string $locale): bool
+    {
+        $rtlLanguages = ['ar'];
+
+        return \in_array(\Locale::getPrimaryLanguage($locale), $rtlLanguages, true);
     }
 
     /**
