@@ -7,35 +7,35 @@
     <body>
       <trans-unit id="zh5oKD9" resname="This value should be false.">
         <source>This value should be false.</source>
-        <target state="needs-translation">This value should be false.</target>
+        <target state="translated">هذه القيمة يجب أن تكون خاطئة.</target>
       </trans-unit>
       <trans-unit id="NN2_iru" resname="This value should be true.">
         <source>This value should be true.</source>
-        <target state="needs-translation">This value should be true.</target>
+        <target state="translated">هذه القيمة يجب أن تكون صحيحة.</target>
       </trans-unit>
       <trans-unit id="OjM_kpf" resname="This value should be of type {{ type }}.">
         <source>This value should be of type {{ type }}.</source>
-        <target state="needs-translation">This value should be of type {{ type }}.</target>
+        <target state="translated">هذه القيمة يجب ان تكون من نوع {{ type }}.</target>
       </trans-unit>
       <trans-unit id="f0P5pBD" resname="This value should be blank.">
         <source>This value should be blank.</source>
-        <target state="needs-translation">This value should be blank.</target>
+        <target state="translated">هذه القيمة يجب ان تكون فارغة.</target>
       </trans-unit>
       <trans-unit id="ih.4TRN" resname="The value you selected is not a valid choice.">
         <source>The value you selected is not a valid choice.</source>
-        <target state="needs-translation">The value you selected is not a valid choice.</target>
+        <target state="translated">القيمة المختارة ليست خيارا صحيحا.</target>
       </trans-unit>
       <trans-unit id="u81CkP8" resname="You must select at least {{ limit }} choice.|You must select at least {{ limit }} choices.">
         <source>You must select at least {{ limit }} choice.|You must select at least {{ limit }} choices.</source>
-        <target state="needs-translation">You must select at least {{ limit }} choice.|You must select at least {{ limit }} choices.</target>
+        <target state="translated">يجب تحديد {{ limit }} خيار على الأقل|يجب تحديد {{ limit }} خيارات على الأقل.</target>
       </trans-unit>
       <trans-unit id="nIvOQ_o" resname="You must select at most {{ limit }} choice.|You must select at most {{ limit }} choices.">
         <source>You must select at most {{ limit }} choice.|You must select at most {{ limit }} choices.</source>
-        <target state="needs-translation">You must select at most {{ limit }} choice.|You must select at most {{ limit }} choices.</target>
+        <target state="translated">يجب تحديد {{ limit }} خيار كحد اقصى|يجب تحديد {{ limit }} خيارات على الأكثر.</target>
       </trans-unit>
       <trans-unit id="87zjiHi" resname="One or more of the given values is invalid.">
         <source>One or more of the given values is invalid.</source>
-        <target state="needs-translation">One or more of the given values is invalid.</target>
+        <target state="translated">واحدة أو أكثر من القيم المعطاة غير صالحة.</target>
       </trans-unit>
       <trans-unit id="3NeQftv" resname="This field was not expected.">
         <source>This field was not expected.</source>
@@ -47,15 +47,15 @@
       </trans-unit>
       <trans-unit id="LO2vFKN" resname="This value is not a valid date.">
         <source>This value is not a valid date.</source>
-        <target state="needs-translation">This value is not a valid date.</target>
+        <target state="translated">هذه القيمة ليست تاريخا صالحا.</target>
       </trans-unit>
       <trans-unit id="86dU_nv" resname="This value is not a valid datetime.">
         <source>This value is not a valid datetime.</source>
-        <target state="needs-translation">This value is not a valid datetime.</target>
+        <target state="translated">هذه القيمة ليست تاريخا و وقتا صالحا.</target>
       </trans-unit>
       <trans-unit id="PSvNXdi" resname="This value is not a valid email address.">
         <source>This value is not a valid email address.</source>
-        <target state="needs-translation">This value is not a valid email address.</target>
+        <target state="translated">هذه القيمة ليست عنوان بريد إلكتروني صحيح.</target>
       </trans-unit>
       <trans-unit id="3KeHbZy" resname="The file could not be found.">
         <source>The file could not be found.</source>
@@ -199,11 +199,11 @@
       </trans-unit>
       <trans-unit id="y9K3BGb" resname="Cannot write temporary file to disk.">
         <source>Cannot write temporary file to disk.</source>
-        <target state="needs-translation">Cannot write temporary file to disk.</target>
+        <target state="translated">لا يمكن كتابة الملف المؤقت على القرص.</target>
       </trans-unit>
       <trans-unit id="kx3yHIM" resname="A PHP extension caused the upload to fail.">
         <source>A PHP extension caused the upload to fail.</source>
-        <target state="needs-translation">A PHP extension caused the upload to fail.</target>
+        <target state="translated">تسبب ملحق PHP في فشل التحميل.</target>
       </trans-unit>
       <trans-unit id="gTJYRl6" resname="This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.">
         <source>This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.</source>

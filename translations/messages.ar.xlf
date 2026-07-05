@@ -383,15 +383,15 @@
       </trans-unit>
       <trans-unit id="UjpP989" resname="Invalid tag modification">
         <source>Invalid tag modification</source>
-        <target state="needs-translation">Invalid tag modification</target>
+        <target state="translated">تعديل وسم غير صالح</target>
       </trans-unit>
       <trans-unit id="nvrTGpK" resname="No note.">
         <source>No note.</source>
-        <target state="needs-translation">No note.</target>
+        <target state="translated">لا ملاحظة.</target>
       </trans-unit>
       <trans-unit id="XM9VQ1P" resname="Markdown is allowed.">
         <source>Markdown is allowed.</source>
-        <target state="needs-translation">Markdown is allowed.</target>
+        <target state="translated">الماركداون مسموح.</target>
       </trans-unit>
       <trans-unit id="3Mg5pAF" resname="View">
         <source>View</source>
@@ -399,19 +399,19 @@
       </trans-unit>
       <trans-unit id="nGrjZeg" resname="Open other tools">
         <source>Open other tools</source>
-        <target state="needs-translation">Open other tools</target>
+        <target state="translated">فتح بقية الأدوات</target>
       </trans-unit>
       <trans-unit id="PzH3t8N" resname="Harmful">
         <source>Harmful</source>
-        <target state="needs-translation">Harmful</target>
+        <target state="translated">ضار</target>
       </trans-unit>
       <trans-unit id="Dv2SozW" resname="Checked">
         <source>Checked</source>
-        <target state="needs-translation">Checked</target>
+        <target state="translated">تم التحقق</target>
       </trans-unit>
       <trans-unit id="nc.5jid" resname="Timeline">
         <source>Timeline</source>
-        <target state="needs-translation">Timeline</target>
+        <target state="translated">خط الزمن</target>
       </trans-unit>
       <trans-unit id="9jh5.Wk" resname="Account created">
         <source>Account created</source>
@@ -439,7 +439,7 @@
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target state="needs-translation">Load message in osm.org</target>
+        <target state="translated">تحميل الرسالة في osm.org</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -535,15 +535,15 @@
       </trans-unit>
       <trans-unit id="5JIt4ui" resname="{userlink} has replied">
         <source>{userlink} has replied</source>
-        <target state="needs-translation">{userlink} has replied</target>
+        <target state="translated">قام {userlink} بالرد</target>
       </trans-unit>
       <trans-unit id="vQEb23j" resname="Login with OSM">
         <source>Login with OSM</source>
-        <target state="needs-translation">Login with OSM</target>
+        <target state="translated">تسجيل عبر OSM</target>
       </trans-unit>
       <trans-unit id="GZQaZt8" resname="Open user menu">
         <source>Open user menu</source>
-        <target state="needs-translation">Open user menu</target>
+        <target state="translated">فتح قائمة المستخدم</target>
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
@@ -559,7 +559,7 @@
       </trans-unit>
       <trans-unit id="inUlsUk" resname="Notes">
         <source>Notes</source>
-        <target state="needs-translation">Notes</target>
+        <target state="translated">الملاحظات</target>
       </trans-unit>
       <trans-unit id="3w6jdKt" resname="This is the OpenStreetMap Welcome Tool.&#13;&#10;It helps you discover new mappers in your region and welcome them.">
         <source>This is the OpenStreetMap Welcome Tool.&#13;
@@ -569,19 +569,19 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="1V8tGL9" resname="If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.">
         <source>If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</source>
-        <target state="needs-translation">If you want to add your region or your language to the Welcome Tool, check our {contributing_link_start}contributing guide{link_end}.</target>
+        <target state="translated">إذا وددت إضافة منطقتك او لغتك إلى أداة الترحيب، قم بزيارة {contributing_link_start}دليل المساهمة{link_end}.</target>
       </trans-unit>
       <trans-unit id="mXfEfOx" resname="Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.">
         <source>Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</source>
-        <target state="needs-translation">Developed by {osmbe_link_start}OpenStreetMap Belgium{link_end} and supported by the {lccwg_link_start}Local Chapters and Communities Working Group{link_end}.</target>
+        <target state="translated">تم تطويره بواسطة {osmbe_link_start}خريطة الشارع المفتوحة بلجيكا{link_end} وبدعم من {lccwg_link_start}مجموعة عمل الفروع والمجتمعات المحلية{link_end}.</target>
       </trans-unit>
       <trans-unit id="YIax95J" resname="Previous mapper">
         <source>Previous mapper</source>
-        <target state="needs-translation">Previous mapper</target>
+        <target state="translated">المساهم السابق</target>
       </trans-unit>
       <trans-unit id="K5yIR1M" resname="Next mapper">
         <source>Next mapper</source>
-        <target state="needs-translation">Next mapper</target>
+        <target state="translated">المساهم التالي</target>
       </trans-unit>
       <trans-unit id="P1BTs65" resname="africa">
         <source>africa</source>
@@ -609,31 +609,31 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target state="needs-translation">{count} new mappers ({percent} %) have already been welcomed</target>
+        <target state="translated">{count} مساهمين جدد ({percent}%) منهم تم الترحيب به سلفًا</target>
       </trans-unit>
       <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
         <source>Mapper detected in {count} region(s)</source>
-        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+        <target state="translated">تم رصد المُساهم في {count} منطقة (مناطق)</target>
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">تنزيل موجز RSS الخاص بـ OSMCha</target>
       </trans-unit>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
-        <target state="needs-translation">regions</target>
+        <target state="translated">منطقة</target>
       </trans-unit>
       <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
         <source>Showing {from} to {to} of {total} results</source>
-        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
+        <target state="translated">عرض النتائج من {from} إلى {to} من أصل {total}</target>
       </trans-unit>
       <trans-unit id="pXsIpIC" resname="Previous">
         <source>Previous</source>
-        <target state="needs-translation">Previous</target>
+        <target state="translated">السابق</target>
       </trans-unit>
       <trans-unit id="H.V6Kdf" resname="Next">
         <source>Next</source>
-        <target state="needs-translation">Next</target>
+        <target state="translated">التالي</target>
       </trans-unit>
     </body>
   </file>
