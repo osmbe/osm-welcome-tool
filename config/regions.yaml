@@ -117,6 +117,10 @@ regions:
       name: Philippines
       flag: 🇵🇭
       osmcha.id: 6f6dcbc8-8811-4e5c-934d-ebb13af0590a
+    saudi-arabia:
+      name: Saudi Arabia
+      flag: 🇸🇦
+      osmcha.id: 1db3d6b7-dd60-4e72-9195-36306bfa982d
     south-korea:
       name: South Korea
       flag: 🇰🇷
@@ -369,3 +373,7 @@ regions:
       name: Bogotá
       flag: 🇨🇴
       osmcha.id: 1aa040cb-4a72-44bf-af14-7cada5146534
+    venezuela:
+      name: Venezuela
+      flag: 🇻🇪
+      osmcha.id: b873ce2a-9597-4557-9488-657848512924

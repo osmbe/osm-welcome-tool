@@ -6,8 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: "composer"
-    directory: "/"
     target-branch: "2.x"
+    directory: "/"
     schedule:
       interval: "monthly"
     groups:
@@ -22,8 +22,8 @@ updates:
         patterns:
           - "phpstan/*"
   - package-ecosystem: "npm"
-    directory: "/"
     target-branch: "2.x"
+    directory: "/"
     schedule:
       interval: "monthly"
     groups:
@@ -38,14 +38,19 @@ updates:
         patterns:
           - "webpack*"
   - package-ecosystem: "docker"
+    target-branch: "2.x"
     directory: "/"
     open-pull-requests-limit: 10
     schedule:
       interval: "monthly"
-    target-branch: "2.x"
   - package-ecosystem: "github-actions"
+    target-branch: "2.x"
     directory: "/"
     open-pull-requests-limit: 10
     schedule:
       interval: "monthly"
+  - package-ecosystem: "devcontainers"
     target-branch: "2.x"
+    directory: "/"
+    schedule:
+      interval: "monthly"

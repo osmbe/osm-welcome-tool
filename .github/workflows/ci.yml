@@ -21,7 +21,7 @@ jobs:
       matrix:
         php-versions: [ 8.4, 8.5 ] # See https://www.php.net/supported-versions.php
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
@@ -29,7 +29,7 @@ jobs:
       run: composer validate
     - name: Cache Composer packages
       id: composer-cache
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
@@ -44,6 +44,110 @@ jobs:
     - name: Run test suite
       run: vendor/bin/simple-phpunit
 
+  symfony-lint-container:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:container
+  symfony-lint-translations:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: |
+        php bin/console lint:translations \
+        --locale=ar --locale=bg --locale=de --locale=en --locale=es_ES --locale=fr --locale=hu --locale=it --locale=ja --locale=ko \
+        --locale=nl --locale=pl --locale=pt_BR --locale=pt_PT --locale=sl --locale=sq --locale=uk --locale=zh_CN --locale=zh_TW
+  symfony-lint-twig:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:twig templates/
+  symfony-lint-xliff:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:xliff translations/
+  symfony-lint-yaml:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.4
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v6
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+    - run: php bin/console lint:yaml config/
+
   node-build:
     runs-on: ubuntu-latest
     strategy:
@@ -51,7 +155,7 @@ jobs:
       matrix:
         node-version: [ 24.x ] # See https://nodejs.org/en/about/releases/
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v6
       with:
@@ -72,7 +176,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: node-build
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - run: npm ci
     - run: npm run lint --if-present
 
@@ -80,16 +184,20 @@ jobs:
     runs-on: ubuntu-latest
     needs: node-build
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - run: npm ci
     - run: npm run geojsonhint --if-present
 
   docker-build:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       packages: write
+      attestations: write
+      artifact-metadata: write
+      id-token: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
       - name: Log in to the Container registry
@@ -105,8 +213,17 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build and push Docker image
+        id: push
         uses: docker/build-push-action@v7
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+      - name: Generate artifact attestation
+        uses: actions/attest@v4
+        if: github.event_name != 'pull_request'
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true

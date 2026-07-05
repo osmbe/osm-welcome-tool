@@ -253,6 +253,10 @@
         <source>Russia</source>
         <target state="needs-translation">Russia</target>
       </trans-unit>
+      <trans-unit id="JLHJS5l" resname="Saudi Arabia">
+        <source>Saudi Arabia</source>
+        <target state="needs-translation">Saudi Arabia</target>
+      </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
         <target state="translated">Escócia</target>
@@ -348,6 +352,10 @@
       <trans-unit id="grzhC1_" resname="Utah">
         <source>Utah</source>
         <target state="translated">Utah</target>
+      </trans-unit>
+      <trans-unit id="KHbthuj" resname="Venezuela">
+        <source>Venezuela</source>
+        <target state="needs-translation">Venezuela</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>

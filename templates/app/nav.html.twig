@@ -15,10 +15,10 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="hidden sm:ml-6 sm:flex sm:items-center">
+            <div class="hidden ltr:sm:ml-6 rtl:sm:mr-6 sm:flex sm:items-center">
                 {% if app.user is null %}
                 <a href="{{ path('connect_openstreetmap_start') }}"
-                    class="ml-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    class="ltr:ml-6 rtl:mr-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     {{ 'Login with OSM'|trans }}
                 </a>
                 {% else %}
