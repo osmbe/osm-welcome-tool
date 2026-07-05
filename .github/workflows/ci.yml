@@ -66,10 +66,6 @@ jobs:
     - run: php bin/console lint:container
   symfony-lint-translations:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        locale: [ ar, bg, de, en, es_ES, fr, hu, it, ja, ko, nl, pl, pt_BR, pt_PT, sl, sq, uk, zh_CN, zh_TW ]
     steps:
     - uses: actions/checkout@v7
     - uses: shivammathur/setup-php@v2
@@ -87,7 +83,10 @@ jobs:
           ${{ runner.os }}-php-
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-    - run: php bin/console lint:translations --locale=${{ matrix.locale }}
+    - run: |
+        php bin/console lint:translations \
+        --locale=ar --locale=bg --locale=de --locale=en --locale=es_ES --locale=fr --locale=hu --locale=it --locale=ja --locale=ko \
+        --locale=nl --locale=pl --locale=pt_BR --locale=pt_PT --locale=sl --locale=sq --locale=uk --locale=zh_CN --locale=zh_TW
   symfony-lint-twig:
     runs-on: ubuntu-latest
     steps:
