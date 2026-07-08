@@ -255,7 +255,7 @@
       </trans-unit>
       <trans-unit id="JLHJS5l" resname="Saudi Arabia">
         <source>Saudi Arabia</source>
-        <target state="needs-translation">Saudi Arabia</target>
+        <target state="translated">Savdska Arabija</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -621,7 +621,7 @@ Pomaga vam odkriti nove kartografe na vašem področji in jim poslati dobrodošl
       </trans-unit>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
-        <target state="needs-translation">regions</target>
+        <target state="translated">regij</target>
       </trans-unit>
       <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
         <source>Showing {from} to {to} of {total} results</source>
