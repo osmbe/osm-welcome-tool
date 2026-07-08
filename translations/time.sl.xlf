@@ -55,19 +55,19 @@
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
-        <target state="needs-translation">1 second|%count% seconds</target>
+        <target state="translated">{1}%count% sekunda|{2}%count% sekundi|{3}%count% sekunde|[4, Inf]%count% sekund</target>
       </trans-unit>
       <trans-unit id="MorJRc_" resname="duration.minute">
         <source>duration.minute</source>
-        <target state="needs-translation">1 minute|%count% minutes</target>
+        <target state="translated">{1}%count% minuta|{2}%count% minuti|{3}%count% minute|[4, Inf]%count% minut</target>
       </trans-unit>
       <trans-unit id="FynQfYn" resname="duration.hour">
         <source>duration.hour</source>
-        <target state="needs-translation">1 hour|%count% hours</target>
+        <target state="translated">{1}%count% ura|{2}%count% uri|{3}%count% ure|[4, Inf]%count% ur</target>
       </trans-unit>
       <trans-unit id="4rZn5fT" resname="duration.day">
         <source>duration.day</source>
-        <target state="needs-translation">1 day|%count% days</target>
+        <target state="translated">{1}%count% dan|{2}%count% dneva|[3, Inf]čez %count% dni</target>
       </trans-unit>
       <trans-unit id="erNVD2d" resname="duration.none">
         <source>duration.none</source>
@@ -75,7 +75,7 @@
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>
-        <target state="needs-translation">1 year old|%count% years old</target>
+        <target state="translated">{1}star %count% leto|{2}star %count% leti|{3}star %count% leta|[4, Inf]star %count% let</target>
       </trans-unit>
     </body>
   </file>
