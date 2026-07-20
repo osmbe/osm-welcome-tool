@@ -39,11 +39,11 @@
       </trans-unit>
       <trans-unit id="3NeQftv" resname="This field was not expected.">
         <source>This field was not expected.</source>
-        <target state="needs-translation">This field was not expected.</target>
+        <target state="translated">لم يكن من المتوقع هذا الحقل.</target>
       </trans-unit>
       <trans-unit id="SwMV4zp" resname="This field is missing.">
         <source>This field is missing.</source>
-        <target state="needs-translation">This field is missing.</target>
+        <target state="translated">هذا الحقل مفقود.</target>
       </trans-unit>
       <trans-unit id="LO2vFKN" resname="This value is not a valid date.">
         <source>This value is not a valid date.</source>
@@ -59,107 +59,107 @@
       </trans-unit>
       <trans-unit id="3KeHbZy" resname="The file could not be found.">
         <source>The file could not be found.</source>
-        <target state="needs-translation">The file could not be found.</target>
+        <target state="translated">لا يمكن العثور على الملف.</target>
       </trans-unit>
       <trans-unit id="KtJhQZo" resname="The file is not readable.">
         <source>The file is not readable.</source>
-        <target state="needs-translation">The file is not readable.</target>
+        <target state="translated">الملف غير قابل للقراءة.</target>
       </trans-unit>
       <trans-unit id="JocOVM2" resname="The file is too large ({{ size }} {{ suffix }}). Allowed maximum size is {{ limit }} {{ suffix }}.">
         <source>The file is too large ({{ size }} {{ suffix }}). Allowed maximum size is {{ limit }} {{ suffix }}.</source>
-        <target state="needs-translation">The file is too large ({{ size }} {{ suffix }}). Allowed maximum size is {{ limit }} {{ suffix }}.</target>
+        <target state="translated">هذا الملف كبير جدا ({{ size }} {{ suffix }}). أقصى مساحه مسموح بها {{ limit }} {{ suffix }}.</target>
       </trans-unit>
       <trans-unit id="YW21SPH" resname="The mime type of the file is invalid ({{ type }}). Allowed mime types are {{ types }}.">
         <source>The mime type of the file is invalid ({{ type }}). Allowed mime types are {{ types }}.</source>
-        <target state="needs-translation">The mime type of the file is invalid ({{ type }}). Allowed mime types are {{ types }}.</target>
+        <target state="translated">نوع mime من الملف غير صالح ({{ type }}). أنواع mime المسموح بها هي {{ types }}.</target>
       </trans-unit>
       <trans-unit id="NubOmrs" resname="This value should be {{ limit }} or less.">
         <source>This value should be {{ limit }} or less.</source>
-        <target state="needs-translation">This value should be {{ limit }} or less.</target>
+        <target state="translated">هذه القيمة يجب ان تكون {{ limit }} او اقل.</target>
       </trans-unit>
       <trans-unit id="HX7TOFm" resname="This value is too long. It should have {{ limit }} character or less.|This value is too long. It should have {{ limit }} characters or less.">
         <source>This value is too long. It should have {{ limit }} character or less.|This value is too long. It should have {{ limit }} characters or less.</source>
-        <target state="needs-translation">This value is too long. It should have {{ limit }} character or less.|This value is too long. It should have {{ limit }} characters or less.</target>
+        <target state="translated">هذه القيمة طويلة جداً. يجب أن تحتوي على {{ limit }} حرف أو أقل.|هذه القيمة طويلة جداً. يجب أن تحتوي على {{ limit }} حرف أو أقل.</target>
       </trans-unit>
       <trans-unit id="qgR8M_U" resname="This value should be {{ limit }} or more.">
         <source>This value should be {{ limit }} or more.</source>
-        <target state="needs-translation">This value should be {{ limit }} or more.</target>
+        <target state="translated">هذه القيمة يجب أن تكون {{ limit }} أو اكثر.</target>
       </trans-unit>
       <trans-unit id="ekfrU.c" resname="This value is too short. It should have {{ limit }} character or more.|This value is too short. It should have {{ limit }} characters or more.">
         <source>This value is too short. It should have {{ limit }} character or more.|This value is too short. It should have {{ limit }} characters or more.</source>
-        <target state="needs-translation">This value is too short. It should have {{ limit }} character or more.|This value is too short. It should have {{ limit }} characters or more.</target>
+        <target state="translated">هذه القيمة قصيرة جداً. يجب أن تحتوي على {{ limit }} حرف أو أكثر.|هذه القيمة قصيرة جداً. يجب أن تحتوي على {{ limit }} حرف أو أكثر.</target>
       </trans-unit>
       <trans-unit id="1KV4L.t" resname="This value should not be blank.">
         <source>This value should not be blank.</source>
-        <target state="needs-translation">This value should not be blank.</target>
+        <target state="translated">هذه القيمة يجب ألا تكون فارغة.</target>
       </trans-unit>
       <trans-unit id="2G4Vepm" resname="This value should not be null.">
         <source>This value should not be null.</source>
-        <target state="needs-translation">This value should not be null.</target>
+        <target state="translated">هذه القيمة يجب ألا تكون معدومة.</target>
       </trans-unit>
       <trans-unit id="yDc3m6E" resname="This value should be null.">
         <source>This value should be null.</source>
-        <target state="needs-translation">This value should be null.</target>
+        <target state="translated">هذه القيمة يجب أن تكون معدومة.</target>
       </trans-unit>
       <trans-unit id="zKzWejA" resname="This value is not valid.">
         <source>This value is not valid.</source>
-        <target state="needs-translation">This value is not valid.</target>
+        <target state="translated">هذه القيمة غير صحيحة.</target>
       </trans-unit>
       <trans-unit id="HSuBZpQ" resname="This value is not a valid time.">
         <source>This value is not a valid time.</source>
-        <target state="needs-translation">This value is not a valid time.</target>
+        <target state="translated">هذه القيمة ليست وقتاً صالحاً.</target>
       </trans-unit>
       <trans-unit id="snWc_QT" resname="This value is not a valid URL.">
         <source>This value is not a valid URL.</source>
-        <target state="needs-translation">This value is not a valid URL.</target>
+        <target state="translated">هذه القيمة ليست رابط صالح.</target>
       </trans-unit>
       <trans-unit id="jpaLsb2" resname="The two values should be equal.">
         <source>The two values should be equal.</source>
-        <target state="needs-translation">The two values should be equal.</target>
+        <target state="translated">القيمتان يجب ان تكونا متساويتان.</target>
       </trans-unit>
       <trans-unit id="fIlB1B_" resname="The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.">
         <source>The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.</source>
-        <target state="needs-translation">The file is too large. Allowed maximum size is {{ limit }} {{ suffix }}.</target>
+        <target state="translated">الملف كبير جدا. أقصى حجم مسموح به {{ limit }} {{ suffix }}.</target>
       </trans-unit>
       <trans-unit id="tW7o0t9" resname="The file is too large.">
         <source>The file is too large.</source>
-        <target state="needs-translation">The file is too large.</target>
+        <target state="translated">الملف كبير جدا.</target>
       </trans-unit>
       <trans-unit id=".exF5Ww" resname="The file could not be uploaded.">
         <source>The file could not be uploaded.</source>
-        <target state="needs-translation">The file could not be uploaded.</target>
+        <target state="translated">تعذر تحميل الملف.</target>
       </trans-unit>
       <trans-unit id="d7sS5yw" resname="This value should be a valid number.">
         <source>This value should be a valid number.</source>
-        <target state="needs-translation">This value should be a valid number.</target>
+        <target state="translated">هذه القيمة يجب أن تكون رقما صالحا.</target>
       </trans-unit>
       <trans-unit id="BS2Ez6i" resname="This file is not a valid image.">
         <source>This file is not a valid image.</source>
-        <target state="needs-translation">This file is not a valid image.</target>
+        <target state="translated">هذا الملف ليس صورة صالحة.</target>
       </trans-unit>
       <trans-unit id="ydcT9kU" resname="This is not a valid IP address.">
         <source>This is not a valid IP address.</source>
-        <target state="needs-translation">This is not a valid IP address.</target>
+        <target state="translated">هذا ليس عنوان IP صالح.</target>
       </trans-unit>
       <trans-unit id="lDOGNFX" resname="This value is not a valid language.">
         <source>This value is not a valid language.</source>
-        <target state="needs-translation">This value is not a valid language.</target>
+        <target state="translated">هذه القيمة ليست لغة صالحة.</target>
       </trans-unit>
       <trans-unit id="y9IdYkA" resname="This value is not a valid locale.">
         <source>This value is not a valid locale.</source>
-        <target state="needs-translation">This value is not a valid locale.</target>
+        <target state="translated">هذه القيمة ليست موقع صحيح.</target>
       </trans-unit>
       <trans-unit id="1YC0pOd" resname="This value is not a valid country.">
         <source>This value is not a valid country.</source>
-        <target state="needs-translation">This value is not a valid country.</target>
+        <target state="translated">هذه القيمة ليست بلدا صالحا.</target>
       </trans-unit>
       <trans-unit id="B5ebaMp" resname="This value is already used.">
         <source>This value is already used.</source>
-        <target state="needs-translation">This value is already used.</target>
+        <target state="translated">هذه القيمة مستخدمة بالفعل.</target>
       </trans-unit>
       <trans-unit id="L6097a6" resname="The size of the image could not be detected.">
         <source>The size of the image could not be detected.</source>
-        <target state="needs-translation">The size of the image could not be detected.</target>
+        <target state="translated">لا يمكن اكتشاف حجم الصورة.</target>
       </trans-unit>
       <trans-unit id="zVtJJEa" resname="The image width is too big ({{ width }}px). Allowed maximum width is {{ max_width }}px.">
         <source>The image width is too big ({{ width }}px). Allowed maximum width is {{ max_width }}px.</source>
@@ -187,15 +187,15 @@
       </trans-unit>
       <trans-unit id="xJ2Bcr_" resname="The file was only partially uploaded.">
         <source>The file was only partially uploaded.</source>
-        <target state="needs-translation">The file was only partially uploaded.</target>
+        <target state="translated">تم تحميل الملف جزئيا فقط.</target>
       </trans-unit>
       <trans-unit id="HzkJDtF" resname="No file was uploaded.">
         <source>No file was uploaded.</source>
-        <target state="needs-translation">No file was uploaded.</target>
+        <target state="translated">لم يتم رفع أي ملف.</target>
       </trans-unit>
       <trans-unit id="mHfEaB3" resname="No temporary folder was configured in php.ini.">
         <source>No temporary folder was configured in php.ini.</source>
-        <target state="needs-translation">No temporary folder was configured in php.ini, or the configured folder does not exist.</target>
+        <target state="translated">لم يتم تكوين مجلد مؤقت في php.ini أو المجلد المكون غير موجود.</target>
       </trans-unit>
       <trans-unit id="y9K3BGb" resname="Cannot write temporary file to disk.">
         <source>Cannot write temporary file to disk.</source>
@@ -243,11 +243,11 @@
       </trans-unit>
       <trans-unit id="cuct0Ow" resname="This value is not a valid ISSN.">
         <source>This value is not a valid ISSN.</source>
-        <target state="needs-translation">This value is not a valid ISSN.</target>
+        <target state="translated">هذه القيمة ليست ISSN صالحة.</target>
       </trans-unit>
       <trans-unit id="JBLs1a1" resname="This value is not a valid currency.">
         <source>This value is not a valid currency.</source>
-        <target state="needs-translation">This value is not a valid currency.</target>
+        <target state="translated">هذه القيمة ليست عملة صالحة.</target>
       </trans-unit>
       <trans-unit id="c.WxzFW" resname="This value should be equal to {{ compared_value }}.">
         <source>This value should be equal to {{ compared_value }}.</source>
@@ -395,7 +395,7 @@
       </trans-unit>
       <trans-unit id="CQ0wfFa" resname="This value is not a valid CSS color.">
         <source>This value is not a valid CSS color.</source>
-        <target state="needs-translation">This value is not a valid CSS color.</target>
+        <target state="translated">هذه القيمة ليست لون CSS صالحًا.</target>
       </trans-unit>
       <trans-unit id="GAaG0KN" resname="This value is not a valid CIDR notation.">
         <source>This value is not a valid CIDR notation.</source>
@@ -407,27 +407,27 @@
       </trans-unit>
       <trans-unit id="O5pay9e" resname="The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.">
         <source>The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</source>
-        <target state="needs-translation">The filename is too long. It should have {{ filename_max_length }} character or less.|The filename is too long. It should have {{ filename_max_length }} characters or less.</target>
+        <target state="translated">اسم الملف طويل جداً. يجب أن يحتوي على {{ filename_max_length }} حرف أو أقل.|اسم الملف طويل جداً. يجب أن يحتوي على {{ filename_max_length }} حرف أو أقل.</target>
       </trans-unit>
       <trans-unit id="f_lviDt" resname="The password strength is too low. Please use a stronger password.">
         <source>The password strength is too low. Please use a stronger password.</source>
-        <target state="needs-translation">The password strength is too low. Please use a stronger password.</target>
+        <target state="translated">قوة كلمة المرور منخفضة جداً. الرجاء استخدام كلمة مرور أقوى.</target>
       </trans-unit>
       <trans-unit id="xfCh6.k" resname="This value contains characters that are not allowed by the current restriction-level.">
         <source>This value contains characters that are not allowed by the current restriction-level.</source>
-        <target state="needs-translation">This value contains characters that are not allowed by the current restriction-level.</target>
+        <target state="translated">هذه القيمة تحتوي على حروف غير مسموح بها وفقاً لمستوى القيود الحالي.</target>
       </trans-unit>
       <trans-unit id="x15dlan" resname="Using invisible characters is not allowed.">
         <source>Using invisible characters is not allowed.</source>
-        <target state="needs-translation">Using invisible characters is not allowed.</target>
+        <target state="translated">استخدام الأحرف غير المرئية غير مسموح به.</target>
       </trans-unit>
       <trans-unit id="2NiS4YC" resname="Mixing numbers from different scripts is not allowed.">
         <source>Mixing numbers from different scripts is not allowed.</source>
-        <target state="needs-translation">Mixing numbers from different scripts is not allowed.</target>
+        <target state="translated">لا يُسمح بخلط الأرقام من أنظمة كتابة مختلفة.</target>
       </trans-unit>
       <trans-unit id="W8N1HuG" resname="Using hidden overlay characters is not allowed.">
         <source>Using hidden overlay characters is not allowed.</source>
-        <target state="needs-translation">Using hidden overlay characters is not allowed.</target>
+        <target state="translated">استخدام الأحرف المخفية غير مسموح به.</target>
       </trans-unit>
       <trans-unit id="pifGDXc" resname="The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.">
         <source>The extension of the file is invalid ({{ extension }}). Allowed extensions are {{ extensions }}.</source>
@@ -495,7 +495,7 @@
       </trans-unit>
       <trans-unit id="OPymPfZ" resname="The selected choice is invalid.">
         <source>The selected choice is invalid.</source>
-        <target state="needs-translation">The selected choice is invalid.</target>
+        <target state="translated">الاختيار المحدد غير صالح.</target>
       </trans-unit>
       <trans-unit id="GUH6TYE" resname="The collection is invalid.">
         <source>The collection is invalid.</source>
@@ -507,27 +507,27 @@
       </trans-unit>
       <trans-unit id="4AJRUCC" resname="Please select a valid country.">
         <source>Please select a valid country.</source>
-        <target state="needs-translation">Please select a valid country.</target>
+        <target state="translated">الرجاء اختيار بلد صالح.</target>
       </trans-unit>
       <trans-unit id="xAI5mrh" resname="Please select a valid currency.">
         <source>Please select a valid currency.</source>
-        <target state="needs-translation">Please select a valid currency.</target>
+        <target state="translated">الرجاء اختيار عملة صالحة.</target>
       </trans-unit>
       <trans-unit id="c6v9ASZ" resname="Please choose a valid date interval.">
         <source>Please choose a valid date interval.</source>
-        <target state="needs-translation">Please choose a valid date interval.</target>
+        <target state="translated">الرجاء اختيار فاصل زمني صالح.</target>
       </trans-unit>
       <trans-unit id="2BR60Jg" resname="Please enter a valid date and time.">
         <source>Please enter a valid date and time.</source>
-        <target state="needs-translation">Please enter a valid date and time.</target>
+        <target state="translated">الرجاء إدخال تاريخ ووقت صالحين.</target>
       </trans-unit>
       <trans-unit id="ofLBhv0" resname="Please enter a valid date.">
         <source>Please enter a valid date.</source>
-        <target state="needs-translation">Please enter a valid date.</target>
+        <target state="translated">يرجى إدخال تاريخ صالح.</target>
       </trans-unit>
       <trans-unit id="Xsmm6Mc" resname="Please select a valid file.">
         <source>Please select a valid file.</source>
-        <target state="needs-translation">Please select a valid file.</target>
+        <target state="translated">الرجاء تحديد ملف صالح.</target>
       </trans-unit>
       <trans-unit id="Fka0cZD" resname="The hidden field is invalid.">
         <source>The hidden field is invalid.</source>
@@ -543,71 +543,71 @@
       </trans-unit>
       <trans-unit id="vpa7l8w" resname="Please select a valid locale.">
         <source>Please select a valid locale.</source>
-        <target state="needs-translation">Please select a valid locale.</target>
+        <target state="translated">يرجى اختيار إعداد إقليمي صحيح.</target>
       </trans-unit>
       <trans-unit id="Gz8pWER" resname="Please enter a valid money amount.">
         <source>Please enter a valid money amount.</source>
-        <target state="needs-translation">Please enter a valid money amount.</target>
+        <target state="translated">الرجاء إدخال مبلغ مالي صالح.</target>
       </trans-unit>
       <trans-unit id="PRxiOhB" resname="Please enter a number.">
         <source>Please enter a number.</source>
-        <target state="needs-translation">Please enter a number.</target>
+        <target state="translated">يرجى إدخال عدد.</target>
       </trans-unit>
       <trans-unit id="seAdKJo" resname="The password is invalid.">
         <source>The password is invalid.</source>
-        <target state="needs-translation">The password is invalid.</target>
+        <target state="translated">كلمة المرور غير صالحة.</target>
       </trans-unit>
       <trans-unit id="A5k0Q20" resname="Please enter a percentage value.">
         <source>Please enter a percentage value.</source>
-        <target state="needs-translation">Please enter a percentage value.</target>
+        <target state="translated">الرجاء إدخال نسبة مئوية.</target>
       </trans-unit>
       <trans-unit id="rH6V.WA" resname="The values do not match.">
         <source>The values do not match.</source>
-        <target state="needs-translation">The values do not match.</target>
+        <target state="translated">القيم لا تتطابق.</target>
       </trans-unit>
       <trans-unit id="Eopl1Sm" resname="Please enter a valid time.">
         <source>Please enter a valid time.</source>
-        <target state="needs-translation">Please enter a valid time.</target>
+        <target state="translated">يرجى إدخال وقت صحيح.</target>
       </trans-unit>
       <trans-unit id="ll14Sm9" resname="Please select a valid timezone.">
         <source>Please select a valid timezone.</source>
-        <target state="needs-translation">Please select a valid timezone.</target>
+        <target state="translated">الرجاء تحديد منطقة زمنية صالحة.</target>
       </trans-unit>
       <trans-unit id="1xP1kmd" resname="Please enter a valid URL.">
         <source>Please enter a valid URL.</source>
-        <target state="needs-translation">Please enter a valid URL.</target>
+        <target state="translated">الرجاء إدخال URL صالح.</target>
       </trans-unit>
       <trans-unit id="iMmAsrC" resname="Please enter a valid search term.">
         <source>Please enter a valid search term.</source>
-        <target state="needs-translation">Please enter a valid search term.</target>
+        <target state="translated">الرجاء إدخال مصطلح بحث صحيح.</target>
       </trans-unit>
       <trans-unit id="GRMTXRX" resname="Please provide a valid phone number.">
         <source>Please provide a valid phone number.</source>
-        <target state="needs-translation">Please provide a valid phone number.</target>
+        <target state="translated">الرجاء تقديم رقم هاتف صالح.</target>
       </trans-unit>
       <trans-unit id="WkYuMDd" resname="The checkbox has an invalid value.">
         <source>The checkbox has an invalid value.</source>
-        <target state="needs-translation">The checkbox has an invalid value.</target>
+        <target state="translated">خانة الاختيار لها قيمة غير صالحة.</target>
       </trans-unit>
       <trans-unit id="lY5Mzyl" resname="Please enter a valid email address.">
         <source>Please enter a valid email address.</source>
-        <target state="needs-translation">Please enter a valid email address.</target>
+        <target state="translated">الرجاء إدخال بريد إلكتروني صالح.</target>
       </trans-unit>
       <trans-unit id="TzSC4.o" resname="Please select a valid option.">
         <source>Please select a valid option.</source>
-        <target state="needs-translation">Please select a valid option.</target>
+        <target state="translated">الرجاء تحديد خيار صالح.</target>
       </trans-unit>
       <trans-unit id="qGRcTk7" resname="Please select a valid range.">
         <source>Please select a valid range.</source>
-        <target state="needs-translation">Please select a valid range.</target>
+        <target state="translated">يرجى تحديد نطاق صالح.</target>
       </trans-unit>
       <trans-unit id="PU.w6nC" resname="Please enter a valid week.">
         <source>Please enter a valid week.</source>
-        <target state="needs-translation">Please enter a valid week.</target>
+        <target state="translated">يرجى إدخال أسبوع صحيح.</target>
       </trans-unit>
       <trans-unit id="my3IOqd" resname="This value is not a valid slug.">
         <source>This value is not a valid slug.</source>
-        <target state="needs-translation">This value is not a valid slug.</target>
+        <target state="translated">هذه القيمة ليست معرّف رابط slug صالحاً.</target>
       </trans-unit>
     </body>
   </file>
