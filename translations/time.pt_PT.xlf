@@ -7,75 +7,75 @@
     <body>
       <trans-unit id="BJMjkzc" resname="diff.ago.year">
         <source>diff.ago.year</source>
-        <target state="needs-translation">1 year ago|%count% years ago</target>
+        <target state="translated">há 1 ano|há %count% anos</target>
       </trans-unit>
       <trans-unit id="QlOaaz7" resname="diff.ago.month">
         <source>diff.ago.month</source>
-        <target state="needs-translation">1 month ago|%count% months ago</target>
+        <target state="translated">há 1 mês|há %count% meses</target>
       </trans-unit>
       <trans-unit id="0icjxey" resname="diff.ago.day">
         <source>diff.ago.day</source>
-        <target state="needs-translation">1 day ago|%count% days ago</target>
+        <target state="translated">há 1 dia|há %count% dias</target>
       </trans-unit>
       <trans-unit id="Qb4ReOq" resname="diff.ago.hour">
         <source>diff.ago.hour</source>
-        <target state="needs-translation">1 hour ago|%count% hours ago</target>
+        <target state="translated">há 1 hora|há %count% horas</target>
       </trans-unit>
       <trans-unit id="ildUKt_" resname="diff.ago.minute">
         <source>diff.ago.minute</source>
-        <target state="needs-translation">1 minute ago|%count% minutes ago</target>
+        <target state="translated">há 1 minuto|há %count% minutos</target>
       </trans-unit>
       <trans-unit id="UQtErIZ" resname="diff.ago.second">
         <source>diff.ago.second</source>
-        <target state="needs-translation">1 second ago|%count% seconds ago</target>
+        <target state="translated">há 1 segundo|há %count% segundos</target>
       </trans-unit>
       <trans-unit id="VgQkGkv" resname="diff.in.second">
         <source>diff.in.second</source>
-        <target state="needs-translation">in 1 second|in %count% seconds</target>
+        <target state="translated">em 1 segundo|em %count% segundos</target>
       </trans-unit>
       <trans-unit id="dJQGobP" resname="diff.in.hour">
         <source>diff.in.hour</source>
-        <target state="needs-translation">in 1 hour|in %count% hours</target>
+        <target state="translated">em 1 hora|em %count% horas</target>
       </trans-unit>
       <trans-unit id="AFqulYH" resname="diff.in.minute">
         <source>diff.in.minute</source>
-        <target state="needs-translation">in 1 minute|in %count% minutes</target>
+        <target state="translated">em 1 minuto|em %count% minutos</target>
       </trans-unit>
       <trans-unit id="vKk2WhV" resname="diff.in.day">
         <source>diff.in.day</source>
-        <target state="needs-translation">in 1 day|in %count% days</target>
+        <target state="translated">em 1 dia|em %count% dias</target>
       </trans-unit>
       <trans-unit id="INy1OSI" resname="diff.in.month">
         <source>diff.in.month</source>
-        <target state="needs-translation">in 1 month|in %count% months</target>
+        <target state="translated">em 1 mês|em %count% meses</target>
       </trans-unit>
       <trans-unit id="Zy1_IlC" resname="diff.in.year">
         <source>diff.in.year</source>
-        <target state="needs-translation">in 1 year|in %count% years</target>
+        <target state="translated">em 1 ano|em %count% anos</target>
       </trans-unit>
       <trans-unit id="8uG.Z9X" resname="duration.second">
         <source>duration.second</source>
-        <target state="needs-translation">1 second|%count% seconds</target>
+        <target state="translated">1 segundo|%count% segundos</target>
       </trans-unit>
       <trans-unit id="MorJRc_" resname="duration.minute">
         <source>duration.minute</source>
-        <target state="needs-translation">1 minute|%count% minutes</target>
+        <target state="translated">1 minuto|%count% minutos</target>
       </trans-unit>
       <trans-unit id="FynQfYn" resname="duration.hour">
         <source>duration.hour</source>
-        <target state="needs-translation">1 hour|%count% hours</target>
+        <target state="translated">1 hora|%count% horas</target>
       </trans-unit>
       <trans-unit id="4rZn5fT" resname="duration.day">
         <source>duration.day</source>
-        <target state="needs-translation">1 day|%count% days</target>
+        <target state="translated">1 dia|%count% dias</target>
       </trans-unit>
       <trans-unit id="erNVD2d" resname="duration.none">
         <source>duration.none</source>
-        <target state="needs-translation"><![CDATA[< 1 second]]></target>
+        <target state="translated"><![CDATA[< 1 segundo]]></target>
       </trans-unit>
       <trans-unit id="AT9UQAy" resname="age">
         <source>age</source>
-        <target state="needs-translation">1 year old|%count% years old</target>
+        <target state="translated">1 ano de idade|%count% anos de idade</target>
       </trans-unit>
     </body>
   </file>
