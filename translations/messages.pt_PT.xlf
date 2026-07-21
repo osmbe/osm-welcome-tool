@@ -107,15 +107,15 @@
       </trans-unit>
       <trans-unit id="RpFJIXn" resname="Georgia">
         <source>Georgia</source>
-        <target state="needs-translation">Georgia</target>
+        <target state="translated">Geórgia</target>
       </trans-unit>
       <trans-unit id="UxBLePE" resname="Abkhazia">
         <source>Abkhazia</source>
-        <target state="needs-translation">Abkhazia</target>
+        <target state="translated">Abecásia</target>
       </trans-unit>
       <trans-unit id="ok76r4z" resname="Tskhinvali">
         <source>Tskhinvali</source>
-        <target state="needs-translation">Tskhinvali</target>
+        <target state="translated">Cequinváli</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -135,7 +135,7 @@
       </trans-unit>
       <trans-unit id="R6.P89y" resname="Hamburg">
         <source>Hamburg</source>
-        <target state="needs-translation">Hamburg</target>
+        <target state="translated">Hamburgo</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
@@ -251,11 +251,11 @@
       </trans-unit>
       <trans-unit id="M6PY7ZK" resname="Russia">
         <source>Russia</source>
-        <target state="needs-translation">Russia</target>
+        <target state="translated">Rússia</target>
       </trans-unit>
       <trans-unit id="JLHJS5l" resname="Saudi Arabia">
         <source>Saudi Arabia</source>
-        <target state="needs-translation">Saudi Arabia</target>
+        <target state="translated">Arábia Saudita</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -355,7 +355,7 @@
       </trans-unit>
       <trans-unit id="KHbthuj" resname="Venezuela">
         <source>Venezuela</source>
-        <target state="needs-translation">Venezuela</target>
+        <target state="translated">Venezuela</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
@@ -363,11 +363,11 @@
       </trans-unit>
       <trans-unit id="DuAztff" resname="Virginia">
         <source>Virginia</source>
-        <target state="needs-translation">Virginia</target>
+        <target state="translated">Virgínia</target>
       </trans-unit>
       <trans-unit id="HIwbKem" resname="Washington, D.C.">
         <source>Washington, D.C.</source>
-        <target state="needs-translation">Washington, D.C.</target>
+        <target state="translated">Washington D.C.</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -624,15 +624,15 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
         <source>Showing {from} to {to} of {total} results</source>
-        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
+        <target state="translated">A mostrar {from} de {to} de {total} resultados</target>
       </trans-unit>
       <trans-unit id="pXsIpIC" resname="Previous">
         <source>Previous</source>
-        <target state="needs-translation">Previous</target>
+        <target state="translated">Anterior</target>
       </trans-unit>
       <trans-unit id="H.V6Kdf" resname="Next">
         <source>Next</source>
-        <target state="needs-translation">Next</target>
+        <target state="translated">Seguinte</target>
       </trans-unit>
     </body>
   </file>
