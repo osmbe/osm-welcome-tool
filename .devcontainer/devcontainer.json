@@ -13,7 +13,8 @@
         "ghcr.io/devcontainers/features/node:2": {
             "version": "24"
         },
-		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
+		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.10.0": {}
 	},
 
 	// Configure tool-specific properties.
