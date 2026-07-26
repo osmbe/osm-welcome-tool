@@ -14,7 +14,9 @@
             "version": "24"
         },
 		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.10.0": {}
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.10.0": {
+			"moby": false
+		}
 	},
 
 	// Configure tool-specific properties.
