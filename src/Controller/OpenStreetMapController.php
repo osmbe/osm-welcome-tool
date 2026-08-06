@@ -16,7 +16,7 @@ class OpenStreetMapController extends AbstractController
     {
         return $clientRegistry
             ->getClient('openstreetmap') // key used in config/packages/knpu_oauth2_client.yaml
-            ->redirect([], []);
+            ->redirect(['read_prefs', 'send_messages'], []);
     }
 
     #[Route('/connect/openstreetmap/check', name: 'connect_openstreetmap_check')]

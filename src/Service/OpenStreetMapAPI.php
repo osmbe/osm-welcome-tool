@@ -31,4 +31,23 @@ class OpenStreetMapAPI
 
         return $response;
     }
+
+    public function sendMessage(int $userId, string $title, string $body): ResponseInterface
+    {
+        $response = $this->osmClient->request(
+            'POST',
+            'user/messages.json',
+            [
+                'json' => [
+                    // 'recipient_id' => $userId,
+                    'recipient' => 'jbelien',
+                    'title' => $title,
+                    'body' => $body,
+                    'body_format' => 'markdown',
+                ],
+            ]
+        );
+
+        return $response;
+    }
 }

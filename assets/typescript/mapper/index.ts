@@ -41,20 +41,20 @@ if (element !== null) {
     setTimeout(() => { button.classList.remove('text-green-500'); }, 1500);
   });
 
-  document.getElementById('template-form')?.addEventListener('submit', (event: Event) => {
-    event.preventDefault();
+  // document.getElementById('template-form')?.addEventListener('submit', (event: Event) => {
+  //   event.preventDefault();
 
-    const form = (event.target as HTMLFormElement);
+  //   const form = (event.target as HTMLFormElement);
 
-    const title = (document.getElementById('template-title') as HTMLInputElement)?.value;
-    const body = jar.toString();
+  //   const title = (document.getElementById('template-title') as HTMLInputElement)?.value;
+  //   const body = jar.toString();
 
-    const { mapper } = form.dataset;
+  //   const { mapper } = form.dataset;
 
-    const url = new URL(`https://www.openstreetmap.org/message/new/${mapper}`);
-    url.searchParams.set('message[title]', title);
-    url.searchParams.set('message[body]', body);
+  //   const url = new URL(`https://www.openstreetmap.org/message/new/${mapper}`);
+  //   url.searchParams.set('message[title]', title);
+  //   url.searchParams.set('message[body]', body);
 
-    window.open(url.toString());
-  });
+  //   window.open(url.toString());
+  // });
 }
