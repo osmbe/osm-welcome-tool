@@ -6,51 +6,40 @@
 version: 2
 updates:
   - package-ecosystem: "composer"
-    target-branch: "2.x"
     directory: "/"
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
     groups:
-      symfony:
-        patterns:
-          - "symfony/*"
-      twig:
-        patterns:
-          - "twig/*"
-      phpstan:
+      production:
+        dependency-type: production
+      development:
         dependency-type: development
-        patterns:
-          - "phpstan/*"
   - package-ecosystem: "npm"
-    target-branch: "2.x"
     directory: "/"
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
     groups:
-      babel:
-        patterns:
-          - "@babel/*"
-      eslint:
-        patterns:
-          - "@typescript-eslint/*"
-          - "eslint*"
-      webpack:
-        patterns:
-          - "webpack*"
+      production:
+        dependency-type: production
+      development:
+        dependency-type: development
   - package-ecosystem: "docker"
-    target-branch: "2.x"
     directory: "/"
-    open-pull-requests-limit: 10
     schedule:
       interval: "monthly"
   - package-ecosystem: "github-actions"
-    target-branch: "2.x"
     directory: "/"
-    open-pull-requests-limit: 10
     schedule:
       interval: "monthly"
   - package-ecosystem: "devcontainers"
-    target-branch: "2.x"
     directory: "/"
     schedule:
       interval: "monthly"
