@@ -11,11 +11,11 @@
       </trans-unit>
       <trans-unit id="6guTfqM" resname="Argentina">
         <source>Argentina</source>
-        <target state="needs-translation">Argentina</target>
+        <target state="translated">Argentinien</target>
       </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
-        <target state="needs-translation">Australia</target>
+        <target state="translated">Australien</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
@@ -47,7 +47,7 @@
       </trans-unit>
       <trans-unit id="7tvm2Ww" resname="Ontario">
         <source>Ontario</source>
-        <target state="needs-translation">Ontario</target>
+        <target state="translated">Ontario</target>
       </trans-unit>
       <trans-unit id="OMKd.Cf" resname="Catalan Countries">
         <source>Catalan Countries</source>
@@ -55,11 +55,11 @@
       </trans-unit>
       <trans-unit id="9Sc_I21" resname="Chile">
         <source>Chile</source>
-        <target state="needs-translation">Chile</target>
+        <target state="translated">Chile</target>
       </trans-unit>
       <trans-unit id="EENoKQM" resname="China">
         <source>China</source>
-        <target state="needs-translation">China</target>
+        <target state="translated">China</target>
       </trans-unit>
       <trans-unit id="ZbtG7Qe" resname="Beijing">
         <source>Beijing</source>
@@ -67,11 +67,11 @@
       </trans-unit>
       <trans-unit id="f5jx79f" resname="Heilongjiang">
         <source>Heilongjiang</source>
-        <target state="needs-translation">Heilongjiang</target>
+        <target state="translated">Heilongjiang</target>
       </trans-unit>
       <trans-unit id="EAhQbhX" resname="Hunan">
         <source>Hunan</source>
-        <target state="needs-translation">Hunan</target>
+        <target state="translated">Hunan</target>
       </trans-unit>
       <trans-unit id="a2Fa2xM" resname="Colombia">
         <source>Colombia</source>
@@ -79,7 +79,7 @@
       </trans-unit>
       <trans-unit id="SuYr9Og" resname="Colorado">
         <source>Colorado</source>
-        <target state="needs-translation">Colorado</target>
+        <target state="translated">Colorado</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
@@ -87,11 +87,11 @@
       </trans-unit>
       <trans-unit id="B.YrAhd" resname="Brazil">
         <source>Brazil</source>
-        <target state="needs-translation">Brazil</target>
+        <target state="translated">Brasilien</target>
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+        <target state="translated">DACHLI-Obersee-Rheintal</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -107,15 +107,15 @@
       </trans-unit>
       <trans-unit id="RpFJIXn" resname="Georgia">
         <source>Georgia</source>
-        <target state="needs-translation">Georgia</target>
+        <target state="translated">Georgien</target>
       </trans-unit>
       <trans-unit id="UxBLePE" resname="Abkhazia">
         <source>Abkhazia</source>
-        <target state="needs-translation">Abkhazia</target>
+        <target state="translated">Abchasien</target>
       </trans-unit>
       <trans-unit id="ok76r4z" resname="Tskhinvali">
         <source>Tskhinvali</source>
-        <target state="needs-translation">Tskhinvali</target>
+        <target state="translated">Tskhinvali</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -123,23 +123,23 @@
       </trans-unit>
       <trans-unit id="2tEUtu1" resname="Berlin">
         <source>Berlin</source>
-        <target state="needs-translation">Berlin</target>
+        <target state="translated">Berlin</target>
       </trans-unit>
       <trans-unit id="_8gBrCS" resname="Berlin-Neukölln">
         <source>Berlin-Neukölln</source>
-        <target state="needs-translation">Berlin-Neukölln</target>
+        <target state="translated">Berlin-Neukölln</target>
       </trans-unit>
       <trans-unit id="XS9ZcZj" resname="Bremen">
         <source>Bremen</source>
-        <target state="needs-translation">Bremen</target>
+        <target state="translated">Bremen</target>
       </trans-unit>
       <trans-unit id="R6.P89y" resname="Hamburg">
         <source>Hamburg</source>
-        <target state="needs-translation">Hamburg</target>
+        <target state="translated">Hamburg</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
-        <target state="needs-translation">Ghana</target>
+        <target state="translated">Ghana</target>
       </trans-unit>
       <trans-unit id="RaFaJHD" resname="Guatemala">
         <source>Guatemala</source>
