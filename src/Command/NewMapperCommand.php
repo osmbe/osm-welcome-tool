@@ -50,7 +50,7 @@ class NewMapperCommand extends Command
             ->addOption('date', 'd', InputOption::VALUE_REQUIRED, 'Date used for filtering (format: YYYY-MM-DD)');
     }
 
-    protected function initialize(InputInterface $input, OutputInterface $output)
+    protected function initialize(InputInterface $input, OutputInterface $output): void
     {
         $validate = $this->validator->validate($input->getOption('date'), new Date());
 
