@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="baI_ZxO" resname="An authentication exception occurred.">
         <source>An authentication exception occurred.</source>
-        <target state="translated">Es ist ein Fehler bei der Authentifikation aufgetreten.</target>
+        <target state="translated">Es ist ein Fehler bei der Authentifizierung aufgetreten.</target>
       </trans-unit>
       <trans-unit id="OETylMq" resname="Authentication credentials could not be found.">
         <source>Authentication credentials could not be found.</source>
@@ -15,7 +15,7 @@
       </trans-unit>
       <trans-unit id="3RJINQ0" resname="Authentication request could not be processed due to a system problem.">
         <source>Authentication request could not be processed due to a system problem.</source>
-        <target state="translated">Die Authentifikation konnte wegen eines Systemproblems nicht bearbeitet werden.</target>
+        <target state="translated">Die Authentifizierung konnte wegen eines Systemproblems nicht bearbeitet werden.</target>
       </trans-unit>
       <trans-unit id="qr0aiUo" resname="Invalid credentials.">
         <source>Invalid credentials.</source>
