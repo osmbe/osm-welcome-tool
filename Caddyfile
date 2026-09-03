@@ -1,0 +1,9 @@
+localhost
+
+encode zstd br gzip
+
+root public/
+
+php_server {
+	worker ./public/index.php
+}
