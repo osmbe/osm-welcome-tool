@@ -58,12 +58,6 @@ Encore
     config.plugins.push(['polyfill-corejs3', { method: 'usage-global', version: '3.49' }]);
   })
 
-  // enables @babel/preset-env polyfills
-  .configureBabelPresetEnv((config) => {
-    config.useBuiltIns = 'usage';
-    config.corejs = 3;
-  })
-
   // enables Sass/SCSS support
   // .enableSassLoader()
   // enables PostCSS support
