@@ -55,7 +55,6 @@ Encore
   .enableVersioning(Encore.isProduction())
 
   .configureBabel((config) => {
-    config.plugins.push('@babel/plugin-proposal-class-properties');
     config.plugins.push(['polyfill-corejs3', { method: 'usage-global', version: '3.49' }]);
   })
 
