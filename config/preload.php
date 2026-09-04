@@ -1,5 +1,6 @@
 <?php
 
-if (file_exists(dirname(__DIR__).'/var/cache/prod/App_KernelProdContainer.preload.php')) {
-    require dirname(__DIR__).'/var/cache/prod/App_KernelProdContainer.preload.php';
+$files = glob(dirname(__DIR__).'/var/cache/prod/*.preload.php');
+foreach (false !== $files ? $files : [] as $file) {
+    require $file;
 }
