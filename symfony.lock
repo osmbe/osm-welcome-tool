@@ -638,8 +638,8 @@
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "2.1",
-            "ref": "b346dae458e64a1921ded2125993d94bd719a8dd"
+            "version": "2.2",
+            "ref": "b618bf5f17ed61f523da7153025bf58ec9502f65"
         },
         "files": [
             "assets/app.js",
