@@ -19,7 +19,7 @@ FROM docker.io/dunglas/frankenphp:1-php8.4 AS app
 
 ## Install PHP dependencies
 
-RUN install-php-extensions intl pdo_pgsql sodium zip
+RUN install-php-extensions intl pdo_pgsql pdo_sqlite sodium zip
 
 ## Copy/Clean files
 

@@ -10,7 +10,6 @@
         "ext-intl": "*",
         "ext-pdo": "*",
         "ext-sodium": "*",
-        "composer/package-versions-deprecated": "^1.11.99.2",
         "doctrine/doctrine-bundle": "^3.0",
         "doctrine/doctrine-migrations-bundle": "^3.1",
         "doctrine/orm": "^3.5",
@@ -99,7 +98,6 @@
     },
     "config": {
         "allow-plugins": {
-            "composer/package-versions-deprecated": true,
             "ergebnis/composer-normalize": true,
             "phpro/grumphp": true,
             "phpro/grumphp-shim": true,
