@@ -20,7 +20,7 @@ FROM docker.io/library/php:8.4-apache AS app
 ## Install PHP dependencies
 
 RUN apt-get update -y \
-    && apt-get install -y libicu-dev libpq-dev libsodium-dev libzip-dev \
+    && apt-get install -y libicu-dev libpq-dev libsqlite3-dev libsodium-dev libzip-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
