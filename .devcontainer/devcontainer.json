@@ -8,7 +8,7 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/yassinedoghri/devcontainers/php-extensions-installer:1": {
-			"extensions": "intl pdo pdo_sqlite"
+			"extensions": "intl pdo_sqlite"
 		},
         "ghcr.io/devcontainers/features/node:2": {
             "version": "24"

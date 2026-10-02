@@ -25,7 +25,7 @@ RUN apt-get update -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-configure zip;
-RUN docker-php-ext-install -j$(nproc) intl pdo_pgsql sodium zip
+RUN docker-php-ext-install -j$(nproc) intl pdo_pgsql pdo_sqlite sodium zip
 
 ## Configure Apache
 
