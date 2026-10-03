@@ -59,3 +59,5 @@ RUN composer run-script post-install-cmd --no-dev
 
 ###> recipes ###
 ###< recipes ###
+
+EXPOSE 8080
