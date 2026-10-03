@@ -1,9 +1,31 @@
-localhost
+{
+    skip_install_trust
+    auto_https off
 
-encode zstd br gzip
+    {$CADDY_GLOBAL_OPTIONS}
 
-root public/
+    frankenphp {
+        {$FRANKENPHP_CONFIG}
+    }
+}
 
-php_server {
-	worker ./public/index.php
+{$CADDY_EXTRA_CONFIG}
+
+http://localhost:8080 {
+    encode zstd br gzip
+
+    root /app/public
+
+    vulcain
+
+    {$CADDY_SERVER_EXTRA_DIRECTIVES}
+
+    php_server {
+        {$FRANKENPHP_SITE_CONFIG}
+
+        worker {
+            file ./public/index.php
+            {$FRANKENPHP_WORKER_CONFIG}
+        }
+    }
 }
