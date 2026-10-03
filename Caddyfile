@@ -20,6 +20,11 @@ http://localhost:8080 {
 
     {$CADDY_SERVER_EXTRA_DIRECTIVES}
 
+    @assets path /assets/*
+    file_server @assets {
+        precompressed zstd br gzip
+    }
+
     php_server {
         {$FRANKENPHP_SITE_CONFIG}
 
