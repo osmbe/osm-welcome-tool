@@ -1,0 +1,36 @@
+{
+    skip_install_trust
+    auto_https off
+
+    {$CADDY_GLOBAL_OPTIONS}
+
+    frankenphp {
+        {$FRANKENPHP_CONFIG}
+    }
+}
+
+{$CADDY_EXTRA_CONFIG}
+
+:8080 {
+    encode zstd br gzip
+
+    root /app/public
+
+    vulcain
+
+    {$CADDY_SERVER_EXTRA_DIRECTIVES}
+
+    @assets path /assets/*
+    file_server @assets {
+        precompressed zstd br gzip
+    }
+
+    php_server {
+        {$FRANKENPHP_SITE_CONFIG}
+
+        worker {
+            file ./public/index.php
+            {$FRANKENPHP_WORKER_CONFIG}
+        }
+    }
+}
