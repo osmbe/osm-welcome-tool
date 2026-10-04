@@ -1,36 +1,44 @@
 {
-    skip_install_trust
-    auto_https off
+	skip_install_trust
+	auto_https off
 
-    {$CADDY_GLOBAL_OPTIONS}
+	{$CADDY_GLOBAL_OPTIONS}
 
-    frankenphp {
-        {$FRANKENPHP_CONFIG}
-    }
+	frankenphp {
+		# 4 × 256M = 1 GB PHP pool
+		php_value memory_limit 256M
+
+		# Leak safety net for worker mode (restart a thread after N requests)
+		max_requests 500
+
+		{$FRANKENPHP_CONFIG}
+	}
 }
 
 {$CADDY_EXTRA_CONFIG}
 
 :8080 {
-    encode zstd br gzip
+	encode zstd br gzip
 
-    root /app/public
+	root /app/public
 
-    vulcain
+	vulcain
 
-    {$CADDY_SERVER_EXTRA_DIRECTIVES}
+	{$CADDY_SERVER_EXTRA_DIRECTIVES}
 
-    @assets path /assets/*
-    file_server @assets {
-        precompressed zstd br gzip
-    }
+	@assets path /assets/*
+	file_server @assets {
+		precompressed zstd br gzip
+	}
 
-    php_server {
-        {$FRANKENPHP_SITE_CONFIG}
+	php_server {
+		{$FRANKENPHP_SITE_CONFIG}
 
-        worker {
-            file ./public/index.php
-            {$FRANKENPHP_WORKER_CONFIG}
-        }
-    }
+		worker {
+			file ./public/index.php
+			num 4 # 4 workers = 4 cores, 4 × 256M = 1 GB
+
+			{$FRANKENPHP_WORKER_CONFIG}
+		}
+	}
 }
