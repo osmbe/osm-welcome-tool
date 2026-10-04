@@ -173,7 +173,7 @@ class NewMapperCommand extends Command
     {
         $response = $this->osmcha->getAreaOfInterestChangesets($region['osmcha.id']);
 
-        $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
         $geojson = $response->toArray();
         $features = $geojson['features'];
@@ -189,7 +189,7 @@ class NewMapperCommand extends Command
     {
         $response = $this->osm->getChangesetsByUser($userId);
 
-        $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
         $xml = new \SimpleXMLElement($response->getContent());
 
@@ -212,7 +212,7 @@ class NewMapperCommand extends Command
     {
         $response = $this->osm->getUsers([$userId]);
 
-        $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
         $response = $response->toArray(true);
 
