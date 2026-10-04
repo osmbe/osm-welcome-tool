@@ -6,7 +6,7 @@
 
 	frankenphp {
 		# 4 × 256M = 1 GB PHP pool
-		php_value memory_limit 256M
+		php_ini memory_limit 256M
 
 		# Leak safety net for worker mode (restart a thread after N requests)
 		max_requests 500
