@@ -11,7 +11,7 @@ RUN npm run build
 
 # Composer
 
-FROM dhi.io/composer:2.2-alpine-php8.4-dev AS composer
+FROM dhi.io/composer:2-alpine-php8.4-dev AS composer
 
 # Application
 
