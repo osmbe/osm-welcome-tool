@@ -179,6 +179,9 @@ regions:
       name: Basque Country South Landes
       flag: 🇫🇷
       osmcha.id: 8fe86f39-e472-45a6-b128-33a2c4931fe4
+    france-corsica:
+      name: Corsica
+      flag: 🇫🇷
     georgia:
       name: Georgia
       flag: 🇬🇪
