@@ -4,6 +4,12 @@
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
+registries:
+  dhi-registry:
+    type: docker-registry
+    url: https://dhi.io
+    username: ${{ secrets.DOCKERHUB_USERNAME }}
+    password: ${{ secrets.DOCKERHUB_TOKEN }}
 updates:
   - package-ecosystem: "composer"
     directory: "/"
@@ -32,6 +38,12 @@ updates:
       development:
         dependency-type: development
   - package-ecosystem: "docker"
+    registries: "*"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "docker-compose"
+    registries: "*"
     directory: "/"
     schedule:
       interval: "monthly"
