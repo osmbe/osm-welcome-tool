@@ -41,6 +41,10 @@
         <source>Cambodia</source>
         <target>Cambodia</target>
       </trans-unit>
+      <trans-unit id=".H0n_Sg" resname="Corsica">
+        <source>Corsica</source>
+        <target>Corsica</target>
+      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
         <target>British Columbia</target>
