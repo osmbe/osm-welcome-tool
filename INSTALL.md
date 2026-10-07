@@ -43,11 +43,6 @@ docker run --detach --publish 80:80 --env-file .env.local osm-welcome-tool
 
 Check [Symfony deployment documentation](https://symfony.com/doc/current/deployment.html).
 
-#### Using Deployer
-
-```cmd
-vendor/bin/dep deploy --branch=2.x welcome.osm.be
-```
 
 ## Translating OpenStreetMap Welcome Tool
 
