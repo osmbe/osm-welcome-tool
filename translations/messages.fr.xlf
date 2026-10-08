@@ -41,6 +41,10 @@
         <source>Cambodia</source>
         <target state="final">Cambodge</target>
       </trans-unit>
+      <trans-unit id=".H0n_Sg" resname="Corsica" approved="yes">
+        <source>Corsica</source>
+        <target state="final">Corse</target>
+      </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia" approved="yes">
         <source>British Columbia</source>
         <target state="final">Colombie-Britannique</target>
