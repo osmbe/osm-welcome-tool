@@ -1,5 +1,5 @@
 <section aria-labelledby="applicant-information-title">
-    <div class="bg-white shadow sm:rounded-lg">
+    <div class="bg-white shadow-sm sm:rounded-lg">
         <div class="border-b border-gray-200 px-4 py-5 sm:px-6">
             <h2 id="applicant-information-title" class="text-lg leading-6 font-medium text-gray-900">
                 {{ 'Send a welcome message'|trans }}
@@ -32,15 +32,15 @@
             <form class="w-full" id="template-form" autocomplete="off" data-mapper="{{ mapper.displayName }}">
                 <div class="my-2 sm:mt-0 sm:col-span-2">
                     <input type="text" name="title" id="template-title" value="{{ selectedTemplate is not null ? selectedTemplate.title }}"
-                        class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md text-gray-500">
+                        class="p-2 shadow-xs focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md text-gray-500">
                 </div>
 
-                <div class="min-h-72 h-72 w-full p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor language-markdown">
+                <div class="min-h-72 h-72 w-full p-2 shadow-xs focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md editor language-markdown">
                     {{- selectedTemplate is not null ? include(template_from_string(selectedTemplate.template)) -}}
                 </div>
                 <div class="flex justify-between pt-4">
                     <button
-                        class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+                        class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-xs text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
                         type="button" id="template-copy">
                         <!-- Heroicon name: outline/clipboard -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -51,7 +51,7 @@
                         {{ 'Copy text to clipboard'|trans }}
                     </button>
                     <button
-                        class="px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        class="px-4 py-2 border border-transparent shadow-xs text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         type="submit" id="template-send">{{ 'Load message in osm.org'|trans }}</button>
                 </div>
             </form>
