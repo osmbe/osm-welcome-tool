@@ -10,6 +10,7 @@
         "@popperjs/core": "^2.11.8",
         "@symfony/stimulus-bridge": "^3.2.3",
         "@symfony/webpack-encore": "^7.2.0",
+        "@tailwindcss/postcss": "^4.3.3",
         "@types/leaflet": "^1.9.22",
         "@types/react-dom": "^18.3.7",
         "@typescript-eslint/eslint-plugin": "^8.71.1",
