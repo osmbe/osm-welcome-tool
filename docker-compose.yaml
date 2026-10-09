@@ -3,6 +3,7 @@ name: osm-welcome-tool
 services:
   symfony:
     container_name: symfony
+    image: ghcr.io/osmbe/osm-welcome-tool:latest
     build: .
     env_file:
       - stack.env
