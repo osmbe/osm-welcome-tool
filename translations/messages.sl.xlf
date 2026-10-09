@@ -33,6 +33,10 @@
         <source>Bolivia</source>
         <target state="translated">Bolivija</target>
       </trans-unit>
+      <trans-unit id="5BUrDyW" resname="Brittany">
+        <source>Brittany</source>
+        <target state="needs-translation">Brittany</target>
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target state="translated">Bolgarija</target>

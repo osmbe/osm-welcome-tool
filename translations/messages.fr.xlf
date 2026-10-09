@@ -33,6 +33,10 @@
         <source>Bolivia</source>
         <target state="final">Bolivie</target>
       </trans-unit>
+      <trans-unit id="5BUrDyW" resname="Brittany" approved="yes">
+        <source>Brittany</source>
+        <target state="final">Bretagne</target>
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria" approved="yes">
         <source>Bulgaria</source>
         <target state="final">Bulgarie</target>
