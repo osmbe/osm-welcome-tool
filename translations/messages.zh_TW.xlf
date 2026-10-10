@@ -33,6 +33,10 @@
         <source>Bolivia</source>
         <target state="translated">玻利維亞</target>
       </trans-unit>
+      <trans-unit id="5BUrDyW" resname="Brittany">
+        <source>Brittany</source>
+        <target state="needs-translation">Brittany</target>
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target state="translated">保加利亞</target>
@@ -40,6 +44,10 @@
       <trans-unit id="DCywGi2" resname="Cambodia">
         <source>Cambodia</source>
         <target state="translated">柬埔寨</target>
+      </trans-unit>
+      <trans-unit id=".H0n_Sg" resname="Corsica">
+        <source>Corsica</source>
+        <target state="needs-translation">Corsica</target>
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
@@ -255,7 +263,7 @@
       </trans-unit>
       <trans-unit id="JLHJS5l" resname="Saudi Arabia">
         <source>Saudi Arabia</source>
-        <target state="needs-translation">Saudi Arabia</target>
+        <target state="translated">沙烏地阿拉伯</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -355,7 +363,7 @@
       </trans-unit>
       <trans-unit id="KHbthuj" resname="Venezuela">
         <source>Venezuela</source>
-        <target state="needs-translation">Venezuela</target>
+        <target state="translated">委內瑞拉</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>

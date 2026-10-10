@@ -1,0 +1,51 @@
+name: Node.js CI
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [ 2.x ]
+  pull_request:
+    branches: [ 2.x ]
+
+jobs:
+  node-build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [ 24.x ] # See https://nodejs.org/en/about/releases/
+    steps:
+    - uses: actions/checkout@v7
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v7
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - if: matrix.node-version != '18.x'
+      run: npm run build
+    - if: matrix.node-version == '18.x'
+      run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+    - uses: actions/upload-artifact@v7
+      with:
+        name: assets-${{ matrix.node-version }}
+        path: public/build
+    # - run: npm test
+
+  node-eslint:
+    runs-on: ubuntu-latest
+    needs: node-build
+    steps:
+    - uses: actions/checkout@v7
+    - run: npm ci
+    - run: npm run lint --if-present
+
+  node-geojsonhint:
+    runs-on: ubuntu-latest
+    needs: node-build
+    steps:
+    - uses: actions/checkout@v7
+    - run: npm ci
+    - run: npm run geojsonhint --if-present

@@ -33,6 +33,10 @@
         <source>Bolivia</source>
         <target state="translated">Болівія</target>
       </trans-unit>
+      <trans-unit id="5BUrDyW" resname="Brittany">
+        <source>Brittany</source>
+        <target state="needs-translation">Brittany</target>
+      </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
         <target state="translated">Болгарія</target>
@@ -40,6 +44,10 @@
       <trans-unit id="DCywGi2" resname="Cambodia">
         <source>Cambodia</source>
         <target state="translated">Камбоджа</target>
+      </trans-unit>
+      <trans-unit id=".H0n_Sg" resname="Corsica">
+        <source>Corsica</source>
+        <target state="needs-translation">Corsica</target>
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>

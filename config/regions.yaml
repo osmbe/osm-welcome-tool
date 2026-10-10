@@ -175,6 +175,14 @@ regions:
       name: France
       flag: 🇫🇷
       osmcha.id: 757de22c-1627-48f6-9fa9-86134e0c396b
+    france-brittany:
+      name: Brittany
+      flag: 🇫🇷
+      osmcha.id: 16bf5515-4837-4e4e-9af9-2d1b2b02523c
+    france-corsica:
+      name: Corsica
+      flag: 🇫🇷
+      osmcha.id: cbd85a87-766a-41e8-9d42-37d3ce8f3385
     basque-country-south-landes:
       name: Basque Country South Landes
       flag: 🇫🇷
