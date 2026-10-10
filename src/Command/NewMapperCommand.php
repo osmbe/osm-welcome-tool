@@ -171,12 +171,24 @@ class NewMapperCommand extends Command
 
     private function getNewChangesets(array $region, array &$users, SymfonyStyle $io): array
     {
-        $response = $this->osmcha->getAreaOfInterestChangesets($region['osmcha.id']);
+        $features = [];
+        $page = 1;
 
-        // $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        while (true) {
+            $response = $this->osmcha->getAreaOfInterestChangesets($region['osmcha.id'], $page);
 
-        $geojson = $response->toArray();
-        $features = $geojson['features'];
+            $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+
+            $geojson = $response->toArray();
+
+            $features = array_merge($features, $geojson['features']);
+
+            if (null === $geojson['next']) {
+                break;
+            }
+
+            ++$page;
+        }
 
         $users = array_values(array_unique(array_map(fn (array $feature) => (int) $feature['properties']['uid'], $features), \SORT_NUMERIC));
 
@@ -189,7 +201,7 @@ class NewMapperCommand extends Command
     {
         $response = $this->osm->getChangesetsByUser($userId);
 
-        // $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
         $xml = new \SimpleXMLElement($response->getContent());
 
@@ -212,7 +224,7 @@ class NewMapperCommand extends Command
     {
         $response = $this->osm->getUsers([$userId]);
 
-        // $io->text(sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
+        $io->text(\sprintf('%s %s', $response->getInfo('http_method'), $response->getInfo('url')));
 
         $response = $response->toArray(true);
 

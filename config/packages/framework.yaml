@@ -14,6 +14,7 @@ framework:
                 headers:
                     Accept: 'application/json'
                     Authorization: '%osmcha.api.key%'
+                    'User-Agent': '%app.userAgent%'
             osm.client:
                 base_uri: '%osm.api.url%'
                 headers:

@@ -82,7 +82,7 @@ class OSMChaAPI
         return $response;
     }
 
-    public function getAreaOfInterestChangesets(string $id): ResponseInterface
+    public function getAreaOfInterestChangesets(string $id, ?int $page = 1): ResponseInterface
     {
         $validate = $this->validator->validate($id, new Uuid());
 
@@ -95,7 +95,8 @@ class OSMChaAPI
             \sprintf('aoi/%s/changesets/', $id),
             [
                 'query' => [
-                    'page_size' => 500,
+                    'page_size' => 250,
+                    'page' => $page,
                 ],
             ]
         );
