@@ -1,4 +1,4 @@
-<div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+<div class="shadow-sm overflow-hidden border-b border-gray-200 sm:rounded-lg">
     <table class="min-w-full divide-y divide-gray-200">
         <thead class="bg-gray-50">
             <tr>
@@ -122,8 +122,8 @@
             </p>
         </div>
         <div class="flex flex-1 justify-between sm:justify-end">
-            <a href="?page={{ previousPage }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Previous'|trans }}</a>
-            <a href="?page={{ nextPage }}" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Next'|trans }}</a>
+            <a href="?page={{ previousPage }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-hidden focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Previous'|trans }}</a>
+            <a href="?page={{ nextPage }}" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-hidden focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">{{ 'Next'|trans }}</a>
         </div>
     </nav>
     {% endif %}
