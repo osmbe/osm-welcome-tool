@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="5BUrDyW" resname="Brittany">
         <source>Brittany</source>
-        <target state="needs-translation">Brittany</target>
+        <target state="translated">布列塔尼</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
@@ -47,7 +47,7 @@
       </trans-unit>
       <trans-unit id=".H0n_Sg" resname="Corsica">
         <source>Corsica</source>
-        <target state="needs-translation">Corsica</target>
+        <target state="translated">科西嘉</target>
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
