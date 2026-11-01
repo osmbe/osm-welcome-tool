@@ -1,4 +1,4 @@
-<nav class="bg-white border-b border-gray-200 shadow">
+<nav class="bg-white border-b border-gray-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -18,7 +18,7 @@
             <div class="hidden ltr:sm:ml-6 rtl:sm:mr-6 sm:flex sm:items-center">
                 {% if app.user is null %}
                 <a href="{{ path('connect_openstreetmap_start') }}"
-                    class="ltr:ml-6 rtl:mr-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    class="ltr:ml-6 rtl:mr-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-xs text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     {{ 'Login with OSM'|trans }}
                 </a>
                 {% else %}
@@ -27,7 +27,7 @@
                     <div class="ml-3 relative">
                         <div>
                             <button type="button"
-                                class="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                 <span class="sr-only">{{ 'Open user menu'|trans }}</span>
                                 {% if app.user.image is not null %}
@@ -42,7 +42,7 @@
                         <!-- Dropdown menu, show/hide based on menu state. -->
                     </div>
                     <a href="{{ path('logout') }}"
-                        class="ml-6 inline-flex items-center px-4 py-2 border border-indigo-600 text-sm font-medium rounded-md shadow-sm text-indigo-600 bg-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        class="ml-6 inline-flex items-center px-4 py-2 border border-indigo-600 text-sm font-medium rounded-md shadow-xs text-indigo-600 bg-white hover:bg-indigo-100 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         {{ 'Logout'|trans }}
                     </a>
                 </div>
