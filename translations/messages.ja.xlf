@@ -11,11 +11,11 @@
       </trans-unit>
       <trans-unit id="6guTfqM" resname="Argentina">
         <source>Argentina</source>
-        <target state="needs-translation">Argentina</target>
+        <target state="translated">アルゼンチン</target>
       </trans-unit>
       <trans-unit id="we9AzgS" resname="Australia">
         <source>Australia</source>
-        <target state="needs-translation">Australia</target>
+        <target state="translated">オーストラリア</target>
       </trans-unit>
       <trans-unit id="ycqwI43" resname="Austria">
         <source>Austria</source>
@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="5BUrDyW" resname="Brittany">
         <source>Brittany</source>
-        <target state="needs-translation">Brittany</target>
+        <target state="translated">ブルターニュ地域圏</target>
       </trans-unit>
       <trans-unit id="Zrhr8PB" resname="Bulgaria">
         <source>Bulgaria</source>
@@ -47,7 +47,7 @@
       </trans-unit>
       <trans-unit id=".H0n_Sg" resname="Corsica">
         <source>Corsica</source>
-        <target state="needs-translation">Corsica</target>
+        <target state="translated">コルシカ島</target>
       </trans-unit>
       <trans-unit id="qCJN1GK" resname="British Columbia">
         <source>British Columbia</source>
@@ -87,7 +87,7 @@
       </trans-unit>
       <trans-unit id="SuYr9Og" resname="Colorado">
         <source>Colorado</source>
-        <target state="needs-translation">Colorado</target>
+        <target state="translated">コロラド州</target>
       </trans-unit>
       <trans-unit id="5WQOBAf" resname="Bogotá">
         <source>Bogotá</source>
@@ -95,11 +95,11 @@
       </trans-unit>
       <trans-unit id="B.YrAhd" resname="Brazil">
         <source>Brazil</source>
-        <target state="needs-translation">Brazil</target>
+        <target state="translated">ブラジル</target>
       </trans-unit>
       <trans-unit id="QMkAvGa" resname="DACHLI-Obersee-Rheintal">
         <source>DACHLI-Obersee-Rheintal</source>
-        <target state="needs-translation">DACHLI-Obersee-Rheintal</target>
+        <target state="translated">DACHLI-オーバーゼー-ラインタール</target>
       </trans-unit>
       <trans-unit id="CYxkJFV" resname="Democratic Republic of the Congo">
         <source>Democratic Republic of the Congo</source>
@@ -111,19 +111,19 @@
       </trans-unit>
       <trans-unit id="bNiYvKN" resname="Basque Country South Landes">
         <source>Basque Country South Landes</source>
-        <target state="needs-translation">Basque Country South Landes</target>
+        <target state="translated">南バスク地方</target>
       </trans-unit>
       <trans-unit id="RpFJIXn" resname="Georgia">
         <source>Georgia</source>
-        <target state="needs-translation">Georgia</target>
+        <target state="translated">ジョージア</target>
       </trans-unit>
       <trans-unit id="UxBLePE" resname="Abkhazia">
         <source>Abkhazia</source>
-        <target state="needs-translation">Abkhazia</target>
+        <target state="translated">アブハジア</target>
       </trans-unit>
       <trans-unit id="ok76r4z" resname="Tskhinvali">
         <source>Tskhinvali</source>
-        <target state="needs-translation">Tskhinvali</target>
+        <target state="translated">ツヒンヴァリ</target>
       </trans-unit>
       <trans-unit id="gNtMzco" resname="Germany">
         <source>Germany</source>
@@ -143,7 +143,7 @@
       </trans-unit>
       <trans-unit id="R6.P89y" resname="Hamburg">
         <source>Hamburg</source>
-        <target state="needs-translation">Hamburg</target>
+        <target state="translated">ハンブルグ</target>
       </trans-unit>
       <trans-unit id="WDIBwe_" resname="Ghana">
         <source>Ghana</source>
@@ -151,7 +151,7 @@
       </trans-unit>
       <trans-unit id="RaFaJHD" resname="Guatemala">
         <source>Guatemala</source>
-        <target state="needs-translation">Guatemala</target>
+        <target state="translated">グアテマラ</target>
       </trans-unit>
       <trans-unit id="HtjH5Wy" resname="Hong Kong">
         <source>Hong Kong</source>
@@ -167,11 +167,11 @@
       </trans-unit>
       <trans-unit id="q9FJIUU" resname="India">
         <source>India</source>
-        <target state="needs-translation">India</target>
+        <target state="translated">インド</target>
       </trans-unit>
       <trans-unit id="3lAI0ZS" resname="Iraq">
         <source>Iraq</source>
-        <target state="needs-translation">Iraq</target>
+        <target state="translated">イラク</target>
       </trans-unit>
       <trans-unit id="Ar8d_po" resname="Ireland">
         <source>Ireland</source>
@@ -211,7 +211,7 @@
       </trans-unit>
       <trans-unit id="erWX4bX" resname="Montenegro">
         <source>Montenegro</source>
-        <target state="needs-translation">Montenegro</target>
+        <target state="translated">モンテネグロ</target>
       </trans-unit>
       <trans-unit id="uiA5pM9" resname="Myanmar">
         <source>Myanmar</source>
@@ -259,11 +259,11 @@
       </trans-unit>
       <trans-unit id="M6PY7ZK" resname="Russia">
         <source>Russia</source>
-        <target state="needs-translation">Russia</target>
+        <target state="translated">ロシア</target>
       </trans-unit>
       <trans-unit id="JLHJS5l" resname="Saudi Arabia">
         <source>Saudi Arabia</source>
-        <target state="needs-translation">Saudi Arabia</target>
+        <target state="translated">サウジアラビア</target>
       </trans-unit>
       <trans-unit id="okZnDb9" resname="Scotland">
         <source>Scotland</source>
@@ -271,7 +271,7 @@
       </trans-unit>
       <trans-unit id="6HOcg5V" resname="Serbia">
         <source>Serbia</source>
-        <target state="needs-translation">Serbia</target>
+        <target state="translated">セルビア</target>
       </trans-unit>
       <trans-unit id="VgWef7T" resname="Slovenia">
         <source>Slovenia</source>
@@ -279,7 +279,7 @@
       </trans-unit>
       <trans-unit id="PgSdeNl" resname="South Africa">
         <source>South Africa</source>
-        <target state="needs-translation">South Africa</target>
+        <target state="translated">南アフリカ</target>
       </trans-unit>
       <trans-unit id="yFMp43e" resname="South Korea">
         <source>South Korea</source>
@@ -291,7 +291,7 @@
       </trans-unit>
       <trans-unit id="InVYMZb" resname="Switzerland">
         <source>Switzerland</source>
-        <target state="needs-translation">Switzerland</target>
+        <target state="translated">スイス</target>
       </trans-unit>
       <trans-unit id="3XavGW4" resname="Taiwan">
         <source>Taiwan</source>
@@ -303,11 +303,11 @@
       </trans-unit>
       <trans-unit id="bknmUIG" resname="Thailand">
         <source>Thailand</source>
-        <target state="needs-translation">Thailand</target>
+        <target state="translated">タイ</target>
       </trans-unit>
       <trans-unit id="S5XOYnI" resname="Texas">
         <source>Texas</source>
-        <target state="needs-translation">Texas</target>
+        <target state="translated">テキサス州</target>
       </trans-unit>
       <trans-unit id="voF9.Tt" resname="East Timor">
         <source>East Timor</source>
@@ -351,7 +351,7 @@
       </trans-unit>
       <trans-unit id="Q4p9WQT" resname="Ohio">
         <source>Ohio</source>
-        <target state="needs-translation">Ohio</target>
+        <target state="translated">オハイオ州</target>
       </trans-unit>
       <trans-unit id="mMtv4M6" resname="Oregon">
         <source>Oregon</source>
@@ -363,7 +363,7 @@
       </trans-unit>
       <trans-unit id="KHbthuj" resname="Venezuela">
         <source>Venezuela</source>
-        <target state="needs-translation">Venezuela</target>
+        <target state="translated">ベネズエラ</target>
       </trans-unit>
       <trans-unit id="b.yzrtq" resname="Vermont">
         <source>Vermont</source>
@@ -371,11 +371,11 @@
       </trans-unit>
       <trans-unit id="DuAztff" resname="Virginia">
         <source>Virginia</source>
-        <target state="needs-translation">Virginia</target>
+        <target state="translated">バージニア州</target>
       </trans-unit>
       <trans-unit id="HIwbKem" resname="Washington, D.C.">
         <source>Washington, D.C.</source>
-        <target state="needs-translation">Washington, D.C.</target>
+        <target state="translated">ワシントン D.C.</target>
       </trans-unit>
       <trans-unit id="MjJ73ih" resname="Washington State">
         <source>Washington State</source>
@@ -447,7 +447,7 @@
       </trans-unit>
       <trans-unit id="OEQc50U" resname="Load message in osm.org">
         <source>Load message in osm.org</source>
-        <target state="needs-translation">Load message in osm.org</target>
+        <target state="translated">osm.orgでメッセージを表示</target>
       </trans-unit>
       <trans-unit id="oJyOJvo" resname="Changesets">
         <source>Changesets</source>
@@ -555,7 +555,7 @@
       </trans-unit>
       <trans-unit id="SpAiaNX" resname="Welcomed">
         <source>Welcomed</source>
-        <target state="needs-translation">Welcomed</target>
+        <target state="translated">歓迎済み</target>
       </trans-unit>
       <trans-unit id="s25GbG6" resname="Last update">
         <source>Last update</source>
@@ -617,31 +617,31 @@ It helps you discover new mappers in your region and welcome them.</source>
       </trans-unit>
       <trans-unit id="1XtHCW_" resname="{count} new mappers ({percent} %) have already been welcomed">
         <source>{count} new mappers ({percent} %) have already been welcomed</source>
-        <target state="needs-translation">{count} new mappers ({percent} %) have already been welcomed</target>
+        <target state="translated">新規マッパー {count} 人中、 ({percent} %) が歓迎済み</target>
       </trans-unit>
       <trans-unit id="M4mE7Vr" resname="Mapper detected in {count} region(s)">
         <source>Mapper detected in {count} region(s)</source>
-        <target state="needs-translation">Mapper detected in {count} region(s)</target>
+        <target state="translated">{count} 地域内で検知されたマッパー</target>
       </trans-unit>
       <trans-unit id="uZEt4z7" resname="Download OSMCha RSS feed">
         <source>Download OSMCha RSS feed</source>
-        <target state="needs-translation">Download OSMCha RSS feed</target>
+        <target state="translated">OSMCha RSSフィードをダウンロード</target>
       </trans-unit>
       <trans-unit id="8jd_cvK" resname="regions">
         <source>regions</source>
-        <target state="needs-translation">regions</target>
+        <target state="translated">地域</target>
       </trans-unit>
       <trans-unit id="SgfCZsc" resname="Showing {from} to {to} of {total} results">
         <source>Showing {from} to {to} of {total} results</source>
-        <target state="needs-translation">Showing {from} to {to} of {total} results</target>
+        <target state="translated">全 {total} 中、 {from} から {to} を表示</target>
       </trans-unit>
       <trans-unit id="pXsIpIC" resname="Previous">
         <source>Previous</source>
-        <target state="needs-translation">Previous</target>
+        <target state="translated">前</target>
       </trans-unit>
       <trans-unit id="H.V6Kdf" resname="Next">
         <source>Next</source>
-        <target state="needs-translation">Next</target>
+        <target state="translated">次</target>
       </trans-unit>
     </body>
   </file>
